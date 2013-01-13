@@ -58,23 +58,30 @@ def _parse_reqs(filename):
     return reqs
 
 
-def _copy_requires(req, source_paths, dest_dir):
+def _copy_requires(source_path, dest_dir):
     """Copy requirements files."""
 
-    dest_path = os.path.join(dest_dir, req)
+    target_map = {
+        'requirements.txt': ('requirements.txt', 'tools/pip-requires'),
+        'test-requirements.txt': (
+            'test-requirements.txt', 'tools/test-requires'),
+    }
+    for dest in target_map[source_path]:
+        dest_path = os.path.join(dest_dir, dest)
+        if os.path.exists(dest_path):
+            break
 
+    # Catch the fall through
     if not os.path.exists(dest_path):
         # This can happen, we try all paths
         return
 
-    source_reqs = dict()
-    for s in source_paths:
-        source_reqs.update(_parse_reqs(s))
+    source_reqs = _parse_reqs(source_path)
 
     with open(dest_path, 'r') as dest_reqs_file:
         dest_reqs = dest_reqs_file.readlines()
 
-    print "Syncing %s" % req
+    print "Syncing %s" % source_path
 
     with open(dest_path, 'w') as new_reqs:
         for old_require in dest_reqs:
@@ -102,13 +109,8 @@ def _copy_requires(req, source_paths, dest_dir):
 
 
 def main(argv):
-    for req in ('tools/pip-requires', 'requirements.txt'):
-        _copy_requires(req, ['tools/pip-requires'], argv[0])
-
-    for req in ('tools/test-requires', 'test-requirements.txt'):
-        _copy_requires(req,
-                       ['tools/pip-requires', 'tools/test-requires'],
-                       argv[0])
+    for req in ('requirements.txt', 'test-requirements.txt'):
+        _copy_requires(req, argv[0])
 
 
 if __name__ == "__main__":
