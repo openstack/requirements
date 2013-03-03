@@ -34,7 +34,7 @@ numpy>=1.5.1,<1.6.2 # precise=1.6.1,oneiric=1.5.1
 pam==0.1.4 # needs to be packaged for ubuntu
 paramiko>=1.7.7.1 # precise=1.7.7.1,oneiric=1.7.7.1
 passlib>=1.5.2,<1.6 # precise=1.5.3,oneiric=1.5.2
-prettytable>=0.6,0.7 # precise=0.5,oneiric=0.5
+prettytable>=0.6,<0.7 # precise=0.5,oneiric=0.5
 py-bcrypt>=0.1,<0.2 # precise=0.1,oneiric=0.1
 pycrypto>=2.3 # precise=2.4.1,oneiric=2.3
 pysendfile==2.0.0 # needs to be packaged for ubuntu
