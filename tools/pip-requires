@@ -15,7 +15,6 @@ flask==0.9
 greenlet>=0.3.1
 happybase>=0.4
 httplib2
-http://tarballs.openstack.org/oslo-config/oslo.config-1.1.0b1.tar.gz
 iso8601>=0.1.4
 jsonschema
 kombu>=1.0.4
@@ -23,6 +22,7 @@ lockfile>=0.8
 lxml>=2.3
 netaddr
 netifaces>=0.5
+oslo.config>=1.1.0
 pam>=0.1.4
 paramiko
 passlib
