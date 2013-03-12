@@ -53,7 +53,7 @@ setuptools_git>=0.4
 simplejson>=2.0.9
 sqlalchemy>=0.7,<=0.7.9
 sqlalchemy-migrate>=0.7
-stevedore>=0.6
+stevedore>=0.7
 suds>=0.4
 warlock>=0.7.0,<2
 webob>=1.0.8
