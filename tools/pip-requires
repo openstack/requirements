@@ -24,7 +24,7 @@ lxml>=2.3
 netaddr
 netifaces>=0.5
 pam>=0.1.4
-paramiko
+paramiko>=1.8.0
 passlib
 paste
 pastedeploy>=1.5.0
