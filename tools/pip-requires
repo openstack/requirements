@@ -51,7 +51,7 @@ routes>=1.12.3
 rtslib>=2.1.fb27
 setuptools_git>=0.4
 simplejson>=2.0.9
-sqlalchemy>=0.7,<=0.7.9
+sqlalchemy>=0.7,<=0.7.99
 sqlalchemy-migrate>=0.7
 stevedore>=0.6
 suds>=0.4
