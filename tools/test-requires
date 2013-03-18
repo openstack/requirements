@@ -27,6 +27,7 @@ pysqlite
 python-ldap==2.3.13
 python-spidermonkey
 python-subunit
+pytest-runner # dependency of keyring that is only in setup_requires
 pyzmq==2.2.0.1
 redis
 selenium
