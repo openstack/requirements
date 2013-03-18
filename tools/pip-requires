@@ -57,7 +57,7 @@ stevedore>=0.7
 suds>=0.4
 warlock>=0.7.0,<2
 webob>=1.0.8
-websockify
+websockify<0.4
 wsgiref>=0.1.2
 wsme>=0.5b1
 xattr>=0.4
