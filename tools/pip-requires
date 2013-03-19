@@ -15,6 +15,7 @@ flask==0.9
 greenlet>=0.3.1
 happybase>=0.4
 httplib2
+importlib # required by kombu on python2.6 only and not detected by the mirror script
 iso8601>=0.1.4
 jsonschema
 kombu>=1.0.4
