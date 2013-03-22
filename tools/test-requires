@@ -7,6 +7,7 @@ django-nose
 docutils==0.9.1
 feedparser
 fixtures>=0.3.12
+flake8
 git+http://git.naquadah.org/git/~jd/merciless.git
 hp3parclient>=1.0.0
 keyring
