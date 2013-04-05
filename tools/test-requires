@@ -8,6 +8,7 @@ docutils==0.9.1
 feedparser
 fixtures>=0.3.12
 flake8
+hacking
 hp3parclient>=1.0.0
 keyring
 mock>=0.8.0
