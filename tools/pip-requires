@@ -62,5 +62,5 @@ warlock>=0.7.0,<2
 webob>=1.0.8
 websockify<0.4
 wsgiref>=0.1.2
-wsme>=0.5b1
+wsme>=0.5b2
 xattr>=0.4
