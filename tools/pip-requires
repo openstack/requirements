@@ -19,7 +19,7 @@ happybase>=0.4
 httplib2
 iso8601>=0.1.4
 jsonrpclib
-jsonschema
+jsonschema>=1.0.0
 kombu>=1.0.4
 lockfile>=0.8
 lxml>=2.3
