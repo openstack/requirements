@@ -10,7 +10,7 @@ d2to1>=0.2.10,<0.3
 django>=1.4,<1.6
 django_compressor
 django_openstack_auth>=1.0.8
-dnspython>=1.10.0
+dnspython>=1.9.4
 eventlet>=0.9.12
 extras
 flask==0.9
