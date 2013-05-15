@@ -20,6 +20,7 @@ httplib2
 iso8601>=0.1.4
 jsonrpclib
 jsonschema>=1.0.0
+kazoo>=0.9,<=1.1
 kombu>=1.0.4
 lockfile>=0.8
 lxml>=2.3
