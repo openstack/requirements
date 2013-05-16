@@ -23,6 +23,7 @@ jsonschema>=1.0.0
 kombu>=1.0.4
 lockfile>=0.8
 lxml>=2.3
+msgpack-python
 netaddr
 netifaces>=0.5
 oslo.config>=1.1.0
