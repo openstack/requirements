@@ -34,14 +34,6 @@ import sys
 from pip import req
 
 
-def _mod_to_path(mod):
-    return os.path.join(*mod.split('.'))
-
-
-def _dest_path(path, base, dest_dir):
-    return os.path.join(dest_dir, _mod_to_path(base), path)
-
-
 def _parse_reqs(filename):
 
     reqs = dict()
@@ -61,11 +53,14 @@ def _parse_reqs(filename):
     return reqs
 
 
-def _copy_requires(req, dest_dir):
+def _copy_requires(req, source_path, dest_dir):
     """Copy requirements files."""
 
-    dest_path = _dest_path(req, 'tools', dest_dir)
-    source_path = os.path.join('tools', req)
+    dest_path = os.path.join(dest_dir, req)
+
+    if not os.path.exists(dest_path):
+        # This can happen, we try all paths
+        return
 
     source_reqs = _parse_reqs(source_path)
     dest_reqs = _parse_reqs(dest_path)
@@ -80,14 +75,19 @@ def _copy_requires(req, dest_dir):
             # versions of our stuff from tarballs.openstack.org are ok
             # projects need to align pep8 version on their own time
             if old_require in source_reqs or \
-                "http://tarballs.openstack.org" in old_require:
+                    "http://tarballs.openstack.org" in old_require:
                 new_reqs.write("%s\n" % source_reqs[old_require])
             if "pep8" in old_require:
                 new_reqs.write("%s\n" % dest_reqs[old_require])
 
+
 def main(argv):
-    for req in ('pip-requires', 'test-requires'):
-        _copy_requires(req, argv[0])
+
+    for req in ('tools/pip-requires', 'requirements.txt'):
+        _copy_requires(req, 'tools/pip-requires', argv[0])
+
+    for req in ('tools/test-requires', 'test-requirements.txt'):
+        _copy_requires(req, 'tools/test-requires', argv[0])
 
 
 if __name__ == "__main__":
