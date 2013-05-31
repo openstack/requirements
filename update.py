@@ -72,13 +72,15 @@ def _copy_requires(req, source_path, dest_dir):
         new_reqs.write("# This file is managed by openstack-depends\n")
         for old_require in dest_keys:
             # Special cases:
-            # versions of our stuff from tarballs.openstack.org are ok
             # projects need to align pep8 version on their own time
+            if "pep8" in old_require:
+                new_reqs.write("%s\n" % dest_reqs[old_require])
+                continue
+
+            # versions of our stuff from tarballs.openstack.org are ok
             if old_require in source_reqs or \
                     "http://tarballs.openstack.org" in old_require:
                 new_reqs.write("%s\n" % source_reqs[old_require])
-            if "pep8" in old_require:
-                new_reqs.write("%s\n" % dest_reqs[old_require])
 
 
 def main(argv):
