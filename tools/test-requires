@@ -34,6 +34,7 @@ pyzmq==2.2.0.1
 redis
 selenium
 sphinx>=1.1.2
+sphinxcontrib-httpdomain
 sphinxcontrib-pecanwsme>=0.2
 swift
 testrepository>=0.0.13
