@@ -2,7 +2,6 @@ cliff-tablib>=1.0
 configobj
 coverage>=3.6
 discover
-distribute>=0.6.24
 django-nose
 docutils==0.9.1
 feedparser
