@@ -39,7 +39,7 @@ pecan>=0.2.0
 prettytable>=0.6,<0.8
 psutil<1.0
 pyasn1
-pycrypto>=2.1.0
+pycrypto>=2.6
 pymongo>=2.2
 pyopenssl
 pyparsing>=1.5.7,<2.0
