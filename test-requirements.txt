@@ -35,6 +35,7 @@ selenium
 sphinx>=1.1.2
 sphinxcontrib-httpdomain
 sphinxcontrib-pecanwsme>=0.2
+oslo.sphinx
 swift
 testrepository>=0.0.13
 testresources<0.3
