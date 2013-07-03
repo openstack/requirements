@@ -50,6 +50,7 @@ python-heatclient>=0.2.2
 python-glanceclient>=0.9.0,<2
 python-keystoneclient>=0.2,<0.3
 python-memcached
+python-neutronclient>=2.2.3,<3.0.0
 python-novaclient>=2.12.0,<3
 python-quantumclient>=2.2.0,<3.0.0
 python-swiftclient>=1.2,<2
