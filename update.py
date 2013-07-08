@@ -45,6 +45,14 @@ def _parse_pip(pip):
         return install_require.req.key
 
 
+def _pass_through(pip):
+    return (not pip or
+            pip.startswith('#') or
+            pip.startswith('http://tarballs.openstack.org/') or
+            pip.startswith('-e') or
+            pip.startswith('-f'))
+
+
 def _parse_reqs(filename):
 
     reqs = dict()
@@ -52,7 +60,7 @@ def _parse_reqs(filename):
     pip_requires = open(filename, "r").readlines()
     for pip in pip_requires:
         pip = pip.strip()
-        if pip.startswith("#") or len(pip) == 0:
+        if _pass_through(pip):
             continue
         reqs[_parse_pip(pip)] = pip
     return reqs
@@ -84,24 +92,19 @@ def _copy_requires(source_path, dest_dir):
     print "Syncing %s" % source_path
 
     with open(dest_path, 'w') as new_reqs:
-        for old_require in dest_reqs:
-            # copy comments
-            if old_require[0] == '#':
-                new_reqs.write(old_require)
+        for old_line in dest_reqs:
+            old_require = old_line.strip()
+
+            if _pass_through(old_require):
+                new_reqs.write(old_line)
                 continue
-            old_require = old_require.rstrip().lower()
-            if not old_require:
-                continue
-            old_pip = _parse_pip(old_require)
+
+            old_pip = _parse_pip(old_require.lower())
 
             # Special cases:
             # projects need to align pep8 version on their own time
             if "pep8" in old_pip:
-                new_reqs.write("%s\n" % old_require)
-                continue
-            # versions of our stuff from tarballs.openstack.org are ok
-            if "http://tarballs.openstack.org/" in old_pip:
-                new_reqs.write("%s\n" % old_require)
+                new_reqs.write(old_line)
                 continue
 
             if old_pip in source_reqs:
