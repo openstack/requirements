@@ -1,0 +1,12 @@
+#
+# Use this file to list development versions of OpenStack libraries
+# which have not yet been released to PyPI.
+#
+# By the time OpenStack projects are released, they should switch to
+# versions of these libraries which have been released to PyPI.
+#
+# See also:
+#  https://wiki.openstack.org/wiki/Oslo#FAQs
+#
+-f http://tarballs.openstack.org/oslo.config/oslo.config-1.2.0a3.tar.gz#egg=oslo.config-1.2.0a3
+oslo.config>=1.2.0a3
