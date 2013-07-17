@@ -37,7 +37,7 @@ sphinxcontrib-httpdomain
 sphinxcontrib-pecanwsme>=0.2
 oslo.sphinx
 swift
-testrepository>=0.0.15
+testrepository>=0.0.17
 testresources<0.3
 testscenarios>=0.4,<0.5
 testtools>=0.9.32
