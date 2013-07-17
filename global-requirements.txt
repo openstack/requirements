@@ -46,6 +46,7 @@ pycrypto>=2.6
 pymongo>=2.4
 pyOpenSSL
 pyparsing>=1.5.7,<2.0
+pysnmp>=4.2.1,<5.0.0
 # OpenStack clients. None of these should have an upper bound
 # as that has implications for testing in the gate. An exception
 # is currently being made for neutron client because of the need
