@@ -96,7 +96,7 @@ hacking>=0.5.6,<0.7
 hgtools # dependency of pytest-runner that is only in setup_requires
 hp3parclient>=1.0.0
 httpretty>=0.6.3
-keyring
+keyring>=1.6.1
 mock>=0.8.0
 mox>=0.5.3
 MySQL-python
@@ -113,7 +113,6 @@ pysendfile==2.0.0
 pysqlite
 python-ldap==2.3.13
 python-subunit
-pytest-runner # dependency of keyring that is only in setup_requires
 pyzmq==2.2.0.1
 redis
 selenium
