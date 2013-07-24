@@ -22,6 +22,7 @@ Jinja2
 jsonrpclib
 jsonschema>=1.0.0,!=1.4.0,<2
 kazoo>=0.9,<=1.1
+lesscpy>=0.9h
 kombu>=2.4.8
 lockfile>=0.8
 lxml>=2.3
