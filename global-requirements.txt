@@ -28,7 +28,6 @@ lockfile>=0.8
 lxml>=2.3
 msgpack-python
 netaddr
-netifaces>=0.5
 oauth2
 oslo.config>=1.1.0
 pam>=0.1.4
