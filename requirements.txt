@@ -43,7 +43,7 @@ PrettyTable>=0.6,<0.8
 psutil<1.0
 pyasn1
 pycrypto>=2.6
-pymongo>=2.2
+pymongo>=2.4
 pyOpenSSL
 pyparsing>=1.5.7,<2.0
 # OpenStack clients. None of these should have an upper bound
