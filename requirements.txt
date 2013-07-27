@@ -2,7 +2,7 @@ alembic>=0.4.1
 amqplib>=0.6.1
 anyjson>=0.3.3
 argparse
-Babel>=0.9.6
+Babel>=0.9.6,<1.0 # Babel 1.0 doesn't work with pip 1.4, bug 1205546
 boto>=2.4.0
 Cheetah>=2.4.4
 cliff>=1.4
