@@ -4,6 +4,7 @@ anyjson>=0.3.3
 argparse
 Babel>=0.9.6
 boto>=2.4.0
+cffi
 Cheetah>=2.4.4
 cliff>=1.4
 d2to1>=0.2.10,<0.3
