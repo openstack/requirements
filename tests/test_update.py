@@ -23,7 +23,7 @@ import tempfile
 import testtools
 
 
-def _load_req(fname):
+def _file_to_list(fname):
     with open(fname) as f:
         content = map(lambda x: x.rstrip(), f.readlines())
         print content
@@ -43,6 +43,7 @@ class UpdateTest(testtools.TestCase):
         self.oslo_file = os.path.join(self.oslo_dir, "requirements.txt")
         self.proj_test_file = os.path.join(self.project_dir,
                                            "test-requirements.txt")
+        self.setup_file = os.path.join(self.project_dir, "setup.py")
         os.mkdir(self.project_dir)
         os.mkdir(self.oslo_dir)
 
@@ -50,34 +51,41 @@ class UpdateTest(testtools.TestCase):
         shutil.copy("tests/files/project-with-oslo-tar.txt", self.oslo_file)
         shutil.copy("tests/files/project.txt", self.proj_file)
         shutil.copy("tests/files/test-project.txt", self.proj_test_file)
+        shutil.copy("tests/files/setup.py", self.setup_file)
         shutil.copy("update.py", os.path.join(self.dir, "update.py"))
 
         # now go call update and see what happens
+        self.addCleanup(os.chdir, os.path.abspath(os.curdir))
         os.chdir(self.dir)
         subprocess.call([sys.executable, "update.py", "project"])
         subprocess.call([sys.executable, "update.py", "project_with_oslo"])
 
     def test_requirements(self):
-        reqs = _load_req(self.req_file)
+        reqs = _file_to_list(self.req_file)
         self.assertIn("jsonschema>=1.0.0,!=1.4.0,<2", reqs)
 
     def test_project(self):
-        reqs = _load_req(self.proj_file)
+        reqs = _file_to_list(self.proj_file)
         # ensure various updates take
         self.assertIn("jsonschema>=1.0.0,!=1.4.0,<2", reqs)
         self.assertIn("python-keystoneclient>=0.3.0", reqs)
         self.assertIn("SQLAlchemy>=0.7,<=0.7.99", reqs)
 
     def test_project_with_oslo(self):
-        reqs = _load_req(self.oslo_file)
+        reqs = _file_to_list(self.oslo_file)
         oslo_tar = ("-f http://tarballs.openstack.org/oslo.config/"
                     "oslo.config-1.2.0a3.tar.gz#egg=oslo.config-1.2.0a3")
         self.assertIn(oslo_tar, reqs)
         self.assertIn("oslo.config>=1.1.0", reqs)
 
     def test_test_project(self):
-        reqs = _load_req(self.proj_test_file)
+        reqs = _file_to_list(self.proj_test_file)
         self.assertIn("testtools>=0.9.32", reqs)
         self.assertIn("testrepository>=0.0.17", reqs)
         # make sure we didn't add something we shouldn't
         self.assertNotIn("sphinxcontrib-pecanwsme>=0.2", reqs)
+
+    def test_install_setup(self):
+        setup_contents = _file_to_list(self.setup_file)
+        self.assertIn("# THIS FILE IS MANAGED BY THE GLOBAL REQUIREMENTS REPO"
+                      " - DO NOT EDIT", setup_contents)
