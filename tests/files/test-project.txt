@@ -1,0 +1,18 @@
+hacking>=0.5.6,<0.7
+coverage>=3.6
+discover
+feedparser
+fixtures>=0.3.12
+mox==0.5.3
+MySQL-python
+psycopg2
+pylint==0.25.2
+# Imported by ldapdns so required to generate
+# the sample configuration file
+python-ldap==2.3.13
+python-subunit
+setuptools_git>=0.4
+sphinx>=1.1.2
+oslo.sphinx
+testrepository>=0.0.13
+testtools>=0.9.27

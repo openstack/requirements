@@ -1,0 +1,35 @@
+d2to1>=0.2.10,<0.3
+pbr>=0.5.16,<0.6
+SQLAlchemy>=0.7.8,<0.7.99
+Cheetah>=2.4.4
+amqplib>=0.6.1
+anyjson>=0.2.4
+argparse
+boto
+eventlet>=0.9.17
+kombu>=1.0.4
+lxml>=2.3
+routes>=1.12.3
+WebOb==1.2.3
+greenlet>=0.3.1
+PasteDeploy>=1.5.0
+paste
+sqlalchemy-migrate>=0.7.2
+netaddr>=0.7.6
+suds>=0.4
+paramiko
+pyasn1
+Babel>=0.9.6
+iso8601>=0.1.4
+requests>=1.1,<1.2.1 # order-dependent python-cinderclient req cap, bug 1182271
+python-cinderclient>=1.0.1
+python-neutronclient>=2.2.3,<3.0.0
+python-glanceclient>=0.9.0
+python-keystoneclient>=0.2.0
+six
+stevedore>=0.10
+websockify<0.4
+pyparsing>=1.5.7,<2.0 # order-dependent python-quantumclient req, bug 1191866
+
+-f http://tarballs.openstack.org/oslo.config/oslo.config-1.2.0a3.tar.gz#egg=oslo.config-1.2.0a3
+oslo.config>=1.2.0a3
