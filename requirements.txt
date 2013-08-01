@@ -20,7 +20,7 @@ httplib2
 iso8601>=0.1.4
 Jinja2
 jsonrpclib
-jsonschema>=1.0.0,!=1.4.0,<2
+jsonschema>=1.3.0,!=1.4.0
 kazoo>=0.9,<=1.1
 lesscpy>=0.9h
 kombu>=2.4.8
