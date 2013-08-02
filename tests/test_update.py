@@ -14,6 +14,8 @@
 #    License for the specific language governing permissions and limitations
 #    under the License.
 
+from __future__ import print_function
+
 import os
 import os.path
 import shutil
@@ -26,7 +28,7 @@ import testtools
 def _file_to_list(fname):
     with open(fname) as f:
         content = map(lambda x: x.rstrip(), f.readlines())
-        print content
+        print(content)
         return content
 
 

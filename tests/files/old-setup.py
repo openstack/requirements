@@ -14,7 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from setuptools import setup, find_packages
+import setuptools
 
 from swift import __canonical_version__ as version
 
@@ -26,7 +26,7 @@ with open('requirements.txt', 'r') as f:
     requires = [x.strip() for x in f if x.strip()]
 
 
-setup(
+setuptools.setup(
     name=name,
     version=version,
     description='Swift',
@@ -34,7 +34,7 @@ setup(
     author='OpenStack, LLC.',
     author_email='openstack-admins@lists.launchpad.net',
     url='https://launchpad.net/swift',
-    packages=find_packages(exclude=['test', 'bin']),
+    packages=setuptools.find_packages(exclude=['test', 'bin']),
     test_suite='nose.collector',
     classifiers=[
         'Development Status :: 5 - Production/Stable',
