@@ -44,6 +44,7 @@ class UpdateTest(testtools.TestCase):
         self.proj_test_file = os.path.join(self.project_dir,
                                            "test-requirements.txt")
         self.setup_file = os.path.join(self.project_dir, "setup.py")
+        self.old_setup_file = os.path.join(self.oslo_dir, "setup.py")
         os.mkdir(self.project_dir)
         os.mkdir(self.oslo_dir)
 
@@ -52,6 +53,7 @@ class UpdateTest(testtools.TestCase):
         shutil.copy("tests/files/project.txt", self.proj_file)
         shutil.copy("tests/files/test-project.txt", self.proj_test_file)
         shutil.copy("tests/files/setup.py", self.setup_file)
+        shutil.copy("tests/files/old-setup.py", self.old_setup_file)
         shutil.copy("update.py", os.path.join(self.dir, "update.py"))
 
         # now go call update and see what happens
@@ -89,3 +91,9 @@ class UpdateTest(testtools.TestCase):
         setup_contents = _file_to_list(self.setup_file)
         self.assertIn("# THIS FILE IS MANAGED BY THE GLOBAL REQUIREMENTS REPO"
                       " - DO NOT EDIT", setup_contents)
+
+    def test_no_install_setup(self):
+        setup_contents = _file_to_list(self.old_setup_file)
+        self.assertNotIn(
+            "# THIS FILE IS MANAGED BY THE GLOBAL REQUIREMENTS REPO"
+            " - DO NOT EDIT", setup_contents)
