@@ -5,7 +5,6 @@ argparse
 Babel>=0.9.6
 boto>=2.4.0
 cffi
-Cheetah>=2.4.4
 cliff>=1.4
 Django>=1.4,<1.6
 django_compressor>=1.3
