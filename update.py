@@ -28,6 +28,7 @@ updated to match the global requirements. Requirements not in the global
 files will be dropped.
 """
 
+import optparse
 import os
 import os.path
 import sys
@@ -92,10 +93,15 @@ def _parse_reqs(filename):
     return reqs
 
 
-def _sync_requirements_file(source_reqs, dev_reqs, dest_path):
+def _sync_requirements_file(source_reqs, dev_reqs, dest_path, suffix):
     dest_reqs = []
     with open(dest_path, 'r') as dest_reqs_file:
         dest_reqs = dest_reqs_file.readlines()
+
+    # this is specifically for global-requirements gate jobs so we don't
+    # modify the git tree
+    if suffix:
+        dest_path = "%s.%s" % (dest_path, suffix)
 
     print("Syncing %s" % dest_path)
 
@@ -124,7 +130,7 @@ def _sync_requirements_file(source_reqs, dev_reqs, dest_path):
                     new_reqs.write("%s\n" % source_reqs[old_pip])
 
 
-def _copy_requires(dest_dir):
+def _copy_requires(suffix, dest_dir):
     """Copy requirements files."""
 
     source_reqs = _parse_reqs('global-requirements.txt')
@@ -139,7 +145,7 @@ def _copy_requires(dest_dir):
         if os.path.exists(dest_path):
             print("_sync_requirements_file(%s, %s, %s)" %
                   (source_reqs, dev_reqs, dest_path))
-            _sync_requirements_file(source_reqs, dev_reqs, dest_path)
+            _sync_requirements_file(source_reqs, dev_reqs, dest_path, suffix)
 
 
 def _write_setup_py(dest_path):
@@ -152,10 +158,17 @@ def _write_setup_py(dest_path):
             setup_file.write(_setup_py_text)
 
 
-def main(argv):
-    _copy_requires(argv[0])
-    _write_setup_py(argv[0])
+def main(options, args):
+    if len(args) != 1:
+        print("Must specify directory to update")
+        sys.exit(1)
+    _copy_requires(options.suffix, args[0])
+    _write_setup_py(args[0])
 
 
 if __name__ == "__main__":
-    main(sys.argv[1:])
+    parser = optparse.OptionParser()
+    parser.add_option("-o", "--output-suffix", dest="suffix", default="",
+                      help="output suffix for updated files (i.e. .global)")
+    (options, args) = parser.parse_args()
+    main(options, args)
