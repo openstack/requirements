@@ -41,6 +41,7 @@ class UpdateTest(testtools.TestCase):
         self.oslo_dir = os.path.join(self.dir, "project_with_oslo")
 
         self.req_file = os.path.join(self.dir, "global-requirements.txt")
+        self.dev_req_file = os.path.join(self.dir, "dev-requirements.txt")
         self.proj_file = os.path.join(self.project_dir, "requirements.txt")
         self.oslo_file = os.path.join(self.oslo_dir, "requirements.txt")
         self.proj_test_file = os.path.join(self.project_dir,
@@ -51,6 +52,7 @@ class UpdateTest(testtools.TestCase):
         os.mkdir(self.oslo_dir)
 
         shutil.copy("tests/files/gr-base.txt", self.req_file)
+        shutil.copy("tests/files/dev-req.txt", self.dev_req_file)
         shutil.copy("tests/files/project-with-oslo-tar.txt", self.oslo_file)
         shutil.copy("tests/files/project.txt", self.proj_file)
         shutil.copy("tests/files/test-project.txt", self.proj_test_file)
@@ -80,7 +82,8 @@ class UpdateTest(testtools.TestCase):
         oslo_tar = ("-f http://tarballs.openstack.org/oslo.config/"
                     "oslo.config-1.2.0a3.tar.gz#egg=oslo.config-1.2.0a3")
         self.assertIn(oslo_tar, reqs)
-        self.assertIn("oslo.config>=1.1.0", reqs)
+        self.assertIn("oslo.config>=1.2.0a3", reqs)
+        self.assertNotIn("oslo.config>=1.1.0", reqs)
 
     def test_test_project(self):
         reqs = _file_to_list(self.proj_test_file)

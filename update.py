@@ -92,7 +92,7 @@ def _parse_reqs(filename):
     return reqs
 
 
-def _sync_requirements_file(source_reqs, dest_path):
+def _sync_requirements_file(source_reqs, dev_reqs, dest_path):
     dest_reqs = []
     with open(dest_path, 'r') as dest_reqs_file:
         dest_reqs = dest_reqs_file.readlines()
@@ -116,13 +116,19 @@ def _sync_requirements_file(source_reqs, dest_path):
                 continue
 
             if old_pip in source_reqs:
-                new_reqs.write("%s\n" % source_reqs[old_pip])
+                # allow it to be in dev-requirements
+                if ((old_pip in dev_reqs) and (old_require.lower() ==
+                                               dev_reqs[old_pip])):
+                    new_reqs.write("%s\n" % dev_reqs[old_pip])
+                else:
+                    new_reqs.write("%s\n" % source_reqs[old_pip])
 
 
-def _copy_requires(source_path, dest_dir):
+def _copy_requires(dest_dir):
     """Copy requirements files."""
 
-    source_reqs = _parse_reqs(source_path)
+    source_reqs = _parse_reqs('global-requirements.txt')
+    dev_reqs = _parse_reqs('dev-requirements.txt')
 
     target_files = (
         'requirements.txt', 'tools/pip-requires',
@@ -131,8 +137,9 @@ def _copy_requires(source_path, dest_dir):
     for dest in target_files:
         dest_path = os.path.join(dest_dir, dest)
         if os.path.exists(dest_path):
-            print("_sync_requirements_file(%s, %s)" % (source_reqs, dest_path))
-            _sync_requirements_file(source_reqs, dest_path)
+            print("_sync_requirements_file(%s, %s, %s)" %
+                  (source_reqs, dev_reqs, dest_path))
+            _sync_requirements_file(source_reqs, dev_reqs, dest_path)
 
 
 def _write_setup_py(dest_path):
@@ -146,7 +153,7 @@ def _write_setup_py(dest_path):
 
 
 def main(argv):
-    _copy_requires('global-requirements.txt', argv[0])
+    _copy_requires(argv[0])
     _write_setup_py(argv[0])
 
 
