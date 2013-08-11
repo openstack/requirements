@@ -97,7 +97,7 @@ hgtools # dependency of pytest-runner that is only in setup_requires
 hp3parclient>=1.0.0
 httpretty>=0.6.3
 keyring>=1.6.1
-mock>=0.8.0
+mock>=1.0
 mox>=0.5.3
 MySQL-python
 nose
