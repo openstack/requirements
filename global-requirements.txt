@@ -92,7 +92,7 @@ docutils==0.9.1
 feedparser
 fixtures>=0.3.12
 flake8==2.0
-hacking>=0.5.6,<0.7
+hacking>=0.5.6,<0.8
 hgtools # dependency of pytest-runner that is only in setup_requires
 hp3parclient>=1.0.0
 httpretty>=0.6.3
