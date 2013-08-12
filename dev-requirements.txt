@@ -10,3 +10,5 @@
 #
 -f http://tarballs.openstack.org/oslo.config/oslo.config-1.2.0a3.tar.gz#egg=oslo.config-1.2.0a3
 oslo.config>=1.2.0a3
+-f http://tarballs.openstack.org/oslo.messaging/oslo.messaging-1.2.0a2.tar.gz#egg=oslo.messaging-1.2.0a2
+oslo.messaging>=1.2.0a2
