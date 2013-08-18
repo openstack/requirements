@@ -100,6 +100,7 @@ httpretty>=0.6.3
 keyring
 mock>=0.8.0
 mox>=0.5.3
+mox3>=0.7.0
 MySQL-python
 nose
 nose-exclude
