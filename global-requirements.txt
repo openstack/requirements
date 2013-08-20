@@ -97,7 +97,7 @@ fixtures>=0.3.14
 flake8==2.0
 hacking>=0.5.6,<0.8
 hgtools # dependency of pytest-runner that is only in setup_requires
-hp3parclient>=1.0.0
+hp3parclient>=2.0,<3.0
 httpretty>=0.6.3
 keyring>=1.6.1
 mock>=1.0
