@@ -43,7 +43,7 @@ pip>=1.4
 PrettyTable>=0.6,<0.8
 psutil>=0.6.1,<1.0
 pyasn1
-pycadf
+pycadf>=0.1.4
 pycrypto>=2.6
 pymongo>=2.4
 pyOpenSSL
