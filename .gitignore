@@ -1,2 +1,7 @@
+*.pyc
 .*.swp
 *~
+.tox
+.testrepository
+AUTHORS
+ChangeLog
