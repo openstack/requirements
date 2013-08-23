@@ -14,7 +14,7 @@ django_openstack_auth>=1.1.1
 dnspython>=1.9.4
 eventlet>=0.13.0
 extras
-Flask==0.9
+Flask>=0.10,<1.0
 greenlet>=0.3.2
 happybase>=0.4
 httplib2
