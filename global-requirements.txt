@@ -118,7 +118,7 @@ pylint==0.25.2
 pysendfile==2.0.0
 pysqlite
 python-ldap==2.3.13
-python-subunit
+python-subunit==0.0.13
 pyzmq==2.2.0.1
 redis
 selenium
