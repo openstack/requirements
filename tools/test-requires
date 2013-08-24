@@ -10,7 +10,7 @@ fixtures>=0.3.12
 flake8==2.0
 hacking>=0.5.3,<0.6
 hp3parclient>=1.0.0
-keyring
+keyring<2.0
 mock>=0.8.0
 mox>=0.5.3
 mysql-python
