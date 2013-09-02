@@ -75,7 +75,7 @@ qpid-python
 requests>=1.1
 Routes>=1.12.3
 simplejson>=2.0.9
-six
+six<1.4.0
 sockjs-tornado>=1.0.0,<2.0.0
 SQLAlchemy>=0.7.8,<=0.7.99
 sqlalchemy-migrate>=0.7.2
