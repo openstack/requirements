@@ -5,7 +5,7 @@ argparse
 Babel>=0.9.6
 boto>=2.4.0
 cffi
-cliff>=1.4
+cliff>=1.4.3
 dogpile.cache>=0.5.0
 Django>=1.4,<1.6
 django_compressor>=1.3
