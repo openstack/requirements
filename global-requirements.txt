@@ -68,7 +68,6 @@ python-keystoneclient>=0.3.2
 python-memcached
 python-neutronclient>=2.3.0,<3
 python-novaclient>=2.12.0
-python-quantumclient>=2.2.0
 python-swiftclient>=1.5
 python-troveclient
 pytz>=2010h
