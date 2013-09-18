@@ -69,7 +69,7 @@ python-glanceclient>=0.9.0
 python-keystoneclient>=0.3.2
 python-memcached
 python-neutronclient>=2.3.0,<3
-python-novaclient>=2.12.0
+python-novaclient>=2.15.0
 python-swiftclient>=1.5
 python-troveclient
 pytz>=2010h
