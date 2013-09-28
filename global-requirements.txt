@@ -82,6 +82,11 @@ Routes>=1.12.3
 simplejson>=2.0.9
 six
 sockjs-tornado>=1.0.0,<2.0.0
+# The SQLA requirement looks weird, but it's here for a reason.
+# The version of pip shipped with distros treats 0.8beta1 (which is
+# on pypi) as < 0.8 so the "clear" version of this requirement, is
+# actually broken. The fix for this isn't until pip 1.4.1, which is
+# way more current than what most distros have.
 SQLAlchemy>=0.7.8,<=0.7.99
 sqlalchemy-migrate>=0.7.2
 stevedore>=0.10
