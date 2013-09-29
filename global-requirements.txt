@@ -140,4 +140,4 @@ testresources>=0.2.4
 testscenarios>=0.4
 testtools>=0.9.32
 unittest2
-WebTest==1.3.3
+WebTest>=2.0
