@@ -24,5 +24,6 @@ openstack/python-novaclient
 openstack/python-openstackclient
 openstack/python-swiftclient
 openstack/python-troveclient
+openstack/requirements
 openstack/swift
 openstack/trove
