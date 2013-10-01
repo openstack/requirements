@@ -22,8 +22,13 @@ openstack/python-keystoneclient
 openstack/python-neutronclient
 openstack/python-novaclient
 openstack/python-openstackclient
+openstack/python-savannaclient
 openstack/python-swiftclient
 openstack/python-troveclient
 openstack/requirements
+openstack/savanna
+openstack/savanna-dashboard
+openstack/savanna-image-elements
+openstack/savanna-extra
 openstack/swift
 openstack/trove
