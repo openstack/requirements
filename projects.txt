@@ -26,4 +26,5 @@ openstack/python-swiftclient
 openstack/python-troveclient
 openstack/requirements
 openstack/swift
+openstack/tempest
 openstack/trove
