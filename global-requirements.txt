@@ -32,7 +32,7 @@ kombu>=2.4.8
 lockfile>=0.8
 lxml>=2.3
 msgpack-python
-netaddr
+netaddr>=0.7.6
 netifaces>=0.5
 oauth2
 ordereddict
