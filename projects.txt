@@ -28,3 +28,4 @@ openstack/requirements
 openstack/swift
 openstack/tempest
 openstack/trove
+openstack-dev/hacking
