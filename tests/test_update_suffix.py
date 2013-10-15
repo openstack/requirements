@@ -27,7 +27,7 @@ import testtools
 
 def _file_to_list(fname):
     with open(fname) as f:
-        content = map(lambda x: x.rstrip(), f.readlines())
+        content = list(map(lambda x: x.rstrip(), f.readlines()))
         print(content)
         return content
 
