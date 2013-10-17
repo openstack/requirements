@@ -77,7 +77,7 @@ class UpdateTestWithSuffix(testtools.TestCase):
         reqs = _file_to_list("%s.%s" % (self.proj_file, 'global'))
         # ensure various updates take
         self.assertIn("jsonschema>=1.0.0,!=1.4.0,<2", reqs)
-        self.assertIn("python-keystoneclient>=0.3.2", reqs)
+        self.assertIn("python-keystoneclient>=0.4.1", reqs)
         self.assertIn("SQLAlchemy>=0.7,<=0.7.99", reqs)
 
     def test_project_with_oslo(self):
