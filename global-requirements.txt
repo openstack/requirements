@@ -98,7 +98,7 @@ WebOb>=1.2.3,<1.3
 websockify>=0.5.1,<0.6
 wheel
 wsgiref>=0.1.2
-WSME>=0.5b5
+WSME>=0.5b6
 xattr>=0.4
 # Testing tools below, which are typically in test-requires.txt
 
