@@ -80,6 +80,7 @@ PyYAML>=3.1.0
 qpid-python
 requests>=1.1
 Routes>=1.12.3
+rtslib-fb>=2.1.39
 simplejson>=2.0.9
 six>=1.4.1
 sockjs-tornado>=1.0.0,<2.0.0
