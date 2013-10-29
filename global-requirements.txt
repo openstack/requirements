@@ -65,6 +65,7 @@ pystache
 # for an incompatible change in their next release.
 python-ceilometerclient>=1.0.6
 python-cinderclient>=1.0.6
+python-designateclient>=1.0.0
 python-heatclient>=0.2.3
 python-glanceclient>=0.9.0
 python-keystoneclient>=0.4.1
