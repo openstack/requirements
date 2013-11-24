@@ -34,3 +34,5 @@ openstack/swift
 openstack/tempest
 openstack/trove
 openstack-dev/hacking
+stackforge/solum
+stackforge/python-solumclient
