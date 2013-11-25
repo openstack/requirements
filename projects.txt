@@ -34,5 +34,7 @@ openstack/swift
 openstack/tempest
 openstack/trove
 openstack-dev/hacking
+stackforge/climate
 stackforge/solum
+stackforge/python-climateclient
 stackforge/python-solumclient
