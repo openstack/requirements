@@ -138,7 +138,8 @@ def _copy_requires(suffix, dest_dir):
 
     target_files = (
         'requirements.txt', 'tools/pip-requires',
-        'test-requirements.txt', 'tools/test-requires')
+        'test-requirements.txt', 'tools/test-requires',
+        'requirements-py3.txt', 'test-requirements-py3.txt')
 
     for dest in target_files:
         dest_path = os.path.join(dest_dir, dest)
