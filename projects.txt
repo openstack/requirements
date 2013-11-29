@@ -26,7 +26,6 @@ openstack/python-openstackclient
 openstack/python-savannaclient
 openstack/python-swiftclient
 openstack/python-troveclient
-openstack/requirements
 openstack/savanna
 openstack/savanna-dashboard
 openstack/savanna-image-elements
@@ -34,7 +33,9 @@ openstack/savanna-extra
 openstack/swift
 openstack/tempest
 openstack/trove
+openstack-dev/devstack
 openstack-dev/hacking
+openstack-infra/devstack-gate
 stackforge/climate
 stackforge/solum
 stackforge/python-climateclient
