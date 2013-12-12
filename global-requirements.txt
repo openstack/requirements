@@ -38,6 +38,7 @@ netifaces>=0.5
 oauth2
 ordereddict
 oslo.config>=1.2.0
+oslo.rootwrap
 os-apply-config
 os-collect-config
 os-refresh-config
