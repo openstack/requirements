@@ -94,7 +94,7 @@ sockjs-tornado>=1.0.0,<2.0.0
 # on pypi) as < 0.8 so the "clear" version of this requirement, is
 # actually broken. The fix for this isn't until pip 1.4.1, which is
 # way more current than what most distros have.
-SQLAlchemy>=0.7.8,<=0.7.99
+SQLAlchemy>=0.7.8,<=0.8.99
 sqlalchemy-migrate>=0.8.2
 stevedore>=0.12
 suds>=0.4
