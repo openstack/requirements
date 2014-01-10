@@ -147,7 +147,7 @@ selenium
 sphinx>=1.1.2,<1.2
 sphinxcontrib-docbookrestapi
 sphinxcontrib-httpdomain
-sphinxcontrib-pecanwsme>=0.5
+sphinxcontrib-pecanwsme>=0.6
 oslo.sphinx
 swift
 testrepository>=0.0.17
