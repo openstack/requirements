@@ -58,7 +58,7 @@ pycadf>=0.1.9
 pycrypto>=2.6
 pyghmi
 pymongo>=2.4
-pyOpenSSL
+pyOpenSSL>=0.11
 pyparsing>=2.0.1
 pysnmp>=4.2.1,<5.0.0
 pystache
