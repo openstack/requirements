@@ -98,7 +98,7 @@ requests>=1.1
 Routes>=1.12.3
 rtslib-fb>=2.1.39
 simplejson>=2.0.9
-six>=1.4.1
+six>=1.5.2
 sockjs-tornado>=1.0.0,<2.0.0
 # The SQLA requirement looks weird, but it's here for a reason.
 # The version of pip shipped with distros treats 0.8beta1 (which is
