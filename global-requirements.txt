@@ -35,7 +35,6 @@ lxml>=2.3
 msgpack-python
 netaddr>=0.7.6
 netifaces>=0.5
-oauth2
 oauthlib
 ordereddict
 oslo.config>=1.2.0
