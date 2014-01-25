@@ -8,5 +8,3 @@
 # See also:
 #  https://wiki.openstack.org/wiki/Oslo#FAQs
 #
--f http://tarballs.openstack.org/oslo.messaging/oslo.messaging-1.2.0a11.tar.gz#egg=oslo.messaging-1.2.0a11
-oslo.messaging>=1.2.0a11

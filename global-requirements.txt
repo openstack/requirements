@@ -39,6 +39,7 @@ oauth2
 oauthlib
 ordereddict
 oslo.config>=1.2.0
+oslo.messaging>=1.3.0a4
 oslo.rootwrap
 os-apply-config
 os-collect-config
