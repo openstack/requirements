@@ -98,7 +98,7 @@ sockjs-tornado>=1.0.0,<2.0.0
 # way more current than what most distros have.
 SQLAlchemy>=0.7.8,<=0.8.99
 sqlalchemy-migrate>=0.8.2
-stevedore>=0.12
+stevedore>=0.14
 suds>=0.4
 taskflow>=0.1.1,<0.2
 tripleo-image-elements
