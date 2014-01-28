@@ -50,4 +50,5 @@ openstack-infra/devstack-gate
 stackforge/climate
 stackforge/solum
 stackforge/python-climateclient
+stackforge/python-openstacksdk
 stackforge/python-solumclient
