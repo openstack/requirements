@@ -144,7 +144,7 @@ pylint==0.25.2
 pysendfile==2.0.0
 pysqlite
 python-ldap==2.3.13
-python-subunit
+python-subunit>=0.0.18
 pyzmq==2.2.0.1
 redis
 selenium
@@ -157,6 +157,6 @@ swift
 testrepository>=0.0.17
 testresources>=0.2.4
 testscenarios>=0.4
-testtools>=0.9.32,<0.9.35
+testtools>=0.9.34
 unittest2
 WebTest>=2.0
