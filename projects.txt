@@ -50,4 +50,5 @@ openstack/volume-api
 stackforge/climate
 stackforge/python-climateclient
 stackforge/python-solumclient
+stackforge/rally
 stackforge/solum
