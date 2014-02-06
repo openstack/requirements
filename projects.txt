@@ -49,6 +49,7 @@ openstack/trove
 openstack/volume-api
 stackforge/climate
 stackforge/python-climateclient
+stackforge/python-openstacksdk
 stackforge/python-solumclient
 stackforge/rally
 stackforge/solum
