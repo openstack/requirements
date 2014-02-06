@@ -156,6 +156,7 @@ sphinxcontrib-docbookrestapi
 sphinxcontrib-httpdomain
 sphinxcontrib-pecanwsme>=0.6
 oslo.sphinx
+oslosphinx
 swift
 testrepository>=0.0.17
 testresources>=0.2.4
