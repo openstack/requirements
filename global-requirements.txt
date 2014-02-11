@@ -139,7 +139,7 @@ nose
 nose-exclude
 nosehtmloutput>=0.0.3
 nosexcover
-openstack-doc-tools>=0.3
+openstack-doc-tools>=0.6
 openstack.nose_plugin>=0.7
 oslosphinx
 oslo.sphinx
