@@ -36,6 +36,7 @@ lesscpy>=0.9j
 kombu>=2.4.8
 lockfile>=0.8
 lxml>=2.3
+Mako>=0.4.0
 msgpack-python
 netaddr>=0.7.6
 netifaces>=0.5
