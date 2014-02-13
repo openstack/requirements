@@ -16,6 +16,7 @@ openstack/identity-api
 openstack/image-api
 openstack/ironic
 openstack/keystone
+openstack/marconi
 openstack/neutron
 openstack/nova
 openstack/object-api
@@ -37,6 +38,7 @@ openstack/python-glanceclient
 openstack/python-heatclient
 openstack/python-ironicclient
 openstack/python-keystoneclient
+openstack/python-marconiclient
 openstack/python-neutronclient
 openstack/python-novaclient
 openstack/python-openstackclient
