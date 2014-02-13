@@ -48,6 +48,8 @@ class UpdateTestWithSuffix(testtools.TestCase):
                                            "test-requirements.txt")
         self.setup_file = os.path.join(self.project_dir, "setup.py")
         self.old_setup_file = os.path.join(self.oslo_dir, "setup.py")
+        self.setup_cfg_file = os.path.join(self.project_dir, "setup.cfg")
+        self.oslo_setup_cfg_file = os.path.join(self.oslo_dir, "setup.cfg")
         os.mkdir(self.project_dir)
         os.mkdir(self.oslo_dir)
 
@@ -58,6 +60,8 @@ class UpdateTestWithSuffix(testtools.TestCase):
         shutil.copy("tests/files/test-project.txt", self.proj_test_file)
         shutil.copy("tests/files/setup.py", self.setup_file)
         shutil.copy("tests/files/old-setup.py", self.old_setup_file)
+        shutil.copy("tests/files/setup.cfg", self.setup_cfg_file)
+        shutil.copy("tests/files/setup.cfg", self.oslo_setup_cfg_file)
         shutil.copy("update.py", os.path.join(self.dir, "update.py"))
 
         # now go call update and see what happens
