@@ -39,6 +39,7 @@ lxml>=2.3
 msgpack-python
 netaddr>=0.7.6
 netifaces>=0.5
+networkx>=1.8
 oauthlib>=0.6
 ordereddict
 oslo.config>=1.2.0
@@ -167,3 +168,4 @@ testtools>=0.9.34
 trollius>=0.1.4,<0.2
 unittest2
 WebTest>=2.0
+zake>=0.0.13
