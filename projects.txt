@@ -30,6 +30,7 @@ openstack/os-refresh-config
 openstack/oslo-incubator
 openstack/oslo.config
 openstack/oslo.messaging
+openstack/oslo.test
 openstack/oslo.version
 openstack/oslosphinx
 openstack/pycadf
