@@ -4,6 +4,7 @@ openstack-infra/devstack-gate
 openstack/api-site
 openstack/ceilometer
 openstack/cinder
+openstack/cliff
 openstack/compute-api
 openstack/database-api
 openstack/diskimage-builder
@@ -28,6 +29,8 @@ openstack/oslo-incubator
 openstack/oslo.config
 openstack/oslo.messaging
 openstack/oslo.version
+openstack/oslosphinx
+openstack/pycadf
 openstack/python-ceilometerclient
 openstack/python-cinderclient
 openstack/python-glanceclient
@@ -44,6 +47,7 @@ openstack/savanna
 openstack/savanna-dashboard
 openstack/savanna-extra
 openstack/savanna-image-elements
+openstack/stevedore
 openstack/swift
 openstack/tempest
 openstack/trove
