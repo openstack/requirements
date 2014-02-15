@@ -59,7 +59,7 @@ pbr>=0.6,<1.0
 pecan>=0.2.0
 pip>=1.4
 PrettyTable>=0.7,<0.8
-psutil>1.1.0
+psutil>=1.1.1
 pyasn1
 pycadf>=0.1.9
 pycrypto>=2.6
