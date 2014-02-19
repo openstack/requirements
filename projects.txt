@@ -32,6 +32,7 @@ openstack/oslo.config
 openstack/oslo.messaging
 openstack/oslo.test
 openstack/oslo.version
+openstack/oslo.vmware
 openstack/oslosphinx
 openstack/pycadf
 openstack/python-ceilometerclient
