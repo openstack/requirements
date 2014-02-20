@@ -56,7 +56,7 @@ passlib
 Paste
 PasteDeploy>=1.5.0
 pbr>=0.6,<1.0
-pecan>=0.2.0
+pecan>=0.4.5
 pip>=1.4
 PrettyTable>=0.7,<0.8
 psutil>=1.1.1
