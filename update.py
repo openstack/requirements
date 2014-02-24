@@ -80,11 +80,21 @@ def _pass_through(pip):
             pip.startswith('-f'))
 
 
+def _read(filename):
+    with open(filename, 'r') as f:
+        return f.read()
+
+
+def _readlines(filename):
+    with open(filename, 'r') as f:
+        return f.readlines()
+
+
 def _parse_reqs(filename):
 
     reqs = dict()
 
-    pip_requires = open(filename, "r").readlines()
+    pip_requires = _readlines(filename)
     for pip in pip_requires:
         pip = pip.strip()
         if _pass_through(pip):
@@ -94,9 +104,7 @@ def _parse_reqs(filename):
 
 
 def _sync_requirements_file(source_reqs, dev_reqs, dest_path, suffix):
-    dest_reqs = []
-    with open(dest_path, 'r') as dest_reqs_file:
-        dest_reqs = dest_reqs_file.readlines()
+    dest_reqs = _readlines(dest_path)
 
     # this is specifically for global-requirements gate jobs so we don't
     # modify the git tree
@@ -155,8 +163,8 @@ def _write_setup_py(dest_path):
     # If it doesn't have a setup.py, then we don't want to update it
     if not os.path.exists(target_setup_py):
         return
-    has_pbr = 'pbr' in open(target_setup_py, 'r').read()
-    is_pbr = 'name = pbr' in open(setup_cfg, 'r').read()
+    has_pbr = 'pbr' in _read(target_setup_py)
+    is_pbr = 'name = pbr' in _read(setup_cfg)
     if has_pbr and not is_pbr:
         print("Syncing setup.py")
         # We only want to sync things that are up to date with pbr mechanics
