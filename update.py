@@ -151,11 +151,13 @@ def _copy_requires(suffix, dest_dir):
 
 def _write_setup_py(dest_path):
     target_setup_py = os.path.join(dest_path, 'setup.py')
+    setup_cfg = os.path.join(dest_path, 'setup.cfg')
     # If it doesn't have a setup.py, then we don't want to update it
     if not os.path.exists(target_setup_py):
         return
     has_pbr = 'pbr' in open(target_setup_py, 'r').read()
-    if has_pbr:
+    is_pbr = 'name = pbr' in open(setup_cfg, 'r').read()
+    if has_pbr and not is_pbr:
         print("Syncing setup.py")
         # We only want to sync things that are up to date with pbr mechanics
         with open(target_setup_py, 'w') as setup_file:
