@@ -8,6 +8,7 @@ cffi
 cliff>=1.4.3
 cmd2>=0.6.7
 coinor.pulp>=1.0.4
+croniter>=0.3.4 # MIT License
 ddt>=0.4.0
 decorator>=3.4.0
 diskimage-builder
