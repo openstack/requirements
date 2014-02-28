@@ -26,7 +26,7 @@ gear
 greenlet>=0.3.2
 happybase>=0.4,<=0.6
 httplib2>=0.7.5
-iso8601>=0.1.8
+iso8601>=0.1.9
 Jinja2
 jsonpatch>=1.1
 jsonpath-rw>=1.2.0,<2.0
