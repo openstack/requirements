@@ -49,7 +49,7 @@ oslo.config>=1.2.0
 oslo.messaging>=1.3.0a4
 oslo.rootwrap
 oslotest
-oslo.vmware>=0.2                        # Apache-2.0
+oslo.vmware>=0.3                        # Apache-2.0
 os-apply-config
 os-collect-config
 os-refresh-config
