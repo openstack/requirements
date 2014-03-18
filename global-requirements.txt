@@ -63,7 +63,7 @@ pecan>=0.4.5
 pip>=1.4
 posix_ipc
 PrettyTable>=0.7,<0.8
-psutil>=1.1.1
+psutil>=1.1.1,<2.0.0
 pyasn1
 pycadf>=0.4.1
 pycrypto>=2.6
