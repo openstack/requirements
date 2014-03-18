@@ -33,7 +33,7 @@ netifaces>=0.5
 oauth2
 oslo.config>=1.1.0
 pam>=0.1.4
-paramiko>=1.8.0
+paramiko>=1.13.0
 passlib
 Paste
 PasteDeploy>=1.5.0
