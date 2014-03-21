@@ -61,7 +61,6 @@ openstack/volume-api
 stackforge/climate
 stackforge/climate-nova
 stackforge/python-climateclient
-stackforge/python-openstacksdk
 stackforge/python-solumclient
 stackforge/rally
 stackforge/solum
