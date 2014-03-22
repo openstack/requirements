@@ -176,4 +176,5 @@ testtools>=0.9.34
 trollius>=0.1.4,<0.2
 unittest2
 WebTest>=2.0
+wsgi_intercept>=0.6.1 # MIT License
 zake>=0.0.13
