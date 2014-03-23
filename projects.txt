@@ -1,6 +1,5 @@
 openstack-dev/devstack
 openstack-dev/hacking
-openstack-dev/pbr
 openstack-infra/devstack-gate
 openstack/api-site
 openstack/ceilometer
