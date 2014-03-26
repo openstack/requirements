@@ -150,7 +150,6 @@ nosexcover
 openstack-doc-tools>=0.8.2
 openstack.nose_plugin>=0.7
 oslosphinx
-oslo.sphinx
 pep8==1.4.5
 proboscis==1.2.5.3
 psycopg2
