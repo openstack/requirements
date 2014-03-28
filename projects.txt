@@ -16,6 +16,7 @@ openstack/horizon
 openstack/identity-api
 openstack/image-api
 openstack/ironic
+openstack/ironic-python-agent
 openstack/keystone
 openstack/marconi
 openstack/neutron
