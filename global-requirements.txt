@@ -1,4 +1,4 @@
-alembic>=0.4.1
+alembic>=0.4.1,<0.6.4
 amqplib>=0.6.1
 anyjson>=0.3.3
 argparse
