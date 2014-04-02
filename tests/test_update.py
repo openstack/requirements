@@ -36,37 +36,51 @@ class UpdateTest(testtools.TestCase):
         super(UpdateTest, self).setUp()
         self.dir = tempfile.mkdtemp()
         self.project_dir = os.path.join(self.dir, "project")
+        self.bad_project_dir = os.path.join(self.dir, "bad_project")
         self.oslo_dir = os.path.join(self.dir, "project_with_oslo")
 
         self.req_file = os.path.join(self.dir, "global-requirements.txt")
         self.dev_req_file = os.path.join(self.dir, "dev-requirements.txt")
         self.proj_file = os.path.join(self.project_dir, "requirements.txt")
         self.oslo_file = os.path.join(self.oslo_dir, "requirements.txt")
+        self.bad_proj_file = os.path.join(self.bad_project_dir,
+                                          "requirements.txt")
         self.proj_test_file = os.path.join(self.project_dir,
                                            "test-requirements.txt")
         self.setup_file = os.path.join(self.project_dir, "setup.py")
         self.old_setup_file = os.path.join(self.oslo_dir, "setup.py")
+        self.bad_setup_file = os.path.join(self.bad_project_dir, "setup.py")
         self.setup_cfg_file = os.path.join(self.project_dir, "setup.cfg")
+        self.bad_setup_cfg_file = os.path.join(self.bad_project_dir,
+                                               "setup.cfg")
         self.oslo_setup_cfg_file = os.path.join(self.oslo_dir, "setup.cfg")
         os.mkdir(self.project_dir)
         os.mkdir(self.oslo_dir)
+        os.mkdir(self.bad_project_dir)
 
         shutil.copy("tests/files/gr-base.txt", self.req_file)
         shutil.copy("tests/files/dev-req.txt", self.dev_req_file)
         shutil.copy("tests/files/project-with-oslo-tar.txt", self.oslo_file)
         shutil.copy("tests/files/project.txt", self.proj_file)
+        shutil.copy("tests/files/project-with-bad-requirement.txt",
+                    self.bad_proj_file)
         shutil.copy("tests/files/test-project.txt", self.proj_test_file)
         shutil.copy("tests/files/setup.py", self.setup_file)
+        shutil.copy("tests/files/setup.py", self.bad_setup_file)
         shutil.copy("tests/files/old-setup.py", self.old_setup_file)
         shutil.copy("tests/files/setup.cfg", self.setup_cfg_file)
+        shutil.copy("tests/files/setup.cfg", self.bad_setup_cfg_file)
         shutil.copy("tests/files/setup.cfg", self.oslo_setup_cfg_file)
         shutil.copy("update.py", os.path.join(self.dir, "update.py"))
 
         # now go call update and see what happens
         self.addCleanup(os.chdir, os.path.abspath(os.curdir))
         os.chdir(self.dir)
-        subprocess.call([sys.executable, "update.py", "project"])
-        subprocess.call([sys.executable, "update.py", "project_with_oslo"])
+        returncode = subprocess.call([sys.executable, "update.py", "project"])
+        self.assertEqual(returncode, 0)
+        returncode = subprocess.call([sys.executable, "update.py",
+                                     "project_with_oslo"])
+        self.assertEqual(returncode, 0)
 
     def test_requirements(self):
         reqs = _file_to_list(self.req_file)
@@ -104,3 +118,8 @@ class UpdateTest(testtools.TestCase):
         self.assertNotIn(
             "# THIS FILE IS MANAGED BY THE GLOBAL REQUIREMENTS REPO"
             " - DO NOT EDIT", setup_contents)
+
+    def test_requirment_not_in_global(self):
+        returncode = subprocess.call([sys.executable, "update.py",
+                                     "bad_project"])
+        self.assertEqual(returncode, 1)

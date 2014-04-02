@@ -134,6 +134,13 @@ def _sync_requirements_file(source_reqs, dev_reqs, dest_path, suffix):
                     new_reqs.write("%s\n" % dev_reqs[old_pip])
                 else:
                     new_reqs.write("%s\n" % source_reqs[old_pip])
+            else:
+                # Found a requirement that isn't in the global requirement file
+                # This is not supposed to happen, so exit with a failure.
+                print("'%s' is not a global requirement but it should be,"
+                      "something went wrong" %
+                      old_pip)
+                sys.exit(1)
 
 
 def _copy_requires(suffix, dest_dir):
