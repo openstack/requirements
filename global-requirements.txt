@@ -53,7 +53,6 @@ oslo.vmware>=0.2                        # Apache-2.0
 os-apply-config
 os-collect-config
 os-refresh-config
-pam>=0.1.4
 paramiko>=1.9.0
 passlib
 Paste
