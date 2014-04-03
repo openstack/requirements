@@ -123,3 +123,11 @@ class UpdateTest(testtools.TestCase):
         returncode = subprocess.call([sys.executable, "update.py",
                                      "bad_project"])
         self.assertEqual(returncode, 1)
+
+    def test_requirment_not_in_global_non_fatal(self):
+        env = os.environ.copy()
+        env['NON_STANDARD_REQS'] = '1'
+        returncode = subprocess.call(
+            [sys.executable, "update.py", "bad_project"],
+            env=env)
+        self.assertEqual(returncode, 0)
