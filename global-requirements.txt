@@ -131,7 +131,6 @@ django-nose
 docutils==0.9.1
 feedparser
 fixtures>=0.3.14
-flake8==2.0
 hacking>=0.8.0,<0.9
 hgtools # dependency of pytest-runner that is only in setup_requires
 hp3parclient>=3.0,<4.0
@@ -149,10 +148,8 @@ nosexcover
 openstack-doc-tools>=0.8.2
 openstack.nose_plugin>=0.7
 oslosphinx
-pep8==1.4.5
 proboscis==1.2.5.3
 psycopg2
-pyflakes>=0.7.2,<0.7.4
 pylint==0.25.2
 pysendfile==2.0.0
 pysqlite

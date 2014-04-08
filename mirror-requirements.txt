@@ -1,0 +1,7 @@
+# Use this file to specify requirements that we want put into the
+# mirror but that we don't want projects to specify directly.
+#
+# Useful for transitive dependencies like pyflakes
+pyflakes
+pep8
+flake8
