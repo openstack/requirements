@@ -176,4 +176,4 @@ trollius>=0.1.4
 unittest2
 WebTest>=2.0
 wsgi_intercept>=0.6.1 # MIT License
-zake>=0.0.13
+zake>=0.0.15
