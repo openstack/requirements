@@ -76,7 +76,6 @@ pyOpenSSL>=0.11
 pyparsing>=2.0.1
 pysnmp>=4.2.1,<5.0.0
 pystache
-python-seamicroclient>=0.1.0,<2.0
 # OpenStack clients. None of these should have an upper bound
 # as that has implications for testing in the gate. An exception
 # is currently being made for neutron client because of the need
@@ -137,8 +136,6 @@ fixtures>=0.3.14
 flake8==2.1.0
 hacking>=0.8.0,<0.9
 hgtools # dependency of pytest-runner that is only in setup_requires
-hp3parclient>=3.0,<4.0
-hplefthandclient>=1.0.0,<2.0.0
 httpretty>=0.8.0
 keyring>=2.1
 mock>=1.0
@@ -178,3 +175,10 @@ unittest2
 WebTest>=2.0
 wsgi_intercept>=0.6.1 # MIT License
 zake>=0.0.15
+
+# External libraries not tested in the gate, but present here to synchronize
+# packaging efforts. These are required by projects to enable hardware- or
+# vendor-specific functionality.
+python-seamicroclient>=0.1.0,<2.0
+hp3parclient>=3.0,<4.0
+hplefthandclient>=1.0.0,<2.0.0
