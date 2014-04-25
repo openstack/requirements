@@ -135,12 +135,19 @@ def _sync_requirements_file(source_reqs, dev_reqs, dest_path, suffix):
                 else:
                     new_reqs.write("%s\n" % source_reqs[old_pip])
             else:
-                # Found a requirement that isn't in the global requirement file
-                # This is not supposed to happen, so exit with a failure.
-                print("'%s' is not a global requirement but it should be,"
-                      "something went wrong" %
-                      old_pip)
-                sys.exit(1)
+                # What do we do if we find something unexpected?
+                #
+                # In the default cause we should die horribly, because
+                # the point of global requirements was a single lever
+                # to control all the pip installs in the gate.
+                #
+                # However, we do have other projects using
+                # devstack jobs that might have legitimate reasons to
+                # override. For those we support NON_STANDARD_REQS=1
+                # environment variable to turn this into a warning only.
+                print("'%s' is not in global-requirements.txt" % old_pip)
+                if os.getenv('NON_STANDARD_REQS', '0') != '1':
+                    sys.exit(1)
 
 
 def _copy_requires(suffix, dest_dir):
