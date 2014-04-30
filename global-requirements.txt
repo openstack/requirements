@@ -49,6 +49,7 @@ networkx>=1.8
 oauthlib>=0.6
 ordereddict
 oslo.config>=1.2.1
+oslo.db>=0.2.0  # Apache-2.0
 oslo.messaging>=1.3.0
 oslo.rootwrap
 oslo.vmware>=0.3                        # Apache-2.0
