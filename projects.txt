@@ -25,6 +25,7 @@ openstack/openstack-doc-tools
 openstack/openstack-manuals
 openstack/operations-guide
 openstack/os-apply-config
+openstack/os-cloud-config
 openstack/os-collect-config
 openstack/os-refresh-config
 openstack/oslo-incubator

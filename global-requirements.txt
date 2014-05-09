@@ -52,6 +52,7 @@ oslo.rootwrap
 oslotest
 oslo.vmware>=0.3                        # Apache-2.0
 os-apply-config
+os-cloud-config
 os-collect-config
 os-refresh-config
 paramiko>=1.9.0
