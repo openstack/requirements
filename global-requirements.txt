@@ -130,6 +130,7 @@ sqlalchemy-migrate>=0.9.1
 stevedore>=0.14
 suds>=0.4
 taskflow>=0.3,<0.4
+tooz>=0.3 # Apache-2.0
 tripleo-image-elements
 warlock>=1.0.1,<2
 WebOb>=1.2.3
