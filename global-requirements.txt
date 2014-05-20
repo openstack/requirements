@@ -126,6 +126,9 @@ wsgiref>=0.1.2
 WSME>=0.6
 xattr>=0.4
 XenAPI>=1.2
+xstatic>=1.0.0  # MIT License
+xstatic-jquery>=1.10.2.1  # MIT License
+
 # Testing tools below, which are typically in test-requires.txt
 
 bash8
