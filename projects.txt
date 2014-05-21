@@ -6,7 +6,6 @@ openstack/ceilometer
 openstack/cinder
 openstack/cliff
 openstack/compute-api
-openstack/database-api
 openstack/diskimage-builder
 openstack/django_openstack_auth
 openstack/glance
