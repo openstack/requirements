@@ -173,6 +173,7 @@ testscenarios>=0.4
 testtools>=0.9.34
 trollius>=0.1.4
 unittest2
+wrapt>=1.7.0 # BSD License
 WebTest>=2.0
 wsgi_intercept>=0.6.1 # MIT License
 zake>=0.0.15
