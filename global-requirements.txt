@@ -149,7 +149,7 @@ nose
 nose-exclude
 nosehtmloutput>=0.0.3
 nosexcover
-openstack-doc-tools>=0.13
+openstack-doc-tools>=0.15
 openstack.nose_plugin>=0.7
 oslosphinx
 pep8==1.4.6,==1.5.6
