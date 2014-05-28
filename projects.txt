@@ -58,9 +58,9 @@ openstack/taskflow
 openstack/tempest
 openstack/trove
 openstack/volume-api
-stackforge/climate
-stackforge/climate-nova
-stackforge/python-climateclient
+stackforge/blazar
+stackforge/blazar-nova
+stackforge/python-blazarclient
 stackforge/python-solumclient
 stackforge/rally
 stackforge/solum
