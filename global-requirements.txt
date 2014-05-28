@@ -184,4 +184,3 @@ zake>=0.0.15
 # packaging efforts. These are required by projects to enable hardware- or
 # vendor-specific functionality.
 python-seamicroclient>=0.1.0,<2.0
-hplefthandclient>=1.0.0,<2.0.0
