@@ -32,7 +32,7 @@ openstack/oslo.config
 openstack/oslo.db
 openstack/oslo.i18n
 openstack/oslo.messaging
-openstack/oslo.test
+openstack/oslotest
 openstack/oslo.version
 openstack/oslo.vmware
 openstack/oslosphinx
