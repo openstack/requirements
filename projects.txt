@@ -30,7 +30,7 @@ openstack/os-refresh-config
 openstack/oslo-incubator
 openstack/oslo.config
 openstack/oslo.messaging
-openstack/oslo.test
+openstack/oslotest
 openstack/oslo.version
 openstack/oslo.vmware
 openstack/oslosphinx
