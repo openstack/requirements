@@ -129,6 +129,7 @@ xattr>=0.4
 XenAPI>=1.2
 # Testing tools below, which are typically in test-requires.txt
 
+bash8
 cliff-tablib>=1.0
 configobj
 coverage>=3.6
