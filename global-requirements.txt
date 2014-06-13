@@ -166,7 +166,7 @@ python-subunit>=0.0.18
 pyzmq==2.2.0.1
 redis
 selenium
-sphinx>=1.2.1,<1.3
+sphinx>=1.1.2,!=1.2.0,<1.3
 sphinxcontrib-docbookrestapi
 sphinxcontrib-httpdomain
 sphinxcontrib-pecanwsme>=0.8
