@@ -142,6 +142,7 @@ hacking>=0.9.1,<0.10
 hgtools # dependency of pytest-runner that is only in setup_requires
 httpretty>=0.8.0
 keyring>=2.1
+ldappool>=1.0 # MPL
 mock>=1.0
 mox>=0.5.3
 mox3>=0.7.0
