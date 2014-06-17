@@ -63,6 +63,7 @@ openstack/volume-api
 stackforge/blazar
 stackforge/blazar-nova
 stackforge/python-blazarclient
+stackforge/python-openstacksdk
 stackforge/python-solumclient
 stackforge/rally
 stackforge/solum
