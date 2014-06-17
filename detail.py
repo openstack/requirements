@@ -97,7 +97,8 @@ def main():
                     }
         filename, _ext = os.path.splitext(filename)
         with open("%s.json" % (filename), "wb") as fh:
-            fh.write(json.dumps(details, sort_keys=True, indent=4))
+            fh.write(json.dumps(details, sort_keys=True, indent=4,
+                                separators=(",", ": ")))
 
 
 if __name__ == '__main__':
