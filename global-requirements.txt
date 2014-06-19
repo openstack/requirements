@@ -145,7 +145,7 @@ fixtures>=0.3.14
 flake8==2.1.0
 hacking>=0.9.2,<0.10
 hgtools # dependency of pytest-runner that is only in setup_requires
-httpretty>=0.8.0
+httpretty>=0.8.0,!=0.8.1,!=0.8.2
 keyring>=2.1
 ldappool>=1.0 # MPL
 mock>=1.0
