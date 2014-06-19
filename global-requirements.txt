@@ -172,6 +172,7 @@ python-ldap==2.3.13
 python-subunit>=0.0.18
 pyzmq==2.2.0.1
 redis
+retrying>=1.2.1 # Apache-2.0
 selenium
 sphinx>=1.1.2,!=1.2.0,<1.3
 sphinxcontrib-docbookrestapi
