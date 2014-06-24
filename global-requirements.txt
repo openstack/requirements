@@ -131,7 +131,7 @@ taskflow>=0.3,<0.4
 tripleo-image-elements
 warlock>=1.0.1,<2
 WebOb>=1.2.3
-websockify>=0.5.1,<0.6
+websockify>=0.5.1,<0.7
 wheel
 wsgiref>=0.1.2
 WSME>=0.6
