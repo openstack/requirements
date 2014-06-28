@@ -162,7 +162,7 @@ openstack-doc-tools>=0.15
 openstack.nose_plugin>=0.7
 oslosphinx
 oslotest
-pep8==1.4.6,==1.5.6,==1.5.7
+pep8==1.5.7
 proboscis==1.2.5.3
 psycopg2
 pyflakes==0.8.1
