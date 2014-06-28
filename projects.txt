@@ -6,6 +6,7 @@ openstack/ceilometer
 openstack/cinder
 openstack/cliff
 openstack/compute-api
+openstack/designate
 openstack/diskimage-builder
 openstack/django_openstack_auth
 openstack/glance
@@ -39,6 +40,7 @@ openstack/oslosphinx
 openstack/pycadf
 openstack/python-ceilometerclient
 openstack/python-cinderclient
+openstack/python-designateclient
 openstack/python-glanceclient
 openstack/python-heatclient
 openstack/python-ironicclient
