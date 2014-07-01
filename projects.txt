@@ -59,6 +59,7 @@ openstack/swift
 openstack/taskflow
 openstack/tempest
 openstack/trove
+openstack/tuskar-ui
 openstack/volume-api
 stackforge/blazar
 stackforge/blazar-nova
