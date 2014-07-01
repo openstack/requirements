@@ -99,7 +99,7 @@ pyudev
 PyYAML>=3.1.0
 qpid-python
 requests>=1.1
-Routes>=1.12.3
+Routes>=1.12.3,!=2.0
 rtslib-fb>=2.1.39
 simplejson>=2.0.9
 six>=1.6.0
