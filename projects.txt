@@ -56,10 +56,12 @@ openstack/sahara
 openstack/sahara-dashboard
 openstack/sahara-extra
 openstack/sahara-image-elements
+openstack/security-doc
 openstack/stevedore
 openstack/swift
 openstack/taskflow
 openstack/tempest
+openstack/training-guides
 openstack/trove
 openstack/volume-api
 stackforge/blazar
