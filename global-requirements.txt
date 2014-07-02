@@ -85,7 +85,7 @@ pystache
 # is currently being made for neutron client because of the need
 # for an incompatible change in their next release.
 python-ceilometerclient>=1.0.6
-python-cinderclient>=1.0.6
+python-cinderclient>=1.0.7
 python-designateclient>=1.0.0
 python-heatclient>=0.2.9
 python-glanceclient>=0.9.0
