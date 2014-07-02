@@ -91,6 +91,7 @@ python-heatclient>=0.2.9
 python-glanceclient>=0.9.0
 python-ironicclient
 python-keystoneclient>=0.9.0
+python-marconiclient>=0.0.2
 python-memcached>=1.48
 python-neutronclient>=2.3.5,<3
 python-novaclient>=2.17.0
