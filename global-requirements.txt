@@ -88,7 +88,7 @@ python-ceilometerclient>=1.0.6
 python-cinderclient>=1.0.6
 python-designateclient>=1.0.0
 python-heatclient>=0.2.9
-python-glanceclient>=0.9.0
+python-glanceclient>=0.13.1
 python-ironicclient
 python-keystoneclient>=0.9.0
 python-memcached>=1.48
