@@ -70,4 +70,3 @@ stackforge/python-blazarclient
 stackforge/python-openstacksdk
 stackforge/python-solumclient
 stackforge/rally
-stackforge/solum
