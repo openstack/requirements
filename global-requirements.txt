@@ -144,7 +144,6 @@ coverage>=3.6
 discover
 django-nose
 doc8  # Apache-2.0
-docutils==0.9.1
 feedparser
 fixtures>=0.3.14
 flake8==2.1.0
