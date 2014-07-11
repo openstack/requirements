@@ -65,6 +65,7 @@ openstack/taskflow
 openstack/tempest
 openstack/training-guides
 openstack/trove
+openstack/tuskar-ui
 openstack/volume-api
 stackforge/blazar
 stackforge/blazar-nova
