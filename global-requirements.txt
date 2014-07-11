@@ -40,6 +40,7 @@ lesscpy>=0.9j
 pyscss>=1.2.0  # MIT License
 django-pyscss>=1.0.1  # BSD License (2 clause)
 kombu>=2.4.8
+libvirt-python>=1.2.5                   # LGPLv2+
 lockfile>=0.8
 lxml>=2.3
 Mako>=0.4.0
