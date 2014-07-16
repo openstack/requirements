@@ -12,7 +12,7 @@ croniter>=0.3.4 # MIT License
 cryptography>=0.4 # Apache-2.0
 ddt>=0.4.0
 decorator>=3.4.0
-diskimage-builder
+diskimage-builder>=0.1.20
 Django>=1.4,<1.7
 django-bootstrap-form
 django_compressor>=1.4
