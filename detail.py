@@ -19,10 +19,11 @@ from __future__ import print_function
 import contextlib
 import json
 import os
-import pkg_resources
 import sys
 import traceback
 import urllib
+
+import pkg_resources
 
 try:
     PYPI_LOCATION = os.environ['PYPI_LOCATION']
@@ -61,7 +62,7 @@ def release_data(req):
                 attempted.append(url)
                 continue
             return json.loads(uh.read())
-    attempted = [" * %s" % url for url in attempted]
+    attempted = [" * %s" % u for u in attempted]
     raise IOError("Could not find '%s' on pypi\nAttempted urls:\n%s"
                   % (req.key, "\n".join(attempted)))
 
