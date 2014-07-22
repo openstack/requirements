@@ -66,7 +66,7 @@ passlib
 Paste
 PasteDeploy>=1.5.0
 pbr>=0.6,!=0.7,<1.0
-pecan>=0.4.5
+pecan>=0.5.0
 pexpect>=3.1 # ISC License
 Pillow==2.4.0 # MIT
 pip>=1.4
