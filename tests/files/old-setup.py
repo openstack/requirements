@@ -15,7 +15,6 @@
 # limitations under the License.
 
 import setuptools
-
 from swift import __canonical_version__ as version
 
 
