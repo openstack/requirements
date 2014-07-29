@@ -98,7 +98,7 @@ python-ironicclient
 python-keystoneclient>=0.9.0
 python-marconiclient>=0.0.2
 python-memcached>=1.48
-python-neutronclient>=2.3.5,<3
+python-neutronclient>=2.3.6,<3
 python-novaclient>=2.17.0
 python-openstackclient>=0.3.0
 python-saharaclient>=0.6.0
