@@ -158,7 +158,7 @@ xstatic-jquery.tablesorter>=2.0.5b.0  # MIT License
 xstatic-jquery-ui>=1.8.18  # MIT License
 xstatic-jsencrypt>=2.0.0.2  # MIT License
 xstatic-qunit>=1.14.0.2  # MIT License
-xstatic-rickshaw>=1.4.6.2  # BSD License (prior)
+xstatic-rickshaw>=1.5.0  # BSD License (prior)
 xstatic-spin>=1.2.5.2  # MIT License
 
 # Testing tools below, which are typically in test-requires.txt
