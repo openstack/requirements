@@ -36,6 +36,7 @@ openstack/oslo.db
 openstack/oslo.i18n
 openstack/oslo.messaging
 openstack/oslo.middleware
+openstack/oslo.serialization
 openstack/oslotest
 openstack/oslo.version
 openstack/oslo.vmware
