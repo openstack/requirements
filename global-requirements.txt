@@ -119,11 +119,11 @@ rtslib-fb>=2.1.39
 simplejson>=2.0.9
 six>=1.7.0
 sockjs-tornado>=1.0.0,<2.0.0
-# The SQLA requirement looks weird, but it's here for a reason.
-# The version of pip shipped with distros treats 0.8beta1 (which is
-# on pypi) as < 0.8 so the "clear" version of this requirement, is
-# actually broken. The fix for this isn't until pip 1.4.1, which is
-# way more current than what most distros have.
+# The SQLA requirement looks weird, but it's here for a reason.  The
+# version of pip shipped with distros will treat 0.9b* as < 0.8 if it's
+# anytime uploaded to PyPI, so the "clear" version of this requirement
+# is potentially broken. The fix for this isn't until pip 1.4.1, which
+# is way more current than what most distros have.
 SQLAlchemy>=0.8.4,<=0.8.99,>=0.9.7,<=0.9.99
 sqlalchemy-migrate>=0.9.1
 stevedore>=0.14
