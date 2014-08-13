@@ -161,7 +161,10 @@ xstatic-spin>=1.2.5.2  # MIT License
 
 # Testing tools below, which are typically in test-requires.txt
 
+# bash8 has been renamed to bashate, bash8 will be removed
+# once all projects are updated.
 bash8
+bashate>=0.2 # Apache-2.0
 cliff-tablib>=1.0
 configobj
 coverage>=3.6
