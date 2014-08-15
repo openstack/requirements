@@ -69,7 +69,9 @@ openstack/tuskar-ui
 openstack/volume-api
 stackforge/blazar
 stackforge/blazar-nova
+stackforge/congress
 stackforge/python-blazarclient
+stackforge/python-congressclient
 stackforge/python-openstacksdk
 stackforge/python-solumclient
 stackforge/rally
