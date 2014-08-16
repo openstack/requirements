@@ -16,7 +16,6 @@ openstack/image-api
 openstack/ironic
 openstack/ironic-python-agent
 openstack/keystone
-openstack/marconi
 openstack/neutron
 openstack/nova
 openstack/object-api
@@ -40,13 +39,13 @@ openstack/python-glanceclient
 openstack/python-heatclient
 openstack/python-ironicclient
 openstack/python-keystoneclient
-openstack/python-marconiclient
 openstack/python-neutronclient
 openstack/python-novaclient
 openstack/python-openstackclient
 openstack/python-saharaclient
 openstack/python-swiftclient
 openstack/python-troveclient
+openstack/python-zaqarclient
 openstack/sahara
 openstack/sahara-dashboard
 openstack/sahara-extra
@@ -58,6 +57,7 @@ openstack/tempest
 openstack/tempest-lib
 openstack/trove
 openstack/volume-api
+openstack/zaqar
 stackforge/blazar
 stackforge/blazar-nova
 stackforge/python-blazarclient
