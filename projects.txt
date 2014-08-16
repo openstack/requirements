@@ -19,7 +19,6 @@ openstack/ironic-python-agent
 openstack/keystone
 openstack/keystonemiddleware
 openstack/keystone-specs
-openstack/marconi
 openstack/neutron
 openstack/nova
 openstack/object-api
@@ -49,13 +48,13 @@ openstack/python-glanceclient
 openstack/python-heatclient
 openstack/python-ironicclient
 openstack/python-keystoneclient
-openstack/python-marconiclient
 openstack/python-neutronclient
 openstack/python-novaclient
 openstack/python-openstackclient
 openstack/python-saharaclient
 openstack/python-swiftclient
 openstack/python-troveclient
+openstack/python-zaqarclient
 openstack/sahara
 openstack/sahara-dashboard
 openstack/sahara-extra
@@ -69,6 +68,7 @@ openstack/training-guides
 openstack/trove
 openstack/tuskar-ui
 openstack/volume-api
+openstack/zaqar
 stackforge/blazar
 stackforge/blazar-nova
 stackforge/python-blazarclient
