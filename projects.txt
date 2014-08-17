@@ -71,7 +71,9 @@ openstack/volume-api
 openstack/zaqar
 stackforge/blazar
 stackforge/blazar-nova
+stackforge/congress
 stackforge/python-blazarclient
+stackforge/python-congressclient
 stackforge/python-openstacksdk
 stackforge/python-solumclient
 stackforge/rally
