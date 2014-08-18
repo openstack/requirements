@@ -114,7 +114,6 @@ PyYAML>=3.1.0
 qpid-python
 requests>=1.2.1
 requests-kerberos>=0.5 # MIT
-requests-mock>=0.4.0  # Apache-2.0
 rfc3986>=0.2.0  # Apache-2.0
 Routes>=1.12.3,!=2.0
 rtslib-fb>=2.1.39
@@ -206,6 +205,7 @@ python-ldap==2.3.13
 python-subunit>=0.0.18
 pyzmq>=14.3.1 # LGPL+BSD
 redis
+requests-mock>=0.4.0  # Apache-2.0
 retrying>=1.2.2 # Apache-2.0
 selenium
 sphinx>=1.1.2,!=1.2.0,<1.3
