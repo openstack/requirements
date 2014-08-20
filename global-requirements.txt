@@ -108,6 +108,7 @@ python-openstackclient>=0.3.0
 python-saharaclient>=0.6.0
 python-swiftclient>=2.2.0
 python-troveclient>=1.0.4
+python-zaqarclient>=0.0.3
 pytz>=2010h
 pyudev
 PyYAML>=3.1.0
