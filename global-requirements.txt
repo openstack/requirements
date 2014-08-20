@@ -193,7 +193,7 @@ nosexcover
 openstack-doc-tools>=0.18.1
 openstack.nose_plugin>=0.7
 oslosphinx
-oslotest
+oslotest>=1.1.0
 pep8==1.5.7
 proboscis==1.2.5.3
 psycopg2
