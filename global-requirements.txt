@@ -11,6 +11,7 @@ coinor.pulp>=1.0.4
 croniter>=0.3.4 # MIT License
 ddt>=0.4.0
 decorator>=3.4.0
+dib-utils  # Apache-2.0
 diskimage-builder
 Django>=1.4,<1.7
 django-bootstrap-form
