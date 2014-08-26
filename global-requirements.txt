@@ -81,7 +81,7 @@ PrettyTable>=0.7,<0.8
 psutil>=1.1.1,<2.0.0
 pyasn1
 pyasn1_modules
-pycadf>=0.5.1
+pycadf>=0.6.0
 pycrypto>=2.6
 pyeclib>=0.9.2                          # BSD
 pyghmi>=0.6.11
