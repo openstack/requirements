@@ -1,6 +1,4 @@
-openstack-dev/devstack
 openstack-dev/hacking
-openstack-infra/devstack-gate
 openstack/api-site
 openstack/ceilometer
 openstack/cinder
