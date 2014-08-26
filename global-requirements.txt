@@ -174,7 +174,7 @@ doc8  # Apache-2.0
 docutils==0.9.1
 feedparser
 fixtures>=0.3.14
-flake8==2.2.2,==2.2.3
+flake8==2.2.3
 hacking>=0.9.2,<0.10
 hgtools # dependency of pytest-runner that is only in setup_requires
 httpretty>=0.8.0,!=0.8.1,!=0.8.2,!=0.8.3
