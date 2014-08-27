@@ -17,6 +17,7 @@ eventlet>=0.13.0
 extras
 falcon>=0.1.6,<0.1.7
 Flask>=0.10,<1.0
+futures>=2.1.6
 greenlet>=0.3.2
 happybase>=0.4
 httplib2
