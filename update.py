@@ -67,6 +67,16 @@ setuptools.setup(
 """
 
 
+# A header for the requirements file(s).
+_REQS_HEADER = [
+    '# The order of packages is significant, because pip processes '
+    'them in the order\n',
+    '# of appearance. Changing the order has an impact on the overall '
+    'integration\n',
+    '# process, which may cause wedges in the gate later.\n',
+]
+
+
 def _parse_pip(pip):
 
     install_require = req.InstallRequirement.from_line(pip)
@@ -120,6 +130,11 @@ def _sync_requirements_file(source_reqs, dev_reqs, dest_path, suffix):
     print("Syncing %s" % dest_path)
 
     with open(dest_path, 'w') as new_reqs:
+
+        # Check the instructions header
+        if dest_reqs[:len(_REQS_HEADER)] != _REQS_HEADER:
+            new_reqs.writelines(_REQS_HEADER)
+
         for old_line in dest_reqs:
             old_require = old_line.strip()
 
