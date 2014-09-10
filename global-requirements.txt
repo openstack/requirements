@@ -111,7 +111,7 @@ python-novaclient>=2.17.0
 python-openstackclient>=0.3.0
 python-saharaclient>=0.7.1
 python-swiftclient>=2.2.0
-python-troveclient>=1.0.4
+python-troveclient>=1.0.7
 python-zaqarclient>=0.0.3
 pytz>=2010h
 pyudev
