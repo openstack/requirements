@@ -94,6 +94,17 @@ class UpdateTest(testtools.TestCase):
         self.assertIn("python-keystoneclient>=0.4.1", reqs)
         self.assertIn("SQLAlchemy>=0.7,<=0.7.99", reqs)
 
+    def test_requirements_header(self):
+        _REQS_HEADER = [
+            '# The order of packages is significant, because pip processes '
+            'them in the order',
+            '# of appearance. Changing the order has an impact on the overall '
+            'integration',
+            '# process, which may cause wedges in the gate later.',
+        ]
+        reqs = _file_to_list(self.proj_file)
+        self.assertEqual(_REQS_HEADER, reqs[:3])
+
     def test_project_with_oslo(self):
         reqs = _file_to_list(self.oslo_file)
         oslo_tar = ("-f http://tarballs.openstack.org/oslo.config/"
