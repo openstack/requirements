@@ -39,7 +39,6 @@ jsonrpclib
 jsonschema>=2.0.0,<3.0.0
 kazoo>=1.3.1
 keystonemiddleware>=1.0.0
-lesscpy>=0.9j
 pyscss>=1.2.1,<1.3  # MIT License
 django-pyscss>=1.0.2  # BSD License (2 clause)
 kombu>=2.4.8
