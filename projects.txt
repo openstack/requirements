@@ -16,7 +16,6 @@ openstack/ironic
 openstack/ironic-python-agent
 openstack/keystone
 openstack/keystonemiddleware
-openstack/keystone-specs
 openstack/neutron
 openstack/nova
 openstack/object-api
