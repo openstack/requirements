@@ -179,10 +179,13 @@ def _copy_requires(suffix, dest_dir):
     source_reqs = _parse_reqs('global-requirements.txt')
     dev_reqs = _parse_reqs('dev-requirements.txt')
 
-    target_files = (
+    target_files = [
         'requirements.txt', 'tools/pip-requires',
         'test-requirements.txt', 'tools/test-requires',
-        'requirements-py3.txt', 'test-requirements-py3.txt')
+    ]
+    for py_version in (2, 3):
+        target_files.append('requirements-py%s.txt' % py_version)
+        target_files.append('test-requirements-py%s.txt' % py_version)
 
     for dest in target_files:
         dest_path = os.path.join(dest_dir, dest)
