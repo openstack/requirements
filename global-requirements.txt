@@ -172,7 +172,7 @@ cliff-tablib>=1.0
 configobj
 coverage>=3.6
 discover
-django-nose
+django-nose>=1.2
 doc8  # Apache-2.0
 feedparser
 fixtures>=0.3.14
