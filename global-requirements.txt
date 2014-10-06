@@ -20,7 +20,7 @@ Django>=1.4.2,<1.7
 django-bootstrap-form
 django_compressor>=1.4
 django_openstack_auth>=1.1.7
-dnspython>=1.9.4
+dnspython>=1.12.0
 dogpile.cache>=0.5.3
 enum34
 eventlet>=0.15.2
