@@ -171,7 +171,7 @@ For new Requirements
   in ``global-requirements.txt``?
 
   Everyone has their own pet libraries that they like to use, but we
-  do not need 3 different request mocking libraries in OpenStack.
+  do not need three different request mocking libraries in OpenStack.
 
   If this new requirement is about replacing an existing library with
   one that's better suited for our needs, then we also need the
@@ -203,7 +203,7 @@ but will not introduce any changes that would make it impossible to
 run on the latest Ubuntu LTS or latest RHEL.
 
 As such we really need to know what the current state of packaging is
-on these platforms (and ideally Debian and SuSE as well).
+on these platforms (and ideally Debian and SUSE as well).
 
 For people unfamiliar with Linux Distro packaging you can use the
 following tools to search for packages:
