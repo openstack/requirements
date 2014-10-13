@@ -8,6 +8,7 @@ openstack/designate
 openstack/diskimage-builder
 openstack/django_openstack_auth
 openstack/glance
+openstack/ha-guide
 openstack/heat
 openstack/horizon
 openstack/identity-api
