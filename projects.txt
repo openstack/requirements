@@ -17,6 +17,7 @@ openstack/ironic
 openstack/ironic-python-agent
 openstack/keystone
 openstack/keystonemiddleware
+openstack/manila
 openstack/neutron
 openstack/nova
 openstack/object-api
@@ -50,6 +51,7 @@ openstack/python-glanceclient
 openstack/python-heatclient
 openstack/python-ironicclient
 openstack/python-keystoneclient
+openstack/python-manilaclient
 openstack/python-neutronclient
 openstack/python-novaclient
 openstack/python-openstackclient
