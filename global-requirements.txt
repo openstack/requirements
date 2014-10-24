@@ -210,7 +210,7 @@ pyflakes==0.8.1
 pylint==0.25.2
 pysendfile==2.0.0
 pysqlite
-python-ldap==2.3.13
+python-ldap>=2.4
 python-subunit>=0.0.18
 pyzmq>=14.3.1 # LGPL+BSD
 redis
