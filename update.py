@@ -119,7 +119,8 @@ def _parse_reqs(filename):
     return reqs
 
 
-def _sync_requirements_file(source_reqs, dev_reqs, dest_path, suffix):
+def _sync_requirements_file(source_reqs, dev_reqs, dest_path,
+                            suffix, softupdate):
     dest_reqs = _readlines(dest_path)
 
     # this is specifically for global-requirements gate jobs so we don't
@@ -157,6 +158,13 @@ def _sync_requirements_file(source_reqs, dev_reqs, dest_path, suffix):
                     new_reqs.write("%s\n" % dev_reqs[old_pip])
                 else:
                     new_reqs.write("%s\n" % source_reqs[old_pip])
+            elif softupdate:
+                # under softupdate we pass through anything we don't
+                # understand, this is intended for ecosystem projects
+                # that want to stay in sync with existing
+                # requirements, but also add their own above and
+                # beyond
+                new_reqs.write(old_line)
             else:
                 # What do we do if we find something unexpected?
                 #
@@ -173,7 +181,7 @@ def _sync_requirements_file(source_reqs, dev_reqs, dest_path, suffix):
                     sys.exit(1)
 
 
-def _copy_requires(suffix, dest_dir):
+def _copy_requires(suffix, softupdate, dest_dir):
     """Copy requirements files."""
 
     source_reqs = _parse_reqs('global-requirements.txt')
@@ -192,7 +200,8 @@ def _copy_requires(suffix, dest_dir):
         if os.path.exists(dest_path):
             print("_sync_requirements_file(%s, %s, %s)" %
                   (source_reqs, dev_reqs, dest_path))
-            _sync_requirements_file(source_reqs, dev_reqs, dest_path, suffix)
+            _sync_requirements_file(source_reqs, dev_reqs, dest_path,
+                                    suffix, softupdate)
 
 
 def _write_setup_py(dest_path):
@@ -214,7 +223,7 @@ def main(options, args):
     if len(args) != 1:
         print("Must specify directory to update")
         sys.exit(1)
-    _copy_requires(options.suffix, args[0])
+    _copy_requires(options.suffix, options.softupdate, args[0])
     _write_setup_py(args[0])
 
 
@@ -222,5 +231,8 @@ if __name__ == "__main__":
     parser = optparse.OptionParser()
     parser.add_option("-o", "--output-suffix", dest="suffix", default="",
                       help="output suffix for updated files (i.e. .global)")
+    parser.add_option("-s", "--soft-update", dest="softupdate",
+                      action="store_true",
+                      help="Pass through extra requirements without warning.")
     (options, args) = parser.parse_args()
     main(options, args)

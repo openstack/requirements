@@ -143,3 +143,10 @@ class UpdateTest(testtools.TestCase):
             [sys.executable, "update.py", "bad_project"],
             env=env)
         self.assertEqual(returncode, 0)
+
+    def test_requirement_soft_update(self):
+        returncode = subprocess.call(
+            [sys.executable, "update.py", "-s", "bad_project"])
+        self.assertEqual(returncode, 0)
+        reqs = _file_to_list(self.bad_proj_file)
+        self.assertIn("thisisnotarealdepedency", reqs)
