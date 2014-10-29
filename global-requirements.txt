@@ -68,6 +68,7 @@ osprofiler>=0.3.0                       # Apache-2.0
 os-apply-config
 os-cloud-config
 os-collect-config
+os-net-config
 os-refresh-config
 paramiko>=1.13.0
 passlib
