@@ -100,7 +100,7 @@ pysaml2
 # as that has implications for testing in the gate. An exception
 # is currently being made for neutron client because of the need
 # for an incompatible change in their next release.
-python-barbicanclient>=2.1.0
+python-barbicanclient>=2.1.0,!=3.0.0
 python-ceilometerclient>=1.0.6
 python-cinderclient>=1.1.0
 python-designateclient>=1.0.0
