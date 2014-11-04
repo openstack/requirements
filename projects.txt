@@ -1,5 +1,6 @@
 openstack-dev/hacking
 openstack/api-site
+openstack/barbican
 openstack/ceilometer
 openstack/cinder
 openstack/cliff
@@ -44,6 +45,7 @@ openstack/oslo.version
 openstack/oslo.vmware
 openstack/oslosphinx
 openstack/pycadf
+openstack/python-barbicanclient
 openstack/python-ceilometerclient
 openstack/python-cinderclient
 openstack/python-designateclient
