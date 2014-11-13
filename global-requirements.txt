@@ -70,6 +70,7 @@ os-apply-config
 os-client-config
 os-cloud-config
 os-collect-config
+os-net-config
 os-refresh-config
 paramiko>=1.13.0
 passlib
