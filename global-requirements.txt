@@ -218,7 +218,7 @@ pep8==1.5.7
 proboscis==1.2.5.3
 psycopg2
 pyflakes==0.8.1
-pylint>=0.25.2
+pylint>=1.3.0  # GNU GPL v2
 pysendfile==2.0.0
 pysqlite
 python-ldap>=2.4
