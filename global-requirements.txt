@@ -174,7 +174,7 @@ swift
 testrepository>=0.0.18
 testresources>=0.2.4
 testscenarios>=0.4
-testtools>=0.9.34
+testtools>=0.9.34,!=1.2.0
 trollius>=0.1.4,<0.2
 unittest2
 WebTest>=2.0
