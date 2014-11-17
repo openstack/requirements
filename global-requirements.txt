@@ -237,7 +237,7 @@ swift
 testrepository>=0.0.18
 testresources>=0.2.4
 testscenarios>=0.4
-testtools>=0.9.36,!=1.2.0
+testtools>=0.9.36,!=1.2.0,!=1.4.0
 trollius>=1.0
 unittest2
 wrapt>=1.7.0 # BSD License
