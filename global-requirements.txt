@@ -242,6 +242,7 @@ trollius>=1.0
 unittest2
 wrapt>=1.7.0 # BSD License
 WebTest>=2.0
+Werkzeug>=0.7  # BSD License
 wsgi_intercept>=0.6.1 # MIT License
 xvfbwrapper>=0.1.3 #license: MIT
 zake>=0.1 # Apache-2.0
