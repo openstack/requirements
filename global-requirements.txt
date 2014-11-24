@@ -53,7 +53,7 @@ oslo.rootwrap
 oslo.serialization>=0.1.0               # Apache-2.0
 oslo.utils>=0.1.1                       # Apache-2.0
 oslotest
-oslo.vmware>=0.2                        # Apache-2.0
+oslo.vmware<0.6.0                       # Apache-2.0
 os-apply-config
 os-collect-config
 os-refresh-config
