@@ -53,14 +53,13 @@ networkx>=1.8
 oauthlib>=0.6
 ordereddict
 oslo.config>=1.4.0  # Apache-2.0
-# oslo.db is capped because setuptools 8 changed the way it handles
-# requirements lists (see 4bbac4c9bc5bcba6962921369ce7721d2a544aa4).
-# We need to cap at a version known to work with both juno and kilo,
-# and since 1.2.0 was the last good version known to work we created
-# 1.2.1 with only a requirements change to allow the versions for
-# juno and kilo to overlap. We leave the cap a little loose, in case
-# we have more backports for juno in the 1.2 series.
-oslo.db>=1.0.0,<1.3  # Apache-2.0
+# NOTE(dhellmann): oslo.db is capped because setuptools 8 changed the
+# way it handles requirements lists (see
+# 4bbac4c9bc5bcba6962921369ce7721d2a544aa4).  We need to cap at a
+# version released from oslo.db's stable/juno branch to avoid
+# introducing incompatible secondary dependencies into stable
+# deployments.
+oslo.db>=1.0.0,<1.1  # Apache-2.0
 oslo.i18n>=1.0.0  # Apache-2.0
 oslo.messaging>=1.4.0,!=1.5.0
 oslo.rootwrap>=1.3.0
