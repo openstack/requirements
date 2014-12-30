@@ -123,7 +123,7 @@ pytz<=2014.10
 pyudev<=0.16.1
 PyYAML>=3.1.0,<=3.10
 qpid-python<=0.26.1
-requests>=1.2.1,!=2.4.0,<=2.2.1
+requests>=2.1.0,!=2.4.0,<=2.2.1
 requests-kerberos>=0.5 # MIT
 rfc3986>=0.2.0,<=0.2.0 # Apache-2.0
 Routes>=1.12.3,!=2.0,<=2.1
