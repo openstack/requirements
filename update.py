@@ -96,6 +96,12 @@ def _pass_through(pip):
             pip.startswith('-f'))
 
 
+def _functionally_equal(old_requirement, new_requirement):
+    old_require = req.InstallRequirement.from_line(old_requirement)
+    new_require = req.InstallRequirement.from_line(new_requirement)
+    return old_require.req == new_require.req
+
+
 def _read(filename):
     with open(filename, 'r') as f:
         return f.read()
@@ -156,6 +162,8 @@ def _sync_requirements_file(source_reqs, dev_reqs, dest_path,
                 if ((old_pip in dev_reqs) and (old_require.lower() ==
                                                dev_reqs[old_pip])):
                     new_reqs.write("%s\n" % dev_reqs[old_pip])
+                elif _functionally_equal(old_require, source_reqs[old_pip]):
+                    new_reqs.write(old_line)
                 else:
                     new_reqs.write("%s\n" % source_reqs[old_pip])
             elif softupdate:
