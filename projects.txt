@@ -20,6 +20,9 @@ openstack/keystone
 openstack/keystonemiddleware
 openstack/manila
 openstack/neutron
+openstack/neutron-fwaas
+openstack/neutron-lbaas
+openstack/neutron-vpnaas
 openstack/nova
 openstack/object-api
 openstack/openstack-doc-tools
