@@ -89,6 +89,7 @@ stackforge/blazar
 stackforge/blazar-nova
 stackforge/congress
 stackforge/nova-docker
+stackforge/octavia
 stackforge/python-blazarclient
 stackforge/python-congressclient
 stackforge/python-openstacksdk
