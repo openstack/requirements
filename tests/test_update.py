@@ -19,8 +19,8 @@ import os.path
 import shutil
 import subprocess
 import sys
-import tempfile
 
+import fixtures
 import testtools
 
 
@@ -33,9 +33,7 @@ def _file_to_list(fname):
 
 class UpdateTest(testtools.TestCase):
 
-    def setUp(self):
-        super(UpdateTest, self).setUp()
-        self.dir = tempfile.mkdtemp()
+    def _init_env(self):
         self.project_dir = os.path.join(self.dir, "project")
         self.bad_project_dir = os.path.join(self.dir, "bad_project")
         self.oslo_dir = os.path.join(self.dir, "project_with_oslo")
@@ -74,20 +72,28 @@ class UpdateTest(testtools.TestCase):
         shutil.copy("tests/files/setup.cfg", self.oslo_setup_cfg_file)
         shutil.copy("update.py", os.path.join(self.dir, "update.py"))
 
+    def _run_update(self):
         # now go call update and see what happens
+        subprocess.check_output(
+            [sys.executable, "update.py", "project"])
+        subprocess.check_output([sys.executable, "update.py",
+                                 "project_with_oslo"])
+
+    def setUp(self):
+        super(UpdateTest, self).setUp()
+        self.dir = self.useFixture(fixtures.TempDir()).path
+        self._init_env()
+        # for convenience put us in the directory with the update.py
         self.addCleanup(os.chdir, os.path.abspath(os.curdir))
         os.chdir(self.dir)
-        returncode = subprocess.call([sys.executable, "update.py", "project"])
-        self.assertEqual(returncode, 0)
-        returncode = subprocess.call([sys.executable, "update.py",
-                                     "project_with_oslo"])
-        self.assertEqual(returncode, 0)
 
     def test_requirements(self):
+        self._run_update()
         reqs = _file_to_list(self.req_file)
         self.assertIn("jsonschema>=1.0.0,!=1.4.0,<2", reqs)
 
     def test_project(self):
+        self._run_update()
         reqs = _file_to_list(self.proj_file)
         # ensure various updates take
         self.assertIn("jsonschema>=1.0.0,!=1.4.0,<2", reqs)
@@ -95,6 +101,7 @@ class UpdateTest(testtools.TestCase):
         self.assertIn("SQLAlchemy>=0.7,<=0.7.99", reqs)
 
     def test_requirements_header(self):
+        self._run_update()
         _REQS_HEADER = [
             '# The order of packages is significant, because pip processes '
             'them in the order',
@@ -106,6 +113,7 @@ class UpdateTest(testtools.TestCase):
         self.assertEqual(_REQS_HEADER, reqs[:3])
 
     def test_project_with_oslo(self):
+        self._run_update()
         reqs = _file_to_list(self.oslo_file)
         oslo_tar = ("-f http://tarballs.openstack.org/oslo.config/"
                     "oslo.config-1.2.0a3.tar.gz#egg=oslo.config-1.2.0a3")
@@ -114,6 +122,7 @@ class UpdateTest(testtools.TestCase):
         self.assertNotIn("oslo.config>=1.1.0", reqs)
 
     def test_test_project(self):
+        self._run_update()
         reqs = _file_to_list(self.proj_test_file)
         self.assertIn("testtools>=0.9.32", reqs)
         self.assertIn("testrepository>=0.0.17", reqs)
@@ -121,16 +130,19 @@ class UpdateTest(testtools.TestCase):
         self.assertNotIn("sphinxcontrib-pecanwsme>=0.2", reqs)
 
     def test_install_setup(self):
+        self._run_update()
         setup_contents = _file_to_list(self.setup_file)
         self.assertIn("# THIS FILE IS MANAGED BY THE GLOBAL REQUIREMENTS REPO"
                       " - DO NOT EDIT", setup_contents)
 
     def test_no_install_setup(self):
+        self._run_update()
         setup_contents = _file_to_list(self.old_setup_file)
         self.assertNotIn(
             "# THIS FILE IS MANAGED BY THE GLOBAL REQUIREMENTS REPO"
             " - DO NOT EDIT", setup_contents)
 
+    # These are tests which don't need to run the project update in advance
     def test_requirment_not_in_global(self):
         returncode = subprocess.call([sys.executable, "update.py",
                                      "bad_project"])
@@ -150,3 +162,63 @@ class UpdateTest(testtools.TestCase):
         self.assertEqual(returncode, 0)
         reqs = _file_to_list(self.bad_proj_file)
         self.assertIn("thisisnotarealdepedency", reqs)
+
+    # testing output
+    def test_non_verbose_output(self):
+        output = subprocess.check_output(
+            [sys.executable, "update.py", "project"])
+        expected = 'Version change for: greenlet, sqlalchemy, eventlet, pastedeploy, routes, webob, wsgiref, boto, kombu, pycrypto, python-swiftclient, lxml, jsonschema, python-keystoneclient\n'  # noqa
+        expected += """Updated project/requirements.txt:
+    greenlet>=0.3.1                ->   greenlet>=0.3.2
+    SQLAlchemy>=0.7.8,<=0.7.99     ->   SQLAlchemy>=0.7,<=0.7.99
+    eventlet>=0.9.12               ->   eventlet>=0.12.0
+    PasteDeploy                    ->   PasteDeploy>=1.5.0
+    routes                         ->   Routes>=1.12.3
+    WebOb>=1.2                     ->   WebOb>=1.2.3,<1.3
+    wsgiref                        ->   wsgiref>=0.1.2
+    boto                           ->   boto>=2.4.0
+    kombu>2.4.7                    ->   kombu>=2.4.8
+    pycrypto>=2.1.0alpha1          ->   pycrypto>=2.6
+    python-swiftclient>=1.2,<2     ->   python-swiftclient>=1.2
+    lxml                           ->   lxml>=2.3
+    jsonschema                     ->   jsonschema>=1.0.0,!=1.4.0,<2
+    python-keystoneclient>=0.2.0   ->   python-keystoneclient>=0.4.1
+Version change for: mox, mox3, testrepository, testtools
+Updated project/test-requirements.txt:
+    mox==0.5.3                     ->   mox>=0.5.3
+    mox3==0.7.3                    ->   mox3>=0.7.0
+    testrepository>=0.0.13         ->   testrepository>=0.0.17
+    testtools>=0.9.27              ->   testtools>=0.9.32
+"""
+        self.assertEqual(expected, output)
+
+    def test_verbose_output(self):
+        output = subprocess.check_output(
+            [sys.executable, "update.py", "-v", "project"])
+        expected = """Syncing project/requirements.txt
+Version change for: greenlet, sqlalchemy, eventlet, pastedeploy, routes, webob, wsgiref, boto, kombu, pycrypto, python-swiftclient, lxml, jsonschema, python-keystoneclient\n"""  # noqa
+        expected += """Updated project/requirements.txt:
+    greenlet>=0.3.1                ->   greenlet>=0.3.2
+    SQLAlchemy>=0.7.8,<=0.7.99     ->   SQLAlchemy>=0.7,<=0.7.99
+    eventlet>=0.9.12               ->   eventlet>=0.12.0
+    PasteDeploy                    ->   PasteDeploy>=1.5.0
+    routes                         ->   Routes>=1.12.3
+    WebOb>=1.2                     ->   WebOb>=1.2.3,<1.3
+    wsgiref                        ->   wsgiref>=0.1.2
+    boto                           ->   boto>=2.4.0
+    kombu>2.4.7                    ->   kombu>=2.4.8
+    pycrypto>=2.1.0alpha1          ->   pycrypto>=2.6
+    python-swiftclient>=1.2,<2     ->   python-swiftclient>=1.2
+    lxml                           ->   lxml>=2.3
+    jsonschema                     ->   jsonschema>=1.0.0,!=1.4.0,<2
+    python-keystoneclient>=0.2.0   ->   python-keystoneclient>=0.4.1
+Syncing project/test-requirements.txt
+Version change for: mox, mox3, testrepository, testtools
+Updated project/test-requirements.txt:
+    mox==0.5.3                     ->   mox>=0.5.3
+    mox3==0.7.3                    ->   mox3>=0.7.0
+    testrepository>=0.0.13         ->   testrepository>=0.0.17
+    testtools>=0.9.27              ->   testtools>=0.9.32
+Syncing setup.py
+"""
+        self.assertEqual(expected, output)

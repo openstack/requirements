@@ -33,6 +33,7 @@ import sys
 
 from pip import req
 
+VERBOSE = None
 
 _setup_py_text = """#!/usr/bin/env python
 # Copyright (c) 2013 Hewlett-Packard Development Company, L.P.
@@ -75,6 +76,21 @@ _REQS_HEADER = [
     'integration\n',
     '# process, which may cause wedges in the gate later.\n',
 ]
+
+
+def verbose(msg):
+    if VERBOSE:
+        print(msg)
+
+
+class Change(object):
+    def __init__(self, name, old, new):
+        self.name = name
+        self.old = old
+        self.new = new
+
+    def __repr__(self):
+        return "%-30.30s ->   %s" % (self.old, self.new)
 
 
 def _parse_pip(pip):
@@ -128,13 +144,13 @@ def _parse_reqs(filename):
 def _sync_requirements_file(source_reqs, dev_reqs, dest_path,
                             suffix, softupdate):
     dest_reqs = _readlines(dest_path)
-
+    changes = []
     # this is specifically for global-requirements gate jobs so we don't
     # modify the git tree
     if suffix:
         dest_path = "%s.%s" % (dest_path, suffix)
 
-    print("Syncing %s" % dest_path)
+    verbose("Syncing %s" % dest_path)
 
     with open(dest_path, 'w') as new_reqs:
 
@@ -165,6 +181,8 @@ def _sync_requirements_file(source_reqs, dev_reqs, dest_path,
                 elif _functionally_equal(old_require, source_reqs[old_pip]):
                     new_reqs.write(old_line)
                 else:
+                    changes.append(
+                        Change(old_pip, old_require, source_reqs[old_pip]))
                     new_reqs.write("%s\n" % source_reqs[old_pip])
             elif softupdate:
                 # under softupdate we pass through anything we don't
@@ -187,6 +205,12 @@ def _sync_requirements_file(source_reqs, dev_reqs, dest_path,
                 print("'%s' is not in global-requirements.txt" % old_pip)
                 if os.getenv('NON_STANDARD_REQS', '0') != '1':
                     sys.exit(1)
+    # always print out what we did if we did a thing
+    if changes:
+        print("Version change for: %s" % ", ".join([x.name for x in changes]))
+        print("Updated %s:" % dest_path)
+        for change in changes:
+            print("    %s" % change)
 
 
 def _copy_requires(suffix, softupdate, dest_dir):
@@ -206,8 +230,6 @@ def _copy_requires(suffix, softupdate, dest_dir):
     for dest in target_files:
         dest_path = os.path.join(dest_dir, dest)
         if os.path.exists(dest_path):
-            print("_sync_requirements_file(%s, %s, %s)" %
-                  (source_reqs, dev_reqs, dest_path))
             _sync_requirements_file(source_reqs, dev_reqs, dest_path,
                                     suffix, softupdate)
 
@@ -221,7 +243,7 @@ def _write_setup_py(dest_path):
     has_pbr = 'pbr' in _read(target_setup_py)
     is_pbr = 'name = pbr' in _read(setup_cfg)
     if has_pbr and not is_pbr:
-        print("Syncing setup.py")
+        verbose("Syncing setup.py")
         # We only want to sync things that are up to date with pbr mechanics
         with open(target_setup_py, 'w') as setup_file:
             setup_file.write(_setup_py_text)
@@ -231,6 +253,8 @@ def main(options, args):
     if len(args) != 1:
         print("Must specify directory to update")
         sys.exit(1)
+    global VERBOSE
+    VERBOSE = options.verbose
     _copy_requires(options.suffix, options.softupdate, args[0])
     _write_setup_py(args[0])
 
@@ -242,5 +266,8 @@ if __name__ == "__main__":
     parser.add_option("-s", "--soft-update", dest="softupdate",
                       action="store_true",
                       help="Pass through extra requirements without warning.")
+    parser.add_option("-v", "--verbose", dest="verbose",
+                      action="store_true",
+                      help="Add further verbosity to output")
     (options, args) = parser.parse_args()
     main(options, args)
