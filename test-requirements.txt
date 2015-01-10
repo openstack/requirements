@@ -1,6 +1,6 @@
 # NOTE: These are requirements for testing the requirements project only
 #       See global-requirements for the actual requirements list
-hacking>=0.9.4,<0.10
+hacking>=0.10,<0.11
 fixtures>=0.3.14
 testrepository>=0.0.18
 testtools>=0.9.36
