@@ -25,7 +25,6 @@ extras
 falcon>=0.1.6,<0.2.0
 Flask>=0.10,<1.0
 futures>=2.1.6
-gear
 glance_store>=0.1.1                       # Apache-2.0
 greenio>=0.6.0
 greenlet>=0.3.2
