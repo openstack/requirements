@@ -22,6 +22,7 @@ django_compressor>=1.4
 django_openstack_auth>=1.1.7
 dnspython>=1.12.0
 dogpile.cache>=0.5.3
+elasticsearch>=1.3.0
 enum34
 eventlet>=0.15.2
 extras
