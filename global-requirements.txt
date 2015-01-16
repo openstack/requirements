@@ -77,7 +77,6 @@ pyOpenSSL>=0.11
 pyparsing>=2.0.1
 pysnmp>=4.2.1,<5.0.0
 pystache
-python-seamicroclient>=0.1.0,<2.0
 # OpenStack clients.
 python-ceilometerclient>=1.0.6,<1.1
 python-cinderclient>=1.0.6,<1.2
