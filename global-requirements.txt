@@ -1,4 +1,4 @@
-alembic>=0.7.1
+alembic>=0.7.2
 anyjson>=0.3.3
 argparse
 argcomplete>=0.6.8  # Apache-2.0
