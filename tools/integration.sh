@@ -6,6 +6,11 @@ function mkvenv {
     rm -rf $venv
     virtualenv $venv
     $venv/bin/pip install -U pip wheel
+
+    # If a change to PBR is being tested, preinstall the wheel for it
+    if [ -n "$PBR_CHANGE" ] ; then
+        $venv/bin/pip install $pbrsdistdir/dist/pbr-*.whl
+    fi
 }
 
 # BASE should be a directory with a subdir called "new" and in that
@@ -15,7 +20,7 @@ BASE=${BASE:-/opt/stack}
 REPODIR=${REPODIR:-$BASE/new}
 
 # TODO: Figure out how to get this on to the box properly
-sudo apt-get install -y --force-yes libxml2-dev libxslt-dev libmysqlclient-dev libpq-dev libnspr4-dev pkg-config libsqlite3-dev libzmq-dev libffi-dev libldap2-dev libsasl2-dev ccache
+sudo apt-get install -y --force-yes libvirt-dev libxml2-dev libxslt-dev libmysqlclient-dev libpq-dev libnspr4-dev pkg-config libsqlite3-dev libzmq-dev libffi-dev libldap2-dev libsasl2-dev ccache
 
 # FOR numpy / pyyaml
 sudo apt-get build-dep -y --force-yes python-numpy
@@ -26,6 +31,20 @@ export PATH=/usr/lib/ccache:$PATH
 
 tmpdir=$(mktemp -d)
 
+# Set up a wheelhouse
+export WHEELHOUSE=${WHEELHOUSE:-$tmpdir/.wheelhouse}
+export PIP_WHEEL_DIR=${PIP_WHEEL_DIR:-$WHEELHOUSE}
+export PIP_FIND_LINKS=${PIP_FIND_LINKS:-file://$WHEELHOUSE}
+mkvenv $tmpdir/wheelhouse
+# Not all packages properly build wheels (httpretty for example).
+# Do our best but ignore errors when making wheels.
+set +e
+grep -v '^#' $REPODIR/requirements/global-requirements.txt | while read req
+do
+    $tmpdir/wheelhouse/bin/pip wheel "$req"
+done
+set -e
+
 #BRANCH
 BRANCH=${OVERRIDE_ZUUL_BRANCH=:-master}
 # PROJECTS is a list of projects that we're testing
@@ -34,6 +53,13 @@ PROJECTS=$*
 pbrsdistdir=$tmpdir/pbrsdist
 git clone $REPODIR/pbr $pbrsdistdir
 cd $pbrsdistdir
+
+# Prepare a wheel and flag whether a change to PBR is being tested
+if git fetch $ZUUL_URL/$ZUUL_PROJECT $ZUUL_REF ; then
+    mkvenv wheel
+    wheel/bin/python setup.py bdist_wheel
+    PBR_CHANGE=1
+fi
 
 eptest=$tmpdir/eptest
 mkdir $eptest
@@ -55,9 +81,25 @@ EOF
 cat <<EOF > setup.py
 import setuptools
 
-setuptools.setup(
-    setup_requires=['pbr'],
-    pbr=True)
+try:
+    from requests import Timeout
+except ImportError:
+    from pip._vendor.requests import Timeout
+
+from socket import error as SocketError
+
+# Some environments have network issues that drop connections to pypi
+# when running integration tests, so we retry here so that hour-long
+# test runs are less likely to fail randomly.
+try:
+    setuptools.setup(
+        setup_requires=['pbr'],
+        pbr=True)
+except (SocketError, Timeout):
+    setuptools.setup(
+        setup_requires=['pbr'],
+        pbr=True)
+
 EOF
 
 mkdir test_project
