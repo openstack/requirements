@@ -13,6 +13,11 @@ function mkvenv {
     fi
 }
 
+function install_all_of_gr {
+    mkvenv $tmpdir/all_requirements
+    $tmpdir/all_requirements/bin/pip install -r $REPODIR/requirements/global-requirements.txt
+}
+
 # BASE should be a directory with a subdir called "new" and in that
 #      dir, there should be a git repository for every entry in PROJECTS
 BASE=${BASE:-/opt/stack}
@@ -124,6 +129,8 @@ projectdir=$tmpdir/projects
 mkdir -p $projectdir
 
 
+# Attempt to install all of global requirements
+install_all_of_gr
 
 for PROJECT in $PROJECTS ; do
     SHORT_PROJECT=$(basename $PROJECT)
