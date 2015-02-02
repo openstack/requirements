@@ -123,6 +123,8 @@ $epvenv/bin/test_cmd | grep 'Test cmd'
 projectdir=$tmpdir/projects
 mkdir -p $projectdir
 
+
+
 for PROJECT in $PROJECTS ; do
     SHORT_PROJECT=$(basename $PROJECT)
     if ! grep 'pbr' $REPODIR/$SHORT_PROJECT/setup.py >/dev/null 2>&1
@@ -159,24 +161,6 @@ for PROJECT in $PROJECTS ; do
     # Clone from synced repo
     shortprojectdir=$projectdir/$SHORT_PROJECT
     git clone $REPODIR/$SHORT_PROJECT $shortprojectdir
-
-    # Test that we can make a tarball from scratch
-    sdistvenv=$tmpdir/sdist
-    mkvenv $sdistvenv
-    cd $shortprojectdir
-    $sdistvenv/bin/python setup.py sdist
-
-    cd $tmpdir
-
-    # Test that the tarball installs
-    tarballvenv=$tmpdir/tarball
-    mkvenv $tarballvenv
-    $tarballvenv/bin/pip install $shortprojectdir/dist/*tar.gz
-
-    # Test pip installing
-    pipvenv=$tmpdir/pip
-    mkvenv $pipvenv
-    $pipvenv/bin/pip install git+file://$shortprojectdir
 
     # Test python setup.py install
     installvenv=$tmpdir/install
