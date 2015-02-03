@@ -5,19 +5,15 @@ openstack/api-site
 openstack/ceilometer
 openstack/cinder
 openstack/cliff
-openstack/compute-api
 openstack/diskimage-builder
 openstack/django_openstack_auth
 openstack/glance
 openstack/heat
 openstack/horizon
-openstack/identity-api
-openstack/image-api
 openstack/ironic
 openstack/keystone
 openstack/neutron
 openstack/nova
-openstack/object-api
 openstack/openstack-doc-tools
 openstack/openstack-manuals
 openstack/operations-guide
@@ -28,7 +24,6 @@ openstack/oslo-incubator
 openstack/oslo.config
 openstack/oslo.messaging
 openstack/oslotest
-openstack/oslo.version
 openstack/oslo.vmware
 openstack/oslosphinx
 openstack/pycadf
@@ -55,7 +50,6 @@ openstack/taskflow
 openstack/tempest
 openstack/tempest-lib
 openstack/trove
-openstack/volume-api
 openstack/zaqar
 stackforge/blazar
 stackforge/blazar-nova
