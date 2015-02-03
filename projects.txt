@@ -4,7 +4,6 @@ openstack/barbican
 openstack/ceilometer
 openstack/cinder
 openstack/cliff
-openstack/compute-api
 openstack/designate
 openstack/diskimage-builder
 openstack/django_openstack_auth
@@ -12,8 +11,6 @@ openstack/glance
 openstack/ha-guide
 openstack/heat
 openstack/horizon
-openstack/identity-api
-openstack/image-api
 openstack/ironic
 openstack/ironic-python-agent
 openstack/keystone
@@ -24,7 +21,6 @@ openstack/neutron-fwaas
 openstack/neutron-lbaas
 openstack/neutron-vpnaas
 openstack/nova
-openstack/object-api
 openstack/openstack-doc-tools
 openstack/openstack-manuals
 openstack/operations-guide
@@ -44,7 +40,6 @@ openstack/oslo.middleware
 openstack/oslo.rootwrap
 openstack/oslo.serialization
 openstack/oslo.utils
-openstack/oslo.version
 openstack/oslo.vmware
 openstack/oslosphinx
 openstack/oslotest
@@ -83,7 +78,6 @@ openstack/training-guides
 openstack/trove
 openstack/tuskar
 openstack/tuskar-ui
-openstack/volume-api
 openstack/zaqar
 stackforge/blazar
 stackforge/blazar-nova
