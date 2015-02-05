@@ -69,7 +69,7 @@ posix_ipc
 PrettyTable>=0.7,<0.8
 psutil>=1.1.1
 pyasn1
-pycadf>=0.4.1,<0.7.0
+pycadf>=0.4.1,<0.6.0
 pycrypto>=2.6
 pyghmi>=0.5.8
 pymongo>=2.4
