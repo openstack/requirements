@@ -37,6 +37,7 @@ openstack/oslo.i18n
 openstack/oslo.log
 openstack/oslo.messaging
 openstack/oslo.middleware
+openstack/oslo.policy
 openstack/oslo.rootwrap
 openstack/oslo.serialization
 openstack/oslo.utils
