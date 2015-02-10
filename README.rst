@@ -108,7 +108,7 @@ General Review Criteria
 
   As a community we value early feedback of broken upstream
   requirements, so version caps should be avoided except when dealing
-  with exceptionally unstable libaries.
+  with exceptionally unstable libraries.
 
   If a library is exceptionally unstable, we should also be
   considering whether we want to replace it over time with one that
