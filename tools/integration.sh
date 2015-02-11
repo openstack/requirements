@@ -55,79 +55,8 @@ BRANCH=${OVERRIDE_ZUUL_BRANCH=:-master}
 # PROJECTS is a list of projects that we're testing
 PROJECTS=$*
 
-pbrsdistdir=$tmpdir/pbrsdist
-git clone $REPODIR/pbr $pbrsdistdir
-cd $pbrsdistdir
-
-# Prepare a wheel and flag whether a change to PBR is being tested
-if git fetch $ZUUL_URL/$ZUUL_PROJECT $ZUUL_REF ; then
-    mkvenv wheel
-    wheel/bin/python setup.py bdist_wheel
-    PBR_CHANGE=1
-fi
-
-eptest=$tmpdir/eptest
-mkdir $eptest
-cd $eptest
-
-cat <<EOF > setup.cfg
-[metadata]
-name = test_project
-
-[entry_points]
-console_scripts =
-    test_cmd = test_project:main
-
-[global]
-setup-hooks =
-    pbr.hooks.setup_hook
-EOF
-
-cat <<EOF > setup.py
-import setuptools
-
-try:
-    from requests import Timeout
-except ImportError:
-    from pip._vendor.requests import Timeout
-
-from socket import error as SocketError
-
-# Some environments have network issues that drop connections to pypi
-# when running integration tests, so we retry here so that hour-long
-# test runs are less likely to fail randomly.
-try:
-    setuptools.setup(
-        setup_requires=['pbr'],
-        pbr=True)
-except (SocketError, Timeout):
-    setuptools.setup(
-        setup_requires=['pbr'],
-        pbr=True)
-
-EOF
-
-mkdir test_project
-cat <<EOF > test_project/__init__.py
-def main():
-    print "Test cmd"
-EOF
-
-epvenv=$eptest/venv
-mkvenv $epvenv
-
-eppbrdir=$tmpdir/eppbrdir
-git clone $REPODIR/pbr $eppbrdir
-$epvenv/bin/pip install -e $eppbrdir
-
-PBR_VERSION=0.0 $epvenv/bin/python setup.py install
-cat $epvenv/bin/test_cmd
-grep 'PBR Generated' $epvenv/bin/test_cmd
-$epvenv/bin/test_cmd | grep 'Test cmd'
-
 projectdir=$tmpdir/projects
 mkdir -p $projectdir
-
 
 # Attempt to install all of global requirements
 install_all_of_gr
