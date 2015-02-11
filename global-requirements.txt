@@ -14,7 +14,7 @@ coinor.pulp>=1.0.4
 croniter>=0.3.4 # MIT License
 cryptography>=0.4 # Apache-2.0
 ddt>=0.4.0
-debtcollector>=0.1  # Apache-2.0
+debtcollector>=0.2  # Apache-2.0
 decorator>=3.4.0
 dib-utils  # Apache-2.0
 diskimage-builder>=0.1.20
