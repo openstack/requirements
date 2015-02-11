@@ -108,7 +108,7 @@ python-cinderclient>=1.1.0
 python-designateclient>=1.0.0
 python-heatclient>=0.2.9,<0.3.0
 python-glanceclient>=0.14.0
-python-ironicclient>=0.2.1
+python-ironicclient>=0.2.1,<=0.3.3
 python-keystoneclient>=0.10.0
 python-marconiclient>=0.0.2
 python-memcached>=1.48
