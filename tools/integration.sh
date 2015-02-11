@@ -6,11 +6,6 @@ function mkvenv {
     rm -rf $venv
     virtualenv $venv
     $venv/bin/pip install -U pip wheel
-
-    # If a change to PBR is being tested, preinstall the wheel for it
-    if [ -n "$PBR_CHANGE" ] ; then
-        $venv/bin/pip install $pbrsdistdir/dist/pbr-*.whl
-    fi
 }
 
 function install_all_of_gr {
