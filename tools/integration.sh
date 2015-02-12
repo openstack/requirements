@@ -5,7 +5,7 @@ function mkvenv {
 
     rm -rf $venv
     virtualenv $venv
-    $venv/bin/pip install -U pip wheel
+    $venv/bin/pip install -U pip wheel pbr
 }
 
 function install_all_of_gr {
