@@ -124,6 +124,7 @@ python-neutronclient>=2.3.6,<3
 python-novaclient>=2.18.0
 python-openstackclient>=0.3.0
 python-saharaclient>=0.7.6
+python-openstacksdk>=0.2.1
 python-swiftclient>=2.2.0
 python-troveclient>=1.0.7
 python-zaqarclient>=0.0.3
