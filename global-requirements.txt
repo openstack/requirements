@@ -32,7 +32,6 @@ extras
 falcon>=0.1.6,<0.2.0
 Flask>=0.10,<1.0
 futures>=2.1.6
-gabbi>=0.6.0
 glance_store>=0.3.0                   # Apache-2.0
 greenlet>=0.3.2
 happybase>=0.5,!=0.7
@@ -206,6 +205,7 @@ doc8  # Apache-2.0
 feedparser
 fixtures>=0.3.14
 flake8==2.2.4
+gabbi>=0.12.0  # Apache-2.0
 hacking>=0.10.0,<0.11
 hgtools # dependency of pytest-runner that is only in setup_requires
 httpretty>=0.8.4,!=0.8.7,!=0.8.8
