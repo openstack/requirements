@@ -17,6 +17,7 @@ openstack/glance_store
 openstack/heat
 openstack/horizon
 openstack/ironic
+openstack/ironic-inspector
 openstack/ironic-lib
 openstack/ironic-python-agent
 openstack/keystone
