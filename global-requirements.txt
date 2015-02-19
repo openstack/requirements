@@ -193,7 +193,6 @@ XStatic-term.js>=0.0.4 # MIT License
 
 bashate>=0.2 # Apache-2.0
 cliff-tablib>=1.0
-configobj
 coverage>=3.6
 demjson # GNU LGPL 3.0
 discover
