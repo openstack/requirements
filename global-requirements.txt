@@ -235,6 +235,12 @@ redis>=2.10.0
 requests-mock>=0.5.1  # Apache-2.0
 retrying>=1.2.3,!=1.3.0 # Apache-2.0
 selenium
+# It may not be safe to have the installation tools upgrade or downgrade
+# setuptools as a side-effect of installing  something else, so we do not
+# specify a version range for setuptools here. In addition the Openstack CI
+# always forces the latest version of setuptools to be installed, so a version
+# specifier here would be unlikely to be respected.
+setuptools
 sphinx>=1.1.2,!=1.2.0,!=1.3b1,<1.3
 sphinxcontrib-docbookrestapi
 sphinxcontrib-httpdomain
