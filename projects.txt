@@ -2,6 +2,7 @@ openstack-dev/hacking
 openstack/api-site
 openstack/barbican
 openstack/ceilometer
+openstack/ceilometermiddleware
 openstack/cinder
 openstack/cliff
 openstack/designate
