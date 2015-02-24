@@ -120,7 +120,7 @@ python-ironicclient>=0.2.1
 python-keystoneclient>=1.1.0
 python-marconiclient>=0.0.2
 python-memcached>=1.48
-python-neutronclient>=2.3.6,<3
+python-neutronclient>=2.3.11,<3
 python-novaclient>=2.18.0,!=2.21.0
 python-saharaclient>=0.7.6
 python-openstacksdk>=0.2.1
