@@ -87,8 +87,8 @@ pecan>=0.8.0
 pexpect>=3.1,!=3.3 # ISC License
 Pillow==2.4.0 # MIT
 Pint>=0.5  # BSD
-pip>=1.4
-pip_missing_reqs>=1.1.5
+pip>=6.0
+pip_missing_reqs>=1.2.1
 posix_ipc
 PrettyTable>=0.7,<0.8
 psutil>=1.1.1,<2.0.0
