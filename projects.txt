@@ -44,6 +44,7 @@ openstack/oslo.rootwrap
 openstack/oslo.serialization
 openstack/oslo.utils
 openstack/oslo.vmware
+openstack/oslo.versionedobjects
 openstack/oslosphinx
 openstack/oslotest
 openstack/pycadf
