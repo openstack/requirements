@@ -56,7 +56,7 @@ netaddr>=0.7.12
 netifaces>=0.10.4
 networkx>=1.8
 oauthlib>=0.6
-openstackdocstheme>=1.0.2
+openstackdocstheme>=1.0.3
 ordereddict
 oslo.config>=1.9.0  # Apache-2.0
 oslo.concurrency>=1.4.1         # Apache-2.0
