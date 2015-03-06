@@ -220,7 +220,7 @@ nose
 nose-exclude
 nosehtmloutput>=0.0.3
 nosexcover
-openstack-doc-tools>=0.21.1
+openstack-doc-tools>=0.23
 openstack.nose_plugin>=0.7
 oslosphinx>=2.2.0  # Apache-2.0
 oslotest>=1.2.0  # Apache-2.0
