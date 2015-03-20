@@ -241,12 +241,13 @@ def _write_setup_py(dest_path):
     if not os.path.exists(target_setup_py):
         return
     has_pbr = 'pbr' in _read(target_setup_py)
-    is_pbr = 'name = pbr' in _read(setup_cfg)
-    if has_pbr and not is_pbr:
-        verbose("Syncing setup.py")
-        # We only want to sync things that are up to date with pbr mechanics
-        with open(target_setup_py, 'w') as setup_file:
-            setup_file.write(_setup_py_text)
+    if has_pbr:
+        if 'name = pbr' not in _read(setup_cfg):
+            verbose("Syncing setup.py")
+            # We only want to sync things that are up to date
+            # with pbr mechanics
+            with open(target_setup_py, 'w') as setup_file:
+                setup_file.write(_setup_py_text)
 
 
 def main(options, args):
