@@ -112,7 +112,7 @@ pysaml2
 # is currently being made for neutron client because of the need
 # for an incompatible change in their next release.
 python-barbicanclient>=3.0.1
-python-ceilometerclient>=1.0.6
+python-ceilometerclient>=1.0.13
 python-cinderclient>=1.1.0
 python-designateclient>=1.0.0
 python-heatclient>=0.3.0
