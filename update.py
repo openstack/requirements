@@ -142,7 +142,7 @@ def _parse_reqs(filename):
 
 
 def _sync_requirements_file(source_reqs, dev_reqs, dest_path,
-                            suffix, softupdate):
+                            suffix, softupdate, hacking):
     dest_reqs = _readlines(dest_path)
     changes = []
     # this is specifically for global-requirements gate jobs so we don't
@@ -169,7 +169,7 @@ def _sync_requirements_file(source_reqs, dev_reqs, dest_path,
 
             # Special cases:
             # projects need to align hacking version on their own time
-            if "hacking" in old_pip:
+            if "hacking" in old_pip and not hacking:
                 new_reqs.write(old_line)
                 continue
 
@@ -213,7 +213,7 @@ def _sync_requirements_file(source_reqs, dev_reqs, dest_path,
             print("    %s" % change)
 
 
-def _copy_requires(suffix, softupdate, dest_dir):
+def _copy_requires(suffix, softupdate, hacking, dest_dir):
     """Copy requirements files."""
 
     source_reqs = _parse_reqs('global-requirements.txt')
@@ -231,7 +231,7 @@ def _copy_requires(suffix, softupdate, dest_dir):
         dest_path = os.path.join(dest_dir, dest)
         if os.path.exists(dest_path):
             _sync_requirements_file(source_reqs, dev_reqs, dest_path,
-                                    suffix, softupdate)
+                                    suffix, softupdate, hacking)
 
 
 def _write_setup_py(dest_path):
@@ -256,7 +256,8 @@ def main(options, args):
         sys.exit(1)
     global VERBOSE
     VERBOSE = options.verbose
-    _copy_requires(options.suffix, options.softupdate, args[0])
+    _copy_requires(options.suffix, options.softupdate, options.hacking,
+                   args[0])
     _write_setup_py(args[0])
 
 
@@ -267,6 +268,9 @@ if __name__ == "__main__":
     parser.add_option("-s", "--soft-update", dest="softupdate",
                       action="store_true",
                       help="Pass through extra requirements without warning.")
+    parser.add_option("-H", "--hacking", dest="hacking",
+                      action="store_true",
+                      help="Include the hacking project.")
     parser.add_option("-v", "--verbose", dest="verbose",
                       action="store_true",
                       help="Add further verbosity to output")
