@@ -17,6 +17,7 @@ openstack/ironic-lib
 openstack/ironic-python-agent
 openstack/keystone
 openstack/keystonemiddleware
+openstack/magnum
 openstack/manila
 openstack/neutron
 openstack/neutron-fwaas
@@ -58,6 +59,7 @@ openstack/python-ironicclient
 openstack/python-keystoneclient
 openstack/python-keystoneclient-kerberos
 openstack/python-keystoneclient-saml2
+openstack/python-magnumclient
 openstack/python-manilaclient
 openstack/python-neutronclient
 openstack/python-novaclient
