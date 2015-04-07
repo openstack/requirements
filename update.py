@@ -31,8 +31,7 @@ import os
 import os.path
 import sys
 
-from pip import req
-
+import pkg_resources
 
 _setup_py_text = """#!/usr/bin/env python
 # Copyright (c) 2013 Hewlett-Packard Development Company, L.P.
@@ -77,17 +76,14 @@ _REQS_HEADER = [
 ]
 
 
-def _parse_pip(pip):
+def _package_name(pip_line):
+    """Return normalized (lower case) package name.
 
-    install_require = req.InstallRequirement.from_line(pip)
-    if install_require.editable:
-        return pip
-    elif hasattr(install_require, "url") and install_require.url:
-        return pip
-    elif hasattr(install_require, "link") and install_require.link:
-        return pip
-    else:
-        return install_require.req.key
+    This is needed for comparing old and new dictionaries of
+    requirements to ensure they match.
+    """
+    name = pkg_resources.Requirement.parse(pip_line).project_name
+    return name.lower()
 
 
 def _pass_through(pip):
@@ -117,7 +113,7 @@ def _parse_reqs(filename):
         pip = pip.strip()
         if _pass_through(pip):
             continue
-        reqs[_parse_pip(pip)] = pip
+        reqs[_package_name(pip)] = pip
     return reqs
 
 
@@ -144,7 +140,7 @@ def _sync_requirements_file(source_reqs, dev_reqs, dest_path, suffix):
                 new_reqs.write(old_line)
                 continue
 
-            old_pip = _parse_pip(old_require.lower())
+            old_pip = _package_name(old_require)
 
             # Special cases:
             # projects need to align hacking version on their own time
@@ -154,8 +150,8 @@ def _sync_requirements_file(source_reqs, dev_reqs, dest_path, suffix):
 
             if old_pip in source_reqs:
                 # allow it to be in dev-requirements
-                if ((old_pip in dev_reqs) and (old_require.lower() ==
-                                               dev_reqs[old_pip])):
+                if ((old_pip in dev_reqs) and (
+                        old_require == dev_reqs[old_pip])):
                     new_reqs.write("%s\n" % dev_reqs[old_pip])
                 else:
                     new_reqs.write("%s\n" % source_reqs[old_pip])
