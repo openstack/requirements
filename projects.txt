@@ -1,5 +1,4 @@
 openstack-dev/hacking
-openstack/api-site
 openstack/barbican
 openstack/ceilometer
 openstack/ceilometermiddleware
@@ -10,7 +9,6 @@ openstack/designate
 openstack/diskimage-builder
 openstack/django_openstack_auth
 openstack/glance
-openstack/ha-guide
 openstack/heat
 openstack/horizon
 openstack/ironic
@@ -25,8 +23,6 @@ openstack/neutron-lbaas
 openstack/neutron-vpnaas
 openstack/nova
 openstack/openstack-doc-tools
-openstack/openstack-manuals
-openstack/operations-guide
 openstack/os-apply-config
 openstack/os-cloud-config
 openstack/os-collect-config
@@ -72,13 +68,11 @@ openstack/sahara
 openstack/sahara-dashboard
 openstack/sahara-extra
 openstack/sahara-image-elements
-openstack/security-doc
 openstack/stevedore
 openstack/swift
 openstack/taskflow
 openstack/tempest-lib
 openstack/tooz
-openstack/training-guides
 openstack/trove
 openstack/tuskar
 openstack/tuskar-ui
