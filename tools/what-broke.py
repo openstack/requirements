@@ -143,6 +143,7 @@ def main():
     reqs = get_requirements()
     # additional sensitive requirements
     reqs.append('tox')
+    reqs.append('pycparser')
     releases = get_releases_since(reqs, since)
     for rel in releases:
         print(rel)
