@@ -24,6 +24,7 @@ openstack/neutron-vpnaas
 openstack/nova
 openstack/openstack-doc-tools
 openstack/os-apply-config
+openstack/os-brick
 openstack/os-cloud-config
 openstack/os-collect-config
 openstack/os-refresh-config
