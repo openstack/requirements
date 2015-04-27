@@ -81,6 +81,7 @@ os-cloud-config
 os-collect-config
 os-net-config
 os-refresh-config
+ovs>=2.4.0.dev0  # Apache-2.0
 paramiko>=1.13.0
 passlib
 Paste
