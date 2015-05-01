@@ -88,7 +88,7 @@ PasteDeploy>=1.5.0
 pbr>=0.6,!=0.7,<1.0
 pecan>=0.8.0
 pexpect>=3.1,!=3.3 # ISC License
-Pillow==2.4.0 # MIT
+Pillow>=2.4.0 # MIT
 Pint>=0.5  # BSD
 pip>=6.0
 posix_ipc
@@ -226,7 +226,7 @@ openstack-doc-tools>=0.23
 openstack.nose_plugin>=0.7
 oslosphinx>=2.5.0  # Apache-2.0
 oslotest>=1.5.1  # Apache-2.0
-proboscis==1.2.5.3
+proboscis>=1.2.5.3
 psycopg2
 pysendfile>=2.0.0
 pysqlite
