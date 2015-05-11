@@ -210,7 +210,7 @@ cliff-tablib>=1.0
 coverage>=3.6
 demjson # GNU LGPL 3.0
 discover
-django-nose
+django-nose>=1.2
 doc8  # Apache-2.0
 feedparser
 fixtures>=0.3.14
