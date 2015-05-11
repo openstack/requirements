@@ -275,7 +275,7 @@ zake>=0.1.6 # Apache-2.0
 # only be updated during the first milestone window of a release,
 # because they are way too disruptive beyond that. Ideally nothing
 # beyond this list would ever use a ==
-flake8==2.2.4
+flake8==2.4.0
 hacking>=0.10.0,<0.11
 mccabe==0.2.1 # MIT License
 pep8==1.5.7
