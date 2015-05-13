@@ -40,7 +40,7 @@ then
     exit 1
 fi
 
-grep -v '^#' global-requirements.txt | while read req
+grep -v '^$\|#' global-requirements.txt | while read req
 do
     echo "Building $req"
     for v in $versions
