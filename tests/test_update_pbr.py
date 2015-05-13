@@ -42,7 +42,6 @@ class UpdateTestPbr(testtools.TestCase):
         self.project_dir = os.path.join(self.dir, "project_pbr")
 
         self.req_file = os.path.join(self.dir, "global-requirements.txt")
-        self.dev_req_file = os.path.join(self.dir, "dev-requirements.txt")
         self.proj_file = os.path.join(self.project_dir, "requirements.txt")
         self.proj_test_file = os.path.join(self.project_dir,
                                            "test-requirements.txt")
@@ -51,7 +50,6 @@ class UpdateTestPbr(testtools.TestCase):
         os.mkdir(self.project_dir)
 
         shutil.copy("tests/files/gr-base.txt", self.req_file)
-        shutil.copy("tests/files/dev-req.txt", self.dev_req_file)
         shutil.copy("tests/files/project.txt", self.proj_file)
         shutil.copy("tests/files/test-project.txt", self.proj_test_file)
         shutil.copy("tests/files/setup.py", self.setup_file)
