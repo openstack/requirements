@@ -1,11 +1,17 @@
 #!/bin/bash -xe
+# Parameters
+# PBR_PIP_VERSION :- if not set, run pip's latest release, if set must be a
+#    valid reference file entry describing what pip to use.
+# Bootstrappping the mkenv needs to install *a* pip
+export PIPVERSION=pip
+PIPFLAGS=${PIPFLAGS:-}
 
 function mkvenv {
     venv=$1
 
     rm -rf $venv
     virtualenv $venv
-    $venv/bin/pip install -U pip wheel pbr
+    $venv/bin/pip install -U $PIPVERSION wheel pbr
 }
 
 function install_all_of_gr {
@@ -36,14 +42,22 @@ export WHEELHOUSE=${WHEELHOUSE:-$tmpdir/.wheelhouse}
 export PIP_WHEEL_DIR=${PIP_WHEEL_DIR:-$WHEELHOUSE}
 export PIP_FIND_LINKS=${PIP_FIND_LINKS:-file://$WHEELHOUSE}
 mkvenv $tmpdir/wheelhouse
-# Not all packages properly build wheels (httpretty for example).
-# Do our best but ignore errors when making wheels.
-set +e
-grep -v '^#' $REPODIR/requirements/global-requirements.txt | while read req
-do
-    $tmpdir/wheelhouse/bin/pip wheel "$req"
-done
-set -e
+# Specific PIP version - must succeed to be useful.
+# - build/download a local wheel so we don't hit the network on each venv.
+if [ -n "${PBR_PIP_VERSION:-}" ]; then
+    td=$(mktemp -d)
+    $tmpdir/wheelhouse/bin/pip wheel -w $td $PBR_PIP_VERSION
+    # This version will now be installed in every new venv.
+    export PIPVERSION="$td/$(ls $td)"
+    $tmpdir/wheelhouse/bin/pip install -U $PIPVERSION
+    # We have pip in global-requirements as open-ended requirements,
+    # but since we don't use -U in any other invocations, our version
+    # of pip should be sticky.
+fi
+# Build wheels of everything (that can) to make things faster.
+# pip will try everything, but exits non-zero if any one thing fails.
+$tmpdir/wheelhouse/bin/pip wheel -w $WHEELHOUSE -f $WHEELHOUSE -r \
+    $REPODIR/requirements/global-requirements.txt || true
 
 #BRANCH
 BRANCH=${OVERRIDE_ZUUL_BRANCH=:-master}
