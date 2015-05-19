@@ -257,6 +257,7 @@ selenium
 # specifier here would be unlikely to be respected.
 setuptools
 sphinx>=1.1.2,!=1.2.0,!=1.3b1,<1.3
+sphinxcontrib-blockdiag
 sphinxcontrib-docbookrestapi
 sphinxcontrib-httpdomain
 sphinxcontrib-seqdiag
