@@ -90,3 +90,4 @@ stackforge/octavia
 stackforge/python-blazarclient
 stackforge/python-openstacksdk
 stackforge/python-solumclient
+stackforge/networking-ovn
