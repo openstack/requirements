@@ -85,7 +85,6 @@ openstack/trove
 openstack/tuskar
 openstack/tuskar-ui
 openstack/zaqar
-stackforge/blazar
 stackforge/blazar-nova
 stackforge/octavia
 stackforge/python-blazarclient
