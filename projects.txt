@@ -1,4 +1,5 @@
 openstack-dev/hacking
+openstack-dev/pbr
 openstack/barbican
 openstack/ceilometer
 openstack/ceilometermiddleware
