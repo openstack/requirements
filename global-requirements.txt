@@ -119,7 +119,7 @@ pyOpenSSL>=0.11
 pyparsing>=2.0.1
 pysnmp>=4.2.1,<5.0.0
 pystache
-pysaml2
+pysaml2>=2.4.0
 # OpenStack clients. None of these should have an upper bound
 # as that has implications for testing in the gate. An exception
 # is currently being made for neutron client because of the need
