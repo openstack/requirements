@@ -46,6 +46,7 @@ openstack/oslo.middleware
 openstack/oslo.policy
 openstack/oslo.rootwrap
 openstack/oslo.serialization
+openstack/oslo.service
 openstack/oslo.utils
 openstack/oslo.versionedobjects
 openstack/oslo.vmware
