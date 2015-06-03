@@ -77,9 +77,9 @@ _REQS_HEADER = [
 ]
 
 
-def verbose(msg):
+def verbose(msg, stdout):
     if VERBOSE:
-        print(msg)
+        stdout.write(msg + "\n")
 
 
 class Change(object):
@@ -138,7 +138,7 @@ def _parse_reqs(filename):
 
 
 def _sync_requirements_file(
-        source_reqs, dest_path, suffix, softupdate, hacking):
+        source_reqs, dest_path, suffix, softupdate, hacking, stdout):
     dest_reqs = _readlines(dest_path)
     changes = []
     # this is specifically for global-requirements gate jobs so we don't
@@ -146,10 +146,9 @@ def _sync_requirements_file(
     if suffix:
         dest_path = "%s.%s" % (dest_path, suffix)
 
-    verbose("Syncing %s" % dest_path)
+    verbose("Syncing %s" % dest_path, stdout)
 
     with open(dest_path, 'w') as new_reqs:
-
         # Check the instructions header
         if dest_reqs[:len(_REQS_HEADER)] != _REQS_HEADER:
             new_reqs.writelines(_REQS_HEADER)
@@ -194,18 +193,20 @@ def _sync_requirements_file(
                 # devstack jobs that might have legitimate reasons to
                 # override. For those we support NON_STANDARD_REQS=1
                 # environment variable to turn this into a warning only.
-                print("'%s' is not in global-requirements.txt" % old_pip)
+                stdout.write(
+                    "'%s' is not in global-requirements.txt\n" % old_pip)
                 if os.getenv('NON_STANDARD_REQS', '0') != '1':
-                    sys.exit(1)
+                    raise Exception("nonstandard requirement present.")
     # always print out what we did if we did a thing
     if changes:
-        print("Version change for: %s" % ", ".join([x.name for x in changes]))
-        print("Updated %s:" % dest_path)
+        stdout.write(
+            "Version change for: %s\n" % ", ".join([x.name for x in changes]))
+        stdout.write("Updated %s:\n" % dest_path)
         for change in changes:
-            print("    %s" % change)
+            stdout.write("    %s\n" % change)
 
 
-def _copy_requires(suffix, softupdate, hacking, dest_dir):
+def _copy_requires(suffix, softupdate, hacking, dest_dir, stdout):
     """Copy requirements files."""
 
     source_reqs = _parse_reqs('global-requirements.txt')
@@ -222,10 +223,10 @@ def _copy_requires(suffix, softupdate, hacking, dest_dir):
         dest_path = os.path.join(dest_dir, dest)
         if os.path.exists(dest_path):
             _sync_requirements_file(
-                source_reqs, dest_path, suffix, softupdate, hacking)
+                source_reqs, dest_path, suffix, softupdate, hacking, stdout)
 
 
-def _write_setup_py(dest_path):
+def _write_setup_py(dest_path, stdout):
     target_setup_py = os.path.join(dest_path, 'setup.py')
     setup_cfg = os.path.join(dest_path, 'setup.cfg')
     # If it doesn't have a setup.py, then we don't want to update it
@@ -234,25 +235,14 @@ def _write_setup_py(dest_path):
     has_pbr = 'pbr' in _read(target_setup_py)
     if has_pbr:
         if 'name = pbr' not in _read(setup_cfg):
-            verbose("Syncing setup.py")
+            verbose("Syncing setup.py", stdout)
             # We only want to sync things that are up to date
             # with pbr mechanics
             with open(target_setup_py, 'w') as setup_file:
                 setup_file.write(_setup_py_text)
 
 
-def main(options, args):
-    if len(args) != 1:
-        print("Must specify directory to update")
-        sys.exit(1)
-    global VERBOSE
-    VERBOSE = options.verbose
-    _copy_requires(options.suffix, options.softupdate, options.hacking,
-                   args[0])
-    _write_setup_py(args[0])
-
-
-if __name__ == "__main__":
+def main(argv=None, stdout=None):
     parser = optparse.OptionParser()
     parser.add_option("-o", "--output-suffix", dest="suffix", default="",
                       help="output suffix for updated files (i.e. .global)")
@@ -265,5 +255,18 @@ if __name__ == "__main__":
     parser.add_option("-v", "--verbose", dest="verbose",
                       action="store_true",
                       help="Add further verbosity to output")
-    (options, args) = parser.parse_args()
-    main(options, args)
+    options, args = parser.parse_args(argv)
+    if len(args) != 1:
+        print("Must specify directory to update")
+        raise Exception("Must specify one and only one directory to update.")
+    global VERBOSE
+    VERBOSE = options.verbose
+    if stdout is None:
+        stdout = sys.stdout
+    _copy_requires(options.suffix, options.softupdate, options.hacking,
+                   args[0], stdout=stdout)
+    _write_setup_py(args[0], stdout=stdout)
+
+
+if __name__ == "__main__":
+    main()

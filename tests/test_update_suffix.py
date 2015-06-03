@@ -17,11 +17,11 @@ from __future__ import print_function
 import os
 import os.path
 import shutil
-import subprocess
-import sys
 import tempfile
 
 import testtools
+
+import update
 
 
 def _file_to_list(fname):
@@ -64,10 +64,8 @@ class UpdateTestWithSuffix(testtools.TestCase):
         # now go call update and see what happens
         self.addCleanup(os.chdir, os.path.abspath(os.curdir))
         os.chdir(self.dir)
-        subprocess.call([sys.executable, "update.py",
-                         "-o", "global", "project"])
-        subprocess.call([sys.executable, "update.py",
-                         "-o", "global", "project_with_oslo"])
+        update.main(['-o', 'global', 'project'])
+        update.main(['-o', 'global', 'project_with_oslo'])
 
     def test_requirements(self):
         # this is the sanity check test

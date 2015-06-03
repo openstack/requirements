@@ -20,11 +20,11 @@ from __future__ import print_function
 
 import os
 import shutil
-import subprocess
-import sys
 import tempfile
 
 import testtools
+
+import update
 
 
 def _file_to_list(fname):
@@ -59,7 +59,7 @@ class UpdateTestPbr(testtools.TestCase):
         # now go call update and see what happens
         self.addCleanup(os.chdir, os.path.abspath(os.curdir))
         os.chdir(self.dir)
-        subprocess.call([sys.executable, "update.py", "project_pbr"])
+        update.main(["project_pbr"])
 
     def test_requirements(self):
         reqs = _file_to_list(self.req_file)

@@ -17,11 +17,12 @@ from __future__ import print_function
 import os
 import os.path
 import shutil
-import subprocess
-import sys
+import StringIO
 
 import fixtures
 import testtools
+
+import update
 
 
 def _file_to_list(fname):
@@ -72,10 +73,8 @@ class UpdateTest(testtools.TestCase):
 
     def _run_update(self):
         # now go call update and see what happens
-        subprocess.check_output(
-            [sys.executable, "update.py", "project"])
-        subprocess.check_output([sys.executable, "update.py",
-                                 "project_with_oslo"])
+        update.main(['project'])
+        update.main(['project_with_oslo'])
 
     def setUp(self):
         super(UpdateTest, self).setUp()
@@ -140,29 +139,23 @@ class UpdateTest(testtools.TestCase):
 
     # These are tests which don't need to run the project update in advance
     def test_requirment_not_in_global(self):
-        returncode = subprocess.call([sys.executable, "update.py",
-                                     "bad_project"])
-        self.assertEqual(returncode, 1)
+        with testtools.ExpectedException(Exception):
+            update.main(['bad_project'])
 
     def test_requirment_not_in_global_non_fatal(self):
-        env = os.environ.copy()
-        env['NON_STANDARD_REQS'] = '1'
-        returncode = subprocess.call(
-            [sys.executable, "update.py", "bad_project"],
-            env=env)
-        self.assertEqual(returncode, 0)
+        self.useFixture(
+            fixtures.EnvironmentVariable("NON_STANDARD_REQS", "1"))
+        update.main(["bad_project"])
 
     def test_requirement_soft_update(self):
-        returncode = subprocess.call(
-            [sys.executable, "update.py", "-s", "bad_project"])
-        self.assertEqual(returncode, 0)
+        update.main(["-s", "bad_project"])
         reqs = _file_to_list(self.bad_proj_file)
         self.assertIn("thisisnotarealdepedency", reqs)
 
     # testing output
     def test_non_verbose_output(self):
-        output = subprocess.check_output(
-            [sys.executable, "update.py", "project"])
+        capture = StringIO.StringIO()
+        update.main(['project'], capture)
         expected = 'Version change for: greenlet, sqlalchemy, eventlet, pastedeploy, routes, webob, wsgiref, boto, kombu, pycrypto, python-swiftclient, lxml, jsonschema, python-keystoneclient\n'  # noqa
         expected += """Updated project/requirements.txt:
     greenlet>=0.3.1                ->   greenlet>=0.3.2
@@ -186,11 +179,11 @@ Updated project/test-requirements.txt:
     testrepository>=0.0.13         ->   testrepository>=0.0.17
     testtools>=0.9.27              ->   testtools>=0.9.32
 """
-        self.assertEqual(expected, output)
+        self.assertEqual(expected, capture.getvalue())
 
     def test_verbose_output(self):
-        output = subprocess.check_output(
-            [sys.executable, "update.py", "-v", "project"])
+        capture = StringIO.StringIO()
+        update.main(['-v', 'project'], capture)
         expected = """Syncing project/requirements.txt
 Version change for: greenlet, sqlalchemy, eventlet, pastedeploy, routes, webob, wsgiref, boto, kombu, pycrypto, python-swiftclient, lxml, jsonschema, python-keystoneclient\n"""  # noqa
         expected += """Updated project/requirements.txt:
@@ -217,4 +210,4 @@ Updated project/test-requirements.txt:
     testtools>=0.9.27              ->   testtools>=0.9.32
 Syncing setup.py
 """
-        self.assertEqual(expected, output)
+        self.assertEqual(expected, capture.getvalue())
