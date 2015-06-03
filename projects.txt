@@ -10,7 +10,6 @@ openstack/diskimage-builder
 openstack/django_openstack_auth
 openstack/glance
 openstack/heat
-openstack/heat-translator
 openstack/horizon
 openstack/ironic
 openstack/ironic-lib
