@@ -206,10 +206,10 @@ def _sync_requirements_file(
             stdout.write("    %s\n" % change)
 
 
-def _copy_requires(suffix, softupdate, hacking, dest_dir, stdout):
+def _copy_requires(suffix, softupdate, hacking, dest_dir, stdout, source="."):
     """Copy requirements files."""
 
-    source_reqs = _parse_reqs('global-requirements.txt')
+    source_reqs = _parse_reqs(os.path.join(source, 'global-requirements.txt'))
 
     target_files = [
         'requirements.txt', 'tools/pip-requires',
@@ -255,6 +255,8 @@ def main(argv=None, stdout=None):
     parser.add_option("-v", "--verbose", dest="verbose",
                       action="store_true",
                       help="Add further verbosity to output")
+    parser.add_option("--source", dest="source", default=".",
+                      help="Dir where global-requirements.txt is located.")
     options, args = parser.parse_args(argv)
     if len(args) != 1:
         print("Must specify directory to update")
@@ -264,7 +266,7 @@ def main(argv=None, stdout=None):
     if stdout is None:
         stdout = sys.stdout
     _copy_requires(options.suffix, options.softupdate, options.hacking,
-                   args[0], stdout=stdout)
+                   args[0], stdout=stdout, source=options.source)
     _write_setup_py(args[0], stdout=stdout)
 
 
