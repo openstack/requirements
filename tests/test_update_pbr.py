@@ -18,68 +18,37 @@
 
 from __future__ import print_function
 
-import os
-import shutil
-import tempfile
-
 import testtools
 
+from tests import common
 import update
-
-
-def _file_to_list(fname):
-    with open(fname) as f:
-        content = list(map(lambda x: x.rstrip(), f.readlines()))
-        print(content)
-        return content
 
 
 class UpdateTestPbr(testtools.TestCase):
 
     def setUp(self):
         super(UpdateTestPbr, self).setUp()
-        self.dir = tempfile.mkdtemp()
-        self.project_dir = os.path.join(self.dir, "project_pbr")
-
-        self.req_file = os.path.join(self.dir, "global-requirements.txt")
-        self.proj_file = os.path.join(self.project_dir, "requirements.txt")
-        self.proj_test_file = os.path.join(self.project_dir,
-                                           "test-requirements.txt")
-        self.setup_file = os.path.join(self.project_dir, "setup.py")
-        self.setup_cfg_file = os.path.join(self.project_dir, "setup.cfg")
-        os.mkdir(self.project_dir)
-
-        shutil.copy("tests/files/gr-base.txt", self.req_file)
-        shutil.copy("tests/files/project.txt", self.proj_file)
-        shutil.copy("tests/files/test-project.txt", self.proj_test_file)
-        shutil.copy("tests/files/setup.py", self.setup_file)
-        shutil.copy("tests/files/pbr_setup.cfg", self.setup_cfg_file)
-        shutil.copy("update.py", os.path.join(self.dir, "update.py"))
-
-        # now go call update and see what happens
-        self.addCleanup(os.chdir, os.path.abspath(os.curdir))
-        os.chdir(self.dir)
-        update.main(["project_pbr"])
-
-    def test_requirements(self):
-        reqs = _file_to_list(self.req_file)
-        self.assertIn("jsonschema>=1.0.0,!=1.4.0,<2", reqs)
+        self.global_env = self.useFixture(common.GlobalRequirements())
+        self.pbr = self.useFixture(common.pbr_fixture)
 
     def test_project(self):
-        reqs = _file_to_list(self.proj_file)
+        update.main(['--source', self.global_env.root, self.pbr.root])
+        reqs = common._file_to_list(self.pbr.req_file)
         # ensure various updates take
         self.assertIn("jsonschema>=1.0.0,!=1.4.0,<2", reqs)
         self.assertIn("python-keystoneclient>=0.4.1", reqs)
         self.assertIn("SQLAlchemy>=0.7,<=0.7.99", reqs)
 
     def test_test_project(self):
-        reqs = _file_to_list(self.proj_test_file)
+        update.main(['--source', self.global_env.root, self.pbr.root])
+        reqs = common._file_to_list(self.pbr.test_req_file)
         self.assertIn("testtools>=0.9.32", reqs)
         self.assertIn("testrepository>=0.0.17", reqs)
         # make sure we didn't add something we shouldn't
         self.assertNotIn("sphinxcontrib-pecanwsme>=0.2", reqs)
 
     def test_install_setup(self):
-        setup_contents = _file_to_list(self.setup_file)
+        update.main(['--source', self.global_env.root, self.pbr.root])
+        setup_contents = common._file_to_list(self.pbr.setup_file)
         self.assertNotIn("# THIS FILE IS MANAGED BY THE GLOBAL REQUIREMENTS "
                          "REPO - DO NOT EDIT", setup_contents)
