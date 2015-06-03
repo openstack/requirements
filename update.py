@@ -68,6 +68,7 @@ setuptools.setup(
 """
 
 # A header for the requirements file(s).
+# TODO(lifeless): Remove this once constraints are in use.
 _REQS_HEADER = [
     '# The order of packages is significant, because pip processes '
     'them in the order\n',
