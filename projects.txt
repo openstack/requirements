@@ -14,7 +14,6 @@ openstack/futurist
 openstack/glance
 openstack/glance_store
 openstack/heat
-openstack/heat-translator
 openstack/horizon
 openstack/ironic
 openstack/ironic-lib
