@@ -10,6 +10,7 @@ openstack/debtcollector
 openstack/designate
 openstack/diskimage-builder
 openstack/django_openstack_auth
+openstack/dragonflow
 openstack/futurist
 openstack/glance
 openstack/glance_store
