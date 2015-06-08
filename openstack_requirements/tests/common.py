@@ -49,18 +49,23 @@ class Project(fixtures.Fixture):
 
 
 project_fixture = Project(
-    "tests/files/project.txt",
-    "tests/files/setup.py", "tests/files/setup.cfg",
-    "tests/files/test-project.txt")
+    "openstack_requirements/tests/files/project.txt",
+    "openstack_requirements/tests/files/setup.py",
+    "openstack_requirements/tests/files/setup.cfg",
+    "openstack_requirements/tests/files/test-project.txt")
 bad_project_fixture = Project(
-    "tests/files/project-with-bad-requirement.txt", "tests/files/setup.py",
-    "tests/files/setup.cfg")
+    "openstack_requirements/tests/files/project-with-bad-requirement.txt",
+    "openstack_requirements/tests/files/setup.py",
+    "openstack_requirements/tests/files/setup.cfg")
 oslo_fixture = Project(
-    "tests/files/project-with-oslo-tar.txt", "tests/files/old-setup.py",
-    "tests/files/setup.cfg")
+    "openstack_requirements/tests/files/project-with-oslo-tar.txt",
+    "openstack_requirements/tests/files/old-setup.py",
+    "openstack_requirements/tests/files/setup.cfg")
 pbr_fixture = Project(
-    "tests/files/project.txt", "tests/files/setup.py",
-    "tests/files/pbr_setup.cfg", "tests/files/test-project.txt")
+    "openstack_requirements/tests/files/project.txt",
+    "openstack_requirements/tests/files/setup.py",
+    "openstack_requirements/tests/files/pbr_setup.cfg",
+    "openstack_requirements/tests/files/test-project.txt")
 
 
 class GlobalRequirements(fixtures.Fixture):
@@ -69,4 +74,5 @@ class GlobalRequirements(fixtures.Fixture):
         super(GlobalRequirements, self).setUp()
         self.root = self.useFixture(fixtures.TempDir()).path
         self.req_file = os.path.join(self.root, "global-requirements.txt")
-        shutil.copy("tests/files/gr-base.txt", self.req_file)
+        shutil.copy(
+            "openstack_requirements/tests/files/gr-base.txt", self.req_file)

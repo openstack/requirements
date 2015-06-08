@@ -19,7 +19,7 @@ import StringIO
 import fixtures
 import testtools
 
-from tests import common
+from openstack_requirements.tests import common
 import update
 
 
