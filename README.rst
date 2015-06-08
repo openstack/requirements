@@ -73,7 +73,7 @@ However due to the interactions with transitive dependencies this doesn't
 actually deliver what we need.
 
 We are moving to a system where we will define the precise versions of all
-dependencies using ``upper-contraints.txt``. This will be overlaid onto all
+dependencies using ``upper-constraints.txt``. This will be overlaid onto all
 pip commands made during devstack, and by tox, and will provide a single,
 atomic, source of truth for what works at any given time. The constraints will
 be required to be compatible with the global requirements, and will
