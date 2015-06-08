@@ -33,15 +33,15 @@ django_openstack_auth>=1.1.7,!=1.1.8
 dnspython>=1.12.0
 dogpile.cache>=0.5.3
 elasticsearch>=1.3.0
-enum34
+enum34;python_version=='2.7'
 eventlet>=0.17.4
 extras
 falcon>=0.1.6,<0.2.0
 Flask>=0.10,<1.0
-futures>=3.0
+futures>=3.0;python_version=='2.7'
 glance_store>=0.3.0                   # Apache-2.0
 greenlet>=0.3.2
-happybase>=0.5,!=0.7
+happybase>=0.5,!=0.7;python_version=='2.7'
 httplib2>=0.7.5
 influxdb>=2.2.0                       # MIT License
 ironic-discoverd>=1.0.0                # Apache-2.0
@@ -91,7 +91,7 @@ os-collect-config
 os-net-config
 os-refresh-config
 os-testr>=0.1.0
-ovs>=2.4.0.dev0  # Apache-2.0
+ovs>=2.4.0.dev0;python_version=='2.7'  # Apache-2.0
 paramiko>=1.13.0
 Parsley
 passlib
@@ -119,7 +119,7 @@ PyMySQL>=0.6.2  # MIT License
 
 # NOTE(flaper87): This added 2 packages to `integration.sh`
 # uuid-dev and swig
-pyngus>=1.3.1  # Apache 2.0 License
+pyngus>=1.3.1;python_version=='2.7'  # Apache 2.0 License
 
 pyOpenSSL>=0.11
 pyparsing>=2.0.1
@@ -157,11 +157,11 @@ python-dateutil>=2.4.2
 pytz>=2013.6
 pyudev
 PyYAML>=3.1.0
-qpid-python
 pywin32;sys_platform=='win32'
+qpid-python;python_version=='2.7'
 requests>=2.5.2
 requests-aws>=0.1.4    # BSD License (3 clause)
-requests-kerberos>=0.6 # MIT
+requests-kerberos>=0.6;python_version=='2.7' # MIT
 rfc3986>=0.2.0  # Apache-2.0
 Routes>=1.12.3,!=2.0
 rtslib-fb>=2.1.41
@@ -236,7 +236,7 @@ ldappool>=1.0 # MPL
 mock>=1.0
 mox>=0.5.3
 mox3>=0.7.0
-MySQL-python
+MySQL-python;python_version=='2.7'
 nodeenv>=0.9.4 # BSD License
 nose
 nose-exclude
@@ -249,8 +249,8 @@ oslotest>=1.5.1  # Apache-2.0
 proboscis>=1.2.5.3
 psycopg2
 pysendfile>=2.0.0
-pysqlite
-python-ldap>=2.4
+pysqlite;python_version=='2.7'
+python-ldap>=2.4;python_version=='2.7'
 python-subunit>=0.0.18
 pyzmq>=14.3.1 # LGPL+BSD
 redis>=2.10.0
