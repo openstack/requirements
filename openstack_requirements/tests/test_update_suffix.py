@@ -16,7 +16,7 @@ from __future__ import print_function
 
 import testtools
 
-from tests import common
+from openstack_requirements.tests import common
 import update
 
 
