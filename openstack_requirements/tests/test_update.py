@@ -14,10 +14,12 @@
 
 from __future__ import print_function
 
+import io
 import StringIO
 
 import fixtures
 import testtools
+from testtools import matchers
 
 from openstack_requirements.tests import common
 from openstack_requirements import update
@@ -174,3 +176,54 @@ Updated %(project)s/test-requirements.txt:
 Syncing setup.py
 """) % dict(project=self.project.root)
         self.assertEqual(expected, capture.getvalue())
+
+
+class TestReadProject(testtools.TestCase):
+
+    def test_pbr(self):
+        root = self.useFixture(common.pbr_fixture).root
+        project = update._read_project(root)
+        self.expectThat(project['root'], matchers.Equals(root))
+        setup_py = open(root + '/setup.py', 'rt').read()
+        self.expectThat(project['setup.py'], matchers.Equals(setup_py))
+        setup_cfg = open(root + '/setup.cfg', 'rt').read()
+        self.expectThat(project['setup.cfg'], matchers.Equals(setup_cfg))
+
+    def test_no_setup_py(self):
+        root = self.useFixture(fixtures.TempDir()).path
+        project = update._read_project(root)
+        self.expectThat(project, matchers.Equals({'root': root}))
+
+
+class TestWriteProject(testtools.TestCase):
+
+    def test_smoke(self):
+        stdout = io.StringIO()
+        root = self.useFixture(fixtures.TempDir()).path
+        project = {'root': root}
+        actions = [
+            update.File('foo', '123\n'),
+            update.File('bar', '456\n'),
+            update.Verbose(u'fred')]
+        update._write_project(project, actions, stdout, True)
+        foo = open(root + '/foo', 'rt').read()
+        self.expectThat(foo, matchers.Equals('123\n'))
+        bar = open(root + '/bar', 'rt').read()
+        self.expectThat(bar, matchers.Equals('456\n'))
+        self.expectThat(stdout.getvalue(), matchers.Equals('fred\n'))
+
+    def test_non_verbose(self):
+        stdout = io.StringIO()
+        root = self.useFixture(fixtures.TempDir()).path
+        project = {'root': root}
+        actions = [update.Verbose(u'fred')]
+        update._write_project(project, actions, stdout, False)
+        self.expectThat(stdout.getvalue(), matchers.Equals(''))
+
+    def test_bad_action(self):
+        root = self.useFixture(fixtures.TempDir()).path
+        stdout = io.StringIO()
+        project = {'root': root}
+        actions = [('foo', 'bar')]
+        with testtools.ExpectedException(Exception):
+            update._write_project(project, actions, stdout, True)
