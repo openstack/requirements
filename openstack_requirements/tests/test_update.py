@@ -188,11 +188,15 @@ class TestReadProject(testtools.TestCase):
         self.expectThat(project['setup.py'], matchers.Equals(setup_py))
         setup_cfg = open(root + '/setup.cfg', 'rt').read()
         self.expectThat(project['setup.cfg'], matchers.Equals(setup_cfg))
+        self.expectThat(
+            project['requirements'],
+            matchers.KeysEqual('requirements.txt', 'test-requirements.txt'))
 
     def test_no_setup_py(self):
         root = self.useFixture(fixtures.TempDir()).path
         project = update._read_project(root)
-        self.expectThat(project, matchers.Equals({'root': root}))
+        self.expectThat(
+            project, matchers.Equals({'root': root, 'requirements': {}}))
 
 
 class TestWriteProject(testtools.TestCase):

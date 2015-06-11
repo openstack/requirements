@@ -132,76 +132,14 @@ def _check_setup_py(project):
     return actions
 
 
-# IO --
-def _safe_read(project, filename):
-    try:
-        with open(project['root'] + '/' + filename, 'rt') as f:
-            project[filename] = f.read()
-    except IOError as e:
-        if e.errno != errno.ENOENT:
-            raise
-
-
-def _read_project(root):
-    result = {'root': root}
-    _safe_read(result, 'setup.py')
-    _safe_read(result, 'setup.cfg')
-    return result
-
-
-def _write_project(project, actions, stdout, verbose):
-    """Write actions into project.
-
-    :param project: A project metadata dict.
-    :param actions: A list of action tuples - File or Verbose - that describe
-        what actions are to be taken.
-        File objects describe a file to have content placed in it.
-        Verbose objects will write a message to stdout when verbose is True.
-    :param stdout: Where to write content for stdout.
-    :param verbose: If True Verbose actions will be written to stdout.
-    :return None:
-    :raises IOError: If the IO operations fail, IOError is raised. If this
-        happens some actions may have been applied and others not.
-    """
-    for action in actions:
-        if type(action) is File:
-            with open(project['root'] + '/' + action.filename, 'wt') as f:
-                f.write(action.content)
-        elif type(action) is StdOut:
-            stdout.write(action.message)
-        elif type(action) is Verbose:
-            if verbose:
-                stdout.write(u"%s\n" % (action.message,))
-        else:
-            raise Exception("Invalid action %r" % (action,))
-
-
-def _readlines(filename):
-    with open(filename, 'r') as f:
-        return f.readlines()
-
-
-def _parse_reqs(filename):
-    reqs = dict()
-    pip_requires = _readlines(filename)
-    for pip in pip_requires:
-        pip = pip.strip()
-        if _pass_through(pip):
-            continue
-        reqs[_package_name(pip)] = pip
-    return reqs
-
-
 def _sync_requirements_file(
-        source_reqs, dest_path, suffix, softupdate, hacking, dest_name):
+        source_reqs, content, dest_path, softupdate, hacking, dest_name,
+        non_std_reqs):
     actions = []
-    dest_reqs = _readlines(dest_path)
+    dest_reqs = content.splitlines(True)
     changes = []
     # this is specifically for global-requirements gate jobs so we don't
     # modify the git tree
-    if suffix:
-        dest_path = "%s.%s" % (dest_path, suffix)
-        dest_name = "%s.%s" % (dest_name, suffix)
 
     actions.append(Verbose("Syncing %s" % dest_path))
     content_lines = []
@@ -252,7 +190,7 @@ def _sync_requirements_file(
             # environment variable to turn this into a warning only.
             actions.append(StdOut(
                 "'%s' is not in global-requirements.txt\n" % old_pip))
-            if os.getenv('NON_STANDARD_REQS', '0') != '1':
+            if not non_std_reqs:
                 raise Exception("nonstandard requirement present.")
     actions.append(File(dest_name, u''.join(content_lines)))
     # always print out what we did if we did a thing
@@ -266,9 +204,43 @@ def _sync_requirements_file(
     return actions
 
 
-def _copy_requires(suffix, softupdate, hacking, project, source="."):
+def _copy_requires(
+        suffix, softupdate, hacking, project, global_reqs, non_std_reqs):
     """Copy requirements files."""
-    source_reqs = _parse_reqs(os.path.join(source, 'global-requirements.txt'))
+    actions = []
+    for source, content in sorted(project['requirements'].items()):
+        dest_path = os.path.join(project['root'], source)
+        # this is specifically for global-requirements gate jobs so we don't
+        # modify the git tree
+        if suffix:
+            dest_path = "%s.%s" % (dest_path, suffix)
+            dest_name = "%s.%s" % (source, suffix)
+        else:
+            dest_name = source
+        actions.extend(_sync_requirements_file(
+            global_reqs, content, dest_path, softupdate, hacking, dest_name,
+            non_std_reqs))
+    return actions
+
+
+# IO --
+def _safe_read(project, filename, output=None):
+    if output is None:
+        output = project
+    try:
+        with open(project['root'] + '/' + filename, 'rt') as f:
+            output[filename] = f.read()
+    except IOError as e:
+        if e.errno != errno.ENOENT:
+            raise
+
+
+def _read_project(root):
+    result = {'root': root}
+    _safe_read(result, 'setup.py')
+    _safe_read(result, 'setup.cfg')
+    requirements = {}
+    result['requirements'] = requirements
     target_files = [
         'requirements.txt', 'tools/pip-requires',
         'test-requirements.txt', 'tools/test-requires',
@@ -276,14 +248,53 @@ def _copy_requires(suffix, softupdate, hacking, project, source="."):
     for py_version in (2, 3):
         target_files.append('requirements-py%s.txt' % py_version)
         target_files.append('test-requirements-py%s.txt' % py_version)
+    for target_file in target_files:
+        _safe_read(result, target_file, output=requirements)
+    return result
 
-    actions = []
-    for dest in target_files:
-        dest_path = os.path.join(project['root'], dest)
-        if os.path.exists(dest_path):
-            actions.extend(_sync_requirements_file(
-                source_reqs, dest_path, suffix, softupdate, hacking, dest))
-    return actions
+
+def _write_project(project, actions, stdout, verbose):
+    """Write actions into project.
+
+    :param project: A project metadata dict.
+    :param actions: A list of action tuples - File or Verbose - that describe
+        what actions are to be taken.
+        File objects describe a file to have content placed in it.
+        StdOut objects describe a messge to write to stdout.
+        Verbose objects will write a message to stdout when verbose is True.
+    :param stdout: Where to write content for stdout.
+    :param verbose: If True Verbose actions will be written to stdout.
+    :return None:
+    :raises IOError: If the IO operations fail, IOError is raised. If this
+        happens some actions may have been applied and others not.
+    """
+    for action in actions:
+        if type(action) is File:
+            with open(project['root'] + '/' + action.filename, 'wt') as f:
+                f.write(action.content)
+        elif type(action) is StdOut:
+            stdout.write(action.message)
+        elif type(action) is Verbose:
+            if verbose:
+                stdout.write(u"%s\n" % (action.message,))
+        else:
+            raise Exception("Invalid action %r" % (action,))
+
+
+def _readlines(filename):
+    with open(filename, 'r') as f:
+        return f.readlines()
+
+
+def _parse_reqs(filename):
+    reqs = dict()
+    pip_requires = _readlines(filename)
+    for pip in pip_requires:
+        pip = pip.strip()
+        if _pass_through(pip):
+            continue
+        reqs[_package_name(pip)] = pip
+    return reqs
 
 
 def main(argv=None, stdout=None):
@@ -307,11 +318,14 @@ def main(argv=None, stdout=None):
         raise Exception("Must specify one and only one directory to update.")
     if stdout is None:
         stdout = sys.stdout
+    non_std_reqs = os.getenv('NON_STANDARD_REQS', '0') == '1'
     root = args[0]
     project = _read_project(root)
+    global_reqs = _parse_reqs(
+        os.path.join(options.source, 'global-requirements.txt'))
     actions = _copy_requires(
         options.suffix, options.softupdate, options.hacking, project,
-        source=options.source)
+        global_reqs, non_std_reqs)
     actions.extend(_check_setup_py(project))
     _write_project(project, actions, stdout=stdout, verbose=options.verbose)
 
