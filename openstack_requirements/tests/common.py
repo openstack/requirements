@@ -15,6 +15,8 @@ import shutil
 
 import fixtures
 
+from openstack_requirements import update
+
 
 def _file_to_list(fname):
     with open(fname) as f:
@@ -76,3 +78,28 @@ class GlobalRequirements(fixtures.Fixture):
         self.req_file = os.path.join(self.root, "global-requirements.txt")
         shutil.copy(
             "openstack_requirements/tests/files/gr-base.txt", self.req_file)
+
+
+# Static data for unit testing.
+def make_project(fixture):
+    with fixture:
+        return update._read_project(fixture.root)
+
+
+global_reqs = update._parse_reqs(
+    "openstack_requirements/tests/files/gr-base.txt")
+pbr_project = make_project(pbr_fixture)
+project_project = make_project(project_fixture)
+bad_project = make_project(bad_project_fixture)
+oslo_project = make_project(oslo_fixture)
+
+
+def project_file(fail, project, action_filename, suffix=None):
+    actions = update._process_project(
+        project, global_reqs, suffix, None, None,
+        False)
+    for action in actions:
+        if type(action) is update.File:
+            if action.filename == action_filename:
+                return action.content.splitlines()
+    fail('File %r not found in %r' % (action_filename, actions))

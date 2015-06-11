@@ -261,3 +261,11 @@ class TestMain(testtools.TestCase):
             update.main(
                 ['--source', '/dev/null', '/dev/zero'],
                 _worker=check_params)
+
+    def test_suffix(self):
+        def check_params(
+                root, source, suffix, softupdate, hacking, stdout, verbose,
+                non_std_reqs):
+            self.expectThat(suffix, matchers.Equals('global'))
+
+        update.main(['-o', 'global', '/dev/zero'], _worker=check_params)
