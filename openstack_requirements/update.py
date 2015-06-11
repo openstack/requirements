@@ -285,8 +285,11 @@ def _write_project(project, actions, stdout, verbose, noop=False):
         if type(action) is File:
             if noop:
                 continue
-            with open(project['root'] + '/' + action.filename, 'wt') as f:
+            fullname = project['root'] + '/' + action.filename
+            tmpname = fullname + '.tmp'
+            with open(tmpname, 'wt') as f:
                 f.write(action.content)
+            os.rename(tmpname, fullname)
         elif type(action) is StdOut:
             stdout.write(action.message)
         elif type(action) is Verbose:
