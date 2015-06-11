@@ -92,6 +92,7 @@ class Change(object):
 
 
 File = collections.namedtuple('File', ['filename', 'content'])
+StdOut = collections.namedtuple('StdOut', ['message'])
 Verbose = collections.namedtuple('Verbose', ['message'])
 
 
@@ -173,6 +174,8 @@ def _write_project(project, actions, stdout, verbose):
         if type(action) is File:
             with open(project['root'] + '/' + action.filename, 'wt') as f:
                 f.write(action.content)
+        elif type(action) is StdOut:
+            stdout.write(action.message)
         elif type(action) is Verbose:
             if verbose:
                 stdout.write(u"%s\n" % (action.message,))
@@ -197,75 +200,80 @@ def _parse_reqs(filename):
 
 
 def _sync_requirements_file(
-        source_reqs, dest_path, suffix, softupdate, hacking, stdout):
+        source_reqs, dest_path, suffix, softupdate, hacking, dest_name):
+    actions = []
     dest_reqs = _readlines(dest_path)
     changes = []
     # this is specifically for global-requirements gate jobs so we don't
     # modify the git tree
     if suffix:
         dest_path = "%s.%s" % (dest_path, suffix)
+        dest_name = "%s.%s" % (dest_name, suffix)
 
-    verbose("Syncing %s" % dest_path, stdout)
+    actions.append(Verbose("Syncing %s" % dest_path))
+    content_lines = []
 
-    with open(dest_path, 'w') as new_reqs:
-        # Check the instructions header
-        if dest_reqs[:len(_REQS_HEADER)] != _REQS_HEADER:
-            new_reqs.writelines(_REQS_HEADER)
+    # Check the instructions header
+    if dest_reqs[:len(_REQS_HEADER)] != _REQS_HEADER:
+        content_lines.extend(_REQS_HEADER)
 
-        for old_line in dest_reqs:
-            old_require = old_line.strip()
+    for old_line in dest_reqs:
+        old_require = old_line.strip()
 
-            if _pass_through(old_require):
-                new_reqs.write(old_line)
-                continue
+        if _pass_through(old_require):
+            content_lines.append(old_line)
+            continue
 
-            old_pip = _package_name(old_require)
+        old_pip = _package_name(old_require)
 
-            # Special cases:
-            # projects need to align hacking version on their own time
-            if "hacking" in old_pip and not hacking:
-                new_reqs.write(old_line)
-                continue
+        # Special cases:
+        # projects need to align hacking version on their own time
+        if "hacking" in old_pip and not hacking:
+            content_lines.append(old_line)
+            continue
 
-            if old_pip in source_reqs:
-                if _functionally_equal(old_require, source_reqs[old_pip]):
-                    new_reqs.write(old_line)
-                else:
-                    changes.append(
-                        Change(old_pip, old_require, source_reqs[old_pip]))
-                    new_reqs.write("%s\n" % source_reqs[old_pip])
-            elif softupdate:
-                # under softupdate we pass through anything we don't
-                # understand, this is intended for ecosystem projects
-                # that want to stay in sync with existing
-                # requirements, but also add their own above and
-                # beyond
-                new_reqs.write(old_line)
+        if old_pip in source_reqs:
+            if _functionally_equal(old_require, source_reqs[old_pip]):
+                content_lines.append(old_line)
             else:
-                # What do we do if we find something unexpected?
-                #
-                # In the default cause we should die horribly, because
-                # the point of global requirements was a single lever
-                # to control all the pip installs in the gate.
-                #
-                # However, we do have other projects using
-                # devstack jobs that might have legitimate reasons to
-                # override. For those we support NON_STANDARD_REQS=1
-                # environment variable to turn this into a warning only.
-                stdout.write(
-                    "'%s' is not in global-requirements.txt\n" % old_pip)
-                if os.getenv('NON_STANDARD_REQS', '0') != '1':
-                    raise Exception("nonstandard requirement present.")
+                changes.append(
+                    Change(old_pip, old_require, source_reqs[old_pip]))
+                content_lines.append("%s\n" % source_reqs[old_pip])
+        elif softupdate:
+            # under softupdate we pass through anything we don't
+            # understand, this is intended for ecosystem projects
+            # that want to stay in sync with existing
+            # requirements, but also add their own above and
+            # beyond
+            content_lines.append(old_line)
+        else:
+            # What do we do if we find something unexpected?
+            #
+            # In the default cause we should die horribly, because
+            # the point of global requirements was a single lever
+            # to control all the pip installs in the gate.
+            #
+            # However, we do have other projects using
+            # devstack jobs that might have legitimate reasons to
+            # override. For those we support NON_STANDARD_REQS=1
+            # environment variable to turn this into a warning only.
+            actions.append(StdOut(
+                "'%s' is not in global-requirements.txt\n" % old_pip))
+            if os.getenv('NON_STANDARD_REQS', '0') != '1':
+                raise Exception("nonstandard requirement present.")
+    actions.append(File(dest_name, u''.join(content_lines)))
     # always print out what we did if we did a thing
     if changes:
-        stdout.write(
-            "Version change for: %s\n" % ", ".join([x.name for x in changes]))
-        stdout.write("Updated %s:\n" % dest_path)
+        actions.append(StdOut(
+            "Version change for: %s\n"
+            % ", ".join([x.name for x in changes])))
+        actions.append(StdOut("Updated %s:\n" % dest_path))
         for change in changes:
-            stdout.write("    %s\n" % change)
+            actions.append(StdOut("    %s\n" % change))
+    return actions
 
 
-def _copy_requires(suffix, softupdate, hacking, dest_dir, stdout, source="."):
+def _copy_requires(suffix, softupdate, hacking, project, source="."):
     """Copy requirements files."""
     source_reqs = _parse_reqs(os.path.join(source, 'global-requirements.txt'))
     target_files = [
@@ -276,11 +284,13 @@ def _copy_requires(suffix, softupdate, hacking, dest_dir, stdout, source="."):
         target_files.append('requirements-py%s.txt' % py_version)
         target_files.append('test-requirements-py%s.txt' % py_version)
 
+    actions = []
     for dest in target_files:
-        dest_path = os.path.join(dest_dir, dest)
+        dest_path = os.path.join(project['root'], dest)
         if os.path.exists(dest_path):
-            _sync_requirements_file(
-                source_reqs, dest_path, suffix, softupdate, hacking, stdout)
+            actions.extend(_sync_requirements_file(
+                source_reqs, dest_path, suffix, softupdate, hacking, dest))
+    return actions
 
 
 def main(argv=None, stdout=None):
@@ -308,9 +318,10 @@ def main(argv=None, stdout=None):
         stdout = sys.stdout
     root = args[0]
     project = _read_project(root)
-    _copy_requires(options.suffix, options.softupdate, options.hacking,
-                   root, stdout=stdout, source=options.source)
-    actions = _check_setup_py(project)
+    actions = _copy_requires(
+        options.suffix, options.softupdate, options.hacking, project,
+        source=options.source)
+    actions.extend(_check_setup_py(project))
     _write_project(project, actions, stdout=stdout, verbose=options.verbose)
 
 
