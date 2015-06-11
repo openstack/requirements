@@ -13,7 +13,7 @@
 # License for the specific language governing permissions and limitations
 # under the License.
 
-r"""
+"""
 A simple script to update the requirements files from a global set of
 allowable requirements.
 
@@ -126,9 +126,7 @@ def _readlines(filename):
 
 
 def _parse_reqs(filename):
-
     reqs = dict()
-
     pip_requires = _readlines(filename)
     for pip in pip_requires:
         pip = pip.strip()
@@ -209,9 +207,7 @@ def _sync_requirements_file(
 
 def _copy_requires(suffix, softupdate, hacking, dest_dir, stdout, source="."):
     """Copy requirements files."""
-
     source_reqs = _parse_reqs(os.path.join(source, 'global-requirements.txt'))
-
     target_files = [
         'requirements.txt', 'tools/pip-requires',
         'test-requirements.txt', 'tools/test-requires',
