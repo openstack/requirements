@@ -78,11 +78,7 @@ _REQS_HEADER = [
 ]
 
 
-def verbose(msg, stdout):
-    if VERBOSE:
-        stdout.write(msg + "\n")
-
-
+# Pure --
 class Change(object):
     def __init__(self, name, old, new):
         self.name = name
@@ -113,6 +109,12 @@ def _pass_through(pip):
 
 def _functionally_equal(old_requirement, new_requirement):
     return old_requirement == new_requirement
+
+
+# IO --
+def verbose(msg, stdout):
+    if VERBOSE:
+        stdout.write(msg + "\n")
 
 
 def _read(filename):
