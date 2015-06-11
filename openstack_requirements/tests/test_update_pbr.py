@@ -21,7 +21,7 @@ from __future__ import print_function
 import testtools
 
 from openstack_requirements.tests import common
-import update
+from openstack_requirements import update
 
 
 class UpdateTestPbr(testtools.TestCase):

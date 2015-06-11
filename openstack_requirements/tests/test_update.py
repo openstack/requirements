@@ -20,7 +20,7 @@ import fixtures
 import testtools
 
 from openstack_requirements.tests import common
-import update
+from openstack_requirements import update
 
 
 class UpdateTest(testtools.TestCase):
