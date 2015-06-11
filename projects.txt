@@ -22,6 +22,7 @@ openstack/keystone
 openstack/keystonemiddleware
 openstack/magnum
 openstack/manila
+openstack/mox3
 openstack/networking-odl
 openstack/neutron
 openstack/neutron-fwaas
