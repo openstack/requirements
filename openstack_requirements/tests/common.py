@@ -94,10 +94,12 @@ bad_project = make_project(bad_project_fixture)
 oslo_project = make_project(oslo_fixture)
 
 
-def project_file(fail, project, action_filename, suffix=None):
+def project_file(
+        fail, project, action_filename, suffix=None, softupdate=None,
+        non_std_reqs=False):
     actions = update._process_project(
-        project, global_reqs, suffix, None, None,
-        False)
+        project, global_reqs, suffix, softupdate, None,
+        non_std_reqs)
     for action in actions:
         if type(action) is update.File:
             if action.filename == action_filename:
