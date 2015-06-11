@@ -223,6 +223,18 @@ def _copy_requires(
     return actions
 
 
+def _process_project(
+        project, global_reqs, suffix, softupdate, hacking, non_std_reqs):
+    """Project a project.
+
+    :return: The actions to take as a result.
+    """
+    actions = _copy_requires(
+        suffix, softupdate, hacking, project, global_reqs, non_std_reqs)
+    actions.extend(_check_setup_py(project))
+    return actions
+
+
 # IO --
 def _safe_read(project, filename, output=None):
     if output is None:
@@ -319,15 +331,21 @@ def main(argv=None, stdout=None):
     if stdout is None:
         stdout = sys.stdout
     non_std_reqs = os.getenv('NON_STANDARD_REQS', '0') == '1'
-    root = args[0]
+    _do_main(
+        args[0], options.source, options.suffix, options.softupdate,
+        options.hacking, stdout, options.verbose, non_std_reqs)
+
+
+def _do_main(
+        root, source, suffix, softupdate, hacking, stdout, verbose,
+        non_std_reqs):
+    """No options or environment variable access from here on in."""
     project = _read_project(root)
     global_reqs = _parse_reqs(
-        os.path.join(options.source, 'global-requirements.txt'))
-    actions = _copy_requires(
-        options.suffix, options.softupdate, options.hacking, project,
-        global_reqs, non_std_reqs)
-    actions.extend(_check_setup_py(project))
-    _write_project(project, actions, stdout=stdout, verbose=options.verbose)
+        os.path.join(source, 'global-requirements.txt'))
+    actions = _process_project(
+        project, global_reqs, suffix, softupdate, hacking, non_std_reqs)
+    _write_project(project, actions, stdout=stdout, verbose=verbose)
 
 
 if __name__ == "__main__":
