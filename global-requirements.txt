@@ -164,7 +164,7 @@ sockjs-tornado>=1.0.0,<2.0.0
 SQLAlchemy>=0.9.7,<1.1.0
 sqlalchemy-migrate>=0.9.6
 sqlalchemy-utils  # BSD License
-stevedore>=1.3.0  # Apache-2.0
+stevedore>=1.5.0  # Apache-2.0
 sysv_ipc>=0.6.8  # BSD License
 
 # NOTE(dims): suds is not python 3.x compatible, suds-jurko is a fork that
