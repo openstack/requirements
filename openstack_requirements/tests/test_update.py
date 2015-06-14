@@ -19,11 +19,16 @@ import StringIO
 import sys
 
 import fixtures
+import pkg_resources
+import testscenarios
 import testtools
 from testtools import matchers
 
 from openstack_requirements.tests import common
 from openstack_requirements import update
+
+
+load_tests = testscenarios.load_tests_apply_scenarios
 
 
 class SmokeTest(testtools.TestCase):
@@ -42,7 +47,7 @@ class SmokeTest(testtools.TestCase):
         self.assertIn("jsonschema>=1.0.0,!=1.4.0,<2", reqs)
         self.assertIn("python-keystoneclient>=0.4.1", reqs)
         self.assertIn("SQLAlchemy>=0.7,<=0.7.99", reqs)
-        expected = ('Version change for: greenlet, sqlalchemy, eventlet, pastedeploy, routes, webob, wsgiref, boto, kombu, pycrypto, python-swiftclient, lxml, jsonschema, python-keystoneclient\n'  # noqa
+        expected = ('Version change for: greenlet, SQLAlchemy, eventlet, PasteDeploy, routes, WebOb, wsgiref, boto, kombu, pycrypto, python-swiftclient, lxml, jsonschema, python-keystoneclient\n'  # noqa
             """Updated %(project)s/requirements.txt:
     greenlet>=0.3.1                ->   greenlet>=0.3.2
     SQLAlchemy>=0.7.8,<=0.7.99     ->   SQLAlchemy>=0.7,<=0.7.99
@@ -146,7 +151,7 @@ class UpdateTest(testtools.TestCase):
         capture = StringIO.StringIO()
         update._write_project(
             common.project_project, actions, capture, False, True)
-        expected = ('Version change for: greenlet, sqlalchemy, eventlet, pastedeploy, routes, webob, wsgiref, boto, kombu, pycrypto, python-swiftclient, lxml, jsonschema, python-keystoneclient\n'  # noqa
+        expected = ('Version change for: greenlet, SQLAlchemy, eventlet, PasteDeploy, routes, WebOb, wsgiref, boto, kombu, pycrypto, python-swiftclient, lxml, jsonschema, python-keystoneclient\n'  # noqa
             """Updated %(project)s/requirements.txt:
     greenlet>=0.3.1                ->   greenlet>=0.3.2
     SQLAlchemy>=0.7.8,<=0.7.99     ->   SQLAlchemy>=0.7,<=0.7.99
@@ -179,7 +184,7 @@ Updated %(project)s/test-requirements.txt:
         update._write_project(
             common.project_project, actions, capture, True, True)
         expected = ("""Syncing %(project)s/requirements.txt
-Version change for: greenlet, sqlalchemy, eventlet, pastedeploy, routes, webob, wsgiref, boto, kombu, pycrypto, python-swiftclient, lxml, jsonschema, python-keystoneclient\n"""  # noqa
+Version change for: greenlet, SQLAlchemy, eventlet, PasteDeploy, routes, WebOb, wsgiref, boto, kombu, pycrypto, python-swiftclient, lxml, jsonschema, python-keystoneclient\n"""  # noqa
             """Updated %(project)s/requirements.txt:
     greenlet>=0.3.1                ->   greenlet>=0.3.2
     SQLAlchemy>=0.7.8,<=0.7.99     ->   SQLAlchemy>=0.7,<=0.7.99
@@ -297,3 +302,43 @@ class TestMain(testtools.TestCase):
             self.expectThat(suffix, matchers.Equals('global'))
 
         update.main(['-o', 'global', '/dev/zero'], _worker=check_params)
+
+
+class TestParseRequirement(testtools.TestCase):
+
+    scenarios = [
+        ('package', dict(
+         line='swift',
+         req=update.Requirement('swift', '', ''))),
+        ('specifier', dict(
+         line='alembic>=0.4.1',
+         req=update.Requirement('alembic', '>=0.4.1', ''))),
+        ('specifiers', dict(
+         line='alembic>=0.4.1,!=1.1.8',
+         req=update.Requirement('alembic', '!=1.1.8,>=0.4.1', ''))),
+        ('comment-only', dict(
+         line='# foo',
+         req=update.Requirement('', '', '# foo'))),
+        ('comment', dict(
+         line='Pint>=0.5  # BSD',
+         req=update.Requirement('Pint', '>=0.5', '# BSD'))),
+        ('case', dict(
+         line='Babel>=1.3',
+         req=update.Requirement('Babel', '>=1.3', '')))]
+
+    def test_parse(self):
+        parsed = update._parse_requirement(self.line)
+        self.assertEqual(self.req, parsed)
+
+
+class TestParseRequirementFailures(testtools.TestCase):
+
+    scenarios = [
+        ('url', dict(line='http://tarballs.openstack.org/oslo.config/'
+                          'oslo.config-1.2.0a3.tar.gz#egg=oslo.config')),
+        ('-e', dict(line='-e git+https://foo.com#egg=foo')),
+        ('-f', dict(line='-f http://tarballs.openstack.org/'))]
+
+    def test_does_not_parse(self):
+        with testtools.ExpectedException(pkg_resources.RequirementParseError):
+            update._parse_requirement(self.line)
