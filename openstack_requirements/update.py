@@ -158,11 +158,10 @@ def _check_setup_py(project):
 
 
 def _sync_requirements_file(
-        source_reqs, content, dest_path, softupdate, hacking, dest_name,
+        source_reqs, dest_sequence, dest_path, softupdate, hacking, dest_name,
         non_std_reqs):
     actions = []
-    dest_sequence = list(_content_to_reqs(content))
-    dest_reqs = _parse_reqs(content)
+    dest_reqs = _reqs_to_dict(dest_sequence)
     changes = []
     actions.append(Verbose("Syncing %s" % dest_path))
     content_lines = []
@@ -254,9 +253,10 @@ def _copy_requires(
             dest_name = "%s.%s" % (source, suffix)
         else:
             dest_name = source
+        dest_sequence = list(_content_to_reqs(content))
         actions.extend(_sync_requirements_file(
-            global_reqs, content, dest_path, softupdate, hacking, dest_name,
-            non_std_reqs))
+            global_reqs, dest_sequence, dest_path, softupdate, hacking,
+            dest_name, non_std_reqs))
     return actions
 
 
@@ -282,9 +282,12 @@ def _content_to_reqs(content):
 
 
 def _parse_reqs(content):
+    return _reqs_to_dict(_content_to_reqs(content))
+
+
+def _reqs_to_dict(req_sequence):
     reqs = dict()
-    req_lines = _content_to_reqs(content)
-    for req, req_line in req_lines:
+    for req, req_line in req_sequence:
         if req is not None:
             reqs.setdefault(req.package.lower(), []).append((req, req_line))
     return reqs

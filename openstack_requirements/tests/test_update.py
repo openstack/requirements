@@ -362,8 +362,9 @@ class TestSyncRequirementsFile(testtools.TestCase):
             foo
             """)
         global_reqs = update._parse_reqs(global_content)
+        project_reqs = list(update._content_to_reqs(project_content))
         actions = update._sync_requirements_file(
-            global_reqs, project_content, 'f', False, False, 'f', False)
+            global_reqs, project_reqs, 'f', False, False, 'f', False)
         self.assertEqual(update.File('f', textwrap.dedent("""\
 # The order of packages is significant, because pip processes them in the order
 # of appearance. Changing the order has an impact on the overall integration
@@ -390,8 +391,9 @@ foo>1;python_version!='2.7'
             foo>1;python_version!='2.7'
             """)
         global_reqs = update._parse_reqs(global_content)
+        project_reqs = list(update._content_to_reqs(project_content))
         actions = update._sync_requirements_file(
-            global_reqs, project_content, 'f', False, False, 'f', False)
+            global_reqs, project_reqs, 'f', False, False, 'f', False)
         self.assertEqual(update.File('f', textwrap.dedent("""\
 # The order of packages is significant, because pip processes them in the order
 # of appearance. Changing the order has an impact on the overall integration
@@ -413,8 +415,9 @@ foo>1;python_version!='2.7'
             foo>0.9;python_version!='2.7'
             """)
         global_reqs = update._parse_reqs(global_content)
+        project_reqs = list(update._content_to_reqs(project_content))
         actions = update._sync_requirements_file(
-            global_reqs, project_content, 'f', False, False, 'f', False)
+            global_reqs, project_reqs, 'f', False, False, 'f', False)
         self.assertEqual(update.File('f', textwrap.dedent("""\
 # The order of packages is significant, because pip processes them in the order
 # of appearance. Changing the order has an impact on the overall integration
@@ -441,8 +444,9 @@ foo>1;python_version!='2.7'
             foo>1;python_version!='2.7'
             """)
         global_reqs = update._parse_reqs(global_content)
+        project_reqs = list(update._content_to_reqs(project_content))
         actions = update._sync_requirements_file(
-            global_reqs, project_content, 'f', False, False, 'f', False)
+            global_reqs, project_reqs, 'f', False, False, 'f', False)
         self.assertEqual(update.File('f', textwrap.dedent("""\
 # The order of packages is significant, because pip processes them in the order
 # of appearance. Changing the order has an impact on the overall integration
@@ -461,8 +465,9 @@ foo>1;python_version!='2.7'
             foo>1;python_version!='2.7'
             """)
         global_reqs = update._parse_reqs(global_content)
+        project_reqs = list(update._content_to_reqs(project_content))
         actions = update._sync_requirements_file(
-            global_reqs, project_content, 'f', False, False, 'f', False)
+            global_reqs, project_reqs, 'f', False, False, 'f', False)
         self.assertEqual(update.File('f', textwrap.dedent("""\
 # The order of packages is significant, because pip processes them in the order
 # of appearance. Changing the order has an impact on the overall integration
