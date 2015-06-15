@@ -1,5 +1,6 @@
 openstack-dev/hacking
 openstack-dev/pbr
+openstack/automaton
 openstack/barbican
 openstack/ceilometer
 openstack/ceilometermiddleware
@@ -35,6 +36,7 @@ openstack/os-cloud-config
 openstack/os-collect-config
 openstack/os-refresh-config
 openstack/oslo-incubator
+openstack/oslo.cache
 openstack/oslo.concurrency
 openstack/oslo.config
 openstack/oslo.context
@@ -44,6 +46,7 @@ openstack/oslo.log
 openstack/oslo.messaging
 openstack/oslo.middleware
 openstack/oslo.policy
+openstack/oslo.reports
 openstack/oslo.rootwrap
 openstack/oslo.serialization
 openstack/oslo.service
