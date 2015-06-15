@@ -322,9 +322,15 @@ class TestParseRequirement(testtools.TestCase):
         ('comment', dict(
          line='Pint>=0.5  # BSD',
          req=update.Requirement('Pint', '>=0.5', '# BSD'))),
+        ('comment-with-semicolon', dict(
+         line='Pint>=0.5  # BSD;fred',
+         req=update.Requirement('Pint', '>=0.5', '# BSD;fred'))),
         ('case', dict(
          line='Babel>=1.3',
-         req=update.Requirement('Babel', '>=1.3', '')))]
+         req=update.Requirement('Babel', '>=1.3', ''))),
+        ('markers', dict(
+         line="pywin32;sys_platform=='win32'",
+         req=update.Requirement('pywin32', '', ";sys_platform=='win32'")))]
 
     def test_parse(self):
         parsed = update._parse_requirement(self.line)
