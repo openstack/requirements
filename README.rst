@@ -51,6 +51,16 @@ that are allowed in OpenStack projects. This is enforced for
 ``requirements.txt``, ``test-requirements.txt`` and extras defined in
 ``setup.cfg``.
 
+Format
+------
+
+``global-requirements.txt`` supports a subset of pip requirement file
+contents.  Distributions may only be referenced by name, not URL. Options
+(such as -e or -f) may not be used. Version specifiers, environment markers
+and comments are all permitted. A single distribution may be listed more than
+once if different specifiers are required with different markers - for
+instance, if a dependency has dropped Python 2.7 support.
+
 Enforcement for Test Runs
 -------------------------
 
