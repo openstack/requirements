@@ -20,6 +20,7 @@ import sys
 import textwrap
 
 import fixtures
+import parsley
 import pkg_resources
 import testscenarios
 import testtools
@@ -481,3 +482,213 @@ class TestReqsToContent(testtools.TestCase):
             ''.join(update._REQS_HEADER
                     + ["foo<=1!python_version=='2.7' # BSD\n"]),
             reqs)
+
+
+class TestProjectExtras(testtools.TestCase):
+
+    def test_smoke(self):
+        project = {'setup.cfg': textwrap.dedent(u"""
+[extras]
+1 =
+  foo
+2 =
+  foo # fred
+  bar
+""")}
+        expected = {
+            '1': '\nfoo',
+            '2': '\nfoo # fred\nbar'
+        }
+        self.assertEqual(expected, update._project_extras(project))
+
+    def test_none(self):
+        project = {'setup.cfg': u"[metadata]\n"}
+        self.assertEqual({}, update._project_extras(project))
+
+
+class TestExtras(testtools.TestCase):
+
+    def test_none(self):
+        old_content = textwrap.dedent(u"""
+            [metadata]
+            # something something
+            name = fred
+
+            [entry_points]
+            console_scripts =
+                foo = bar:quux
+            """)
+        ini = update.extras_compiled(old_content).ini()
+        self.assertEqual(ini, (old_content, None, ''))
+
+    def test_no_eol(self):
+        old_content = textwrap.dedent(u"""
+            [metadata]
+            # something something
+            name = fred
+
+            [entry_points]
+            console_scripts =
+                foo = bar:quux""")
+        expected1 = textwrap.dedent(u"""
+            [metadata]
+            # something something
+            name = fred
+
+            [entry_points]
+            console_scripts =
+            """)
+        suffix = '    foo = bar:quux'
+        ini = update.extras_compiled(old_content).ini()
+        self.assertEqual(ini, (expected1, None, suffix))
+
+    def test_two_extras_raises(self):
+        old_content = textwrap.dedent(u"""
+            [metadata]
+            # something something
+            name = fred
+
+            [extras]
+            a = b
+            [extras]
+            b = c
+
+            [entry_points]
+            console_scripts =
+                foo = bar:quux
+            """)
+        with testtools.ExpectedException(parsley.ParseError):
+            update.extras_compiled(old_content).ini()
+
+    def test_extras(self):
+        # We get an AST for extras we can use to preserve comments.
+        old_content = textwrap.dedent(u"""
+            [metadata]
+            # something something
+            name = fred
+
+            [extras]
+            # comment1
+            a =
+             b
+             c
+            # comment2
+            # comment3
+            d =
+             e
+            # comment4
+
+            [entry_points]
+            console_scripts =
+                foo = bar:quux
+            """)
+        prefix = textwrap.dedent(u"""
+            [metadata]
+            # something something
+            name = fred
+
+            """)
+        suffix = textwrap.dedent(u"""\
+            [entry_points]
+            console_scripts =
+                foo = bar:quux
+            """)
+        extras = [
+            update.Comment('# comment1\n'),
+            update.Extra('a', '\nb\nc\n'),
+            update.Comment('# comment2\n'),
+            update.Comment('# comment3\n'),
+            update.Extra('d', '\ne\n'),
+            update.Comment('# comment4\n')]
+        ini = update.extras_compiled(old_content).ini()
+        self.assertEqual(ini, (prefix, extras, suffix))
+
+
+class TestMergeSetupCfg(testtools.TestCase):
+
+    def test_merge_none(self):
+        old_content = textwrap.dedent(u"""
+            [metadata]
+            # something something
+            name = fred
+
+            [entry_points]
+            console_scripts =
+                foo = bar:quux
+            """)
+        merged = update._merge_setup_cfg(old_content, {})
+        self.assertEqual(old_content, merged)
+
+    def test_merge_extras(self):
+        old_content = textwrap.dedent(u"""
+            [metadata]
+            name = fred
+
+            [extras]
+            # Comment
+            a =
+             b
+            # comment
+            c =
+             d
+
+            [entry_points]
+            console_scripts =
+                foo = bar:quux
+            """)
+        blank = update.Requirement('', '', '', '')
+        r1 = update.Requirement('b', '>=1', "python_version=='2.7'", '')
+        r2 = update.Requirement('d', '', '', '# BSD')
+        reqs = {
+            'a': update.Requirements([blank, r1]),
+            'c': update.Requirements([blank, r2])}
+        merged = update._merge_setup_cfg(old_content, reqs)
+        expected = textwrap.dedent(u"""
+            [metadata]
+            name = fred
+
+            [extras]
+            # Comment
+            a =
+              b>=1:python_version=='2.7'
+            # comment
+            c =
+              d # BSD
+
+            [entry_points]
+            console_scripts =
+                foo = bar:quux
+            """)
+        self.assertEqual(expected, merged)
+
+
+class TestCopyRequires(testtools.TestCase):
+
+    def test_extras_no_change(self):
+        global_content = textwrap.dedent(u"""\
+            foo<2;python_version=='2.7' # BSD
+            foo>1;python_version!='2.7'
+            freddy
+            """)
+        setup_cfg = textwrap.dedent(u"""\
+            [metadata]
+            name = openstack.requirements
+
+            [extras]
+            test =
+              foo<2:python_version=='2.7' # BSD
+              foo>1:python_version!='2.7'
+            opt =
+              freddy
+            """)
+        project = {}
+        project['root'] = '/dev/null'
+        project['requirements'] = {}
+        project['setup.cfg'] = setup_cfg
+        global_reqs = update._parse_reqs(global_content)
+        actions = update._copy_requires(
+            u'', False, False, project, global_reqs, False)
+        self.assertEqual([
+            update.Verbose('Syncing extra [opt]'),
+            update.Verbose('Syncing extra [test]'),
+            update.File('setup.cfg', setup_cfg)], actions)

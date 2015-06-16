@@ -73,6 +73,10 @@ mkdir -p $projectdir
 # Attempt to install all of global requirements
 install_all_of_gr
 
+# Install requirements
+$tmpdir/all_requirements/bin/pip install $REPODIR/requirements
+UPDATE="$tmpdir/all_requirements/bin/update-requirements"
+
 for PROJECT in $PROJECTS ; do
     SHORT_PROJECT=$(basename $PROJECT)
     if ! grep 'pbr' $REPODIR/$SHORT_PROJECT/setup.py >/dev/null 2>&1
@@ -109,7 +113,7 @@ for PROJECT in $PROJECTS ; do
 
     # set up the project synced with the global requirements
     sudo chown -R $USER $REPODIR/$SHORT_PROJECT
-    (cd $REPODIR/requirements && python update.py $REPODIR/$SHORT_PROJECT)
+    $UPDATE --source $REPODIR/requirements $REPODIR/$SHORT_PROJECT
     pushd $REPODIR/$SHORT_PROJECT
     if ! git diff --exit-code > /dev/null; then
         git commit -a -m'Update requirements'

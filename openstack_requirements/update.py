@@ -28,13 +28,16 @@ files will be dropped.
 
 import collections
 import errno
+import io
 import itertools
 import optparse
 import os
 import os.path
 import sys
 
+from parsley import makeGrammar
 import pkg_resources
+from six.moves import configparser
 
 _setup_py_text = """#!/usr/bin/env python
 # Copyright (c) 2013 Hewlett-Packard Development Company, L.P.
@@ -77,6 +80,25 @@ _REQS_HEADER = [
     'integration\n',
     '# process, which may cause wedges in the gate later.\n',
 ]
+
+
+Comment = collections.namedtuple('Comment', ['line'])
+Extra = collections.namedtuple('Extra', ['name', 'content'])
+
+
+extras_grammar = """
+ini = (line*:p extras?:e line*:l final:s) -> (''.join(p), e, ''.join(l+[s]))
+line = ~extras <(~'\\n' anything)* '\\n'>
+final = <(~'\\n' anything)* >
+extras = '[' 'e' 'x' 't' 'r' 'a' 's' ']' '\\n'+ body*:b -> b
+body = comment | extra
+comment = <'#' (~'\\n' anything)* '\\n'>:c '\\n'* -> comment(c)
+extra = name:n ' '* '=' line:l cont*:c '\\n'* -> extra(n, ''.join([l] + c))
+name = <(anything:x ?(x not in '\\n \\t='))+>
+cont = ' '+ <(~'\\n' anything)* '\\n'>
+"""
+extras_compiled = makeGrammar(
+    extras_grammar, {"comment": Comment, "extra": Extra})
 
 
 # Pure --
@@ -263,17 +285,80 @@ def _copy_requires(
             non_std_reqs)
         actions.extend(_actions)
         actions.append(File(dest_name, _reqs_to_content(reqs)))
+    extras = _project_extras(project)
+    output_extras = {}
+    for extra, content in sorted(extras.items()):
+        dest_name = 'extra-%s' % extra
+        dest_path = "%s[%s]" % (project['root'], extra)
+        dest_sequence = list(_content_to_reqs(content))
+        actions.append(Verbose("Syncing extra [%s]" % extra))
+        _actions, reqs = _sync_requirements_file(
+            global_reqs, dest_sequence, dest_path, softupdate, hacking,
+            non_std_reqs)
+        actions.extend(_actions)
+        output_extras[extra] = reqs
+    dest_path = 'setup.cfg'
+    if suffix:
+        dest_path = "%s.%s" % (dest_path, suffix)
+    actions.append(File(
+        dest_path, _merge_setup_cfg(project['setup.cfg'], output_extras)))
     return actions
 
 
-def _reqs_to_content(reqs, marker_sep=';'):
-    lines = list(_REQS_HEADER)
+def _merge_setup_cfg(old_content, new_extras):
+    # This is ugly. All the existing libraries handle setup.cfg's poorly.
+    prefix, extras, suffix = extras_compiled(old_content).ini()
+    out_extras = []
+    if extras is not None:
+        for extra in extras:
+            if type(extra) is Comment:
+                out_extras.append(extra)
+            elif type(extra) is Extra:
+                if extra.name not in new_extras:
+                    out_extras.append(extra)
+                    continue
+                e = Extra(
+                    extra.name,
+                    _reqs_to_content(
+                        new_extras[extra.name], ':', '  ', False))
+                out_extras.append(e)
+            else:
+                raise TypeError('unknown type %r' % extra)
+    if out_extras:
+        extras_str = ['[extras]\n']
+        for extra in out_extras:
+            if type(extra) is Comment:
+                extras_str.append(extra.line)
+            else:
+                extras_str.append(extra.name + ' =')
+                extras_str.append(extra.content)
+        if suffix:
+            extras_str.append('\n')
+        extras_str = ''.join(extras_str)
+    else:
+        extras_str = ''
+    return prefix + extras_str + suffix
+
+
+def _project_extras(project):
+    """Return a dict of extra-name:content for the extras in setup.cfg."""
+    c = configparser.SafeConfigParser()
+    c.readfp(io.StringIO(project['setup.cfg']))
+    if not c.has_section('extras'):
+        return dict()
+    return dict(c.items('extras'))
+
+
+def _reqs_to_content(reqs, marker_sep=';', line_prefix='', prefix=True):
+    lines = []
+    if prefix:
+        lines += _REQS_HEADER
     for req in reqs.reqs:
         comment_p = ' ' if req.package else ''
         comment = (comment_p + req.comment if req.comment else '')
         marker = marker_sep + req.markers if req.markers else ''
-        lines.append(
-            '%s%s%s%s\n' % (req.package, req.specifiers, marker, comment))
+        package = line_prefix + req.package if req.package else ''
+        lines.append('%s%s%s%s\n' % (package, req.specifiers, marker, comment))
     return u''.join(lines)
 
 
@@ -315,7 +400,8 @@ def _safe_read(project, filename, output=None):
     if output is None:
         output = project
     try:
-        with open(project['root'] + '/' + filename, 'rt') as f:
+        path = project['root'] + '/' + filename
+        with io.open(path, 'rt', encoding="utf-8") as f:
             output[filename] = f.read()
     except IOError as e:
         if e.errno != errno.ENOENT:
