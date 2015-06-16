@@ -26,29 +26,26 @@ from openstack_requirements import update
 
 class UpdateTestPbr(testtools.TestCase):
 
-    def setUp(self):
-        super(UpdateTestPbr, self).setUp()
-        self.global_env = self.useFixture(common.GlobalRequirements())
-        self.pbr = self.useFixture(common.pbr_fixture)
-
     def test_project(self):
-        update.main(['--source', self.global_env.root, self.pbr.root])
-        reqs = common._file_to_list(self.pbr.req_file)
+        reqs = common.project_file(
+            self.fail, common.pbr_project, 'requirements.txt')
         # ensure various updates take
         self.assertIn("jsonschema>=1.0.0,!=1.4.0,<2", reqs)
         self.assertIn("python-keystoneclient>=0.4.1", reqs)
         self.assertIn("SQLAlchemy>=0.7,<=0.7.99", reqs)
 
     def test_test_project(self):
-        update.main(['--source', self.global_env.root, self.pbr.root])
-        reqs = common._file_to_list(self.pbr.test_req_file)
+        reqs = common.project_file(
+            self.fail, common.pbr_project, 'test-requirements.txt')
         self.assertIn("testtools>=0.9.32", reqs)
         self.assertIn("testrepository>=0.0.17", reqs)
         # make sure we didn't add something we shouldn't
         self.assertNotIn("sphinxcontrib-pecanwsme>=0.2", reqs)
 
-    def test_install_setup(self):
-        update.main(['--source', self.global_env.root, self.pbr.root])
-        setup_contents = common._file_to_list(self.pbr.setup_file)
-        self.assertNotIn("# THIS FILE IS MANAGED BY THE GLOBAL REQUIREMENTS "
-                         "REPO - DO NOT EDIT", setup_contents)
+    def test_no_install_setup(self):
+        actions = update._process_project(
+            common.pbr_project, common.global_reqs, None, None, None,
+            False)
+        for action in actions:
+            if type(action) is update.File:
+                self.assertNotEqual(action.filename, 'setup.py')
