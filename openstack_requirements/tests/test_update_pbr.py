@@ -30,9 +30,9 @@ class UpdateTestPbr(testtools.TestCase):
         reqs = common.project_file(
             self.fail, common.pbr_project, 'requirements.txt')
         # ensure various updates take
-        self.assertIn("jsonschema>=1.0.0,!=1.4.0,<2", reqs)
+        self.assertIn("jsonschema!=1.4.0,<2,>=1.0.0", reqs)
         self.assertIn("python-keystoneclient>=0.4.1", reqs)
-        self.assertIn("SQLAlchemy>=0.7,<=0.7.99", reqs)
+        self.assertIn("SQLAlchemy<=0.7.99,>=0.7", reqs)
 
     def test_test_project(self):
         reqs = common.project_file(
