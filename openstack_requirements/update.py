@@ -309,7 +309,7 @@ def _parse_reqs(filename):
     return reqs
 
 
-def main(argv=None, stdout=None):
+def main(argv=None, stdout=None, _worker=None):
     parser = optparse.OptionParser()
     parser.add_option("-o", "--output-suffix", dest="suffix", default="",
                       help="output suffix for updated files (i.e. .global)")
@@ -330,8 +330,10 @@ def main(argv=None, stdout=None):
         raise Exception("Must specify one and only one directory to update.")
     if stdout is None:
         stdout = sys.stdout
+    if _worker is None:
+        _worker = _do_main
     non_std_reqs = os.getenv('NON_STANDARD_REQS', '0') == '1'
-    _do_main(
+    _worker(
         args[0], options.source, options.suffix, options.softupdate,
         options.hacking, stdout, options.verbose, non_std_reqs)
 

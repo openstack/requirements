@@ -16,6 +16,7 @@ from __future__ import print_function
 
 import io
 import StringIO
+import sys
 
 import fixtures
 import testtools
@@ -239,3 +240,24 @@ class TestWriteProject(testtools.TestCase):
         actions = [update.StdOut(u'fred\n')]
         update._write_project(project, actions, stdout, True)
         self.expectThat(stdout.getvalue(), matchers.Equals('fred\n'))
+
+
+class TestMain(testtools.TestCase):
+
+    def test_smoke(self):
+        def check_params(
+                root, source, suffix, softupdate, hacking, stdout, verbose,
+                non_std_reqs):
+            self.expectThat(root, matchers.Equals('/dev/zero'))
+            self.expectThat(source, matchers.Equals('/dev/null'))
+            self.expectThat(suffix, matchers.Equals(''))
+            self.expectThat(softupdate, matchers.Equals(None))
+            self.expectThat(hacking, matchers.Equals(None))
+            self.expectThat(stdout, matchers.Equals(sys.stdout))
+            self.expectThat(verbose, matchers.Equals(None))
+            self.expectThat(non_std_reqs, matchers.Equals(True))
+
+        with fixtures.EnvironmentVariable('NON_STANDARD_REQS', '1'):
+            update.main(
+                ['--source', '/dev/null', '/dev/zero'],
+                _worker=check_params)
