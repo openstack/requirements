@@ -35,8 +35,6 @@ import sys
 
 import pkg_resources
 
-VERBOSE = None
-
 _setup_py_text = """#!/usr/bin/env python
 # Copyright (c) 2013 Hewlett-Packard Development Company, L.P.
 #
@@ -135,11 +133,6 @@ def _check_setup_py(project):
 
 
 # IO --
-def verbose(msg, stdout):
-    if VERBOSE:
-        stdout.write(msg + "\n")
-
-
 def _safe_read(project, filename):
     try:
         with open(project['root'] + '/' + filename, 'rt') as f:
@@ -312,8 +305,6 @@ def main(argv=None, stdout=None):
     if len(args) != 1:
         print("Must specify directory to update")
         raise Exception("Must specify one and only one directory to update.")
-    global VERBOSE
-    VERBOSE = options.verbose
     if stdout is None:
         stdout = sys.stdout
     root = args[0]
