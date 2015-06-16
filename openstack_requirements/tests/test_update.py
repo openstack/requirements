@@ -227,3 +227,11 @@ class TestWriteProject(testtools.TestCase):
         actions = [('foo', 'bar')]
         with testtools.ExpectedException(Exception):
             update._write_project(project, actions, stdout, True)
+
+    def test_stdout(self):
+        stdout = io.StringIO()
+        root = self.useFixture(fixtures.TempDir()).path
+        project = {'root': root}
+        actions = [update.StdOut(u'fred\n')]
+        update._write_project(project, actions, stdout, True)
+        self.expectThat(stdout.getvalue(), matchers.Equals('fred\n'))
