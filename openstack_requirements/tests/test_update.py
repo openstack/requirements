@@ -26,99 +26,22 @@ from openstack_requirements.tests import common
 from openstack_requirements import update
 
 
-class UpdateTest(testtools.TestCase):
-
-    def setUp(self):
-        super(UpdateTest, self).setUp()
-        self.global_env = self.useFixture(common.GlobalRequirements())
-
-    def test_requirements(self):
-        # This is testing our test input data. Perhaps remove? (lifeless)
-        reqs = common._file_to_list(self.global_env.req_file)
-        self.assertIn("jsonschema>=1.0.0,!=1.4.0,<2", reqs)
+class SmokeTest(testtools.TestCase):
 
     def test_project(self):
+        global_env = self.useFixture(common.GlobalRequirements())
+        global_reqs = common._file_to_list(global_env.req_file)
+        # This is testing our test input data. Perhaps remove? (lifeless)
+        self.assertIn("jsonschema>=1.0.0,!=1.4.0,<2", global_reqs)
+        # And test the end to end call of update.py, UI and all.
         self.project = self.useFixture(common.project_fixture)
-        update.main(['--source', self.global_env.root, self.project.root])
+        capture = StringIO.StringIO()
+        update.main(['--source', global_env.root, self.project.root], capture)
         reqs = common._file_to_list(self.project.req_file)
         # ensure various updates take
         self.assertIn("jsonschema>=1.0.0,!=1.4.0,<2", reqs)
         self.assertIn("python-keystoneclient>=0.4.1", reqs)
         self.assertIn("SQLAlchemy>=0.7,<=0.7.99", reqs)
-
-    def test_requirements_header(self):
-        _REQS_HEADER = [
-            '# The order of packages is significant, because pip processes '
-            'them in the order',
-            '# of appearance. Changing the order has an impact on the overall '
-            'integration',
-            '# process, which may cause wedges in the gate later.',
-        ]
-        self.project = self.useFixture(common.project_fixture)
-        update.main(['--source', self.global_env.root, self.project.root])
-        reqs = common._file_to_list(self.project.req_file)
-        self.assertEqual(_REQS_HEADER, reqs[:3])
-
-    def test_project_with_oslo(self):
-        self.oslo_project = self.useFixture(common.oslo_fixture)
-        update.main(
-            ['--source', self.global_env.root, self.oslo_project.root])
-        reqs = common._file_to_list(self.oslo_project.req_file)
-        oslo_tar = ("-f http://tarballs.openstack.org/oslo.config/"
-                    "oslo.config-1.2.0a3.tar.gz#egg=oslo.config-1.2.0a3")
-        self.assertIn(oslo_tar, reqs)
-
-    def test_test_project(self):
-        self.project = self.useFixture(common.project_fixture)
-        update.main(['--source', self.global_env.root, self.project.root])
-        reqs = common._file_to_list(self.project.test_req_file)
-        self.assertIn("testtools>=0.9.32", reqs)
-        self.assertIn("testrepository>=0.0.17", reqs)
-        # make sure we didn't add something we shouldn't
-        self.assertNotIn("sphinxcontrib-pecanwsme>=0.2", reqs)
-
-    def test_install_setup(self):
-        self.project = self.useFixture(common.project_fixture)
-        update.main(['--source', self.global_env.root, self.project.root])
-        setup_contents = common._file_to_list(self.project.setup_file)
-        self.assertIn("# THIS FILE IS MANAGED BY THE GLOBAL REQUIREMENTS REPO"
-                      " - DO NOT EDIT", setup_contents)
-
-    def test_no_install_setup(self):
-        self.oslo_project = self.useFixture(common.oslo_fixture)
-        update.main(
-            ['--source', self.global_env.root, self.oslo_project.root])
-        setup_contents = common._file_to_list(self.oslo_project.setup_file)
-        self.assertNotIn(
-            "# THIS FILE IS MANAGED BY THE GLOBAL REQUIREMENTS REPO"
-            " - DO NOT EDIT", setup_contents)
-
-    # These are tests which don't need to run the project update in advance
-    def test_requirement_not_in_global(self):
-        self.bad_project = self.useFixture(common.bad_project_fixture)
-        with testtools.ExpectedException(Exception):
-            update.main(
-                ['--source', self.global_env.root, self.bad_project.root])
-
-    def test_requirement_not_in_global_non_fatal(self):
-        self.useFixture(
-            fixtures.EnvironmentVariable("NON_STANDARD_REQS", "1"))
-        self.bad_project = self.useFixture(common.bad_project_fixture)
-        update.main(['--source', self.global_env.root, self.bad_project.root])
-
-    def test_requirement_soft_update(self):
-        self.bad_project = self.useFixture(common.bad_project_fixture)
-        update.main([
-            '-s', '--source', self.global_env.root, self.bad_project.root])
-        reqs = common._file_to_list(self.bad_project.req_file)
-        self.assertIn("thisisnotarealdepedency", reqs)
-
-    # testing output
-    def test_non_verbose_output(self):
-        capture = StringIO.StringIO()
-        self.project = self.useFixture(common.project_fixture)
-        update.main(
-            ['--source', self.global_env.root, self.project.root], capture)
         expected = ('Version change for: greenlet, sqlalchemy, eventlet, pastedeploy, routes, webob, wsgiref, boto, kombu, pycrypto, python-swiftclient, lxml, jsonschema, python-keystoneclient\n'  # noqa
             """Updated %(project)s/requirements.txt:
     greenlet>=0.3.1                ->   greenlet>=0.3.2
@@ -144,12 +67,117 @@ Updated %(project)s/test-requirements.txt:
 """) % dict(project=self.project.root)
         self.assertEqual(expected, capture.getvalue())
 
-    def test_verbose_output(self):
+
+class UpdateTest(testtools.TestCase):
+
+    def test_project(self):
+        reqs = common.project_file(
+            self.fail, common.project_project, 'requirements.txt')
+        # ensure various updates take
+        self.assertIn("jsonschema>=1.0.0,!=1.4.0,<2", reqs)
+        self.assertIn("python-keystoneclient>=0.4.1", reqs)
+        self.assertIn("SQLAlchemy>=0.7,<=0.7.99", reqs)
+
+    def test_requirements_header(self):
+        _REQS_HEADER = [
+            '# The order of packages is significant, because pip processes '
+            'them in the order',
+            '# of appearance. Changing the order has an impact on the overall '
+            'integration',
+            '# process, which may cause wedges in the gate later.',
+        ]
+        reqs = common.project_file(
+            self.fail, common.project_project, 'requirements.txt')
+        self.assertEqual(_REQS_HEADER, reqs[:3])
+
+    def test_project_with_oslo(self):
+        reqs = common.project_file(
+            self.fail, common.oslo_project, 'requirements.txt')
+        oslo_tar = ("-f http://tarballs.openstack.org/oslo.config/"
+                    "oslo.config-1.2.0a3.tar.gz#egg=oslo.config-1.2.0a3")
+        self.assertIn(oslo_tar, reqs)
+
+    def test_test_project(self):
+        reqs = common.project_file(
+            self.fail, common.project_project, 'test-requirements.txt')
+        self.assertIn("testtools>=0.9.32", reqs)
+        self.assertIn("testrepository>=0.0.17", reqs)
+        # make sure we didn't add something we shouldn't
+        self.assertNotIn("sphinxcontrib-pecanwsme>=0.2", reqs)
+
+    def test_install_setup(self):
+        setup_contents = common.project_file(
+            self.fail, common.project_project, 'setup.py', suffix='global')
+        self.assertIn("# THIS FILE IS MANAGED BY THE GLOBAL REQUIREMENTS REPO"
+                      " - DO NOT EDIT", setup_contents)
+
+    def test_no_install_setup(self):
+        actions = update._process_project(
+            common.oslo_project, common.global_reqs, None, None, None,
+            False)
+        for action in actions:
+            if type(action) is update.File:
+                self.assertNotEqual(action.filename, 'setup.py')
+
+    # These are tests which don't need to run the project update in advance
+    def test_requirement_not_in_global(self):
+        with testtools.ExpectedException(Exception):
+            update._process_project(
+                common.bad_project, common.global_reqs, None, None, None,
+                False)
+
+    def test_requirement_not_in_global_non_fatal(self):
+        reqs = common.project_file(
+            self.fail, common.bad_project, 'requirements.txt',
+            non_std_reqs=True)
+        self.assertNotIn("thisisnotarealdependency", reqs)
+
+    def test_requirement_soft_update(self):
+        reqs = common.project_file(
+            self.fail, common.bad_project, 'requirements.txt',
+            softupdate=True)
+        self.assertIn("thisisnotarealdepedency", reqs)
+
+    # testing output
+    def test_non_verbose_output(self):
+        actions = update._process_project(
+            common.project_project, common.global_reqs, None, None, None,
+            False)
         capture = StringIO.StringIO()
-        self.project = self.useFixture(common.project_fixture)
-        update.main(
-            ['--source', self.global_env.root, '-v', self.project.root],
-            capture)
+        update._write_project(
+            common.project_project, actions, capture, False, True)
+        expected = ('Version change for: greenlet, sqlalchemy, eventlet, pastedeploy, routes, webob, wsgiref, boto, kombu, pycrypto, python-swiftclient, lxml, jsonschema, python-keystoneclient\n'  # noqa
+            """Updated %(project)s/requirements.txt:
+    greenlet>=0.3.1                ->   greenlet>=0.3.2
+    SQLAlchemy>=0.7.8,<=0.7.99     ->   SQLAlchemy>=0.7,<=0.7.99
+    eventlet>=0.9.12               ->   eventlet>=0.12.0
+    PasteDeploy                    ->   PasteDeploy>=1.5.0
+    routes                         ->   Routes>=1.12.3
+    WebOb>=1.2                     ->   WebOb>=1.2.3,<1.3
+    wsgiref                        ->   wsgiref>=0.1.2
+    boto                           ->   boto>=2.4.0
+    kombu>2.4.7                    ->   kombu>=2.4.8
+    pycrypto>=2.1.0alpha1          ->   pycrypto>=2.6
+    python-swiftclient>=1.2,<2     ->   python-swiftclient>=1.2
+    lxml                           ->   lxml>=2.3
+    jsonschema                     ->   jsonschema>=1.0.0,!=1.4.0,<2
+    python-keystoneclient>=0.2.0   ->   python-keystoneclient>=0.4.1
+Version change for: mox, mox3, testrepository, testtools
+Updated %(project)s/test-requirements.txt:
+    mox==0.5.3                     ->   mox>=0.5.3
+    mox3==0.7.3                    ->   mox3>=0.7.0
+    testrepository>=0.0.13         ->   testrepository>=0.0.17
+    testtools>=0.9.27              ->   testtools>=0.9.32
+""") % dict(project=common.project_project['root'])
+        self.assertEqual(expected, capture.getvalue())
+
+    def test_verbose_output(self):
+        actions = update._process_project(
+            common.project_project, common.global_reqs, None, None, None,
+            False)
+        capture = StringIO.StringIO()
+        update._write_project(
+            common.project_project, actions, capture, True, True)
         expected = ("""Syncing %(project)s/requirements.txt
 Version change for: greenlet, sqlalchemy, eventlet, pastedeploy, routes, webob, wsgiref, boto, kombu, pycrypto, python-swiftclient, lxml, jsonschema, python-keystoneclient\n"""  # noqa
             """Updated %(project)s/requirements.txt:
@@ -175,7 +203,7 @@ Updated %(project)s/test-requirements.txt:
     testrepository>=0.0.13         ->   testrepository>=0.0.17
     testtools>=0.9.27              ->   testtools>=0.9.32
 Syncing setup.py
-""") % dict(project=self.project.root)
+""") % dict(project=common.project_project['root'])
         self.assertEqual(expected, capture.getvalue())
 
 

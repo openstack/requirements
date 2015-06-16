@@ -265,7 +265,7 @@ def _read_project(root):
     return result
 
 
-def _write_project(project, actions, stdout, verbose):
+def _write_project(project, actions, stdout, verbose, noop=False):
     """Write actions into project.
 
     :param project: A project metadata dict.
@@ -276,12 +276,15 @@ def _write_project(project, actions, stdout, verbose):
         Verbose objects will write a message to stdout when verbose is True.
     :param stdout: Where to write content for stdout.
     :param verbose: If True Verbose actions will be written to stdout.
+    :param noop: If True nothing will be written to disk.
     :return None:
     :raises IOError: If the IO operations fail, IOError is raised. If this
         happens some actions may have been applied and others not.
     """
     for action in actions:
         if type(action) is File:
+            if noop:
+                continue
             with open(project['root'] + '/' + action.filename, 'wt') as f:
                 f.write(action.content)
         elif type(action) is StdOut:
