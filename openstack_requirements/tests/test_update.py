@@ -294,8 +294,7 @@ class TestMain(testtools.TestCase):
 
         with fixtures.EnvironmentVariable('NON_STANDARD_REQS', '1'):
             update.main(
-                ['--source', '/dev/null', '/dev/zero'],
-                _worker=check_params)
+                ['--source', '/dev/null', '/dev/zero'], _worker=check_params)
 
     def test_suffix(self):
         def check_params(

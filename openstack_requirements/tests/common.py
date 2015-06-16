@@ -21,7 +21,6 @@ from openstack_requirements import update
 def _file_to_list(fname):
     with open(fname) as f:
         content = list(map(lambda x: x.rstrip(), f.readlines()))
-        print(content)
         return content
 
 
