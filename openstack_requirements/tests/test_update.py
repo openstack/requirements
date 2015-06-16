@@ -310,28 +310,32 @@ class TestParseRequirement(testtools.TestCase):
     scenarios = [
         ('package', dict(
          line='swift',
-         req=update.Requirement('swift', '', ''))),
+         req=update.Requirement('swift', '', '', ''))),
         ('specifier', dict(
          line='alembic>=0.4.1',
-         req=update.Requirement('alembic', '>=0.4.1', ''))),
+         req=update.Requirement('alembic', '>=0.4.1', '', ''))),
         ('specifiers', dict(
          line='alembic>=0.4.1,!=1.1.8',
-         req=update.Requirement('alembic', '!=1.1.8,>=0.4.1', ''))),
+         req=update.Requirement('alembic', '!=1.1.8,>=0.4.1', '', ''))),
         ('comment-only', dict(
          line='# foo',
-         req=update.Requirement('', '', '# foo'))),
+         req=update.Requirement('', '', '', '# foo'))),
         ('comment', dict(
          line='Pint>=0.5  # BSD',
-         req=update.Requirement('Pint', '>=0.5', '# BSD'))),
+         req=update.Requirement('Pint', '>=0.5', '', '# BSD'))),
         ('comment-with-semicolon', dict(
          line='Pint>=0.5  # BSD;fred',
-         req=update.Requirement('Pint', '>=0.5', '# BSD;fred'))),
+         req=update.Requirement('Pint', '>=0.5', '', '# BSD;fred'))),
         ('case', dict(
          line='Babel>=1.3',
-         req=update.Requirement('Babel', '>=1.3', ''))),
+         req=update.Requirement('Babel', '>=1.3', '', ''))),
         ('markers', dict(
          line="pywin32;sys_platform=='win32'",
-         req=update.Requirement('pywin32', '', ";sys_platform=='win32'")))]
+         req=update.Requirement('pywin32', '', "sys_platform=='win32'", ''))),
+        ('markers-with-comment', dict(
+         line="Sphinx<=1.2; python_version=='2.7'# Sadface",
+         req=update.Requirement('Sphinx', '<=1.2', "python_version=='2.7'",
+                                '# Sadface')))]
 
     def test_parse(self):
         parsed = update._parse_requirement(self.line)
@@ -366,8 +370,8 @@ class TestSyncRequirementsFile(testtools.TestCase):
         actions, reqs = update._sync_requirements_file(
             global_reqs, project_reqs, 'f', False, False, False)
         self.assertEqual(update.Requirements([
-            update.Requirement('foo', '<2', ";python_version=='2.7'"),
-            update.Requirement('foo', '>1', ";python_version!='2.7'")]),
+            update.Requirement('foo', '<2', "python_version=='2.7'", ''),
+            update.Requirement('foo', '>1', "python_version!='2.7'", '')]),
             reqs)
         self.assertEqual(update.StdOut(
             "    foo                            "
@@ -392,9 +396,9 @@ class TestSyncRequirementsFile(testtools.TestCase):
         actions, reqs = update._sync_requirements_file(
             global_reqs, project_reqs, 'f', False, False, False)
         self.assertEqual(update.Requirements([
-            update.Requirement('foo', '<2', ";python_version=='2.7'"),
-            update.Requirement('foo', '>1', ";python_version!='2.7'"),
-            update.Requirement('', '', "# mumbo gumbo")]),
+            update.Requirement('foo', '<2', "python_version=='2.7'", ''),
+            update.Requirement('foo', '>1', "python_version!='2.7'", ''),
+            update.Requirement('', '', '', "# mumbo gumbo")]),
             reqs)
         self.assertThat(actions, matchers.HasLength(0))
 
@@ -413,9 +417,9 @@ class TestSyncRequirementsFile(testtools.TestCase):
         actions, reqs = update._sync_requirements_file(
             global_reqs, project_reqs, 'f', False, False, False)
         self.assertEqual(update.Requirements([
-            update.Requirement('foo', '<2', ";python_version=='2.7'"),
-            update.Requirement('foo', '>1', ";python_version!='2.7'"),
-            update.Requirement('', '', "# mumbo gumbo")]),
+            update.Requirement('foo', '<2', "python_version=='2.7'", ''),
+            update.Requirement('foo', '>1', "python_version!='2.7'", ''),
+            update.Requirement('', '', '', "# mumbo gumbo")]),
             reqs)
         self.assertEqual(update.StdOut(
             "    foo<1.8;python_version=='2.7'  ->   "
@@ -439,8 +443,8 @@ class TestSyncRequirementsFile(testtools.TestCase):
         actions, reqs = update._sync_requirements_file(
             global_reqs, project_reqs, 'f', False, False, False)
         self.assertEqual(update.Requirements([
-            update.Requirement('foo', '<2', ";python_version=='2.7'"),
-            update.Requirement('foo', '>1', ";python_version!='2.7'")]),
+            update.Requirement('foo', '<2', "python_version=='2.7'", ''),
+            update.Requirement('foo', '>1', "python_version!='2.7'", '')]),
             reqs)
         self.assertThat(actions, matchers.HasLength(0))
 
@@ -457,10 +461,23 @@ class TestSyncRequirementsFile(testtools.TestCase):
         actions, reqs = update._sync_requirements_file(
             global_reqs, project_reqs, 'f', False, False, False)
         self.assertEqual(update.Requirements([
-            update.Requirement('foo', '>1', "")]),
+            update.Requirement('foo', '>1', "", '')]),
             reqs)
         self.assertEqual(update.StdOut(
             "    foo<2;python_version=='2.7'    ->   foo>1\n"), actions[2])
         self.assertEqual(update.StdOut(
             "    foo>1;python_version!='2.7'    ->   \n"), actions[3])
         self.assertThat(actions, matchers.HasLength(4))
+
+
+class TestReqsToContent(testtools.TestCase):
+
+    def test_smoke(self):
+        reqs = update._reqs_to_content(update.Requirements(
+            [update.Requirement(
+             'foo', '<=1', "python_version=='2.7'", '# BSD')]),
+            marker_sep='!')
+        self.assertEqual(
+            ''.join(update._REQS_HEADER
+                    + ["foo<=1!python_version=='2.7' # BSD\n"]),
+            reqs)
