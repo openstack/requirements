@@ -111,9 +111,18 @@ def _parse_requirement(req_line):
     They may of course be used by local test configurations, just not
     committed into the OpenStack reference branches.
     """
-    req_line, sep, comment = req_line.partition('#')
-    if comment:
-        comment = '#%s' % comment
+    hash_pos = req_line.find('#')
+    semi_pos = req_line.find(';')
+    if hash_pos < 0:
+        hash_pos = semi_pos
+    if semi_pos < 0:
+        semi_pos = hash_pos
+    split_at = min(hash_pos, semi_pos)
+    if split_at >= 0:
+        comment = req_line[split_at:]
+        req_line = req_line[:split_at]
+    else:
+        comment = ''
 
     if req_line:
         parsed = pkg_resources.Requirement.parse(req_line)
@@ -154,9 +163,6 @@ def _sync_requirements_file(
     actions = []
     dest_reqs = list(_content_to_reqs(content))
     changes = []
-    # this is specifically for global-requirements gate jobs so we don't
-    # modify the git tree
-
     actions.append(Verbose("Syncing %s" % dest_path))
     content_lines = []
 
