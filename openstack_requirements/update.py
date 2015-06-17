@@ -112,10 +112,6 @@ def _pass_through(req_line):
             req_line.startswith('-f'))
 
 
-def _functionally_equal(old_requirement, new_requirement):
-    return old_requirement == new_requirement
-
-
 def _check_setup_py(project):
     actions = []
     # If it doesn't have a setup.py, then we don't want to update it
@@ -164,7 +160,7 @@ def _sync_requirements_file(
             continue
 
         if old_pip in source_reqs:
-            if _functionally_equal(old_require, source_reqs[old_pip]):
+            if old_require == source_reqs[old_pip]:
                 content_lines.append(old_line)
             else:
                 changes.append(
