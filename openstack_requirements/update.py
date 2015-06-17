@@ -161,27 +161,31 @@ def _sync_requirements_file(
         source_reqs, content, dest_path, softupdate, hacking, dest_name,
         non_std_reqs):
     actions = []
-    dest_reqs = list(_content_to_reqs(content))
+    dest_sequence = list(_content_to_reqs(content))
+    dest_reqs = _parse_reqs(content)
     changes = []
     actions.append(Verbose("Syncing %s" % dest_path))
     content_lines = []
+    processed_packages = set()
 
     # Check the instructions header
-    if dest_reqs[:len(_REQS_HEADER)] != zip(
+    if dest_sequence[:len(_REQS_HEADER)] != zip(
             itertools.repeat(None), _REQS_HEADER):
         content_lines.extend(_REQS_HEADER)
 
-    for req, req_line in dest_reqs:
+    for req, req_line in dest_sequence:
         if req is None:
             # Unparsable lines.
             content_lines.append(req_line)
             continue
-
-        if not req.package:
+        elif not req.package:
             # Comment-only lines
             content_lines.append(req_line)
             continue
+        elif req.package.lower() in processed_packages:
+            continue
 
+        processed_packages.add(req.package.lower())
         # Special cases:
         # projects need to align hacking version on their own time
         if req.package == "hacking" and not hacking:
@@ -190,9 +194,19 @@ def _sync_requirements_file(
 
         reference = source_reqs.get(req.package.lower())
         if reference:
-            if reference[0] != req:
-                changes.append(Change(req.package, req_line, reference[1]))
-            content_lines.append(reference[1])
+            actual = dest_reqs.get(req.package.lower())
+            for req, ref in itertools.izip_longest(actual, reference):
+                if not req:
+                    # More in globals
+                    changes.append(Change(ref[0].package, '', ref[1]))
+                elif not ref:
+                    # less in globals
+                    changes.append(Change(req[0].package, req[1], ''))
+                elif req[0] != ref[0]:
+                    # A change on this entry
+                    changes.append(Change(req[0].package, req[1], ref[1]))
+                if ref:
+                    content_lines.append(ref[1])
         elif softupdate:
             # under softupdate we pass through anything unknown packages,
             # this is intended for ecosystem projects that want to stay in
@@ -272,7 +286,7 @@ def _parse_reqs(content):
     req_lines = _content_to_reqs(content)
     for req, req_line in req_lines:
         if req is not None:
-            reqs[req.package.lower()] = (req, req_line)
+            reqs.setdefault(req.package.lower(), []).append((req, req_line))
     return reqs
 
 
