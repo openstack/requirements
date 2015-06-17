@@ -28,6 +28,7 @@ files will be dropped.
 
 import collections
 import errno
+import itertools
 import optparse
 import os
 import os.path
@@ -82,8 +83,8 @@ _REQS_HEADER = [
 class Change(object):
     def __init__(self, name, old, new):
         self.name = name
-        self.old = old
-        self.new = new
+        self.old = old.strip()
+        self.new = new.strip()
 
     def __repr__(self):
         return "%-30.30s ->   %s" % (self.old, self.new)
@@ -94,20 +95,39 @@ StdOut = collections.namedtuple('StdOut', ['message'])
 Verbose = collections.namedtuple('Verbose', ['message'])
 
 
-def _package_name(req_line):
-    """Return normalized (lower case) package name.
+Requirement = collections.namedtuple(
+    'Requirement', ['package', 'specifiers', 'comment'])
 
-    This is needed for comparing old and new dictionaries of
-    requirements to ensure they match.
+
+def _parse_requirement(req_line):
+    """Parse a single line of a requirements file.
+
+    requirements files here are a subset of pip requirements files: we don't
+    try to parse URL entries, or pip options like -f and -e. Those are not
+    permitted in global-requirements.txt. If encountered in a synchronised
+    file such as requirements.txt or test-requirements.txt, they are illegal
+    but currently preserved as-is.
+
+    They may of course be used by local test configurations, just not
+    committed into the OpenStack reference branches.
     """
-    name = pkg_resources.Requirement.parse(req_line).project_name
-    return name.lower()
+    req_line, sep, comment = req_line.partition('#')
+    if comment:
+        comment = '#%s' % comment
+
+    if req_line:
+        parsed = pkg_resources.Requirement.parse(req_line)
+        name = parsed.project_name
+        specifier = str(parsed.specifier)
+    else:
+        name = ''
+        specifier = ''
+    return Requirement(name, specifier, comment)
 
 
 def _pass_through(req_line):
-    return (not req_line or
-            req_line.startswith('#') or
-            req_line.startswith('http://tarballs.openstack.org/') or
+    """Identify unparsable lines."""
+    return (req_line.startswith('http://tarballs.openstack.org/') or
             req_line.startswith('-e') or
             req_line.startswith('-f'))
 
@@ -132,7 +152,7 @@ def _sync_requirements_file(
         source_reqs, content, dest_path, softupdate, hacking, dest_name,
         non_std_reqs):
     actions = []
-    dest_reqs = content.splitlines(True)
+    dest_reqs = list(_content_to_reqs(content))
     changes = []
     # this is specifically for global-requirements gate jobs so we don't
     # modify the git tree
@@ -141,38 +161,38 @@ def _sync_requirements_file(
     content_lines = []
 
     # Check the instructions header
-    if dest_reqs[:len(_REQS_HEADER)] != _REQS_HEADER:
+    if dest_reqs[:len(_REQS_HEADER)] != zip(
+            itertools.repeat(None), _REQS_HEADER):
         content_lines.extend(_REQS_HEADER)
 
-    for old_line in dest_reqs:
-        old_require = old_line.strip()
-
-        if _pass_through(old_require):
-            content_lines.append(old_line)
+    for req, req_line in dest_reqs:
+        if req is None:
+            # Unparsable lines.
+            content_lines.append(req_line)
             continue
 
-        old_pip = _package_name(old_require)
+        if not req.package:
+            # Comment-only lines
+            content_lines.append(req_line)
+            continue
 
         # Special cases:
         # projects need to align hacking version on their own time
-        if "hacking" in old_pip and not hacking:
-            content_lines.append(old_line)
+        if req.package == "hacking" and not hacking:
+            content_lines.append(req_line)
             continue
 
-        if old_pip in source_reqs:
-            if old_require == source_reqs[old_pip]:
-                content_lines.append(old_line)
-            else:
-                changes.append(
-                    Change(old_pip, old_require, source_reqs[old_pip]))
-                content_lines.append("%s\n" % source_reqs[old_pip])
+        reference = source_reqs.get(req.package.lower())
+        if reference:
+            if reference[0] != req:
+                changes.append(Change(req.package, req_line, reference[1]))
+            content_lines.append(reference[1])
         elif softupdate:
-            # under softupdate we pass through anything we don't
-            # understand, this is intended for ecosystem projects
-            # that want to stay in sync with existing
-            # requirements, but also add their own above and
-            # beyond
-            content_lines.append(old_line)
+            # under softupdate we pass through anything unknown packages,
+            # this is intended for ecosystem projects that want to stay in
+            # sync with existing requirements, but also add their own above
+            # and beyond.
+            content_lines.append(req_line)
         else:
             # What do we do if we find something unexpected?
             #
@@ -184,8 +204,9 @@ def _sync_requirements_file(
             # devstack jobs that might have legitimate reasons to
             # override. For those we support NON_STANDARD_REQS=1
             # environment variable to turn this into a warning only.
+            # However this drops the unknown requirement.
             actions.append(StdOut(
-                "'%s' is not in global-requirements.txt\n" % old_pip))
+                "'%s' is not in global-requirements.txt\n" % req.package))
             if not non_std_reqs:
                 raise Exception("nonstandard requirement present.")
     actions.append(File(dest_name, u''.join(content_lines)))
@@ -231,13 +252,21 @@ def _process_project(
     return actions
 
 
+def _content_to_reqs(content):
+    for content_line in content.splitlines(True):
+        req_line = content_line.strip()
+        if _pass_through(req_line):
+            yield None, content_line
+        else:
+            yield _parse_requirement(req_line), content_line
+
+
 def _parse_reqs(content):
     reqs = dict()
-    for req_line in content.splitlines():
-        req_line = req_line.strip()
-        if _pass_through(req_line):
-            continue
-        reqs[_package_name(req_line)] = req_line
+    req_lines = _content_to_reqs(content)
+    for req, req_line in req_lines:
+        if req is not None:
+            reqs[req.package.lower()] = (req, req_line)
     return reqs
 
 
