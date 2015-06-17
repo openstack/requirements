@@ -39,8 +39,7 @@ from parsley import makeGrammar
 import pkg_resources
 from six.moves import configparser
 
-_setup_py_text = """#!/usr/bin/env python
-# Copyright (c) 2013 Hewlett-Packard Development Company, L.P.
+_setup_py_text = """# Copyright (c) 2013 Hewlett-Packard Development Company, L.P.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
