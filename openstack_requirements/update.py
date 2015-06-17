@@ -94,22 +94,22 @@ StdOut = collections.namedtuple('StdOut', ['message'])
 Verbose = collections.namedtuple('Verbose', ['message'])
 
 
-def _package_name(pip_line):
+def _package_name(req_line):
     """Return normalized (lower case) package name.
 
     This is needed for comparing old and new dictionaries of
     requirements to ensure they match.
     """
-    name = pkg_resources.Requirement.parse(pip_line).project_name
+    name = pkg_resources.Requirement.parse(req_line).project_name
     return name.lower()
 
 
-def _pass_through(pip):
-    return (not pip or
-            pip.startswith('#') or
-            pip.startswith('http://tarballs.openstack.org/') or
-            pip.startswith('-e') or
-            pip.startswith('-f'))
+def _pass_through(req_line):
+    return (not req_line or
+            req_line.startswith('#') or
+            req_line.startswith('http://tarballs.openstack.org/') or
+            req_line.startswith('-e') or
+            req_line.startswith('-f'))
 
 
 def _functionally_equal(old_requirement, new_requirement):
@@ -235,6 +235,16 @@ def _process_project(
     return actions
 
 
+def _parse_reqs(content):
+    reqs = dict()
+    for req_line in content.splitlines():
+        req_line = req_line.strip()
+        if _pass_through(req_line):
+            continue
+        reqs[_package_name(req_line)] = req_line
+    return reqs
+
+
 # IO --
 def _safe_read(project, filename, output=None):
     if output is None:
@@ -299,22 +309,6 @@ def _write_project(project, actions, stdout, verbose, noop=False):
             raise Exception("Invalid action %r" % (action,))
 
 
-def _readlines(filename):
-    with open(filename, 'r') as f:
-        return f.readlines()
-
-
-def _parse_reqs(filename):
-    reqs = dict()
-    pip_requires = _readlines(filename)
-    for pip in pip_requires:
-        pip = pip.strip()
-        if _pass_through(pip):
-            continue
-        reqs[_package_name(pip)] = pip
-    return reqs
-
-
 def main(argv=None, stdout=None, _worker=None):
     parser = optparse.OptionParser()
     parser.add_option("-o", "--output-suffix", dest="suffix", default="",
@@ -349,8 +343,9 @@ def _do_main(
         non_std_reqs):
     """No options or environment variable access from here on in."""
     project = _read_project(root)
-    global_reqs = _parse_reqs(
-        os.path.join(source, 'global-requirements.txt'))
+    global_req_content = open(
+        os.path.join(source, 'global-requirements.txt'), 'rt').read()
+    global_reqs = _parse_reqs(global_req_content)
     actions = _process_project(
         project, global_reqs, suffix, softupdate, hacking, non_std_reqs)
     _write_project(project, actions, stdout=stdout, verbose=verbose)
