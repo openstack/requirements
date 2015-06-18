@@ -80,6 +80,7 @@ openstack/python-troveclient
 openstack/python-tuskarclient
 openstack/python-zaqarclient
 openstack/rally
+openstack/requirements
 openstack/sahara
 openstack/sahara-dashboard
 openstack/sahara-extra
