@@ -96,7 +96,7 @@ Verbose = collections.namedtuple('Verbose', ['message'])
 
 
 Requirement = collections.namedtuple(
-    'Requirement', ['package', 'specifiers', 'comment'])
+    'Requirement', ['package', 'specifiers', 'markers', 'comment'])
 Requirements = collections.namedtuple('Requirements', ['reqs'])
 
 
@@ -112,18 +112,24 @@ def _parse_requirement(req_line):
     They may of course be used by local test configurations, just not
     committed into the OpenStack reference branches.
     """
+    end = len(req_line)
     hash_pos = req_line.find('#')
-    semi_pos = req_line.find(';')
     if hash_pos < 0:
-        hash_pos = semi_pos
-    if semi_pos < 0:
-        semi_pos = hash_pos
-    split_at = min(hash_pos, semi_pos)
-    if split_at >= 0:
-        comment = req_line[split_at:]
-        req_line = req_line[:split_at]
+        hash_pos = end
+    if '://' in req_line[:hash_pos]:
+        # Trigger an early failure before we look for ':'
+        pkg_resources.Requirement.parse(req_line)
+    semi_pos = req_line.find(';', 0, hash_pos)
+    colon_pos = req_line.find(':', 0, hash_pos)
+    marker_pos = max(semi_pos, colon_pos)
+    if marker_pos < 0:
+        marker_pos = hash_pos
+    markers = req_line[marker_pos + 1:hash_pos].strip()
+    if hash_pos != end:
+        comment = req_line[hash_pos:]
     else:
         comment = ''
+    req_line = req_line[:marker_pos]
 
     if req_line:
         parsed = pkg_resources.Requirement.parse(req_line)
@@ -132,7 +138,7 @@ def _parse_requirement(req_line):
     else:
         name = ''
         specifier = ''
-    return Requirement(name, specifier, comment)
+    return Requirement(name, specifier, markers, comment)
 
 
 def _pass_through(req_line):
@@ -173,7 +179,7 @@ def _sync_requirements_file(
             continue
         elif req is None:
             # Unparsable lines.
-            output_requirements.append(Requirement('', '', req_line))
+            output_requirements.append(Requirement('', '', '', req_line))
             continue
         elif not req.package:
             # Comment-only lines
@@ -260,12 +266,14 @@ def _copy_requires(
     return actions
 
 
-def _reqs_to_content(reqs):
+def _reqs_to_content(reqs, marker_sep=';'):
     lines = list(_REQS_HEADER)
     for req in reqs.reqs:
         comment_p = ' ' if req.package else ''
         comment = (comment_p + req.comment if req.comment else '')
-        lines.append('%s%s%s\n' % (req.package, req.specifiers, comment))
+        marker = marker_sep + req.markers if req.markers else ''
+        lines.append(
+            '%s%s%s%s\n' % (req.package, req.specifiers, marker, comment))
     return u''.join(lines)
 
 
