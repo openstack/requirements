@@ -27,9 +27,9 @@ class UpdateTestWithSuffix(testtools.TestCase):
             self.fail, common.project_project, 'requirements.txt.global',
             suffix='global')
         # ensure various updates take
-        self.assertIn("jsonschema>=1.0.0,!=1.4.0,<2", reqs)
+        self.assertIn("jsonschema!=1.4.0,<2,>=1.0.0", reqs)
         self.assertIn("python-keystoneclient>=0.4.1", reqs)
-        self.assertIn("SQLAlchemy>=0.7,<=0.7.99", reqs)
+        self.assertIn("SQLAlchemy<=0.7.99,>=0.7", reqs)
 
     def test_project_with_oslo(self):
         reqs = common.project_file(

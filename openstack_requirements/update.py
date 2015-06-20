@@ -97,6 +97,7 @@ Verbose = collections.namedtuple('Verbose', ['message'])
 
 Requirement = collections.namedtuple(
     'Requirement', ['package', 'specifiers', 'comment'])
+Requirements = collections.namedtuple('Requirements', ['reqs'])
 
 
 def _parse_requirement(req_line):
@@ -158,28 +159,25 @@ def _check_setup_py(project):
 
 
 def _sync_requirements_file(
-        source_reqs, dest_sequence, dest_path, softupdate, hacking, dest_name,
+        source_reqs, dest_sequence, dest_label, softupdate, hacking,
         non_std_reqs):
     actions = []
     dest_reqs = _reqs_to_dict(dest_sequence)
     changes = []
-    actions.append(Verbose("Syncing %s" % dest_path))
-    content_lines = []
+    output_requirements = []
     processed_packages = set()
 
-    # Check the instructions header
-    if dest_sequence[:len(_REQS_HEADER)] != zip(
-            itertools.repeat(None), _REQS_HEADER):
-        content_lines.extend(_REQS_HEADER)
-
     for req, req_line in dest_sequence:
-        if req is None:
+        # Skip the instructions header
+        if req_line in _REQS_HEADER:
+            continue
+        elif req is None:
             # Unparsable lines.
-            content_lines.append(req_line)
+            output_requirements.append(Requirement('', '', req_line))
             continue
         elif not req.package:
             # Comment-only lines
-            content_lines.append(req_line)
+            output_requirements.append(req)
             continue
         elif req.package.lower() in processed_packages:
             continue
@@ -188,7 +186,7 @@ def _sync_requirements_file(
         # Special cases:
         # projects need to align hacking version on their own time
         if req.package == "hacking" and not hacking:
-            content_lines.append(req_line)
+            output_requirements.append(req)
             continue
 
         reference = source_reqs.get(req.package.lower())
@@ -205,13 +203,13 @@ def _sync_requirements_file(
                     # A change on this entry
                     changes.append(Change(req[0].package, req[1], ref[1]))
                 if ref:
-                    content_lines.append(ref[1])
+                    output_requirements.append(ref[0])
         elif softupdate:
             # under softupdate we pass through anything unknown packages,
             # this is intended for ecosystem projects that want to stay in
             # sync with existing requirements, but also add their own above
             # and beyond.
-            content_lines.append(req_line)
+            output_requirements.append(req)
         else:
             # What do we do if we find something unexpected?
             #
@@ -228,16 +226,15 @@ def _sync_requirements_file(
                 "'%s' is not in global-requirements.txt\n" % req.package))
             if not non_std_reqs:
                 raise Exception("nonstandard requirement present.")
-    actions.append(File(dest_name, u''.join(content_lines)))
     # always print out what we did if we did a thing
     if changes:
         actions.append(StdOut(
             "Version change for: %s\n"
             % ", ".join([x.name for x in changes])))
-        actions.append(StdOut("Updated %s:\n" % dest_path))
+        actions.append(StdOut("Updated %s:\n" % dest_label))
         for change in changes:
             actions.append(StdOut("    %s\n" % change))
-    return actions
+    return actions, Requirements(output_requirements)
 
 
 def _copy_requires(
@@ -254,10 +251,22 @@ def _copy_requires(
         else:
             dest_name = source
         dest_sequence = list(_content_to_reqs(content))
-        actions.extend(_sync_requirements_file(
+        actions.append(Verbose("Syncing %s" % dest_path))
+        _actions, reqs = _sync_requirements_file(
             global_reqs, dest_sequence, dest_path, softupdate, hacking,
-            dest_name, non_std_reqs))
+            non_std_reqs)
+        actions.extend(_actions)
+        actions.append(File(dest_name, _reqs_to_content(reqs)))
     return actions
+
+
+def _reqs_to_content(reqs):
+    lines = list(_REQS_HEADER)
+    for req in reqs.reqs:
+        comment_p = ' ' if req.package else ''
+        comment = (comment_p + req.comment if req.comment else '')
+        lines.append('%s%s%s\n' % (req.package, req.specifiers, comment))
+    return u''.join(lines)
 
 
 def _process_project(

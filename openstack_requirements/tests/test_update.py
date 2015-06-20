@@ -45,9 +45,9 @@ class SmokeTest(testtools.TestCase):
         update.main(['--source', global_env.root, self.project.root], capture)
         reqs = common._file_to_list(self.project.req_file)
         # ensure various updates take
-        self.assertIn("jsonschema>=1.0.0,!=1.4.0,<2", reqs)
+        self.assertIn("jsonschema!=1.4.0,<2,>=1.0.0", reqs)
         self.assertIn("python-keystoneclient>=0.4.1", reqs)
-        self.assertIn("SQLAlchemy>=0.7,<=0.7.99", reqs)
+        self.assertIn("SQLAlchemy<=0.7.99,>=0.7", reqs)
         expected = ('Version change for: greenlet, SQLAlchemy, eventlet, PasteDeploy, routes, WebOb, wsgiref, boto, kombu, pycrypto, python-swiftclient, lxml, jsonschema, python-keystoneclient\n'  # noqa
             """Updated %(project)s/requirements.txt:
     greenlet>=0.3.1                ->   greenlet>=0.3.2
@@ -80,9 +80,9 @@ class UpdateTest(testtools.TestCase):
         reqs = common.project_file(
             self.fail, common.project_project, 'requirements.txt')
         # ensure various updates take
-        self.assertIn("jsonschema>=1.0.0,!=1.4.0,<2", reqs)
+        self.assertIn("jsonschema!=1.4.0,<2,>=1.0.0", reqs)
         self.assertIn("python-keystoneclient>=0.4.1", reqs)
-        self.assertIn("SQLAlchemy>=0.7,<=0.7.99", reqs)
+        self.assertIn("SQLAlchemy<=0.7.99,>=0.7", reqs)
 
     def test_requirements_header(self):
         _REQS_HEADER = [
@@ -363,22 +363,19 @@ class TestSyncRequirementsFile(testtools.TestCase):
             """)
         global_reqs = update._parse_reqs(global_content)
         project_reqs = list(update._content_to_reqs(project_content))
-        actions = update._sync_requirements_file(
-            global_reqs, project_reqs, 'f', False, False, 'f', False)
-        self.assertEqual(update.File('f', textwrap.dedent("""\
-# The order of packages is significant, because pip processes them in the order
-# of appearance. Changing the order has an impact on the overall integration
-# process, which may cause wedges in the gate later.
-foo<2;python_version=='2.7'
-foo>1;python_version!='2.7'
-""")), actions[1])
+        actions, reqs = update._sync_requirements_file(
+            global_reqs, project_reqs, 'f', False, False, False)
+        self.assertEqual(update.Requirements([
+            update.Requirement('foo', '<2', ";python_version=='2.7'"),
+            update.Requirement('foo', '>1', ";python_version!='2.7'")]),
+            reqs)
         self.assertEqual(update.StdOut(
             "    foo                            "
-            "->   foo<2;python_version=='2.7'\n"), actions[4])
+            "->   foo<2;python_version=='2.7'\n"), actions[2])
         self.assertEqual(update.StdOut(
             "                                   "
-            "->   foo>1;python_version!='2.7'\n"), actions[5])
-        self.assertThat(actions, matchers.HasLength(6))
+            "->   foo>1;python_version!='2.7'\n"), actions[3])
+        self.assertThat(actions, matchers.HasLength(4))
 
     def test_multiple_lines_separated_in_project_nochange(self):
         global_content = textwrap.dedent("""\
@@ -392,17 +389,14 @@ foo>1;python_version!='2.7'
             """)
         global_reqs = update._parse_reqs(global_content)
         project_reqs = list(update._content_to_reqs(project_content))
-        actions = update._sync_requirements_file(
-            global_reqs, project_reqs, 'f', False, False, 'f', False)
-        self.assertEqual(update.File('f', textwrap.dedent("""\
-# The order of packages is significant, because pip processes them in the order
-# of appearance. Changing the order has an impact on the overall integration
-# process, which may cause wedges in the gate later.
-foo<2;python_version=='2.7'
-foo>1;python_version!='2.7'
-# mumbo gumbo
-""")), actions[1])
-        self.assertThat(actions, matchers.HasLength(2))
+        actions, reqs = update._sync_requirements_file(
+            global_reqs, project_reqs, 'f', False, False, False)
+        self.assertEqual(update.Requirements([
+            update.Requirement('foo', '<2', ";python_version=='2.7'"),
+            update.Requirement('foo', '>1', ";python_version!='2.7'"),
+            update.Requirement('', '', "# mumbo gumbo")]),
+            reqs)
+        self.assertThat(actions, matchers.HasLength(0))
 
     def test_multiple_lines_separated_in_project(self):
         global_content = textwrap.dedent("""\
@@ -416,23 +410,20 @@ foo>1;python_version!='2.7'
             """)
         global_reqs = update._parse_reqs(global_content)
         project_reqs = list(update._content_to_reqs(project_content))
-        actions = update._sync_requirements_file(
-            global_reqs, project_reqs, 'f', False, False, 'f', False)
-        self.assertEqual(update.File('f', textwrap.dedent("""\
-# The order of packages is significant, because pip processes them in the order
-# of appearance. Changing the order has an impact on the overall integration
-# process, which may cause wedges in the gate later.
-foo<2;python_version=='2.7'
-foo>1;python_version!='2.7'
-# mumbo gumbo
-""")), actions[1])
+        actions, reqs = update._sync_requirements_file(
+            global_reqs, project_reqs, 'f', False, False, False)
+        self.assertEqual(update.Requirements([
+            update.Requirement('foo', '<2', ";python_version=='2.7'"),
+            update.Requirement('foo', '>1', ";python_version!='2.7'"),
+            update.Requirement('', '', "# mumbo gumbo")]),
+            reqs)
         self.assertEqual(update.StdOut(
             "    foo<1.8;python_version=='2.7'  ->   "
-            "foo<2;python_version=='2.7'\n"), actions[4])
+            "foo<2;python_version=='2.7'\n"), actions[2])
         self.assertEqual(update.StdOut(
             "    foo>0.9;python_version!='2.7'  ->   "
-            "foo>1;python_version!='2.7'\n"), actions[5])
-        self.assertThat(actions, matchers.HasLength(6))
+            "foo>1;python_version!='2.7'\n"), actions[3])
+        self.assertThat(actions, matchers.HasLength(4))
 
     def test_multiple_lines_nochange(self):
         global_content = textwrap.dedent("""\
@@ -445,16 +436,13 @@ foo>1;python_version!='2.7'
             """)
         global_reqs = update._parse_reqs(global_content)
         project_reqs = list(update._content_to_reqs(project_content))
-        actions = update._sync_requirements_file(
-            global_reqs, project_reqs, 'f', False, False, 'f', False)
-        self.assertEqual(update.File('f', textwrap.dedent("""\
-# The order of packages is significant, because pip processes them in the order
-# of appearance. Changing the order has an impact on the overall integration
-# process, which may cause wedges in the gate later.
-foo<2;python_version=='2.7'
-foo>1;python_version!='2.7'
-""")), actions[1])
-        self.assertThat(actions, matchers.HasLength(2))
+        actions, reqs = update._sync_requirements_file(
+            global_reqs, project_reqs, 'f', False, False, False)
+        self.assertEqual(update.Requirements([
+            update.Requirement('foo', '<2', ";python_version=='2.7'"),
+            update.Requirement('foo', '>1', ";python_version!='2.7'")]),
+            reqs)
+        self.assertThat(actions, matchers.HasLength(0))
 
     def test_single_global_multiple_in_project(self):
         global_content = textwrap.dedent("""\
@@ -466,16 +454,13 @@ foo>1;python_version!='2.7'
             """)
         global_reqs = update._parse_reqs(global_content)
         project_reqs = list(update._content_to_reqs(project_content))
-        actions = update._sync_requirements_file(
-            global_reqs, project_reqs, 'f', False, False, 'f', False)
-        self.assertEqual(update.File('f', textwrap.dedent("""\
-# The order of packages is significant, because pip processes them in the order
-# of appearance. Changing the order has an impact on the overall integration
-# process, which may cause wedges in the gate later.
-foo>1
-""")), actions[1])
+        actions, reqs = update._sync_requirements_file(
+            global_reqs, project_reqs, 'f', False, False, False)
+        self.assertEqual(update.Requirements([
+            update.Requirement('foo', '>1', "")]),
+            reqs)
         self.assertEqual(update.StdOut(
-            "    foo<2;python_version=='2.7'    ->   foo>1\n"), actions[4])
+            "    foo<2;python_version=='2.7'    ->   foo>1\n"), actions[2])
         self.assertEqual(update.StdOut(
-            "    foo>1;python_version!='2.7'    ->   \n"), actions[5])
-        self.assertThat(actions, matchers.HasLength(6))
+            "    foo>1;python_version!='2.7'    ->   \n"), actions[3])
+        self.assertThat(actions, matchers.HasLength(4))
