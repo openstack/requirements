@@ -84,7 +84,7 @@ oslo.versionedobjects>=0.3.0
 osprofiler>=0.3.0                       # Apache-2.0
 os-apply-config
 os-brick
-os-client-config>=1.2.0
+os-client-config>=1.4.0
 os-cloud-config
 os-collect-config
 os-net-config
