@@ -252,7 +252,8 @@ def _sync_requirements_file(
             actions.append(StdOut(
                 "'%s' is not in global-requirements.txt\n" % req.package))
             if not non_std_reqs:
-                raise Exception("nonstandard requirement present.")
+                raise Exception("nonstandard requirement present: %s" %
+                                req.package)
     # always print out what we did if we did a thing
     if changes:
         actions.append(StdOut(
