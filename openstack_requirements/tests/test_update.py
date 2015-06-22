@@ -128,10 +128,11 @@ class UpdateTest(testtools.TestCase):
 
     # These are tests which don't need to run the project update in advance
     def test_requirement_not_in_global(self):
-        with testtools.ExpectedException(Exception):
-            update._process_project(
-                common.bad_project, common.global_reqs, None, None, None,
-                False)
+        actions = update._process_project(
+            common.bad_project, common.global_reqs, None, None, None, False)
+        errors = [a for a in actions if type(a) is update.Error]
+        msg = u"'thisisnotarealdepedency' is not in global-requirements.txt"
+        self.assertEqual([update.Error(message=msg)], errors)
 
     def test_requirement_not_in_global_non_fatal(self):
         reqs = common.project_file(
@@ -274,6 +275,15 @@ class TestWriteProject(testtools.TestCase):
         project = {'root': root}
         actions = [update.StdOut(u'fred\n')]
         update._write_project(project, actions, stdout, True)
+        self.expectThat(stdout.getvalue(), matchers.Equals('fred\n'))
+
+    def test_errors(self):
+        stdout = io.StringIO()
+        root = self.useFixture(fixtures.TempDir()).path
+        project = {'root': root}
+        actions = [update.Error(u'fred')]
+        with testtools.ExpectedException(Exception):
+            update._write_project(project, actions, stdout, True)
         self.expectThat(stdout.getvalue(), matchers.Equals('fred\n'))
 
 
