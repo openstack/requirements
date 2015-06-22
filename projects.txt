@@ -103,4 +103,6 @@ stackforge/blazar-nova
 stackforge/nova-docker
 stackforge/python-blazarclient
 stackforge/python-openstacksdk
+stackforge/python-senlinclient
 stackforge/python-solumclient
+stackforge/senlin
