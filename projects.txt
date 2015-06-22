@@ -69,6 +69,7 @@ openstack/python-congressclient
 openstack/python-designateclient
 openstack/python-glanceclient
 openstack/python-heatclient
+openstack/python-ironic-inspector-client
 openstack/python-ironicclient
 openstack/python-keystoneclient
 openstack/python-keystoneclient-kerberos
