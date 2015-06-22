@@ -95,6 +95,7 @@ openstack/tooz
 openstack/trove
 openstack/tuskar
 openstack/tuskar-ui
+openstack/vmware-nsx
 openstack/zaqar
 stackforge/blazar-nova
 stackforge/nova-docker
