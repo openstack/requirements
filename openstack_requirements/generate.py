@@ -87,7 +87,7 @@ def _freeze(requirements, python):
             % ('\n'.join(output), exc))
 
 
-def _combine_freezes(freezes):
+def _combine_freezes(freezes, blacklist=None):
     """Combine multiple freezes into a single structure.
 
     This deals with the variation between different python versions by
@@ -95,9 +95,12 @@ def _combine_freezes(freezes):
     versions of a dependency.
 
     :param freezes: A list of (python_version, frozen_requirements) tuples.
+    :param blacklist: An iterable of package names to exclude. These packages
+        won't be included in the output.
     :return: A list of '\n' terminated lines for a requirements file.
     """
     packages = {}  # {package : {version : [py_version]}}
+    excludes = frozenset((s.lower() for s in blacklist) if blacklist else ())
     reference_versions = []
     for py_version, freeze in freezes:
         if py_version in reference_versions:
@@ -108,6 +111,8 @@ def _combine_freezes(freezes):
                 package, {}).setdefault(version, []).append(py_version)
 
     for package, versions in sorted(packages.items()):
+        if package.lower() in excludes:
+            continue
         if len(versions) != 1 or versions.values()[0] != reference_versions:
             # markers
             for version, py_versions in sorted(versions.items()):
@@ -140,6 +145,18 @@ def _validate_options(options):
         raise Exception(
             "Requirements file %(req)s not found."
             % dict(req=options.requirementes))
+    if options.blacklist and not os.path.exists(options.blacklist):
+        raise Exception(
+            "Blacklist file %(path)s not found."
+            % dict(path=options.blacklist))
+
+
+def _parse_blacklist(path):
+    """Return the strings from path if it is not None."""
+    if path is None:
+        return []
+    with open(path, 'rt') as f:
+        return [l.strip() for l in f]
 
 
 def main(argv=None, stdout=None):
@@ -150,11 +167,15 @@ def main(argv=None, stdout=None):
              "e.g. -p /usr/bin/python3.4")
     parser.add_option(
         "-r", dest="requirements", help="Requirements file to process.")
+    parser.add_option(
+        "-b", dest="blacklist",
+        help="Filename of a list of package names to exclude.")
     options, args = parser.parse_args(argv)
     if stdout is None:
         stdout = sys.stdout
     _validate_options(options)
     freezes = [
         _freeze(options.requirements, python) for python in options.pythons]
-    stdout.writelines(_combine_freezes(freezes))
+    blacklist = _parse_blacklist(options.blacklist)
+    stdout.writelines(_combine_freezes(freezes, blacklist))
     stdout.flush()

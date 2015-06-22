@@ -80,3 +80,12 @@ class TestCombine(testtools.TestCase):
     def test_duplicate_pythons(self):
         with testtools.ExpectedException(Exception):
             list(generate._combine_freezes([('2.7', []), ('2.7', [])]))
+
+    def test_blacklist(self):
+        blacklist = ['Fixtures']
+        freeze_27 = ('2.7', [('fixtures', '1.2.0')])
+        freeze_34 = ('3.4', [('fixtures', '1.2.0'), ('enum', '1.5.0')])
+        self.assertEqual(
+            ["enum===1.5.0;python_version=='3.4'\n"],
+            list(generate._combine_freezes(
+                [freeze_27, freeze_34], blacklist=blacklist)))
