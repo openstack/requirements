@@ -144,7 +144,7 @@ def _validate_options(options):
     if not os.path.exists(options.requirements):
         raise Exception(
             "Requirements file %(req)s not found."
-            % dict(req=options.requirementes))
+            % dict(req=options.requirements))
     if options.blacklist and not os.path.exists(options.blacklist):
         raise Exception(
             "Blacklist file %(path)s not found."
