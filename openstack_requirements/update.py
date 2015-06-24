@@ -111,6 +111,7 @@ class Change(object):
         return "%-30.30s ->   %s" % (self.old, self.new)
 
 
+Error = collections.namedtuple('Error', ['message'])
 File = collections.namedtuple('File', ['filename', 'content'])
 StdOut = collections.namedtuple('StdOut', ['message'])
 Verbose = collections.namedtuple('Verbose', ['message'])
@@ -249,11 +250,8 @@ def _sync_requirements_file(
             # override. For those we support NON_STANDARD_REQS=1
             # environment variable to turn this into a warning only.
             # However this drops the unknown requirement.
-            actions.append(StdOut(
-                "'%s' is not in global-requirements.txt\n" % req.package))
-            if not non_std_reqs:
-                raise Exception("nonstandard requirement present: %s" %
-                                req.package)
+            actions.append(Error(
+                "'%s' is not in global-requirements.txt" % req.package))
     # always print out what we did if we did a thing
     if changes:
         actions.append(StdOut(
@@ -432,8 +430,10 @@ def _write_project(project, actions, stdout, verbose, noop=False):
     :param project: A project metadata dict.
     :param actions: A list of action tuples - File or Verbose - that describe
         what actions are to be taken.
+        Error objects write a message to stdout and trigger an exception at
+            the end of _write_project.
         File objects describe a file to have content placed in it.
-        StdOut objects describe a messge to write to stdout.
+        StdOut objects describe a message to write to stdout.
         Verbose objects will write a message to stdout when verbose is True.
     :param stdout: Where to write content for stdout.
     :param verbose: If True Verbose actions will be written to stdout.
@@ -442,8 +442,12 @@ def _write_project(project, actions, stdout, verbose, noop=False):
     :raises IOError: If the IO operations fail, IOError is raised. If this
         happens some actions may have been applied and others not.
     """
+    error = False
     for action in actions:
-        if type(action) is File:
+        if type(action) is Error:
+            error = True
+            stdout.write(action.message + '\n')
+        elif type(action) is File:
             if noop:
                 continue
             fullname = project['root'] + '/' + action.filename
@@ -458,6 +462,8 @@ def _write_project(project, actions, stdout, verbose, noop=False):
                 stdout.write(u"%s\n" % (action.message,))
         else:
             raise Exception("Invalid action %r" % (action,))
+    if error:
+        raise Exception("Error occured processing %s" % (project['root']))
 
 
 def main(argv=None, stdout=None, _worker=None):
