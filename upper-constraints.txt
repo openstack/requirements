@@ -277,7 +277,6 @@ sqlalchemy-migrate===0.9.6
 sqlparse===0.1.15
 stevedore===1.5.0
 suds-jurko===0.6
-swift===1.0.2
 sysv-ipc===0.6.8
 tablib===0.10.0
 taskflow===0.12.0

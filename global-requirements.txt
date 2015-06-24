@@ -271,7 +271,6 @@ sphinxcontrib-docbookrestapi
 sphinxcontrib-httpdomain
 sphinxcontrib-seqdiag
 sphinxcontrib-pecanwsme>=0.8
-swift
 testrepository>=0.0.18
 testresources>=0.2.4
 testscenarios>=0.4
