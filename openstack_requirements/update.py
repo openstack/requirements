@@ -26,18 +26,14 @@ updated to match the global requirements. Requirements not in the global
 files will be dropped.
 """
 
-import collections
-import errno
-import io
 import itertools
 import optparse
 import os
 import os.path
 import sys
 
-from parsley import makeGrammar
-import pkg_resources
-from six.moves import configparser
+from openstack_requirements import project
+from openstack_requirements import requirement
 
 _setup_py_text = """# Copyright (c) 2013 Hewlett-Packard Development Company, L.P.
 #
@@ -70,37 +66,9 @@ setuptools.setup(
     pbr=True)
 """
 
-# A header for the requirements file(s).
-# TODO(lifeless): Remove this once constraints are in use.
-_REQS_HEADER = [
-    '# The order of packages is significant, because pip processes '
-    'them in the order\n',
-    '# of appearance. Changing the order has an impact on the overall '
-    'integration\n',
-    '# process, which may cause wedges in the gate later.\n',
-]
-
-
-Comment = collections.namedtuple('Comment', ['line'])
-Extra = collections.namedtuple('Extra', ['name', 'content'])
-
-
-extras_grammar = """
-ini = (line*:p extras?:e line*:l final:s) -> (''.join(p), e, ''.join(l+[s]))
-line = ~extras <(~'\\n' anything)* '\\n'>
-final = <(~'\\n' anything)* >
-extras = '[' 'e' 'x' 't' 'r' 'a' 's' ']' '\\n'+ body*:b -> b
-body = comment | extra
-comment = <'#' (~'\\n' anything)* '\\n'>:c '\\n'* -> comment(c)
-extra = name:n ' '* '=' line:l cont*:c '\\n'* -> extra(n, ''.join([l] + c))
-name = <(anything:x ?(x not in '\\n \\t='))+>
-cont = ' '+ <(~'\\n' anything)* '\\n'>
-"""
-extras_compiled = makeGrammar(
-    extras_grammar, {"comment": Comment, "extra": Extra})
-
 
 # Pure --
+
 class Change(object):
     def __init__(self, name, old, new):
         self.name = name
@@ -111,78 +79,19 @@ class Change(object):
         return "%-30.30s ->   %s" % (self.old, self.new)
 
 
-Error = collections.namedtuple('Error', ['message'])
-File = collections.namedtuple('File', ['filename', 'content'])
-StdOut = collections.namedtuple('StdOut', ['message'])
-Verbose = collections.namedtuple('Verbose', ['message'])
-
-
-Requirement = collections.namedtuple(
-    'Requirement', ['package', 'specifiers', 'markers', 'comment'])
-Requirements = collections.namedtuple('Requirements', ['reqs'])
-
-
-def _parse_requirement(req_line):
-    """Parse a single line of a requirements file.
-
-    requirements files here are a subset of pip requirements files: we don't
-    try to parse URL entries, or pip options like -f and -e. Those are not
-    permitted in global-requirements.txt. If encountered in a synchronised
-    file such as requirements.txt or test-requirements.txt, they are illegal
-    but currently preserved as-is.
-
-    They may of course be used by local test configurations, just not
-    committed into the OpenStack reference branches.
-    """
-    end = len(req_line)
-    hash_pos = req_line.find('#')
-    if hash_pos < 0:
-        hash_pos = end
-    if '://' in req_line[:hash_pos]:
-        # Trigger an early failure before we look for ':'
-        pkg_resources.Requirement.parse(req_line)
-    semi_pos = req_line.find(';', 0, hash_pos)
-    colon_pos = req_line.find(':', 0, hash_pos)
-    marker_pos = max(semi_pos, colon_pos)
-    if marker_pos < 0:
-        marker_pos = hash_pos
-    markers = req_line[marker_pos + 1:hash_pos].strip()
-    if hash_pos != end:
-        comment = req_line[hash_pos:]
-    else:
-        comment = ''
-    req_line = req_line[:marker_pos]
-
-    if req_line:
-        parsed = pkg_resources.Requirement.parse(req_line)
-        name = parsed.project_name
-        specifier = str(parsed.specifier)
-    else:
-        name = ''
-        specifier = ''
-    return Requirement(name, specifier, markers, comment)
-
-
-def _pass_through(req_line):
-    """Identify unparsable lines."""
-    return (req_line.startswith('http://tarballs.openstack.org/') or
-            req_line.startswith('-e') or
-            req_line.startswith('-f'))
-
-
-def _check_setup_py(project):
+def _check_setup_py(proj):
     actions = []
     # If it doesn't have a setup.py, then we don't want to update it
-    if 'setup.py' not in project:
+    if 'setup.py' not in proj:
         return actions
     # If it doesn't use pbr, we don't want to update it.
-    elif 'pbr' not in project['setup.py']:
+    elif 'pbr' not in proj['setup.py']:
         return actions
     # We don't update pbr's setup.py because it can't use itself.
-    if 'setup.cfg' in project and 'name = pbr' in project['setup.cfg']:
+    if 'setup.cfg' in proj and 'name = pbr' in proj['setup.cfg']:
         return actions
-    actions.append(Verbose("Syncing setup.py"))
-    actions.append(File('setup.py', _setup_py_text))
+    actions.append(project.Verbose("Syncing setup.py"))
+    actions.append(project.File('setup.py', _setup_py_text))
     return actions
 
 
@@ -190,18 +99,19 @@ def _sync_requirements_file(
         source_reqs, dest_sequence, dest_label, softupdate, hacking,
         non_std_reqs):
     actions = []
-    dest_reqs = _reqs_to_dict(dest_sequence)
+    dest_reqs = requirement.to_dict(dest_sequence)
     changes = []
     output_requirements = []
     processed_packages = set()
 
     for req, req_line in dest_sequence:
         # Skip the instructions header
-        if req_line in _REQS_HEADER:
+        if req_line in requirement._REQS_HEADER:
             continue
         elif req is None:
             # Unparsable lines.
-            output_requirements.append(Requirement('', '', '', req_line))
+            output_requirements.append(
+                requirement.Requirement('', '', '', req_line))
             continue
         elif not req.package:
             # Comment-only lines
@@ -250,25 +160,25 @@ def _sync_requirements_file(
             # override. For those we support NON_STANDARD_REQS=1
             # environment variable to turn this into a warning only.
             # However this drops the unknown requirement.
-            actions.append(Error(
+            actions.append(project.Error(
                 "'%s' is not in global-requirements.txt" % req.package))
     # always print out what we did if we did a thing
     if changes:
-        actions.append(StdOut(
+        actions.append(project.StdOut(
             "Version change for: %s\n"
             % ", ".join([x.name for x in changes])))
-        actions.append(StdOut("Updated %s:\n" % dest_label))
+        actions.append(project.StdOut("Updated %s:\n" % dest_label))
         for change in changes:
-            actions.append(StdOut("    %s\n" % change))
-    return actions, Requirements(output_requirements)
+            actions.append(project.StdOut("    %s\n" % change))
+    return actions, requirement.Requirements(output_requirements)
 
 
 def _copy_requires(
-        suffix, softupdate, hacking, project, global_reqs, non_std_reqs):
+        suffix, softupdate, hacking, proj, global_reqs, non_std_reqs):
     """Copy requirements files."""
     actions = []
-    for source, content in sorted(project['requirements'].items()):
-        dest_path = os.path.join(project['root'], source)
+    for source, content in sorted(proj['requirements'].items()):
+        dest_path = os.path.join(proj['root'], source)
         # this is specifically for global-requirements gate jobs so we don't
         # modify the git tree
         if suffix:
@@ -276,20 +186,20 @@ def _copy_requires(
             dest_name = "%s.%s" % (source, suffix)
         else:
             dest_name = source
-        dest_sequence = list(_content_to_reqs(content))
-        actions.append(Verbose("Syncing %s" % dest_path))
+        dest_sequence = list(requirement.to_reqs(content))
+        actions.append(project.Verbose("Syncing %s" % dest_path))
         _actions, reqs = _sync_requirements_file(
             global_reqs, dest_sequence, dest_path, softupdate, hacking,
             non_std_reqs)
         actions.extend(_actions)
-        actions.append(File(dest_name, _reqs_to_content(reqs)))
-    extras = _project_extras(project)
+        actions.append(project.File(dest_name, requirement.to_content(reqs)))
+    extras = project.extras(proj)
     output_extras = {}
     for extra, content in sorted(extras.items()):
         dest_name = 'extra-%s' % extra
-        dest_path = "%s[%s]" % (project['root'], extra)
-        dest_sequence = list(_content_to_reqs(content))
-        actions.append(Verbose("Syncing extra [%s]" % extra))
+        dest_path = "%s[%s]" % (proj['root'], extra)
+        dest_sequence = list(requirement.to_reqs(content))
+        actions.append(project.Verbose("Syncing extra [%s]" % extra))
         _actions, reqs = _sync_requirements_file(
             global_reqs, dest_sequence, dest_path, softupdate, hacking,
             non_std_reqs)
@@ -298,66 +208,9 @@ def _copy_requires(
     dest_path = 'setup.cfg'
     if suffix:
         dest_path = "%s.%s" % (dest_path, suffix)
-    actions.append(File(
-        dest_path, _merge_setup_cfg(project['setup.cfg'], output_extras)))
+    actions.append(project.File(
+        dest_path, project.merge_setup_cfg(proj['setup.cfg'], output_extras)))
     return actions
-
-
-def _merge_setup_cfg(old_content, new_extras):
-    # This is ugly. All the existing libraries handle setup.cfg's poorly.
-    prefix, extras, suffix = extras_compiled(old_content).ini()
-    out_extras = []
-    if extras is not None:
-        for extra in extras:
-            if type(extra) is Comment:
-                out_extras.append(extra)
-            elif type(extra) is Extra:
-                if extra.name not in new_extras:
-                    out_extras.append(extra)
-                    continue
-                e = Extra(
-                    extra.name,
-                    _reqs_to_content(
-                        new_extras[extra.name], ':', '  ', False))
-                out_extras.append(e)
-            else:
-                raise TypeError('unknown type %r' % extra)
-    if out_extras:
-        extras_str = ['[extras]\n']
-        for extra in out_extras:
-            if type(extra) is Comment:
-                extras_str.append(extra.line)
-            else:
-                extras_str.append(extra.name + ' =')
-                extras_str.append(extra.content)
-        if suffix:
-            extras_str.append('\n')
-        extras_str = ''.join(extras_str)
-    else:
-        extras_str = ''
-    return prefix + extras_str + suffix
-
-
-def _project_extras(project):
-    """Return a dict of extra-name:content for the extras in setup.cfg."""
-    c = configparser.SafeConfigParser()
-    c.readfp(io.StringIO(project['setup.cfg']))
-    if not c.has_section('extras'):
-        return dict()
-    return dict(c.items('extras'))
-
-
-def _reqs_to_content(reqs, marker_sep=';', line_prefix='', prefix=True):
-    lines = []
-    if prefix:
-        lines += _REQS_HEADER
-    for req in reqs.reqs:
-        comment_p = ' ' if req.package else ''
-        comment = (comment_p + req.comment if req.comment else '')
-        marker = marker_sep + req.markers if req.markers else ''
-        package = line_prefix + req.package if req.package else ''
-        lines.append('%s%s%s%s\n' % (package, req.specifiers, marker, comment))
-    return u''.join(lines)
 
 
 def _process_project(
@@ -372,99 +225,7 @@ def _process_project(
     return actions
 
 
-def _content_to_reqs(content):
-    for content_line in content.splitlines(True):
-        req_line = content_line.strip()
-        if _pass_through(req_line):
-            yield None, content_line
-        else:
-            yield _parse_requirement(req_line), content_line
-
-
-def _parse_reqs(content):
-    return _reqs_to_dict(_content_to_reqs(content))
-
-
-def _reqs_to_dict(req_sequence):
-    reqs = dict()
-    for req, req_line in req_sequence:
-        if req is not None:
-            reqs.setdefault(req.package.lower(), []).append((req, req_line))
-    return reqs
-
-
 # IO --
-def _safe_read(project, filename, output=None):
-    if output is None:
-        output = project
-    try:
-        path = project['root'] + '/' + filename
-        with io.open(path, 'rt', encoding="utf-8") as f:
-            output[filename] = f.read()
-    except IOError as e:
-        if e.errno != errno.ENOENT:
-            raise
-
-
-def _read_project(root):
-    result = {'root': root}
-    _safe_read(result, 'setup.py')
-    _safe_read(result, 'setup.cfg')
-    requirements = {}
-    result['requirements'] = requirements
-    target_files = [
-        'requirements.txt', 'tools/pip-requires',
-        'test-requirements.txt', 'tools/test-requires',
-    ]
-    for py_version in (2, 3):
-        target_files.append('requirements-py%s.txt' % py_version)
-        target_files.append('test-requirements-py%s.txt' % py_version)
-    for target_file in target_files:
-        _safe_read(result, target_file, output=requirements)
-    return result
-
-
-def _write_project(project, actions, stdout, verbose, noop=False):
-    """Write actions into project.
-
-    :param project: A project metadata dict.
-    :param actions: A list of action tuples - File or Verbose - that describe
-        what actions are to be taken.
-        Error objects write a message to stdout and trigger an exception at
-            the end of _write_project.
-        File objects describe a file to have content placed in it.
-        StdOut objects describe a message to write to stdout.
-        Verbose objects will write a message to stdout when verbose is True.
-    :param stdout: Where to write content for stdout.
-    :param verbose: If True Verbose actions will be written to stdout.
-    :param noop: If True nothing will be written to disk.
-    :return None:
-    :raises IOError: If the IO operations fail, IOError is raised. If this
-        happens some actions may have been applied and others not.
-    """
-    error = False
-    for action in actions:
-        if type(action) is Error:
-            error = True
-            stdout.write(action.message + '\n')
-        elif type(action) is File:
-            if noop:
-                continue
-            fullname = project['root'] + '/' + action.filename
-            tmpname = fullname + '.tmp'
-            with open(tmpname, 'wt') as f:
-                f.write(action.content)
-            os.rename(tmpname, fullname)
-        elif type(action) is StdOut:
-            stdout.write(action.message)
-        elif type(action) is Verbose:
-            if verbose:
-                stdout.write(u"%s\n" % (action.message,))
-        else:
-            raise Exception("Invalid action %r" % (action,))
-    if error:
-        raise Exception("Error occured processing %s" % (project['root']))
-
 
 def main(argv=None, stdout=None, _worker=None):
     parser = optparse.OptionParser()
@@ -499,13 +260,13 @@ def _do_main(
         root, source, suffix, softupdate, hacking, stdout, verbose,
         non_std_reqs):
     """No options or environment variable access from here on in."""
-    project = _read_project(root)
+    proj = project.read(root)
     global_req_content = open(
         os.path.join(source, 'global-requirements.txt'), 'rt').read()
-    global_reqs = _parse_reqs(global_req_content)
+    global_reqs = requirement.parse(global_req_content)
     actions = _process_project(
-        project, global_reqs, suffix, softupdate, hacking, non_std_reqs)
-    _write_project(project, actions, stdout=stdout, verbose=verbose)
+        proj, global_reqs, suffix, softupdate, hacking, non_std_reqs)
+    project.write(proj, actions, stdout=stdout, verbose=verbose)
 
 
 if __name__ == "__main__":

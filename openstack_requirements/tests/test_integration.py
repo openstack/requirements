@@ -13,7 +13,7 @@
 from packaging import specifiers
 import testtools
 
-from openstack_requirements import update
+from openstack_requirements import requirement
 
 
 def check_compatible(global_reqs, constraints):
@@ -62,14 +62,14 @@ class TestRequirements(testtools.TestCase):
     def test_constraints_compatible(self):
         global_req_content = open('global-requirements.txt', 'rt').read()
         constraints_content = open('upper-constraints.txt', 'rt').read()
-        global_reqs = update._parse_reqs(global_req_content)
-        constraints = update._parse_reqs(constraints_content)
+        global_reqs = requirement.parse(global_req_content)
+        constraints = requirement.parse(constraints_content)
         self.assertEqual([], check_compatible(global_reqs, constraints))
 
     def test_check_compatible(self):
-        global_reqs = update._parse_reqs("foo>=1.2\n")
-        good_constraints = update._parse_reqs("foo===1.2.5\n")
-        bad_constraints = update._parse_reqs("foo===1.1.2\n")
+        global_reqs = requirement.parse("foo>=1.2\n")
+        good_constraints = requirement.parse("foo===1.2.5\n")
+        bad_constraints = requirement.parse("foo===1.1.2\n")
         self.assertEqual([], check_compatible(global_reqs, good_constraints))
         self.assertNotEqual(
             [], check_compatible(global_reqs, bad_constraints))

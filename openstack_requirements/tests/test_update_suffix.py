@@ -16,6 +16,7 @@ from __future__ import print_function
 
 import testtools
 
+from openstack_requirements import project
 from openstack_requirements.tests import common
 from openstack_requirements import update
 
@@ -59,5 +60,5 @@ class UpdateTestWithSuffix(testtools.TestCase):
             common.oslo_project, common.global_reqs, 'global', None, None,
             False)
         for action in actions:
-            if type(action) is update.File:
+            if type(action) is project.File:
                 self.assertNotEqual(action.filename, 'setup.py')

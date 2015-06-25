@@ -14,18 +14,17 @@
 
 from __future__ import print_function
 
-import io
 import StringIO
 import sys
 import textwrap
 
 import fixtures
-import parsley
-import pkg_resources
 import testscenarios
 import testtools
 from testtools import matchers
 
+from openstack_requirements import project
+from openstack_requirements import requirement
 from openstack_requirements.tests import common
 from openstack_requirements import update
 
@@ -123,16 +122,16 @@ class UpdateTest(testtools.TestCase):
             common.oslo_project, common.global_reqs, None, None, None,
             False)
         for action in actions:
-            if type(action) is update.File:
+            if type(action) is project.File:
                 self.assertNotEqual(action.filename, 'setup.py')
 
     # These are tests which don't need to run the project update in advance
     def test_requirement_not_in_global(self):
         actions = update._process_project(
             common.bad_project, common.global_reqs, None, None, None, False)
-        errors = [a for a in actions if type(a) is update.Error]
+        errors = [a for a in actions if type(a) is project.Error]
         msg = u"'thisisnotarealdepedency' is not in global-requirements.txt"
-        self.assertEqual([update.Error(message=msg)], errors)
+        self.assertEqual([project.Error(message=msg)], errors)
 
     def test_requirement_not_in_global_non_fatal(self):
         reqs = common.project_file(
@@ -152,7 +151,7 @@ class UpdateTest(testtools.TestCase):
             common.project_project, common.global_reqs, None, None, None,
             False)
         capture = StringIO.StringIO()
-        update._write_project(
+        project.write(
             common.project_project, actions, capture, False, True)
         expected = ('Version change for: greenlet, SQLAlchemy, eventlet, PasteDeploy, routes, WebOb, wsgiref, boto, kombu, pycrypto, python-swiftclient, lxml, jsonschema, python-keystoneclient\n'  # noqa
             """Updated %(project)s/requirements.txt:
@@ -184,7 +183,7 @@ Updated %(project)s/test-requirements.txt:
             common.project_project, common.global_reqs, None, None, None,
             False)
         capture = StringIO.StringIO()
-        update._write_project(
+        project.write(
             common.project_project, actions, capture, True, True)
         expected = ("""Syncing %(project)s/requirements.txt
 Version change for: greenlet, SQLAlchemy, eventlet, PasteDeploy, routes, WebOb, wsgiref, boto, kombu, pycrypto, python-swiftclient, lxml, jsonschema, python-keystoneclient\n"""  # noqa
@@ -215,78 +214,6 @@ Syncing setup.py
         self.assertEqual(expected, capture.getvalue())
 
 
-class TestReadProject(testtools.TestCase):
-
-    def test_pbr(self):
-        root = self.useFixture(common.pbr_fixture).root
-        project = update._read_project(root)
-        self.expectThat(project['root'], matchers.Equals(root))
-        setup_py = open(root + '/setup.py', 'rt').read()
-        self.expectThat(project['setup.py'], matchers.Equals(setup_py))
-        setup_cfg = open(root + '/setup.cfg', 'rt').read()
-        self.expectThat(project['setup.cfg'], matchers.Equals(setup_cfg))
-        self.expectThat(
-            project['requirements'],
-            matchers.KeysEqual('requirements.txt', 'test-requirements.txt'))
-
-    def test_no_setup_py(self):
-        root = self.useFixture(fixtures.TempDir()).path
-        project = update._read_project(root)
-        self.expectThat(
-            project, matchers.Equals({'root': root, 'requirements': {}}))
-
-
-class TestWriteProject(testtools.TestCase):
-
-    def test_smoke(self):
-        stdout = io.StringIO()
-        root = self.useFixture(fixtures.TempDir()).path
-        project = {'root': root}
-        actions = [
-            update.File('foo', '123\n'),
-            update.File('bar', '456\n'),
-            update.Verbose(u'fred')]
-        update._write_project(project, actions, stdout, True)
-        foo = open(root + '/foo', 'rt').read()
-        self.expectThat(foo, matchers.Equals('123\n'))
-        bar = open(root + '/bar', 'rt').read()
-        self.expectThat(bar, matchers.Equals('456\n'))
-        self.expectThat(stdout.getvalue(), matchers.Equals('fred\n'))
-
-    def test_non_verbose(self):
-        stdout = io.StringIO()
-        root = self.useFixture(fixtures.TempDir()).path
-        project = {'root': root}
-        actions = [update.Verbose(u'fred')]
-        update._write_project(project, actions, stdout, False)
-        self.expectThat(stdout.getvalue(), matchers.Equals(''))
-
-    def test_bad_action(self):
-        root = self.useFixture(fixtures.TempDir()).path
-        stdout = io.StringIO()
-        project = {'root': root}
-        actions = [('foo', 'bar')]
-        with testtools.ExpectedException(Exception):
-            update._write_project(project, actions, stdout, True)
-
-    def test_stdout(self):
-        stdout = io.StringIO()
-        root = self.useFixture(fixtures.TempDir()).path
-        project = {'root': root}
-        actions = [update.StdOut(u'fred\n')]
-        update._write_project(project, actions, stdout, True)
-        self.expectThat(stdout.getvalue(), matchers.Equals('fred\n'))
-
-    def test_errors(self):
-        stdout = io.StringIO()
-        root = self.useFixture(fixtures.TempDir()).path
-        project = {'root': root}
-        actions = [update.Error(u'fred')]
-        with testtools.ExpectedException(Exception):
-            update._write_project(project, actions, stdout, True)
-        self.expectThat(stdout.getvalue(), matchers.Equals('fred\n'))
-
-
 class TestMain(testtools.TestCase):
 
     def test_smoke(self):
@@ -315,56 +242,6 @@ class TestMain(testtools.TestCase):
         update.main(['-o', 'global', '/dev/zero'], _worker=check_params)
 
 
-class TestParseRequirement(testtools.TestCase):
-
-    scenarios = [
-        ('package', dict(
-         line='swift',
-         req=update.Requirement('swift', '', '', ''))),
-        ('specifier', dict(
-         line='alembic>=0.4.1',
-         req=update.Requirement('alembic', '>=0.4.1', '', ''))),
-        ('specifiers', dict(
-         line='alembic>=0.4.1,!=1.1.8',
-         req=update.Requirement('alembic', '!=1.1.8,>=0.4.1', '', ''))),
-        ('comment-only', dict(
-         line='# foo',
-         req=update.Requirement('', '', '', '# foo'))),
-        ('comment', dict(
-         line='Pint>=0.5  # BSD',
-         req=update.Requirement('Pint', '>=0.5', '', '# BSD'))),
-        ('comment-with-semicolon', dict(
-         line='Pint>=0.5  # BSD;fred',
-         req=update.Requirement('Pint', '>=0.5', '', '# BSD;fred'))),
-        ('case', dict(
-         line='Babel>=1.3',
-         req=update.Requirement('Babel', '>=1.3', '', ''))),
-        ('markers', dict(
-         line="pywin32;sys_platform=='win32'",
-         req=update.Requirement('pywin32', '', "sys_platform=='win32'", ''))),
-        ('markers-with-comment', dict(
-         line="Sphinx<=1.2; python_version=='2.7'# Sadface",
-         req=update.Requirement('Sphinx', '<=1.2', "python_version=='2.7'",
-                                '# Sadface')))]
-
-    def test_parse(self):
-        parsed = update._parse_requirement(self.line)
-        self.assertEqual(self.req, parsed)
-
-
-class TestParseRequirementFailures(testtools.TestCase):
-
-    scenarios = [
-        ('url', dict(line='http://tarballs.openstack.org/oslo.config/'
-                          'oslo.config-1.2.0a3.tar.gz#egg=oslo.config')),
-        ('-e', dict(line='-e git+https://foo.com#egg=foo')),
-        ('-f', dict(line='-f http://tarballs.openstack.org/'))]
-
-    def test_does_not_parse(self):
-        with testtools.ExpectedException(pkg_resources.RequirementParseError):
-            update._parse_requirement(self.line)
-
-
 class TestSyncRequirementsFile(testtools.TestCase):
 
     def test_multiple_lines_in_global_one_in_project(self):
@@ -375,18 +252,19 @@ class TestSyncRequirementsFile(testtools.TestCase):
         project_content = textwrap.dedent("""\
             foo
             """)
-        global_reqs = update._parse_reqs(global_content)
-        project_reqs = list(update._content_to_reqs(project_content))
+        global_reqs = requirement.parse(global_content)
+        project_reqs = list(requirement.to_reqs(project_content))
         actions, reqs = update._sync_requirements_file(
             global_reqs, project_reqs, 'f', False, False, False)
-        self.assertEqual(update.Requirements([
-            update.Requirement('foo', '<2', "python_version=='2.7'", ''),
-            update.Requirement('foo', '>1', "python_version!='2.7'", '')]),
+        self.assertEqual(requirement.Requirements([
+            requirement.Requirement('foo', '<2', "python_version=='2.7'", ''),
+            requirement.Requirement(
+                'foo', '>1', "python_version!='2.7'", '')]),
             reqs)
-        self.assertEqual(update.StdOut(
+        self.assertEqual(project.StdOut(
             "    foo                            "
             "->   foo<2;python_version=='2.7'\n"), actions[2])
-        self.assertEqual(update.StdOut(
+        self.assertEqual(project.StdOut(
             "                                   "
             "->   foo>1;python_version!='2.7'\n"), actions[3])
         self.assertThat(actions, matchers.HasLength(4))
@@ -401,14 +279,14 @@ class TestSyncRequirementsFile(testtools.TestCase):
             # mumbo gumbo
             foo>1;python_version!='2.7'
             """)
-        global_reqs = update._parse_reqs(global_content)
-        project_reqs = list(update._content_to_reqs(project_content))
+        global_reqs = requirement.parse(global_content)
+        project_reqs = list(requirement.to_reqs(project_content))
         actions, reqs = update._sync_requirements_file(
             global_reqs, project_reqs, 'f', False, False, False)
-        self.assertEqual(update.Requirements([
-            update.Requirement('foo', '<2', "python_version=='2.7'", ''),
-            update.Requirement('foo', '>1', "python_version!='2.7'", ''),
-            update.Requirement('', '', '', "# mumbo gumbo")]),
+        self.assertEqual(requirement.Requirements([
+            requirement.Requirement('foo', '<2', "python_version=='2.7'", ''),
+            requirement.Requirement('foo', '>1', "python_version!='2.7'", ''),
+            requirement.Requirement('', '', '', "# mumbo gumbo")]),
             reqs)
         self.assertThat(actions, matchers.HasLength(0))
 
@@ -422,19 +300,19 @@ class TestSyncRequirementsFile(testtools.TestCase):
             # mumbo gumbo
             foo>0.9;python_version!='2.7'
             """)
-        global_reqs = update._parse_reqs(global_content)
-        project_reqs = list(update._content_to_reqs(project_content))
+        global_reqs = requirement.parse(global_content)
+        project_reqs = list(requirement.to_reqs(project_content))
         actions, reqs = update._sync_requirements_file(
             global_reqs, project_reqs, 'f', False, False, False)
-        self.assertEqual(update.Requirements([
-            update.Requirement('foo', '<2', "python_version=='2.7'", ''),
-            update.Requirement('foo', '>1', "python_version!='2.7'", ''),
-            update.Requirement('', '', '', "# mumbo gumbo")]),
+        self.assertEqual(requirement.Requirements([
+            requirement.Requirement('foo', '<2', "python_version=='2.7'", ''),
+            requirement.Requirement('foo', '>1', "python_version!='2.7'", ''),
+            requirement.Requirement('', '', '', "# mumbo gumbo")]),
             reqs)
-        self.assertEqual(update.StdOut(
+        self.assertEqual(project.StdOut(
             "    foo<1.8;python_version=='2.7'  ->   "
             "foo<2;python_version=='2.7'\n"), actions[2])
-        self.assertEqual(update.StdOut(
+        self.assertEqual(project.StdOut(
             "    foo>0.9;python_version!='2.7'  ->   "
             "foo>1;python_version!='2.7'\n"), actions[3])
         self.assertThat(actions, matchers.HasLength(4))
@@ -448,13 +326,14 @@ class TestSyncRequirementsFile(testtools.TestCase):
             foo<2;python_version=='2.7'
             foo>1;python_version!='2.7'
             """)
-        global_reqs = update._parse_reqs(global_content)
-        project_reqs = list(update._content_to_reqs(project_content))
+        global_reqs = requirement.parse(global_content)
+        project_reqs = list(requirement.to_reqs(project_content))
         actions, reqs = update._sync_requirements_file(
             global_reqs, project_reqs, 'f', False, False, False)
-        self.assertEqual(update.Requirements([
-            update.Requirement('foo', '<2', "python_version=='2.7'", ''),
-            update.Requirement('foo', '>1', "python_version!='2.7'", '')]),
+        self.assertEqual(requirement.Requirements([
+            requirement.Requirement('foo', '<2', "python_version=='2.7'", ''),
+            requirement.Requirement(
+                'foo', '>1', "python_version!='2.7'", '')]),
             reqs)
         self.assertThat(actions, matchers.HasLength(0))
 
@@ -466,209 +345,18 @@ class TestSyncRequirementsFile(testtools.TestCase):
             foo<2;python_version=='2.7'
             foo>1;python_version!='2.7'
             """)
-        global_reqs = update._parse_reqs(global_content)
-        project_reqs = list(update._content_to_reqs(project_content))
+        global_reqs = requirement.parse(global_content)
+        project_reqs = list(requirement.to_reqs(project_content))
         actions, reqs = update._sync_requirements_file(
             global_reqs, project_reqs, 'f', False, False, False)
-        self.assertEqual(update.Requirements([
-            update.Requirement('foo', '>1', "", '')]),
+        self.assertEqual(requirement.Requirements([
+            requirement.Requirement('foo', '>1', "", '')]),
             reqs)
-        self.assertEqual(update.StdOut(
+        self.assertEqual(project.StdOut(
             "    foo<2;python_version=='2.7'    ->   foo>1\n"), actions[2])
-        self.assertEqual(update.StdOut(
+        self.assertEqual(project.StdOut(
             "    foo>1;python_version!='2.7'    ->   \n"), actions[3])
         self.assertThat(actions, matchers.HasLength(4))
-
-
-class TestReqsToContent(testtools.TestCase):
-
-    def test_smoke(self):
-        reqs = update._reqs_to_content(update.Requirements(
-            [update.Requirement(
-             'foo', '<=1', "python_version=='2.7'", '# BSD')]),
-            marker_sep='!')
-        self.assertEqual(
-            ''.join(update._REQS_HEADER
-                    + ["foo<=1!python_version=='2.7' # BSD\n"]),
-            reqs)
-
-
-class TestProjectExtras(testtools.TestCase):
-
-    def test_smoke(self):
-        project = {'setup.cfg': textwrap.dedent(u"""
-[extras]
-1 =
-  foo
-2 =
-  foo # fred
-  bar
-""")}
-        expected = {
-            '1': '\nfoo',
-            '2': '\nfoo # fred\nbar'
-        }
-        self.assertEqual(expected, update._project_extras(project))
-
-    def test_none(self):
-        project = {'setup.cfg': u"[metadata]\n"}
-        self.assertEqual({}, update._project_extras(project))
-
-
-class TestExtras(testtools.TestCase):
-
-    def test_none(self):
-        old_content = textwrap.dedent(u"""
-            [metadata]
-            # something something
-            name = fred
-
-            [entry_points]
-            console_scripts =
-                foo = bar:quux
-            """)
-        ini = update.extras_compiled(old_content).ini()
-        self.assertEqual(ini, (old_content, None, ''))
-
-    def test_no_eol(self):
-        old_content = textwrap.dedent(u"""
-            [metadata]
-            # something something
-            name = fred
-
-            [entry_points]
-            console_scripts =
-                foo = bar:quux""")
-        expected1 = textwrap.dedent(u"""
-            [metadata]
-            # something something
-            name = fred
-
-            [entry_points]
-            console_scripts =
-            """)
-        suffix = '    foo = bar:quux'
-        ini = update.extras_compiled(old_content).ini()
-        self.assertEqual(ini, (expected1, None, suffix))
-
-    def test_two_extras_raises(self):
-        old_content = textwrap.dedent(u"""
-            [metadata]
-            # something something
-            name = fred
-
-            [extras]
-            a = b
-            [extras]
-            b = c
-
-            [entry_points]
-            console_scripts =
-                foo = bar:quux
-            """)
-        with testtools.ExpectedException(parsley.ParseError):
-            update.extras_compiled(old_content).ini()
-
-    def test_extras(self):
-        # We get an AST for extras we can use to preserve comments.
-        old_content = textwrap.dedent(u"""
-            [metadata]
-            # something something
-            name = fred
-
-            [extras]
-            # comment1
-            a =
-             b
-             c
-            # comment2
-            # comment3
-            d =
-             e
-            # comment4
-
-            [entry_points]
-            console_scripts =
-                foo = bar:quux
-            """)
-        prefix = textwrap.dedent(u"""
-            [metadata]
-            # something something
-            name = fred
-
-            """)
-        suffix = textwrap.dedent(u"""\
-            [entry_points]
-            console_scripts =
-                foo = bar:quux
-            """)
-        extras = [
-            update.Comment('# comment1\n'),
-            update.Extra('a', '\nb\nc\n'),
-            update.Comment('# comment2\n'),
-            update.Comment('# comment3\n'),
-            update.Extra('d', '\ne\n'),
-            update.Comment('# comment4\n')]
-        ini = update.extras_compiled(old_content).ini()
-        self.assertEqual(ini, (prefix, extras, suffix))
-
-
-class TestMergeSetupCfg(testtools.TestCase):
-
-    def test_merge_none(self):
-        old_content = textwrap.dedent(u"""
-            [metadata]
-            # something something
-            name = fred
-
-            [entry_points]
-            console_scripts =
-                foo = bar:quux
-            """)
-        merged = update._merge_setup_cfg(old_content, {})
-        self.assertEqual(old_content, merged)
-
-    def test_merge_extras(self):
-        old_content = textwrap.dedent(u"""
-            [metadata]
-            name = fred
-
-            [extras]
-            # Comment
-            a =
-             b
-            # comment
-            c =
-             d
-
-            [entry_points]
-            console_scripts =
-                foo = bar:quux
-            """)
-        blank = update.Requirement('', '', '', '')
-        r1 = update.Requirement('b', '>=1', "python_version=='2.7'", '')
-        r2 = update.Requirement('d', '', '', '# BSD')
-        reqs = {
-            'a': update.Requirements([blank, r1]),
-            'c': update.Requirements([blank, r2])}
-        merged = update._merge_setup_cfg(old_content, reqs)
-        expected = textwrap.dedent(u"""
-            [metadata]
-            name = fred
-
-            [extras]
-            # Comment
-            a =
-              b>=1:python_version=='2.7'
-            # comment
-            c =
-              d # BSD
-
-            [entry_points]
-            console_scripts =
-                foo = bar:quux
-            """)
-        self.assertEqual(expected, merged)
 
 
 class TestCopyRequires(testtools.TestCase):
@@ -690,14 +378,14 @@ class TestCopyRequires(testtools.TestCase):
             opt =
               freddy
             """)
-        project = {}
-        project['root'] = '/dev/null'
-        project['requirements'] = {}
-        project['setup.cfg'] = setup_cfg
-        global_reqs = update._parse_reqs(global_content)
+        proj = {}
+        proj['root'] = '/dev/null'
+        proj['requirements'] = {}
+        proj['setup.cfg'] = setup_cfg
+        global_reqs = requirement.parse(global_content)
         actions = update._copy_requires(
-            u'', False, False, project, global_reqs, False)
+            u'', False, False, proj, global_reqs, False)
         self.assertEqual([
-            update.Verbose('Syncing extra [opt]'),
-            update.Verbose('Syncing extra [test]'),
-            update.File('setup.cfg', setup_cfg)], actions)
+            project.Verbose('Syncing extra [opt]'),
+            project.Verbose('Syncing extra [test]'),
+            project.File('setup.cfg', setup_cfg)], actions)

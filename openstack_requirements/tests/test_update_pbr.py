@@ -20,6 +20,7 @@ from __future__ import print_function
 
 import testtools
 
+from openstack_requirements import project
 from openstack_requirements.tests import common
 from openstack_requirements import update
 
@@ -47,5 +48,5 @@ class UpdateTestPbr(testtools.TestCase):
             common.pbr_project, common.global_reqs, None, None, None,
             False)
         for action in actions:
-            if type(action) is update.File:
+            if type(action) is project.File:
                 self.assertNotEqual(action.filename, 'setup.py')
