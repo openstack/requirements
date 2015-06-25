@@ -1,1 +1,1 @@
-openstack_requirements/update.py
+openstack_requirements/cmds/update.py

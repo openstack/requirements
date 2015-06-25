@@ -16,7 +16,7 @@ import fixtures
 import testtools
 from testtools import matchers
 
-from openstack_requirements import generate
+from openstack_requirements.cmds import generate
 
 
 class TestFreeze(testtools.TestCase):

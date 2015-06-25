@@ -23,10 +23,10 @@ import testscenarios
 import testtools
 from testtools import matchers
 
+from openstack_requirements.cmds import update
 from openstack_requirements import project
 from openstack_requirements import requirement
 from openstack_requirements.tests import common
-from openstack_requirements import update
 
 
 load_tests = testscenarios.load_tests_apply_scenarios

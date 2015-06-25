@@ -16,9 +16,9 @@ from __future__ import print_function
 
 import testtools
 
+from openstack_requirements.cmds import update
 from openstack_requirements import project
 from openstack_requirements.tests import common
-from openstack_requirements import update
 
 
 class UpdateTestWithSuffix(testtools.TestCase):

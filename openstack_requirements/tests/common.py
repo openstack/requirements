@@ -15,9 +15,9 @@ import shutil
 
 import fixtures
 
+from openstack_requirements.cmds import update
 from openstack_requirements import project
 from openstack_requirements import requirement
-from openstack_requirements import update
 
 
 def _file_to_list(fname):
