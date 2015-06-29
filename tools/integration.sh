@@ -41,9 +41,6 @@ export PATH=/usr/lib/ccache:$PATH
 tmpdir=$(mktemp -d)
 
 # Set up a wheelhouse
-export WHEELHOUSE=${WHEELHOUSE:-$tmpdir/.wheelhouse}
-export PIP_WHEEL_DIR=${PIP_WHEEL_DIR:-$WHEELHOUSE}
-export PIP_FIND_LINKS=${PIP_FIND_LINKS:-file://$WHEELHOUSE}
 mkvenv $tmpdir/wheelhouse
 # Specific PIP version - must succeed to be useful.
 # - build/download a local wheel so we don't hit the network on each venv.
@@ -57,10 +54,6 @@ if [ -n "${PBR_PIP_VERSION:-}" ]; then
     # but since we don't use -U in any other invocations, our version
     # of pip should be sticky.
 fi
-# Build wheels of everything (that can) to make things faster.
-# pip will try everything, but exits non-zero if any one thing fails.
-$tmpdir/wheelhouse/bin/pip wheel -w $WHEELHOUSE -f $WHEELHOUSE -r \
-    $REPODIR/requirements/global-requirements.txt || true
 
 #BRANCH
 BRANCH=${OVERRIDE_ZUUL_BRANCH=:-master}
@@ -73,9 +66,15 @@ mkdir -p $projectdir
 # Attempt to install all of global requirements
 install_all_of_gr
 
-# Install requirements
+# Install requirementsrrepo itself.
 $tmpdir/all_requirements/bin/pip install $REPODIR/requirements
 UPDATE="$tmpdir/all_requirements/bin/update-requirements"
+
+# Check that we can generate an upper-requirements.txt file with the change
+# that is being proposed.
+$tmpdir/all_requirements/bin/generate-constraints -p /usr/bin/python2.7 \
+    -p /usr/bin/python3.4 -b $REPODIR/requirements/blacklist.txt \
+    -r $REPODIR/requirements/global-requirements.txt
 
 for PROJECT in $PROJECTS ; do
     SHORT_PROJECT=$(basename $PROJECT)
