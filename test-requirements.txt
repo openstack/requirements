@@ -4,6 +4,7 @@
 # NOTE: These are requirements for testing the requirements project only
 #       See global-requirements for the actual requirements list
 hacking<0.11,>=0.10
+packaging
 testrepository>=0.0.18
 testscenarios>=0.4
 testtools>=1.4.0
