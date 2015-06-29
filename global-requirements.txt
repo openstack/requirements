@@ -229,7 +229,7 @@ discover
 django-nose>=1.2
 doc8  # Apache-2.0
 feedparser
-fixtures>=0.3.14
+fixtures>=1.3.1
 gabbi>=0.12.0  # Apache-2.0
 hgtools # dependency of pytest-runner that is only in setup_requires
 httpretty>=0.8.4,<0.8.7
