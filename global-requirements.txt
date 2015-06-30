@@ -301,4 +301,4 @@ hacking>=0.10.0,<0.11
 mccabe==0.2.1 # MIT License
 pep8==1.5.7
 pyflakes==0.8.1
-pylint==1.4.1  # GNU GPL v2
+pylint==1.4.4  # GNU GPL v2
