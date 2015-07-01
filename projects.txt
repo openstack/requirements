@@ -9,6 +9,7 @@ openstack/cliff
 openstack/congress
 openstack/debtcollector
 openstack/designate
+openstack/designate-dashboard
 openstack/diskimage-builder
 openstack/django_openstack_auth
 openstack/dragonflow
