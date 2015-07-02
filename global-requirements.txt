@@ -72,7 +72,9 @@ os-apply-config
 os-cloud-config
 os-collect-config
 os-refresh-config
+packaging>=15.2
 paramiko>=1.13.0,<=1.15.2
+Parsley
 passlib<=1.6.2
 Paste<=1.7.5.1
 PasteDeploy>=1.5.0,<=1.5.2
