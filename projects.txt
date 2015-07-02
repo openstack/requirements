@@ -65,6 +65,7 @@ openstack/python-swiftclient
 openstack/python-troveclient
 openstack/python-tuskarclient
 openstack/python-zaqarclient
+openstack/requirements
 openstack/sahara
 openstack/sahara-dashboard
 openstack/sahara-extra

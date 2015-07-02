@@ -80,7 +80,9 @@ os-cloud-config
 os-collect-config
 os-net-config
 os-refresh-config
+packaging>=15.2
 paramiko>=1.13.0
+Parsley
 passlib
 Paste
 PasteDeploy>=1.5.0

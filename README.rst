@@ -36,33 +36,58 @@ Global requirements gives us a single place where we can evaluate
 these things so that we can make a global decision for OpenStack on
 the suitability of the library.
 
+Since Havana we've also observed significant CI disruption occuring due to
+upstream releases of software that are are incompatible (whether in small
+or large ways) with OpenStack. So Global Requirements also serves as a control
+point to determine the precise versions of dependencies that will be used
+during CI.
+
 Solution
 ========
 
 The mechanics of the solution are relatively simple. We maintain a
 central list of all the requirements (``global-requirements.txt``)
-that are allowed in OpenStack projects. This is enforced for both
-``requirements.txt`` and ``test-requirements.txt``.
+that are allowed in OpenStack projects. This is enforced for
+``requirements.txt``, ``test-requirements.txt`` and extras defined in
+``setup.cfg``.
+
+Format
+------
+
+``global-requirements.txt`` supports a subset of pip requirement file
+contents.  Distributions may only be referenced by name, not URL. Options
+(such as -e or -f) may not be used. Version specifiers, environment markers
+and comments are all permitted. A single distribution may be listed more than
+once if different specifiers are required with different markers - for
+instance, if a dependency has dropped Python 2.7 support.
 
 Enforcement for Test Runs
 -------------------------
 
-When installing with devstack, we overwrite the ``requirements.txt``
-and ``test-requirements.txt`` for **all** installed projects with the
-versions from ``global-requirements.txt``. This ensures that we will
-get a deterministic set of requirements installed in the test system,
-and it won't be a guessing game based on the last piece of software to
-be installed.
+Currently when installing with devstack, we overwrite the ``requirements.txt``
+and ``test-requirements.txt`` for **all** installed projects with the versions
+from ``global-requirements.txt``. This attempts to ensure that we will get a
+deterministic set of requirements installed in the test system, and it won't
+be a guessing game based on the last piece of software to be installed.
+However due to the interactions with transitive dependencies this doesn't
+actually deliver what we need.
+
+We are moving to a system where we will define the precise versions of all
+dependencies using ``upper-constraints.txt``. This will be overlaid onto all
+pip commands made during devstack, and by tox, and will provide a single,
+atomic, source of truth for what works at any given time. The constraints will
+be required to be compatible with the global requirements, and will
+[eventually] be total.
 
 Enforcement in Projects
 -----------------------
 
 All projects that have accepted the requirements contract (as listed
 in ``projects.txt``) are expected to run a requirements compatibility
-job that ensures that they can not change any lines in global
-requirements to versions not in ``global-requirements.txt``. It also
-ensures that those projects can't add a requirement that's not already
-in ``global-requirements.txt``.
+job that ensures that they can not change any dependencies to versions not
+compatible with ``global-requirements.txt``. It also ensures that those
+projects can't add a requirement that's not already in
+``global-requirements.txt``.
 
 Automatic Sync of Accepted Requirements
 ---------------------------------------
