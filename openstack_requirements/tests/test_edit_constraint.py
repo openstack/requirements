@@ -12,6 +12,7 @@
 
 import io
 import os
+import textwrap
 
 import fixtures
 import testscenarios
@@ -37,6 +38,25 @@ class SmokeTest(testtools.TestCase):
         self.assertEqual(0, rv)
         content = open(constraints_path, 'rt').read()
         self.assertEqual('-e /path/to/foo\nbar===1\nquux==3\n', content)
+
+    def test_edit_paths(self):
+        stdout = io.StringIO()
+        tmpdir = self.useFixture(fixtures.TempDir()).path
+        constraints_path = os.path.join(tmpdir, 'name.txt')
+        with open(constraints_path, 'wt') as f:
+            f.write(textwrap.dedent("""\
+                file:///path/to/foo#egg=foo
+                -e file:///path/to/bar#egg=bar
+                """))
+        rv = edit.main(
+            [constraints_path, 'foo', '--', '-e file:///path/to/foo#egg=foo'],
+            stdout)
+        self.assertEqual(0, rv)
+        content = open(constraints_path, 'rt').read()
+        self.assertEqual(textwrap.dedent("""\
+            -e file:///path/to/foo#egg=foo
+            -e file:///path/to/bar#egg=bar
+            """), content)
 
 
 class TestEdit(testtools.TestCase):

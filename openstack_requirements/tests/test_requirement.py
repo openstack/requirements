@@ -22,7 +22,7 @@ load_tests = testscenarios.load_tests_apply_scenarios
 
 class TestParseRequirement(testtools.TestCase):
 
-    scenarios = [
+    dist_scenarios = [
         ('package', dict(
          line='swift',
          req=requirement.Requirement('swift', '', '', '', ''))),
@@ -53,9 +53,22 @@ class TestParseRequirement(testtools.TestCase):
          line="Sphinx<=1.2; python_version=='2.7'# Sadface",
          req=requirement.Requirement('Sphinx', '', '<=1.2',
                                      "python_version=='2.7'", '# Sadface')))]
+    url_scenarios = [
+        ('url', dict(
+         line='file:///path/to/thing#egg=thing',
+         req=requirement.Requirement('thing', 'file:///path/to/thing', '', '',
+                                     ''),
+         permit_urls=True)),
+        ('editable', dict(
+         line='-e file:///path/to/bar#egg=bar',
+         req=requirement.Requirement('bar', '-e file:///path/to/bar', '', '',
+                                     ''),
+         permit_urls=True))]
+    scenarios = dist_scenarios + url_scenarios
 
     def test_parse(self):
-        parsed = requirement.parse_line(self.line)
+        parsed = requirement.parse_line(
+            self.line, permit_urls=getattr(self, 'permit_urls', False))
         self.assertEqual(self.req, parsed)
 
 
@@ -83,3 +96,31 @@ class TestToContent(testtools.TestCase):
             ''.join(requirement._REQS_HEADER
                     + ["foo<=1!python_version=='2.7' # BSD\n"]),
             reqs)
+
+    def test_location(self):
+        reqs = requirement.to_content(requirement.Requirements(
+            [requirement.Requirement(
+             'foo', 'file://foo', '', "python_version=='2.7'", '# BSD')]))
+        self.assertEqual(
+            ''.join(requirement._REQS_HEADER
+                    + ["file://foo#egg=foo;python_version=='2.7' # BSD\n"]),
+            reqs)
+
+
+class TestToReqs(testtools.TestCase):
+
+    def test_editable(self):
+        line = '-e file:///foo#egg=foo'
+        reqs = list(requirement.to_reqs(line, permit_urls=True))
+        req = requirement.Requirement('foo', '-e file:///foo', '', '', '')
+        self.assertEqual(reqs, [(req, line)])
+
+    def test_urls(self):
+        line = 'file:///foo#egg=foo'
+        reqs = list(requirement.to_reqs(line, permit_urls=True))
+        req = requirement.Requirement('foo', 'file:///foo', '', '', '')
+        self.assertEqual(reqs, [(req, line)])
+
+    def test_not_urls(self):
+        with testtools.ExpectedException(pkg_resources.RequirementParseError):
+            list(requirement.to_reqs('file:///foo#egg=foo'))
