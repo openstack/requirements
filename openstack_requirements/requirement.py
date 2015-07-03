@@ -31,7 +31,7 @@ _REQS_HEADER = [
 
 
 Requirement = collections.namedtuple(
-    'Requirement', ['package', 'specifiers', 'markers', 'comment'])
+    'Requirement', ['package', 'location', 'specifiers', 'markers', 'comment'])
 Requirements = collections.namedtuple('Requirements', ['reqs'])
 
 
@@ -77,7 +77,7 @@ def parse_line(req_line):
     else:
         name = ''
         specifier = ''
-    return Requirement(name, specifier, markers, comment)
+    return Requirement(name, '', specifier, markers, comment)
 
 
 def to_content(reqs, marker_sep=';', line_prefix='', prefix=True):

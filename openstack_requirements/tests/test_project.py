@@ -200,9 +200,10 @@ class TestMergeSetupCfg(testtools.TestCase):
             console_scripts =
                 foo = bar:quux
             """)
-        blank = requirement.Requirement('', '', '', '')
-        r1 = requirement.Requirement('b', '>=1', "python_version=='2.7'", '')
-        r2 = requirement.Requirement('d', '', '', '# BSD')
+        blank = requirement.Requirement('', '', '', '', '')
+        r1 = requirement.Requirement(
+            'b', '', '>=1', "python_version=='2.7'", '')
+        r2 = requirement.Requirement('d', '', '', '', '# BSD')
         reqs = {
             'a': requirement.Requirements([blank, r1]),
             'c': requirement.Requirements([blank, r2])}

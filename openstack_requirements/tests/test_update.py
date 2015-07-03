@@ -257,9 +257,10 @@ class TestSyncRequirementsFile(testtools.TestCase):
         actions, reqs = update._sync_requirements_file(
             global_reqs, project_reqs, 'f', False, False, False)
         self.assertEqual(requirement.Requirements([
-            requirement.Requirement('foo', '<2', "python_version=='2.7'", ''),
             requirement.Requirement(
-                'foo', '>1', "python_version!='2.7'", '')]),
+                'foo', '', '<2', "python_version=='2.7'", ''),
+            requirement.Requirement(
+                'foo', '', '>1', "python_version!='2.7'", '')]),
             reqs)
         self.assertEqual(project.StdOut(
             "    foo                            "
@@ -284,9 +285,12 @@ class TestSyncRequirementsFile(testtools.TestCase):
         actions, reqs = update._sync_requirements_file(
             global_reqs, project_reqs, 'f', False, False, False)
         self.assertEqual(requirement.Requirements([
-            requirement.Requirement('foo', '<2', "python_version=='2.7'", ''),
-            requirement.Requirement('foo', '>1', "python_version!='2.7'", ''),
-            requirement.Requirement('', '', '', "# mumbo gumbo")]),
+            requirement.Requirement(
+                'foo', '', '<2', "python_version=='2.7'", ''),
+            requirement.Requirement(
+                'foo', '', '>1', "python_version!='2.7'", ''),
+            requirement.Requirement(
+                '', '', '', '', "# mumbo gumbo")]),
             reqs)
         self.assertThat(actions, matchers.HasLength(0))
 
@@ -305,9 +309,12 @@ class TestSyncRequirementsFile(testtools.TestCase):
         actions, reqs = update._sync_requirements_file(
             global_reqs, project_reqs, 'f', False, False, False)
         self.assertEqual(requirement.Requirements([
-            requirement.Requirement('foo', '<2', "python_version=='2.7'", ''),
-            requirement.Requirement('foo', '>1', "python_version!='2.7'", ''),
-            requirement.Requirement('', '', '', "# mumbo gumbo")]),
+            requirement.Requirement(
+                'foo', '', '<2', "python_version=='2.7'", ''),
+            requirement.Requirement(
+                'foo', '', '>1', "python_version!='2.7'", ''),
+            requirement.Requirement(
+                '', '', '', '', "# mumbo gumbo")]),
             reqs)
         self.assertEqual(project.StdOut(
             "    foo<1.8;python_version=='2.7'  ->   "
@@ -331,9 +338,10 @@ class TestSyncRequirementsFile(testtools.TestCase):
         actions, reqs = update._sync_requirements_file(
             global_reqs, project_reqs, 'f', False, False, False)
         self.assertEqual(requirement.Requirements([
-            requirement.Requirement('foo', '<2', "python_version=='2.7'", ''),
             requirement.Requirement(
-                'foo', '>1', "python_version!='2.7'", '')]),
+                'foo', '', '<2', "python_version=='2.7'", ''),
+            requirement.Requirement(
+                'foo', '', '>1', "python_version!='2.7'", '')]),
             reqs)
         self.assertThat(actions, matchers.HasLength(0))
 
@@ -350,7 +358,7 @@ class TestSyncRequirementsFile(testtools.TestCase):
         actions, reqs = update._sync_requirements_file(
             global_reqs, project_reqs, 'f', False, False, False)
         self.assertEqual(requirement.Requirements([
-            requirement.Requirement('foo', '>1', "", '')]),
+            requirement.Requirement('foo', '', '>1', "", '')]),
             reqs)
         self.assertEqual(project.StdOut(
             "    foo<2;python_version=='2.7'    ->   foo>1\n"), actions[2])
