@@ -24,7 +24,8 @@ def edit(reqs, name, replacement):
     if not replacement:
         reqs.pop(name, None)
     else:
-        reqs[name] = [(requirement.Requirement('', '', '', replacement), '')]
+        reqs[name] = [
+            (requirement.Requirement('', '', '', '', replacement), '')]
     result = []
     for entries in reqs.values():
         for entry, _ in entries:

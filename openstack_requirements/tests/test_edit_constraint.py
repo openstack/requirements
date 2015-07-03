@@ -45,7 +45,7 @@ class TestEdit(testtools.TestCase):
         reqs = {}
         res = edit.edit(reqs, 'foo', 'foo==1.2')
         self.assertEqual(requirement.Requirements(
-            [requirement.Requirement('', '', '', 'foo==1.2')]), res)
+            [requirement.Requirement('', '', '', '', 'foo==1.2')]), res)
 
     def test_delete(self):
         reqs = requirement.parse('foo==1.2\n')
@@ -56,10 +56,10 @@ class TestEdit(testtools.TestCase):
         reqs = requirement.parse('foo==1.2\n')
         res = edit.edit(reqs, 'foo', 'foo==1.3')
         self.assertEqual(requirement.Requirements(
-            [requirement.Requirement('', '', '', 'foo==1.3')]), res)
+            [requirement.Requirement('', '', '', '', 'foo==1.3')]), res)
 
     def test_replace_many(self):
         reqs = requirement.parse('foo==1.2;p\nfoo==1.3;q')
         res = edit.edit(reqs, 'foo', 'foo==1.3')
         self.assertEqual(requirement.Requirements(
-            [requirement.Requirement('', '', '', 'foo==1.3')]), res)
+            [requirement.Requirement('', '', '', '', 'foo==1.3')]), res)
