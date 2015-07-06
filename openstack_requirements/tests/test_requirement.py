@@ -59,6 +59,11 @@ class TestParseRequirement(testtools.TestCase):
          req=requirement.Requirement('thing', 'file:///path/to/thing', '', '',
                                      ''),
          permit_urls=True)),
+        ('url-comment', dict(
+         line='file:///path/to/thing#egg=thing # http://altpath#egg=boo',
+         req=requirement.Requirement('thing', 'file:///path/to/thing', '', '',
+                                     '# http://altpath#egg=boo'),
+         permit_urls=True)),
         ('editable', dict(
          line='-e file:///path/to/bar#egg=bar',
          req=requirement.Requirement('bar', '-e file:///path/to/bar', '', '',
