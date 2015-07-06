@@ -15,6 +15,7 @@
 # This module has no IO at all, and none should be added.
 
 import collections
+import re
 
 import pkg_resources
 
@@ -35,11 +36,16 @@ Requirement = collections.namedtuple(
 Requirements = collections.namedtuple('Requirements', ['reqs'])
 
 
-def parse(content):
-    return to_dict(to_reqs(content))
+url_re = re.compile(
+    '^(?P<url>\s*(?:-e\s)?\s*(?:(?:git+)?https|http|file)://.*)'
+    '#egg=(?P<name>[-\w]+)')
 
 
-def parse_line(req_line):
+def parse(content, permit_urls=False):
+    return to_dict(to_reqs(content, permit_urls=permit_urls))
+
+
+def parse_line(req_line, permit_urls=False):
     """Parse a single line of a requirements file.
 
     requirements files here are a subset of pip requirements files: we don't
@@ -50,16 +56,40 @@ def parse_line(req_line):
 
     They may of course be used by local test configurations, just not
     committed into the OpenStack reference branches.
+
+    :param permit_urls: If True, urls are parsed into Requirement tuples.
+        By default they are not, because they cannot be reflected into
+        setuptools kwargs, and thus the default is conservative. When
+        urls are permitted, -e *may* be supplied at the start of the line.
     """
     end = len(req_line)
     hash_pos = req_line.find('#')
     if hash_pos < 0:
         hash_pos = end
+    # Don't find urls that are in comments.
     if '://' in req_line[:hash_pos]:
-        # Trigger an early failure before we look for ':'
-        pkg_resources.Requirement.parse(req_line)
-    semi_pos = req_line.find(';', 0, hash_pos)
-    colon_pos = req_line.find(':', 0, hash_pos)
+        if permit_urls:
+            # We accept only a subset of urls here - they have to have an egg
+            # name so that we can tell what project its for without doing
+            # network access. Egg markers use a fragment, so we need to pull
+            # out url from the entire line.
+            m = url_re.match(req_line)
+            name = m.group('name')
+            location = m.group('url')
+            parse_start = m.end('name')
+            hash_pos = req_line[parse_start:].find('#')
+            if hash_pos < 0:
+                hash_pos = end
+            else:
+                hash_pos = hash_pos + parse_start
+        else:
+            # Trigger an early failure before we look for ':'
+            pkg_resources.Requirement.parse(req_line)
+    else:
+        parse_start = 0
+        location = ''
+    semi_pos = req_line.find(';', parse_start, hash_pos)
+    colon_pos = req_line.find(':', parse_start, hash_pos)
     marker_pos = max(semi_pos, colon_pos)
     if marker_pos < 0:
         marker_pos = hash_pos
@@ -68,16 +98,21 @@ def parse_line(req_line):
         comment = req_line[hash_pos:]
     else:
         comment = ''
-    req_line = req_line[:marker_pos]
+    req_line = req_line[parse_start:marker_pos]
 
-    if req_line:
+    if parse_start:
+        # We parsed a url before
+        specifier = ''
+    elif req_line:
+        # Pulled out a requirement
         parsed = pkg_resources.Requirement.parse(req_line)
         name = parsed.project_name
         specifier = str(parsed.specifier)
     else:
+        # Comments / blank lines etc.
         name = ''
         specifier = ''
-    return Requirement(name, '', specifier, markers, comment)
+    return Requirement(name, location, specifier, markers, comment)
 
 
 def to_content(reqs, marker_sep=';', line_prefix='', prefix=True):
@@ -89,7 +124,9 @@ def to_content(reqs, marker_sep=';', line_prefix='', prefix=True):
         comment = (comment_p + req.comment if req.comment else '')
         marker = marker_sep + req.markers if req.markers else ''
         package = line_prefix + req.package if req.package else ''
-        lines.append('%s%s%s%s\n' % (package, req.specifiers, marker, comment))
+        location = req.location + '#egg=' if req.location else ''
+        lines.append('%s%s%s%s%s\n' % (
+            location, package, req.specifiers, marker, comment))
     return u''.join(lines)
 
 
@@ -101,17 +138,21 @@ def to_dict(req_sequence):
     return reqs
 
 
-def _pass_through(req_line):
+def _pass_through(req_line, permit_urls=False):
     """Identify unparsable lines."""
-    return (req_line.startswith('http://tarballs.openstack.org/') or
-            req_line.startswith('-e') or
-            req_line.startswith('-f'))
+    if permit_urls:
+        return (req_line.startswith('http://tarballs.openstack.org/') or
+                req_line.startswith('-f'))
+    else:
+        return (req_line.startswith('http://tarballs.openstack.org/') or
+                req_line.startswith('-e') or
+                req_line.startswith('-f'))
 
 
-def to_reqs(content):
+def to_reqs(content, permit_urls=False):
     for content_line in content.splitlines(True):
         req_line = content_line.strip()
-        if _pass_through(req_line):
+        if _pass_through(req_line, permit_urls=permit_urls):
             yield None, content_line
         else:
-            yield parse_line(req_line), content_line
+            yield parse_line(req_line, permit_urls=permit_urls), content_line
