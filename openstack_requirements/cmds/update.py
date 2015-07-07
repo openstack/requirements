@@ -111,7 +111,7 @@ def _sync_requirements_file(
         elif req is None:
             # Unparsable lines.
             output_requirements.append(
-                requirement.Requirement('', '', '', '', req_line))
+                requirement.Requirement('', '', '', '', req_line.rstrip()))
             continue
         elif not req.package:
             # Comment-only lines
