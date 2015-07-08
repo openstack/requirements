@@ -1,5 +1,6 @@
 openstack-dev/hacking
 openstack-dev/pbr
+openstack/anchor
 openstack/automaton
 openstack/barbican
 openstack/ceilometer
