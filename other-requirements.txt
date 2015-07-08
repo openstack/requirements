@@ -1,0 +1,23 @@
+# These are needed to build all the things in global-requirements, which we do
+# for integration testing (see tools/integration.sh.
+python-all-dev
+python3-all-dev
+libvirt-dev
+libxml2-dev
+libxslt-dev
+libmysqlclient-dev
+libpq-dev
+libnspr4-dev
+pkg-config
+libsqlite3-dev
+libzmq-dev
+libffi-dev
+libldap2-dev
+libsasl2-dev
+ccache
+# NOTE(flaper87): Temporarly needed for proton
+uuid-dev
+swig
+# Python things that change rarely and we're willing to risk breakage vs latest
+python-numpy [python]
+python-yaml [python]
