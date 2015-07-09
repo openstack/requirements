@@ -138,6 +138,7 @@ kerberos===1.1.1;python_version=='2.7'
 keyring===5.3
 keystonemiddleware===2.1.0
 kombu===3.0.26
+ldap3==0.9.8.7
 ldappool===1.0
 libvirt-python===1.2.16
 linecache2===1.0.0
