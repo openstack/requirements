@@ -169,7 +169,8 @@ requests>=2.5.2
 requests-aws>=0.1.4    # BSD License (3 clause)
 requests-kerberos>=0.6;python_version=='2.7' # MIT
 rfc3986>=0.2.0  # Apache-2.0
-Routes>=1.12.3,!=2.0,!=2.1
+Routes>=1.12.3,!=2.0,!=2.1;python_version=='2.7'
+Routes>=1.12.3,!=2.0;python_version!='2.7'
 rtslib-fb>=2.1.41
 semantic_version>=2.3.1
 fasteners>=0.7  # Apache-2.0
