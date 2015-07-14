@@ -72,6 +72,8 @@ def get_requirements():
             # skip the comment or empty lines
             if not line or line.startswith(('#', '\n')):
                 continue
+            # get rid of env markers, they are not relevant for our purposes.
+            line = line.split(';')[0]
             reqs.append(_package_name(line))
     return reqs
 
