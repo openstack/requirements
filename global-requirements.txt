@@ -126,7 +126,7 @@ PyMySQL>=0.6.2  # MIT License
 # uuid-dev and swig
 pyngus>=1.3.1;python_version=='2.7'  # Apache 2.0 License
 
-pyOpenSSL>=0.11
+pyOpenSSL>=0.14
 pyparsing>=2.0.1
 pysnmp>=4.2.1,<5.0.0
 pystache
