@@ -69,6 +69,10 @@ class TestProjectExtras(testtools.TestCase):
         proj = {'setup.cfg': u"[metadata]\n"}
         self.assertEqual({}, project.extras(proj))
 
+    def test_no_setup_cfg(self):
+        proj = {}
+        self.assertEqual({}, project.extras(proj))
+
 
 class TestExtrasParsing(testtools.TestCase):
 

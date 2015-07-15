@@ -55,10 +55,12 @@ Verbose = collections.namedtuple('Verbose', ['message'])
 
 def extras(project):
     """Return a dict of extra-name:content for the extras in setup.cfg."""
+    if 'setup.cfg' not in project:
+        return {}
     c = configparser.SafeConfigParser()
     c.readfp(io.StringIO(project['setup.cfg']))
     if not c.has_section('extras'):
-        return dict()
+        return {}
     return dict(c.items('extras'))
 
 
