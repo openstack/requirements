@@ -145,7 +145,7 @@ linecache2===1.0.0
 logilab-common===1.0.1
 logutils===0.3.3
 lxml===3.4.4
-mock===1.1.1
+mock===1.2.0
 monotonic===0.2
 mox===0.5.3
 mox3===0.8.0
