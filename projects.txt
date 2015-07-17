@@ -24,6 +24,7 @@ openstack/ironic-inspector
 openstack/ironic-lib
 openstack/ironic-python-agent
 openstack/keystone
+openstack/keystoneauth
 openstack/keystoneauth-saml2
 openstack/keystonemiddleware
 openstack/magnum
