@@ -115,7 +115,7 @@ functools32===3.2.3.post1;python_version=='2.7'
 futures===3.0.3
 futurist===0.1.1
 gabbi===1.0.0
-glance-store===0.7.0
+glance-store===0.6.0
 greenlet===0.4.7
 happybase===0.9;python_version=='2.7'
 hgtools===6.3
