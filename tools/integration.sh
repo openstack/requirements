@@ -25,15 +25,8 @@ BASE=${BASE:-/opt/stack}
 
 REPODIR=${REPODIR:-$BASE/new}
 
-# TODO: Figure out how to get this on to the box properly
-sudo apt-get install -y --force-yes libvirt-dev libxml2-dev libxslt-dev libmysqlclient-dev libpq-dev libnspr4-dev pkg-config libsqlite3-dev libzmq-dev libffi-dev libldap2-dev libsasl2-dev ccache
-
-# NOTE(flaper87): Temporarly needed for proton
-sudo apt-get install -y --force-yes uuid-dev swig
-
-# FOR numpy / pyyaml
-sudo apt-get build-dep -y --force-yes python-numpy
-sudo apt-get build-dep -y --force-yes python-yaml
+root=$(dirname $0)/..
+sudo apt-get install -y --force-yes $(/usr/bindep-env/bin/bindep -b python -f $root/other-requirements.txt)
 
 # And use ccache explitly
 export PATH=/usr/lib/ccache:$PATH
