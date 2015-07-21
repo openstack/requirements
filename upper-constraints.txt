@@ -52,7 +52,7 @@ XStatic-smart-table===1.4.5.3
 XStatic-term.js===0.0.4.2
 XenAPI===1.2
 aioeventlet===0.4
-alembic===0.7.7
+alembic===0.8.0
 amqp===1.4.6
 anyjson===0.3.3
 appdirs===1.4.0
