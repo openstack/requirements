@@ -129,3 +129,15 @@ class TestToReqs(testtools.TestCase):
     def test_not_urls(self):
         with testtools.ExpectedException(pkg_resources.RequirementParseError):
             list(requirement.to_reqs('file:///foo#egg=foo'))
+
+    def test_multiline(self):
+        content = '\n'.join(
+            ['oslo.config>=1.11.0     # Apache-2.0',
+             'oslo.concurrency>=2.3.0 # Apache-2.0',
+             'oslo.context>=0.2.0     # Apache-2.0']
+        )
+        reqs = requirement.parse(content)
+        self.assertEqual(
+            set(['oslo.config', 'oslo.concurrency', 'oslo.context']),
+            set(reqs.keys()),
+        )
