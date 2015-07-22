@@ -113,7 +113,7 @@ funcparserlib===0.3.6
 funcsigs===0.4;python_version=='2.7'
 functools32===3.2.3.post1;python_version=='2.7'
 futures===3.0.3
-futurist===0.1.1
+futurist===0.1.2
 gabbi===1.0.0
 glance-store===0.6.0
 greenlet===0.4.7
