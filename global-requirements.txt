@@ -146,6 +146,7 @@ python-glanceclient>=0.18.0
 python-ironic-inspector-client>=1.0.1
 python-ironicclient>=0.6.0
 python-keystoneclient>=1.6.0
+python-magnumclient>=0.2.1
 python-manilaclient>=1.0.4
 python-memcached>=1.48;python_version=='2.7' or python_version=='2.6'
 python-mistralclient>=1.0.0
