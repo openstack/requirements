@@ -31,6 +31,8 @@ openstack/keystonemiddleware
 openstack/magnum
 openstack/manila
 openstack/mox3
+openstack/murano
+openstack/murano-dashboard
 openstack/networking-odl
 openstack/networking-ovn
 openstack/neutron
@@ -79,6 +81,7 @@ openstack/python-keystoneclient
 openstack/python-keystoneclient-kerberos
 openstack/python-magnumclient
 openstack/python-manilaclient
+openstack/python-muranoclient
 openstack/python-neutronclient
 openstack/python-novaclient
 openstack/python-openstackclient
