@@ -10,6 +10,7 @@
 #    License for the specific language governing permissions and limitations
 #    under the License.
 
+import fixtures
 from packaging import specifiers
 import testtools
 
@@ -42,11 +43,14 @@ def check_compatible(global_reqs, constraints):
     def satisfied(reqs, name, version):
         if name not in reqs:
             return True
-        for pkg in global_reqs.values():
-            for constraint, _ in pkg:
-                spec = specifiers.SpecifierSet(constraint.specifiers)
-                if spec.contains(version):
-                    return True
+        tested = []
+        for constraint, _ in reqs[name]:
+            spec = specifiers.SpecifierSet(constraint.specifiers)
+            if spec.contains(version):
+                return True
+            tested.append(constraint.specifiers)
+        print('Constraint for %s==%s does not match %s' %
+              (name, version, tested))
         return False
     for pkg_constraints in constraints.values():
         for constraint, _ in pkg_constraints:
@@ -59,6 +63,27 @@ def check_compatible(global_reqs, constraints):
 
 class TestRequirements(testtools.TestCase):
 
+    def setUp(self):
+        super(TestRequirements, self).setUp()
+        self._stdout_fixture = fixtures.StringStream('stdout')
+        self.stdout = self.useFixture(self._stdout_fixture).stream
+        self.useFixture(fixtures.MonkeyPatch('sys.stdout', self.stdout))
+
+    def test_constraints_format(self):
+        errors = 0
+        constraints_content = open('upper-constraints.txt', 'rt').read()
+        for n, line in enumerate(constraints_content.splitlines(), 1):
+            c = requirement.parse_line(line)
+            spec = c.specifiers
+            if not spec.startswith('==='):
+                print(
+                    'Invalid constraint line %d %r, does not have 3 "="' %
+                    (n, line)
+                )
+                errors += 1
+        if errors:
+            self.fail('Encountered errors parsing constraints.txt')
+
     def test_constraints_compatible(self):
         global_req_content = open('global-requirements.txt', 'rt').read()
         constraints_content = open('upper-constraints.txt', 'rt').read()
@@ -66,10 +91,39 @@ class TestRequirements(testtools.TestCase):
         constraints = requirement.parse(constraints_content)
         self.assertEqual([], check_compatible(global_reqs, constraints))
 
-    def test_check_compatible(self):
-        global_reqs = requirement.parse("foo>=1.2\n")
+
+class TestCheckCompatible(testtools.TestCase):
+
+    def setUp(self):
+        super(TestCheckCompatible, self).setUp()
+        self._stdout_fixture = fixtures.StringStream('stdout')
+        self.stdout = self.useFixture(self._stdout_fixture).stream
+        self.useFixture(fixtures.MonkeyPatch('sys.stdout', self.stdout))
+
+    def test_non_requirement(self):
+        global_reqs = {}
         good_constraints = requirement.parse("foo===1.2.5\n")
-        bad_constraints = requirement.parse("foo===1.1.2\n")
-        self.assertEqual([], check_compatible(global_reqs, good_constraints))
-        self.assertNotEqual(
-            [], check_compatible(global_reqs, bad_constraints))
+        self.assertEqual(
+            [],
+            check_compatible(global_reqs, good_constraints)
+        )
+
+    def test_compatible(self):
+        global_reqs = requirement.parse("foo>=1.2\nbar>2.0\n")
+        good_constraints = requirement.parse("foo===1.2.5\n")
+        self.assertEqual(
+            [],
+            check_compatible(global_reqs, good_constraints)
+        )
+
+    def test_constraint_below_range(self):
+        global_reqs = requirement.parse("oslo.concurrency>=2.3.0\nbar>1.0\n")
+        bad_constraints = requirement.parse("oslo.concurrency===2.2.0\n")
+        results = check_compatible(global_reqs, bad_constraints)
+        self.assertNotEqual([], results)
+
+    def test_constraint_above_range(self):
+        global_reqs = requirement.parse("foo>=1.2,<2.0\nbar>1.0\n")
+        bad_constraints = requirement.parse("foo===2.0.1\n")
+        results = check_compatible(global_reqs, bad_constraints)
+        self.assertNotEqual([], results)
