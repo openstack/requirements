@@ -17,7 +17,6 @@ cachetools>=1.0.0 # MIT License
 cffi
 cliff>=1.13.0  # Apache-2.0
 cmd2>=0.6.7
-PuLP>=1.0.4
 contextlib2>=0.4.0 # PSF License
 croniter>=0.3.4 # MIT License
 cryptography>=0.9.1 # Apache-2.0
