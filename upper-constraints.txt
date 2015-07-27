@@ -310,7 +310,7 @@ waitress===0.8.9
 warlock===1.1.0
 webcolors===1.5
 websocket-client===0.32.0;python_version=='2.7'
-websockify===0.6.1
+websockify===0.7.0
 wheel===0.24.0
 wrapt===1.10.5
 wsgi-intercept===0.10.0

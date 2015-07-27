@@ -192,7 +192,7 @@ tripleo-image-elements
 urllib3>=1.8.3
 warlock>=1.0.1,<2
 WebOb>=1.2.3
-websockify>=0.6.0,<0.7
+websockify>=0.6.0
 wheel
 wmi;sys_platform=='win32'
 WSME>=0.7
