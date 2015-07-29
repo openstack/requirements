@@ -49,7 +49,15 @@ The mechanics of the solution are relatively simple. We maintain a
 central list of all the requirements (``global-requirements.txt``)
 that are allowed in OpenStack projects. This is enforced for
 ``requirements.txt``, ``test-requirements.txt`` and extras defined in
-``setup.cfg``.
+``setup.cfg``. This is maintained by hand, with changing going through CI.
+
+We also maintain a compiled list of the exact versions, including transitive
+dependencies, of packages that are known to work in the OpenStack CI system.
+This is maintained via an automated process that calculates the list and
+proposes a change back to this repository. A consequence of this is that
+new releases of OpenStack libraries are not immediately used: they have to
+pass through this automated process before we can benefit from (or be harmed
+by) them.
 
 Format
 ------
@@ -61,23 +69,34 @@ and comments are all permitted. A single distribution may be listed more than
 once if different specifiers are required with different markers - for
 instance, if a dependency has dropped Python 2.7 support.
 
+``upper-constraints.txt`` is machine generated and nothing more or less than
+an exact list of versions.
+
 Enforcement for Test Runs
 -------------------------
 
-Currently when installing with devstack, we overwrite the ``requirements.txt``
-and ``test-requirements.txt`` for **all** installed projects with the versions
-from ``global-requirements.txt``. This attempts to ensure that we will get a
-deterministic set of requirements installed in the test system, and it won't
-be a guessing game based on the last piece of software to be installed.
-However due to the interactions with transitive dependencies this doesn't
-actually deliver what we need.
+Devstack
+++++++++
 
-We are moving to a system where we will define the precise versions of all
-dependencies using ``upper-constraints.txt``. This will be overlaid onto all
-pip commands made during devstack, and by tox, and will provide a single,
-atomic, source of truth for what works at any given time. The constraints will
-be required to be compatible with the global requirements, and will
-[eventually] be total.
+When ``USE_CONSTRAINTS`` is set ``True``, devstack uses the pip ``-c`` option
+to pin all the libraries to known good versions. ``edit-constraints`` can be
+used to unpin a single constraint, and this is done to install libraries from
+git. This is the **recommended** way to use devstack.
+
+When ``USE_CONSTRAINTS`` is set ``False``, devstack overwrite the ``requirements.txt``
+and ``test-requirements.txt`` for **all** installed projects with the versions
+from ``global-requirements.txt``. Projects that are not in ``projects.txt``
+get 'soft' updates, ones that are get 'hard' updated. This attempts to ensure
+that we will get a deterministic set of requirements installed in the test
+system, and it won't be a guessing game based on the last piece of software to
+be installed. However due to the interactions with transitive dependencies
+this doesn't actually deliver what we need, and is **not recommended**.
+
+Tox
++++
+
+We are working on the necessary changes to use ``upper-constraints.txt`` in
+tox jobs but it is not yet complete.
 
 Enforcement in Projects
 -----------------------
@@ -87,7 +106,8 @@ in ``projects.txt``) are expected to run a requirements compatibility
 job that ensures that they can not change any dependencies to versions not
 compatible with ``global-requirements.txt``. It also ensures that those
 projects can't add a requirement that's not already in
-``global-requirements.txt``.
+``global-requirements.txt``. This job should be proposed to infra at the same
+time as proposing the change in ``openstack/requirements``.
 
 Automatic Sync of Accepted Requirements
 ---------------------------------------
@@ -107,24 +127,85 @@ This is intended as a time saving device for projects, as they can
 fast approve requirements syncs and not have to manually worry about
 whether or not they are up to date with the global definition.
 
-Running
-=======
+Tools
+=====
 
-To run the requirements update manually, run::
+All the tools require openstack_requirements to be installed (e.g. in a Python
+virtualenv). They all have help, which is the authoritative documentation.
 
-  python update.py path/to/project
+update-requirements
+-------------------
 
-Entries in requirements.txt and test-requirements.txt will have their
-versions updated to match the entries listed here. Any entries in the
-target project which do not first exist here will be removed. No
-entries will be added.
+This will update the requirements in a project from the global requirements
+file found in ``.``. Alternatively, pass ``--source`` to use a different
+global requirements file::
+
+  update-requirements --source /opt/stack/requirements /opt/stack/nova
+
+Entries in all requirements files will have their versions updated to match
+the entries listed in the global requirements.  Excess entries will cause
+errors in hard mode (the default) or be ignored in soft mode.
+
+generate-constraints
+--------------------
+
+Compile a constraints file showing the versions of resulting from installing
+all of ``global-requirements.txt``::
+
+  generate-constraints -p /usr/bin/python2.7 -p /usr/bin/python3.4 \
+    -b blacklist.txt > new-constraints.txt
+
+edit-constraints
+----------------
+
+Replace all references to a package in a constraints file with a new
+specification. Used by devstack to enable git installations of libraries that
+are normally constrained::
+
+  edit-constraints oslo.db "-e file://opt/stack/oslo.db#egg=oslo.db"
+
+Proposing changes
+=================
+
+Look at the `Review Guidelines` and make sure your change meets them.
+
+All changes to ``global-requirements.txt`` may dramatically alter the contents
+of ``upper-constraints.txt`` due to adding or removing transitive
+dependencies. As such you should always generate a diff against the current
+merged constraints, otherwise your change may fail if it is incompatible wit
+the current tested constraints.
+
+Regenerating involves five steps.
+
+1) Install the dependencies needed to compile various Python packages::
+
+  sudo apt-get install $(bindep -b)
+
+2) Create a reference file (do this without your patch applied)::
+
+  generate-constraints -p /usr/bin/python2.7 -p /usr/bin/python3.4 \
+    -b blacklist.txt > baseline
+
+3) Apply your patch and generate a new reference file::
+
+  generate-constraints -p /usr/bin/python2.7 -p /usr/bin/python3.4 \
+    -b blacklist.txt > updated
+
+4) Diff them::
+
+  diff -p baseline updated
+
+5) Apply the patch to ``upper-constraints.txt``. This may require some
+   fiddling. ``edit-constraint`` can do this for you **when the change
+   does not involve multiple lines for one package**.
 
 Review Guidelines
 =================
 
 There are a set of questions that every reviewer should ask on any
-proposed requirements change (and ones that proposers should pre
-answer to make things go smoother).
+proposed requirements change. Proposers can make reviews easier by
+including the answers to these questions in the commit message for
+their change.
 
 General Review Criteria
 -----------------------
@@ -235,3 +316,20 @@ following tools to search for packages:
 
  - Ubuntu - http://packages.ubuntu.com/
  - Fedora - https://apps.fedoraproject.org/packages/
+
+For ``upper-constraints.txt`` changes
+-------------------------------------
+
+If the change was proposed by the OpenStack CI bot, then if the change has
+passed CI, only one reviewer is needed and they should +2 +A without thinking
+about things.
+
+If the change was not proposed by the OpenStack CI bot, and does not include a
+``global-requirements.txt`` change, then it should be rejected: the CI bot
+will generate an appropriate change itself. Ask in #openstack-infra if the
+bot needs to be run more quickly.
+
+Otherwise the change may be the result of recalculating the constraints which
+changed when a ``global-requirements.txt`` change is proposed. In this case, ignore
+the changes to ``upper-constraints.txt`` and review the
+``global-requirements.txt`` component of the change.
