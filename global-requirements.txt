@@ -177,6 +177,7 @@ ryu>=3.23.2 # Apache-2.0
 semantic_version>=2.3.1
 fasteners>=0.7  # Apache-2.0
 simplejson>=2.2.0
+singledispatch>=3.4.0.3
 six>=1.9.0
 sockjs-tornado>=1.0.0,<2.0.0
 SQLAlchemy>=0.9.7,<1.1.0
