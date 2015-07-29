@@ -304,6 +304,7 @@ traceback2===1.4.0
 tripleo-image-elements===0.8.10
 trollius===1.0.4
 txaio===1.0.0
+unicodecsv===0.13.0
 unittest2===1.1.0
 urllib3===1.10.4
 virtualenv===13.1.0
