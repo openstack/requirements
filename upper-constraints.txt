@@ -64,9 +64,9 @@ backports.ssl-match-hostname===3.4.0.2;python_version=='2.7'
 bandit===0.12.0
 bashate===0.3.1
 beautifulsoup4===4.4.0
-blockdiag===1.5.2
+blockdiag===1.5.3
 boto===2.38.0
-botocore===1.1.4
+botocore===1.1.5
 cachetools===1.0.3
 cassandra-driver===2.6.0
 ceilometermiddleware===0.2.0
@@ -116,7 +116,7 @@ funcsigs===0.4;python_version=='2.7'
 functools32===3.2.3.post2;python_version=='2.7'
 futures===3.0.3
 futurist===0.2.0
-gabbi===1.1.4
+gabbi===1.1.5
 glance-store===0.7.1
 greenlet===0.4.7
 happybase===0.9;python_version=='2.7'
@@ -149,7 +149,7 @@ logilab-common===1.0.2
 logutils===0.3.3
 lxml===3.4.4
 mock===1.3.0
-monotonic===0.2
+monotonic===0.3
 mox===0.5.3
 mox3===0.8.0
 msgpack-python===0.4.6
@@ -166,6 +166,7 @@ oauthlib===1.0.1
 openstack-doc-tools===0.29.1
 openstack.nose-plugin===0.11
 openstackdocstheme===1.1.0
+openstacksdk===0.6.0
 ordereddict===1.1
 os-apply-config===0.1.31
 os-brick===0.3.2
@@ -201,7 +202,7 @@ paramiko===1.15.2
 passlib===1.6.4
 pathlib===1.0.1;python_version=='2.7'
 pbr===1.3.0
-pecan===0.9.0
+pecan===1.0.0
 pexpect===3.2
 ply===3.6
 posix-ipc===1.0.0
@@ -246,7 +247,7 @@ python-muranoclient===0.6.2
 python-neutronclient===2.6.0
 python-novaclient===2.26.0
 python-openstackclient===1.5.0
-python-openstacksdk===0.5.0
+python-openstacksdk===0.5.2
 python-qpid-proton===0.9.1.1;python_version=='2.7'
 python-saharaclient===0.9.1
 python-subunit===1.1.0
@@ -271,7 +272,7 @@ retrying===1.3.3
 rfc3986===0.2.2
 rtslib-fb===2.1.57
 ryu===3.23.2
-selenium===2.46.1
+selenium===2.47.0
 semantic-version===2.4.2
 seqdiag===0.9.5
 simplegeneric===0.8.1
