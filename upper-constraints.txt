@@ -116,7 +116,7 @@ funcsigs===0.4;python_version=='2.7'
 functools32===3.2.3.post2;python_version=='2.7'
 futures===3.0.3
 futurist===0.2.0
-gabbi===1.1.5
+gabbi===1.1.6
 glance-store===0.7.1
 greenlet===0.4.7
 happybase===0.9;python_version=='2.7'
@@ -124,7 +124,7 @@ hgtools===6.3
 httplib2===0.9.1
 httpretty===0.8.6
 idna===2.0
-influxdb===2.7.1
+influxdb===2.7.3
 ipaddress===1.0.14;python_version=='2.7'
 ironic-discoverd===1.1.0
 iso8601===0.1.10
@@ -170,7 +170,7 @@ openstacksdk===0.6.0
 ordereddict===1.1
 os-apply-config===0.1.31
 os-brick===0.3.2
-os-client-config===1.6.0
+os-client-config===1.6.1
 os-cloud-config===0.2.9
 os-collect-config===0.1.35
 os-net-config===0.1.4
@@ -202,7 +202,7 @@ paramiko===1.15.2
 passlib===1.6.4
 pathlib===1.0.1;python_version=='2.7'
 pbr===1.3.0
-pecan===1.0.0
+pecan===1.0.1
 pexpect===3.2
 ply===3.6
 posix-ipc===1.0.0
@@ -241,7 +241,7 @@ python-keystoneclient===1.6.0
 python-ldap===2.4.20;python_version=='2.7'
 python-magnumclient===0.2.1
 python-manilaclient===1.2.0
-python-memcached===1.56
+python-memcached===1.57
 python-mimeparse===0.1.4
 python-mistralclient===1.0.0
 python-muranoclient===0.6.2
@@ -317,7 +317,7 @@ websocket-client===0.32.0
 websockify===0.7.0
 wheel===0.24.0
 wrapt===1.10.5
-wsgi-intercept===0.10.0
+wsgi-intercept===0.10.2
 xattr===0.7.8
 xvfbwrapper===0.2.4
 yaql===0.2.7
