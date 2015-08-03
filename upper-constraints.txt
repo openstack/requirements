@@ -194,7 +194,7 @@ oslo.utils===2.1.0
 oslo.versionedobjects===0.6.0
 oslo.vmware===1.18.0
 oslosphinx===3.0.0
-oslotest===1.9.0
+oslotest===1.10.0
 osprofiler===0.3.0
 ovs===2.4.0.dev0;python_version=='2.7'
 packaging===15.2
