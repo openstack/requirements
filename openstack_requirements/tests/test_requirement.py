@@ -10,6 +10,8 @@
 #    License for the specific language governing permissions and limitations
 #    under the License.
 
+import textwrap
+
 import pkg_resources
 import testscenarios
 import testtools
@@ -131,11 +133,11 @@ class TestToReqs(testtools.TestCase):
             list(requirement.to_reqs('file:///foo#egg=foo'))
 
     def test_multiline(self):
-        content = '\n'.join(
-            ['oslo.config>=1.11.0     # Apache-2.0',
-             'oslo.concurrency>=2.3.0 # Apache-2.0',
-             'oslo.context>=0.2.0     # Apache-2.0']
-        )
+        content = textwrap.dedent("""\
+            oslo.config>=1.11.0     # Apache-2.0
+            oslo.concurrency>=2.3.0 # Apache-2.0
+            oslo.context>=0.2.0     # Apache-2.0
+            """)
         reqs = requirement.parse(content)
         self.assertEqual(
             set(['oslo.config', 'oslo.concurrency', 'oslo.context']),
