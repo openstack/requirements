@@ -35,6 +35,7 @@ openstack/murano
 openstack/murano-dashboard
 openstack/networking-odl
 openstack/networking-ovn
+openstack/networking-sfc
 openstack/networking-bgpvpn
 openstack/neutron
 openstack/neutron-fwaas
