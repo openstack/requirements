@@ -73,7 +73,7 @@ ceilometermiddleware===0.2.0
 certifi===2015.4.28;python_version=='2.7'
 cffi===1.1.2
 chardet===2.3.0
-cliff===1.13.0
+cliff===1.14.0
 cliff-tablib===1.1
 cmd2===0.6.8
 colorama===0.3.3
