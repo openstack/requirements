@@ -38,7 +38,7 @@ Requirements = collections.namedtuple('Requirements', ['reqs'])
 
 url_re = re.compile(
     '^(?P<url>\s*(?:-e\s)?\s*(?:(?:git+)?https|http|file)://[^#]*)'
-    '#egg=(?P<name>[-\w]+)')
+    '#egg=(?P<name>[-\.\w]+)')
 
 
 def parse(content, permit_urls=False):

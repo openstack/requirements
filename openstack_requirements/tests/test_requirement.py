@@ -61,6 +61,11 @@ class TestParseRequirement(testtools.TestCase):
          req=requirement.Requirement('thing', 'file:///path/to/thing', '', '',
                                      ''),
          permit_urls=True)),
+        ('oslo-url', dict(
+         line='file:///path/to/oslo.thing#egg=oslo.thing',
+         req=requirement.Requirement('oslo.thing',
+                                     'file:///path/to/oslo.thing', '', '', ''),
+         permit_urls=True)),
         ('url-comment', dict(
          line='file:///path/to/thing#egg=thing # http://altpath#egg=boo',
          req=requirement.Requirement('thing', 'file:///path/to/thing', '', '',
