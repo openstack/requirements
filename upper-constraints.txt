@@ -58,7 +58,7 @@ anyjson===0.3.3
 appdirs===1.4.0
 argcomplete===0.9.0
 astroid===1.3.8
-autobahn===0.10.5
+autobahn===0.10.5.post2
 automaton===0.6.0
 backports.ssl-match-hostname===3.4.0.2;python_version=='2.7'
 bandit===0.13.0
@@ -117,7 +117,7 @@ functools32===3.2.3.post2;python_version=='2.7'
 futures===3.0.3
 futurist===0.3.0
 gabbi===1.3.0
-glance-store===0.7.1
+glance-store===0.8.0
 greenlet===0.4.7
 happybase===0.9;python_version=='2.7'
 hgtools===6.3
@@ -165,7 +165,7 @@ numpy===1.9.2
 oauthlib===1.0.1
 openstack-doc-tools===0.29.1
 openstack.nose-plugin===0.11
-openstackdocstheme===1.1.0
+openstackdocstheme===1.2.0
 openstacksdk===0.6.1
 ordereddict===1.1
 os-apply-config===0.1.31
@@ -222,14 +222,14 @@ pymemcache===1.3.2
 pymongo===3.0.3
 pyngus===1.3.1;python_version=='2.7'
 pyparsing===2.0.3
-pyroute2===0.3.10
+pyroute2===0.3.11
 pysaml2===3.0.0
 pysendfile===2.0.1
 pysnmp===4.2.5
-pysqlite===2.6.3;python_version=='2.7'
+pysqlite===2.7.0;python_version=='2.7'
 pystache===0.5.4
 python-barbicanclient===3.2.0
-python-ceilometerclient===1.3.0
+python-ceilometerclient===1.4.0
 python-cinderclient===1.3.1
 python-congressclient===2015.1.0
 python-dateutil===2.4.2
@@ -248,10 +248,10 @@ python-mistralclient===1.0.0
 python-muranoclient===0.6.2
 python-neutronclient===2.6.0
 python-novaclient===2.26.0
-python-openstackclient===1.5.0
+python-openstackclient===1.6.0
 python-openstacksdk===0.5.2
 python-qpid-proton===0.9.1.1;python_version=='2.7'
-python-saharaclient===0.9.1
+python-saharaclient===0.10.0
 python-subunit===1.1.0
 python-swiftclient===2.5.0
 python-troveclient===1.2.0
