@@ -297,6 +297,10 @@ For Upgrading Requirements Versions
 
   Leave that decision to deployers and distros.
 
+- Changes to update the minimum version of a library developed by the
+  OpenStack community can be approved by one reviewer, as long as the
+  constraints are correct and the tests pass.
+
 .. _finding-distro-status:
 
 Finding Distro Status
