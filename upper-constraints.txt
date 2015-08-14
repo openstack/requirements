@@ -52,7 +52,7 @@ XStatic-smart-table===1.4.5.3
 XStatic-term.js===0.0.4.2
 XenAPI===1.2
 aioeventlet===0.4
-alembic===0.7.7
+alembic===0.8.0
 amqp===1.4.6
 anyjson===0.3.3
 appdirs===1.4.0
@@ -61,12 +61,12 @@ astroid===1.3.8
 autobahn===0.10.5.post2
 automaton===0.6.0
 backports.ssl-match-hostname===3.4.0.2;python_version=='2.7'
-bandit===0.13.0
+bandit===0.13.1
 bashate===0.3.1
 beautifulsoup4===4.4.0
 blockdiag===1.5.3
 boto===2.38.0
-botocore===1.1.7
+botocore===1.1.8
 cachetools===1.0.3
 cassandra-driver===2.6.0
 ceilometermiddleware===0.2.0
@@ -80,7 +80,7 @@ colorama===0.3.3
 contextlib2===0.4.0
 coverage===3.7.1
 croniter===0.3.8
-cryptography===0.9.3
+cryptography===1.0
 ddt===1.0.0
 debtcollector===0.7.0
 decorator===4.0.2
@@ -116,7 +116,7 @@ funcsigs===0.4;python_version=='2.7'
 functools32===3.2.3.post2;python_version=='2.7'
 futures===3.0.3
 futurist===0.3.0
-gabbi===1.3.0
+gabbi===1.4.0
 glance-store===0.8.0
 greenlet===0.4.7
 happybase===0.9;python_version=='2.7'
@@ -170,7 +170,7 @@ openstacksdk===0.6.1
 ordereddict===1.1
 os-apply-config===0.1.31
 os-brick===0.3.2
-os-client-config===1.6.1
+os-client-config===1.6.3
 os-cloud-config===0.2.9
 os-collect-config===0.1.35
 os-net-config===0.1.4
@@ -201,7 +201,7 @@ packaging===15.3
 paramiko===1.15.2
 passlib===1.6.5
 pathlib===1.0.1;python_version=='2.7'
-pbr===1.4.0
+pbr===1.5.0
 pecan===1.0.1
 pexpect===3.2
 ply===3.6
@@ -234,6 +234,7 @@ python-cinderclient===1.3.1
 python-congressclient===2015.1.0
 python-dateutil===2.4.2
 python-designateclient===1.4.0
+python-editor===0.3
 python-glanceclient===0.19.0
 python-heatclient===0.6.0
 python-ironic-inspector-client===1.0.1
@@ -244,7 +245,7 @@ python-magnumclient===0.2.1
 python-manilaclient===1.2.0
 python-memcached===1.57
 python-mimeparse===0.1.4
-python-mistralclient===1.0.0
+python-mistralclient===1.0.1
 python-muranoclient===0.6.2
 python-neutronclient===2.6.0
 python-novaclient===2.26.0
@@ -284,7 +285,7 @@ six===1.9.0
 sockjs-tornado===1.0.1
 sphinxcontrib-blockdiag===1.5.4
 sphinxcontrib-docbookrestapi===0.2.1
-sphinxcontrib-httpdomain===1.3.0
+sphinxcontrib-httpdomain===1.4.0
 sphinxcontrib-pecanwsme===0.8.0
 sphinxcontrib-seqdiag===0.8.4
 sqlalchemy-migrate===0.9.7
@@ -306,7 +307,7 @@ tornado===4.2.1
 traceback2===1.4.0
 tripleo-image-elements===0.8.10
 trollius===2.0
-txaio===1.0.2
+txaio===1.0.3
 unicodecsv===0.13.0
 unittest2===1.1.0
 urllib3===1.11
@@ -318,7 +319,7 @@ websocket-client===0.32.0
 websockify===0.7.0
 wheel===0.24.0
 wrapt===1.10.5
-wsgi-intercept===0.10.2
+wsgi-intercept===0.10.3
 xattr===0.7.8
 xvfbwrapper===0.2.4
 yaql===0.2.7
