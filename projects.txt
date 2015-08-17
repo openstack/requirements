@@ -114,6 +114,7 @@ openstack/tuskar-ui
 openstack/vmware-nsx
 openstack/zaqar
 stackforge/blazar-nova
+stackforge/networking-bagpipe-l2
 stackforge/nova-docker
 stackforge/python-blazarclient
 stackforge/python-openstacksdk
