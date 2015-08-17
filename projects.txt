@@ -34,6 +34,7 @@ openstack/manila
 openstack/mox3
 openstack/murano
 openstack/murano-dashboard
+openstack/networking-l2gw
 openstack/networking-odl
 openstack/networking-onos
 openstack/networking-ovn
