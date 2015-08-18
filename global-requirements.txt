@@ -312,7 +312,7 @@ zake>=0.1.6 # Apache-2.0
 # next hacking release). Only these versions will be selected, because hacking
 # specifies the concrete version to choose.
 flake8>=2.2.4,<=2.4.1
-hacking>=0.10.0,<0.11
+hacking>=0.10.2,<0.11
 mccabe==0.2.1 # MIT License
 pep8==1.5.7
 pyflakes==0.8.1
