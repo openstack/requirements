@@ -116,7 +116,7 @@ pyasn1
 pyasn1_modules
 pycadf>=0.8.0
 pycrypto>=2.6
-PyECLib>=1.0.7                          # BSD
+PyECLib==1.0.7                          # BSD
 pyghmi>=0.6.11
 pyinotify>=0.9.6 # MIT
 pykmip>=0.3.1  # Apache 2.0 License
