@@ -325,6 +325,6 @@ wrapt===1.10.5
 wsgi-intercept===0.10.3
 xattr===0.7.8
 xvfbwrapper===0.2.4
-yaql===0.2.7
+yaql===1.0.0
 zake===0.2.2
 zope.interface===4.1.2
