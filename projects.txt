@@ -36,6 +36,7 @@ openstack/murano
 openstack/murano-dashboard
 openstack/networking-l2gw
 openstack/networking-odl
+openstack/networking-ofagent
 openstack/networking-onos
 openstack/networking-ovn
 openstack/networking-sfc
