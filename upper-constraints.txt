@@ -182,7 +182,7 @@ oslo.cache===0.5.0
 oslo.concurrency===2.4.0
 oslo.config===2.2.0
 oslo.context===0.5.0
-oslo.db===2.4.0
+oslo.db===2.4.1
 oslo.i18n===2.4.0
 oslo.log===1.9.0
 oslo.messaging===2.3.0
