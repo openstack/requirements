@@ -186,7 +186,7 @@ oslo.db===2.4.1
 oslo.i18n===2.4.0
 oslo.log===1.9.0
 oslo.messaging===2.3.0
-oslo.middleware===2.6.0
+oslo.middleware===2.6.1
 oslo.policy===0.9.0
 oslo.reports===0.4.0
 oslo.rootwrap===2.2.0
