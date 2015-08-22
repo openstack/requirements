@@ -10,6 +10,7 @@ Paste===2.0.2
 PasteDeploy===1.5.2
 Pillow===2.9.0
 Pint===0.6
+PuLP===1.6.0
 PyECLib===1.0.7
 PyKMIP===0.4.0
 PyMySQL===0.6.6
