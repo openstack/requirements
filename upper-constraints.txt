@@ -204,7 +204,7 @@ packaging===15.3
 paramiko===1.15.2
 passlib===1.6.5
 pathlib===1.0.1;python_version=='2.7'
-pbr===1.5.0
+pbr===1.6.0
 pecan===1.0.2
 pexpect===3.2
 ply===3.6
