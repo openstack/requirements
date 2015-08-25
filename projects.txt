@@ -122,3 +122,4 @@ stackforge/python-openstacksdk
 stackforge/python-senlinclient
 stackforge/python-solumclient
 stackforge/senlin
+stackforge/senlin-dashboard
