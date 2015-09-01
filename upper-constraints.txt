@@ -95,6 +95,7 @@ django-appconf===1.0.1
 django-babel===0.4.0
 django-bootstrap-form===3.2
 django-compressor===1.5
+django-formtools===1.0
 django-nose===1.4.1
 django-openstack-auth===1.4.0
 django-pyscss===2.0.2
