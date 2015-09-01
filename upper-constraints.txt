@@ -1,5 +1,5 @@
 Babel===2.0
-Django===1.7.10
+Django===1.8.4
 Flask===0.10.1
 Jinja2===2.8
 Mako===1.0.2
