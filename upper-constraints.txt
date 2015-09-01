@@ -69,7 +69,7 @@ bashate===0.3.1
 beautifulsoup4===4.4.0
 blockdiag===1.5.3
 boto===2.38.0
-botocore===1.1.11
+botocore===1.1.12
 cachetools===1.1.0
 cassandra-driver===2.7.1
 ceilometermiddleware===0.2.0
@@ -121,13 +121,13 @@ futures===3.0.3
 futurist===0.4.0
 gabbi===1.5.1
 glance-store===0.8.0
-greenlet===0.4.7
+greenlet===0.4.9
 happybase===0.9;python_version=='2.7'
 hgtools===6.3
 httplib2===0.9.1
 httpretty===0.8.6
 idna===2.0
-influxdb===2.9.0
+influxdb===2.9.1
 ipaddress===1.0.14;python_version=='2.7'
 ironic-discoverd===1.1.0
 iso8601===0.1.10
@@ -157,10 +157,10 @@ monotonic===0.3
 mox===0.5.3
 mox3===0.9.0
 msgpack-python===0.4.6
-netaddr===0.7.15
+netaddr===0.7.17
 netifaces===0.10.4
 networkx===1.10
-nodeenv===0.13.3
+nodeenv===0.13.4
 nose===1.3.7
 nose-exclude===0.4.1
 nosehtmloutput===0.0.5
@@ -240,7 +240,7 @@ python-congressclient===2015.1.0
 python-dateutil===2.4.2
 python-designateclient===1.4.0
 python-editor===0.4
-python-glanceclient===0.19.0
+python-glanceclient===1.0.0
 python-heatclient===0.6.0
 python-ironic-inspector-client===1.0.1
 python-ironicclient===0.7.0
@@ -293,7 +293,7 @@ sphinxcontrib-docbookrestapi===0.2.1
 sphinxcontrib-httpdomain===1.4.0
 sphinxcontrib-pecanwsme===0.8.0
 sphinxcontrib-seqdiag===0.8.4
-sqlalchemy-migrate===0.9.7
+sqlalchemy-migrate===0.10.0
 sqlparse===0.1.16
 stevedore===1.7.0
 suds-jurko===0.6
