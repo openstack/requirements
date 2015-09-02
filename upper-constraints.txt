@@ -309,6 +309,7 @@ testtools===1.8.0
 thrift===0.9.2;python_version=='2.7'
 tooz===1.23.0
 tornado===4.2.1
+tosca-parser===0.1.0
 traceback2===1.4.0
 tripleo-image-elements===0.8.10
 trollius===2.0
