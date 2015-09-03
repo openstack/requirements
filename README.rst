@@ -49,7 +49,7 @@ The mechanics of the solution are relatively simple. We maintain a
 central list of all the requirements (``global-requirements.txt``)
 that are allowed in OpenStack projects. This is enforced for
 ``requirements.txt``, ``test-requirements.txt`` and extras defined in
-``setup.cfg``. This is maintained by hand, with changing going through CI.
+``setup.cfg``. This is maintained by hand, with changes going through CI.
 
 We also maintain a compiled list of the exact versions, including transitive
 dependencies, of packages that are known to work in the OpenStack CI system.
@@ -83,14 +83,15 @@ to pin all the libraries to known good versions. ``edit-constraints`` can be
 used to unpin a single constraint, and this is done to install libraries from
 git. This is the **recommended** way to use devstack.
 
-When ``USE_CONSTRAINTS`` is set ``False``, devstack overwrite the ``requirements.txt``
-and ``test-requirements.txt`` for **all** installed projects with the versions
-from ``global-requirements.txt``. Projects that are not in ``projects.txt``
-get 'soft' updates, ones that are get 'hard' updated. This attempts to ensure
-that we will get a deterministic set of requirements installed in the test
-system, and it won't be a guessing game based on the last piece of software to
-be installed. However due to the interactions with transitive dependencies
-this doesn't actually deliver what we need, and is **not recommended**.
+When ``USE_CONSTRAINTS`` is set ``False``, devstack overwrites the
+``requirements.txt`` and ``test-requirements.txt`` for **all** installed
+projects with the versions from ``global-requirements.txt``. Projects that are
+not in ``projects.txt`` get 'soft' updates, ones that are get 'hard' updated.
+This attempts to ensure that we will get a deterministic set of requirements
+installed in the test system, and it won't be a guessing game based on the
+last piece of software to be installed. However due to the interactions with
+transitive dependencies this doesn't actually deliver what we need, and is
+**not recommended**.
 
 Tox
 +++
@@ -103,11 +104,12 @@ Enforcement in Projects
 
 All projects that have accepted the requirements contract (as listed
 in ``projects.txt``) are expected to run a requirements compatibility
-job that ensures that they can not change any dependencies to versions not
-compatible with ``global-requirements.txt``. It also ensures that those
-projects can't add a requirement that's not already in
+job. This job ensures that a project can not change any dependencies to
+versions not compatible with ``global-requirements.txt``. It also ensures that
+those projects can not add a requirement that is not already in
 ``global-requirements.txt``. This job should be proposed to infra at the same
-time as proposing the change in ``openstack/requirements``.
+time as proposing the change to ``projects.txt`` in
+``openstack/requirements``.
 
 Automatic Sync of Accepted Requirements
 ---------------------------------------
@@ -149,8 +151,8 @@ errors in hard mode (the default) or be ignored in soft mode.
 generate-constraints
 --------------------
 
-Compile a constraints file showing the versions of resulting from installing
-all of ``global-requirements.txt``::
+Compile a constraints file showing the versions resulting from installing all
+of ``global-requirements.txt``::
 
   generate-constraints -p /usr/bin/python2.7 -p /usr/bin/python3.4 \
     -b blacklist.txt -r global-requirements.txt > new-constraints.txt
@@ -172,7 +174,7 @@ Look at the `Review Guidelines` and make sure your change meets them.
 All changes to ``global-requirements.txt`` may dramatically alter the contents
 of ``upper-constraints.txt`` due to adding or removing transitive
 dependencies. As such you should always generate a diff against the current
-merged constraints, otherwise your change may fail if it is incompatible wit
+merged constraints, otherwise your change may fail if it is incompatible with
 the current tested constraints.
 
 Regenerating involves five steps.
@@ -203,7 +205,7 @@ Review Guidelines
 =================
 
 There are a set of questions that every reviewer should ask on any
-proposed requirements change. Proposers can make reviews easier by
+proposed requirements change. Proposers can make reviewing easier by
 including the answers to these questions in the commit message for
 their change.
 
