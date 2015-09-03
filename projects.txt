@@ -3,6 +3,7 @@ openstack-dev/pbr
 openstack/anchor
 openstack/automaton
 openstack/barbican
+openstack/castellan
 openstack/ceilometer
 openstack/ceilometermiddleware
 openstack/cinder
