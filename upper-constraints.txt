@@ -132,6 +132,7 @@ idna===2.0
 influxdb===2.9.1
 ipaddress===1.0.14;python_version=='2.7'
 ironic-discoverd===1.1.0
+ironic-lib===0.1.0
 iso8601===0.1.10
 itsdangerous===0.24
 jmespath===0.7.1
