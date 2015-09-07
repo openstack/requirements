@@ -18,6 +18,7 @@ openstack/ironic-python-agent
 openstack/keystone
 openstack/keystonemiddleware
 openstack/manila
+openstack/networking-l2gw
 openstack/networking-odl
 openstack/networking-ofagent
 openstack/neutron
