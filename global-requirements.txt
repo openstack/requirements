@@ -274,7 +274,7 @@ openstacksdk
 oslosphinx>=2.5.0  # Apache-2.0
 oslotest>=1.10.0  # Apache-2.0
 proboscis>=1.2.5.3
-psycopg2
+psycopg2>=2.5
 pysendfile>=2.0.0
 pysqlite;python_version=='2.7'
 python-ldap>=2.4;python_version=='2.7'
