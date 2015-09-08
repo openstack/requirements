@@ -106,7 +106,7 @@ os-testr>=0.1.0
 ovs>=2.4.0.dev0;python_version=='2.7'  # Apache-2.0
 paramiko>=1.13.0
 Parsley
-passlib
+passlib>=1.6
 Paste
 PasteDeploy>=1.5.0
 pbr>=1.6,<2.0
