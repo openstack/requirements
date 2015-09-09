@@ -304,7 +304,7 @@ suds-jurko===0.6
 sysv-ipc===0.6.8
 tablib===0.10.0
 taskflow===1.19.0
-tempest-lib===0.7.0
+tempest-lib===0.8.0
 termcolor===1.1.0
 testrepository===0.0.20
 testresources===0.2.7
