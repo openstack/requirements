@@ -99,6 +99,7 @@ openstack/python-novaclient
 openstack/python-openstackclient
 openstack/python-saharaclient
 openstack/python-swiftclient
+openstack/python-tripleoclient
 openstack/python-troveclient
 openstack/python-tuskarclient
 openstack/python-zaqarclient
@@ -114,6 +115,7 @@ openstack/taskflow
 openstack/tempest
 openstack/tempest-lib
 openstack/tooz
+openstack/tripleo-common
 openstack/trove
 openstack/tuskar
 openstack/tuskar-ui
