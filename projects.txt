@@ -98,6 +98,7 @@ openstack/python-neutronclient
 openstack/python-novaclient
 openstack/python-openstackclient
 openstack/python-saharaclient
+openstack/python-solumclient
 openstack/python-swiftclient
 openstack/python-troveclient
 openstack/python-tuskarclient
@@ -125,6 +126,5 @@ stackforge/nova-docker
 stackforge/python-blazarclient
 stackforge/python-openstacksdk
 stackforge/python-senlinclient
-stackforge/python-solumclient
 stackforge/senlin
 stackforge/senlin-dashboard
