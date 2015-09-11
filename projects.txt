@@ -4,6 +4,7 @@ openstack/ceilometer
 openstack/ceilometermiddleware
 openstack/cinder
 openstack/cliff
+openstack/congress
 openstack/debtcollector
 openstack/designate
 openstack/diskimage-builder
@@ -16,6 +17,7 @@ openstack/ironic
 openstack/ironic-lib
 openstack/ironic-python-agent
 openstack/keystone
+openstack/keystoneauth-saml2
 openstack/keystonemiddleware
 openstack/manila
 openstack/networking-l2gw
@@ -52,12 +54,12 @@ openstack/pycadf
 openstack/python-barbicanclient
 openstack/python-ceilometerclient
 openstack/python-cinderclient
+openstack/python-congressclient
 openstack/python-designateclient
 openstack/python-glanceclient
 openstack/python-heatclient
 openstack/python-ironicclient
 openstack/python-keystoneclient
-openstack/python-keystoneclient-federation
 openstack/python-keystoneclient-kerberos
 openstack/python-manilaclient
 openstack/python-neutronclient
@@ -68,6 +70,7 @@ openstack/python-swiftclient
 openstack/python-troveclient
 openstack/python-tuskarclient
 openstack/python-zaqarclient
+openstack/rally
 openstack/requirements
 openstack/sahara
 openstack/sahara-dashboard
@@ -84,10 +87,7 @@ openstack/tuskar-ui
 openstack/zaqar
 stackforge/blazar
 stackforge/blazar-nova
-stackforge/congress
 stackforge/octavia
 stackforge/python-blazarclient
-stackforge/python-congressclient
 stackforge/python-openstacksdk
 stackforge/python-solumclient
-stackforge/rally
