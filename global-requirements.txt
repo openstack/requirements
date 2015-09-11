@@ -59,7 +59,7 @@ jsonpath-rw-ext>=0.1.7
 jsonrpclib
 jsonschema>=2.0.0,<3.0.0,!=2.5.0
 kazoo>=2.2
-keystoneauth1
+keystoneauth1>=1.0.0
 keystonemiddleware>=2.0.0
 packaging>=15.2
 pyScss>=1.3.4  # MIT License
