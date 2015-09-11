@@ -48,6 +48,7 @@ openstack/python-neutronclient
 openstack/python-novaclient
 openstack/python-openstackclient
 openstack/python-saharaclient
+openstack/python-solumclient
 openstack/python-swiftclient
 openstack/python-troveclient
 openstack/python-tuskarclient
@@ -72,5 +73,4 @@ stackforge/congress
 stackforge/python-blazarclient
 stackforge/python-congressclient
 stackforge/python-openstacksdk
-stackforge/python-solumclient
 stackforge/rally
