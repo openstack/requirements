@@ -41,6 +41,11 @@ url_re = re.compile(
     '#egg=(?P<name>[-\.\w]+)')
 
 
+def canonical_name(req_name):
+    """Return the canonical form of req_name."""
+    return pkg_resources.safe_name(req_name).lower()
+
+
 def parse(content, permit_urls=False):
     return to_dict(to_reqs(content, permit_urls=permit_urls))
 
@@ -134,7 +139,8 @@ def to_dict(req_sequence):
     reqs = dict()
     for req, req_line in req_sequence:
         if req is not None:
-            reqs.setdefault(req.package.lower(), []).append((req, req_line))
+            key = canonical_name(req.package)
+            reqs.setdefault(key, []).append((req, req_line))
     return reqs
 
 

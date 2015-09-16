@@ -21,10 +21,11 @@ from openstack_requirements import requirement
 
 
 def edit(reqs, name, replacement):
+    key = requirement.canonical_name(name)
     if not replacement:
-        reqs.pop(name, None)
+        reqs.pop(key, None)
     else:
-        reqs[name] = [
+        reqs[key] = [
             (requirement.Requirement('', '', '', '', replacement), '')]
     result = []
     for entries in reqs.values():

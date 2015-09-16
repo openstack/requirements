@@ -83,3 +83,10 @@ class TestEdit(testtools.TestCase):
         res = edit.edit(reqs, 'foo', 'foo==1.3')
         self.assertEqual(requirement.Requirements(
             [requirement.Requirement('', '', '', '', 'foo==1.3')]), res)
+
+    def test_replace_non_canonical(self):
+        new_req = '-e file:///path#egg=foo_baz'
+        reqs = requirement.parse("foo-baz===1.0.2\n")
+        res = edit.edit(reqs, 'foo_baz', new_req)
+        self.assertEqual(res, requirement.Requirements(
+            [requirement.Requirement('', '', '', '', new_req)]))
