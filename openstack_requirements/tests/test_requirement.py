@@ -148,3 +148,17 @@ class TestToReqs(testtools.TestCase):
             set(['oslo.config', 'oslo.concurrency', 'oslo.context']),
             set(reqs.keys()),
         )
+
+
+class TestCanonicalName(testtools.TestCase):
+
+    def test_underscores(self):
+        self.assertEqual('foo-bar', requirement.canonical_name('Foo_bar'))
+
+
+class TestToDict(testtools.TestCase):
+
+    def test_canonicalises(self):
+        req = requirement.Requirement('Foo_bar', '', '', '', '')
+        self.assertEqual(
+            {'foo-bar': [(req, '')]}, requirement.to_dict([(req, '')]))
