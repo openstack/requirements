@@ -1,3 +1,4 @@
+django_openstack_auth===2.0.0
 Babel===2.0
 Django===1.8.4
 Flask===0.10.1
@@ -98,7 +99,6 @@ django-bootstrap-form===3.2
 django-compressor===1.5
 django-formtools===1.0
 django-nose===1.4.1
-django-openstack-auth===1.4.0
 django-pyscss===2.0.2
 dnspython===1.12.0;python_version=='2.7'
 dnspython3===1.12.0;python_version=='3.4'
