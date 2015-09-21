@@ -181,21 +181,21 @@ Regenerating involves five steps.
 
 1) Install the dependencies needed to compile various Python packages::
 
-  sudo apt-get install $(bindep -b)
+    sudo apt-get install $(bindep -b)
 
 2) Create a reference file (do this without your patch applied)::
 
-  generate-constraints -p /usr/bin/python2.7 -p /usr/bin/python3.4 \
-    -b blacklist.txt -r global-requirements.txt > baseline
+    generate-constraints -p /usr/bin/python2.7 -p /usr/bin/python3.4 \
+      -b blacklist.txt -r global-requirements.txt > baseline
 
 3) Apply your patch and generate a new reference file::
 
-  generate-constraints -p /usr/bin/python2.7 -p /usr/bin/python3.4 \
-    -b blacklist.txt -r global-requirements.txt > updated
+    generate-constraints -p /usr/bin/python2.7 -p /usr/bin/python3.4 \
+      -b blacklist.txt -r global-requirements.txt > updated
 
 4) Diff them::
 
-  diff -p baseline updated
+    diff -p baseline updated
 
 5) Apply the patch to ``upper-constraints.txt``. This may require some
    fiddling. ``edit-constraint`` can do this for you **when the change
