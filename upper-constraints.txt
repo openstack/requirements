@@ -92,7 +92,7 @@ decorator===4.0.2
 demjson===2.2.3
 dib-utils===0.0.8
 discover===0.4.0
-diskimage-builder===1.1.1
+diskimage-builder===1.1.2
 django-appconf===1.0.1
 django-babel===0.4.0
 django-bootstrap-form===3.2
