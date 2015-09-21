@@ -203,6 +203,7 @@ tripleo-image-elements
 urllib3>=1.8.3
 unicodecsv>=0.8.0
 warlock>=1.0.1,<2
+weakrefmethod;python_version=='2.7' or python_version=='2.6' # PSF
 WebOb>=1.2.3
 websockify>=0.6.1
 wheel
