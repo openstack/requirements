@@ -4,3 +4,4 @@ mccabe
 pep8
 pyflakes
 pylint
+reno
