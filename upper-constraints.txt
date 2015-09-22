@@ -112,7 +112,7 @@ elasticsearch===1.6.0
 enum34===1.0.4
 eventlet===0.17.4
 extras===0.0.3
-falcon===0.1.10
+falcon===0.3.0
 fasteners===0.13.0
 feedparser===5.2.1
 fixtures===1.3.1
