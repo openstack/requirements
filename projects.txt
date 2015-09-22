@@ -33,6 +33,7 @@ openstack/keystoneauth-saml2
 openstack/keystonemiddleware
 openstack/magnum
 openstack/manila
+openstack/manila-ui
 openstack/mistral
 openstack/mistral-dashboard
 openstack/mistral-extra
