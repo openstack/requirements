@@ -179,4 +179,4 @@ def write(project, actions, stdout, verbose, noop=False):
         else:
             raise Exception("Invalid action %r" % (action,))
     if error:
-        raise Exception("Error occured processing %s" % (project['root']))
+        raise Exception("Error occurred processing %s" % (project['root']))
