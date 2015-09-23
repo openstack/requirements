@@ -242,7 +242,7 @@ python-ceilometerclient===1.5.0
 python-cinderclient===1.4.0
 python-congressclient===2015.1.0
 python-dateutil===2.4.2
-python-designateclient===1.4.0
+python-designateclient===1.5.0
 python-editor===0.4
 python-glanceclient===1.1.0
 python-heatclient===0.8.0
