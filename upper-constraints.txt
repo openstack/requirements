@@ -116,6 +116,7 @@ falcon===0.3.0
 fasteners===0.13.0
 feedparser===5.2.1
 fixtures===1.4.0
+freezegun===0.3.5
 funcparserlib===0.3.6
 funcsigs===0.4;python_version=='2.7'
 functools32===3.2.3.post2;python_version=='2.7'
