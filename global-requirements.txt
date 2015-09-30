@@ -27,7 +27,7 @@ debtcollector>=0.3.0  # Apache-2.0
 decorator>=3.4.0
 dib-utils  # Apache-2.0
 diskimage-builder>=1.1.2
-Django>=1.7,<1.9
+Django>=1.8,<1.9
 django-babel>=0.4.0
 django-bootstrap-form
 django_compressor>=1.4
