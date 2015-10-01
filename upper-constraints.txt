@@ -257,7 +257,7 @@ python-mimeparse===0.1.4
 python-mistralclient===1.1.0
 python-muranoclient===0.7.0
 python-neutronclient===3.1.0
-python-novaclient===2.30.0
+python-novaclient===2.30.1
 python-openstackclient===1.7.0
 python-openstacksdk===0.5.2
 python-qpid-proton===0.10;python_version=='2.7'
