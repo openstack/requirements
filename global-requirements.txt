@@ -102,7 +102,7 @@ os-cloud-config
 os-collect-config
 os-net-config
 os-refresh-config
-os-testr>=0.1.0
+os-testr>=0.4.1
 ovs>=2.4.0.dev0;python_version=='2.7'  # Apache-2.0
 paramiko>=1.13.0
 Parsley
