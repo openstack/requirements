@@ -2,6 +2,7 @@ openstack-dev/hacking
 openstack-dev/pbr
 openstack/anchor
 openstack/automaton
+openstack/bandit
 openstack/barbican
 openstack/castellan
 openstack/ceilometer
