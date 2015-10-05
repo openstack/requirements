@@ -26,7 +26,7 @@ import os
 
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
-extensions = [ ]
+extensions = ['oslosphinx']
 
 todo_include_todos = True
 
@@ -78,7 +78,7 @@ show_authors = False
 pygments_style = 'sphinx'
 
 # A list of ignored prefixes for module index sorting.
-modindex_common_prefix = ['DevStack-doc.']
+modindex_common_prefix = ['requirements-doc.']
 
 # -- Options for man page output ----------------------------------------------
 man_pages = []
@@ -87,7 +87,7 @@ man_pages = []
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = 'nature'
+# html_theme = 'nature'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -156,7 +156,7 @@ html_use_index = False
 #html_file_suffix = None
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'DevStack-doc'
+htmlhelp_basename = 'requirements-doc'
 
 
 # -- Options for LaTeX output --------------------------------------------------
