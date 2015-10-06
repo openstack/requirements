@@ -326,8 +326,10 @@ zake>=0.1.6 # Apache-2.0
 # next hacking release). Only these versions will be selected, because hacking
 # specifies the concrete version to choose.
 flake8>=2.2.4,<=2.4.1
+flake8_docstrings==0.2.1.post1
 hacking>=0.10.2,<0.11
 mccabe==0.2.1 # MIT License
+pep257==0.7.0 # MIT License
 pep8==1.5.7
 pyflakes==0.8.1
 pylint==1.4.4  # GNU GPL v2

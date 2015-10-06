@@ -1,6 +1,8 @@
 flake8
+flake8_docstrings
 hacking
 mccabe
+pep257
 pep8
 pyflakes
 pylint
