@@ -173,7 +173,7 @@ numpy===1.9.2
 oauthlib===1.0.3
 openstack-doc-tools===0.30.1
 openstack.nose-plugin===0.11
-openstackdocstheme===1.2.2
+openstackdocstheme===1.2.3
 openstacksdk===0.6.2
 ordereddict===1.1
 os-apply-config===0.1.31
