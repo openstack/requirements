@@ -28,7 +28,7 @@ decorator>=3.4.0
 dib-utils  # Apache-2.0
 diskimage-builder>=0.1.20
 Django>=1.7,<1.9
-django-babel>=0.3.4
+django-babel>=0.4.0
 django-bootstrap-form
 django_compressor>=1.4
 django-formtools
