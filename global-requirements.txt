@@ -206,6 +206,7 @@ unicodecsv>=0.8.0
 warlock>=1.0.1,<2
 weakrefmethod;python_version=='2.7' or python_version=='2.6' # PSF
 WebOb>=1.2.3
+websocket-client>=0.32.0 # LGPLv2+
 websockify>=0.6.1
 wheel
 wmi;sys_platform=='win32'
