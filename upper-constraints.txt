@@ -147,7 +147,7 @@ kazoo===2.2.1
 kerberos===1.1.1;python_version=='2.7'
 keyring===5.4
 keystoneauth1===1.1.0
-keystonemiddleware===2.3.0
+keystonemiddleware===2.3.1
 kombu===3.0.26
 ldap3===0.9.9
 ldappool===1.0;python_version=='2.7'
@@ -248,7 +248,7 @@ python-glanceclient===1.1.0
 python-heatclient===0.8.0
 python-ironic-inspector-client===1.2.0
 python-ironicclient===0.8.1
-python-keystoneclient===1.7.1
+python-keystoneclient===1.7.2
 python-ldap===2.4.20;python_version=='2.7'
 python-magnumclient===0.2.1
 python-manilaclient===1.4.0
