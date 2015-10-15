@@ -4,6 +4,7 @@ openstack/anchor
 openstack/automaton
 openstack/bandit
 openstack/barbican
+openstack/blazar-nova
 openstack/castellan
 openstack/ceilometer
 openstack/ceilometermiddleware
@@ -39,6 +40,7 @@ openstack/mistral-extra
 openstack/mox3
 openstack/murano
 openstack/murano-dashboard
+openstack/networking-bagpipe-l2
 openstack/networking-l2gw
 openstack/networking-odl
 openstack/networking-ofagent
@@ -52,6 +54,7 @@ openstack/neutron-fwaas
 openstack/neutron-lbaas
 openstack/neutron-vpnaas
 openstack/nova
+openstack/nova-docker
 openstack/octavia
 openstack/openstack-doc-tools
 openstack/os-apply-config
@@ -81,6 +84,7 @@ openstack/oslosphinx
 openstack/oslotest
 openstack/pycadf
 openstack/python-barbicanclient
+openstack/python-blazarclient
 openstack/python-ceilometerclient
 openstack/python-cinderclient
 openstack/python-congressclient
@@ -99,7 +103,9 @@ openstack/python-muranoclient
 openstack/python-neutronclient
 openstack/python-novaclient
 openstack/python-openstackclient
+openstack/python-openstacksdk
 openstack/python-saharaclient
+openstack/python-senlinclient
 openstack/python-solumclient
 openstack/python-swiftclient
 openstack/python-tripleoclient
@@ -112,6 +118,8 @@ openstack/sahara
 openstack/sahara-dashboard
 openstack/sahara-extra
 openstack/sahara-image-elements
+openstack/senlin
+openstack/senlin-dashboard
 openstack/stevedore
 openstack/swift
 openstack/taskflow
@@ -124,11 +132,3 @@ openstack/tuskar
 openstack/tuskar-ui
 openstack/vmware-nsx
 openstack/zaqar
-stackforge/blazar-nova
-stackforge/networking-bagpipe-l2
-stackforge/nova-docker
-stackforge/python-blazarclient
-stackforge/python-openstacksdk
-stackforge/python-senlinclient
-stackforge/senlin
-stackforge/senlin-dashboard
