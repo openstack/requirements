@@ -213,6 +213,8 @@ pathlib===1.0.1;python_version=='2.7'
 pbr===1.8.0
 pecan===1.0.2
 pexpect===3.2
+pika===0.10.0
+pika-pool===0.1.2
 ply===3.8
 posix-ipc===1.0.0
 prettytable===0.7.2
