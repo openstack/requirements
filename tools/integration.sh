@@ -77,14 +77,6 @@ for PROJECT in $PROJECTS ; do
         # project doesn't use pbr
         continue
     fi
-    if [ $SHORT_PROJECT = 'pypi-mirror' ]; then
-        # pypi-mirror doesn't consume the mirror
-        continue
-    fi
-    if [ $SHORT_PROJECT = 'jeepyb' ]; then
-        # pypi-mirror doesn't consume the mirror
-        continue
-    fi
     if [ $SHORT_PROJECT = 'tempest' ]; then
         # Tempest doesn't really install
         continue
