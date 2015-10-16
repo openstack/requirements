@@ -55,7 +55,7 @@ iso8601>=0.1.9
 Jinja2>=2.6  # BSD License (3 clause)
 jsonpatch>=1.1
 jsonpath-rw>=1.2.0,<2.0
-jsonpath-rw-ext>=0.1.7
+jsonpath-rw-ext>=0.1.9
 jsonrpclib!=0.1.4
 jsonschema>=2.0.0,<3.0.0,!=2.5.0
 kazoo>=2.2
