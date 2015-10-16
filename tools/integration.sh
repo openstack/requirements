@@ -108,18 +108,10 @@ for PROJECT in $PROJECTS ; do
         fi
     fi
 
-    # set up the project synced with the global requirements
-    sudo chown -R $USER $REPODIR/$SHORT_PROJECT
-    $UPDATE --source $REPODIR/requirements $REPODIR/$SHORT_PROJECT
-    pushd $REPODIR/$SHORT_PROJECT
-    if ! git diff --exit-code > /dev/null; then
-        git commit -a -m'Update requirements'
-    fi
-    popd
-
     # Clone from synced repo
     shortprojectdir=$projectdir/$SHORT_PROJECT
     git clone $REPODIR/$SHORT_PROJECT $shortprojectdir
+    $UPDATE --source $REPODIR/requirements $shortprojectdir
 
     # Test python setup.py install
     installvenv=$tmpdir/install
@@ -127,6 +119,7 @@ for PROJECT in $PROJECTS ; do
 
     installprojectdir=$projectdir/install$SHORT_PROJECT
     git clone $shortprojectdir $installprojectdir
+    $UPDATE --source $REPODIR/requirements $installprojectdir
     cd $installprojectdir
     $installvenv/bin/python setup.py install
 
