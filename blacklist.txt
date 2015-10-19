@@ -1,7 +1,10 @@
+# linters - each project may hve a different version with loose convergence
+# over time.
 flake8
 hacking
 mccabe
 pep8
 pyflakes
 pylint
+# release changelog generator - xxx - under discussion
 reno
