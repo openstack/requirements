@@ -55,7 +55,7 @@ XStatic-smart-table===1.4.5.3
 XStatic-term.js===0.0.4.2
 XenAPI===1.2
 aioeventlet===0.4
-alembic===0.8.2
+alembic===0.8.3
 amqp===1.4.7
 anyjson===0.3.3
 appdirs===1.4.0
@@ -65,7 +65,7 @@ autobahn===0.10.9
 automaton===0.8.0
 backports.ssl-match-hostname===3.4.0.2;python_version=='2.7'
 bandit===0.14.1
-bashate===0.3.1
+bashate===0.3.2
 beautifulsoup4===4.4.1
 blockdiag===1.5.3
 boto===2.38.0
