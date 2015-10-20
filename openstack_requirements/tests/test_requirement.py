@@ -149,6 +149,25 @@ class TestToReqs(testtools.TestCase):
             set(reqs.keys()),
         )
 
+    def test_extras(self):
+        content = textwrap.dedent("""\
+            oslo.config>=1.11.0 # Apache-2.0
+            oslo.concurrency[fixtures]>=1.11.0 # Apache-2.0
+            oslo.db[fixtures,mysql]>=1.11.0 # Apache-2.0
+            """)
+        reqs = requirement.parse(content)
+        self.assertEqual(
+            set(['oslo.config', 'oslo.concurrency', 'oslo.db']),
+            set(reqs.keys()),
+        )
+        self.assertEqual(reqs['oslo.config'][0][0].extras, frozenset(()))
+        self.assertEqual(reqs['oslo.concurrency'][0][0].extras,
+                         frozenset(('fixtures',)))
+        self.assertEqual(reqs['oslo.db'][0][0].extras,
+                         frozenset(('fixtures', 'mysql')))
+        self.assertItemsEqual(reqs,
+                              ['oslo.config', 'oslo.concurrency', 'oslo.db'])
+
 
 class TestCanonicalName(testtools.TestCase):
 
