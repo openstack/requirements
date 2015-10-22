@@ -213,7 +213,7 @@ websocket-client>=0.32.0 # LGPLv2+
 websockify>=0.6.1
 wheel
 wmi;sys_platform=='win32'
-WSME>=0.7
+WSME>=0.8
 xattr>=0.4
 XenAPI>=1.2
 XStatic>=1.0.0  # MIT License
