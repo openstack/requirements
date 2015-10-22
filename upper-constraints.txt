@@ -123,8 +123,10 @@ functools32===3.2.3.post2;python_version=='2.7'
 futures===3.0.3
 futurist===0.8.0
 gabbi===1.10.0
+gitdb===0.6.4
 glance-store===0.9.1
 greenlet===0.4.9
+GitPython===1.0.1
 happybase===0.9;python_version=='2.7'
 hgtools===6.3
 httplib2===0.9.2
