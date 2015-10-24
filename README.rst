@@ -236,6 +236,17 @@ General Review Criteria
   blueprint requires the new specification. Ideally, changes should
   already be proposed, so that its use can be seen.
 
+- The blacklist is for handling dependencies that cannot be constrained.
+  For instance, linters which each project has at a different release level,
+  and which make projects fail on every release (because they add rules) -
+  those cannot be globally constrained unless we coordinate updating all of
+  OpenStack to the new release at the same time - but given the volunteer
+  and loosely coupled nature of the big tent that is infeasible. Dependencies
+  that are only used in unconstrained places should not be blacklisted - they
+  may be constrained in future, and there's no harm caused by constraining
+  them today. Entries in the blacklist should have a comment explaining the
+  reason for blacklisting.
+
 For new Requirements
 --------------------
 
