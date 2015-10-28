@@ -160,7 +160,7 @@ python-memcached>=1.56
 python-mistralclient>=1.0.0
 python-muranoclient>=0.7.1
 python-neutronclient>=2.6.0
-python-novaclient>=2.28.1
+python-novaclient>=2.28.1,!=2.33.0
 python-saharaclient>=0.10.0
 python-openstackclient>=1.5.0
 python-openstacksdk>=0.4.1
