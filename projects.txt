@@ -107,6 +107,7 @@ openstack/python-novaclient
 openstack/python-openstackclient
 openstack/python-openstacksdk
 openstack/python-saharaclient
+openstack/python-scciclient
 openstack/python-senlinclient
 openstack/python-solumclient
 openstack/python-swiftclient
