@@ -179,7 +179,7 @@ openstacksdk===0.6.2
 ordereddict===1.1
 os-apply-config===0.1.32
 os-brick===0.5.0
-os-client-config===1.9.0
+os-client-config===1.10.1
 os-cloud-config===0.2.10
 os-collect-config===0.1.36
 os-net-config===0.1.5
