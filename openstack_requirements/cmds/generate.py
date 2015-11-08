@@ -18,6 +18,8 @@ import sys
 
 import fixtures
 
+from openstack_requirements import requirement
+
 
 def _parse_freeze(text):
     """Parse a freeze into structured data.
@@ -100,7 +102,8 @@ def _combine_freezes(freezes, blacklist=None):
     :return: A list of '\n' terminated lines for a requirements file.
     """
     packages = {}  # {package : {version : [py_version]}}
-    excludes = frozenset((s.lower() for s in blacklist) if blacklist else ())
+    excludes = frozenset((requirement.canonical_name(s)
+                          for s in blacklist) if blacklist else ())
     reference_versions = []
     for py_version, freeze in freezes:
         if py_version in reference_versions:

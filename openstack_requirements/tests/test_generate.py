@@ -89,3 +89,12 @@ class TestCombine(testtools.TestCase):
             ["enum===1.5.0;python_version=='3.4'\n"],
             list(generate._combine_freezes(
                 [freeze_27, freeze_34], blacklist=blacklist)))
+
+    def test_blacklist_with_safe_name(self):
+        blacklist = ['flake8_docstrings']
+        freeze_27 = ('2.7', [('flake8-docstrings', '0.2.1.post1'),
+                             ('enum', '1.5.0')])
+        self.assertEqual(
+            ['enum===1.5.0\n'],
+            list(generate._combine_freezes(
+                [freeze_27], blacklist=blacklist)))
