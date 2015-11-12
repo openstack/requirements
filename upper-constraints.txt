@@ -206,7 +206,7 @@ oslo.versionedobjects===0.12.0
 oslo.vmware===1.23.0
 oslosphinx===3.3.1
 oslotest===1.12.0
-osprofiler===0.3.0
+osprofiler===0.3.1
 ovs===2.4.0;python_version=='2.7'
 packaging===15.3
 paramiko===1.16.0
