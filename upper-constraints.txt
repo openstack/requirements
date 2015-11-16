@@ -250,6 +250,7 @@ python-barbicanclient===3.3.0
 python-ceilometerclient===2.0.0
 python-cinderclient===1.4.0
 python-congressclient===2015.1.0
+python-consul===0.4.7
 python-dateutil===2.4.2
 python-designateclient===1.5.0
 python-editor===0.4
