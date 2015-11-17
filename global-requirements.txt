@@ -264,6 +264,7 @@ testscenarios>=0.4
 testtools>=0.9.36,!=1.2.0
 trollius>=1.0
 unittest2
+virtualenv
 wrapt>=1.7.0 # BSD License
 WebTest>=2.0
 Werkzeug>=0.7  # BSD License
