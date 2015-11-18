@@ -192,7 +192,7 @@ oslo.context===0.8.0
 oslo.db===3.1.0
 oslo.i18n===2.7.0
 oslo.log===1.13.0
-oslo.messaging===2.8.1
+oslo.messaging===2.5.0
 oslo.middleware===2.10.0
 oslo.policy===0.12.0
 oslo.reports===0.8.0
