@@ -169,7 +169,7 @@ python-novaclient>=2.29.0,!=2.33.0
 python-openstackclient>=1.5.0
 python-openstacksdk>=0.4.1
 python-saharaclient>=0.10.0
-python-senlinclient>=0.1.4
+python-senlinclient>=0.1.5
 python-swiftclient>=2.2.0
 python-troveclient>=1.2.0
 python-tuskarclient>=0.1.17
