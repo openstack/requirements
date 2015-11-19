@@ -173,7 +173,7 @@ python-senlinclient>=0.1.5
 python-swiftclient>=2.2.0
 python-troveclient>=1.2.0
 python-tuskarclient>=0.1.17
-python-zaqarclient>=0.1.1
+python-zaqarclient>=0.3.0
 python-dateutil>=2.4.2
 # 2013.6 is the first version of pytz that is PEP 440 compatible.
 pytz>=2013.6
