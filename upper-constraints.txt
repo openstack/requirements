@@ -66,17 +66,17 @@ autobahn===0.10.9
 automaton===0.8.0
 backports-abc===0.4
 backports.ssl-match-hostname===3.4.0.2;python_version=='2.7'
-bandit===0.16.1
+bandit===0.16.2
 bashate===0.3.2
 beautifulsoup4===4.4.1
 blockdiag===1.5.3
 boto===2.38.0
-botocore===1.3.7
+botocore===1.3.8
 cachetools===1.1.5
 cassandra-driver===2.7.2
 castellan===0.2.1
 ceilometermiddleware===0.3.0
-certifi===2015.9.6.2;python_version=='2.7'
+certifi===2015.11.20;python_version=='2.7'
 cffi===1.3.1
 chardet===2.3.0
 cliff===1.15.0
@@ -85,7 +85,7 @@ cmd2===0.6.8
 colorama===0.3.3
 contextlib2===0.4.0
 coverage===4.0.2
-croniter===0.3.8
+croniter===0.3.9
 cryptography===1.1.1
 ddt===1.0.1
 debtcollector===0.10.0
@@ -97,7 +97,7 @@ diskimage-builder===1.3.0
 django-appconf===1.0.1
 django-babel===0.4.0
 django-bootstrap-form===3.2
-django-compressor===1.5
+django-compressor===1.6
 django-formtools===1.0
 django-nose===1.4.2
 django-openstack-auth===2.0.1
@@ -136,7 +136,7 @@ idna===2.0
 influxdb===2.10.0
 ipaddress===1.0.15;python_version=='2.7'
 ironic-discoverd===1.1.1
-ironic-lib===0.3.0
+ironic-lib===0.4.0
 iso8601===0.1.11
 itsdangerous===0.24
 jmespath===0.9.0
@@ -182,7 +182,7 @@ openstacksdk===0.6.2
 ordereddict===1.1
 os-apply-config===0.1.32
 os-brick===0.5.0
-os-client-config===1.10.2
+os-client-config===1.11.1
 os-cloud-config===0.2.10
 os-collect-config===0.1.36
 os-net-config===0.1.5
@@ -256,7 +256,7 @@ python-editor===0.4
 python-glanceclient===1.2.0
 python-heatclient===0.8.0
 python-ironic-inspector-client===1.2.0
-python-ironicclient===0.10.0
+python-ironicclient===1.0.0
 python-keystoneclient===1.8.1
 python-ldap===2.4.22;python_version=='2.7'
 python-magnumclient===0.2.1
