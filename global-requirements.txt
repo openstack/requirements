@@ -116,7 +116,7 @@ pbr>=1.6
 pecan>=1.0.0
 pexpect>=3.1,!=3.3 # ISC License
 pika>=0.10.0
-pika-pool>=0.1.2
+pika-pool>=0.1.3
 Pillow>=2.4.0 # MIT
 Pint>=0.5  # BSD
 pip>=6.0
