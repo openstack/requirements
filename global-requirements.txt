@@ -288,6 +288,7 @@ proboscis>=1.2.5.3
 psycopg2>=2.5
 pysendfile>=2.0.0
 pysqlite;python_version=='2.7'
+python-consul>=0.4.7  # MIT License
 python-ldap>=2.4;python_version=='2.7'
 python-subunit>=0.0.18
 pyzmq>=14.3.1 # LGPL+BSD
