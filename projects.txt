@@ -112,6 +112,7 @@ openstack/python-scciclient
 openstack/python-senlinclient
 openstack/python-solumclient
 openstack/python-swiftclient
+openstack/python-tackerclient
 openstack/python-tripleoclient
 openstack/python-troveclient
 openstack/python-tuskarclient
@@ -126,6 +127,7 @@ openstack/senlin
 openstack/senlin-dashboard
 openstack/stevedore
 openstack/swift
+openstack/tacker
 openstack/taskflow
 openstack/tempest
 openstack/tempest-lib
