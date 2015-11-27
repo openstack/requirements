@@ -128,6 +128,7 @@ futurist===0.8.0
 gabbi===1.10.0
 gitdb===0.6.4
 glance-store===0.9.1
+gnocchiclient===2.0.0
 greenlet===0.4.9
 happybase===0.9;python_version=='2.7'
 hgtools===6.3
