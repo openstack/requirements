@@ -272,7 +272,6 @@ python-muranoclient===0.7.1
 python-neutronclient===3.1.0
 python-novaclient===2.35.0
 python-openstackclient===1.9.0
-python-openstacksdk===0.5.2
 python-qpid-proton===0.10
 python-saharaclient===0.11.1
 python-senlinclient===0.1.8
@@ -283,7 +282,7 @@ python-tuskarclient===0.1.18
 python-zaqarclient===0.3.0
 pytz===2015.7
 pyudev===0.17
-pyzmq===15.0.0
+pyzmq===15.1.0
 qpid-python===0.32;python_version=='2.7'
 redis===2.10.5
 repoze.lru===0.6
@@ -317,7 +316,7 @@ stevedore===1.9.0
 suds-jurko===0.6
 sysv-ipc===0.6.8
 tablib===0.10.0
-taskflow===1.24.0
+taskflow===1.25.0
 tempest-lib===0.11.0
 termcolor===1.1.0
 testrepository===0.0.20
@@ -325,7 +324,7 @@ testresources===0.2.7
 testscenarios===0.5.0
 testtools===1.8.1
 thrift===0.9.3;python_version=='2.7'
-tooz===1.26.0
+tooz===1.27.0
 tornado===4.3
 tosca-parser===0.2.0
 traceback2===1.4.0
