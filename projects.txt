@@ -114,6 +114,7 @@ openstack/python-openstackclient
 openstack/python-openstacksdk
 openstack/python-saharaclient
 openstack/python-scciclient
+openstack/python-searchlightclient
 openstack/python-senlinclient
 openstack/python-solumclient
 openstack/python-swiftclient
@@ -128,6 +129,7 @@ openstack/sahara
 openstack/sahara-dashboard
 openstack/sahara-extra
 openstack/sahara-image-elements
+openstack/searchlight
 openstack/senlin
 openstack/senlin-dashboard
 openstack/stevedore
