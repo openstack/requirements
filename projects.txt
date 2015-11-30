@@ -33,6 +33,7 @@ openstack/keystoneauth
 openstack/keystoneauth-saml2
 openstack/keystonemiddleware
 openstack/kolla
+openstack/kolla-mesos
 openstack/magnum
 openstack/manila
 openstack/manila-ui
