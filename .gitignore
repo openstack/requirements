@@ -4,6 +4,7 @@
 *~
 .tox
 .testrepository
+.venv
 AUTHORS
 ChangeLog
 dist
