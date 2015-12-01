@@ -122,6 +122,7 @@ openstack/python-keystoneclient-kerberos
 openstack/python-magnumclient
 openstack/python-manilaclient
 openstack/python-mistralclient
+openstack/python-monascaclient
 openstack/python-muranoclient
 openstack/python-neutronclient
 openstack/python-novaclient
