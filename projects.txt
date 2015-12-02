@@ -1,6 +1,10 @@
 openstack-dev/hacking
 openstack-dev/pbr
 openstack/anchor
+openstack/astara
+openstack/astara-appliance
+openstack/astara-horizon
+openstack/astara-neutron
 openstack/automaton
 openstack/bandit
 openstack/barbican
