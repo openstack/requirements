@@ -1,4 +1,4 @@
-# linters - each project may hve a different version with loose convergence
+# linters - each project may have a different version with loose convergence
 # over time.
 flake8
 flake8_docstrings
