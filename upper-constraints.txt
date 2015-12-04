@@ -130,6 +130,7 @@ gabbi===1.10.0
 gitdb===0.6.4
 glance-store===0.10.0
 gnocchiclient===2.1.0
+graphviz===0.4.8
 greenlet===0.4.9
 happybase===0.9;python_version=='2.7'
 hgtools===6.3
