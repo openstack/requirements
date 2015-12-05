@@ -153,7 +153,7 @@ kafka-python===0.9.4
 kazoo===2.2.1
 kerberos===1.1.1;python_version=='2.7'
 keyring===5.6
-keystoneauth1===2.0.0
+keystoneauth1===2.1.0
 keystonemiddleware===4.0.0
 kombu===3.0.29
 ldap3===0.9.9.3
