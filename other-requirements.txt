@@ -1,5 +1,5 @@
 # These are needed to build all the things in global-requirements, which we do
-# for integration testing (see tools/integration.sh.
+# for integration testing.  (see tools/integration.sh)
 python-all-dev
 python3-all-dev
 libvirt-dev
@@ -15,7 +15,7 @@ libffi-dev
 libldap2-dev
 libsasl2-dev
 ccache
-# NOTE(flaper87): Temporarly needed for proton
+# NOTE(flaper87): Temporarily needed for proton
 uuid-dev
 swig
 # Python things that change rarely and we're willing to risk breakage vs latest
