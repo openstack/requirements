@@ -206,7 +206,7 @@ oslo.reports===1.0.0
 oslo.rootwrap===3.0.1
 oslo.serialization===2.0.0
 oslo.service===1.0.0
-oslo.utils===3.0.0
+oslo.utils===3.2.0
 oslo.versionedobjects===1.0.0
 oslo.vmware===2.0.0
 oslosphinx===4.0.0
