@@ -112,7 +112,7 @@ docutils===0.12
 dogpile.cache===0.5.7
 dogpile.core===0.4.1
 ecdsa===0.13
-elasticsearch===2.1.0
+elasticsearch===1.9.0
 enum34===1.1.1
 eventlet===0.17.4
 extras===0.0.3
