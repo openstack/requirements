@@ -200,7 +200,7 @@ oslo.context===1.0.0
 oslo.db===4.1.0
 oslo.i18n===3.1.0
 oslo.log===2.1.0
-oslo.messaging===3.1.0
+oslo.messaging===3.0.0
 oslo.middleware===3.1.0
 oslo.policy===1.1.0
 oslo.reports===1.1.0
