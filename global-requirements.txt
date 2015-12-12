@@ -82,7 +82,7 @@ msgpack-python>=0.4.0
 netaddr>=0.7.12,!=0.7.16
 netifaces>=0.10.4
 networkx>=1.10
-notifier>=1.0.1
+notifier>=1.0.3
 oauthlib>=0.6
 openstackdocstheme>=1.0.3
 ordereddict
