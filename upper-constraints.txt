@@ -177,7 +177,7 @@ nose-exclude===0.4.1
 nosehtmloutput===0.0.5
 nosexcover===1.0.10
 notifier===1.0.3
-numpy===1.10.1
+numpy===1.10.2
 oauthlib===1.0.3
 openstack-doc-tools===0.32.0
 openstack.nose-plugin===0.11
@@ -337,7 +337,7 @@ trollius===2.0
 txaio===2.2.0
 unicodecsv===0.14.1
 unittest2===1.1.0
-urllib3===1.12
+urllib3===1.13
 virtualenv===13.1.2
 waitress===0.8.10
 warlock===1.2.0
