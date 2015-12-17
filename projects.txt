@@ -48,6 +48,7 @@ openstack/mox3
 openstack/murano
 openstack/murano-dashboard
 openstack/networking-bagpipe
+openstack/networking-hyperv
 openstack/networking-l2gw
 openstack/networking-odl
 openstack/networking-ofagent
