@@ -185,7 +185,7 @@ openstackdocstheme===1.2.6
 openstacksdk===0.7.3
 ordereddict===1.1
 os-apply-config===0.1.32
-os-brick===0.6.0
+os-brick===0.7.0
 os-client-config===1.12.0
 os-cloud-config===0.3.0
 os-collect-config===0.1.36
@@ -273,7 +273,7 @@ python-mimeparse===0.1.4
 python-mistralclient===1.2.0
 python-muranoclient===0.8.0
 python-neutronclient===3.1.0
-python-novaclient===2.35.0
+python-novaclient===3.1.0
 python-openstackclient===2.0.0
 python-qpid-proton===0.10
 python-saharaclient===0.11.1
@@ -284,7 +284,7 @@ python-troveclient===1.4.0
 python-tuskarclient===0.1.18
 python-zaqarclient===0.3.0
 pytz===2015.7
-pyudev===0.18
+pyudev===0.18.1
 pyzmq===15.1.0
 qpid-python===0.32;python_version=='2.7'
 redis===2.10.5
@@ -337,7 +337,7 @@ trollius===2.0
 txaio===2.2.0
 unicodecsv===0.14.1
 unittest2===1.1.0
-urllib3===1.13
+urllib3===1.13.1
 virtualenv===13.1.2
 waitress===0.8.10
 warlock===1.2.0
