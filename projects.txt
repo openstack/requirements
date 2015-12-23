@@ -63,6 +63,7 @@ openstack/nova
 openstack/nova-docker
 openstack/octavia
 openstack/openstack-doc-tools
+openstack/openstackdocstheme
 openstack/os-apply-config
 openstack/os-brick
 openstack/os-cloud-config
