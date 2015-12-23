@@ -46,6 +46,7 @@ openstack/mistral-dashboard
 openstack/mistral-extra
 openstack/mox3
 openstack/murano
+openstack/murano-agent
 openstack/murano-dashboard
 openstack/networking-bagpipe
 openstack/networking-l2gw
