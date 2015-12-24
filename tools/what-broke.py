@@ -35,8 +35,8 @@ checked.
 import argparse
 import datetime
 import json
+import six.moves.urllib.request as urlreq
 import sys
-import urllib2
 
 import pkg_resources
 
@@ -94,7 +94,7 @@ def get_releases_for_package(name, since):
     our purposes.
 
     """
-    f = urllib2.urlopen("http://pypi.python.org/pypi/%s/json" % name)
+    f = urlreq.urlopen("http://pypi.python.org/pypi/%s/json" % name)
     jsondata = f.read()
     data = json.loads(jsondata)
     releases = []
