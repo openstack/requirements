@@ -71,7 +71,6 @@ openstack/os-cloud-config
 openstack/os-collect-config
 openstack/os-refresh-config
 openstack/os-win
-openstack/oslo-incubator
 openstack/oslo.cache
 openstack/oslo.concurrency
 openstack/oslo.config
