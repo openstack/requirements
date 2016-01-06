@@ -17,9 +17,10 @@ from __future__ import print_function
 import contextlib
 import json
 import os
+import six.moves.urllib.parse as urlparse
+import six.moves.urllib.request as urlreq
 import sys
 import traceback
-import urllib
 
 import pkg_resources
 
@@ -52,10 +53,10 @@ def release_data(req):
     # Try to find it with various names...
     attempted = []
     for name in iter_names(req):
-        url = PYPI_LOCATION + "/%s/json" % (urllib.quote(name))
+        url = PYPI_LOCATION + "/%s/json" % (urlparse.quote(name))
         if url in attempted:
             continue
-        with contextlib.closing(urllib.urlopen(url)) as uh:
+        with contextlib.closing(urlreq.urlopen(url)) as uh:
             if uh.getcode() != 200:
                 attempted.append(url)
                 continue
