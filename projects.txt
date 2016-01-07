@@ -135,6 +135,7 @@ openstack/stevedore
 openstack/swauth
 openstack/swift
 openstack/tacker
+openstack/tap-as-a-service
 openstack/taskflow
 openstack/tempest
 openstack/tempest-lib
