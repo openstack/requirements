@@ -296,6 +296,7 @@ python-openstackclient===2.1.0
 python-pytun===2.2.1
 python-qpid-proton===0.10
 python-saharaclient===0.13.0
+python-searchlightclient===0.2.0
 python-senlinclient===0.3.0
 python-subunit===1.2.0
 python-swiftclient===2.7.0
