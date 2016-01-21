@@ -24,6 +24,9 @@ openstack/diskimage-builder
 openstack/django_openstack_auth
 openstack/dragonflow
 openstack/ekko
+openstack/freezer
+openstack/freezer-api
+openstack/freezer-web-ui
 openstack/futurist
 openstack/glance
 openstack/glance_store
