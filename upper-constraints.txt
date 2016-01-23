@@ -191,7 +191,7 @@ openstackdocstheme===1.2.6
 openstacksdk===0.7.3
 ordereddict===1.1
 os-apply-config===0.1.32
-os-brick===0.7.0
+os-brick===0.8.0
 os-client-config===1.14.0
 os-cloud-config===0.3.0
 os-collect-config===0.1.36
