@@ -106,7 +106,7 @@ eventlet===0.17.4
 extras===0.0.3
 falcon===0.1.10
 fasteners===0.12.0
-feedparser===5.2.0
+feedparser===5.2.0.post1
 fixtures===1.2.0
 funcparserlib===0.3.6
 functools32===3.2.3.post1;python_version=='2.7'
