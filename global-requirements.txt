@@ -104,7 +104,10 @@ pycadf>=0.8.0,<0.9.0
 pycrypto>=2.6
 PyECLib==1.0.7                           # BSD
 pyghmi>=0.6.11
-pykmip>=0.2.0  # Apache 2.0 License
+# NOTE(kfarr) PyKMIP 0.4.1 includes backwards incompatible changes that break
+# the stable/kilo branch of Barbican. Capping to 0.4.0 ensures potential
+# future 0.3.x bug fix releases are usable
+pykmip>=0.2.0,<0.4.0  # Apache 2.0 License
 pymemcache>=1.2  # Apache 2.0 License
 pymongo>=2.6.3,<3.0
 PyMySQL>=0.6.2  # MIT License
