@@ -295,7 +295,7 @@ python-saharaclient===0.11.1
 python-senlinclient===0.3.0
 python-subunit===1.2.0
 python-swiftclient===2.7.0
-python-troveclient===1.4.0
+python-troveclient===2.0.0
 python-tuskarclient===0.1.18
 python-zaqarclient===0.3.0
 pytz===2015.7
