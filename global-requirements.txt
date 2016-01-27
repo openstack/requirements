@@ -83,6 +83,7 @@ os-cloud-config
 os-collect-config
 os-net-config
 os-refresh-config
+os-testr>=0.1.0,<0.7  # Apache-2.0
 packaging>=15.2
 paramiko>=1.13.0
 Parsley
