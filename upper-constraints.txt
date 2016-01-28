@@ -68,7 +68,7 @@ autobahn===0.11.0
 automaton===1.1.0
 backports-abc===0.4
 backports.ssl-match-hostname===3.5.0.1;python_version=='2.7'
-bandit===0.17.2
+bandit===0.17.3
 bashate===0.3.2
 beautifulsoup4===4.4.1
 betamax===0.5.1
@@ -156,7 +156,7 @@ jsonrpclib===0.1.7
 jsonschema===2.5.1
 kafka-python===0.9.5
 kazoo===2.2.1
-keyring===8.1.1
+keyring===8.2
 keystoneauth1===2.2.0
 keystonemiddleware===4.2.0
 klein===15.3.1
@@ -319,7 +319,7 @@ rjsmin===1.0.12
 rsa===3.3
 rtslib-fb===2.1.58
 ryu===3.29.1
-selenium===2.49.2
+selenium===2.50.0
 semantic-version===2.4.2
 seqdiag===0.9.5
 service-identity===14.0.0
@@ -371,7 +371,7 @@ websocket-client===0.35.0
 websockify===0.7.0
 wheel===0.26.0
 wrapt===1.10.6
-wsgi-intercept===1.1.1
+wsgi-intercept===1.1.2
 xattr===0.7.8
 xmltodict===0.9.2
 xvfbwrapper===0.2.7
