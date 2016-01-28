@@ -74,6 +74,7 @@ openstack/os-brick
 openstack/os-cloud-config
 openstack/os-collect-config
 openstack/os-refresh-config
+openstack/os-testr
 openstack/os-win
 openstack/oslo.cache
 openstack/oslo.concurrency
