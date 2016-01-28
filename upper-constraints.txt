@@ -320,7 +320,7 @@ rjsmin===1.0.12
 rsa===3.3
 rtslib-fb===2.1.58
 ryu===3.29.1
-selenium===2.50.0
+selenium===2.48.0
 semantic-version===2.4.2
 seqdiag===0.9.5
 service-identity===14.0.0
