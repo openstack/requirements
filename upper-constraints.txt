@@ -205,7 +205,7 @@ os-win===0.1.1;python_version=='2.7'
 oslo.cache===1.2.0
 oslo.concurrency===3.3.0
 oslo.config===3.4.0
-oslo.context===1.0.1
+oslo.context===2.0.0
 oslo.db===4.3.1
 oslo.i18n===3.2.0
 oslo.log===2.3.0
