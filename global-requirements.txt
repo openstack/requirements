@@ -183,7 +183,6 @@ python-saharaclient>=0.10.0  # Apache-2.0
 python-senlinclient>=0.1.7  # Apache-2.0
 python-swiftclient>=2.2.0  # Apache-2.0
 python-troveclient>=1.2.0  # Apache-2.0
-python-tuskarclient>=0.1.17  # Apache-2.0
 python-zaqarclient>=0.3.0  # Apache-2.0
 
 python-memcached>=1.56  # PSF
