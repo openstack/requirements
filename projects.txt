@@ -63,6 +63,7 @@ openstack/networking-vsphere
 openstack/neutron
 openstack/neutron-fwaas
 openstack/neutron-lbaas
+openstack/neutron-lbaas-dashboard
 openstack/neutron-vpnaas
 openstack/nova
 openstack/nova-docker
