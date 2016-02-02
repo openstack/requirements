@@ -283,7 +283,7 @@ python-ironicclient===1.1.0
 python-keystoneclient===2.1.1
 python-ldap===2.4.25;python_version=='2.7'
 python-magnumclient===1.1.0
-python-manilaclient===1.6.0
+python-manilaclient===1.7.0
 python-memcached===1.57
 python-mimeparse===0.1.4
 python-mistralclient===1.2.0
