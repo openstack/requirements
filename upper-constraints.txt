@@ -222,7 +222,7 @@ oslo.versionedobjects===1.4.0
 oslo.vmware===2.2.1
 oslosphinx===4.2.0
 oslotest===2.0.0
-osprofiler===0.4.0
+osprofiler===1.0.0
 ovs===2.4.0;python_version=='2.7'
 packaging===16.0
 pager===3.3
