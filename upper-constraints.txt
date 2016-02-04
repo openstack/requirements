@@ -290,7 +290,7 @@ python-mistralclient===1.2.0
 python-muranoclient===0.8.1
 python-neutronclient===4.0.0
 python-novaclient===3.2.0
-python-openstackclient===2.0.0
+python-openstackclient===2.1.0
 python-qpid-proton===0.10
 python-saharaclient===0.11.1
 python-senlinclient===0.3.0
