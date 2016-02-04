@@ -210,7 +210,7 @@ oslo.context===2.0.0
 oslo.db===4.3.1
 oslo.i18n===3.2.0
 oslo.log===2.3.0
-oslo.messaging===4.0.0
+oslo.messaging===4.1.0
 oslo.middleware===3.5.0
 oslo.policy===1.3.0
 oslo.privsep===0.3.0
@@ -299,7 +299,7 @@ python-swiftclient===2.7.0
 python-troveclient===2.0.0
 python-zaqarclient===0.3.0
 pytz===2015.7
-pyudev===0.18.1
+pyudev===0.19.0
 pyzmq===15.2.0
 qpid-python===0.32;python_version=='2.7'
 rcssmin===1.0.6
@@ -351,7 +351,7 @@ toml===0.9.1
 toolz===0.7.4
 tooz===1.29.0
 tornado===4.3
-tosca-parser===0.3.0
+tosca-parser===0.4.0
 traceback2===1.4.0
 treq===15.1.0
 tripleo-image-elements===0.8.10
