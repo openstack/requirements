@@ -69,5 +69,7 @@ def main(argv=None, stdout=None):
     out = requirement.to_content(out_reqs, prefix=False)
     with open(args[0] + '.tmp', 'wt') as f:
         f.write(out)
+    if os.path.exists(args[0]):
+        os.remove(args[0])
     os.rename(args[0] + '.tmp', args[0])
     return 0

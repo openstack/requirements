@@ -103,7 +103,7 @@ def _safe_read(project, filename, output=None):
     if output is None:
         output = project
     try:
-        path = project['root'] + '/' + filename
+        path = os.path.join(project['root'], filename)
         with io.open(path, 'rt', encoding="utf-8") as f:
             output[filename] = f.read()
     except IOError as e:
@@ -164,10 +164,12 @@ def write(project, actions, stdout, verbose, noop=False):
         elif type(action) is File:
             if noop:
                 continue
-            fullname = project['root'] + '/' + action.filename
+            fullname = os.path.join(project['root'], action.filename)
             tmpname = fullname + '.tmp'
             with open(tmpname, 'wt') as f:
                 f.write(action.content)
+            if os.path.exists(fullname):
+                os.remove(fullname)
             os.rename(tmpname, fullname)
         elif type(action) is StdOut:
             stdout.write(action.message)
