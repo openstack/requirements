@@ -8,6 +8,7 @@ openstack/astara-neutron
 openstack/automaton
 openstack/bandit
 openstack/barbican
+openstack/bifrost
 openstack/blazar-nova
 openstack/castellan
 openstack/ceilometer
