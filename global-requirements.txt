@@ -79,7 +79,7 @@ ldap3>=0.9.8.2  # LGPLv3
 libvirt-python>=1.2.5                   # LGPLv2+
 lxml>=2.3  # BSD
 Mako>=0.4.0  # MIT
-monotonic>=0.3                          # Apache-2.0
+monotonic>=0.6                          # Apache-2.0
 msgpack-python>=0.4.0  # Apache-2.0
 netaddr>=0.7.12,!=0.7.16  # BSD
 netifaces>=0.10.4  # MIT
