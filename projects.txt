@@ -67,6 +67,7 @@ openstack/neutron-lbaas
 openstack/neutron-vpnaas
 openstack/nova
 openstack/nova-docker
+openstack/octavia
 openstack/openstack-doc-tools
 openstack/openstackdocstheme
 openstack/os-apply-config
