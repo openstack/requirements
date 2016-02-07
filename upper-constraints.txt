@@ -92,7 +92,7 @@ contextlib2===0.5.1
 coverage===4.0.3
 croniter===0.3.11
 cryptography===1.2.2
-dcos===0.3.0
+dcos===0.3.1
 ddt===1.0.1
 debtcollector===1.2.0
 decorator===4.0.6
@@ -260,7 +260,7 @@ pyngus===2.0.3
 pyparsing===2.0.7
 pypng===0.0.18
 pyroute2===0.3.15
-pyrsistent===0.11.11
+pyrsistent===0.11.12
 pysaml2===4.0.2
 pysendfile===2.0.1
 pysmi===0.0.6
@@ -369,12 +369,12 @@ weakrefmethod===1.0.2;python_version=='2.7'
 webcolors===1.5
 websocket-client===0.35.0
 websockify===0.7.0
-wheel===0.28.0
+wheel===0.29.0
 wrapt===1.10.6
 wsgi-intercept===1.1.2
 xattr===0.7.8
 xmltodict===0.9.2
-xvfbwrapper===0.2.7
+xvfbwrapper===0.2.8
 yaql===1.0.2
 zake===0.2.2
 zope.interface===4.1.3
