@@ -32,8 +32,7 @@ sudo apt-get install -y --force-yes libvirt-dev libxml2-dev libxslt-dev libmysql
 sudo apt-get install -y --force-yes uuid-dev swig
 
 # FOR numpy / pyyaml
-sudo apt-get build-dep -y --force-yes python-numpy
-sudo apt-get build-dep -y --force-yes python-yaml
+sudo apt-get install cython gfortran libblas-dev liblapack-dev python-all-dev libyaml-dev
 
 # And use ccache explitly
 export PATH=/usr/lib/ccache:$PATH
