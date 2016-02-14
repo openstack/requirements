@@ -275,8 +275,7 @@ For new Requirements
 
 - Is the library license compatible?
 
-  Preferably Apache2, BSD, MIT licensed. LGPL is ok. GPL or AGPL is
-  verboten. Any other oddball license should be rejected.
+  The library should be licensed as described in `Licensing requirements`_.
 
 - Is the library already packaged in the distros we target (Ubuntu
   latest / Fedora latest)?
@@ -296,6 +295,8 @@ For new Requirements
   one that's better suited for our needs, then we also need the
   transition plan to drop the old library in a reasonable amount of
   time.
+
+.. _Licensing requirements: http://governance.openstack.org/reference/licensing.html
 
 For Upgrading Requirements Versions
 -----------------------------------
