@@ -198,7 +198,7 @@ oslo.policy===1.1.0
 oslo.reports===1.1.0
 oslo.rootwrap===3.1.0
 oslo.serialization===2.1.0
-oslo.service===0.9.0
+oslo.service===0.9.1
 oslo.utils===3.2.0
 oslo.versionedobjects===1.1.0
 oslo.vmware===2.1.0
