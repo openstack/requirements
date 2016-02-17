@@ -118,7 +118,7 @@ dogpile.core===0.4.1
 ecdsa===0.13
 elasticsearch===1.9.0
 enum34===1.1.2
-eventlet===0.18.3
+eventlet===0.18.2
 extras===0.0.3
 fairy-slipper===0.1.0
 falcon===0.3.0
