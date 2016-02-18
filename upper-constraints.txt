@@ -295,7 +295,7 @@ python-neutronclient===4.0.0
 python-novaclient===3.2.0
 python-openstackclient===2.1.0
 python-qpid-proton===0.10
-python-saharaclient===0.11.1
+python-saharaclient===0.12.0
 python-senlinclient===0.3.0
 python-subunit===1.2.0
 python-swiftclient===2.7.0
