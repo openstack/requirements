@@ -75,7 +75,7 @@ beautifulsoup4===4.4.1
 betamax===0.5.1
 blockdiag===1.5.3
 boto===2.39.0
-botocore===1.3.26
+botocore===1.3.27
 cachetools===1.1.5
 cassandra-driver===3.0.0
 castellan===0.3.1
@@ -99,7 +99,7 @@ decorator===4.0.9
 demjson===2.2.4
 dib-utils===0.0.8
 discover===0.4.0
-diskimage-builder===1.10.0
+diskimage-builder===1.11.0
 django-appconf===1.0.1
 django-babel===0.4.0
 django-bootstrap-form===3.2
@@ -156,7 +156,7 @@ jsonpath-rw-ext===0.3.0
 jsonpointer===1.10
 jsonrpclib===0.1.7
 jsonschema===2.5.1
-kafka-python===0.9.5
+kafka-python===1.0.0
 kazoo===2.2.1
 keyring===8.4.1
 keystoneauth1===2.2.0
@@ -188,7 +188,7 @@ nosehtmloutput===0.0.5
 nosexcover===1.0.10
 notifier===1.0.3
 numpy===1.10.4
-oauth2client===1.5.2
+oauth2client===2.0.0
 oauthlib===1.0.3
 openstack-doc-tools===0.33.0
 openstack.nose-plugin===0.11
@@ -238,7 +238,7 @@ pexpect===4.0.1
 pika===0.10.0
 pika-pool===0.1.3
 ply===3.8
-portalocker===0.5.5
+portalocker===0.5.7
 positional===1.0.1
 posix-ipc===1.0.0
 prettytable===0.7.2
@@ -341,7 +341,7 @@ sqlparse===0.1.18
 stevedore===1.11.0
 suds-jurko===0.6
 sysv-ipc===0.7.0
-tablib===0.11.1
+tablib===0.11.2
 taskflow===1.28.0
 tempest-lib===0.14.0
 termcolor===1.1.0
