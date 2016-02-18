@@ -161,7 +161,13 @@ pyparsing>=2.0.1  # MIT
 pyroute2>=0.3.10  # Apache-2.0 (+ dual licensed GPL2)
 pysnmp>=4.2.3,<5.0.0  # BSD
 pystache  # MIT
-pysaml2>=2.4.0  # Apache-2.0
+
+# NOTE(dims): pysaml 4.0.3 uses pycryptodome instead of pycrypto, for mitaka
+# we cannot switch to pycryptodome as many projects are likely to break. So
+# we should block versions higher then 4.0.2. Also, once all projects and
+# dependencies like paramiko switch to pycryptodome, we should revisit this
+# and fully switch over to pycryptodome and stop using pycrypto
+pysaml2>=2.4.0,<4.0.3  # Apache-2.0
 
 # OpenStack clients. None of these should have an upper bound
 # as that has implications for testing in the gate.
