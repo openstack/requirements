@@ -160,7 +160,7 @@ kafka-python===1.0.0
 kazoo===2.2.1
 keyring===8.4.1
 keystoneauth1===2.3.0
-keystonemiddleware===4.2.0
+keystonemiddleware===4.3.0
 klein===15.3.1
 kombu===3.0.33
 ldap3===1.0.4
