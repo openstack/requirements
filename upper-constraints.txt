@@ -75,7 +75,7 @@ beautifulsoup4===4.4.1
 betamax===0.5.1
 blockdiag===1.5.3
 boto===2.39.0
-botocore===1.3.27
+botocore===1.3.28
 cachetools===1.1.5
 cassandra-driver===3.0.0
 castellan===0.3.1
@@ -92,7 +92,7 @@ contextlib2===0.5.1
 coverage===4.0.3
 croniter===0.3.11
 cryptography===1.2.2
-dcos===0.3.1
+dcos===0.3.3
 ddt===1.0.1
 debtcollector===1.3.0
 decorator===4.0.9
@@ -118,7 +118,7 @@ dogpile.core===0.4.1
 ecdsa===0.13
 elasticsearch===1.9.0
 enum34===1.1.2
-eventlet===0.18.2
+eventlet===0.18.4
 extras===0.0.3
 fairy-slipper===0.1.0
 falcon===0.3.0
@@ -136,7 +136,7 @@ gabbi===1.12.0
 gitdb===0.6.4
 glance-store===0.11.0
 gnocchiclient===2.1.0
-google-api-python-client===1.4.2
+google-api-python-client===1.5.0
 graphviz===0.4.10
 greenlet===0.4.9
 happybase===0.9;python_version=='2.7'
@@ -197,7 +197,7 @@ openstacksdk===0.7.4
 ordereddict===1.1
 os-apply-config===0.1.32
 os-brick===1.0.0
-os-client-config===1.14.0
+os-client-config===1.15.0
 os-cloud-config===0.3.0
 os-collect-config===0.1.36
 os-net-config===0.1.6
@@ -225,7 +225,7 @@ oslo.vmware===2.4.0
 oslosphinx===4.3.0
 oslotest===2.1.0
 osprofiler===1.1.0
-overtest===0.10.0
+overtest===0.14.0
 ovs===2.4.0;python_version=='2.7'
 packaging===16.2
 pager===3.3
@@ -325,7 +325,7 @@ scp===0.10.2
 selenium===2.52.0
 semantic-version===2.5.0
 seqdiag===0.9.5
-service-identity===14.0.0
+service-identity===16.0.0
 simplegeneric===0.8.1
 simplejson===3.8.2
 singledispatch===3.4.0.3
@@ -358,7 +358,7 @@ tosca-parser===0.4.0
 traceback2===1.4.0
 treq===15.1.0
 tripleo-image-elements===0.8.10
-trollius===2.0
+trollius===2.1
 txaio===2.2.1
 unicodecsv===0.14.1
 unittest2===1.1.0
@@ -371,7 +371,7 @@ warlock===1.2.0
 weakrefmethod===1.0.2;python_version=='2.7'
 webcolors===1.5
 websocket-client===0.35.0
-websockify===0.7.0
+websockify===0.8.0
 wheel===0.29.0
 wrapt===1.10.6
 ws4py===0.3.4
