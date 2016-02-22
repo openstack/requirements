@@ -84,7 +84,7 @@ certifi===2015.11.20.1;python_version=='2.7'
 cffi===1.5.2
 characteristic===14.3.0
 chardet===2.3.0
-cliff===1.17.0
+cliff===2.0.0
 cliff-tablib===2.0
 cmd2===0.6.8
 colorama===0.3.6
