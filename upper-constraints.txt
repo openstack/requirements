@@ -353,7 +353,7 @@ testtools===2.0.0
 thrift===0.9.3;python_version=='2.7'
 toml===0.9.1
 toolz===0.7.4
-tooz===1.32.0
+tooz===1.33.0
 tornado===4.3
 tosca-parser===0.4.0
 traceback2===1.4.0
