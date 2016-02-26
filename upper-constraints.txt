@@ -14,7 +14,6 @@ Pint===0.7.1
 PuLP===1.6.1
 PyECLib===1.2.0
 PyKMIP===0.4.1
-PyMI===1.0.0;sys_platform=='win32' # Apache 2.0 License
 PyMySQL===0.7.2
 PyYAML===3.11
 Pygments===2.1.1
@@ -76,7 +75,7 @@ beautifulsoup4===4.4.1
 betamax===0.5.1
 blockdiag===1.5.3
 boto===2.39.0
-botocore===1.3.29
+botocore===1.3.30
 cachetools===1.1.5
 cassandra-driver===3.0.0
 castellan===0.3.1
@@ -100,7 +99,7 @@ decorator===4.0.9
 demjson===2.2.4
 dib-utils===0.0.8
 discover===0.4.0
-diskimage-builder===1.11.0
+diskimage-builder===1.11.1
 django-appconf===1.0.1
 django-babel===0.4.0
 django-bootstrap-form===3.2
@@ -136,7 +135,7 @@ futurist===0.13.0
 gabbi===1.12.0
 gitdb===0.6.4
 glance-store===0.11.0
-gnocchiclient===2.1.0
+gnocchiclient===2.2.0
 google-api-python-client===1.5.0
 graphviz===0.4.10
 greenlet===0.4.9
@@ -199,9 +198,9 @@ ordereddict===1.1
 os-apply-config===0.1.32
 os-brick===1.1.0
 os-client-config===1.16.0
-os-cloud-config===0.3.0
-os-collect-config===0.1.36
-os-net-config===0.1.6
+os-cloud-config===0.4.0
+os-collect-config===0.1.37
+os-net-config===0.1.7
 os-refresh-config===0.1.11
 os-testr===0.6.0
 os-win===0.2.1
@@ -212,7 +211,7 @@ oslo.context===2.2.0
 oslo.db===4.6.0
 oslo.i18n===3.4.0
 oslo.log===3.2.0
-oslo.messaging===4.4.0
+oslo.messaging===4.5.0
 oslo.middleware===3.7.0
 oslo.policy===1.5.0
 oslo.privsep===1.3.0
@@ -316,7 +315,7 @@ requests-aws===0.1.8
 requests-kerberos===0.8.0;python_version=='2.7'
 requests-mock===0.7.0
 requestsexceptions===1.1.3
-restructuredtext-lint===0.14.0
+restructuredtext-lint===0.14.2
 retrying===1.3.3
 rfc3986===0.3.1
 rjsmin===1.0.12
