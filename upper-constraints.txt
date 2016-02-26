@@ -90,6 +90,7 @@ cliff-tablib===2.0
 cmd2===0.6.8
 colorama===0.3.6
 contextlib2===0.5.1
+couchdb===1.0
 coverage===4.0.3
 croniter===0.3.11
 cryptography===1.2.2
