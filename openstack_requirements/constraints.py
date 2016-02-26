@@ -23,6 +23,7 @@ UNCONSTRAINABLE = set([
     'setuptools',
     'wmi',
     'pywin32',
+    'pymi',
     '',  # blank lines
 ])
 
