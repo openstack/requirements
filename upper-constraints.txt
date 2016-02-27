@@ -289,7 +289,7 @@ python-magnumclient===1.1.0
 python-manilaclient===1.7.0
 python-memcached===1.57
 python-mimeparse===1.5.1
-python-mistralclient===1.2.0
+python-mistralclient===2.0.0
 python-muranoclient===0.8.2
 python-neutronclient===4.0.0
 python-novaclient===3.2.0
