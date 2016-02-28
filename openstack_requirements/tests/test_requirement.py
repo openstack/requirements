@@ -18,6 +18,11 @@ import testtools
 
 from openstack_requirements import requirement
 
+try:
+    InvalidRequirement = \
+        pkg_resources.extern.packaging.requirements.InvalidRequirement
+except AttributeError:
+    InvalidRequirement = pkg_resources.RequirementParseError
 
 load_tests = testscenarios.load_tests_apply_scenarios
 
@@ -93,7 +98,7 @@ class TestParseRequirementFailures(testtools.TestCase):
         ('-f', dict(line='-f http://tarballs.openstack.org/'))]
 
     def test_does_not_parse(self):
-        with testtools.ExpectedException(pkg_resources.RequirementParseError):
+        with testtools.ExpectedException(InvalidRequirement):
             requirement.parse_line(self.line)
 
 
@@ -134,7 +139,7 @@ class TestToReqs(testtools.TestCase):
         self.assertEqual(reqs, [(req, line)])
 
     def test_not_urls(self):
-        with testtools.ExpectedException(pkg_resources.RequirementParseError):
+        with testtools.ExpectedException(InvalidRequirement):
             list(requirement.to_reqs('file:///foo#egg=foo'))
 
     def test_multiline(self):
