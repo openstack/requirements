@@ -3,10 +3,10 @@
 # process, which may cause wedges in the gate later.
 # NOTE: These are requirements for testing the requirements project only
 #       See global-requirements for the actual requirements list
-hacking>=0.10,<0.11
-fixtures>=0.3.14
+hacking<0.11,>=0.10
+fixtures<1.3.0,>=0.3.14
 packaging>=15.2
 testrepository>=0.0.18
 testscenarios>=0.4
-testtools>=1.4.0
-virtualenv
+testtools!=1.2.0,<2.0.0,>=0.9.36
+virtualenv<14
