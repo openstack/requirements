@@ -106,7 +106,7 @@ django-bootstrap-form===3.2
 django-compressor===2.0
 django-formtools===1.0
 django-nose===1.4.3
-django-openstack-auth===2.1.1
+django-openstack-auth===2.2.0
 django-pyscss===2.0.2
 dnspython===1.12.0;python_version=='2.7'
 dnspython3===1.12.0;python_version=='3.4'
