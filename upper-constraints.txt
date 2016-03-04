@@ -16,7 +16,7 @@ PyECLib===1.2.0
 PyKMIP===0.4.1
 PyMySQL===0.7.2
 PyYAML===3.11
-Pygments===2.1.2
+Pygments===2.1.3
 Routes===2.2
 SQLAlchemy===1.0.12
 SQLAlchemy-Utils===0.31.6
@@ -75,10 +75,10 @@ beautifulsoup4===4.4.1
 betamax===0.5.1
 blockdiag===1.5.3
 boto===2.39.0
-botocore===1.4.0
+botocore===1.4.1
 cachetools===1.1.5
 cassandra-driver===3.0.0
-castellan===0.3.1
+castellan===0.4.0
 ceilometermiddleware===0.4.0
 certifi===2016.2.28;python_version=='2.7'
 cffi===1.5.2
@@ -162,7 +162,7 @@ keyring===8.4.1
 keystoneauth1===2.3.0
 keystonemiddleware===4.3.0
 klein===15.3.1
-kombu===3.0.33
+kombu===3.0.34
 ldap3===1.0.4
 ldappool===1.0;python_version=='2.7'
 libvirt-python===1.3.2
@@ -188,12 +188,12 @@ nosehtmloutput===0.0.5
 nosexcover===1.0.10
 notifier===1.0.3
 numpy===1.10.4
-oauth2client===2.0.0.post1
+oauth2client===2.0.1
 oauthlib===1.0.3
 openstack-doc-tools===0.33.0
 openstack.nose-plugin===0.11
 openstackdocstheme===1.2.7
-openstacksdk===0.8.0
+openstacksdk===0.8.1
 ordereddict===1.1
 os-apply-config===0.1.32
 os-brick===1.1.0
@@ -203,7 +203,7 @@ os-collect-config===0.1.37
 os-net-config===0.1.7
 os-refresh-config===0.1.11
 os-testr===0.6.0
-os-win===0.2.2
+os-win===0.2.3
 oslo.cache===1.4.0
 oslo.concurrency===3.6.0
 oslo.config===3.9.0
@@ -253,7 +253,7 @@ pyasn1-modules===0.0.8
 pycadf===2.1.0
 pycparser===2.14
 pycrypto===2.6.1
-pyghmi===0.9.8
+pyghmi===0.9.9
 pyinotify===0.9.6
 pykerberos===1.1.10;python_version=='2.7'
 pylxd===0.19.0
@@ -273,7 +273,7 @@ pystache===0.5.4
 python-barbicanclient===4.0.0
 python-ceilometerclient===2.3.0
 python-cinderclient===1.6.0
-python-congressclient===1.2.3
+python-congressclient===2015.1.0
 python-consul===0.6.0
 python-dateutil===2.5.0
 python-designateclient===2.0.0
@@ -289,7 +289,7 @@ python-manilaclient===1.8.0
 python-memcached===1.57
 python-mimeparse===1.5.1
 python-mistralclient===2.0.0
-python-muranoclient===0.8.2
+python-muranoclient===0.8.3
 python-neutronclient===4.1.0
 python-novaclient===3.3.0
 python-openstackclient===2.2.0
@@ -298,7 +298,7 @@ python-qpid-proton===0.10
 python-saharaclient===0.13.0
 python-searchlightclient===0.2.0
 python-senlinclient===0.4.0
-python-solumclient===1.2.7
+python-solumclient===2.0.0
 python-subunit===1.2.0
 python-swiftclient===3.0.0
 python-troveclient===2.1.0
@@ -322,7 +322,7 @@ rfc3986===0.3.1
 rjsmin===1.0.12
 rsa===3.3
 rtslib-fb===2.1.58
-ryu===3.30
+ryu===4.0
 scp===0.10.2
 selenium===2.52.0
 semantic-version===2.5.0
@@ -345,7 +345,7 @@ suds-jurko===0.6
 sysv-ipc===0.7.0
 tablib===0.11.2
 taskflow===1.30.0
-tempest-lib===0.14.0
+tempest-lib===1.0.0
 termcolor===1.1.0
 testrepository===0.0.20
 testresources===1.0.0
