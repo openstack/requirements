@@ -6,8 +6,6 @@ libvirt-dev
 libxml2-dev
 libxslt1-dev
 libmysqlclient-dev
-mysql-client
-mysql-server
 libpq-dev
 libnspr4-dev
 pkg-config
@@ -17,8 +15,6 @@ libffi-dev
 libldap2-dev
 libsasl2-dev
 ccache
-postgresql
-postgresql-client
 pypy
 pypy-dev
 # NOTE(flaper87): Temporarily needed for proton
@@ -27,3 +23,9 @@ swig
 # Python things that change rarely and we're willing to risk breakage vs latest
 python-numpy [python]
 python-yaml [python]
+# NOTE(jaegerandi): Temporarily needed for running as part of
+# OpenStack gates:
+mysql-client
+mysql-server
+postgresql
+postgresql-client
