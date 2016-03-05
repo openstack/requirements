@@ -4,8 +4,10 @@ python-all-dev
 python3-all-dev
 libvirt-dev
 libxml2-dev
-libxslt-dev
+libxslt1-dev
 libmysqlclient-dev
+mysql-client
+mysql-server
 libpq-dev
 libnspr4-dev
 pkg-config
@@ -15,6 +17,10 @@ libffi-dev
 libldap2-dev
 libsasl2-dev
 ccache
+postgresql
+postgresql-client
+pypy
+pypy-dev
 # NOTE(flaper87): Temporarily needed for proton
 uuid-dev
 swig
