@@ -142,6 +142,7 @@ google-api-python-client===1.5.0
 graphviz===0.4.10
 greenlet===0.4.9
 happybase===0.9;python_version=='2.7'
+heat-translator===0.4.0
 hgtools===6.5.1
 httplib2===0.9.2
 idna===2.0
