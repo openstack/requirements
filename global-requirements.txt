@@ -171,7 +171,8 @@ python-saharaclient>=0.10.0
 python-openstackclient>=1.5.0
 python-openstacksdk>=0.4.1
 python-swiftclient>=2.2.0
-python-troveclient>=1.2.0
+# NOTE(mriedem): a5234f0a0 in python-troveclient 2.1.0 is not backward compat
+python-troveclient>=1.2.0,!=2.1.0
 python-tuskarclient>=0.1.17
 python-zaqarclient>=0.1.1
 python-dateutil>=2.4.2
