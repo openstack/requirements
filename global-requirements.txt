@@ -199,7 +199,8 @@ python-searchlightclient>=0.2.0 #Apache-2.0
 python-senlinclient>=0.3.0  # Apache-2.0
 python-solumclient>=1.2.7  # Apache-2.0
 python-swiftclient>=2.2.0  # Apache-2.0
-python-troveclient>=1.2.0  # Apache-2.0
+# NOTE(mriedem): a5234f0a0 in python-troveclient 2.1.0 is not backward compat
+python-troveclient>=1.2.0,!=2.1.0  # Apache-2.0
 python-zaqarclient>=0.3.0  # Apache-2.0
 
 python-memcached>=1.56  # PSF
