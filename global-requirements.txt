@@ -117,7 +117,10 @@ pyOpenSSL>=0.11
 pyparsing>=2.0.1
 pysnmp>=4.2.1,<5.0.0
 pystache
-pysaml2
+# NOTE(mriedem): pysaml2 4.0.4 introduces a new dependency on the
+# 'future' package which we don't have in g-r and don't want to
+# introduce in stable/kilo.
+pysaml2<4.0.4
 # OpenStack clients. None of these should have an upper bound
 # as that has implications for testing in the gate. An exception
 # is currently being made for neutron client because of the need
