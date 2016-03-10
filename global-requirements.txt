@@ -210,7 +210,7 @@ XStatic-term.js>=0.0.4 # MIT License
 # Testing tools below, which are typically in test-requires.txt
 
 bashate>=0.2 # Apache-2.0
-cliff-tablib>=1.0
+cliff-tablib>=1.0,<2.0
 coverage>=3.6
 demjson # GNU LGPL 3.0
 discover
