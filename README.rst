@@ -275,7 +275,11 @@ For new Requirements
 
 - Is the library license compatible?
 
-  The library should be licensed as described in `Licensing requirements`_.
+  The library should be licensed as described in `Licensing requirements`_,
+  and the license should be described in a comment on the same line as the
+  added dependency. If you have doubts over licensing compatibility, like
+  for example when adding a GPL test dependency, you can seek advice from
+  Robert Collins (lifeless), Monty Taylor (mordred) or Jim Blair (jeblair).
 
 - Is the library already packaged in the distros we target (Ubuntu
   latest / Fedora latest)?
