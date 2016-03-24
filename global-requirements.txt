@@ -177,7 +177,7 @@ pysaml2>=2.4.0,<4.0.3  # Apache-2.0
 # OpenStack clients. None of these should have an upper bound
 # as that has implications for testing in the gate.
 aodhclient>=0.1.0  # Apache-2.0
-python-barbicanclient>=3.3.0  # Apache-2.0
+python-barbicanclient>=4.0.0  # Apache-2.0
 python-ceilometerclient>=2.2.1  # Apache-2.0
 python-cinderclient>=1.3.1  # Apache-2.0
 python-congressclient>=1.0.0,<2000  # Apache-2.0
@@ -201,7 +201,7 @@ python-solumclient>=1.2.7  # Apache-2.0
 python-swiftclient>=2.2.0  # Apache-2.0
 # NOTE(mriedem): a5234f0a0 in python-troveclient 2.1.0 is not backward compat
 python-troveclient>=1.2.0,!=2.1.0  # Apache-2.0
-python-zaqarclient>=0.3.0  # Apache-2.0
+python-zaqarclient>=1.0.0  # Apache-2.0
 
 python-memcached>=1.56  # PSF
 python-dateutil>=2.4.2  # BSD
