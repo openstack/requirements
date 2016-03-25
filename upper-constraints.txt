@@ -253,6 +253,7 @@ pyasn1-modules===0.0.8
 pycadf===2.2.0
 pycparser===2.14
 pycrypto===2.6.1
+pydotplus===2.0.2
 pyghmi===1.0.4
 pyinotify===0.9.6
 pykerberos===1.1.10;python_version=='2.7'
