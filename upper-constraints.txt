@@ -274,7 +274,7 @@ pysnmp===4.3.2
 pysqlite===2.8.1;python_version=='2.7'
 pystache===0.5.4
 python-barbicanclient===4.0.0
-python-ceilometerclient===2.3.0
+python-ceilometerclient===2.4.0
 python-cinderclient===1.6.0
 python-congressclient===1.2.3
 python-consul===0.6.0
