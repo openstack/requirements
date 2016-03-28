@@ -152,7 +152,7 @@ requests>=2.2.0,!=2.4.0,<2.8.0
 requests-aws>=0.1.4    # BSD License (3 clause)
 requests-kerberos>=0.6 # MIT
 rfc3986>=0.2.0  # Apache-2.0
-Routes>=1.12.3,!=2.0
+Routes>=1.12.3,!=2.0,<2.3.0
 rtslib-fb>=2.1.41
 semantic_version>=2.3.1
 simplejson>=2.2.0
