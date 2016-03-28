@@ -7,7 +7,6 @@ libxml2-dev
 libxslt1-dev
 libmysqlclient-dev
 libpq-dev
-libnspr4-dev
 pkg-config
 libsqlite3-dev
 libzmq-dev
