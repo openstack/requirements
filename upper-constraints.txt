@@ -279,7 +279,7 @@ python-cinderclient===1.6.0
 python-congressclient===1.2.3
 python-consul===0.6.0
 python-dateutil===2.5.0
-python-designateclient===2.0.0
+python-designateclient===2.1.0
 python-editor===0.5
 python-glanceclient===2.0.0
 python-heatclient===1.1.0
