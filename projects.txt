@@ -33,6 +33,7 @@ openstack/glance_store
 openstack/heat
 openstack/heat-translator
 openstack/horizon
+openstack/horizon-cisco-ui
 openstack/i18n
 openstack/ironic
 openstack/ironic-inspector
