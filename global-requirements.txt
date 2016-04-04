@@ -52,6 +52,10 @@ futures>=3.0;python_version=='2.7' or python_version=='2.6'  # BSD
 futurist>=0.11.0  # Apache-2.0
 funcsigs>=0.4;python_version=='2.7' or python_version=='2.6'  # Apache-2.0
 gitdb>=0.6.4 # BSD License (3 clause)
+# Note: Due to https://bugs.launchpad.net/glance-store/+bug/1556059 0.13.0
+# isn't entrirely compatable with python-swiftclient 3.0.0.  This is fixed in
+# 0.13.1.  Leaving 0.13.0 as the minimum supported as we don't want to bump
+# the minimum
 glance_store>=0.13.0            # Apache-2.0
 gnocchiclient>=2.1.0  # Apache-2.0
 google-api-python-client>=1.4.2        # Apache-2.0
