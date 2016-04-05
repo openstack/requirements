@@ -131,6 +131,7 @@ openstack/python-saharaclient
 openstack/python-scciclient
 openstack/python-searchlightclient
 openstack/python-senlinclient
+openstack/python-smaugclient
 openstack/python-solumclient
 openstack/python-swiftclient
 openstack/python-tackerclient
@@ -148,6 +149,8 @@ openstack/sahara-tests
 openstack/searchlight
 openstack/senlin
 openstack/senlin-dashboard
+openstack/smaug
+openstack/smaug-dashboard
 openstack/stevedore
 openstack/swauth
 openstack/swift
