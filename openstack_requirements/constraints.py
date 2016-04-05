@@ -24,6 +24,7 @@ UNCONSTRAINABLE = set([
     'wmi',
     'pywin32',
     'pymi',
+    'wheel',
     '',  # blank lines
 ])
 
