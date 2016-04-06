@@ -1,4 +1,4 @@
-APScheduler===3.0.6
+APScheduler===3.1.0
 Babel===2.2.0
 CouchDB===1.0.1
 Django===1.8.12
@@ -24,7 +24,7 @@ SQLAlchemy===1.0.12
 SQLAlchemy-Utils===0.32.1
 Sphinx===1.2.3
 Tempita===0.5.2
-Twisted===16.0.0
+Twisted===16.1.0
 WSME===0.8.0
 WebOb===1.5.1
 WebTest===2.0.20
@@ -71,13 +71,13 @@ autobahn===0.13.0
 automaton===1.2.0
 backports-abc===0.4
 backports.ssl-match-hostname===3.5.0.1;python_version=='2.7'
-bandit===0.17.3
+bandit===1.0.1
 bashate===0.5.0
 beautifulsoup4===4.4.1
 betamax===0.5.1
 blockdiag===1.5.3
 boto===2.39.0
-botocore===1.4.8
+botocore===1.4.9
 cachetools===1.1.6
 cassandra-driver===3.1.1
 castellan===0.4.0
@@ -130,7 +130,7 @@ fixtures===1.4.0
 freezegun===0.3.6
 frozendict===0.6
 funcparserlib===0.3.6
-funcsigs===0.4;python_version=='2.7'
+funcsigs===1.0.0;python_version=='2.7'
 functools32===3.2.3.post2;python_version=='2.7'
 futures===3.0.5
 futurist===0.13.0
@@ -161,7 +161,7 @@ jsonrpclib===0.1.7
 jsonschema===2.5.1
 kafka-python===0.9.5
 kazoo===2.2.1
-keyring===8.5.1
+keyring===8.7
 keystoneauth1===2.4.0
 keystonemiddleware===4.4.0
 klein===15.3.1
@@ -173,9 +173,9 @@ linecache2===1.0.0
 logilab-common===1.2.0
 logutils===0.3.3
 lxml===3.6.0
-mimic===2.0.0
 microversion-parse===0.1.2
-mock===1.3.0
+mimic===2.0.0
+mock===2.0.0
 monotonic===1.0
 mox===0.5.3
 mox3===0.14.0
@@ -266,8 +266,8 @@ pymongo===3.2.2
 pyngus===2.0.3
 pyparsing===2.1.1
 pypng===0.0.18
-pyroute2===0.3.16
-pyrsistent===0.11.12
+pyroute2===0.3.18
+pyrsistent===0.11.13
 pysaml2===4.0.2
 pysendfile===2.0.1
 pysmi===0.0.7
@@ -286,8 +286,8 @@ python-glanceclient===2.0.0
 python-heatclient===1.1.0
 python-ironic-inspector-client===1.6.0
 python-ironicclient===1.3.0
-python-keystoneclient===2.3.1
 python-k8sclient===0.1.0
+python-keystoneclient===2.3.1
 python-ldap===2.4.25;python_version=='2.7'
 python-magnumclient===2.0.0
 python-manilaclient===1.8.1
@@ -381,7 +381,6 @@ weakrefmethod===1.0.2;python_version=='2.7'
 webcolors===1.5
 websocket-client===0.35.0
 websockify===0.8.0
-wheel===0.29.0
 wrapt===1.10.7
 ws4py===0.3.4
 wsgi-intercept===1.2.2
