@@ -118,7 +118,7 @@ oslo.vmware>=1.16.0                     # Apache-2.0
 oslo.versionedobjects>=1.5.0            # Apache-2.0
 osprofiler>=1.1.0                       # Apache-2.0
 os-apply-config  # Apache-2.0
-os-brick>=1.0.0                         # Apache-2.0
+os-brick>=1.3.0                         # Apache-2.0
 os-client-config>=1.13.1  # Apache-2.0
 os-cloud-config  # Apache-2.0
 os-collect-config  # Apache-2.0
