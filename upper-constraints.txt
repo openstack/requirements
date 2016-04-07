@@ -101,9 +101,9 @@ decorator===4.0.9
 demjson===2.2.4
 dib-utils===0.0.8
 discover===0.4.0
-diskimage-builder===1.13.0
+diskimage-builder===1.14.1
 django-appconf===1.0.1
-django-babel===0.5.0
+django-babel===0.5.1
 django-bootstrap-form===3.2
 django-compressor===2.0
 django-formtools===1.0
@@ -113,7 +113,7 @@ django-pyscss===2.0.2
 dnspython===1.12.0;python_version=='2.7'
 dnspython3===1.12.0;python_version=='3.4'
 doc8===0.6.0
-docker-py===1.7.2
+docker-py===1.8.0
 docutils===0.12
 dogpile.cache===0.5.7
 dogpile.core===0.4.1
@@ -126,7 +126,7 @@ fairy-slipper===0.2.0
 falcon===0.3.0
 fasteners===0.14.1
 feedparser===5.2.1
-fixtures===1.4.0
+fixtures===2.0.0
 freezegun===0.3.6
 frozendict===0.6
 funcparserlib===0.3.6
@@ -204,7 +204,7 @@ os-brick===1.2.0
 os-client-config===1.16.0
 os-cloud-config===0.4.1
 os-collect-config===0.1.37
-os-net-config===0.2.2
+os-net-config===0.2.3
 os-refresh-config===0.1.11
 os-testr===0.6.0
 os-win===0.4.1
@@ -250,6 +250,7 @@ proboscis===1.2.6.0
 psutil===1.2.1
 psycopg2===2.6.1
 ptyprocess===0.5.1
+py2-ipaddress===3.4.1;python_version=='2.7'
 pyOpenSSL===16.0.0
 pyScss===1.3.4
 pyasn1===0.1.9
@@ -372,7 +373,7 @@ tzlocal===1.2.2
 unicodecsv===0.14.1
 unittest2===1.1.0
 uritemplate===0.6
-urllib3===1.14
+urllib3===1.15
 virtualenv===15.0.1
 voluptuous===0.8.10
 waitress===0.8.10
