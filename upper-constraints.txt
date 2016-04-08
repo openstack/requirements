@@ -1,5 +1,5 @@
 APScheduler===3.1.0
-Babel===2.2.0
+Babel===2.3.1
 CouchDB===1.0.1
 Django===1.8.12
 Flask===0.10.1
@@ -26,7 +26,7 @@ Sphinx===1.2.3
 Tempita===0.5.2
 Twisted===16.1.0
 WSME===0.8.0
-WebOb===1.5.1
+WebOb===1.6.0
 WebTest===2.0.20
 Werkzeug===0.11.5
 XStatic===1.0.1
@@ -77,7 +77,7 @@ beautifulsoup4===4.4.1
 betamax===0.5.1
 blockdiag===1.5.3
 boto===2.39.0
-botocore===1.4.9
+botocore===1.4.10
 cachetools===1.1.6
 cassandra-driver===3.1.1
 castellan===0.4.0
@@ -134,7 +134,7 @@ funcsigs===1.0.0;python_version=='2.7'
 functools32===3.2.3.post2;python_version=='2.7'
 futures===3.0.5
 futurist===0.13.0
-gabbi===1.16.1
+gabbi===1.17.0
 gitdb===0.6.4
 glance-store===0.13.0
 gnocchiclient===2.2.0
@@ -168,7 +168,7 @@ klein===15.3.1
 kombu===3.0.35
 ldap3===1.2.2
 ldappool===1.0;python_version=='2.7'
-libvirt-python===1.3.2
+libvirt-python===1.3.3
 linecache2===1.0.0
 logilab-common===1.2.0
 logutils===0.3.3
@@ -267,7 +267,7 @@ pymongo===3.2.2
 pyngus===2.0.3
 pyparsing===2.1.1
 pypng===0.0.18
-pyroute2===0.3.18
+pyroute2===0.3.19
 pyrsistent===0.11.13
 pysaml2===4.0.2
 pysendfile===2.0.1
@@ -297,7 +297,7 @@ python-mimeparse===1.5.1
 python-mistralclient===2.0.0
 python-muranoclient===0.8.4
 python-neutronclient===4.1.2
-python-novaclient===3.3.1
+python-novaclient===3.4.0
 python-openstackclient===2.3.0
 python-pytun===2.2.1
 python-qpid-proton===0.10
@@ -307,7 +307,7 @@ python-senlinclient===0.4.1
 python-solumclient===2.0.1
 python-subunit===1.2.0
 python-swiftclient===3.0.0
-python-troveclient===2.1.1
+python-troveclient===2.2.0
 python-zaqarclient===1.0.0
 pytz===2016.3
 pyudev===0.19.0
@@ -351,7 +351,7 @@ suds-jurko===0.6
 sysv-ipc===0.7.0
 tablib===0.11.2
 taskflow===1.30.0
-tempest===10.0.0
+tempest===11.0.0
 tempest-lib===1.0.0
 termcolor===1.1.0
 testrepository===0.0.20
