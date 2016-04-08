@@ -126,7 +126,7 @@ fairy-slipper===0.2.0
 falcon===0.3.0
 fasteners===0.14.1
 feedparser===5.2.1
-fixtures===2.0.0
+fixtures===1.4.0
 freezegun===0.3.6
 frozendict===0.6
 funcparserlib===0.3.6
