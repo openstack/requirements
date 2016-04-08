@@ -384,6 +384,26 @@ class TestSyncRequirementsFile(testtools.TestCase):
             requirement.Requirement('', '', '', '', n)]),
             reqs)
 
+    def test_extras_kept(self):
+        global_content = textwrap.dedent("""\
+            oslo.db>1.4.1
+            """)
+        project_content = textwrap.dedent("""\
+            oslo.db[fixture,mysql]>1.3
+            """)
+        global_reqs = requirement.parse(global_content)
+        project_reqs = list(requirement.to_reqs(project_content))
+        actions, reqs = update._sync_requirements_file(
+            global_reqs, project_reqs, 'f', False, False, False)
+        self.assertEqual(requirement.Requirements([
+            requirement.Requirement(
+                'oslo.db', '', '>1.4.1', '', '', ['fixture', 'mysql'])]),
+            reqs)
+        self.assertThat(actions, matchers.HasLength(3))
+        self.assertEqual(project.StdOut(
+            "    oslo.db[fixture,mysql]>1.3     ->   "
+            "oslo.db[fixture,mysql]>1.4.1\n"), actions[2])
+
 
 class TestCopyRequires(testtools.TestCase):
 
