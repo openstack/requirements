@@ -24,7 +24,7 @@ SQLAlchemy===1.0.12
 SQLAlchemy-Utils===0.32.1
 Sphinx===1.2.3
 Tempita===0.5.2
-Twisted===16.1.0
+Twisted===16.1.1
 WSME===0.8.0
 WebOb===1.6.0
 WebTest===2.0.20
@@ -67,7 +67,7 @@ appdirs===1.4.0
 argcomplete===1.1.1
 astroid===1.3.8
 attrs===15.2.0
-autobahn===0.13.0
+autobahn===0.13.1
 automaton===1.2.0
 backports-abc===0.4
 backports.ssl-match-hostname===3.5.0.1;python_version=='2.7'
@@ -161,7 +161,7 @@ jsonrpclib===0.1.7
 jsonschema===2.5.1
 kafka-python===0.9.5
 kazoo===2.2.1
-keyring===8.7
+keyring===9.0
 keystoneauth1===2.5.0
 keystonemiddleware===4.4.0
 klein===15.3.1
@@ -173,7 +173,8 @@ linecache2===1.0.0
 logilab-common===1.2.0
 logutils===0.3.3
 lxml===3.6.0
-microversion-parse===0.1.2
+microversion-parse===0.1.2;python_version=='3.4'
+microversion-parse===0.1.3;python_version=='2.7'
 mimic===2.0.0
 mock===2.0.0
 monotonic===1.0
@@ -200,8 +201,8 @@ openstackdocstheme===1.3.0
 openstacksdk===0.8.4
 ordereddict===1.1
 os-apply-config===0.1.32
-os-brick===1.2.0
-os-client-config===1.16.0
+os-brick===1.3.0
+os-client-config===1.17.0
 os-cloud-config===0.4.1
 os-collect-config===0.1.37
 os-net-config===0.2.4
@@ -267,7 +268,7 @@ pymongo===3.2.2
 pyngus===2.0.3
 pyparsing===2.1.1
 pypng===0.0.18
-pyroute2===0.3.19
+pyroute2===0.3.20
 pyrsistent===0.11.13
 pysaml2===4.0.2
 pysendfile===2.0.1
@@ -368,12 +369,12 @@ traceback2===1.4.0
 treq===15.1.0
 tripleo-image-elements===0.8.10
 trollius===2.1
-txaio===2.2.2
+txaio===2.3.1
 tzlocal===1.2.2
 unicodecsv===0.14.1
 unittest2===1.1.0
 uritemplate===0.6
-urllib3===1.15
+urllib3===1.15.1
 virtualenv===15.0.1
 voluptuous===0.8.10
 waitress===0.8.10
@@ -382,7 +383,7 @@ weakrefmethod===1.0.2;python_version=='2.7'
 webcolors===1.5
 websocket-client===0.35.0
 websockify===0.8.0
-wrapt===1.10.7
+wrapt===1.10.8
 ws4py===0.3.4
 wsgi-intercept===1.2.2
 xattr===0.8.0
