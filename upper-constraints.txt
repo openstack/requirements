@@ -1,5 +1,5 @@
 APScheduler===3.1.0
-Babel===2.3.3
+Babel===2.2.0
 CouchDB===1.0.1
 Django===1.8.12
 Flask===0.10.1
