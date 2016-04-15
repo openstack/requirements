@@ -15,7 +15,7 @@ Pillow===3.2.0
 Pint===0.7.2
 PuLP===1.6.1
 PyECLib===1.2.0
-PyKMIP===0.4.1
+PyKMIP===0.5.0
 PyMySQL===0.7.2
 PyYAML===3.11
 Pygments===2.1.3
@@ -28,7 +28,7 @@ Twisted===16.1.1
 WSME===0.8.0
 WebOb===1.6.0
 WebTest===2.0.21
-Werkzeug===0.11.5
+Werkzeug===0.11.7
 XStatic===1.0.1
 XStatic-Angular===1.3.18.1
 XStatic-Angular-Bootstrap===0.11.0.2
@@ -59,7 +59,7 @@ XStatic-smart-table===1.4.5.3
 XStatic-term.js===0.0.7.0
 XenAPI===1.2
 aioeventlet===0.5.1
-alembic===0.8.5
+alembic===0.8.6
 amqp===1.4.9
 anyjson===0.3.3
 aodhclient===0.4.0
@@ -119,7 +119,7 @@ dogpile.cache===0.5.7
 dogpile.core===0.4.1
 ecdsa===0.13
 elasticsearch===1.9.0
-enum34===1.1.2
+enum34===1.1.3
 eventlet===0.18.4
 extras===0.0.3
 fairy-slipper===0.2.0
@@ -236,7 +236,7 @@ pager===3.3
 paramiko===1.16.0
 passlib===1.6.5
 pathlib===1.0.1;python_version=='2.7'
-pbr===1.9.0
+pbr===1.9.1
 pecan===1.0.5
 pexpect===4.0.1
 pika===0.10.0
@@ -283,7 +283,7 @@ python-dateutil===2.5.2
 python-designateclient===2.1.0
 python-editor===1.0
 python-glanceclient===2.0.0
-python-heatclient===1.1.0
+python-heatclient===1.2.0
 python-ironic-inspector-client===1.6.0
 python-ironicclient===1.3.0
 python-k8sclient===0.1.0
@@ -339,7 +339,7 @@ simplejson===3.8.2
 singledispatch===3.4.0.3
 six===1.10.0
 smmap===0.9.0
-sockjs-tornado===1.0.2
+sockjs-tornado===1.0.3
 sphinxcontrib-blockdiag===1.5.5
 sphinxcontrib-httpdomain===1.4.0
 sphinxcontrib-pecanwsme===0.8.0
