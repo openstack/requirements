@@ -57,6 +57,7 @@ openstack/murano
 openstack/murano-agent
 openstack/murano-dashboard
 openstack/networking-bagpipe
+openstack/networking-generic-switch
 openstack/networking-hyperv
 openstack/networking-l2gw
 openstack/networking-midonet
