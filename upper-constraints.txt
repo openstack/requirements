@@ -182,7 +182,7 @@ mox3===0.14.0
 msgpack-python===0.4.7
 netaddr===0.7.18
 netifaces===0.10.4
-netmiko===0.4.3
+netmiko===0.3.4
 networkx===1.11
 neutron-lib===0.1.0
 nodeenv===0.13.6
