@@ -357,6 +357,7 @@ virtualenv  # MIT
 wrapt>=1.7.0 # BSD License
 WebTest>=2.0  # MIT
 Werkzeug>=0.7  # BSD License
+xmltodict>=0.10.1  # MIT
 wsgi_intercept>=0.6.1 # MIT License
 xvfbwrapper>=0.1.3 #license: MIT
 zake>=0.1.6 # Apache-2.0
