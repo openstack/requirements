@@ -89,6 +89,7 @@ openstack/os-cloud-config
 openstack/os-collect-config
 openstack/os-refresh-config
 openstack/os-testr
+openstack/os-vif
 openstack/os-win
 openstack/osc-lib
 openstack/oslo.cache

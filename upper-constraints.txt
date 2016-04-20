@@ -202,6 +202,7 @@ os-collect-config===0.1.37
 os-net-config===0.2.4
 os-refresh-config===0.1.11
 os-testr===0.6.0
+os-vif===1.0.0
 os-win===0.4.2
 oslo.cache===1.7.0
 oslo.concurrency===3.8.0
