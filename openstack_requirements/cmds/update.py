@@ -138,8 +138,24 @@ def _sync_requirements_file(
                     # less in globals
                     changes.append(Change(req[0].package, req[1], ''))
                 elif req[0] != ref[0]:
-                    # A change on this entry
-                    changes.append(Change(req[0].package, req[1], ref[1]))
+                    # NOTE(jamielennox): extras are allowed to be specified in
+                    # a project's requirements and the version be updated and
+                    # extras maintained. Create a new ref object the same as
+                    # the original but with the req's extras.
+
+                    merged_ref = requirement.Requirement(ref[0].package,
+                                                         ref[0].location,
+                                                         ref[0].specifiers,
+                                                         ref[0].markers,
+                                                         ref[0].comment,
+                                                         req[0].extras)
+
+                    ref = (merged_ref, merged_ref.to_line())
+
+                    if req[0] != ref[0]:
+                        # A change on this entry
+                        changes.append(Change(req[0].package, req[1], ref[1]))
+
                 if ref:
                     output_requirements.append(ref[0])
         elif softupdate:

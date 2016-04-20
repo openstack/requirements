@@ -40,6 +40,20 @@ class Requirement(collections.namedtuple('Requirement',
             cls, package, location, specifiers, markers, comment,
             frozenset(extras or ()))
 
+    def to_line(self, marker_sep=';', line_prefix=''):
+        comment_p = ' ' if self.package else ''
+        comment = (comment_p + self.comment if self.comment else '')
+        marker = marker_sep + self.markers if self.markers else ''
+        package = line_prefix + self.package if self.package else ''
+        location = self.location + '#egg=' if self.location else ''
+        extras = '[%s]' % ",".join(sorted(self.extras)) if self.extras else ''
+        return '%s%s%s%s%s%s\n' % (location,
+                                   package,
+                                   extras,
+                                   self.specifiers,
+                                   marker,
+                                   comment)
+
 
 Requirements = collections.namedtuple('Requirements', ['reqs'])
 
@@ -135,13 +149,7 @@ def to_content(reqs, marker_sep=';', line_prefix='', prefix=True):
     if prefix:
         lines += _REQS_HEADER
     for req in reqs.reqs:
-        comment_p = ' ' if req.package else ''
-        comment = (comment_p + req.comment if req.comment else '')
-        marker = marker_sep + req.markers if req.markers else ''
-        package = line_prefix + req.package if req.package else ''
-        location = req.location + '#egg=' if req.location else ''
-        lines.append('%s%s%s%s%s\n' % (
-            location, package, req.specifiers, marker, comment))
+        lines.append(req.to_line(marker_sep, line_prefix))
     return u''.join(lines)
 
 
