@@ -383,6 +383,7 @@ weakrefmethod===1.0.2;python_version=='2.7'
 webcolors===1.5
 websocket-client===0.37.0
 websockify===0.8.0
+watchdog===0.8.3
 wrapt===1.10.8
 ws4py===0.3.4
 wsgi-intercept===1.2.2
