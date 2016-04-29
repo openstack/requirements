@@ -341,6 +341,7 @@ singledispatch===3.4.0.3
 six===1.10.0
 smmap===0.9.0
 sockjs-tornado===1.0.3
+spec_cleaner===0.8.2
 sphinxcontrib-blockdiag===1.5.5
 sphinxcontrib-httpdomain===1.4.0
 sphinxcontrib-pecanwsme===0.8.0
