@@ -338,6 +338,7 @@ following tools to search for packages:
 
  - Ubuntu - http://packages.ubuntu.com/
  - Fedora - https://apps.fedoraproject.org/packages/
+ - SUSE - https://build.opensuse.org/project/show/devel:languages:python
 
 For ``upper-constraints.txt`` changes
 -------------------------------------
