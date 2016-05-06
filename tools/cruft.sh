@@ -82,7 +82,7 @@ set +x
 
 # Loop over the set of package names from the global requirements list.
 for CANDIDATE in $(
-    sed -e '/^\($\|#\)/d' -e 's/^\([^<>=! ]*\).*/\1/' global-requirements.txt
+    sed -e '/^\($\|#\)/d' -e 's/^\([^<>=!; ]*\).*/\1/' global-requirements.txt
 ); do
     # Search for the package name in the set of project requirements,
     # normalizing hyphens to underscores, and output the package name if
