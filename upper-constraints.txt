@@ -47,7 +47,6 @@ XStatic-JQuery.quicksearch===2.0.3.1
 XStatic-JSEncrypt===2.0.0.2
 XStatic-Jasmine===2.4.1.1
 XStatic-Magic-Search===0.2.5.1
-XStatic-QUnit===1.14.0.2
 XStatic-Rickshaw===1.5.0.0
 XStatic-Spin===1.2.5.2
 XStatic-bootswatch===3.3.6.0
