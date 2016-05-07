@@ -61,7 +61,6 @@ GitPython>=1.0.1 # BSD License (3 clause)
 happybase>=0.5,!=0.7;python_version=='2.7'  # MIT
 heat-translator>=0.4.0 # Apache-2.0
 httplib2>=0.7.5  # MIT
-influxdb>=2.2.0                       # MIT License
 ironic-lib>=1.3.0  # Apache-2.0
 ironic-discoverd>=1.0.0                # Apache-2.0
 ipaddress>=1.0.7;python_version<'3.3'  # PSF
