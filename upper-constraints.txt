@@ -364,6 +364,7 @@ tornado===4.3
 tosca-parser===0.5.0
 traceback2===1.4.0
 treq===15.1.0
+tripleo-common===2.0.0
 tripleo-image-elements===0.8.10
 trollius===2.1
 txaio===2.5.1
