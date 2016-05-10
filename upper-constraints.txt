@@ -205,7 +205,7 @@ os-collect-config===0.1.37
 os-net-config===0.2.4
 os-refresh-config===0.1.11
 os-testr===0.6.0
-os-win===0.4.1
+os-win===0.4.2
 oslo.cache===1.7.0
 oslo.concurrency===3.8.0
 oslo.config===3.9.0
@@ -256,7 +256,7 @@ pyasn1-modules===0.0.8
 pycadf===2.2.0
 pycparser===2.14
 pycrypto===2.6.1
-pyghmi===1.0.2
+pyghmi===1.0.3
 pyinotify===0.9.6
 pykerberos===1.1.10;python_version=='2.7'
 pylxd===2.0.0
@@ -286,7 +286,7 @@ python-heatclient===1.2.0
 python-ironic-inspector-client===1.6.0
 python-ironicclient===1.3.0
 python-k8sclient===0.1.0
-python-keystoneclient===2.3.1
+python-keystoneclient===3.0.0
 python-ldap===2.4.25;python_version=='2.7'
 python-magnumclient===2.1.0
 python-manilaclient===1.8.1
@@ -359,7 +359,6 @@ testscenarios===0.5.0
 testtools===2.1.0
 thrift===0.9.3;python_version=='2.7'
 toml===0.9.1
-toolz===0.7.4
 tooz===1.35.0
 tornado===4.3
 tosca-parser===0.5.0
