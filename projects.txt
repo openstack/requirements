@@ -41,6 +41,7 @@ openstack/ironic-python-agent
 openstack/keystone
 openstack/keystoneauth
 openstack/keystonemiddleware
+openstack/kingbird
 openstack/kolla
 openstack/kolla-mesos
 openstack/kosmos
