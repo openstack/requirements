@@ -36,7 +36,7 @@ django-bootstrap-form  # BSD
 django_compressor>=2.0  # MIT
 django-formtools  # BSD
 django_openstack_auth>=2.2.0  # Apache-2.0
-dnspython>=1.12.0;python_version<'3.0'  # http://www.dnspython.org/LICENSE
+dnspython>=1.12.0,!=1.13.0;python_version<'3.0'  # http://www.dnspython.org/LICENSE
 dnspython3>=1.12.0;python_version>='3.0'  # http://www.dnspython.org/LICENSE
 dogpile.cache>=0.5.7  # BSD
 elasticsearch>=1.3.0,<2.0  # Apache-2.0
