@@ -231,7 +231,7 @@ overtest===0.14.0
 ovs===2.5.0;python_version=='2.7'
 packaging===16.7
 pager===3.3
-paramiko===1.16.0
+paramiko===2.0.0
 passlib===1.6.5
 pathlib===1.0.1;python_version=='2.7'
 pbr===1.9.1
