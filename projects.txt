@@ -30,6 +30,7 @@ openstack/glance
 openstack/glance_store
 openstack/heat
 openstack/heat-translator
+openstack/higgins
 openstack/horizon
 openstack/i18n
 openstack/ironic
