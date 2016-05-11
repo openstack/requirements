@@ -11,8 +11,6 @@ openstack/barbican
 openstack/bifrost
 openstack/blazar-nova
 openstack/castellan
-openstack/ceilometer
-openstack/ceilometermiddleware
 openstack/cinder
 openstack/cliff
 openstack/congress
@@ -109,7 +107,6 @@ openstack/oslotest
 openstack/pycadf
 openstack/python-barbicanclient
 openstack/python-blazarclient
-openstack/python-ceilometerclient
 openstack/python-cinderclient
 openstack/python-congressclient
 openstack/python-cueclient
