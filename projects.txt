@@ -41,7 +41,6 @@ openstack/keystoneauth
 openstack/keystonemiddleware
 openstack/kingbird
 openstack/kolla
-openstack/kolla-mesos
 openstack/kosmos
 openstack/kuryr
 openstack/magnum
