@@ -247,6 +247,12 @@ General Review Criteria
   them today. Entries in the blacklist should have a comment explaining the
   reason for blacklisting.
 
+- Reviews that only update ``projects.txt`` should be workflow approved
+  alongside or before other reviews in order to have the OpenStack Proposal Bot
+  propagation be useful as soon as possible for the other projects. For project
+  removal or addition, the +1 from the current PTL (or core if the PTL proposed
+  the change) should be enough.
+
 For new Requirements
 --------------------
 
