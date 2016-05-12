@@ -45,6 +45,7 @@ openstack/kolla
 openstack/kosmos
 openstack/kuryr
 openstack/magnum
+openstack/magnum-ui
 openstack/manila
 openstack/manila-image-elements
 openstack/manila-ui
