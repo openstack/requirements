@@ -53,7 +53,7 @@ XStatic-Spin===1.2.5.2
 XStatic-bootswatch===3.3.6.0
 XStatic-jQuery===1.10.2.1
 XStatic-jquery-ui===1.11.0.1
-XStatic-mdi===1.1.70.1
+XStatic-mdi===1.4.57.0
 XStatic-roboto-fontface===0.4.3.2
 XStatic-smart-table===1.4.5.3
 XStatic-term.js===0.0.7.0
