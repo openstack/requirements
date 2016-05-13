@@ -148,7 +148,6 @@ openstack/sahara
 openstack/sahara-dashboard
 openstack/sahara-extra
 openstack/sahara-image-elements
-openstack/sahara-tests
 openstack/searchlight
 openstack/senlin
 openstack/senlin-dashboard
