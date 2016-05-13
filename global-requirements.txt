@@ -303,7 +303,7 @@ fixtures>=1.3.1,<2.0  # Apache-2.0/BSD
 freezegun  # Apache-2.0
 gabbi>=1.11.0  # Apache-2.0
 hgtools  # MIT # dependency of pytest-runner that is only in setup_requires
-kafka-python>=0.9.5 # Apache-2.0
+kafka-python>=0.9.5,<1.0.0 # Apache-2.0
 keyring>=5.5.1  # MIT/PSF
 ldappool>=1.0;python_version=='2.7' # MPL
 mimic>=2.0.0  # Apache-2.0
