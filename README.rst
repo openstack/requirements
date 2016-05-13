@@ -337,13 +337,14 @@ but will not introduce any changes that would make it impossible to
 run on the latest Ubuntu LTS or latest RHEL.
 
 As such we really need to know what the current state of packaging is
-on these platforms (and ideally Debian and SUSE as well).
+on these platforms (and ideally Debian, Gentoo, and SUSE as well).
 
 For people unfamiliar with Linux Distro packaging you can use the
 following tools to search for packages:
 
  - Ubuntu - http://packages.ubuntu.com/
  - Fedora - https://apps.fedoraproject.org/packages/
+ - Gentoo - https://packages.gentoo.org/
  - SUSE - https://build.opensuse.org/project/show/devel:languages:python
 
 For ``upper-constraints.txt`` changes
