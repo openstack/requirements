@@ -132,7 +132,6 @@ futurist===0.14.0
 gabbi===1.19.0
 gitdb===0.6.4
 glance-store===0.13.1
-gnocchiclient===2.3.0
 google-api-python-client===1.5.0
 graphviz===0.4.10
 greenlet===0.4.9
