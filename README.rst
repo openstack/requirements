@@ -107,8 +107,8 @@ in ``projects.txt``) are expected to run a requirements compatibility
 job. This job ensures that a project can not change any dependencies to
 versions not compatible with ``global-requirements.txt``. It also ensures that
 those projects can not add a requirement that is not already in
-``global-requirements.txt``. This job should be proposed to infra at the same
-time as proposing the change to ``projects.txt`` in
+``global-requirements.txt``. This ``check-requirements`` job should
+be merged in infra before proposing the change to ``projects.txt`` in
 ``openstack/requirements``.
 
 Automatic Sync of Accepted Requirements
