@@ -283,7 +283,7 @@ XStatic-roboto-fontface>=0.4.3.2 # Apache 2.0 License
 XStatic-smart-table>=1.4.5.3  # MIT License
 XStatic-Spin>=1.2.5.2  # MIT License
 XStatic-term.js>=0.0.4 # MIT License
-XStatic-Angular-FileUpload>=1.4.0.1  # MIT License
+XStatic-Angular-FileUpload>=12.0.4.0  # MIT License
 yaql>=1.1.0  # Apache 2.0 License
 
 # Testing tools below, which are typically in test-requires.txt
