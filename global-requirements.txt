@@ -308,7 +308,7 @@ gabbi>=1.11.0  # Apache-2.0
 hgtools  # MIT # dependency of pytest-runner that is only in setup_requires
 kafka-python>=0.9.5,<1.0.0 # Apache-2.0
 keyring>=5.5.1  # MIT/PSF
-ldappool>=1.0;python_version=='2.7' # MPL
+ldappool>=2.0.0 # MPL
 mimic>=2.0.0  # Apache-2.0
 # Do not make mock conditional on Python version: we depend on newer code than
 # in [most] releases of the Python std library.
