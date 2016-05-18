@@ -331,7 +331,7 @@ rfc3986===0.3.1
 rjsmin===1.0.12
 rsa===3.4.2
 rtslib-fb===2.1.58
-ryu===4.2
+ryu===4.0
 scp===0.10.2
 selenium===2.53.2
 semantic-version===2.5.0
