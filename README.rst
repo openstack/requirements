@@ -354,10 +354,17 @@ If the change was proposed by the OpenStack CI bot, then if the change has
 passed CI, only one reviewer is needed and they should +2 +A without thinking
 about things.
 
-If the change was not proposed by the OpenStack CI bot, and does not include a
-``global-requirements.txt`` change, then it should be rejected: the CI bot
-will generate an appropriate change itself. Ask in #openstack-infra if the
-bot needs to be run more quickly.
+If the change was not proposed by the OpenStack CI bot, and only
+changes the ``upper-constraints.txt`` entry for a new library release,
+then the change should be approved if it passes the tests. See the
+README.rst in openstack/releases for more details of the release
+process.
+
+If the change was not proposed by the OpenStack CI bot, and is not
+related to releasing one of our libraries, and does not include a
+``global-requirements.txt`` change, then it should be rejected: the CI
+bot will generate an appropriate change itself. Ask in
+#openstack-infra if the bot needs to be run more quickly.
 
 Otherwise the change may be the result of recalculating the constraints which
 changed when a ``global-requirements.txt`` change is proposed. In this case, ignore
