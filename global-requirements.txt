@@ -332,7 +332,6 @@ psycopg2>=2.5  # LGPL/ZPL
 pysendfile>=2.0.0  # MIT
 pysqlite;python_version=='2.7'  # zlib/libpng
 python-consul>=0.4.7  # MIT License
-python-ldap>=2.4;python_version=='2.7'  # PSF
 python-subunit>=0.0.18  # Apache-2.0/BSD
 python-pytun>=2.2.1 # MIT
 pyzmq>=14.3.1 # LGPL+BSD
