@@ -178,7 +178,7 @@ netaddr===0.7.18
 netifaces===0.10.4
 netmiko===0.5.1
 networkx===1.11
-neutron-lib===0.1.0
+neutron-lib===0.2.0
 nodeenv===0.13.6
 nose===1.3.7
 nose-exclude===0.4.1
