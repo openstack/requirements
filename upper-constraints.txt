@@ -364,7 +364,7 @@ testscenarios===0.5.0
 testtools===2.2.0
 thrift===0.9.3;python_version=='2.7'
 toml===0.9.1
-tooz===1.36.0
+tooz===1.37.0
 tornado===4.3
 tosca-parser===0.5.0
 traceback2===1.4.0
