@@ -354,7 +354,7 @@ stevedore===1.14.0
 suds-jurko===0.6
 sysv-ipc===0.7.0
 tablib===0.11.2
-taskflow===1.32.0
+taskflow===2.0.0
 tempest===12.0.0
 tempest-lib===1.0.0
 termcolor===1.1.0
