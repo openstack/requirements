@@ -168,6 +168,7 @@ openstack/tempest
 openstack/tempest-lib
 openstack/tooz
 openstack/tosca-parser
+openstack/tricircle
 openstack/tripleo-common
 openstack/trove
 openstack/vmware-nsx
