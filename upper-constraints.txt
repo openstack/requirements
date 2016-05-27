@@ -105,7 +105,7 @@ django-babel===0.5.1
 django-compressor===2.0
 django-formtools===1.0
 django-nose===1.4.3
-django-openstack-auth===2.2.1
+django-openstack-auth===2.3.0
 django-pyscss===2.0.2
 dnspython===1.12.0;python_version=='2.7'
 dnspython3===1.12.0;python_version=='3.4'

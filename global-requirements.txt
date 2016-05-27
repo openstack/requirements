@@ -34,7 +34,7 @@ Django>=1.8,<1.9  # BSD
 django-babel>=0.5.1  # BSD
 django_compressor>=2.0  # MIT
 django-formtools  # BSD
-django_openstack_auth>=2.2.0  # Apache-2.0
+django_openstack_auth>=2.3.0  # Apache-2.0
 dnspython>=1.12.0,!=1.13.0;python_version<'3.0'  # http://www.dnspython.org/LICENSE
 dnspython3>=1.12.0;python_version>='3.0'  # http://www.dnspython.org/LICENSE
 dogpile.cache>=0.5.7  # BSD
