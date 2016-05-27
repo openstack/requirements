@@ -92,7 +92,6 @@ contextlib2===0.5.3
 coverage===4.1
 croniter===0.3.12
 cryptography===1.3.2
-dcos===0.4.5
 ddt===1.0.3
 debtcollector===1.4.0
 decorator===4.0.9
@@ -229,7 +228,6 @@ overtest===0.14.0
 ovs===2.5.0;python_version=='2.7'
 ovs===2.6.0.dev1;python_version=='3.4'
 packaging===16.7
-pager===3.3
 paramiko===2.0.0
 passlib===1.6.5
 pathlib===1.0.1;python_version=='2.7'
@@ -241,7 +239,6 @@ pifpaf===0.4.0
 pika===0.10.0
 pika-pool===0.1.3
 ply===3.8
-portalocker===0.5.7
 positional===1.1.0
 posix-ipc===1.0.0
 prettytable===0.7.2
@@ -267,7 +264,6 @@ pymemcache===1.3.5
 pymongo===3.2.2
 pyngus===2.0.3
 pyparsing===2.1.4
-pypng===0.0.18
 pyroute2===0.4.1
 pysaml2===4.0.2
 pysendfile===2.0.1
@@ -363,7 +359,6 @@ testresources===2.0.0
 testscenarios===0.5.0
 testtools===2.2.0
 thrift===0.9.3;python_version=='2.7'
-toml===0.9.1
 tooz===1.37.0
 tornado===4.3
 tosca-parser===0.5.0
