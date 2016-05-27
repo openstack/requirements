@@ -157,6 +157,8 @@ openstack/senlin
 openstack/senlin-dashboard
 openstack/smaug
 openstack/smaug-dashboard
+openstack/solum
+openstack/solum-dashboard
 openstack/stevedore
 openstack/swauth
 openstack/swift
