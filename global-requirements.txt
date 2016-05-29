@@ -132,7 +132,7 @@ PasteDeploy>=1.5.0  # MIT
 pbr>=1.6  # Apache-2.0
 pecan>=1.0.0  # BSD
 pexpect>=3.1,!=3.3 # ISC License
-pifpaf>=0.0.7  # Apache-2.0
+pifpaf>=0.4.0  # Apache-2.0
 pika>=0.10.0  # BSD
 pika-pool>=0.1.3  # BSD
 Pillow>=2.4.0  # PIL License
