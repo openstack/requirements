@@ -10,3 +10,4 @@ ChangeLog
 dist
 .eggs
 *.egg
+*.pot
