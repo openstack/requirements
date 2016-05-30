@@ -141,7 +141,7 @@ posix_ipc  # BSD
 PrettyTable>=0.7,<0.8  # BSD
 psutil>=1.1.1,<2.0.0  # BSD
 pyasn1  # BSD
-pyasn1_modules  # BSD
+pyasn1-modules  # BSD
 pycadf>=1.1.0,!=2.0.0  # Apache-2.0
 pycrypto>=2.6  # Public Domain
 PyECLib>=1.2.0                          # BSD
