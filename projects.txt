@@ -132,6 +132,7 @@ openstack/python-monascaclient
 openstack/python-muranoclient
 openstack/python-neutronclient
 openstack/python-novaclient
+openstack/python-oneviewclient
 openstack/python-openstackclient
 openstack/python-openstacksdk
 openstack/python-saharaclient
