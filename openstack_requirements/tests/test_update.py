@@ -19,6 +19,7 @@ import sys
 import textwrap
 
 import fixtures
+import mock
 import testscenarios
 import testtools
 from testtools import matchers
@@ -216,7 +217,8 @@ Syncing setup.py
 
 class TestMain(testtools.TestCase):
 
-    def test_smoke(self):
+    @mock.patch('os.path.isdir', return_value=True)
+    def test_smoke(self, mock_isdir):
         def check_params(
                 root, source, suffix, softupdate, hacking, stdout, verbose,
                 non_std_reqs):
@@ -232,14 +234,29 @@ class TestMain(testtools.TestCase):
         with fixtures.EnvironmentVariable('NON_STANDARD_REQS', '1'):
             update.main(
                 ['--source', '/dev/null', '/dev/zero'], _worker=check_params)
+        self.expectThat(mock_isdir.called, matchers.Equals(True))
 
-    def test_suffix(self):
+    @mock.patch('os.path.isdir', return_value=True)
+    def test_suffix(self, mock_isdir):
         def check_params(
                 root, source, suffix, softupdate, hacking, stdout, verbose,
                 non_std_reqs):
             self.expectThat(suffix, matchers.Equals('global'))
 
         update.main(['-o', 'global', '/dev/zero'], _worker=check_params)
+        self.expectThat(mock_isdir.called, matchers.Equals(True))
+
+    def test_isdirectory(self):
+        def never_called(
+                root, source, suffix, softupdate, hacking, stdout, verbose,
+                non_std_reqs):
+            self.expectThat(False, matchers.Equals(True),
+                            message=("update.main() should riase an "
+                                     "excpetion before getting here"))
+
+        with testtools.ExpectedException(Exception,
+                                         "/dev/zero is not a directory"):
+            update.main(['/dev/zero'], _worker=never_called)
 
 
 class TestSyncRequirementsFile(testtools.TestCase):
