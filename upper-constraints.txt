@@ -56,7 +56,6 @@ XStatic-roboto-fontface===0.4.3.2
 XStatic-smart-table===1.4.5.3
 XStatic-term.js===0.0.7.0
 XenAPI===1.2
-aioeventlet===0.5.1
 alembic===0.8.6
 amqp===1.4.9
 anyjson===0.3.3
