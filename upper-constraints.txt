@@ -271,7 +271,7 @@ pystache===0.5.4
 pytest===2.9.1
 python-barbicanclient===4.0.1
 python-ceilometerclient===2.4.0
-python-cinderclient===1.7.1
+python-cinderclient===1.6.0
 python-congressclient===1.2.3
 python-consul===0.6.0
 python-dateutil===2.5.3
