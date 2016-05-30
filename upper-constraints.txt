@@ -361,7 +361,6 @@ virtualenv===15.0.2
 voluptuous===0.8.11
 waitress===0.9.0
 warlock===1.2.0
-weakrefmethod===1.0.2;python_version=='2.7'
 webcolors===1.5
 websocket-client===0.37.0
 websockify===0.8.0
