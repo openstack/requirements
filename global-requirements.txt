@@ -251,7 +251,6 @@ WebOb>=1.2.3  # MIT
 websocket-client>=0.32.0 # LGPLv2+
 websockify>=0.8.0  # LGPLv3
 wheel  # MIT
-watchdog>=0.8.2  # Apache-2.0
 PyMI>=1.0.0;sys_platform=='win32' # Apache 2.0 License
 wmi;sys_platform=='win32'  # MIT
 WSME>=0.8  # MIT
