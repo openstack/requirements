@@ -254,7 +254,7 @@ pycrypto===2.6.1
 pydotplus===2.0.2
 pyghmi===1.0.6
 pyinotify===0.9.6
-pykerberos===1.1.11;python_version=='2.7'
+pykerberos===1.1.10;python_version=='2.7'
 pyldap===2.4.25.1
 pylxd===2.0.1
 pymemcache===1.3.5
