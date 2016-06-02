@@ -151,7 +151,7 @@ jsonschema===2.5.1
 kafka-python===0.9.5
 kazoo===2.2.1
 keyring===9.0
-keystoneauth1===2.7.0
+keystoneauth1===2.8.0
 keystonemiddleware===4.5.1
 klein===15.3.1
 kombu===3.0.35
