@@ -3,7 +3,7 @@ Babel===2.3.4
 CouchDB===1.0.1
 Django===1.8.13
 Flask===0.10.1
-GitPython===2.0.3
+GitPython===2.0.5
 Jinja2===2.8
 Mako===1.0.4
 MarkupSafe===0.23
@@ -21,10 +21,9 @@ PyYAML===3.11
 Pygments===2.1.3
 Routes===2.3.1
 SQLAlchemy===1.0.13
-SQLAlchemy-Utils===0.32.6
+SQLAlchemy-Utils===0.32.7
 Sphinx===1.2.3
 Tempita===0.5.2
-Twisted===16.2.0
 WSME===0.8.0
 WebOb===1.6.1
 WebTest===2.0.21
@@ -63,7 +62,6 @@ aodhclient===0.5.0
 appdirs===1.4.0
 argh===0.26.2
 astroid===1.3.8
-attrs===16.0.0
 autobahn===0.14.1
 automaton===1.2.0
 backports-abc===0.4
@@ -81,7 +79,6 @@ ceilometermiddleware===0.4.0
 certifi===2016.2.28;python_version=='2.7'
 cffi===1.6.0
 chardet===2.3.0
-click===6.6
 cliff===2.0.0
 cliff-tablib===2.0
 cmd2===0.6.8
@@ -91,7 +88,7 @@ coverage===4.1
 crc16===0.1.1
 croniter===0.3.12
 cryptography===1.3.2
-ddt===1.0.3
+ddt===1.1.0
 debtcollector===1.4.0
 decorator===4.0.9
 demjson===2.2.4
@@ -128,7 +125,7 @@ funcsigs===1.0.2;python_version=='2.7'
 functools32===3.2.3.post2;python_version=='2.7'
 futures===3.0.5
 futurist===0.14.0
-gabbi===1.19.0
+gabbi===1.20.0
 gitdb===0.6.4
 glance-store===0.13.1
 google-api-python-client===1.5.1
@@ -142,7 +139,7 @@ ipaddress===1.0.16;python_version=='2.7'
 ironic-lib===1.3.0
 iso8601===0.1.11
 itsdangerous===0.24
-jsonpatch===1.13
+jsonpatch===1.14
 jsonpath-rw===1.4.0
 jsonpath-rw-ext===1.0.0
 jsonpointer===1.10
@@ -153,7 +150,6 @@ kazoo===2.2.1
 keyring===9.0
 keystoneauth1===2.8.0
 keystonemiddleware===4.5.1
-klein===15.3.1
 kombu===3.0.35
 ldap3===1.3.1
 ldappool===2.0.0
@@ -182,7 +178,7 @@ nosexcover===1.0.10
 notifier===1.0.3
 numpy===1.11.0
 oauth2client===2.1.0
-oauthlib===1.1.1
+oauthlib===1.1.2
 openstack-doc-tools===0.34.0
 openstack.nose-plugin===0.11
 openstackdocstheme===1.3.0
@@ -252,7 +248,7 @@ pycrypto===2.6.1
 pydotplus===2.0.2
 pyghmi===1.0.6
 pyinotify===0.9.6
-pykerberos===1.1.10;python_version=='2.7'
+pykerberos===1.1.12;python_version=='2.7'
 pyldap===2.4.25.1
 pylxd===2.0.1
 pymemcache===1.3.5
@@ -267,7 +263,7 @@ pysmi===0.0.7
 pysnmp===4.3.2
 pysqlite===2.8.2;python_version=='2.7'
 pystache===0.5.4
-pytest===2.9.1
+pytest===2.9.2
 python-barbicanclient===4.0.1
 python-ceilometerclient===2.4.0
 python-cinderclient===1.8.0
@@ -279,7 +275,7 @@ python-editor===1.0
 python-glanceclient===2.0.0
 python-heatclient===1.2.0
 python-ironic-inspector-client===1.7.0
-python-ironicclient===1.3.0
+python-ironicclient===1.3.1
 python-k8sclient===0.2.0
 python-keystoneclient===3.1.0
 python-magnumclient===2.1.0
@@ -310,7 +306,7 @@ qpid-python===0.32.1;python_version=='2.7'
 rcssmin===1.0.6
 redis===2.10.5
 repoze.lru===0.6
-repoze.who===2.2
+repoze.who===2.3
 requests===2.10.0
 requests-aws===0.1.8
 requests-kerberos===0.10.0;python_version=='2.7'
@@ -328,7 +324,6 @@ scp===0.10.2
 selenium===2.53.2
 semantic-version===2.5.0
 seqdiag===0.9.5
-service-identity===16.0.0
 simplegeneric===0.8.1
 simplejson===3.8.2
 singledispatch===3.4.0.3
@@ -359,7 +354,6 @@ tooz===1.37.0
 tornado===4.3
 tosca-parser===0.5.0
 traceback2===1.4.0
-treq===15.1.0
 tripleo-common===2.0.0
 trollius===2.1
 txaio===2.5.1
@@ -381,7 +375,7 @@ wrapt===1.10.8
 ws4py===0.3.4
 wsgi-intercept===1.2.2
 xattr===0.8.0
-xmltodict===0.10.1
+xmltodict===0.10.2
 xvfbwrapper===0.2.8
 yaql===1.1.0
 zake===0.2.2
