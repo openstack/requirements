@@ -227,7 +227,6 @@ ryu>=3.30,!=4.1,!=4.2,!=4.2.1 # Apache-2.0
 semantic_version>=2.3.1  # BSD
 fasteners>=0.7  # Apache-2.0
 simplejson>=2.2.0  # MIT
-singledispatch>=3.4.0.3  # MIT
 six>=1.9.0  # MIT
 sockjs-tornado>=1.0.0,<2.0.0  # MIT
 SQLAlchemy>=1.0.10,<1.1.0  # MIT
