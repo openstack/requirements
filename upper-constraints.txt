@@ -261,7 +261,6 @@ pysaml2===4.0.2
 pysendfile===2.0.1
 pysmi===0.0.7
 pysnmp===4.3.2
-pysqlite===2.8.2;python_version=='2.7'
 pystache===0.5.4
 pytest===2.9.2
 python-barbicanclient===4.0.1
