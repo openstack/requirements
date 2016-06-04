@@ -290,7 +290,7 @@ python-novaclient===4.0.0
 python-openstackclient===2.5.0
 python-pytun===2.2.1
 python-qpid-proton===0.10
-python-saharaclient===0.14.0
+python-saharaclient===0.15.0
 python-searchlightclient===0.2.1
 python-senlinclient===0.4.1
 python-smaugclient===0.0.4
