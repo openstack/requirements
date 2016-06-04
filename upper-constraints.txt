@@ -60,11 +60,9 @@ amqp===1.4.9
 anyjson===0.3.3
 aodhclient===0.5.0
 appdirs===1.4.0
-argh===0.26.2
 astroid===1.3.8
 autobahn===0.14.1
 automaton===1.2.0
-backports-abc===0.4
 backports.ssl-match-hostname===3.5.0.1;python_version=='2.7'
 bandit===1.0.1
 bashate===0.5.1
@@ -76,7 +74,6 @@ cachetools===1.1.6
 cassandra-driver===3.4.1
 castellan===0.4.0
 ceilometermiddleware===0.4.0
-certifi===2016.2.28;python_version=='2.7'
 cffi===1.6.0
 chardet===2.3.0
 cliff===2.0.0
@@ -183,7 +180,7 @@ openstack.nose-plugin===0.11
 openstackdocstheme===1.3.0
 openstacksdk===0.8.6
 ordereddict===1.1
-os-api-ref===0.2.0
+os-api-ref===0.3.0
 os-apply-config===0.1.32
 os-brick===1.3.0
 os-client-config===1.18.0
@@ -220,9 +217,8 @@ packaging===16.7
 paramiko===2.0.0
 passlib===1.6.5
 pathlib===1.0.1;python_version=='2.7'
-pathtools===0.1.2
 pbr===1.10.0
-pecan===1.1.0
+pecan===1.1.1
 pexpect===4.1.0
 pifpaf===0.4.0
 pika===0.10.0
@@ -307,7 +303,6 @@ requests===2.10.0
 requests-aws===0.1.8
 requests-kerberos===0.10.0;python_version=='2.7'
 requests-mock===1.0.0
-requests-unixsocket===0.1.4
 requestsexceptions===1.1.3
 restructuredtext-lint===0.14.3
 retrying===1.3.3
@@ -322,6 +317,7 @@ semantic-version===2.5.0
 seqdiag===0.9.5
 simplegeneric===0.8.1
 simplejson===3.8.2
+singledispatch===3.4.0.3;python_version=='2.7'
 six===1.10.0
 smmap===0.9.0
 spec-cleaner===0.8.8
@@ -345,7 +341,6 @@ testscenarios===0.5.0
 testtools===2.2.0
 thrift===0.9.3;python_version=='2.7'
 tooz===1.37.0
-tornado===4.3
 tosca-parser===0.5.0
 traceback2===1.4.0
 tripleo-common===2.0.0
@@ -364,7 +359,6 @@ webcolors===1.5
 websocket-client===0.37.0
 websockify===0.8.0
 wrapt===1.10.8
-ws4py===0.3.4
 wsgi-intercept===1.2.2
 xattr===0.8.0
 xmltodict===0.10.2
