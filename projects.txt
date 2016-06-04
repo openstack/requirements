@@ -112,6 +112,7 @@ openstack/oslo.vmware
 openstack/oslosphinx
 openstack/oslotest
 openstack/pycadf
+openstack/pymod2pkg
 openstack/python-barbicanclient
 openstack/python-blazarclient
 openstack/python-brick-cinderclient-ext
@@ -148,6 +149,7 @@ openstack/python-troveclient
 openstack/python-watcherclient
 openstack/python-zaqarclient
 openstack/rally
+openstack/renderspec
 openstack/requirements
 openstack/sahara
 openstack/sahara-dashboard
