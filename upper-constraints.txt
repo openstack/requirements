@@ -116,7 +116,6 @@ extras===1.0.0
 fairy-slipper===0.2.0
 falcon===1.0.0
 fasteners===0.14.1
-feedparser===5.2.1
 fixtures===3.0.0
 freezegun===0.3.7
 frozendict===0.6
