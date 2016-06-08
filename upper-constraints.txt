@@ -293,6 +293,7 @@ python-troveclient===2.2.0
 python-zaqarclient===1.0.0
 pytz===2016.4
 pyudev===0.20.0
+pyzabbix===0.7.4
 pyzmq===15.2.0
 qpid-python===0.32.1;python_version=='2.7'
 rcssmin===1.0.6
