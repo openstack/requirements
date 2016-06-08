@@ -12,6 +12,7 @@ libsqlite3-dev
 libzmq-dev
 libffi-dev
 libldap2-dev
+libkrb5-dev
 libsasl2-dev
 ccache
 pypy
