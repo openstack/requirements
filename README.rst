@@ -306,6 +306,13 @@ For new Requirements
   transition plan to drop the old library in a reasonable amount of
   time.
 
+- Is the library required for OpenStack project or related dev or
+  infrastructure setup? (Answer to this should be Yes, of course)
+  Which?
+
+  Please provide details such as gerrit change request or launchpad
+  bug/blueprint specifying the need for adding this library.
+
 .. _Licensing requirements: http://governance.openstack.org/reference/licensing.html
 
 For Upgrading Requirements Versions
