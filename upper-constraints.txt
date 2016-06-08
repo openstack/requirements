@@ -250,7 +250,7 @@ python-editor===0.5
 python-glanceclient===1.2.0
 python-heatclient===0.8.0
 python-ironic-inspector-client===1.3.0
-python-ironicclient===1.0.0
+python-ironicclient===0.8.2
 python-keystoneclient===1.7.2
 python-ldap===2.4.22;python_version=='2.7'
 python-magnumclient===1.1.0
