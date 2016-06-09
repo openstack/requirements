@@ -2,7 +2,7 @@ APScheduler===3.1.0
 Babel===2.3.4
 CouchDB===1.0.1
 Django===1.8.13
-Flask===0.10.1
+Flask===0.11.1
 GitPython===2.0.5
 Jinja2===2.8
 Mako===1.0.4
@@ -76,6 +76,7 @@ castellan===0.4.0
 ceilometermiddleware===0.4.0
 cffi===1.6.0
 chardet===2.3.0
+click===6.6
 cliff===2.0.0
 cliff-tablib===2.0
 cmd2===0.6.8
@@ -87,11 +88,11 @@ croniter===0.3.12
 cryptography===1.4
 ddt===1.1.0
 debtcollector===1.4.0
-decorator===4.0.9
+decorator===4.0.10
 demjson===2.2.4
 dib-utils===0.0.10
 discover===0.4.0
-diskimage-builder===1.16.1
+diskimage-builder===1.17.0
 django-appconf===1.0.2
 django-babel===0.5.1
 django-compressor===2.0
@@ -104,8 +105,7 @@ dnspython3===1.12.0;python_version=='3.4'
 doc8===0.7.0
 docker-py===1.7.2
 docutils===0.12
-dogpile.cache===0.5.7
-dogpile.core===0.4.1
+dogpile.cache===0.6.1
 elasticsearch===1.9.0
 enum34===1.1.6
 eventlet===0.19.0
@@ -260,7 +260,7 @@ pytest===2.9.2
 python-barbicanclient===4.0.1
 python-ceilometerclient===2.4.0
 python-cinderclient===1.8.0
-python-congressclient===1.2.3
+python-congressclient===1.3.0
 python-consul===0.6.0
 python-dateutil===2.5.3
 python-designateclient===2.1.0
@@ -285,7 +285,7 @@ python-pytun===2.2.1
 python-qpid-proton===0.10
 python-saharaclient===0.15.0
 python-searchlightclient===0.2.1
-python-senlinclient===0.4.1
+python-senlinclient===0.5.0
 python-smaugclient===0.0.4
 python-solumclient===2.0.1
 python-subunit===1.2.0
@@ -321,7 +321,7 @@ simplejson===3.8.2
 singledispatch===3.4.0.3;python_version=='2.7'
 six===1.10.0
 smmap===0.9.0
-spec-cleaner===0.8.8
+spec-cleaner===0.8.9
 sphinxcontrib-blockdiag===1.5.5
 sphinxcontrib-httpdomain===1.5.0
 sphinxcontrib-pecanwsme===0.8.0
