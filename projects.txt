@@ -146,6 +146,7 @@ openstack/python-swiftclient
 openstack/python-tackerclient
 openstack/python-tripleoclient
 openstack/python-troveclient
+openstack/python-vitrageclient
 openstack/python-watcherclient
 openstack/python-zaqarclient
 openstack/rally
@@ -176,6 +177,7 @@ openstack/tosca-parser
 openstack/tricircle
 openstack/tripleo-common
 openstack/trove
+openstack/vitrage
 openstack/vmware-nsx
 openstack/watcher
 openstack/zaqar
