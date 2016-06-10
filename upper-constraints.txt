@@ -139,7 +139,6 @@ jsonpatch===1.14
 jsonpath-rw===1.4.0
 jsonpath-rw-ext===1.0.0
 jsonpointer===1.10
-jsonrpclib===0.1.7
 jsonschema===2.5.1
 kafka-python===0.9.5
 kazoo===2.2.1
