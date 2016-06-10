@@ -208,7 +208,7 @@ os-refresh-config===0.1.11
 os-testr===0.6.0
 os-win===0.4.2
 oslo.cache===1.6.0
-oslo.concurrency===3.7.0
+oslo.concurrency===3.7.1
 oslo.config===3.9.0
 oslo.context===2.2.0
 oslo.db===4.7.0
