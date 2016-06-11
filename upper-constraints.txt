@@ -195,7 +195,7 @@ oslo.concurrency===3.9.0
 oslo.config===3.11.0
 oslo.context===2.4.0
 oslo.db===4.7.0
-oslo.i18n===3.6.0
+oslo.i18n===3.7.0
 oslo.log===3.8.0
 oslo.messaging===5.2.0
 oslo.middleware===3.12.0
