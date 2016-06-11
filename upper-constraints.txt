@@ -192,7 +192,7 @@ os-vif===1.0.0
 os-win===0.4.2
 oslo.cache===1.8.0
 oslo.concurrency===3.9.0
-oslo.config===3.10.0
+oslo.config===3.11.0
 oslo.context===2.4.0
 oslo.db===4.7.0
 oslo.i18n===3.6.0
