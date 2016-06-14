@@ -201,7 +201,7 @@ oslo.log===3.10.0
 oslo.messaging===5.4.0
 oslo.middleware===3.13.0
 oslo.policy===1.10.0
-oslo.privsep===1.7.0
+oslo.privsep===1.8.0
 oslo.reports===1.10.0
 oslo.rootwrap===4.3.0
 oslo.serialization===2.9.0
