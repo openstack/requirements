@@ -79,6 +79,7 @@ openstack/neutron-lib
 openstack/neutron-vpnaas
 openstack/nova
 openstack/nova-docker
+openstack/nova-lxd
 openstack/octavia
 openstack/openstack-doc-tools
 openstack/openstackdocstheme
