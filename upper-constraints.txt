@@ -160,6 +160,7 @@ mock===2.0.0
 monotonic===1.1
 mox===0.5.3
 mox3===0.16.0
+mpmath===0.19
 msgpack-python===0.4.7
 netaddr===0.7.18
 netifaces===0.10.4
@@ -331,6 +332,7 @@ sqlalchemy-migrate===0.10.0
 sqlparse===0.1.19
 stevedore===1.15.0
 suds-jurko===0.6
+sympy===0.7.6
 sysv-ipc===0.7.0
 tablib===0.11.2
 taskflow===2.1.0
