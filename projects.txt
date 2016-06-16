@@ -176,6 +176,7 @@ openstack/tooz
 openstack/tosca-parser
 openstack/tricircle
 openstack/tripleo-common
+openstack/tripleo-validations
 openstack/trove
 openstack/vitrage
 openstack/vmware-nsx
