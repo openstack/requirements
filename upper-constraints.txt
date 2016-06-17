@@ -77,7 +77,7 @@ ceilometermiddleware===0.4.0
 cffi===1.6.0
 chardet===2.3.0
 click===6.6
-cliff===2.0.0
+cliff===2.1.0
 cliff-tablib===2.0
 cmd2===0.6.8
 colorama===0.3.7
@@ -121,7 +121,7 @@ funcsigs===1.0.2;python_version=='2.7'
 functools32===3.2.3.post2;python_version=='2.7'
 futures===3.0.5
 futurist===0.14.0
-gabbi===1.22.0
+gabbi===1.23.0
 gitdb===0.6.4
 glance-store===0.13.1
 google-api-python-client===1.5.1
@@ -250,7 +250,7 @@ pymod2pkg===0.4.0
 pymongo===3.2.2
 pyngus===2.0.3
 pyparsing===2.1.5
-pyroute2===0.4.2
+pyroute2===0.4.3
 pysaml2===4.0.2
 pysendfile===2.0.1
 pysmi===0.0.7
@@ -279,7 +279,7 @@ python-mistralclient===2.0.0
 python-monascaclient===1.0.30
 python-muranoclient===0.8.4
 python-neutronclient===4.2.0
-python-novaclient===4.0.0
+python-novaclient===4.1.0
 python-openstackclient===2.6.0
 python-pytun===2.2.1
 python-qpid-proton===0.10
@@ -338,7 +338,7 @@ tempest===12.0.0
 tempest-lib===1.0.0
 termcolor===1.1.0
 testrepository===0.0.20
-testresources===2.0.0
+testresources===2.0.1
 testscenarios===0.5.0
 testtools===2.2.0
 thrift===0.9.3;python_version=='2.7'
@@ -349,7 +349,7 @@ tripleo-common===2.0.0
 trollius===2.1
 txaio===2.5.1
 tzlocal===1.2.2
-unicodecsv===0.14.1
+unicodecsv===0.14.1;python_version=='2.7'
 unittest2===1.1.0
 uritemplate===0.6
 urllib3===1.16
