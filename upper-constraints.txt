@@ -3,7 +3,7 @@ Babel===2.3.4
 CouchDB===1.0.1
 Django===1.8.13
 Flask===0.11.1
-GitPython===2.0.5
+GitPython===2.0.6
 Jinja2===2.8
 Mako===1.0.4
 MarkupSafe===0.23
@@ -74,7 +74,7 @@ cachetools===1.1.6
 cassandra-driver===3.4.1
 castellan===0.4.0
 ceilometermiddleware===0.4.0
-cffi===1.6.0
+cffi===1.7.0
 chardet===2.3.0
 click===6.6
 cliff===2.1.0
@@ -277,7 +277,7 @@ python-manilaclient===1.9.0
 python-memcached===1.58
 python-mimeparse===1.5.2
 python-mistralclient===2.0.0
-python-monascaclient===1.0.30
+python-monascaclient===1.1.0
 python-muranoclient===0.8.4
 python-neutronclient===4.2.0
 python-novaclient===4.1.0
@@ -332,7 +332,7 @@ sqlalchemy-migrate===0.10.0
 sqlparse===0.1.19
 stevedore===1.15.0
 suds-jurko===0.6
-sympy===0.7.6
+sympy===1.0
 sysv-ipc===0.7.0
 tablib===0.11.2
 taskflow===2.2.0
