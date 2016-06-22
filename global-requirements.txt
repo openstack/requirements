@@ -287,7 +287,7 @@ bashate>=0.2 # Apache-2.0
 cliff-tablib>=1.0  # Apache-2.0
 couchdb>=0.8 # Apache-2.0
 coverage>=3.6  # Apache-2.0
-demjson # GNU LGPL 3.0
+demjson # GLGPLv3+
 docker-py>=1.6.0,<1.8.0  # Apache-2.0
 discover  # BSD
 django-nose>=1.2  # BSD
