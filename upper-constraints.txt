@@ -142,7 +142,7 @@ jsonpointer===1.10
 jsonschema===2.5.1
 kafka-python===0.9.5
 kazoo===2.2.1
-keyring===9.0
+keyring===9.1
 keystoneauth1===2.8.0
 keystonemiddleware===4.5.1
 kombu===3.0.35
@@ -151,7 +151,7 @@ ldap3===1.3.1
 ldappool===2.0.0
 libvirt-python===1.3.4
 linecache2===1.0.0
-logilab-common===1.2.1
+logilab-common===1.2.2
 logutils===0.3.3
 lxml===3.6.0
 microversion-parse===0.1.3
@@ -216,11 +216,11 @@ osprofiler===1.3.0
 ovs===2.5.0;python_version=='2.7'
 ovs===2.6.0.dev1;python_version=='3.4'
 packaging===16.7
-paramiko===2.0.0
+paramiko===2.0.1
 passlib===1.6.5
 pathlib===1.0.1;python_version=='2.7'
 pbr===1.10.0
-pecan===1.1.1
+pecan===1.1.2
 pexpect===4.1.0
 pifpaf===0.6.0
 pika===0.10.0
