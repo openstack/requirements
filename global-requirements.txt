@@ -155,7 +155,7 @@ PyMySQL>=0.6.2  # MIT License
 python-k8sclient>=0.2.0  # Apache-2.0
 voluptuous>=0.8.9  # BSD License
 pydotplus>=2.0.2   # MIT License
-crc16>=0.1.1  # LGPL
+crc16>=0.1.1  # LGPLv3+
 pyzabbix>=0.7.4  # LGPL
 
 # NOTE(flaper87): This added 2 packages to `integration.sh`
