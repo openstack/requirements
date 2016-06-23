@@ -15,9 +15,10 @@
 # This module has no IO at all, and none should be added.
 
 import collections
-import re
-
+import distutils.version
+import packaging.specifiers
 import pkg_resources
+import re
 
 
 # A header for the requirements file(s).
@@ -31,6 +32,21 @@ _REQS_HEADER = [
 ]
 
 
+def cmp_specifier(a, b):
+    weight = {'>=': 0, '>': 0,
+              '==': 1, '~=': 1, '!=': 1,
+              '<': 2, '<=': 2}
+    a = a._spec
+    b = b._spec
+    wa, wb = weight[a[0]], weight[b[0]]
+    res = cmp(wa, wb)
+    if res != 0:
+        return res
+    else:
+        return cmp(distutils.version.LooseVersion(a[1]),
+                   distutils.version.LooseVersion(b[1]))
+
+
 class Requirement(collections.namedtuple('Requirement',
                                          ['package', 'location', 'specifiers',
                                           'markers', 'comment', 'extras'])):
@@ -40,17 +56,24 @@ class Requirement(collections.namedtuple('Requirement',
             cls, package, location, specifiers, markers, comment,
             frozenset(extras or ()))
 
-    def to_line(self, marker_sep=';', line_prefix=''):
-        comment_p = ' ' if self.package else ''
+    def to_line(self, marker_sep=';', line_prefix='', comment_prefix=' ',
+                sort_specifiers=False):
+        comment_p = comment_prefix if self.package else ''
         comment = (comment_p + self.comment if self.comment else '')
         marker = marker_sep + self.markers if self.markers else ''
         package = line_prefix + self.package if self.package else ''
         location = self.location + '#egg=' if self.location else ''
         extras = '[%s]' % ",".join(sorted(self.extras)) if self.extras else ''
+        specifiers = self.specifiers
+        if sort_specifiers:
+            _specifiers = packaging.specifiers.SpecifierSet(specifiers)
+            _specifiers = ['%s' % s for s in sorted(_specifiers,
+                                                    cmp=cmp_specifier)]
+            specifiers = ','.join(_specifiers)
         return '%s%s%s%s%s%s\n' % (location,
                                    package,
                                    extras,
-                                   self.specifiers,
+                                   specifiers,
                                    marker,
                                    comment)
 
