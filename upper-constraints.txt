@@ -291,6 +291,7 @@ python-smaugclient===0.0.4
 python-solumclient===2.0.1
 python-subunit===1.2.0
 python-swiftclient===3.0.0
+python-tackerclient===0.4.0
 python-troveclient===2.2.0
 python-zaqarclient===1.1.0
 pytz===2016.4
