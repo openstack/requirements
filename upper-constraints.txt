@@ -319,6 +319,7 @@ rtslib-fb===2.1.58
 ryu===4.3
 scipy===0.17.1
 scp===0.10.2
+scikit-learn===0.17.1
 selenium===2.53.6
 semantic-version===2.5.0
 seqdiag===0.9.5
