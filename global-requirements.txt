@@ -227,6 +227,7 @@ semantic_version>=2.3.1  # BSD
 fasteners>=0.7  # Apache-2.0
 simplejson>=2.2.0  # MIT
 six>=1.9.0  # MIT
+scipy>=0.17.1  # BSD
 SQLAlchemy>=1.0.10,<1.1.0  # MIT
 sqlalchemy-migrate>=0.9.6  # Apache-2.0
 sqlalchemy-utils  # BSD License
