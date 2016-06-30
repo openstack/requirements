@@ -316,6 +316,7 @@ rjsmin===1.0.12
 rsa===3.4.2
 rtslib-fb===2.1.58
 ryu===4.3
+scipy===0.17.1
 scp===0.10.2
 selenium===2.53.6
 semantic-version===2.5.0
