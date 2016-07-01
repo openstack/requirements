@@ -355,6 +355,7 @@ tripleo-common===2.0.0
 trollius===2.1
 txaio===2.5.1
 tzlocal===1.2.2
+ujson===1.35
 unicodecsv===0.14.1;python_version=='2.7'
 unittest2===1.1.0
 uritemplate===0.6
