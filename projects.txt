@@ -56,6 +56,7 @@ openstack/manila-ui
 openstack/mistral
 openstack/mistral-dashboard
 openstack/mistral-extra
+openstack/monasca-common
 openstack/mox3
 openstack/murano
 openstack/murano-agent
