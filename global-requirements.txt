@@ -29,6 +29,7 @@ diskimage-builder>=1.1.2,!=1.6.0,!=1.7.0,!=1.7.1  # Apache-2.0
 Django>=1.8,<1.9  # BSD
 django-babel>=0.5.1  # BSD
 django_compressor>=2.0  # MIT
+django-floppyforms>=1,<2  # BSD
 django-formtools  # BSD
 django_openstack_auth>=2.3.0  # Apache-2.0
 dnspython>=1.14.0  # http://www.dnspython.org/LICENSE
