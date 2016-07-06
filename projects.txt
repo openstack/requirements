@@ -58,6 +58,7 @@ openstack/mistral-dashboard
 openstack/mistral-extra
 openstack/monasca-api
 openstack/monasca-common
+openstack/monasca-persister
 openstack/mox3
 openstack/murano
 openstack/murano-agent
