@@ -108,7 +108,7 @@ doc8===0.7.0
 docker-py===1.7.2
 docutils===0.12
 dogpile.cache===0.6.1
-elasticsearch===1.9.0
+elasticsearch===2.3.0
 enum34===1.1.6
 eventlet===0.19.0
 extras===1.0.0
