@@ -59,6 +59,7 @@ openstack/mistral-extra
 openstack/monasca-api
 openstack/monasca-common
 openstack/monasca-persister
+openstack/monasca-statsd
 openstack/mox3
 openstack/murano
 openstack/murano-agent
