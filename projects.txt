@@ -134,6 +134,7 @@ openstack/python-ironic-inspector-client
 openstack/python-ironicclient
 openstack/python-keystoneclient
 openstack/python-keystoneclient-kerberos
+openstack/python-kingbirdclient
 openstack/python-magnumclient
 openstack/python-manilaclient
 openstack/python-mistralclient
