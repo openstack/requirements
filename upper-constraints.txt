@@ -123,7 +123,7 @@ funcsigs===1.0.2;python_version=='2.7'
 functools32===3.2.3.post2;python_version=='2.7'
 futures===3.0.5
 futurist===0.14.0
-gabbi===1.23.0
+gabbi===1.24.0
 gitdb===0.6.4
 glance-store===0.13.1
 google-api-python-client===1.5.1
