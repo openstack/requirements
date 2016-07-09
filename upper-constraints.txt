@@ -209,7 +209,7 @@ oslo.reports===1.11.0
 oslo.rootwrap===4.3.0
 oslo.serialization===2.10.0
 oslo.service===1.12.0
-oslo.utils===3.14.0
+oslo.utils===3.15.0
 oslo.versionedobjects===1.12.0
 oslo.vmware===2.10.0
 oslosphinx===4.5.0
