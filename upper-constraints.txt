@@ -11,7 +11,7 @@ MySQL-python===1.2.5;python_version=='2.7'
 Parsley===1.3
 Paste===2.0.3
 PasteDeploy===1.5.2
-Pillow===3.2.0
+Pillow===3.3.0
 Pint===0.7.2
 PuLP===1.6.1
 PyECLib===1.2.0
@@ -20,7 +20,7 @@ PyMySQL===0.7.5
 PyYAML===3.11
 Pygments===2.1.3
 Routes===2.3.1
-SQLAlchemy===1.0.13
+SQLAlchemy===1.0.14
 SQLAlchemy-Utils===0.32.7
 SecretStorage===2.2.1
 Sphinx===1.2.3
@@ -31,7 +31,7 @@ WebTest===2.0.21
 Werkzeug===0.11.10
 XStatic===1.0.1
 XStatic-Angular===1.3.18.1
-XStatic-Angular-Bootstrap===0.11.0.7
+XStatic-Angular-Bootstrap===0.11.0.8
 XStatic-Angular-FileUpload===12.0.4.0
 XStatic-Angular-Gettext===2.1.0.2
 XStatic-Angular-lrdragndrop===1.0.2.2
@@ -93,11 +93,11 @@ decorator===4.0.10
 demjson===2.2.4
 dib-utils===0.0.10
 discover===0.4.0
-diskimage-builder===1.18.0
+diskimage-builder===1.18.1
 django-appconf===1.0.2
 django-babel===0.5.1
 django-compressor===2.0
-django-floppyforms===1.0  # BSD
+django-floppyforms===1.6.2
 django-formtools===1.0
 django-nose===1.4.4
 django-openstack-auth===2.3.0
@@ -123,7 +123,7 @@ funcsigs===1.0.2;python_version=='2.7'
 functools32===3.2.3.post2;python_version=='2.7'
 futures===3.0.5
 futurist===0.14.0
-gabbi===1.23.0
+gabbi===1.24.0
 gitdb===0.6.4
 glance-store===0.13.1
 google-api-python-client===1.5.1
@@ -145,13 +145,13 @@ jsonschema===2.5.1
 kafka-python===0.9.5
 kazoo===2.2.1
 keyring===9.3
-keystoneauth1===2.8.0
-keystonemiddleware===4.5.1
+keystoneauth1===2.9.0
+keystonemiddleware===4.6.0
 kombu===3.0.35
 krest===1.3.1
-ldap3===1.3.1
+ldap3===1.3.3
 ldappool===2.0.0
-libvirt-python===1.3.4
+libvirt-python===2.0.0
 linecache2===1.0.0
 logilab-common===1.2.2
 logutils===0.3.3
@@ -181,7 +181,7 @@ oauthlib===1.1.2
 openstack-doc-tools===0.34.0
 openstack.nose-plugin===0.11
 openstackdocstheme===1.3.0
-openstacksdk===0.8.6
+openstacksdk===0.9.0
 ordereddict===1.1
 os-api-ref===0.3.0
 os-apply-config===0.1.32
@@ -193,7 +193,7 @@ os-refresh-config===0.1.11
 os-testr===0.7.0
 os-vif===1.0.0
 os-win===1.0.0
-osc-lib===0.2.0
+osc-lib===0.2.1
 oslo.cache===1.10.0
 oslo.concurrency===3.11.0
 oslo.config===3.12.0
@@ -209,7 +209,7 @@ oslo.reports===1.11.0
 oslo.rootwrap===4.3.0
 oslo.serialization===2.10.0
 oslo.service===1.12.0
-oslo.utils===3.14.0
+oslo.utils===3.15.0
 oslo.versionedobjects===1.12.0
 oslo.vmware===2.10.0
 oslosphinx===4.5.0
@@ -223,8 +223,8 @@ passlib===1.6.5
 pathlib===1.0.1;python_version=='2.7'
 pbr===1.10.0
 pecan===1.1.2
-pexpect===4.1.0
-pifpaf===0.6.0
+pexpect===4.2.0
+pifpaf===0.8.0
 pika===0.10.0
 pika-pool===0.1.3
 ply===3.8
@@ -233,7 +233,7 @@ posix-ipc===1.0.0
 prettytable===0.7.2
 proboscis===1.2.6.0
 psutil===1.2.1
-psycopg2===2.6.1
+psycopg2===2.6.2
 ptyprocess===0.5.1
 py===1.4.31
 pyOpenSSL===16.0.0
@@ -253,7 +253,7 @@ pymod2pkg===0.4.0
 pymongo===3.2.2
 pyngus===2.0.3
 pyparsing===2.1.5
-pyroute2===0.4.3
+pyroute2===0.4.4
 pysaml2===4.0.2
 pysendfile===2.0.1
 pysmi===0.0.7
@@ -264,7 +264,7 @@ python-barbicanclient===4.0.1
 python-ceilometerclient===2.4.0
 python-cinderclient===1.8.0
 python-congressclient===1.3.0
-python-consul===0.6.0
+python-consul===0.6.1
 python-dateutil===2.5.3
 python-designateclient===2.1.0
 python-editor===1.0.1
@@ -273,7 +273,7 @@ python-heatclient===1.2.0
 python-ironic-inspector-client===1.7.0
 python-ironicclient===1.3.1
 python-k8sclient===0.2.0
-python-keystoneclient===3.1.0
+python-keystoneclient===3.2.0
 python-magnumclient===2.1.0
 python-manilaclient===1.9.0
 python-memcached===1.58
@@ -300,7 +300,7 @@ python-zaqarclient===1.1.0
 pytz===2016.4
 pyudev===0.20.0
 pyzabbix===0.7.4
-pyzmq===15.2.0
+pyzmq===15.3.0
 qpid-python===0.32.1;python_version=='2.7'
 rcssmin===1.0.6
 redis===2.10.5
@@ -329,7 +329,7 @@ simplejson===3.8.2
 singledispatch===3.4.0.3;python_version=='2.7'
 six===1.10.0
 smmap===0.9.0
-spec-cleaner===0.8.9
+spec-cleaner===0.9.0
 sphinxcontrib-blockdiag===1.5.5
 sphinxcontrib-httpdomain===1.5.0
 sphinxcontrib-pecanwsme===0.8.0
@@ -371,7 +371,7 @@ webcolors===1.5
 websocket-client===0.37.0
 websockify===0.8.0
 wrapt===1.10.8
-wsgi-intercept===1.3.0
+wsgi-intercept===1.3.1
 xattr===0.8.0
 xmltodict===0.10.2
 xvfbwrapper===0.2.8
