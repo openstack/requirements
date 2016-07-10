@@ -298,7 +298,7 @@ django-nose>=1.2  # BSD
 doc8  # Apache-2.0
 fixtures>=3.0.0  # Apache-2.0/BSD
 freezegun  # Apache-2.0
-gabbi>=1.22.0  # Apache-2.0
+gabbi>=1.24.0  # Apache-2.0
 kafka-python>=0.9.5,<1.0.0 # Apache-2.0
 keyring>=5.5.1  # MIT/PSF
 ldappool>=2.0.0 # MPL
