@@ -190,4 +190,5 @@ openstack/trove
 openstack/vitrage
 openstack/vmware-nsx
 openstack/watcher
+openstack/watcher-dashboard
 openstack/zaqar
