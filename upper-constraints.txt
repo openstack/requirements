@@ -193,7 +193,7 @@ os-refresh-config===0.1.11
 os-testr===0.7.0
 os-vif===1.0.0
 os-win===1.0.0
-osc-lib===0.2.1
+osc-lib===0.3.0
 oslo.cache===1.10.0
 oslo.concurrency===3.11.0
 oslo.config===3.12.0
