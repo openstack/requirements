@@ -55,7 +55,6 @@ openstack/manila-image-elements
 openstack/manila-ui
 openstack/mistral
 openstack/mistral-dashboard
-openstack/mistral-extra
 openstack/monasca-api
 openstack/monasca-common
 openstack/monasca-notification
