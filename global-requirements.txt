@@ -341,7 +341,7 @@ selenium>=2.50.1  # Apache-2.0
 # setting a lower bound is not harmful - it makes error messages cleaner. DO
 # NOT set an upper bound on setuptools, as that will lead to uninstallable
 # situations as progressive releases of projects are done.
-setuptools>=16.0  # PSF/ZPL
+setuptools>=16.0,!=24.0.0  # PSF/ZPL
 sphinx>=1.1.2,!=1.2.0,!=1.3b1,<1.3  # BSD
 sphinxcontrib-blockdiag  # BSD
 sphinxcontrib-httpdomain  # BSD
