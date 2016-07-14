@@ -9,4 +9,4 @@ testrepository>=0.0.18
 testscenarios>=0.4
 testtools>=1.4.0
 virtualenv
-setuptools>=16.0
+setuptools!=24.0.0,>=16.0
