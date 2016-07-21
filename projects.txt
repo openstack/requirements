@@ -213,6 +213,7 @@ openstack/solum-dashboard
 openstack/stevedore
 openstack/swauth
 openstack/swift
+openstack/syntribos
 openstack/tacker
 openstack/tacker-horizon
 openstack/tap-as-a-service
