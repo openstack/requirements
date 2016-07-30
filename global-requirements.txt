@@ -48,7 +48,7 @@ futures>=3.0;python_version=='2.7' or python_version=='2.6'  # BSD
 futurist>=0.11.0,!=0.15.0  # Apache-2.0
 funcsigs>=0.4;python_version=='2.7' or python_version=='2.6'  # Apache-2.0
 gitdb>=0.6.4 # BSD License (3 clause)
-glance_store>=0.13.0,!=0.14.0            # Apache-2.0
+glance_store>=0.13.0,!=0.14.0,!=0.15.0            # Apache-2.0
 google-api-python-client>=1.4.2        # Apache-2.0
 graphviz>=0.4.0 # MIT License
 greenlet>=0.3.2  # MIT
