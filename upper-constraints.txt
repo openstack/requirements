@@ -343,7 +343,7 @@ sphinxcontrib-pecanwsme===0.8.0
 sphinxcontrib-seqdiag===0.8.5
 sqlalchemy-migrate===0.10.0
 sqlparse===0.2.0
-stevedore===1.16.0
+stevedore===1.17.0
 suds-jurko===0.6
 sympy===1.0
 sysv-ipc===0.7.0
