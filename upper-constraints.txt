@@ -128,7 +128,7 @@ futures===3.0.5
 futurist===0.16.0
 gabbi===1.24.0
 gitdb===0.6.4
-glance-store===0.13.1
+glance-store===0.15.0
 google-api-python-client===1.5.1
 graphviz===0.4.10
 greenlet===0.4.10
@@ -200,7 +200,7 @@ os-win===1.1.0
 osc-lib===0.4.1
 oslo.cache===1.11.0
 oslo.concurrency===3.12.0
-oslo.config===3.13.0
+oslo.config===3.14.0
 oslo.context===2.5.0
 oslo.db===4.8.0
 oslo.i18n===3.8.0
