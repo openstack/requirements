@@ -165,7 +165,7 @@ mistral===2.0.0
 mock===2.0.0
 monotonic===1.1
 mox===0.5.3
-mox3===0.17.0
+mox3===0.18.0
 mpmath===0.19
 msgpack-python===0.4.8
 netaddr===0.7.18
