@@ -15,6 +15,7 @@ Pillow===3.3.0
 Pint===0.7.2
 PuLP===1.6.1
 PyECLib===1.2.0
+PyJWT===1.4.1
 PyKMIP===0.5.0
 PyMySQL===0.7.6
 PyYAML===3.11
