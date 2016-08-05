@@ -168,6 +168,7 @@ mox===0.5.3
 mox3===0.17.0
 mpmath===0.19
 msgpack-python===0.4.8
+ndg-httpsclient===0.4.2
 netaddr===0.7.18
 netifaces===0.10.4
 netmiko===0.5.6
