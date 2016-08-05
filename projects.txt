@@ -47,6 +47,7 @@ openstack/kingbird
 openstack/kolla
 openstack/kosmos
 openstack/kuryr
+openstack/kuryr-libnetwork
 openstack/ldappool
 openstack/magnum
 openstack/magnum-ui
