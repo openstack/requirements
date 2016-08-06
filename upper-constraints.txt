@@ -188,7 +188,7 @@ openstack.nose-plugin===0.11
 openstackdocstheme===1.4.0
 openstacksdk===0.9.1
 ordereddict===1.1
-os-api-ref===0.3.0
+os-api-ref===0.4.0
 os-apply-config===0.1.32
 os-brick===1.4.0
 os-client-config===1.18.0
