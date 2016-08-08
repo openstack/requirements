@@ -164,6 +164,8 @@ lxml===3.6.1
 microversion-parse===0.1.3
 mistral===2.0.0
 mock===2.0.0
+monasca-common===1.0.0
+monasca-statsd===1.1.0
 monotonic===1.1
 mox===0.5.3
 mox3===0.17.0
