@@ -27,6 +27,7 @@ openstack/freezer
 openstack/freezer-api
 openstack/freezer-web-ui
 openstack/futurist
+openstack/fuxi
 openstack/glance
 openstack/glance_store
 openstack/gluon
