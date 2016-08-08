@@ -199,7 +199,7 @@ os-testr===0.7.0
 os-vif===1.0.0
 os-win===1.1.0
 osc-lib===0.4.1
-oslo.cache===1.11.0
+oslo.cache===1.12.0
 oslo.concurrency===3.12.0
 oslo.config===3.14.0
 oslo.context===2.5.0
