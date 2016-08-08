@@ -211,7 +211,7 @@ oslo.cache===1.6.0
 oslo.concurrency===3.7.1
 oslo.config===3.9.0
 oslo.context===2.2.0
-oslo.db===4.7.0
+oslo.db===4.7.1
 oslo.i18n===3.5.0
 oslo.log===3.3.0
 oslo.messaging===4.6.1
