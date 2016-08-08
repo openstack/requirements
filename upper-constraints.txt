@@ -349,7 +349,7 @@ suds-jurko===0.6
 sympy===1.0
 sysv-ipc===0.7.0
 tablib===0.11.2
-taskflow===2.3.0
+taskflow===2.4.0
 tempest===12.1.0
 tempest-lib===1.0.0
 termcolor===1.1.0
