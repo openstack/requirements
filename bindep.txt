@@ -29,3 +29,8 @@ mysql-client
 mysql-server
 postgresql
 postgresql-client
+# NOTE(toabctl): libnss3-dev is needed for python-nss
+# which is used by dogtag-pki
+libnss3-dev [platform:dpkg]
+mozilla-nss-devel [platform:rpm]
+nss-devel [platform:rpm]
