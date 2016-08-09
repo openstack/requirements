@@ -199,7 +199,7 @@ os-cloud-config===0.4.1
 os-collect-config===0.1.37
 os-refresh-config===0.1.11
 os-testr===0.7.0
-os-vif===1.0.0
+os-vif===1.1.0
 os-win===1.1.0
 osc-lib===0.4.1
 oslo.cache===1.12.0
