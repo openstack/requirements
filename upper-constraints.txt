@@ -92,6 +92,7 @@ coverage===4.2
 crc16===0.1.1
 croniter===0.3.12
 cryptography===1.4
+cursive===0.1.1
 ddt===1.1.0
 debtcollector===1.7.0
 decorator===4.0.10
