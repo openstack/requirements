@@ -209,7 +209,7 @@ oslo.config===3.14.0
 oslo.context===2.7.0
 oslo.db===4.9.0
 oslo.i18n===3.8.0
-oslo.log===3.13.0
+oslo.log===3.14.0
 oslo.messaging===5.6.0
 oslo.middleware===3.16.0
 oslo.policy===1.12.0
