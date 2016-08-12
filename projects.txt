@@ -22,12 +22,14 @@ openstack/designate-tempest-plugin
 openstack/diskimage-builder
 openstack/django_openstack_auth
 openstack/dragonflow
+openstack/ec2-api
 openstack/ekko
 openstack/freezer
 openstack/freezer-api
 openstack/freezer-web-ui
 openstack/futurist
 openstack/fuxi
+openstack/gce-api
 openstack/glance
 openstack/glance_store
 openstack/gluon
