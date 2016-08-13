@@ -75,6 +75,7 @@ beautifulsoup4===4.5.1
 betamax===0.7.2
 blockdiag===1.5.3
 boto===2.42.0
+botocore===1.4.46
 cachetools===1.1.6
 cassandra-driver===3.5.0
 castellan===0.4.0
