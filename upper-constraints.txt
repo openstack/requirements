@@ -83,7 +83,7 @@ ceilometermiddleware===0.5.0
 cffi===1.7.0
 chardet===2.3.0
 click===6.6
-cliff===2.1.0
+cliff===2.2.0
 cliff-tablib===2.0
 cmd2===0.6.8
 colorama===0.3.7
