@@ -236,3 +236,4 @@ openstack/vmware-nsx
 openstack/watcher
 openstack/watcher-dashboard
 openstack/zaqar
+openstack/zaqar-ui
