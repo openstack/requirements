@@ -27,7 +27,7 @@ REPODIR=${REPODIR:-$BASE/new}
 
 root=$(dirname $0)/..
 sudo -H pip install bindep
-sudo apt-get install -y --force-yes $(bindep -b python -f $root/other-requirements.txt)
+sudo apt-get install -y --force-yes $(bindep -b python -f $root/bindep.txt)
 
 # And use ccache explitly
 export PATH=/usr/lib/ccache:$PATH
