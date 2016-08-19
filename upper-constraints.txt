@@ -211,7 +211,7 @@ oslo.concurrency===3.13.0
 oslo.config===3.16.0
 oslo.context===2.8.0
 oslo.db===4.11.0
-oslo.i18n===3.8.0
+oslo.i18n===3.9.0
 oslo.log===3.14.0
 oslo.messaging===5.7.0
 oslo.middleware===3.17.0
