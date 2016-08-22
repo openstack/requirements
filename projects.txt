@@ -132,6 +132,8 @@ openstack/openstack-ansible-repo_server
 openstack/openstack-ansible-rsyslog_client
 openstack/openstack-ansible-rsyslog_server
 openstack/openstack-ansible-security
+openstack/openstack-ansible-specs
+openstack/openstack-ansible-tests
 openstack/openstack-doc-tools
 openstack/openstackdocstheme
 openstack/os-apply-config
