@@ -192,7 +192,7 @@ oauth2client===3.0.0
 oauthlib===1.1.2
 openstack-doc-tools===0.34.0
 openstack.nose-plugin===0.11
-openstackdocstheme===1.4.0
+openstackdocstheme===1.5.0
 openstacksdk===0.9.4
 ordereddict===1.1
 os-api-ref===0.4.0
