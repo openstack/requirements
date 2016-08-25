@@ -223,7 +223,7 @@ oslo.rootwrap===5.1.0
 oslo.serialization===2.13.0
 oslo.service===1.16.0
 oslo.utils===3.16.0
-oslo.versionedobjects===1.16.0
+oslo.versionedobjects===1.17.0
 oslo.vmware===2.14.0
 oslosphinx===4.7.0
 oslotest===2.10.0
