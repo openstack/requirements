@@ -96,8 +96,10 @@ openstack/nova-lxd
 openstack/octavia
 openstack/openstack-ansible
 openstack/openstack-ansible-apt_package_pinning
+openstack/openstack-ansible-ceph_client
 openstack/openstack-ansible-galera_client
 openstack/openstack-ansible-galera_server
+openstack/openstack-ansible-haproxy_server
 openstack/openstack-ansible-lxc_container_create
 openstack/openstack-ansible-lxc_hosts
 openstack/openstack-ansible-memcached_server
@@ -117,12 +119,15 @@ openstack/openstack-ansible-os_horizon
 openstack/openstack-ansible-os_ironic
 openstack/openstack-ansible-os_keystone
 openstack/openstack-ansible-os_magnum
+openstack/openstack-ansible-os_monasca
 openstack/openstack-ansible-os_neutron
 openstack/openstack-ansible-os_nova
 openstack/openstack-ansible-os_rally
 openstack/openstack-ansible-os_sahara
 openstack/openstack-ansible-os_swift
 openstack/openstack-ansible-os_tempest
+openstack/openstack-ansible-os_trove
+openstack/openstack-ansible-os_watcher
 openstack/openstack-ansible-os_zaqar
 openstack/openstack-ansible-pip_install
 openstack/openstack-ansible-pip_lock_down
