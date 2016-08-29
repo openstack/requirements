@@ -154,7 +154,7 @@ generate-constraints
 Compile a constraints file showing the versions resulting from installing all
 of ``global-requirements.txt``::
 
-  generate-constraints -p /usr/bin/python2.7 -p /usr/bin/python3.4 \
+  generate-constraints -p /usr/bin/python2.7 -p /usr/bin/python3 \
     -b blacklist.txt -r global-requirements.txt > new-constraints.txt
 
 edit-constraints
@@ -185,12 +185,12 @@ Regenerating involves five steps.
 
 2) Create a reference file (do this without your patch applied)::
 
-    generate-constraints -p /usr/bin/python2.7 -p /usr/bin/python3.4 \
+    generate-constraints -p /usr/bin/python2.7 -p /usr/bin/python3 \
       -b blacklist.txt -r global-requirements.txt > baseline
 
 3) Apply your patch and generate a new reference file::
 
-    generate-constraints -p /usr/bin/python2.7 -p /usr/bin/python3.4 \
+    generate-constraints -p /usr/bin/python2.7 -p /usr/bin/python3 \
       -b blacklist.txt -r global-requirements.txt > updated
 
 4) Diff them::

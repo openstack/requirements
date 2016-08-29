@@ -56,11 +56,11 @@ def _freeze(requirements, python):
     executables to test under, and then union the results. This is in fact the
     key difference between a constraints file and a requirements file: we're
     not triggering installation, so we can and will list packages that are
-    not relevant to e.g. Python3.4 in the constraints output.
+    not relevant to e.g. Python3 in the constraints output.
 
     :param requirements: The path to a requirements file to use when generating
         the constraints.
-    :param python: A Python binary to use. E.g. /usr/bin/python3.4
+    :param python: A Python binary to use. E.g. /usr/bin/python3
     :return: A tuple (python_version, list of (package, version)'s)
     """
     output = []
@@ -167,7 +167,7 @@ def main(argv=None, stdout=None):
     parser.add_option(
         "-p", dest="pythons", action="append",
         help="Specify Python versions to use when generating constraints."
-             "e.g. -p /usr/bin/python3.4")
+             "e.g. -p /usr/bin/python3")
     parser.add_option(
         "-r", dest="requirements", help="Requirements file to process.")
     parser.add_option(

@@ -111,6 +111,7 @@ django-openstack-auth===2.4.0
 django-pyscss===2.0.2
 dnspython===1.14.0
 dnspython3===1.12.0;python_version=='3.4'
+dnspython3===1.12.0;python_version=='3.5'
 doc8===0.7.0
 docker-py===1.7.2
 docutils===0.12
@@ -230,6 +231,7 @@ oslotest===2.10.0
 osprofiler===1.4.0
 ovs===2.5.0;python_version=='2.7'
 ovs===2.6.0.dev3;python_version=='3.4'
+ovs===2.6.0.dev3;python_version=='3.5'
 packaging===16.7
 paramiko===2.0.2
 passlib===1.6.5
