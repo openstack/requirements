@@ -300,7 +300,7 @@ python-novaclient===5.1.0
 python-openstackclient===3.1.0
 python-pytun===2.2.1
 python-qpid-proton===0.10
-python-saharaclient===0.17.0
+python-saharaclient===0.18.0
 python-searchlightclient===0.2.1
 python-senlinclient===0.5.0
 python-smaugclient===0.0.5
