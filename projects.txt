@@ -35,7 +35,6 @@ openstack/glance_store
 openstack/gluon
 openstack/heat
 openstack/heat-translator
-openstack/higgins
 openstack/horizon
 openstack/horizon-cisco-ui
 openstack/i18n
@@ -43,6 +42,8 @@ openstack/ironic
 openstack/ironic-inspector
 openstack/ironic-lib
 openstack/ironic-python-agent
+openstack/karbor
+openstack/karbor-dashboard
 openstack/keystone
 openstack/keystoneauth
 openstack/keystonemiddleware
@@ -184,6 +185,7 @@ openstack/python-glanceclient
 openstack/python-heatclient
 openstack/python-ironic-inspector-client
 openstack/python-ironicclient
+openstack/python-karborclient
 openstack/python-keystoneclient
 openstack/python-keystoneclient-kerberos
 openstack/python-kingbirdclient
@@ -201,7 +203,6 @@ openstack/python-saharaclient
 openstack/python-scciclient
 openstack/python-searchlightclient
 openstack/python-senlinclient
-openstack/python-smaugclient
 openstack/python-solumclient
 openstack/python-swiftclient
 openstack/python-tackerclient
@@ -219,8 +220,6 @@ openstack/sahara-image-elements
 openstack/searchlight
 openstack/senlin
 openstack/senlin-dashboard
-openstack/smaug
-openstack/smaug-dashboard
 openstack/solum
 openstack/solum-dashboard
 openstack/stevedore
@@ -245,3 +244,4 @@ openstack/watcher
 openstack/watcher-dashboard
 openstack/zaqar
 openstack/zaqar-ui
+openstack/zun
