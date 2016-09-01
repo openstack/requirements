@@ -289,7 +289,7 @@ python-ironicclient===1.6.0
 python-k8sclient===0.3.0
 python-keystoneclient===3.5.0
 python-magnumclient===2.3.0
-python-manilaclient===1.10.0
+python-manilaclient===1.11.0
 python-memcached===1.58
 python-mimeparse===1.5.2
 python-mistralclient===2.1.1
