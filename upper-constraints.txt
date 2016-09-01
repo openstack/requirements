@@ -288,7 +288,7 @@ python-ironic-inspector-client===1.8.0
 python-ironicclient===1.6.0
 python-k8sclient===0.3.0
 python-keystoneclient===3.5.0
-python-magnumclient===2.2.0
+python-magnumclient===2.3.0
 python-manilaclient===1.10.0
 python-memcached===1.58
 python-mimeparse===1.5.2
@@ -301,7 +301,7 @@ python-openstackclient===3.2.0
 python-pytun===2.2.1
 python-qpid-proton===0.14.0
 python-saharaclient===0.18.0
-python-searchlightclient===0.2.1
+python-searchlightclient===1.0.0
 python-senlinclient===1.0.0
 python-smaugclient===0.0.8
 python-solumclient===2.0.1
@@ -370,7 +370,7 @@ thriftpy===0.3.9;python_version=='2.7'
 tooz===1.43.0
 tosca-parser===0.6.0
 traceback2===1.4.0
-tripleo-common===2.0.0
+tripleo-common===2.1.0
 trollius===2.1
 txaio===2.5.1
 tzlocal===1.2.2
