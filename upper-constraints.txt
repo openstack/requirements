@@ -296,7 +296,7 @@ python-mistralclient===2.1.1
 python-monascaclient===1.2.0
 python-muranoclient===0.10.0
 python-neutronclient===5.1.0
-python-novaclient===5.1.0
+python-novaclient===6.0.0
 python-openstackclient===3.2.0
 python-pytun===2.2.1
 python-qpid-proton===0.14.0
