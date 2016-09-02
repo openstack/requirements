@@ -63,7 +63,7 @@ XenAPI===1.2
 alembic===0.8.7
 amqp===1.4.9
 anyjson===0.3.3
-aodhclient===0.6.0
+aodhclient===0.7.0
 appdirs===1.4.0
 astroid===1.3.8
 autobahn===0.16.0
