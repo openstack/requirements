@@ -277,7 +277,7 @@ pytest===3.0.1
 python-barbicanclient===4.0.1
 python-ceilometerclient===2.5.0
 python-cinderclient===1.8.0
-python-congressclient===1.4.0
+python-congressclient===1.5.0
 python-consul===0.6.1
 python-dateutil===2.5.3
 python-designateclient===2.3.0
