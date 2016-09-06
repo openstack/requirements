@@ -32,6 +32,7 @@ openstack/fuxi
 openstack/gce-api
 openstack/glance
 openstack/glance_store
+openstack/glare
 openstack/gluon
 openstack/heat
 openstack/heat-translator
@@ -182,6 +183,7 @@ openstack/python-congressclient
 openstack/python-cueclient
 openstack/python-designateclient
 openstack/python-glanceclient
+openstack/python-glareclient
 openstack/python-heatclient
 openstack/python-ironic-inspector-client
 openstack/python-ironicclient
