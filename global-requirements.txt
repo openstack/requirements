@@ -52,7 +52,7 @@ funcsigs>=0.4;python_version=='2.7' or python_version=='2.6'  # Apache-2.0
 gitdb>=0.6.4 # BSD License (3 clause)
 glance_store>=0.18.0            # Apache-2.0
 google-api-python-client>=1.4.2        # Apache-2.0
-graphviz>=0.4.0 # MIT License
+graphviz>=0.4.0,!=0.5.0 # MIT License
 greenlet>=0.3.2  # MIT
 GitPython>=1.0.1 # BSD License (3 clause)
 happybase>=0.5,!=0.7;python_version=='2.7'  # MIT
