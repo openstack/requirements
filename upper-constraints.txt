@@ -265,7 +265,7 @@ pykerberos===1.1.13;python_version=='2.7'
 pyldap===2.4.25.1
 pylxd===2.0.3
 pymemcache===1.3.6
-pymod2pkg===0.5.3
+pymod2pkg===0.5.4
 pymongo===3.3.0
 pyngus===2.1.2
 pyparsing===2.1.8
