@@ -56,7 +56,7 @@ XStatic-jquery-ui===1.11.0.1
 XStatic-mdi===1.4.57.0
 XStatic-objectpath===1.2.1.0
 XStatic-roboto-fontface===0.4.3.2
-XStatic-smart-table===1.4.13.1
+XStatic-smart-table===1.4.13.2
 XStatic-term.js===0.0.7.0
 XStatic-tv4===1.2.7.0
 XenAPI===1.2
