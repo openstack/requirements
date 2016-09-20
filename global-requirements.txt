@@ -328,7 +328,7 @@ nosehtmloutput>=0.0.3  # Apache-2.0
 nosexcover  # BSD
 openstack-doc-tools>=0.23  # Apache-2.0
 openstack.nose_plugin>=0.7  # Apache-2.0
-openstacksdk>=0.9.5  # Apache-2.0
+openstacksdk>=0.9.6  # Apache-2.0
 os-api-ref>=1.0.0  # Apache-2.0
 oslosphinx>=2.5.0,!=3.4.0  # Apache-2.0
 oslotest>=1.10.0  # Apache-2.0
