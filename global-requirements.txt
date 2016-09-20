@@ -358,6 +358,7 @@ sphinxcontrib-blockdiag  # BSD
 sphinxcontrib-httpdomain  # BSD
 sphinxcontrib-seqdiag  # BSD
 sphinxcontrib-pecanwsme>=0.8  # Apache-2.0
+sphinxmark>=0.1.14  # Apache-2.0
 testrepository>=0.0.18  # Apache-2.0/BSD
 testresources>=0.2.4  # Apache-2.0/BSD
 testscenarios>=0.4  # Apache-2.0/BSD
