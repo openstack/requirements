@@ -124,6 +124,7 @@ fairy-slipper===0.2.0
 falcon===1.0.0
 fasteners===0.14.1
 fixtures===3.0.0
+fortiosclient===0.0.2
 freezegun===0.3.7
 frozendict===1.0
 funcparserlib===0.3.6
