@@ -194,7 +194,7 @@ python-ceilometerclient>=2.5.0  # Apache-2.0
 python-cinderclient>=1.6.0,!=1.7.0,!=1.7.1  # Apache-2.0
 python-congressclient>=1.3.0,<2000  # Apache-2.0
 python-designateclient>=1.5.0  # Apache-2.0
-python-heatclient>=1.4.0  # Apache-2.0
+python-heatclient>=1.5.0  # Apache-2.0
 python-glanceclient>=2.5.0  # Apache-2.0
 python-ironic-inspector-client>=1.5.0  # Apache-2.0
 python-ironicclient>=1.6.0  # Apache-2.0
