@@ -80,7 +80,7 @@ cachetools===1.1.6
 cassandra-driver===3.7.0
 castellan===0.4.0
 ceilometermiddleware===0.5.0
-cffi===1.7.0
+cffi===1.8.3
 chardet===2.3.0
 click===6.6
 cliff===2.2.0
@@ -100,7 +100,7 @@ decorator===4.0.10
 demjson===2.2.4
 dib-utils===0.0.10
 discover===0.4.0
-diskimage-builder===1.18.2
+diskimage-builder===1.19.1
 django-appconf===1.0.2
 django-babel===0.5.1
 django-compressor===2.1
@@ -110,8 +110,8 @@ django-nose===1.4.4
 django-openstack-auth===2.4.0
 django-pyscss===2.0.2
 dnspython===1.14.0
-dnspython3===1.12.0;python_version=='3.4'
-dnspython3===1.12.0;python_version=='3.5'
+dnspython3===1.14.0;python_version=='3.4'
+dnspython3===1.14.0;python_version=='3.5'
 doc8===0.7.0
 docker-py===1.7.2
 docutils===0.12
@@ -163,7 +163,7 @@ kombu===3.0.35
 krest===1.3.1
 ldap3===1.4.0
 ldappool===2.0.0
-libvirt-python===2.1.0
+libvirt-python===2.2.0
 linecache2===1.0.0
 logilab-common===1.2.2
 logutils===0.3.3
@@ -193,7 +193,7 @@ nosexcover===1.0.10
 notifier===1.0.3
 numpy===1.11.1
 oauth2client===3.0.0
-oauthlib===1.1.2
+oauthlib===2.0.0
 openstack-doc-tools===1.1.0
 openstack.nose-plugin===0.11
 openstackdocstheme===1.5.0
@@ -239,9 +239,9 @@ paramiko===2.0.2
 passlib===1.6.5
 pathlib===1.0.1;python_version=='2.7'
 pbr===1.10.0
-pecan===1.1.2
+pecan===1.2
 pexpect===4.2.1
-pifpaf===0.12.0
+pifpaf===0.13.0
 pika===0.10.0
 pika-pool===0.1.3
 ply===3.9
@@ -365,7 +365,7 @@ sympy===1.0
 sysv-ipc===0.7.0
 tablib===0.11.2
 taskflow===2.6.0
-tempest===12.1.0
+tempest===12.2.0
 tempest-lib===1.0.0
 tenacity===3.1.0
 termcolor===1.1.0
@@ -377,7 +377,7 @@ thriftpy===0.3.9;python_version=='2.7'
 tooz===1.43.0
 tosca-parser===0.6.0
 traceback2===1.4.0
-tripleo-common===5.0.0
+tripleo-common===5.1.0
 trollius===2.1
 txaio===2.5.1
 tzlocal===1.2.2
