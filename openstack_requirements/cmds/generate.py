@@ -11,6 +11,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+from __future__ import print_function
+
+import copy
 import optparse
 import os.path
 import subprocess
@@ -131,6 +134,18 @@ def _combine_freezes(freezes, blacklist=None):
             yield '%s===%s\n' % (package, list(versions.keys())[0])
 
 
+def _clone_versions(freezes, options):
+    for freeze_data in freezes:
+        versions = [v for v, d in freezes]
+        version, freeze = freeze_data
+        if (version in options.version_map and
+                options.version_map[version] not in versions):
+            print("Duplicating %s freeze to %s" %
+                  (version, options.version_map[version]),
+                  file=sys.stderr)
+            freezes.append((options.version_map[version], copy.copy(freeze)))
+
+
 # -- untested UI glue from here down.
 
 def _validate_options(options):
@@ -154,6 +169,15 @@ def _validate_options(options):
         raise Exception(
             "Blacklist file %(path)s not found."
             % dict(path=options.blacklist))
+    version_map = {}
+    for map_entry in options.version_map:
+        if ':' not in map_entry:
+            raise Exception(
+                "Invalid version-map entry %(map_entry)s"
+                % dict(map_entry=map_entry))
+        src, dst = map_entry.split(':')
+        version_map[src] = dst
+    options.version_map = version_map
 
 
 def _parse_blacklist(path):
@@ -175,12 +199,20 @@ def main(argv=None, stdout=None):
     parser.add_option(
         "-b", dest="blacklist",
         help="Filename of a list of package names to exclude.")
+    parser.add_option(
+        "--version-map", dest='version_map', default=[], action='append',
+        help=('Add a : seperated list of versions to clone.  To \'clone\' '
+              'a freeze geberated by python3.4 to python3.5 specify 3.4:3.5.  '
+              'This is intented as as a way to transition between python '
+              'versions when it\'s not possible to have all versions '
+              'installed'))
     options, args = parser.parse_args(argv)
     if stdout is None:
         stdout = sys.stdout
     _validate_options(options)
     freezes = [
         _freeze(options.requirements, python) for python in options.pythons]
+    _clone_versions(freezes, options)
     blacklist = _parse_blacklist(options.blacklist)
     stdout.writelines(_combine_freezes(freezes, blacklist))
     stdout.flush()

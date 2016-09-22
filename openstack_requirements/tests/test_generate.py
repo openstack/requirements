@@ -98,3 +98,56 @@ class TestCombine(testtools.TestCase):
             ['enum===1.5.0\n'],
             list(generate._combine_freezes(
                 [freeze_27], blacklist=blacklist)))
+
+
+class Namespace(object):
+    def __init__(self, **kwargs):
+        self.__dict__.update(kwargs)
+
+
+class TestClone(testtools.TestCase):
+
+    def test_py34_clone_py35(self):
+        # Simulate an environment where we have python 3.4 data and need to
+        # clone that to python 3.5
+        options = Namespace(version_map={'3.4': '3.5', '3.5': '3.4'})
+        freeze_27 = ('2.7', [('dnspython', '1.15.0')])
+        freeze_34 = ('3.4', [('dnspython3', '1.12.0')])
+        freeze_35 = ('3.5', [('dnspython3', '1.12.0')])
+
+        freezes = [freeze_27, freeze_34]
+        expected_freezes = [freeze_27, freeze_34, freeze_35]
+
+        generate._clone_versions(freezes, options)
+
+        self.assertEqual(expected_freezes, freezes)
+
+    def test_py34_noclone_py35(self):
+        # Simulate an environment where we have python 3.4 and python 3.5 data
+        # so there is no need to clone.
+        options = Namespace(version_map={'3.4': '3.5', '3.5': '3.4'})
+        freeze_27 = ('2.7', [('dnspython', '1.15.0')])
+        freeze_34 = ('3.4', [('dnspython3', '1.12.0')])
+        freeze_35 = ('3.5', [('other-pkg', '1.0.0')])
+
+        freezes = [freeze_27, freeze_34, freeze_35]
+        expected_freezes = [freeze_27, freeze_34, freeze_35]
+
+        generate._clone_versions(freezes, options)
+
+        self.assertEqual(expected_freezes, freezes)
+
+    def test_py35_clone_py34(self):
+        # Simulate an environment where we have python 3.5 data and need to
+        # clone that to python 3.4
+        options = Namespace(version_map={'3.4': '3.5', '3.5': '3.4'})
+        freeze_27 = ('2.7', [('dnspython', '1.15.0')])
+        freeze_34 = ('3.4', [('dnspython3', '1.12.0')])
+        freeze_35 = ('3.5', [('dnspython3', '1.12.0')])
+
+        freezes = [freeze_27, freeze_35]
+        expected_freezes = [freeze_27, freeze_35, freeze_34]
+
+        generate._clone_versions(freezes, options)
+
+        self.assertEqual(expected_freezes, freezes)
