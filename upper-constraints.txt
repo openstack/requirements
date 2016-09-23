@@ -287,7 +287,7 @@ python-dateutil===2.5.3
 python-designateclient===2.3.0
 python-editor===1.0.1
 python-glanceclient===2.5.0
-python-heatclient===1.4.0
+python-heatclient===1.5.0
 python-ironic-inspector-client===1.9.0
 python-ironicclient===1.7.0
 python-k8sclient===0.3.0
