@@ -19,6 +19,7 @@ import collections
 import errno
 import io
 import os
+
 from six.moves import configparser
 
 from parsley import makeGrammar
@@ -57,7 +58,7 @@ def extras(project):
     """Return a dict of extra-name:content for the extras in setup.cfg."""
     if 'setup.cfg' not in project:
         return {}
-    c = configparser.SafeConfigParser()
+    c = configparser.ConfigParser()
     c.readfp(io.StringIO(project['setup.cfg']))
     if not c.has_section('extras'):
         return {}
