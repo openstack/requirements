@@ -209,7 +209,7 @@ python-neutronclient>=5.1.0  # Apache-2.0
 python-novaclient>=2.29.0,!=2.33.0  # Apache-2.0
 python-openstackclient>=2.1.0  # Apache-2.0
 python-saharaclient>=0.18.0  # Apache-2.0
-python-searchlightclient>=0.2.0 #Apache-2.0
+python-searchlightclient>=1.0.0 #Apache-2.0
 python-senlinclient>=0.3.0  # Apache-2.0
 python-smaugclient>=0.0.5  # Apache-2.0
 python-solumclient>=1.2.7  # Apache-2.0
