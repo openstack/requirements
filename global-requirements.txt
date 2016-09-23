@@ -344,7 +344,7 @@ pyzmq>=14.3.1 # LGPL+BSD
 redis>=2.10.0  # MIT
 hiredis>=0.2.0  # BSD
 requests-mock>=1.0  # Apache-2.0
-tenacity>=3.1.0  # Apache-2.0
+tenacity>=3.1.1  # Apache-2.0
 retrying>=1.2.3,!=1.3.0 # Apache-2.0
 spec_cleaner>=0.8.2  # BSD
 selenium>=2.50.1  # Apache-2.0
