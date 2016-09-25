@@ -89,6 +89,7 @@ monasca-common>=1.0.0  # Apache-2.0
 monasca-statsd>=1.1.0  # Apache-2.0
 monotonic>=0.6                          # Apache-2.0
 msgpack-python>=0.4.0  # Apache-2.0
+murano-pkg-check>=0.1.1  # Apache-2.0
 ndg-httpsclient>=0.4.2;python_version<'3.0'  # BSD
 netaddr>=0.7.13,!=0.7.16  # BSD
 netifaces>=0.10.4  # MIT
