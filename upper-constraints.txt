@@ -256,7 +256,7 @@ pyScss===1.3.4
 pyasn1===0.1.9
 pyasn1-modules===0.0.8
 pycadf===2.4.0
-pycparser===2.14
+pycparser===2.13
 pycrypto===2.6.1
 pydotplus===2.0.2
 pyghmi===1.0.9
