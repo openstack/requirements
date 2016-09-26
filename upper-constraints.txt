@@ -172,7 +172,7 @@ marathon===0.8.6
 microversion-parse===0.1.4
 mistral===2.0.0
 mock===2.0.0
-monasca-common===1.0.0
+monasca-common===1.1.0
 monasca-statsd===1.1.0
 monotonic===1.2
 mox===0.5.3
@@ -271,7 +271,7 @@ pymod2pkg===0.5.4
 pymongo===3.3.0
 pyngus===2.1.2
 pyparsing===2.1.9
-pyroute2===0.4.6
+pyroute2===0.4.8
 pysaml2===4.0.2
 pysendfile===2.0.1
 pysmi===0.0.7
