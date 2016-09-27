@@ -240,7 +240,7 @@ paramiko===2.0.2
 passlib===1.6.5
 pathlib===1.0.1;python_version=='2.7'
 pbr===1.10.0
-pecan===1.2
+pecan===1.2.1
 pexpect===4.2.1
 pifpaf===0.13.0
 pika===0.10.0
