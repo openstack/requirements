@@ -71,6 +71,7 @@ openstack/mox3
 openstack/murano
 openstack/murano-agent
 openstack/murano-dashboard
+openstack/murano-pkg-check
 openstack/networking-bagpipe
 openstack/networking-generic-switch
 openstack/networking-fujitsu
