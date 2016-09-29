@@ -233,8 +233,7 @@ oslo.vmware===2.14.0
 oslosphinx===4.7.0
 oslotest===2.10.0
 osprofiler===1.4.0
-ovs===2.5.0;python_version=='2.7'
-ovs===2.6.0.dev3;python_version=='3.4' or python_version=='3.5'
+ovs===2.6.0
 packaging===16.7
 paramiko===2.0.2
 passlib===1.6.5
