@@ -29,3 +29,7 @@ mysql-client
 mysql-server
 postgresql
 postgresql-client
+# NOTE(dirk) needed for PyECLib
+liberasurecode-dev [platform:dpkg]
+liberasurecode-devel [platform:rpm]
+dev-libs/liberasurecode [platform:gentoo]
