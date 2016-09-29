@@ -34,3 +34,7 @@ postgresql-client
 libnss3-dev [platform:dpkg]
 mozilla-nss-devel [platform:rpm]
 nss-devel [platform:rpm]
+# NOTE(dirk) needed for PyECLib
+liberasurecode-dev [platform:dpkg]
+liberasurecode-devel [platform:rpm]
+dev-libs/liberasurecode [platform:gentoo]

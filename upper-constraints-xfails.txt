@@ -1,0 +1,5 @@
+# Format is
+# <dependency that is incompatible>==<version>;<list,of,affected,packages>
+
+pyparsing==2.1.9;pulp
+Sphinx==1.3.6;os-api-ref,openstack-doc-tools
