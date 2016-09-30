@@ -357,6 +357,7 @@ selenium>=2.50.1  # Apache-2.0
 # situations as progressive releases of projects are done.
 setuptools>=16.0,!=24.0.0  # PSF/ZPL
 sphinx>=1.2.1,!=1.3b1,<1.4  # BSD
+sphinx-testing # BSD License
 sphinxcontrib-blockdiag  # BSD
 sphinxcontrib-httpdomain  # BSD
 sphinxcontrib-seqdiag  # BSD
