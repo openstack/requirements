@@ -182,6 +182,7 @@ openstack/python-cinderclient
 openstack/python-congressclient
 openstack/python-cueclient
 openstack/python-designateclient
+openstack/python-freezerclient
 openstack/python-glanceclient
 openstack/python-glareclient
 openstack/python-heatclient
