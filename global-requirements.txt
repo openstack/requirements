@@ -17,7 +17,7 @@ castellan>=0.4.0 # Apache-2.0
 ceilometermiddleware>=0.1.0  # Apache-2.0
 cachetools>=1.1.0 # MIT License
 cffi  # MIT
-cliff!=1.16.0,!=1.17.0,>=1.15.0  # Apache-2.0
+cliff>=2.2.0  # Apache-2.0
 cmd2>=0.6.7  # MIT
 PuLP>=1.4.1  # MIT
 contextlib2>=0.4.0 # PSF License
