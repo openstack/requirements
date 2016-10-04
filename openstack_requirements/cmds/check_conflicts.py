@@ -14,6 +14,8 @@
 
 """
 
+from __future__ import print_function
+
 import argparse
 import sys
 import traceback
@@ -34,7 +36,11 @@ def main():
     parser.add_argument(
         'upper_constraints',
         default='upper-constraints.txt',
-        help='path to the upper-constraints.txt file',
+        help='path to the upper-constraints.txt file')
+    parser.add_argument(
+        'uc_xfails',
+        default='upper-constraints-xfails.txt',
+        help='Path to the upper-constraints-xfails.txt file',
     )
     args = parser.parse_args()
 
@@ -42,16 +48,35 @@ def main():
 
     print('\nChecking %s' % args.upper_constraints)
     upper_constraints = read_requirements_file(args.upper_constraints)
+    xfails = read_requirements_file(args.uc_xfails)
     for name, spec_list in upper_constraints.items():
         try:
             if name:
-                print('Checking conflicts for %s' % name)
                 pyver = "python_version=='%s.%s'" % (sys.version_info[0],
                                                      sys.version_info[1])
                 for req, original_line in spec_list:
                     if req.markers in ["", pyver]:
                         pkg_resources.require(name)
-        except pkg_resources.ContextualVersionConflict:
+        except pkg_resources.ContextualVersionConflict as e:
+
+            if e.dist.key in xfails:
+                xfail_requirement = xfails[e.dist.key][0][0]
+                xfail_blacklists = set(xfail_requirement.markers.split(','))
+                conflict = e.dist.as_requirement()
+                conflict_specifiers = ''.join(conflict.specs[0])
+
+                if (e.required_by.issubset(xfail_blacklists) and
+                        xfail_requirement.package == conflict.name and
+                        conflict_specifiers == xfail_requirement.specifiers):
+
+                    print ('XFAIL while checking conflicts '
+                           'for %s: %s conflicts with %s' %
+                           (name, e.dist, str(e.req)))
+                    continue
+
+            print('Checking conflicts for %s:\n'
+                  'ContextualVersionConflict: %s' % (name, str(e)))
+
             traceback.print_exc(file=sys.stdout)
             error_count += 1
 
