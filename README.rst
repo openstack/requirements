@@ -37,7 +37,7 @@ these things so that we can make a global decision for OpenStack on
 the suitability of the library.
 
 Since Havana we've also observed significant CI disruption occurring due to
-upstream releases of software that are are incompatible (whether in small
+upstream releases of software that are incompatible (whether in small
 or large ways) with OpenStack. So Global Requirements also serves as a control
 point to determine the precise versions of dependencies that will be used
 during CI.
