@@ -66,7 +66,7 @@ def _freeze(requirements, python):
     output = []
     try:
         version_out = subprocess.check_output(
-            [python, "--version"], stderr=subprocess.STDOUT)
+            [python, "--version"], stderr=subprocess.STDOUT).decode('utf-8')
         output.append(version_out)
         version_all = version_out.split()[1]
         version = '.'.join(version_all.split('.')[:2])
@@ -78,7 +78,8 @@ def _freeze(requirements, python):
                 [pip_bin, 'install', '-U', 'pip', 'setuptools', 'wheel']))
             output.append(subprocess.check_output(
                 [pip_bin, 'install', '-r', requirements]))
-            freeze = subprocess.check_output([pip_bin, 'freeze'])
+            freeze = subprocess.check_output(
+                [pip_bin, 'freeze']).decode('utf-8')
             output.append(freeze)
             return (version, _parse_freeze(freeze))
     except Exception as exc:
@@ -116,7 +117,8 @@ def _combine_freezes(freezes, blacklist=None):
     for package, versions in sorted(packages.items()):
         if package.lower() in excludes:
             continue
-        if len(versions) != 1 or versions.values()[0] != reference_versions:
+        if (len(versions) != 1 or
+                list(versions.values())[0] != reference_versions):
             # markers
             for version, py_versions in sorted(versions.items()):
                 # Once the ecosystem matures, we can consider using OR.
@@ -126,7 +128,7 @@ def _combine_freezes(freezes, blacklist=None):
                         (package, version, py_version))
         else:
             # no markers
-            yield '%s===%s\n' % (package, versions.keys()[0])
+            yield '%s===%s\n' % (package, list(versions.keys())[0])
 
 
 # -- untested UI glue from here down.
