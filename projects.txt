@@ -132,7 +132,6 @@ openstack/openstack-ansible-os_trove
 openstack/openstack-ansible-os_watcher
 openstack/openstack-ansible-os_zaqar
 openstack/openstack-ansible-pip_install
-openstack/openstack-ansible-pip_lock_down
 openstack/openstack-ansible-plugins
 openstack/openstack-ansible-rabbitmq_server
 openstack/openstack-ansible-repo_build
