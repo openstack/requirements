@@ -1,4 +1,4 @@
 # Format is
 # <dependency that is incompatible>==<version>;<list,of,affected,packages>
 
-pyparsing==2.1.9;pulp
+pyparsing==2.1.10;pulp
