@@ -395,6 +395,7 @@ uritemplate===0.6
 urllib3===1.18
 virtualenv===15.0.3
 voluptuous===0.9.3
+vmware-nsxlib===0.1.0
 waitress===1.0.0
 warlock===1.2.0
 weakrefmethod===1.0.3;python_version=='2.7'
