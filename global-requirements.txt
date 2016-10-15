@@ -168,6 +168,7 @@ pymongo>=3.0.2,!=3.1  # Apache-2.0
 PyMySQL>=0.6.2,!=0.7.7  # MIT License
 python-etcd>=0.4.3  # MIT License
 python-k8sclient>=0.2.0  # Apache-2.0
+typing>=3.5.2.2  # PSF
 voluptuous>=0.8.9  # BSD License
 vmware-nsxlib>=0.1.0  # Apache-2.0
 pydotplus>=2.0.2   # MIT License
