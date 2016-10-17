@@ -204,7 +204,7 @@ os-client-config===1.21.1
 os-cloud-config===0.4.1
 os-collect-config===0.1.37
 os-refresh-config===0.1.11
-os-testr===0.7.0
+os-testr===0.8.0
 os-vif===1.2.1
 os-win===1.2.0
 osc-lib===1.1.0
