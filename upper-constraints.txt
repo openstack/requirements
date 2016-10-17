@@ -3,7 +3,7 @@ Babel===2.3.4
 CouchDB===1.1
 Django===1.8.15
 Flask===0.11.1
-GitPython===2.0.8
+GitPython===2.0.9
 Jinja2===2.8
 Mako===1.0.4
 MarkupSafe===0.23
@@ -136,6 +136,7 @@ futures===3.0.5
 futurist===0.18.0
 gabbi===1.27.0
 gitdb===0.6.4
+gitdb2===2.0.0
 glance-store===0.18.0
 google-api-python-client===1.5.3
 graphviz===0.5.1
@@ -300,7 +301,7 @@ python-keystoneclient===3.6.0
 python-magnumclient===2.3.0
 python-manilaclient===1.11.0
 python-memcached===1.58
-python-mimeparse===1.5.5
+python-mimeparse===1.6.0
 python-mistralclient===2.1.1
 python-monascaclient===1.2.0
 python-muranoclient===0.11.1
@@ -355,6 +356,7 @@ simplejson===3.8.2
 singledispatch===3.4.0.3;python_version=='2.7'
 six===1.10.0
 smmap===0.9.0
+smmap2===2.0.0
 snowballstemmer===1.2.1
 spec-cleaner===0.9.0
 sphinx-rtd-theme===0.1.9
