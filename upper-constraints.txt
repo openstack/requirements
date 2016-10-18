@@ -75,8 +75,8 @@ bashate===0.5.1
 beautifulsoup4===4.5.1
 betamax===0.8.0
 blockdiag===1.5.3
-boto===2.42.0
-botocore===1.4.62
+boto===2.43.0
+botocore===1.4.63
 bottle===0.12.10
 cachetools===2.0.0
 cassandra-driver===3.7.0
@@ -138,7 +138,7 @@ gabbi===1.27.0
 gitdb===0.6.4
 gitdb2===2.0.0
 glance-store===0.18.0
-google-api-python-client===1.5.3
+google-api-python-client===1.5.4
 graphviz===0.5.1
 greenlet===0.4.10
 happybase===1.0.0;python_version=='2.7'
@@ -174,7 +174,7 @@ logutils===0.3.3
 lxml===3.6.4
 marathon===0.8.6
 microversion-parse===0.1.4
-mistral===2.0.0
+mistral===3.0.2
 mock===2.0.0
 monasca-common===1.1.0
 monasca-statsd===1.2.0
@@ -271,7 +271,7 @@ pykerberos===1.1.13
 pyldap===2.4.25.1
 pylxd===2.1.1
 pymemcache===1.3.8
-pymod2pkg===0.6.0
+pymod2pkg===0.6.1
 pymongo===3.3.0
 pyngus===2.1.2
 pyparsing===2.1.10
@@ -394,7 +394,7 @@ tzlocal===1.3
 ujson===1.35
 unicodecsv===0.14.1;python_version=='2.7'
 unittest2===1.1.0
-uritemplate===0.6
+uritemplate===3.0.0
 urllib3===1.18
 virtualenv===15.0.3
 vmware-nsxlib===0.1.0
