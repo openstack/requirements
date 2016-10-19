@@ -369,7 +369,7 @@ sphinxmark===0.1.14
 sqlalchemy-migrate===0.10.0
 sqlparse===0.2.1
 sseclient===0.0.12
-stevedore===1.17.1
+stevedore===1.18.0
 suds-jurko===0.6
 sympy===1.0
 sysv-ipc===0.7.0
