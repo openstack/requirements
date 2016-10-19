@@ -152,6 +152,7 @@ openstack/os-refresh-config
 openstack/os-testr
 openstack/os-vif
 openstack/os-win
+openstack/os-xenapi
 openstack/osc-lib
 openstack/oslo.cache
 openstack/oslo.concurrency
