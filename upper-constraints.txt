@@ -233,7 +233,7 @@ oslo.service===1.16.0
 oslo.utils===3.17.0
 oslo.versionedobjects===1.18.0
 oslo.vmware===2.15.0
-oslosphinx===4.7.0
+oslosphinx===4.8.0
 oslotest===2.10.0
 osprofiler===1.4.0
 ovs===2.6.0
