@@ -374,7 +374,7 @@ suds-jurko===0.6
 sympy===1.0
 sysv-ipc===0.7.0
 tablib===0.11.2
-taskflow===2.6.0
+taskflow===2.7.0
 tempest===13.0.0
 tempest-lib===1.0.0
 tenacity===3.2.1
