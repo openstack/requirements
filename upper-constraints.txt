@@ -168,7 +168,7 @@ logilab-common===1.2.2
 logutils===0.3.3
 lxml===3.6.4
 microversion-parse===0.1.4
-mistral===2.0.0
+mistral===3.0.2
 mock===2.0.0
 monasca-common===1.0.0
 monasca-statsd===1.1.0
