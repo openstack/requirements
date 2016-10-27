@@ -398,7 +398,7 @@ unittest2===1.1.0
 uritemplate===3.0.0
 urllib3===1.18
 virtualenv===15.0.3
-vmware-nsxlib===0.1.0
+vmware-nsxlib===0.2.0
 voluptuous===0.9.3
 waitress===1.0.0
 warlock===1.2.0
