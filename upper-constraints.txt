@@ -283,7 +283,7 @@ pysnmp===4.3.2
 pystache===0.5.4
 pytest===3.0.3
 python-barbicanclient===4.1.0
-python-ceilometerclient===2.6.1
+python-ceilometerclient===2.7.0
 python-cinderclient===1.9.0
 python-congressclient===1.5.0
 python-consul===0.6.1
