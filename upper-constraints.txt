@@ -313,7 +313,7 @@ python-subunit===1.2.0
 python-swiftclient===3.1.0
 python-tackerclient===0.7.0
 python-troveclient===2.5.0
-python-watcherclient===0.25.0
+python-watcherclient===0.25.1
 python-zaqarclient===1.2.0
 pytz===2016.6.1
 pyudev===0.21.0
