@@ -73,6 +73,7 @@ openstack/murano-agent
 openstack/murano-dashboard
 openstack/murano-pkg-check
 openstack/networking-bagpipe
+openstack/networking-bgpvpn
 openstack/networking-generic-switch
 openstack/networking-fujitsu
 openstack/networking-hyperv
