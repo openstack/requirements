@@ -236,7 +236,7 @@ oslo.vmware===2.15.0
 oslosphinx===4.8.0
 oslotest===2.10.0
 osprofiler===1.4.0
-ovs===2.6.0
+ovs===2.6.1
 packaging===16.7
 paramiko===2.0.2
 passlib===1.6.5
