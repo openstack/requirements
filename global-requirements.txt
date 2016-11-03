@@ -132,7 +132,7 @@ os-collect-config  # Apache-2.0
 os-refresh-config  # Apache-2.0
 os-testr>=0.8.0  # Apache-2.0
 os-vif>=1.1.0                           # Apache-2.0
-ovs>=2.6.0                              # Apache-2.0
+ovs>=2.6.1                              # Apache-2.0
 os-win>=0.2.3                           # Apache-2.0
 paramiko>=2.0 # LGPLv2.1+
 Parsley  # MIT
