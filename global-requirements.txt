@@ -97,7 +97,7 @@ netaddr>=0.7.13,!=0.7.16  # BSD
 netifaces>=0.10.4  # MIT
 netmiko!=0.4.3,>=0.3.0 # MIT
 networkx>=1.10  # BSD
-neutron-lib>=0.4.0  # Apache-2.0
+neutron-lib>=1.0.0  # Apache-2.0
 notifier>=1.0.3  # Apache-2.0
 oauth2client>=1.5.0,!=4.0.0  # Apache-2.0
 oauthlib>=0.6  # BSD
