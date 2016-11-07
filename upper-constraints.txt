@@ -312,7 +312,7 @@ python-nss===1.0.0
 python-openstackclient===3.3.0
 python-pytun===2.2.1
 python-qpid-proton===0.15.0
-python-saharaclient===0.18.0
+python-saharaclient===1.0.0
 python-searchlightclient===1.0.0
 python-senlinclient===1.0.0
 python-smaugclient===0.0.8
