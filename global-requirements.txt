@@ -280,6 +280,7 @@ XStatic-Angular-Bootstrap>=0.11.0.2  # MIT License
 XStatic-Angular-Gettext>=2.1.0.2 # MIT License
 XStatic-Angular-lrdragndrop>=1.0.2.2  # MIT License
 XStatic-Angular-Schema-Form>=0.8.13.0 # MIT
+XStatic-angular-ui-router>=0.3.1.2  # MIT
 XStatic-Bootstrap-Datepicker>=1.3.1.0  # Apache 2.0 License
 XStatic-Bootstrap-SCSS>=3.1.1.1  # Apache 2.0 License
 XStatic-bootswatch>=3.3.5.3 # MIT License
