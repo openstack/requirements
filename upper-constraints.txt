@@ -82,7 +82,7 @@ bottle===0.12.10
 cachetools===2.0.0
 cassandra-driver===3.7.1
 castellan===0.4.0
-ceilometermiddleware===0.5.0
+ceilometermiddleware===1.0.0
 cffi===1.8.3
 chardet===2.3.0
 click===6.6
