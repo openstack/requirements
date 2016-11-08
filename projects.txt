@@ -61,6 +61,7 @@ openstack/manila-ui
 openstack/mistral
 openstack/mistral-dashboard
 openstack/mistral-lib
+openstack/mixmatch
 openstack/monasca-api
 openstack/monasca-common
 openstack/monasca-notification
