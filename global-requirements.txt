@@ -392,7 +392,7 @@ zake>=0.1.6 # Apache-2.0
 # beyond this list would ever use a ==
 flake8>=2.5.4,<2.6.0  # MIT
 flake8_docstrings==0.2.1.post1  # MIT
-hacking>=0.11.0,<0.13  # Apache-2.0
+hacking>=0.12.0,<0.13  # Apache-2.0
 mccabe==0.2.1 # MIT License
 pep257==0.7.0 # MIT License
 pep8==1.5.7  # MIT
