@@ -13,6 +13,7 @@ openstack/blazar-nova
 openstack/castellan
 openstack/cinder
 openstack/cliff
+openstack/compute-hyperv
 openstack/congress
 openstack/cue
 openstack/debtcollector
