@@ -139,7 +139,7 @@ Parsley  # MIT
 passlib>=1.6  # BSD
 Paste  # MIT
 PasteDeploy>=1.5.0  # MIT
-pbr>=1.6  # Apache-2.0
+pbr>=1.8  # Apache-2.0
 pecan>=1.0.0,!=1.0.2,!=1.0.3,!=1.0.4,!=1.2  # BSD
 pexpect>=3.1,!=3.3 # ISC License
 pifpaf>=0.10.0  # Apache-2.0
