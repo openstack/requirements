@@ -79,7 +79,7 @@ botocore===1.4.50
 cachetools===1.1.6
 cassandra-driver===3.5.0
 castellan===0.4.0
-ceilometermiddleware===0.5.0
+ceilometermiddleware===0.5.1
 cffi===1.7.0
 chardet===2.3.0
 click===6.6
