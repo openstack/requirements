@@ -107,7 +107,7 @@ django-compressor===2.1
 django-floppyforms===1.7.0
 django-formtools===1.0
 django-nose===1.4.4
-django-openstack-auth===2.4.1
+django-openstack-auth===2.4.2
 django-pyscss===2.0.2
 dnspython===1.14.0
 dnspython3===1.12.0;python_version=='3.4'
