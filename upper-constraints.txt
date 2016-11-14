@@ -50,7 +50,7 @@ XStatic-Magic-Search===0.2.5.1
 XStatic-Rickshaw===1.5.0.0
 XStatic-Spin===1.2.5.2
 XStatic-angular-ui-router===0.3.1.2
-XStatic-bootswatch===3.3.6.0
+XStatic-bootswatch===3.3.7.0
 XStatic-jQuery===1.10.2.1
 XStatic-jquery-ui===1.12.0.1
 XStatic-mdi===1.4.57.0
