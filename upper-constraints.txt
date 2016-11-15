@@ -203,7 +203,7 @@ oauthlib===2.0.0
 openstack-doc-tools===1.2.0
 openstack.nose-plugin===0.11
 openstackdocstheme===1.5.0
-openstacksdk===0.9.9
+openstacksdk===0.9.10
 ordereddict===1.1
 os-api-ref===1.1.0
 os-apply-config===5.0.0
