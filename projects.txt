@@ -15,6 +15,7 @@ openstack/cinder
 openstack/cliff
 openstack/compute-hyperv
 openstack/congress
+openstack/craton
 openstack/cue
 openstack/debtcollector
 openstack/designate
@@ -184,6 +185,7 @@ openstack/python-blazarclient
 openstack/python-brick-cinderclient-ext
 openstack/python-cinderclient
 openstack/python-congressclient
+openstack/python-cratonclient
 openstack/python-cueclient
 openstack/python-designateclient
 openstack/python-freezerclient
