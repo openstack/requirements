@@ -44,7 +44,7 @@ XStatic-Hogan===2.0.0.2
 XStatic-JQuery-Migrate===1.2.1.1
 XStatic-JQuery.TableSorter===2.14.5.1
 XStatic-JQuery.quicksearch===2.0.3.1
-XStatic-JSEncrypt===2.0.0.2
+XStatic-JSEncrypt===2.3.1.0
 XStatic-Jasmine===2.4.1.1
 XStatic-Magic-Search===0.2.5.1
 XStatic-Rickshaw===1.5.0.0
