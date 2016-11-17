@@ -71,13 +71,13 @@ astroid===1.3.8
 autobahn===0.16.1
 automaton===1.5.0
 backports.ssl-match-hostname===3.5.0.1;python_version=='2.7'
-bandit===1.1.0
+bandit===1.2.0
 bashate===0.5.1
 beautifulsoup4===4.5.1
 betamax===0.8.0
 blockdiag===1.5.3
 boto===2.43.0
-botocore===1.4.73
+botocore===1.4.74
 bottle===0.12.10
 cachetools===2.0.0
 cassandra-driver===3.7.1
@@ -372,7 +372,7 @@ sphinxcontrib-seqdiag===0.8.5
 sphinxmark===0.1.15
 sqlalchemy-migrate===0.10.0
 sqlparse===0.2.2
-sseclient===0.0.13
+sseclient===0.0.14
 stevedore===1.18.0
 suds-jurko===0.6
 sympy===1.0
