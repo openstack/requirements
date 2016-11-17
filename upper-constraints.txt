@@ -292,6 +292,7 @@ python-congressclient===1.5.0
 python-consul===0.6.1
 python-dateutil===2.6.0
 python-designateclient===2.3.0
+python-freezerclient===1.0.0
 python-editor===1.0.1
 python-etcd===0.4.3
 python-glanceclient===2.5.0
