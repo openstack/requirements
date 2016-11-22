@@ -51,6 +51,7 @@ openstack/keystoneauth
 openstack/keystonemiddleware
 openstack/kingbird
 openstack/kolla
+openstack/kolla-ansible
 openstack/kosmos
 openstack/kuryr
 openstack/kuryr-libnetwork
