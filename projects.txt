@@ -1,10 +1,6 @@
 openstack-dev/hacking
 openstack-dev/pbr
 openstack/anchor
-openstack/astara
-openstack/astara-appliance
-openstack/astara-horizon
-openstack/astara-neutron
 openstack/automaton
 openstack/bandit
 openstack/barbican
@@ -16,7 +12,6 @@ openstack/cliff
 openstack/compute-hyperv
 openstack/congress
 openstack/craton
-openstack/cue
 openstack/debtcollector
 openstack/designate
 openstack/designate-dashboard
@@ -80,11 +75,9 @@ openstack/networking-bgpvpn
 openstack/networking-generic-switch
 openstack/networking-fujitsu
 openstack/networking-hyperv
-openstack/networking-l2gw
 openstack/networking-midonet
 openstack/networking-nec
 openstack/networking-odl
-openstack/networking-onos
 openstack/networking-ovn
 openstack/networking-sfc
 openstack/networking-vsphere
@@ -94,7 +87,6 @@ openstack/neutron-fwaas
 openstack/neutron-lbaas
 openstack/neutron-lbaas-dashboard
 openstack/neutron-lib
-openstack/neutron-vpnaas
 openstack/nimble
 openstack/nova
 openstack/nova-docker
@@ -186,7 +178,6 @@ openstack/python-brick-cinderclient-ext
 openstack/python-cinderclient
 openstack/python-congressclient
 openstack/python-cratonclient
-openstack/python-cueclient
 openstack/python-designateclient
 openstack/python-freezerclient
 openstack/python-glanceclient
