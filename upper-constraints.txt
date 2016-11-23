@@ -241,7 +241,7 @@ osprofiler===1.4.0
 ovs===2.6.1
 packaging===16.8
 paramiko===2.0.2
-passlib===1.6.5
+passlib===1.7.0
 pathlib===1.0.1;python_version=='2.7'
 pathlib2===2.1.0
 pbr===1.10.0
