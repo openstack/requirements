@@ -73,6 +73,7 @@ openstack/murano-dashboard
 openstack/murano-pkg-check
 openstack/networking-bagpipe
 openstack/networking-bgpvpn
+openstack/networking-dpm
 openstack/networking-generic-switch
 openstack/networking-fujitsu
 openstack/networking-hyperv
@@ -91,6 +92,7 @@ openstack/neutron-lib
 openstack/nimble
 openstack/nova
 openstack/nova-docker
+openstack/nova-dpm
 openstack/nova-lxd
 openstack/octavia
 openstack/openstack-ansible
