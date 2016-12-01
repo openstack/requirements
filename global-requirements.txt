@@ -39,6 +39,7 @@ dnspython>=1.14.0;python_version=='2.7'  # http://www.dnspython.org/LICENSE
 dnspython3>=1.12.0,!=1.13.0,!=1.14.0;python_version>='3.0'  # http://www.dnspython.org/LICENSE
 dogpile.cache>=0.6.2  # BSD
 dogtag-pki>=10.3.5.1  # LGPLv3+
+dulwich>=0.15.0  # Apache-2.0
 elasticsearch>=2.0.0,<=3.0.0 # Apache-2.0
 enum34;python_version=='2.7' or python_version=='2.6' or python_version=='3.3'  # BSD
 # NOTE: New versions of eventlet should not be accepted lightly
