@@ -302,7 +302,7 @@ python-ironic-inspector-client===1.9.0
 python-ironicclient===1.8.0
 python-k8sclient===0.3.0
 python-karborclient===0.1.1
-python-keystoneclient===3.7.0
+python-keystoneclient===3.8.0
 python-magnumclient===2.3.1
 python-manilaclient===1.11.0
 python-memcached===1.58
