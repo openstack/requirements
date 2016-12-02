@@ -232,7 +232,7 @@ oslo.policy===1.17.0
 oslo.privsep===1.15.0
 oslo.reports===1.16.0
 oslo.rootwrap===5.3.0
-oslo.serialization===2.14.0
+oslo.serialization===2.15.0
 oslo.service===1.18.0
 oslo.utils===3.19.0
 oslo.versionedobjects===1.19.0
