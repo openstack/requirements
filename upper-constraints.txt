@@ -62,7 +62,7 @@ XStatic-tv4===1.2.7.0
 XenAPI===1.2
 abclient===0.2.3
 alabaster===0.7.9
-alembic===0.8.8
+alembic===0.8.9
 amqp===1.4.9
 anyjson===0.3.3
 aodhclient===0.7.0
