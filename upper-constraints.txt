@@ -320,7 +320,7 @@ python-pytun===2.2.1
 python-qpid-proton===0.15.0
 python-saharaclient===1.0.0
 python-searchlightclient===1.0.0
-python-senlinclient===1.0.0
+python-senlinclient===1.1.0
 python-smaugclient===0.0.8
 python-solumclient===2.1.1
 python-subunit===1.2.0
