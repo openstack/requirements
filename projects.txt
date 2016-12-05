@@ -67,6 +67,7 @@ openstack/monasca-notification
 openstack/monasca-persister
 openstack/monasca-statsd
 openstack/monasca-transform
+openstack/monasca-ui
 openstack/mox3
 openstack/murano
 openstack/murano-agent
