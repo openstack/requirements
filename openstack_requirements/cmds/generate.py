@@ -201,9 +201,9 @@ def main(argv=None, stdout=None):
         help="Filename of a list of package names to exclude.")
     parser.add_option(
         "--version-map", dest='version_map', default=[], action='append',
-        help=('Add a : seperated list of versions to clone.  To \'clone\' '
+        help=('Add a : separated list of versions to clone.  To \'clone\' '
               'a freeze geberated by python3.4 to python3.5 specify 3.4:3.5.  '
-              'This is intented as as a way to transition between python '
+              'This is intended as as a way to transition between python '
               'versions when it\'s not possible to have all versions '
               'installed'))
     options, args = parser.parse_args(argv)
