@@ -50,6 +50,7 @@ openstack/kolla-ansible
 openstack/kosmos
 openstack/kuryr
 openstack/kuryr-libnetwork
+openstack/kuryr-kubernetes
 openstack/ldappool
 openstack/magnum
 openstack/magnum-ui
