@@ -77,7 +77,7 @@ beautifulsoup4===4.5.1
 betamax===0.8.0
 blockdiag===1.5.3
 boto===2.43.0
-botocore===1.4.83
+botocore===1.4.84
 bottle===0.12.10
 cachetools===2.0.0
 cassandra-driver===3.7.1
@@ -396,7 +396,7 @@ tinyrpc===0.5
 tooz===1.46.0
 tosca-parser===0.6.0
 traceback2===1.4.0
-tripleo-common===5.5.0
+tripleo-common===5.6.0
 trollius===2.1
 txaio===2.5.2
 typing===3.5.2.2
