@@ -12,6 +12,6 @@ setuptools!=24.0.0,>=16.0 # PSF/ZPL
 mock>=2.0 # BSD
 
 # this is required for the docs build jobs
-docutils>=0.11,!=0.13.1  # OSI-Approved Open Source, Public Domain
+docutils!=0.13.1,>=0.11 # OSI-Approved Open Source, Public Domain
 sphinx!=1.3b1,<1.4,>=1.2.1 # BSD
 oslosphinx>=4.7.0 # Apache-2.0
