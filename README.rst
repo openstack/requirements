@@ -386,3 +386,11 @@ Otherwise the change may be the result of recalculating the constraints which
 changed when a ``global-requirements.txt`` change is proposed. In this case, ignore
 the changes to ``upper-constraints.txt`` and review the
 ``global-requirements.txt`` component of the change.
+
+Resources
+=========
+
+- Documentation: http://docs.openstack.org/developer/requirements
+- Wiki: https://wiki.openstack.org/wiki/Requirements
+- Bugs: https://launchpad.net/openstack-requirements
+
