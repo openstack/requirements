@@ -241,6 +241,7 @@ openstack/tempest-lib
 openstack/tooz
 openstack/tosca-parser
 openstack/tricircle
+openstack/trio2o
 openstack/tripleo-common
 openstack/tripleo-validations
 openstack/trove
