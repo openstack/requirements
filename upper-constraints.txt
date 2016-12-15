@@ -31,7 +31,7 @@ WebTest===2.0.23
 Werkzeug===0.11.11
 XStatic===1.0.1
 XStatic-Angular===1.5.8.0
-XStatic-Angular-Bootstrap===0.11.0.8
+XStatic-Angular-Bootstrap===2.2.0.0
 XStatic-Angular-FileUpload===12.0.4.0
 XStatic-Angular-Gettext===2.3.8.0
 XStatic-Angular-Schema-Form===0.8.13.0
