@@ -369,7 +369,7 @@ unicodecsv===0.14.1
 unittest2===1.1.0
 uritemplate===0.6
 urllib3===1.14
-virtualenv===14.0.6
+virtualenv===15.0.3
 voluptuous===0.8.8
 waitress===0.8.10
 warlock===1.2.0
