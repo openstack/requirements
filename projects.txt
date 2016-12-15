@@ -39,6 +39,7 @@ openstack/i18n
 openstack/ironic
 openstack/ironic-inspector
 openstack/ironic-lib
+openstack/ironic-staging-drivers
 openstack/ironic-python-agent
 openstack/ironic-ui
 openstack/karbor
