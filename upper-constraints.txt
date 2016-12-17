@@ -115,7 +115,8 @@ dnspython===1.15.0
 dnspython3===1.15.0;python_version=='3.4'
 dnspython3===1.15.0;python_version=='3.5'
 doc8===0.7.0
-docker-py===1.7.2
+docker-py===1.10.6
+docker-pycreds===0.2.1
 docutils===0.12
 dogpile.cache===0.6.2
 dogtag-pki===10.3.5.1
