@@ -297,7 +297,7 @@ python-dateutil===2.6.0
 python-designateclient===2.4.0
 python-editor===1.0.3
 python-etcd===0.4.3
-python-freezerclient===1.0.0
+python-freezerclient===1.1.0
 python-glanceclient===2.5.0
 python-heatclient===1.7.0
 python-ironic-inspector-client===1.10.0
