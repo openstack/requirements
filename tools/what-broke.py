@@ -20,7 +20,7 @@ Monday morning, 6am. Loading up zuul status page, and realize there is
 a lot of red in the gate. Get second cup of coffee. Oh, some library
 must have released a bad version. Man, what released recently?
 
-This script attempts to give that answer by programatically providing
+This script attempts to give that answer by programmatically providing
 a list of everything in global-requirements that released recently, in
 descending time order.
 
