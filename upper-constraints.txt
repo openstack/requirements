@@ -228,7 +228,7 @@ oslo.context===2.11.0
 oslo.db===4.16.0
 oslo.i18n===3.11.0
 oslo.log===3.19.0
-oslo.messaging===5.15.0
+oslo.messaging===5.16.0
 oslo.middleware===3.22.0
 oslo.policy===1.17.0
 oslo.privsep===1.15.0
