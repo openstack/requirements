@@ -240,7 +240,6 @@ openstack/tacker-horizon
 openstack/tap-as-a-service
 openstack/taskflow
 openstack/tempest
-openstack/tempest-lib
 openstack/tooz
 openstack/tosca-parser
 openstack/tricircle
