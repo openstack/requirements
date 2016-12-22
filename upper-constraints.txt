@@ -314,7 +314,7 @@ python-mistralclient===2.1.2
 python-monascaclient===1.4.0
 python-muranoclient===0.11.1
 python-neutronclient===6.0.0
-python-novaclient===6.0.0
+python-novaclient===7.0.0
 python-nss===1.0.0
 python-openstackclient===3.6.0
 python-pytun===2.2.1
