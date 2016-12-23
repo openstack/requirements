@@ -89,7 +89,7 @@ django-pyscss>=2.0.2  # BSD License (2 clause)
 kombu>=3.0.25,!=4.0.0,!=4.0.1,!=4.0.2  # BSD
 ldap3>=1.0.2  # LGPLv3
 libvirt-python>=1.2.5                   # LGPLv2+
-lxml>=2.3  # BSD
+lxml>=2.3,!=3.7.0  # BSD
 Mako>=0.4.0  # MIT
 marathon>=0.8.6  # MIT
 microversion-parse>=0.1.2  # Apache-2.0

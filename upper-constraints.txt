@@ -176,7 +176,7 @@ libvirt-python===2.5.0
 linecache2===1.0.0
 logilab-common===1.3.0
 logutils===0.3.3
-lxml===3.7.0
+lxml===3.6.4
 marathon===0.8.9
 microversion-parse===0.1.4
 mistral===3.0.2
