@@ -83,6 +83,7 @@ openstack/networking-dpm
 openstack/networking-generic-switch
 openstack/networking-fujitsu
 openstack/networking-hyperv
+openstack/networking-l2gw
 openstack/networking-midonet
 openstack/networking-nec
 openstack/networking-odl
