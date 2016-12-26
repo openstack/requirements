@@ -72,6 +72,7 @@ ironic-lib>=2.2.0  # Apache-2.0
 ipaddress>=1.0.7;python_version<'3.3'  # PSF
 iso8601>=0.1.11  # MIT
 Jinja2>=2.8  # BSD License (3 clause)
+jsonmodels>=2.1.2  # BSD License (3 clause)
 jsonpatch>=1.1  # BSD
 jsonpath-rw>=1.2.0,<2.0  # Apache-2.0
 jsonpath-rw-ext>=0.1.9  # Apache-2.0
