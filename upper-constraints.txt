@@ -19,7 +19,7 @@ PyKMIP===0.6.0
 PyMySQL===0.7.9
 PyYAML===3.12
 Pygments===2.1.3
-Routes===2.3.1
+Routes===2.4.1
 SQLAlchemy===1.0.16
 SQLAlchemy-Utils===0.32.12
 SecretStorage===2.3.1
@@ -120,7 +120,7 @@ docker-pycreds===0.2.1
 docutils===0.12
 dogpile.cache===0.6.2
 dogtag-pki===10.3.5.1
-dulwich===0.15.0
+dulwich===0.16.1
 elasticsearch===2.4.0
 enum-compat===0.0.2
 enum34===1.1.6
@@ -138,7 +138,7 @@ funcsigs===1.0.2;python_version=='2.7'
 functools32===3.2.3.post2;python_version=='2.7'
 futures===3.0.5
 futurist===0.20.0
-gabbi===1.29.1
+gabbi===1.30.0
 gitdb===0.6.4
 gitdb2===2.0.0
 glance-store===0.19.0
