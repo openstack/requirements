@@ -201,7 +201,7 @@ os-api-ref===1.0.0
 os-apply-config===0.1.32
 os-brick===1.6.1
 os-client-config===1.21.1
-os-cloud-config===0.4.1
+os-cloud-config===5.1.0
 os-collect-config===0.1.37
 os-refresh-config===0.1.11
 os-testr===0.8.0
