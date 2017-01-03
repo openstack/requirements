@@ -204,6 +204,7 @@ pysaml2>=2.4.0,<4.0.3  # Apache-2.0
 # OpenStack clients. None of these should have an upper bound
 # as that has implications for testing in the gate.
 aodhclient>=0.7.0  # Apache-2.0
+gnocchiclient>=2.7.0  # Apache-2.0
 python-barbicanclient>=4.0.0  # Apache-2.0
 python-ceilometerclient>=2.5.0  # Apache-2.0
 python-cinderclient>=1.6.0,!=1.7.0,!=1.7.1  # Apache-2.0
