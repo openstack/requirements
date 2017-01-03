@@ -50,6 +50,7 @@ openstack/keystonemiddleware
 openstack/kingbird
 openstack/kolla
 openstack/kolla-ansible
+openstack/kolla-kubernetes
 openstack/kosmos
 openstack/kuryr
 openstack/kuryr-libnetwork
