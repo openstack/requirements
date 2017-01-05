@@ -250,7 +250,7 @@ requests>=2.10.0,!=2.12.2  # Apache-2.0
 requests-aws>=0.1.4    # BSD License (3 clause)
 requests-kerberos>=0.6  # ISC
 requestsexceptions>=1.1.1  # Apache-2.0
-rfc3986>=0.2.2  # Apache-2.0
+rfc3986>=0.3.1  # Apache-2.0
 Routes>=1.12.3,!=2.0,!=2.1,!=2.3.0;python_version=='2.7'  # MIT
 Routes>=1.12.3,!=2.0,!=2.3.0;python_version!='2.7'  # MIT
 rtslib-fb>=2.1.43,!=2.1.60,!=2.1.61  # Apache-2.0
