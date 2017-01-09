@@ -4,7 +4,7 @@ CouchDB===1.1
 Django===1.8.17
 Flask===0.12
 GitPython===2.1.1
-Jinja2===2.8.1
+Jinja2===2.9.3
 Mako===1.0.6
 MarkupSafe===0.23
 MySQL-python===1.2.5;python_version=='2.7'
@@ -85,7 +85,7 @@ castellan===0.4.0
 ceilometermiddleware===1.0.0
 cffi===1.9.1
 chardet===2.3.0
-click===6.6
+click===6.7
 cliff===2.3.0
 cliff-tablib===2.0
 cmd2===0.6.9
@@ -107,7 +107,7 @@ django-appconf===1.0.2
 django-babel===0.5.1
 django-compressor===2.1
 django-floppyforms===1.7.0
-django-formtools===1.0
+django-formtools===2.0
 django-nose===1.4.4
 django-openstack-auth===3.0.0
 django-pyscss===2.0.2
@@ -138,12 +138,12 @@ funcsigs===1.0.2;python_version=='2.7'
 functools32===3.2.3.post2;python_version=='2.7'
 futures===3.0.5
 futurist===0.20.0
-gabbi===1.30.0
+gabbi===1.30.2
 gitdb===0.6.4
 gitdb2===2.0.0
 glance-store===0.19.0
 gnocchiclient===2.7.0
-google-api-python-client===1.5.5
+google-api-python-client===1.6.0
 graphviz===0.5.2
 greenlet===0.4.10
 gunicorn===19.6.0
@@ -206,7 +206,7 @@ notifier===1.0.3
 numpy===1.11.3
 oauth2client===3.0.0
 oauthlib===2.0.1
-olefile===0.43
+olefile===0.44
 openstack-doc-tools===1.3.0
 openstack.nose-plugin===0.11
 openstackdocstheme===1.5.0
@@ -285,7 +285,7 @@ pymongo===3.4.0
 pyngus===2.1.3
 pyparsing===2.1.10
 pypowervm===1.0.0.3.9
-pyroute2===0.4.11
+pyroute2===0.4.12
 pysaml2===4.0.2
 pysendfile===2.0.1
 pysmi===0.0.7
@@ -390,7 +390,7 @@ tablib===0.11.3
 taskflow===2.8.0
 tempest===14.0.0
 tempest-lib===1.0.0
-tenacity===3.6.0
+tenacity===3.7.1
 termcolor===1.1.0
 testrepository===0.0.20
 testresources===2.0.1
