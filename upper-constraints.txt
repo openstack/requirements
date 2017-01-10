@@ -4,7 +4,7 @@ CouchDB===1.1
 Django===1.8.17
 Flask===0.12
 GitPython===2.1.1
-Jinja2===2.9.4
+Jinja2===2.8.1
 Mako===1.0.6
 MarkupSafe===0.23
 MySQL-python===1.2.5;python_version=='2.7'
