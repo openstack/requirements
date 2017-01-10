@@ -78,7 +78,7 @@ betamax===0.8.0
 blockdiag===1.5.3
 boto===2.45.0
 botocore===1.4.93
-bottle===0.12.10
+bottle===0.12.13
 cachetools===2.0.0
 cassandra-driver===3.7.1
 castellan===0.4.0
@@ -145,7 +145,7 @@ glance-store===0.19.0
 gnocchiclient===2.7.0
 google-api-python-client===1.6.0
 graphviz===0.5.2
-greenlet===0.4.10
+greenlet===0.4.11
 gunicorn===19.6.0
 happybase===0.9;python_version=='2.7'
 heat-translator===0.6.0
@@ -250,7 +250,7 @@ packaging===16.8
 paramiko===2.1.1
 passlib===1.7.0
 pathlib===1.0.1;python_version=='2.7'
-pathlib2===2.1.0
+pathlib2===2.2.0
 pbr===1.10.0
 pecan===1.2.1
 pexpect===4.2.1
@@ -300,7 +300,7 @@ python-consul===0.7.0
 python-dateutil===2.6.0
 python-designateclient===2.4.0
 python-editor===1.0.3
-python-etcd===0.4.3
+python-etcd===0.4.4
 python-freezerclient===1.1.0
 python-glanceclient===2.5.0
 python-heatclient===1.7.0
@@ -356,6 +356,7 @@ rjsmin===1.0.12
 rsa===3.4.2
 rtslib-fb===2.1.62
 ryu===4.9
+scandir===1.4
 scikit-learn===0.18.1
 scipy===0.18.1
 scp===0.10.2
@@ -377,10 +378,9 @@ sphinxcontrib-fulltoc===1.1
 sphinxcontrib-httpdomain===1.5.0
 sphinxcontrib-pecanwsme===0.8.0
 sphinxcontrib-seqdiag===0.8.5
-sphinxmark===0.1.16
+sphinxmark===0.1.17
 sqlalchemy-migrate===0.10.0
 sqlparse===0.2.2
-sseclient===0.0.14
 statsd===3.2.1
 stevedore===1.19.1
 suds-jurko===0.6
