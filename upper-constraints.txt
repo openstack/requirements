@@ -90,6 +90,7 @@ cliff===2.3.0
 cliff-tablib===2.0
 cmd2===0.6.9
 colorama===0.3.7
+construct===2.8.10
 contextlib2===0.5.4
 coverage===4.3.1
 crc16===0.1.1
