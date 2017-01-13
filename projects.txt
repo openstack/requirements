@@ -67,6 +67,7 @@ openstack/mistral
 openstack/mistral-dashboard
 openstack/mistral-lib
 openstack/mixmatch
+openstack/mogan
 openstack/monasca-api
 openstack/monasca-common
 openstack/monasca-log-api
@@ -100,7 +101,6 @@ openstack/neutron-lbaas
 openstack/neutron-lbaas-dashboard
 openstack/neutron-lib
 openstack/neutron-vpnaas
-openstack/nimble
 openstack/nova
 openstack/nova-docker
 openstack/nova-dpm
