@@ -158,7 +158,7 @@ icalendar===3.11.1
 idna===2.2
 influxdb===4.0.0
 ipaddress===1.0.18;python_version=='2.7'
-ironic-lib===2.4.0
+ironic-lib===2.5.0
 iso8601===0.1.11
 itsdangerous===0.24
 jmespath===0.9.0
