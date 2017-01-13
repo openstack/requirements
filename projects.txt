@@ -152,6 +152,7 @@ openstack/openstack-ansible-security
 openstack/openstack-ansible-specs
 openstack/openstack-ansible-tests
 openstack/openstack-doc-tools
+openstack/openstackclient
 openstack/openstackdocstheme
 openstack/os-api-ref
 openstack/os-apply-config
