@@ -139,6 +139,7 @@ os-brick>=1.8.0  # Apache-2.0
 os-client-config>=1.22.0  # Apache-2.0
 os-cloud-config  # Apache-2.0
 os-collect-config  # Apache-2.0
+os-dpm  # Apache-2.0
 os-refresh-config  # Apache-2.0
 os-testr>=0.8.0  # Apache-2.0
 os-vif>=1.3.0                           # Apache-2.0
