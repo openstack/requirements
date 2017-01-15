@@ -206,6 +206,7 @@ openstack/python-kingbirdclient
 openstack/python-magnumclient
 openstack/python-manilaclient
 openstack/python-mistralclient
+openstack/python-moganclient
 openstack/python-monascaclient
 openstack/python-muranoclient
 openstack/python-neutronclient
