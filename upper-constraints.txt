@@ -123,7 +123,7 @@ docker-pycreds===0.2.1
 docutils===0.12
 dogpile.cache===0.6.2
 dogtag-pki===10.3.5.1
-dulwich===0.16.1
+dulwich===0.16.3
 elasticsearch===2.4.1
 enum-compat===0.0.2
 enum34===1.1.6
@@ -198,7 +198,7 @@ murano-pkg-check===0.2.0
 ndg-httpsclient===0.4.2;python_version=='2.7'
 netaddr===0.7.19
 netifaces===0.10.5
-netmiko===1.1.0
+netmiko===1.2.5
 networkx===1.11
 neutron-lib===1.0.0
 nodeenv===1.0.0
