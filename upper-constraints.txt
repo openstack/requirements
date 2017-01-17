@@ -374,7 +374,7 @@ thriftpy===0.3.9;python_version=='2.7'
 tooz===1.43.0
 tosca-parser===0.6.0
 traceback2===1.4.0
-tripleo-common===5.0.0
+tripleo-common===5.4.1
 trollius===2.1
 txaio===2.5.1
 tzlocal===1.2.2
