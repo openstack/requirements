@@ -3,6 +3,7 @@ Babel===2.3.4
 CouchDB===1.1
 Django===1.8.17
 Flask===0.12
+Flask-RESTful===0.3.5
 GitPython===2.1.1
 Jinja2===2.8.1
 Mako===1.0.6
