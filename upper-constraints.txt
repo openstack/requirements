@@ -240,7 +240,7 @@ oslo.log===3.20.0
 oslo.messaging===5.16.0
 oslo.middleware===3.22.0
 oslo.policy===1.18.0
-oslo.privsep===1.15.0
+oslo.privsep===1.16.0
 oslo.reports===1.16.0
 oslo.rootwrap===5.3.1
 oslo.serialization===2.15.0
