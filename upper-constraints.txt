@@ -65,6 +65,7 @@ abclient===0.2.3
 alabaster===0.7.9
 alembic===0.8.10
 amqp===1.4.9
+aniso8601===1.2.0
 anyjson===0.3.3
 aodhclient===0.7.0
 appdirs===1.4.0
@@ -78,7 +79,7 @@ beautifulsoup4===4.5.3
 betamax===0.8.0
 blockdiag===1.5.3
 boto===2.45.0
-botocore===1.5.1
+botocore===1.5.2
 bottle===0.12.13
 cachetools===2.0.0
 cassandra-driver===3.7.1
@@ -352,7 +353,7 @@ redis===2.10.5
 reno===2.0.3
 repoze.lru===0.6
 repoze.who===2.3
-requests===2.12.4
+requests===2.12.5
 requests-aws===0.1.8
 requests-kerberos===0.11.0
 requests-mock===1.2.0
