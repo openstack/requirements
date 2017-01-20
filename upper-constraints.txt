@@ -189,6 +189,7 @@ lxml===3.7.2
 marathon===0.8.10
 microversion-parse===0.1.4
 mistral===3.0.2
+mitmproxy===1.0.2;python_version>'3.0'
 mock===2.0.0
 monasca-common===1.4.0
 monasca-statsd===1.5.0
