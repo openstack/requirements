@@ -16,6 +16,7 @@ Pillow===4.0.0
 Pint===0.7.2
 PuLP===1.6.1
 PyJWT===1.4.2
+PyKafka===2.5.0
 PyKMIP===0.6.0
 PyMySQL===0.7.9
 PyYAML===3.12
