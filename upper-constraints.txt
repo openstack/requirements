@@ -320,7 +320,7 @@ python-k8sclient===0.3.0
 python-karborclient===0.1.1
 python-keystoneclient===3.9.0
 python-magnumclient===2.3.1
-python-manilaclient===1.11.0
+python-manilaclient===1.12.0
 python-memcached===1.58
 python-mimeparse===1.6.0
 python-mistralclient===3.0.0
