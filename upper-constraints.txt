@@ -88,7 +88,7 @@ ceilometermiddleware===1.0.0
 cffi===1.9.1
 chardet===2.3.0
 click===6.7
-click-repl===0.1.0
+click-repl===0.1.1
 click-spinner===0.1.6
 cliff===2.4.0
 cliff-tablib===2.0
@@ -320,7 +320,7 @@ python-heatclient===1.7.0
 python-ironic-inspector-client===1.10.0
 python-ironicclient===1.10.0
 python-k8sclient===0.3.0
-python-karborclient===0.1.1
+python-karborclient===0.1.2
 python-keystoneclient===3.9.0
 python-magnumclient===2.3.1
 python-manilaclient===1.12.0
@@ -400,7 +400,7 @@ stevedore===1.19.1
 suds-jurko===0.6
 sympy===1.0
 sysv-ipc===0.7.0
-tablib===0.11.3
+tablib===0.11.4
 tabulate===0.7.7
 taskflow===2.9.0
 tempest===14.0.0
