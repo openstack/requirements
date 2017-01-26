@@ -217,7 +217,7 @@ olefile===0.44
 openstack-doc-tools===1.3.0
 openstack.nose-plugin===0.11
 openstackdocstheme===1.6.1
-openstacksdk===0.9.10
+openstacksdk===0.9.13
 ordereddict===1.1
 os-api-ref===1.2.0
 os-apply-config===5.0.0
