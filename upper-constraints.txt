@@ -331,7 +331,7 @@ python-muranoclient===0.12.0
 python-neutronclient===6.1.0
 python-novaclient===7.1.0
 python-nss===1.0.0
-python-openstackclient===3.8.0
+python-openstackclient===3.8.1
 python-pytun===2.2.1
 python-qpid-proton===0.15.0
 python-saharaclient===1.1.0
