@@ -310,7 +310,7 @@ python-cinderclient===1.11.0
 python-congressclient===1.6.0
 python-consul===0.7.0
 python-dateutil===2.6.0
-python-designateclient===2.5.0
+python-designateclient===2.6.0
 python-editor===1.0.3
 python-etcd===0.4.4
 python-freezerclient===1.2.0
