@@ -102,7 +102,6 @@ openstack/neutron-lbaas-dashboard
 openstack/neutron-lib
 openstack/neutron-vpnaas
 openstack/nova
-openstack/nova-docker
 openstack/nova-dpm
 openstack/nova-lxd
 openstack/octavia
