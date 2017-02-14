@@ -133,6 +133,7 @@ dnspython===1.15.0
 dnspython3===1.15.0;python_version=='3.4'
 dnspython3===1.15.0;python_version=='3.5'
 doc8===0.7.0
+docker===2.0.2
 docker-py===1.10.6
 docker-pycreds===0.2.1
 docutils===0.12
