@@ -31,7 +31,7 @@ declare -a branches=($(git describe --always) origin/master
                     )
 
 function search() {
-    git grep -Ei "^${1}" ${2} -- "${3}" | cut -d: -f4-
+    git grep -Ei "^${1}[=><!]" ${2} -- "${3}" | cut -d: -f4-
 }
 
 printf '\nRequirements\n'
