@@ -25,9 +25,9 @@
 # Note(tonyb): Expand HEAD into something that's hopefully more human
 #              readable
 declare -a branches=($(git describe --always) origin/master
+                     origin/stable/ocata
                      origin/stable/newton
                      origin/stable/mitaka
-                     origin/stable/liberty
                     )
 
 function search() {
