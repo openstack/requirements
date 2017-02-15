@@ -2,6 +2,7 @@
 # over time.
 flake8
 flake8_docstrings
+flake8-import-order
 hacking
 mccabe
 pep257
