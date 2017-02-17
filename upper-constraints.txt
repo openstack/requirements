@@ -87,7 +87,7 @@ blinker===1.4;python_version=='3.4'
 blinker===1.4;python_version=='3.5'
 blockdiag===1.5.3
 boto===2.45.0
-botocore===1.5.11
+botocore===1.5.12
 bottle===0.12.13
 brotlipy===0.6.0;python_version=='3.4'
 brotlipy===0.6.0;python_version=='3.5'
@@ -179,7 +179,7 @@ html2text===2016.9.19;python_version=='3.5'
 httplib2===0.10.3
 hyperframe===4.0.1;python_version=='3.4'
 hyperframe===4.0.1;python_version=='3.5'
-icalendar===3.11.2
+icalendar===3.11.3
 idna===2.2
 imagesize===0.7.1
 influxdb===4.0.0
