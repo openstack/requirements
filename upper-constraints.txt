@@ -87,7 +87,7 @@ blinker===1.4;python_version=='3.4'
 blinker===1.4;python_version=='3.5'
 blockdiag===1.5.3
 boto===2.45.0
-botocore===1.5.12
+botocore===1.5.13
 bottle===0.12.13
 brotlipy===0.6.0;python_version=='3.4'
 brotlipy===0.6.0;python_version=='3.5'
@@ -109,7 +109,7 @@ construct===2.8.10
 contextlib2===0.5.4
 coverage===4.3.4
 crc16===0.1.1
-croniter===0.3.14
+croniter===0.3.15
 cryptography===1.7.2
 cssutils===1.0.1;python_version=='3.4'
 cssutils===1.0.1;python_version=='3.5'
@@ -133,7 +133,7 @@ dnspython===1.15.0
 dnspython3===1.15.0;python_version=='3.4'
 dnspython3===1.15.0;python_version=='3.5'
 doc8===0.7.0
-docker===2.0.2
+docker===2.1.0
 docker-py===1.10.6
 docker-pycreds===0.2.1
 docutils===0.12
@@ -218,7 +218,7 @@ mistral===3.0.2
 mitmproxy===1.0.2;python_version=='3.4'
 mitmproxy===1.0.2;python_version=='3.5'
 mock===2.0.0
-monasca-common===1.4.0
+monasca-common===1.5.0
 monasca-statsd===1.5.0
 monotonic===1.2
 mox===0.5.3
@@ -456,7 +456,7 @@ tornado===4.4.2;python_version=='3.4'
 tornado===4.4.2;python_version=='3.5'
 tosca-parser===0.7.0
 traceback2===1.4.0
-tripleo-common===5.7.0
+tripleo-common===5.8.0
 trollius===2.1
 txaio===2.6.1
 typing===3.5.3.0
