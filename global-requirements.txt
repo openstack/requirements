@@ -78,6 +78,7 @@ heat-translator>=0.4.0 # Apache-2.0
 httplib2>=0.7.5  # MIT
 icalendar>=3.10 # BSD
 influxdb>=2.9.2  # MIT
+instack-undercloud>=7.0.0  # Apache-2.0
 ironic-lib>=2.5.0  # Apache-2.0
 ipaddress>=1.0.7;python_version<'3.3'  # PSF
 iso8601>=0.1.11  # MIT
