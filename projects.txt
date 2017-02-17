@@ -237,6 +237,7 @@ openstack/senlin-dashboard
 openstack/solum
 openstack/solum-dashboard
 openstack/stevedore
+openstack/sushy
 openstack/swauth
 openstack/swift
 openstack/syntribos
