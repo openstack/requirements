@@ -305,7 +305,7 @@ os-collect-config===5.1.0
 python-qpid-proton===0.16.0
 pysaml2===4.0.2
 oslo.reports===1.17.0
-ceilometermiddleware===1.0.0
+ceilometermiddleware===1.0.1
 python-nss===1.0.0
 testrepository===0.0.20
 sympy===1.0
