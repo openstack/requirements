@@ -36,7 +36,7 @@ pbr===1.10.0
 microversion-parse===0.1.4
 Pint===0.7.2
 oslo.i18n===3.12.0
-jsonpath-rw-ext===1.0.0
+jsonpath-rw-ext===1.1.0
 python-mistralclient===3.0.0
 oslo.context===2.12.1
 python-senlinclient===1.2.0
@@ -163,6 +163,7 @@ django-compressor===2.1.1
 libvirt-python===3.0.0
 tzlocal===1.3
 python-novaclient===7.1.0
+bcrypt===3.1.3
 os-client-config===1.26.0
 XStatic-Angular-Gettext===2.3.8.0
 Pygments===2.2.0
@@ -184,7 +185,7 @@ html2text===2016.9.19;python_version=='3.5'
 XStatic-JQuery.quicksearch===2.0.3.1
 mpmath===0.19
 XStatic-JQuery-Migrate===1.2.1.1
-appdirs===1.4.0
+appdirs===1.4.2
 tinyrpc===0.5
 influxdb===4.0.0
 funcparserlib===0.3.6
@@ -209,7 +210,7 @@ castellan===0.5.0
 oslo.versionedobjects===1.21.0
 webcolors===1.7
 aodhclient===0.8.0
-autobahn===0.17.1
+autobahn===0.17.2
 SQLAlchemy-Utils===0.32.12
 coverage===4.3.4
 freezegun===0.3.8
@@ -343,7 +344,7 @@ fortiosclient===0.0.2
 stevedore===1.20.0
 botocore===1.5.18
 xmltodict===0.10.2
-pyasn1===0.2.2
+pyasn1===0.2.3
 python-utils===2.0.1
 oslo.rootwrap===5.4.0
 Django===1.8.17
@@ -355,6 +356,7 @@ click===6.7
 docker-pycreds===0.2.1
 XStatic-smart-table===1.4.13.2
 kuryr-lib===0.3.0
+scrypt===0.8.0
 jsonpatch===1.15
 os-testr===0.8.0
 stomp.py===4.1.17
@@ -493,5 +495,3 @@ pytz===2016.10
 XStatic-D3===3.5.17.0
 sysv-ipc===0.7.0
 scikit-learn===0.18.1
-bcrypt===3.1.3
-scrypt===0.8.0
