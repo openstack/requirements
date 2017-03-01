@@ -74,7 +74,7 @@ bashate===0.5.1
 XStatic-Angular===1.5.8.0
 pyngus===2.1.4
 Pillow===4.0.0
-vmware-nsxlib===0.7.2
+vmware-nsxlib===0.7.3
 python-mimeparse===1.6.0
 tripleo-common===5.8.0
 Tempita===0.5.2
