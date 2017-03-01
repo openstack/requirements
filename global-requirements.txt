@@ -52,7 +52,6 @@ enum34;python_version=='2.7' or python_version=='2.6' or python_version=='3.3'  
 # as they have earned a reputation of frequently breaking things.
 eventlet!=0.18.3,>=0.18.2  # MIT
 extras  # MIT
-fairy-slipper>=0.1.0  # Apache-2.0
 falcon>=1.0.0 # Apache-2.0
 Flask>=0.10,!=0.11,<1.0  # BSD
 Flask-RESTful>=0.3.5     # BSD
@@ -158,7 +157,7 @@ pathlib2>=2.1.0  # MIT
 passlib>=1.7.0  # BSD
 Paste  # MIT
 PasteDeploy>=1.5.0  # MIT
-pbr>=1.8  # Apache-2.0
+pbr>=2.0.0  # Apache-2.0
 pecan>=1.0.0,!=1.0.2,!=1.0.3,!=1.0.4,!=1.2  # BSD
 pexpect>=3.1,!=3.3 # ISC License
 pifpaf>=0.10.0  # Apache-2.0
@@ -261,7 +260,7 @@ reno>=1.8.0  # Apache-2.0
 requests>=2.10.0,!=2.12.2,!=2.13.0  # Apache-2.0
 requests-aws>=0.1.4    # BSD License (3 clause)
 requests-kerberos>=0.6  # ISC
-requestsexceptions>=1.1.1  # Apache-2.0
+requestsexceptions>=1.2.0  # Apache-2.0
 rfc3986>=0.3.1  # Apache-2.0
 Routes>=1.12.3,!=2.0,!=2.1,!=2.3.0;python_version=='2.7'  # MIT
 Routes>=1.12.3,!=2.0,!=2.3.0;python_version!='2.7'  # MIT
