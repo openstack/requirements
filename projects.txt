@@ -32,6 +32,7 @@ openstack/glance
 openstack/glance_store
 openstack/glare
 openstack/heat
+openstack/heat-agents
 openstack/heat-translator
 openstack/horizon
 openstack/horizon-cisco-ui
