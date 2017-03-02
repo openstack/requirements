@@ -104,6 +104,7 @@ openstack/neutron-vpnaas
 openstack/nova
 openstack/nova-dpm
 openstack/nova-lxd
+openstack/nova-powervm
 openstack/octavia
 openstack/openstack-ansible
 openstack/openstack-ansible-apt_package_pinning
