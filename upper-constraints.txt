@@ -239,6 +239,8 @@ notifier===1.0.3
 pycrypto===2.6.1
 ujson===1.35
 selenium===3.0.2
+mypy===0.501;python_version=='3.4'
+mypy===0.501;python_version=='3.5'
 dogtag-pki===10.3.5.1
 sphinxcontrib-seqdiag===0.8.5
 os-win===1.4.0
