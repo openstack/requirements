@@ -3,3 +3,4 @@
 
 pyparsing==2.1.10;pulp
 psutil==5.1.3;os-refresh-config
+Sphinx==1.5.2;os-api-ref,openstack-doc-tools
