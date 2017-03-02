@@ -63,7 +63,7 @@ except ImportError:
     pass
 
 setuptools.setup(
-    setup_requires=['pbr>=1.8'],
+    setup_requires=['pbr>=2.0.0'],
     pbr=True)
 """
 
