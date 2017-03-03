@@ -257,7 +257,6 @@ openstack/tripleo-validations
 openstack/trove
 openstack/virtualbmc
 openstack/vitrage
-openstack/vmware-nsx
 openstack/vmware-nsxlib
 openstack/watcher
 openstack/watcher-dashboard
