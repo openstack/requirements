@@ -452,7 +452,7 @@ rjsmin===1.0.12
 icalendar===3.11.3
 decorator===4.0.11
 cffi===1.9.1
-futurist===0.21.0
+futurist===0.22.0
 jsonschema===2.6.0
 alembic===0.9.1
 glance-store===0.20.0
