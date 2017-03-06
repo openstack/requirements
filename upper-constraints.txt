@@ -257,7 +257,7 @@ sqlalchemy-migrate===0.11.0
 gitdb===0.6.4
 python-monascaclient===1.5.0
 ldap3===2.2.1
-automaton===1.7.0
+automaton===1.8.0
 argh===0.26.2;python_version=='3.4'
 argh===0.26.2;python_version=='3.5'
 keyring===10.3
