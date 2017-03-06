@@ -300,7 +300,7 @@ os-dpm===1.0.0
 python-neutronclient===6.1.0
 pika===0.10.0
 oslo.cache===1.17.0
-WebTest===2.0.25
+WebTest===2.0.26
 openstack.nose-plugin===0.11
 os-collect-config===5.1.0
 python-qpid-proton===0.16.0
