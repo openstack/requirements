@@ -331,7 +331,7 @@ os-cloud-config===5.1.0
 bottle===0.12.13
 betamax===0.8.0
 construct===2.8.10
-pyparsing===2.1.10
+pyparsing===2.2.0
 dogpile.cache===0.6.2
 python-barbicanclient===4.2.0
 blinker===1.4;python_version=='3.4'
