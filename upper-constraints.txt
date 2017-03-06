@@ -248,7 +248,7 @@ pydotplus===2.0.2
 urwid===1.3.1;python_version=='3.4'
 urwid===1.3.1;python_version=='3.5'
 singledispatch===3.4.0.3;python_version=='2.7'
-oslo.serialization===2.16.0
+oslo.serialization===2.17.0
 warlock===1.2.0
 sphinxcontrib-httpdomain===1.5.0
 murano-pkg-check===0.3.0
