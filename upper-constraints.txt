@@ -15,7 +15,7 @@ WebOb===1.6.3
 pecan===1.2.1
 ryu===4.12
 os-api-ref===1.3.0
-oslo.concurrency===3.18.0
+oslo.concurrency===3.19.0
 websocket-client===0.40.0
 osprofiler===1.5.0
 bandit===1.4.0
