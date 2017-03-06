@@ -35,7 +35,7 @@ alabaster===0.7.10
 pbr===2.0.0
 microversion-parse===0.1.4
 Pint===0.7.2
-oslo.i18n===3.12.0
+oslo.i18n===3.13.0
 jsonpath-rw-ext===1.1.1
 python-mistralclient===3.0.0
 oslo.context===2.12.1
