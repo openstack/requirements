@@ -223,7 +223,7 @@ XStatic-Angular-Schema-Form===0.8.13.0
 gabbi===1.32.0
 XStatic-bootswatch===3.3.7.0
 XStatic-term.js===0.0.7.0
-oslo.log===3.20.1
+oslo.log===3.21.0
 nodeenv===1.1.2
 pylev===1.3.0
 python-searchlightclient===1.1.0
