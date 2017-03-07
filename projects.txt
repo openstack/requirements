@@ -263,3 +263,4 @@ openstack/watcher-dashboard
 openstack/zaqar
 openstack/zaqar-ui
 openstack/zun
+openstack/zun-ui
