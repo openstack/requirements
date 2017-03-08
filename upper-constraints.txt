@@ -374,6 +374,7 @@ pykafka===2.5.0
 kombu===4.0.1
 mitmproxy===2.0.0;python_version=='3.4'
 mitmproxy===2.0.0;python_version=='3.5'
+betamax-matchers===0.4.0
 yaql===1.1.3
 requestsexceptions===1.2.0
 testresources===2.0.1
