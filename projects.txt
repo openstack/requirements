@@ -12,7 +12,6 @@ openstack/cinder
 openstack/cliff
 openstack/compute-hyperv
 openstack/congress
-openstack/craton
 openstack/debtcollector
 openstack/designate
 openstack/designate-dashboard
