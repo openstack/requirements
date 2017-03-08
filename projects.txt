@@ -186,6 +186,7 @@ openstack/oslo.versionedobjects
 openstack/oslo.vmware
 openstack/oslosphinx
 openstack/oslotest
+openstack/ovsdbapp
 openstack/pycadf
 openstack/pymod2pkg
 openstack/python-barbicanclient
