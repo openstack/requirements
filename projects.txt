@@ -227,6 +227,7 @@ openstack/python-troveclient
 openstack/python-vitrageclient
 openstack/python-watcherclient
 openstack/python-zaqarclient
+openstack/python-zunclient
 openstack/renderspec
 openstack/requirements
 openstack/sahara
