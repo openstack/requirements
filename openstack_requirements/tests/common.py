@@ -89,6 +89,11 @@ def make_project(fixture):
 
 global_reqs = requirement.parse(
     open("openstack_requirements/tests/files/gr-base.txt", "rt").read())
+upper_constraints = requirement.parse(
+    open("openstack_requirements/tests/files/upper-constraints.txt",
+         "rt").read())
+blacklist = requirement.parse(
+    open("openstack_requirements/tests/files/blacklist.txt", "rt").read())
 pbr_project = make_project(pbr_fixture)
 project_project = make_project(project_fixture)
 bad_project = make_project(bad_project_fixture)
