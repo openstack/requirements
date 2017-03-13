@@ -226,7 +226,7 @@ os-client-config===1.26.0
 os-cloud-config===6.0.0
 os-collect-config===5.1.0
 os-dpm===1.0.0
-os-refresh-config===5.1.0
+os-refresh-config===6.0.0
 os-testr===0.8.0
 os-vif===1.4.0
 os-win===1.4.1
