@@ -290,7 +290,7 @@ XStatic-Spin===1.2.5.2
 SecretStorage===2.3.1
 XStatic-Rickshaw===1.5.0.0
 iso8601===0.1.11
-tooz===1.50.0
+tooz===1.51.0
 linecache2===1.0.0
 oauth2client===3.0.0
 idna===2.5
