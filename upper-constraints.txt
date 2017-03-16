@@ -63,7 +63,7 @@ XStatic-jQuery===1.10.2.1
 jsonmodels===2.1.5
 ddt===1.1.1
 ipaddress===1.0.18
-python-freezerclient===1.2.0
+python-freezerclient===1.3.0
 os-xenapi===0.1.1
 python-vitrageclient===1.1.1
 nosexcover===1.0.11
