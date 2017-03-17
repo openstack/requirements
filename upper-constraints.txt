@@ -25,6 +25,7 @@ lxml===3.7.3
 python-kingbirdclient===0.1.0
 pytest===3.0.7
 python-etcd===0.4.5
+etcd3===0.5.2
 cursive===0.1.2
 oslo.service===1.21.0
 django-appconf===1.0.2
