@@ -15,7 +15,7 @@ WebOb===1.6.3
 pecan===1.2.1
 ryu===4.12
 os-api-ref===1.3.0
-oslo.concurrency===3.19.0
+oslo.concurrency===3.20.0
 websocket-client===0.40.0
 osprofiler===1.7.0
 bandit===1.4.0
@@ -53,8 +53,8 @@ nosehtmloutput===0.0.5
 waitress===1.0.2
 mistral===4.0.0
 os-refresh-config===6.0.0
-jsbeautifier===1.6.11;python_version=='3.4'
-jsbeautifier===1.6.11;python_version=='3.5'
+jsbeautifier===1.6.12;python_version=='3.4'
+jsbeautifier===1.6.12;python_version=='3.5'
 pysnmp===4.3.4
 Mako===1.0.6
 XStatic-angular-ui-router===0.3.1.2
@@ -103,7 +103,7 @@ pypowervm===1.0.0.4.1
 doc8===0.7.0
 pymongo===3.4.0
 sqlparse===0.2.3
-oslotest===2.14.0
+oslotest===2.15.0
 jsonpointer===1.10
 netaddr===0.7.19
 pyghmi===1.0.18
@@ -158,7 +158,7 @@ requests-mock===1.3.0
 os-apply-config===6.0.0
 oslosphinx===4.11.0
 mox3===0.21.0
-gunicorn===19.7.0
+gunicorn===19.7.1
 unittest2===1.1.0
 django-compressor===2.1.1
 libvirt-python===3.1.0
@@ -188,6 +188,7 @@ mpmath===0.19
 XStatic-JQuery-Migrate===1.2.1.1
 appdirs===1.4.3
 tinyrpc===0.5
+Flask-SQLAlchemy===2.2
 influxdb===4.0.0
 funcparserlib===0.3.6
 passlib===1.7.1
@@ -198,7 +199,7 @@ trollius===2.1
 scp===0.10.2
 python-zaqarclient===1.4.0
 funcsigs===1.0.2;python_version=='2.7'
-zhmcclient===0.10.0
+zhmcclient===0.11.0
 dnspython3===1.15.0;python_version=='3.4'
 dnspython3===1.15.0;python_version=='3.5'
 ldappool===2.0.0
@@ -208,7 +209,7 @@ hpack===2.3.0;python_version=='3.5'
 hiredis===0.2.0
 google-api-python-client===1.6.2
 castellan===0.5.0
-oslo.versionedobjects===1.22.0
+oslo.versionedobjects===1.23.0
 webcolors===1.7
 aodhclient===0.9.0
 autobahn===0.17.2
@@ -218,7 +219,7 @@ freezegun===0.3.8
 python-pytun===2.2.1
 pyperclip===1.5.27;python_version=='3.4'
 pyperclip===1.5.27;python_version=='3.5'
-cassandra-driver===3.8.0
+cassandra-driver===3.8.1
 mox===0.5.3
 XStatic-Angular-Schema-Form===0.8.13.0
 gabbi===1.32.0
@@ -259,18 +260,18 @@ oslo.vmware===2.18.0
 sqlalchemy-migrate===0.11.0
 gitdb===0.6.4
 python-monascaclient===1.5.0
-ldap3===2.2.1
+ldap3===2.2.2
 automaton===1.8.0
 argh===0.26.2;python_version=='3.4'
 argh===0.26.2;python_version=='3.5'
-keyring===10.3
+keyring===10.3.1
 testscenarios===0.5.0
 sphinxcontrib-pecanwsme===0.8.0
 enum34===1.1.6
 packaging===16.8
 nose-exclude===0.5.0
 psutil===5.2.0
-py===1.4.32
+py===1.4.33
 txaio===2.6.1
 elasticsearch===2.4.1
 django-nose===1.4.4
@@ -291,7 +292,7 @@ XStatic-Spin===1.2.5.2
 SecretStorage===2.3.1
 XStatic-Rickshaw===1.5.0.0
 iso8601===0.1.11
-tooz===1.51.0
+tooz===1.52.0
 linecache2===1.0.0
 oauth2client===3.0.0
 idna===2.5
@@ -302,7 +303,7 @@ crc16===0.1.1
 os-dpm===1.0.0
 python-neutronclient===6.1.0
 pika===0.10.0
-oslo.cache===1.18.0
+oslo.cache===1.19.0
 WebTest===2.0.27
 openstack.nose-plugin===0.11
 os-collect-config===6.0.0
@@ -317,14 +318,14 @@ sphinxmark===0.1.17
 osc-lib===1.3.0
 python-consul===0.7.0
 seqdiag===0.9.5
-numpy===1.12.0
+numpy===1.12.1
 repoze.who===2.3
 Sphinx===1.5.3
 oslo.config===3.23.0
 tempest===15.0.0
 django-floppyforms===1.7.0
 openstackdocstheme===1.6.1
-progressbar2===3.15.0
+progressbar2===3.16.0
 zake===0.2.2
 python-solumclient===2.2.0
 PyMySQL===0.7.10
@@ -357,7 +358,7 @@ jmespath===0.9.2
 click===6.7
 docker-pycreds===0.2.1
 XStatic-smart-table===1.4.13.2
-kuryr-lib===0.3.0
+kuryr-lib===0.4.0
 scrypt===0.8.0
 jsonpatch===1.15
 typed-ast===1.0.2;python_version=='3.4'
@@ -368,9 +369,9 @@ xattr===0.9.1
 python-memcached===1.58
 openstacksdk===0.9.13
 six===1.10.0
-h2===2.6.0;python_version=='3.4'
-h2===2.6.0;python_version=='3.5'
-dulwich===0.17.1
+h2===2.6.1;python_version=='3.4'
+h2===2.6.1;python_version=='3.5'
+dulwich===0.17.2
 pykafka===2.5.0
 kombu===4.0.1
 mitmproxy===2.0.1;python_version=='3.4'
@@ -383,7 +384,6 @@ falcon===1.1.0
 pycryptodome===3.4.5
 pyldap===2.4.28
 Flask-RESTful===0.3.5
-Flask-SQLAlchemy===2.2
 GitPython===2.1.3
 python-ironicclient===1.11.1
 XStatic===1.0.1
@@ -401,7 +401,7 @@ pymemcache===1.4.2
 wrapt===1.10.10
 oslo.privsep===1.17.0
 zope.interface===4.3.3
-oslo.policy===1.20.0
+oslo.policy===1.21.0
 python-muranoclient===0.12.0
 pyeclib===1.4.0
 django-openstack-auth===3.1.1
@@ -412,7 +412,7 @@ spec-cleaner===0.9.2
 repoze.lru===0.6
 rfc3986===0.4.1
 tenacity===4.0.0
-logilab-common===1.3.0
+logilab-common===1.4.0
 XStatic-Magic-Search===0.2.5.1
 python-designateclient===2.6.0
 Paste===2.0.3
@@ -464,7 +464,7 @@ alembic===0.9.1
 glance-store===0.20.0
 sphinx-testing===0.7.1
 dnspython===1.15.0
-oauthlib===2.0.1
+oauthlib===2.0.2
 Babel===2.3.4
 logutils===0.3.4.1
 scandir===1.5
@@ -478,7 +478,7 @@ tosca-parser===0.7.0
 Flask===0.12
 pymod2pkg===0.7.2
 happybase===0.9;python_version=='2.7'
-marathon===0.8.11
+marathon===0.8.12
 docker-py===1.10.6
 fasteners===0.14.1
 sortedcontainers===1.5.7;python_version=='3.4'
