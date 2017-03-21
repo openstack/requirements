@@ -6,6 +6,7 @@ openstack/automaton
 openstack/bandit
 openstack/barbican
 openstack/bifrost
+openstack/blazar
 openstack/blazar-nova
 openstack/castellan
 openstack/cinder
