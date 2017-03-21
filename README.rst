@@ -322,6 +322,12 @@ For new Requirements
   Please provide details such as gerrit change request or launchpad
   bug/blueprint specifying the need for adding this library.
 
+- Do I need to update anything else?
+
+  When new library is added, initial version of release needs to be added
+  to ``upper-constraints.txt``. After that, OpenStack Proposal Bot will
+  propose updates.
+
 .. _Licensing requirements: http://governance.openstack.org/reference/licensing.html
 
 For Upgrading Requirements Versions
