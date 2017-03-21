@@ -357,7 +357,7 @@ jmespath===0.9.2
 click===6.7
 docker-pycreds===0.2.1
 XStatic-smart-table===1.4.13.2
-kuryr-lib===0.3.0
+kuryr-lib===0.4.0
 scrypt===0.8.0
 jsonpatch===1.15
 typed-ast===1.0.2;python_version=='3.4'
