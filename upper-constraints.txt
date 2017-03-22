@@ -504,3 +504,4 @@ XStatic-D3===3.5.17.0
 sysv-ipc===0.7.0
 scikit-learn===0.18.1
 virtualbmc===1.0.0
+os-traits===0.2.0
