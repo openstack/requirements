@@ -148,7 +148,7 @@ gevent===1.2.1
 gitdb===0.6.4
 gitdb2===2.0.0
 glance-store===0.20.0
-gnocchiclient===3.0.0
+gnocchiclient===3.1.0
 google-api-python-client===1.6.1
 graphviz===0.5.2
 greenlet===0.4.11
