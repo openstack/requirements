@@ -225,6 +225,7 @@ openstack/python-tackerclient
 openstack/python-tricircleclient
 openstack/python-tripleoclient
 openstack/python-troveclient
+openstack/python-valenceclient
 openstack/python-vitrageclient
 openstack/python-watcherclient
 openstack/python-zaqarclient
@@ -257,6 +258,7 @@ openstack/tripleo-common
 openstack/tripleo-heat-templates
 openstack/tripleo-validations
 openstack/trove
+openstack/valence
 openstack/virtualbmc
 openstack/vitrage
 openstack/vmware-nsxlib
