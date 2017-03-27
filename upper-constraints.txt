@@ -5,7 +5,7 @@ rsa===3.4.2
 restructuredtext-lint===1.0.1
 netmiko===1.3.0
 PasteDeploy===1.5.2
-typing===3.5.3.0
+typing===3.6.1
 python-saharaclient===1.1.0
 Routes===2.4.1
 rtslib-fb===2.1.63
@@ -213,7 +213,7 @@ castellan===0.5.0
 oslo.versionedobjects===1.23.0
 webcolors===1.7
 aodhclient===0.9.0
-autobahn===0.17.2
+autobahn===0.18.0
 SQLAlchemy-Utils===0.32.13
 coverage===4.3.4
 freezegun===0.3.8
@@ -437,7 +437,7 @@ XStatic-Bootstrap-Datepicker===1.3.1.0
 CouchDB===1.1
 netifaces===0.10.5
 cachetools===2.0.0
-ws4py===0.4.0
+ws4py===0.4.1
 backports-abc===0.5;python_version=='3.4'
 backports-abc===0.5;python_version=='3.5'
 keystoneauth1===2.19.0
@@ -449,7 +449,7 @@ diskimage-builder===2.1.0
 heat-translator===0.7.0
 python-magnumclient===2.5.0
 docker===2.2.0
-prompt-toolkit===1.0.13
+prompt-toolkit===1.0.14
 pathtools===0.1.2;python_version=='3.4'
 pathtools===0.1.2;python_version=='3.5'
 qpid-python===0.32.1;python_version=='2.7'
