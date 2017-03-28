@@ -25,7 +25,7 @@ lxml===3.7.3
 python-kingbirdclient===0.1.0
 pytest===3.0.7
 python-etcd===0.4.5
-cursive===0.1.1
+cursive===0.1.2
 oslo.service===1.21.0
 django-appconf===1.0.2
 pykerberos===1.1.14
@@ -214,7 +214,7 @@ oslo.versionedobjects===1.23.0
 webcolors===1.7
 aodhclient===0.9.0
 autobahn===0.18.0
-SQLAlchemy-Utils===0.32.13
+SQLAlchemy-Utils===0.32.14
 coverage===4.3.4
 freezegun===0.3.8
 python-pytun===2.2.1
@@ -317,7 +317,7 @@ ceilometermiddleware===1.0.2
 python-nss===1.0.1
 testrepository===0.0.20
 sympy===1.0
-sphinxmark===0.1.17
+sphinxmark===0.1.18
 osc-lib===1.3.0
 python-consul===0.7.0
 seqdiag===0.9.5
@@ -348,7 +348,7 @@ msgpack-python===0.4.8
 proboscis===1.2.6.0
 fortiosclient===0.0.2
 stevedore===1.21.0
-botocore===1.5.29
+botocore===1.5.30
 xmltodict===0.10.2
 pyasn1===0.2.3
 python-utils===2.0.1
