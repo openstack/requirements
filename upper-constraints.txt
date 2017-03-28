@@ -370,7 +370,7 @@ os-testr===0.8.0
 stomp.py===4.1.17
 xattr===0.9.1
 python-memcached===1.58
-openstacksdk===0.9.13
+openstacksdk===0.9.14
 six===1.10.0
 h2===2.6.1;python_version=='3.4'
 h2===2.6.1;python_version=='3.5'
