@@ -1,5 +1,7 @@
 openstack-dev/hacking
 openstack-dev/pbr
+openstack-infra/shade
+openstack-infra/requestsexceptions
 openstack/almanach
 openstack/anchor
 openstack/automaton
