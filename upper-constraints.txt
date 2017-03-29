@@ -101,7 +101,7 @@ croniter===0.3.16
 python-watcherclient===1.0.0
 MarkupSafe===1.0
 pypowervm===1.1.0
-doc8===0.7.0
+doc8===0.8.0
 pymongo===3.4.0
 sqlparse===0.2.3
 oslotest===2.15.0
