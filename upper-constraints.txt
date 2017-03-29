@@ -25,7 +25,6 @@ lxml===3.7.3
 python-kingbirdclient===0.1.0
 pytest===3.0.7
 python-etcd===0.4.5
-etcd3===0.5.2
 cursive===0.1.2
 oslo.service===1.21.0
 django-appconf===1.0.2
@@ -43,6 +42,7 @@ oslo.context===2.13.0
 python-senlinclient===1.2.0
 rcssmin===1.0.6
 pycadf===2.5.0
+grpcio===1.2.0
 pysendfile===2.0.1
 fixtures===3.0.0
 neutron-lib===1.3.0
@@ -214,7 +214,7 @@ castellan===0.5.0
 oslo.versionedobjects===1.23.0
 webcolors===1.7
 aodhclient===0.9.0
-autobahn===0.18.0
+autobahn===0.18.1
 SQLAlchemy-Utils===0.32.14
 coverage===4.3.4
 freezegun===0.3.8
@@ -275,7 +275,7 @@ packaging===16.8
 nose-exclude===0.5.0
 psutil===5.2.1
 py===1.4.33
-txaio===2.6.1
+txaio===2.6.2
 elasticsearch===2.4.1
 django-nose===1.4.4
 XStatic-JQuery.TableSorter===2.14.5.1
@@ -304,6 +304,7 @@ python-karborclient===0.1.3
 weakrefmethod===1.0.3;python_version=='2.7'
 PuLP===1.6.5
 crc16===0.1.1
+protobuf===3.2.0
 os-dpm===1.0.0
 python-neutronclient===6.1.0
 pika===0.10.0
@@ -349,7 +350,7 @@ msgpack-python===0.4.8
 proboscis===1.2.6.0
 fortiosclient===0.0.2
 stevedore===1.21.0
-botocore===1.5.30
+botocore===1.5.31
 xmltodict===0.10.2
 pyasn1===0.2.3
 python-utils===2.0.1
@@ -433,6 +434,7 @@ APScheduler===3.3.1
 monotonic===1.3
 python-smaugclient===0.0.8
 python-troveclient===2.8.0
+etcd3===0.5.2
 cliff-tablib===2.0
 XStatic-Bootstrap-Datepicker===1.3.1.0
 CouchDB===1.1
@@ -446,10 +448,10 @@ statsd===3.2.1
 XenAPI===1.2
 python-keystoneclient===3.10.0
 demjson===2.2.4
-diskimage-builder===2.1.0
+diskimage-builder===2.2.0
 heat-translator===0.7.0
 python-magnumclient===2.5.0
-docker===2.2.0
+docker===2.2.1
 prompt-toolkit===1.0.14
 pathtools===0.1.2;python_version=='3.4'
 pathtools===0.1.2;python_version=='3.5'
