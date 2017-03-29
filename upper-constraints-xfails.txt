@@ -3,3 +3,4 @@
 
 pyparsing==2.2.0;pulp
 psutil==5.2.0;os-refresh-config
+SQLAlchemy==1.1.7;mistral
