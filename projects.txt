@@ -11,6 +11,7 @@ openstack/bifrost
 openstack/blazar
 openstack/blazar-nova
 openstack/castellan
+openstack/ceilometer-powervm
 openstack/cinder
 openstack/cliff
 openstack/compute-hyperv
@@ -94,6 +95,7 @@ openstack/networking-l2gw
 openstack/networking-midonet
 openstack/networking-odl
 openstack/networking-ovn
+openstack/networking-powervm
 openstack/networking-sfc
 openstack/networking-vsphere
 openstack/neutron
