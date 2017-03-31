@@ -146,8 +146,8 @@ urllib3===1.20
 graphviz===0.6
 PyKMIP===0.6.0
 python-subunit===1.2.0
-tornado===4.4.2;python_version=='3.4'
-tornado===4.4.2;python_version=='3.5'
+tornado===4.4.3;python_version=='3.4'
+tornado===4.4.3;python_version=='3.5'
 pycparser===2.17
 mock===2.0.0
 PyYAML===3.12
@@ -281,7 +281,7 @@ elasticsearch===2.4.1
 django-nose===1.4.4
 XStatic-JQuery.TableSorter===2.14.5.1
 pifpaf===0.26.0
-pysmi===0.1.0
+pysmi===0.1.1
 blockdiag===1.5.3
 testtools===2.2.0
 Parsley===1.3
@@ -351,7 +351,7 @@ msgpack-python===0.4.8
 proboscis===1.2.6.0
 fortiosclient===0.0.2
 stevedore===1.21.0
-botocore===1.5.31
+botocore===1.5.32
 xmltodict===0.10.2
 pyasn1===0.2.3
 python-utils===2.0.1
@@ -505,7 +505,7 @@ python-dateutil===2.6.0
 virtualenv===15.1.0
 colorama===0.3.7
 ironic-lib===2.7.0
-pytz===2016.10
+pytz===2017.2
 XStatic-D3===3.5.17.0
 sysv-ipc===0.7.0
 scikit-learn===0.18.1
