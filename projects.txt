@@ -86,6 +86,7 @@ openstack/murano
 openstack/murano-agent
 openstack/murano-dashboard
 openstack/murano-pkg-check
+openstack/networking-arista
 openstack/networking-bagpipe
 openstack/networking-bgpvpn
 openstack/networking-dpm
