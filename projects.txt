@@ -66,6 +66,8 @@ openstack/magnum-ui
 openstack/manila
 openstack/manila-image-elements
 openstack/manila-ui
+openstack/masakari
+openstack/masakari-monitors
 openstack/mistral
 openstack/mistral-dashboard
 openstack/mistral-lib
@@ -209,6 +211,7 @@ openstack/python-keystoneclient
 openstack/python-kingbirdclient
 openstack/python-magnumclient
 openstack/python-manilaclient
+openstack/python-masakariclient
 openstack/python-mistralclient
 openstack/python-moganclient
 openstack/python-monascaclient
