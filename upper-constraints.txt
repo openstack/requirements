@@ -207,8 +207,8 @@ dnspython3===1.15.0;python_version=='3.4'
 dnspython3===1.15.0;python_version=='3.5'
 ldappool===2.0.0
 termcolor===1.1.0
-hpack===2.3.0;python_version=='3.4'
-hpack===2.3.0;python_version=='3.5'
+hpack===3.0.0;python_version=='3.4'
+hpack===3.0.0;python_version=='3.5'
 hiredis===0.2.0
 google-api-python-client===1.6.2
 castellan===0.5.0
@@ -326,7 +326,7 @@ python-consul===0.7.0
 seqdiag===0.9.5
 numpy===1.12.1
 repoze.who===2.3
-Sphinx===1.5.3
+Sphinx===1.5.4
 oslo.config===3.23.0
 tempest===15.0.0
 django-floppyforms===1.7.0
@@ -374,8 +374,8 @@ xattr===0.9.1
 python-memcached===1.58
 openstacksdk===0.9.14
 six===1.10.0
-h2===2.6.1;python_version=='3.4'
-h2===2.6.1;python_version=='3.5'
+h2===2.6.2;python_version=='3.4'
+h2===2.6.2;python_version=='3.5'
 dulwich===0.17.3
 pykafka===2.5.0
 kombu===4.0.1
