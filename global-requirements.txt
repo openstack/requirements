@@ -280,7 +280,11 @@ simplejson>=2.2.0  # MIT
 six>=1.9.0  # MIT
 scipy>=0.17.1  # BSD
 scikit-learn>=0.17.1  # BSD
-SQLAlchemy>=1.0.10  # MIT
+# NOTE(yamahata):
+# bug work around of sqlalchemy
+# https://bitbucket.org/zzzeek/sqlalchemy/issues/3952/
+# The fix which is in git master branch is planned for 1.1.9
+SQLAlchemy>=1.0.10,!=1.1.5,!=1.1.6,!=1.1.7,!=1.1.8  # MIT
 SQLAlchemy-Utils  # BSD License
 sqlalchemy-migrate>=0.9.6  # Apache-2.0
 sqlparse>=0.2.2 # BSD
