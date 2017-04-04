@@ -14,7 +14,7 @@ Paste===2.0.3
 PasteDeploy===1.5.2
 Pillow===4.0.0
 Pint===0.7.2
-PuLP===1.6.1
+PuLP===1.6.5
 PyJWT===1.4.2
 PyKMIP===0.6.0
 PyMySQL===0.7.9
