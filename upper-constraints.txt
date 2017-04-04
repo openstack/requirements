@@ -260,7 +260,7 @@ oslo.serialization===2.18.0
 warlock===1.2.0
 sphinxcontrib-httpdomain===1.5.0
 murano-pkg-check===0.3.0
-oslo.vmware===2.18.0
+oslo.vmware===2.19.0
 sqlalchemy-migrate===0.11.0
 gitdb===0.6.4
 python-monascaclient===1.5.0
