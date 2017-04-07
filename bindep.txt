@@ -38,5 +38,4 @@ nss-devel [platform:rpm]
 liberasurecode-dev [platform:dpkg]
 liberasurecode-devel [platform:rpm]
 dev-libs/liberasurecode [platform:gentoo]
-# NOTE(sdague) needed for systemd
-libsystemd-dev [platform:dpkg]
+libsystemd-dev [platform:dpkg !platform:ubuntu-trusty]
