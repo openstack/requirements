@@ -1,6 +1,4 @@
 # Format is
 # <dependency that is incompatible>==<version>;<list,of,affected,packages>
 
-pyparsing==2.2.0;pulp
-psutil==5.2.0;os-refresh-config
-SQLAlchemy==1.1.9;mistral
+SQLAlchemy==1.1.9;mistral,tripleo-common
