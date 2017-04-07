@@ -289,6 +289,7 @@ SQLAlchemy-Utils  # BSD License
 sqlalchemy-migrate>=0.9.6  # Apache-2.0
 sqlparse>=0.2.2 # BSD
 stevedore>=1.20.0  # Apache-2.0
+systemd-python>=234  # LGPLv2+
 sysv_ipc>=0.6.8  # BSD License
 suds-jurko>=0.6  # LGPLv3+
 sympy>=0.7.6  # BSD
