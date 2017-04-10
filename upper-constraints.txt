@@ -482,7 +482,7 @@ olefile===0.44
 greenlet===0.4.12
 xvfbwrapper===0.2.9
 futures===3.0.5;python_version=='2.7'
-tosca-parser===0.7.0
+tosca-parser===0.8.0
 Flask===0.12.1
 pymod2pkg===0.7.5
 happybase===1.1.0;python_version=='2.7'
