@@ -514,3 +514,7 @@ scikit-learn===0.18.1
 systemd-python===234
 mistral-lib===0.1.0
 python-zunclient===0.1.0
+sphinxcontrib-actdiag===0.8.5
+sphinxcontrib-nwdiag===0.9.5
+actdiag===0.5.4
+nwdiag===1.0.4
