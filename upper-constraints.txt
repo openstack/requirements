@@ -198,7 +198,7 @@ influxdb===4.1.0
 funcparserlib===0.3.6
 passlib===1.7.1
 dib-utils===0.0.11
-cliff===2.5.0
+cliff===2.6.0
 os-brick===1.11.0
 trollius===2.1
 scp===0.10.2
