@@ -350,6 +350,7 @@ dogpile.cache===0.6.2
 python-barbicanclient===4.2.0
 blinker===1.4;python_version=='3.4'
 blinker===1.4;python_version=='3.5'
+tricircleclient===0.1.1
 WSME===0.9.2
 msgpack-python===0.4.8
 proboscis===1.2.6.0
