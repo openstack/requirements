@@ -14,6 +14,7 @@ rtslib-fb===2.1.63
 smmap===0.9.0
 XStatic-Angular-Bootstrap===2.2.0.0
 WebOb===1.7.2
+sphinxcontrib-actdiag===0.8.5
 pecan===1.2.1
 ryu===4.13
 os-api-ref===1.3.0
@@ -33,6 +34,7 @@ oslo.service===1.22.0
 django-appconf===1.0.2
 pykerberos===1.1.14
 certifi===2017.4.17
+sphinxcontrib-nwdiag===0.9.5
 requests-aws===0.1.8
 alabaster===0.7.10
 pbr===3.0.0
@@ -167,7 +169,8 @@ gunicorn===19.7.1
 unittest2===1.1.0
 django-compressor===2.1.1
 libvirt-python===3.2.0
-tzlocal===1.3
+python-zunclient===0.1.0
+tzlocal===1.4
 python-novaclient===7.1.0
 bcrypt===3.1.3
 os-client-config===1.26.0
@@ -228,6 +231,7 @@ cassandra-driver===3.9.0
 mox===0.5.3
 XStatic-Angular-Schema-Form===0.8.13.0
 gabbi===1.33.0
+nwdiag===1.0.4
 XStatic-bootswatch===3.3.7.0
 XStatic-term.js===0.0.7.0
 oslo.log===3.25.0
@@ -245,7 +249,7 @@ docutils===0.13.1
 notifier===1.0.3
 pycrypto===2.6.1
 ujson===1.35
-selenium===3.3.3
+selenium===3.4.0
 python-glareclient===0.3.1
 mypy===0.501;python_version=='3.4'
 mypy===0.501;python_version=='3.5'
@@ -285,7 +289,7 @@ txaio===2.7.0
 elasticsearch===2.4.1
 django-nose===1.4.4
 XStatic-JQuery.TableSorter===2.14.5.1
-pifpaf===0.26.0
+pifpaf===0.27.0
 pysmi===0.1.2
 blockdiag===1.5.3
 testtools===2.2.0
@@ -355,7 +359,7 @@ msgpack-python===0.4.8
 proboscis===1.2.6.0
 fortiosclient===0.0.2
 stevedore===1.21.0
-botocore===1.5.42
+botocore===1.5.43
 xmltodict===0.10.2
 pyasn1===0.2.3
 python-utils===2.1.0
@@ -413,7 +417,7 @@ abclient===0.2.3
 pymemcache===1.4.3
 wrapt===1.10.10
 oslo.privsep===1.19.0
-zope.interface===4.3.3
+zope.interface===4.4.0
 oslo.policy===1.22.0
 python-muranoclient===0.12.0
 pyeclib===1.4.0
@@ -514,10 +518,6 @@ colorama===0.3.7
 ironic-lib===2.7.0
 pytz===2017.2
 XStatic-D3===3.5.17.0
+actdiag===0.5.4
 sysv-ipc===0.7.0
 scikit-learn===0.18.1
-python-zunclient===0.1.0
-sphinxcontrib-actdiag===0.8.5
-sphinxcontrib-nwdiag===0.9.5
-actdiag===0.5.4
-nwdiag===1.0.4
