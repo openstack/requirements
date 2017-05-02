@@ -4,7 +4,7 @@ chardet===3.0.2
 enum-compat===0.0.2
 rsa===3.4.2
 restructuredtext-lint===1.0.1
-netmiko===1.3.0
+netmiko===1.4.0
 PasteDeploy===1.5.2
 typing===3.6.1
 python-saharaclient===1.2.0
@@ -48,7 +48,7 @@ oslo.context===2.13.0
 python-senlinclient===1.3.0
 rcssmin===1.0.6
 pycadf===2.5.0
-grpcio===1.2.1
+grpcio===1.3.0
 pysendfile===2.0.1
 fixtures===3.0.0
 neutron-lib===1.6.0
@@ -220,7 +220,7 @@ castellan===0.7.0
 oslo.versionedobjects===1.23.0
 webcolors===1.7
 aodhclient===0.9.0
-autobahn===0.18.2
+autobahn===17.5.1
 SQLAlchemy-Utils===0.32.14
 coverage===4.3.4
 freezegun===0.3.8
@@ -285,7 +285,7 @@ packaging===16.8
 nose-exclude===0.5.0
 psutil===5.2.2
 py===1.4.33
-txaio===2.7.0
+txaio===2.7.1
 elasticsearch===2.4.1
 django-nose===1.4.4
 XStatic-JQuery.TableSorter===2.14.5.1
@@ -397,7 +397,7 @@ betamax-matchers===0.4.0
 yaql===1.1.3
 requestsexceptions===1.2.0
 testresources===2.0.1
-falcon===1.1.0
+falcon===1.2.0
 etcd3gw===0.1.0
 pycryptodome===3.4.5
 pyldap===2.4.28
@@ -429,7 +429,7 @@ tempest-lib===1.0.0
 spec-cleaner===0.9.4
 repoze.lru===0.6
 rfc3986===0.4.1
-tenacity===4.0.1
+tenacity===4.1.0
 logilab-common===1.4.0
 XStatic-Magic-Search===0.2.5.1
 python-designateclient===2.6.0
@@ -473,7 +473,7 @@ contextlib2===0.5.5
 XStatic-Angular-lrdragndrop===1.0.2.2
 python-congressclient===1.6.0
 ovsdbapp===0.3.0
-aniso8601===1.2.0
+aniso8601===1.2.1
 rjsmin===1.0.12
 icalendar===3.11.3
 decorator===4.0.11
