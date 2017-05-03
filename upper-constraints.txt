@@ -456,7 +456,7 @@ cachetools===2.0.0
 ws4py===0.4.2
 backports-abc===0.5;python_version=='3.4'
 backports-abc===0.5;python_version=='3.5'
-keystoneauth1===2.19.0
+keystoneauth1===2.20.0
 statsd===3.2.1
 XenAPI===1.2
 python-keystoneclient===3.10.0
