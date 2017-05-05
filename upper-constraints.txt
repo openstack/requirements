@@ -128,7 +128,7 @@ semantic-version===2.6.0
 tablib===0.11.4
 astroid===1.3.8
 virtualbmc===1.1.0
-deprecation===1.0
+deprecation===1.0.1
 SQLAlchemy===1.1.9
 pyroute2===0.4.13
 kazoo===2.2.1
@@ -146,7 +146,7 @@ reno===2.2.0
 unicodecsv===0.14.1;python_version=='2.7'
 imagesize===0.7.1
 pathlib===1.0.1;python_version=='2.7'
-urllib3===1.21
+urllib3===1.21.1
 graphviz===0.7
 PyKMIP===0.6.0
 python-subunit===1.2.0
@@ -314,7 +314,7 @@ python-karborclient===0.1.3
 weakrefmethod===1.0.3;python_version=='2.7'
 PuLP===1.6.5
 crc16===0.1.1
-protobuf===3.2.0
+protobuf===3.3.0
 os-dpm===1.0.0
 python-neutronclient===6.2.0
 pika===0.10.0
@@ -344,7 +344,7 @@ progressbar2===3.18.1
 zake===0.2.2
 python-solumclient===2.3.0
 PyMySQL===0.7.11
-kubernetes===1.0.0
+kubernetes===2.0.0
 httplib2===0.10.3
 bottle===0.12.13
 betamax===0.8.0
@@ -389,7 +389,7 @@ six===1.10.0
 h2===2.6.2;python_version=='3.4'
 h2===2.6.2;python_version=='3.5'
 dulwich===0.17.3
-pykafka===2.5.0
+pykafka===2.6.0
 kombu===4.0.1
 mitmproxy===2.0.2;python_version=='3.4'
 mitmproxy===2.0.2;python_version=='3.5'
@@ -405,7 +405,7 @@ Flask-RESTful===0.3.5
 GitPython===2.1.3
 python-ironicclient===1.12.0
 XStatic===1.0.1
-click-repl===0.1.1
+click-repl===0.1.2
 XStatic-Angular-FileUpload===12.0.4.0
 python-openstackclient===3.9.0
 pika-pool===0.1.3
@@ -482,7 +482,7 @@ futurist===1.1.0
 jsonschema===2.6.0
 alembic===0.9.1
 glance-store===0.20.0
-sphinx-testing===0.7.1
+sphinx-testing===0.7.2
 dnspython===1.15.0
 oauthlib===2.0.2
 Babel===2.3.4
