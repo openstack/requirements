@@ -273,6 +273,7 @@ openstack/trove
 openstack/valence
 openstack/virtualbmc
 openstack/vitrage
+openstack/vmware-nsx
 openstack/vmware-nsxlib
 openstack/watcher
 openstack/watcher-dashboard
