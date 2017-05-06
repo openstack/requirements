@@ -106,7 +106,7 @@ asn1crypto===0.22.0
 croniter===0.3.16
 python-watcherclient===1.1.0
 MarkupSafe===1.0
-pypowervm===1.1.2
+pypowervm===1.1.4
 doc8===0.8.0
 pymongo===3.4.0
 sqlparse===0.2.3
@@ -251,8 +251,8 @@ pycrypto===2.6.1
 ujson===1.35
 selenium===3.4.1
 python-glareclient===0.3.1
-mypy===0.501;python_version=='3.4'
-mypy===0.501;python_version=='3.5'
+mypy===0.510;python_version=='3.4'
+mypy===0.510;python_version=='3.5'
 mistral-lib===0.1.0
 dogtag-pki===10.3.5.1
 sphinxcontrib-seqdiag===0.8.5
@@ -340,7 +340,7 @@ oslo.config===4.1.0
 tempest===16.0.0
 django-floppyforms===1.7.0
 openstackdocstheme===1.8.0
-progressbar2===3.18.1
+progressbar2===3.20.0
 zake===0.2.2
 python-solumclient===2.3.0
 PyMySQL===0.7.11
@@ -360,7 +360,7 @@ msgpack-python===0.4.8
 proboscis===1.2.6.0
 fortiosclient===0.0.2
 stevedore===1.21.0
-botocore===1.5.45
+botocore===1.5.46
 xmltodict===0.11.0
 pyasn1===0.2.3
 python-utils===2.1.0
