@@ -61,8 +61,8 @@ nosehtmloutput===0.0.5
 waitress===1.0.2
 mistral===4.0.0
 os-refresh-config===6.0.0
-jsbeautifier===1.6.12;python_version=='3.4'
-jsbeautifier===1.6.12;python_version=='3.5'
+jsbeautifier===1.6.14;python_version=='3.4'
+jsbeautifier===1.6.14;python_version=='3.5'
 pysnmp===4.3.5
 Mako===1.0.6
 XStatic-angular-ui-router===0.3.1.2
@@ -169,7 +169,7 @@ mox3===0.21.0
 gunicorn===19.7.1
 unittest2===1.1.0
 django-compressor===2.1.1
-libvirt-python===3.2.0
+libvirt-python===3.3.0
 python-zunclient===0.2.0
 tzlocal===1.4
 python-novaclient===7.1.0
@@ -180,7 +180,7 @@ Pygments===2.2.0
 XStatic-Hogan===2.0.0.2
 XStatic-objectpath===1.2.1.0
 python-manilaclient===1.15.0
-requests===2.12.5
+requests===2.14.2
 snowballstemmer===1.2.1
 Jinja2===2.9.6
 XStatic-Bootstrap-SCSS===3.3.7.1
@@ -223,7 +223,7 @@ webcolors===1.7
 aodhclient===0.9.0
 autobahn===17.5.1
 SQLAlchemy-Utils===0.32.14
-coverage===4.3.4
+coverage===4.4
 freezegun===0.3.8
 python-pytun===2.2.1
 pyperclip===1.5.27;python_version=='3.4'
@@ -252,8 +252,8 @@ pycrypto===2.6.1
 ujson===1.35
 selenium===3.4.1
 python-glareclient===0.3.1
-mypy===0.510;python_version=='3.4'
-mypy===0.510;python_version=='3.5'
+mypy===0.511;python_version=='3.4'
+mypy===0.511;python_version=='3.5'
 mistral-lib===0.1.0
 dogtag-pki===10.3.5.1
 sphinxcontrib-seqdiag===0.8.5
@@ -293,7 +293,7 @@ XStatic-JQuery.TableSorter===2.14.5.1
 pifpaf===1.1.0
 pysmi===0.1.2
 blockdiag===1.5.3
-testtools===2.2.0
+testtools===2.3.0
 Parsley===1.3
 XStatic-tv4===1.2.7.0
 positional===1.1.1
@@ -309,7 +309,7 @@ XStatic-Rickshaw===1.5.0.0
 iso8601===0.1.11
 tooz===1.54.0
 linecache2===1.0.0
-oauth2client===3.0.0
+oauth2client===4.1.0
 idna===2.5
 python-karborclient===0.1.3
 weakrefmethod===1.0.3;python_version=='2.7'
@@ -362,7 +362,7 @@ msgpack-python===0.4.8
 proboscis===1.2.6.0
 fortiosclient===0.0.2
 stevedore===1.21.0
-botocore===1.5.46
+botocore===1.5.48
 xmltodict===0.11.0
 pyasn1===0.2.3
 python-utils===2.1.0
@@ -430,7 +430,7 @@ ndg-httpsclient===0.4.2;python_version=='2.7'
 tempest-lib===1.0.0
 spec-cleaner===0.9.4
 repoze.lru===0.6
-rfc3986===0.4.1
+rfc3986===1.0.0
 tenacity===4.1.0
 logilab-common===1.4.0
 XStatic-Magic-Search===0.2.5.1
@@ -477,7 +477,7 @@ python-congressclient===1.6.0
 ovsdbapp===0.3.0
 aniso8601===1.2.1
 rjsmin===1.0.12
-icalendar===3.11.3
+icalendar===3.11.4
 decorator===4.0.11
 cffi===1.10.0
 futurist===1.1.0
