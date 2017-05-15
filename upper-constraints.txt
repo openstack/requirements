@@ -224,8 +224,8 @@ webcolors===1.7
 aodhclient===0.9.0
 autobahn===17.5.1
 SQLAlchemy-Utils===0.32.14
-coverage===4.3.4
-freezegun===0.3.8
+coverage===4.4.1
+freezegun===0.3.9
 python-pytun===2.2.1
 pyperclip===1.5.27;python_version=='3.4'
 pyperclip===1.5.27;python_version=='3.5'
@@ -338,7 +338,7 @@ python-consul===0.7.0
 seqdiag===0.9.5
 numpy===1.12.1
 repoze.who===2.3
-Sphinx===1.5.5
+Sphinx===1.5.6
 oslo.config===4.1.0
 tempest===16.0.0
 django-floppyforms===1.7.0
@@ -421,7 +421,7 @@ abclient===0.2.3
 pymemcache===1.4.3
 wrapt===1.10.10
 oslo.privsep===1.19.0
-zope.interface===4.4.0
+zope.interface===4.4.1
 oslo.policy===1.22.0
 python-muranoclient===0.12.0
 pyeclib===1.4.0
@@ -464,7 +464,7 @@ statsd===3.2.1
 XenAPI===1.2
 python-keystoneclient===3.10.0
 demjson===2.2.4
-diskimage-builder===2.3.3
+diskimage-builder===2.4.0
 heat-translator===0.8.0
 python-magnumclient===2.5.0
 docker===2.2.1
