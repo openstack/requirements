@@ -12,5 +12,5 @@ setuptools!=24.0.0,!=34.0.0,!=34.0.1,!=34.0.2,!=34.0.3,!=34.1.0,!=34.1.1,!=34.2.
 mock>=2.0 # BSD
 
 # this is required for the docs build jobs
-sphinx>=1.5.1,!=1.6.1  # BSD
+sphinx!=1.6.1,>=1.5.1 # BSD
 oslosphinx>=4.7.0 # Apache-2.0
