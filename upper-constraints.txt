@@ -381,7 +381,7 @@ scrypt===0.8.0
 jsonpatch===1.15
 typed-ast===1.0.3;python_version=='3.4'
 typed-ast===1.0.3;python_version=='3.5'
-os-testr===0.8.1
+os-testr===0.8.2
 cotyledon===1.6.7
 stomp.py===4.1.17
 xattr===0.9.2
