@@ -75,7 +75,20 @@ class TestParseRequirement(testtools.TestCase):
          line='-e file:///path/to/bar#egg=bar',
          req=requirement.Requirement('bar', '-e file:///path/to/bar', '', '',
                                      ''),
-         permit_urls=True))]
+         permit_urls=True)),
+        ('editable_vcs_git', dict(
+         line='-e git+http://github.com/path/to/oslo.bar#egg=oslo.bar',
+         req=requirement.Requirement('oslo.bar',
+                                     '-e git+http://github.com'
+                                     '/path/to/oslo.bar', '', '', ''),
+         permit_urls=True)),
+        ('editable_vcs_git_ssh', dict(
+         line='-e git+ssh://github.com/path/to/oslo.bar#egg=oslo.bar',
+         req=requirement.Requirement('oslo.bar',
+                                     '-e git+ssh://github.com'
+                                     '/path/to/oslo.bar', '', '', ''),
+         permit_urls=True)),
+    ]
     scenarios = dist_scenarios + url_scenarios
 
     def test_parse(self):
