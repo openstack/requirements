@@ -52,7 +52,7 @@ class SmokeTest(testtools.TestCase):
         expected = ('Version change for: greenlet, SQLAlchemy, eventlet, PasteDeploy, routes, WebOb, wsgiref, boto, kombu, pycrypto, python-swiftclient, lxml, jsonschema, python-keystoneclient\n'  # noqa
             """Updated %(project)s/requirements.txt:
     greenlet>=0.3.1                ->   greenlet>=0.3.2
-    SQLAlchemy>=0.7.8,<=0.7.99     ->   SQLAlchemy<=0.7.99,>=0.7
+    SQLAlchemy>=0.7.8,<=1.0.17     ->   SQLAlchemy<=0.7.99,>=0.7
     eventlet>=0.9.12               ->   eventlet>=0.12.0
     PasteDeploy                    ->   PasteDeploy>=1.5.0
     routes                         ->   Routes>=1.12.3
@@ -61,14 +61,14 @@ class SmokeTest(testtools.TestCase):
     boto                           ->   boto>=2.4.0
     kombu>2.4.7                    ->   kombu>=2.4.8
     pycrypto>=2.1.0alpha1          ->   pycrypto>=2.6
-    python-swiftclient>=1.2,<2     ->   python-swiftclient>=1.2
+    python-swiftclient>=1.2,<4     ->   python-swiftclient>=1.2
     lxml                           ->   lxml>=2.3
     jsonschema                     ->   jsonschema!=1.4.0,<2,>=1.0.0
     python-keystoneclient>=0.2.0   ->   python-keystoneclient>=0.4.1
 Version change for: mox, mox3, testrepository, testtools
 Updated %(project)s/test-requirements.txt:
     mox==0.5.3                     ->   mox>=0.5.3
-    mox3==0.7.3                    ->   mox3>=0.7.0
+    mox3==0.21.0                   ->   mox3>=0.7.0
     testrepository>=0.0.13         ->   testrepository>=0.0.17
     testtools>=0.9.27              ->   testtools>=0.9.32
 """) % dict(project=self.project.root)
@@ -157,7 +157,7 @@ class UpdateTest(testtools.TestCase):
         expected = ('Version change for: greenlet, SQLAlchemy, eventlet, PasteDeploy, routes, WebOb, wsgiref, boto, kombu, pycrypto, python-swiftclient, lxml, jsonschema, python-keystoneclient\n'  # noqa
             """Updated %(project)s/requirements.txt:
     greenlet>=0.3.1                ->   greenlet>=0.3.2
-    SQLAlchemy>=0.7.8,<=0.7.99     ->   SQLAlchemy<=0.7.99,>=0.7
+    SQLAlchemy>=0.7.8,<=1.0.17     ->   SQLAlchemy<=0.7.99,>=0.7
     eventlet>=0.9.12               ->   eventlet>=0.12.0
     PasteDeploy                    ->   PasteDeploy>=1.5.0
     routes                         ->   Routes>=1.12.3
@@ -166,14 +166,14 @@ class UpdateTest(testtools.TestCase):
     boto                           ->   boto>=2.4.0
     kombu>2.4.7                    ->   kombu>=2.4.8
     pycrypto>=2.1.0alpha1          ->   pycrypto>=2.6
-    python-swiftclient>=1.2,<2     ->   python-swiftclient>=1.2
+    python-swiftclient>=1.2,<4     ->   python-swiftclient>=1.2
     lxml                           ->   lxml>=2.3
     jsonschema                     ->   jsonschema!=1.4.0,<2,>=1.0.0
     python-keystoneclient>=0.2.0   ->   python-keystoneclient>=0.4.1
 Version change for: mox, mox3, testrepository, testtools
 Updated %(project)s/test-requirements.txt:
     mox==0.5.3                     ->   mox>=0.5.3
-    mox3==0.7.3                    ->   mox3>=0.7.0
+    mox3==0.21.0                   ->   mox3>=0.7.0
     testrepository>=0.0.13         ->   testrepository>=0.0.17
     testtools>=0.9.27              ->   testtools>=0.9.32
 """) % dict(project=common.project_project['root'])
@@ -190,7 +190,7 @@ Updated %(project)s/test-requirements.txt:
 Version change for: greenlet, SQLAlchemy, eventlet, PasteDeploy, routes, WebOb, wsgiref, boto, kombu, pycrypto, python-swiftclient, lxml, jsonschema, python-keystoneclient\n"""  # noqa
             """Updated %(project)s/requirements.txt:
     greenlet>=0.3.1                ->   greenlet>=0.3.2
-    SQLAlchemy>=0.7.8,<=0.7.99     ->   SQLAlchemy<=0.7.99,>=0.7
+    SQLAlchemy>=0.7.8,<=1.0.17     ->   SQLAlchemy<=0.7.99,>=0.7
     eventlet>=0.9.12               ->   eventlet>=0.12.0
     PasteDeploy                    ->   PasteDeploy>=1.5.0
     routes                         ->   Routes>=1.12.3
@@ -199,7 +199,7 @@ Version change for: greenlet, SQLAlchemy, eventlet, PasteDeploy, routes, WebOb, 
     boto                           ->   boto>=2.4.0
     kombu>2.4.7                    ->   kombu>=2.4.8
     pycrypto>=2.1.0alpha1          ->   pycrypto>=2.6
-    python-swiftclient>=1.2,<2     ->   python-swiftclient>=1.2
+    python-swiftclient>=1.2,<4     ->   python-swiftclient>=1.2
     lxml                           ->   lxml>=2.3
     jsonschema                     ->   jsonschema!=1.4.0,<2,>=1.0.0
     python-keystoneclient>=0.2.0   ->   python-keystoneclient>=0.4.1
@@ -207,7 +207,7 @@ Syncing %(project)s/test-requirements.txt
 Version change for: mox, mox3, testrepository, testtools
 Updated %(project)s/test-requirements.txt:
     mox==0.5.3                     ->   mox>=0.5.3
-    mox3==0.7.3                    ->   mox3>=0.7.0
+    mox3==0.21.0                   ->   mox3>=0.7.0
     testrepository>=0.0.13         ->   testrepository>=0.0.17
     testtools>=0.9.27              ->   testtools>=0.9.32
 Syncing setup.py
