@@ -420,7 +420,7 @@ simplegeneric===0.8.1
 abclient===0.2.3
 pymemcache===1.4.3
 wrapt===1.10.10
-oslo.privsep===1.19.0
+oslo.privsep===1.20.0
 zope.interface===4.4.1
 oslo.policy===1.22.1
 python-muranoclient===0.12.0
