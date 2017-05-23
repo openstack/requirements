@@ -42,7 +42,7 @@ pbr===3.0.1
 munch===2.1.1
 microversion-parse===0.1.4
 Pint===0.8
-oslo.i18n===3.15.1
+oslo.i18n===3.15.3
 jsonpath-rw-ext===1.1.1
 python-mistralclient===3.1.0
 oslo.context===2.13.0
