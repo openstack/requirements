@@ -246,6 +246,7 @@ XStatic-mdi===1.4.57.0
 django-pyscss===2.0.2
 uritemplate===3.0.0
 django-babel===0.6.0
+pydot3===1.0.9
 docutils===0.13.1
 notifier===1.0.3
 pycrypto===2.6.1
