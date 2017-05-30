@@ -322,6 +322,13 @@ For new Requirements
   Please provide details such as gerrit change request or launchpad
   bug/blueprint specifying the need for adding this library.
 
+- If the library release is managed by the Openstack release process does
+  it use the `cycle-with-intermediary` release type?
+
+  This is needed to ensure that updated releases that consume requirements
+  updates are available for integration/coninstallability tests with other
+  projects.
+
 - Do I need to update anything else?
 
   When new library is added, initial version of release needs to be added
