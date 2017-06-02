@@ -306,7 +306,7 @@ keystonemiddleware===4.15.0
 django-formtools===2.0
 python-ceilometerclient===2.8.1
 XStatic-Spin===1.2.5.2
-os-traits===0.3.0
+os-traits===0.3.1
 SecretStorage===2.3.1
 XStatic-Rickshaw===1.5.0.0
 iso8601===0.1.11
