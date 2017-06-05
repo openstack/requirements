@@ -329,7 +329,7 @@ openstack.nose-plugin===0.11
 os-collect-config===7.0.0
 python-qpid-proton===0.17.0
 pysaml2===4.0.2
-oslo.reports===1.19.0
+oslo.reports===1.20.0
 ceilometermiddleware===1.1.0
 python-nss===1.0.1
 testrepository===0.0.20
