@@ -144,7 +144,7 @@ extras===1.0.0
 PyJWT===1.5.0
 paramiko===2.1.2
 ordereddict===1.1
-reno===2.3.0
+reno===2.3.2
 unicodecsv===0.14.1;python_version=='2.7'
 imagesize===0.7.1
 pathlib===1.0.1;python_version=='2.7'
