@@ -451,4 +451,4 @@ mccabe==0.2.1 # MIT License
 pep257==0.7.0 # MIT License
 pep8==1.5.7  # MIT
 pyflakes==0.8.1  # MIT
-pylint==1.4.5  # GPLv2
+pylint==1.7.1  # GPLv2
