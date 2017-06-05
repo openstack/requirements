@@ -84,7 +84,7 @@ XStatic-Angular===1.5.8.0
 pyngus===2.2.1
 Pillow===4.1.1
 python-mimeparse===1.6.0
-tripleo-common===7.0.0
+tripleo-common===7.1.0
 Tempita===0.5.2
 ply===3.10
 requests-toolbelt===0.8.0
