@@ -4,7 +4,7 @@ amqp>=2.1.0,!=2.1.4  # BSD
 anyjson>=0.3.3  # BSD
 appdirs>=1.3.0  # MIT License
 apscheduler # MIT License
-astroid>=1.5.0  # LGPLv2.1
+astroid<1.4.0  # LGPLv2.1 # breaks pylint 1.4.4
 autobahn>=0.10.1  # MIT License
 automaton>=0.5.0  # Apache-2.0
 beautifulsoup4  # MIT
@@ -451,4 +451,4 @@ mccabe==0.2.1 # MIT License
 pep257==0.7.0 # MIT License
 pep8==1.5.7  # MIT
 pyflakes==0.8.1  # MIT
-pylint==1.7.1  # GPLv2
+pylint==1.4.5  # GPLv2
