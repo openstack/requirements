@@ -128,7 +128,7 @@ taskflow===2.12.0
 traceback2===1.4.0
 semantic-version===2.6.0
 tablib===0.11.4
-astroid===1.3.8
+astroid===1.5.3
 virtualbmc===1.1.0
 deprecation===1.0.1
 SQLAlchemy===1.1.9
