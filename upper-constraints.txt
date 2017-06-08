@@ -106,7 +106,7 @@ debtcollector===1.14.0
 requests-unixsocket===0.1.5
 asn1crypto===0.22.0
 croniter===0.3.17
-python-watcherclient===1.1.0
+python-watcherclient===1.2.0
 MarkupSafe===1.0
 pypowervm===1.1.5
 doc8===0.8.0
