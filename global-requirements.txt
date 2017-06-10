@@ -58,6 +58,7 @@ eventlet!=0.18.3,>=0.18.2,<0.21.0  # MIT
 extras  # MIT
 falcon>=1.0.0 # Apache-2.0
 Flask>=0.10,!=0.11,<1.0  # BSD
+flask-keystone>0.1  # Apache-2.0
 flask-oslolog    # Apache-2.0
 Flask-RESTful>=0.3.5     # BSD
 Flask-SQLAlchemy>=2.0    # BSD
