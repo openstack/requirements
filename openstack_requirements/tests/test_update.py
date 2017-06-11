@@ -131,7 +131,7 @@ class UpdateTest(testtools.TestCase):
         actions = update._process_project(
             common.bad_project, common.global_reqs, None, None, None, False)
         errors = [a for a in actions if type(a) is project.Error]
-        msg = u"'thisisnotarealdepedency' is not in global-requirements.txt"
+        msg = u"'thisisnotarealdependency' is not in global-requirements.txt"
         self.assertEqual([project.Error(message=msg)], errors)
 
     def test_requirement_not_in_global_non_fatal(self):
@@ -144,7 +144,7 @@ class UpdateTest(testtools.TestCase):
         reqs = common.project_file(
             self.fail, common.bad_project, 'requirements.txt',
             softupdate=True)
-        self.assertIn("thisisnotarealdepedency", reqs)
+        self.assertIn("thisisnotarealdependency", reqs)
 
     # testing output
     def test_non_verbose_output(self):
