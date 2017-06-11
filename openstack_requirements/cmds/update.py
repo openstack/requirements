@@ -98,7 +98,7 @@ def _check_setup_py(proj):
 
 def _sync_requirements_file(
         source_reqs, dest_sequence, dest_label, softupdate, hacking,
-        non_std_reqs):
+        non_std_reqs, blacklist={}):
     actions = []
     dest_reqs = requirement.to_dict(dest_sequence)
     changes = []
@@ -125,6 +125,11 @@ def _sync_requirements_file(
         # Special cases:
         # projects need to align hacking version on their own time
         if req.package == "hacking" and not hacking:
+            output_requirements.append(req)
+            continue
+        # the overall blacklist is similarly synced by projects as
+        # needed
+        if req.package in blacklist:
             output_requirements.append(req)
             continue
 
@@ -178,7 +183,8 @@ def _sync_requirements_file(
             # environment variable to turn this into a warning only.
             # However this drops the unknown requirement.
             actions.append(project.Error(
-                "'%s' is not in global-requirements.txt" % req.package))
+                "'%s' is not in global-requirements.txt or blacklist.txt"
+                % req.package))
     # always print out what we did if we did a thing
     if changes:
         actions.append(project.StdOut(
@@ -191,7 +197,8 @@ def _sync_requirements_file(
 
 
 def _copy_requires(
-        suffix, softupdate, hacking, proj, global_reqs, non_std_reqs):
+        suffix, softupdate, hacking, proj, global_reqs, non_std_reqs,
+        blacklist={}):
     """Copy requirements files."""
     actions = []
     for source, content in sorted(proj['requirements'].items()):
@@ -207,7 +214,7 @@ def _copy_requires(
         actions.append(project.Verbose("Syncing %s" % dest_path))
         _actions, reqs = _sync_requirements_file(
             global_reqs, dest_sequence, dest_path, softupdate, hacking,
-            non_std_reqs)
+            non_std_reqs, blacklist)
         actions.extend(_actions)
         actions.append(project.File(dest_name, requirement.to_content(reqs)))
     extras = project.extras(proj)
@@ -219,7 +226,7 @@ def _copy_requires(
         actions.append(project.Verbose("Syncing extra [%s]" % extra))
         _actions, reqs = _sync_requirements_file(
             global_reqs, dest_sequence, dest_path, softupdate, hacking,
-            non_std_reqs)
+            non_std_reqs, blacklist)
         actions.extend(_actions)
         output_extras[extra] = reqs
     dest_path = 'setup.cfg'
@@ -231,13 +238,15 @@ def _copy_requires(
 
 
 def _process_project(
-        project, global_reqs, suffix, softupdate, hacking, non_std_reqs):
+        project, global_reqs, suffix, softupdate, hacking, non_std_reqs,
+        blacklist={}):
     """Project a project.
 
     :return: The actions to take as a result.
     """
     actions = _copy_requires(
-        suffix, softupdate, hacking, project, global_reqs, non_std_reqs)
+        suffix, softupdate, hacking, project, global_reqs, non_std_reqs,
+        blacklist)
     actions.extend(_check_setup_py(project))
     return actions
 
@@ -284,8 +293,12 @@ def _do_main(
     global_req_content = open(
         os.path.join(source, 'global-requirements.txt'), 'rt').read()
     global_reqs = requirement.parse(global_req_content)
+    blacklist_content = open(
+        os.path.join(source, 'blacklist.txt'), 'rt').read()
+    blacklist = requirement.parse(blacklist_content)
     actions = _process_project(
-        proj, global_reqs, suffix, softupdate, hacking, non_std_reqs)
+        proj, global_reqs, suffix, softupdate, hacking, non_std_reqs,
+        blacklist)
     project.write(proj, actions, stdout=stdout, verbose=verbose)
 
 

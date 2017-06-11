@@ -79,6 +79,10 @@ class GlobalRequirements(fixtures.Fixture):
         self.req_file = os.path.join(self.root, "global-requirements.txt")
         shutil.copy(
             "openstack_requirements/tests/files/gr-base.txt", self.req_file)
+        self.blacklist_file = os.path.join(self.root, "blacklist.txt")
+        shutil.copy(
+            "openstack_requirements/tests/files/blacklist.txt",
+            self.blacklist_file)
 
 
 # Static data for unit testing.
@@ -102,10 +106,10 @@ oslo_project = make_project(oslo_fixture)
 
 def project_file(
         fail, proj, action_filename, suffix=None, softupdate=None,
-        non_std_reqs=False):
+        non_std_reqs=False, blacklist={}):
     actions = update._process_project(
         proj, global_reqs, suffix, softupdate, None,
-        non_std_reqs)
+        non_std_reqs, blacklist)
     for action in actions:
         if type(action) is project.File:
             if action.filename == action_filename:
