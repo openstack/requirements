@@ -131,7 +131,7 @@ tablib===0.11.4
 astroid===1.3.8
 virtualbmc===1.1.0
 deprecation===1.0.1
-SQLAlchemy===1.1.9
+SQLAlchemy===1.1.10
 pyroute2===0.4.15
 kazoo===2.3.1
 XStatic-roboto-fontface===0.5.0.0
@@ -262,7 +262,7 @@ sphinxcontrib-seqdiag===0.8.5
 os-win===2.0.1
 pydot3===1.0.9
 retrying===1.3.3
-pathlib2===2.2.1
+pathlib2===2.3.0
 pydotplus===2.0.2
 flask-oslolog===0.1
 urwid===1.3.1;python_version=='3.4'
@@ -368,7 +368,7 @@ msgpack-python===0.4.8
 proboscis===1.2.6.0
 fortiosclient===0.0.2
 stevedore===1.23.0
-botocore===1.5.65
+botocore===1.5.66
 xmltodict===0.11.0
 pyasn1===0.2.2
 python-utils===2.1.0
@@ -434,7 +434,7 @@ django-openstack-auth===3.2.0
 wsgi-intercept===1.5.0
 ndg-httpsclient===0.4.2;python_version=='2.7'
 tempest-lib===1.0.0
-spec-cleaner===0.9.6
+spec-cleaner===0.9.7
 repoze.lru===0.6
 rfc3986===1.0.0
 tenacity===4.1.0
@@ -455,7 +455,7 @@ APScheduler===3.3.1
 monotonic===1.3
 python-smaugclient===0.0.8
 python-troveclient===2.10.0
-etcd3===0.5.2
+etcd3===0.6.0
 cliff-tablib===2.0
 XStatic-Bootstrap-Datepicker===1.3.1.0
 CouchDB===1.1
@@ -469,7 +469,7 @@ statsd===3.2.1
 XenAPI===1.2
 python-keystoneclient===3.11.0
 demjson===2.2.4
-diskimage-builder===2.5.0
+diskimage-builder===2.6.0
 heat-translator===0.8.0
 python-magnumclient===2.6.0
 docker===2.3.0
