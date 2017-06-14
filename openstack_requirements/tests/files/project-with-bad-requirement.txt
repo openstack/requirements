@@ -21,7 +21,7 @@ iso8601>=0.1.4
 oslo.config>=1.1.0
 
 
-thisisnotarealdepedency
+thisisnotarealdependency
 
 # For Swift storage backend.
 python-swiftclient>=1.2,<2
