@@ -148,7 +148,7 @@ et-xmlfile===1.0.1
 paramiko===2.2.1
 ordereddict===1.1
 reno===2.4.1
-unicodecsv===0.14.1;python_version=='2.7'
+unicodecsv===0.14.1
 imagesize===0.7.1
 pathlib===1.0.1;python_version=='2.7'
 urllib3===1.21.1
@@ -374,7 +374,7 @@ msgpack-python===0.4.8
 proboscis===1.2.6.0
 fortiosclient===0.0.2
 stevedore===1.23.0
-botocore===1.5.68
+botocore===1.5.70
 xmltodict===0.11.0
 pyasn1===0.2.2
 python-utils===2.1.0
@@ -389,7 +389,7 @@ docker-pycreds===0.2.1
 XStatic-smart-table===1.4.13.2
 kuryr-lib===0.4.0
 scrypt===0.8.0
-jsonpatch===1.15
+jsonpatch===1.16
 typed-ast===1.0.4;python_version=='3.4'
 typed-ast===1.0.4;python_version=='3.5'
 os-testr===0.8.2
