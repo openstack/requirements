@@ -82,7 +82,7 @@ Requirements = collections.namedtuple('Requirements', ['reqs'])
 
 
 url_re = re.compile(
-    '^(?P<url>\s*(?:-e\s)?\s*(?:(?:git+)?https|http|file)://[^#]*)'
+    '^(?P<url>\s*(?:-e\s)?\s*(?:(?:[a-z]+\+)?(?:[a-z]+))://[^#]*)'
     '#egg=(?P<name>[-\.\w]+)')
 
 
