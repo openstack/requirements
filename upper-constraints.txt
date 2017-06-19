@@ -246,7 +246,7 @@ oslo.privsep===1.16.0
 oslo.reports===1.17.0
 oslo.rootwrap===5.4.1
 oslo.serialization===2.16.0
-oslo.service===1.19.0
+oslo.service===1.19.1
 oslo.utils===3.22.0
 oslo.versionedobjects===1.21.0
 oslo.vmware===2.17.0
