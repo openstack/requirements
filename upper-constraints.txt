@@ -93,7 +93,7 @@ simplejson===3.10.0
 suds-jurko===0.6
 python-swiftclient===3.3.0
 pyOpenSSL===17.0.0
-monasca-common===2.1.0
+monasca-common===2.2.0
 hyperframe===4.0.2;python_version=='3.4'
 hyperframe===4.0.2;python_version=='3.5'
 cssutils===1.0.2;python_version=='3.4'
