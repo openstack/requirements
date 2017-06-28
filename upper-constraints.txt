@@ -90,7 +90,7 @@ tripleo-common===7.2.0
 Tempita===0.5.2
 ply===3.10
 requests-toolbelt===0.8.0
-simplejson===3.10.0
+simplejson===3.11.1
 suds-jurko===0.6
 python-swiftclient===3.3.0
 pyOpenSSL===17.0.0
@@ -203,7 +203,7 @@ XStatic-JQuery-Migrate===1.2.1.1
 appdirs===1.4.3
 tinyrpc===0.5
 Flask-SQLAlchemy===2.2
-daiquiri===0.1.0
+daiquiri===0.1.1
 influxdb===4.1.1
 funcparserlib===0.3.6
 passlib===1.7.1
@@ -229,7 +229,7 @@ castellan===0.10.0
 oslo.versionedobjects===1.24.0
 webcolors===1.7
 aodhclient===0.9.0
-autobahn===17.6.1
+autobahn===17.6.2
 SQLAlchemy-Utils===0.32.14
 coverage===4.4.1
 freezegun===0.3.9
@@ -288,7 +288,7 @@ requests-ntlm===1.0.0
 automaton===1.10.0
 argh===0.26.2;python_version=='3.4'
 argh===0.26.2;python_version=='3.5'
-keyring===10.3.3
+keyring===10.4.0
 testscenarios===0.5.0
 sphinxcontrib-pecanwsme===0.8.0
 enum34===1.1.6
@@ -301,7 +301,7 @@ txaio===2.8.0
 elasticsearch===2.4.1
 django-nose===1.4.4
 XStatic-JQuery.TableSorter===2.14.5.1
-pifpaf===1.3.1
+pifpaf===1.4.1
 pysmi===0.1.3
 blockdiag===1.5.3
 testtools===2.3.0
@@ -365,7 +365,7 @@ bottle===0.12.13
 betamax===0.8.0
 construct===2.8.12
 pyparsing===2.2.0
-dogpile.cache===0.6.3
+dogpile.cache===0.6.4
 python-barbicanclient===4.3.0
 blinker===1.4;python_version=='3.4'
 blinker===1.4;python_version=='3.5'
@@ -500,7 +500,7 @@ sphinx-testing===0.7.2
 dnspython===1.15.0
 oauthlib===2.0.2
 Babel===2.3.4
-logutils===0.3.4.1
+logutils===0.3.5
 scandir===1.5
 sphinxcontrib-fulltoc===1.2.0
 smmap2===2.0.3
