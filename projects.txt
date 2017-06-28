@@ -106,10 +106,12 @@ openstack/networking-vsphere
 openstack/neutron
 openstack/neutron-dynamic-routing
 openstack/neutron-fwaas
+openstack/neutron-fwaas-dashboard
 openstack/neutron-lbaas
 openstack/neutron-lbaas-dashboard
 openstack/neutron-lib
 openstack/neutron-vpnaas
+openstack/neutron-vpnaas-dashboard
 openstack/nova
 openstack/nova-dpm
 openstack/nova-lxd
