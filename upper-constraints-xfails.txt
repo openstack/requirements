@@ -1,4 +1,2 @@
 # Format is
 # <dependency that is incompatible>==<version>;<list,of,affected,packages>
-
-SQLAlchemy==1.1.10;mistral,tripleo-common
