@@ -157,37 +157,6 @@ Entries in all requirements files will have their versions updated to match
 the entries listed in the global requirements.  Excess entries will cause
 errors in hard mode (the default) or be ignored in soft mode.
 
-stable-branch maintenance
--------------------------
-
-Upper-constraints
-+++++++++++++++++
-
-Most of the work is done by stable-maint in the releases project.  The releases
-project ensures valid stable releases (little to no API level changes, bugfix
-only, etc).  Once released, the new version is requested to be updated in
-requirements.  The following restrictions are in place to help ensure stable
-branches do not break.
-
-- In stable branches, we usually only update constraints for projects managed
-  within the OpenStack community. Exceptions are made for other projects when
-  there are gate issues. Those updates must be proposed by hand.
-
-- The requirements team also verifies the new version's requirements changes
-  line up with the requirements in the stable branch (GR and UC).
-
-Global-requirements
-+++++++++++++++++++
-
-These should be few and far between on stable branches, mainly masking known
-bad versions or in extreme adding a maximum version allowable for a package.
-We work to remove these caps as well.
-
-New requirements
-++++++++++++++++
-
-In nearly all cases this is not allowed.
-
 generate-constraints
 --------------------
 
@@ -430,6 +399,37 @@ Otherwise the change may be the result of recalculating the constraints which
 changed when a ``global-requirements.txt`` change is proposed. In this case, ignore
 the changes to ``upper-constraints.txt`` and review the
 ``global-requirements.txt`` component of the change.
+
+stable-branch maintenance
+-------------------------
+
+Upper-constraints
++++++++++++++++++
+
+Most of the work is done by stable-maint in the releases project.  The releases
+project ensures valid stable releases (little to no API level changes, bugfix
+only, etc).  Once released, the new version is requested to be updated in
+requirements.  The following restrictions are in place to help ensure stable
+branches do not break.
+
+- In stable branches, we usually only update constraints for projects managed
+  within the OpenStack community. Exceptions are made for other projects when
+  there are gate issues. Those updates must be proposed by hand.
+
+- The requirements team also verifies the new version's requirements changes
+  line up with the requirements in the stable branch (GR and UC).
+
+Global-requirements
++++++++++++++++++++
+
+These should be few and far between on stable branches, mainly masking known
+bad versions or in extreme adding a maximum version allowable for a package.
+We work to remove these caps as well.
+
+New requirements
+++++++++++++++++
+
+In nearly all cases this is not allowed.
 
 Resources
 =========
