@@ -424,12 +424,20 @@ Global-requirements
 
 These should be few and far between on stable branches, mainly masking known
 bad versions or in extreme adding a maximum version allowable for a package.
-We work to remove these caps as well.
+We work to remove these caps as well.  Raising effective minimums is only
+acceptable during `Phase I`, and only due to security issues.
+
+.. _Phase I: https://docs.openstack.org/project-team-guide/stable-branches.html#support-phases
 
 New requirements
 ++++++++++++++++
 
-In nearly all cases this is not allowed.
+In nearly all cases this is not allowed.  An example where this is allowed
+would be:  A dependency of a dependency has an issue that impacts OpenStack.
+It wasn't listed in global-requirements.txt but it is required.  In order to
+block the affected releases and still be able to keep requirements in sync, we
+list the library in global-requirements.txt and update all projects that
+require it.
 
 Resources
 =========
