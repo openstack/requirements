@@ -83,7 +83,7 @@ networkx===1.11
 bashate===0.5.1
 XStatic-Angular===1.5.8.0
 pyngus===2.2.1
-Pillow===4.1.1
+Pillow===4.2.0
 python-mimeparse===1.6.0
 tripleo-common===7.3.0
 Tempita===0.5.2
@@ -92,7 +92,7 @@ requests-toolbelt===0.8.0
 simplejson===3.11.1
 suds-jurko===0.6
 python-swiftclient===3.3.0
-pyOpenSSL===17.0.0
+pyOpenSSL===17.1.0
 monasca-common===2.2.0
 hyperframe===4.0.2;python_version=='3.4'
 hyperframe===4.0.2;python_version=='3.5'
@@ -121,7 +121,7 @@ pyghmi===1.0.20
 sphinxcontrib-blockdiag===1.5.5
 kaitaistruct===0.6;python_version=='3.4'
 kaitaistruct===0.6;python_version=='3.5'
-gnocchiclient===3.1.1
+gnocchiclient===3.3.1
 wcwidth===0.1.7
 jsonpath-rw===1.4.0
 prettytable===0.7.2
@@ -133,7 +133,7 @@ tablib===0.11.5
 astroid===1.3.8
 virtualbmc===1.1.0
 deprecation===1.0.1
-SQLAlchemy===1.1.10
+SQLAlchemy===1.1.11
 pyroute2===0.4.17
 kazoo===2.4.0
 XStatic-roboto-fontface===0.5.0.0
@@ -152,7 +152,7 @@ unicodecsv===0.14.1
 imagesize===0.7.1
 pathlib===1.0.1;python_version=='2.7'
 urllib3===1.21.1
-graphviz===0.7.1
+graphviz===0.8
 PyKMIP===0.6.0
 python-subunit===1.2.0
 tornado===4.4.3;python_version=='3.4'
@@ -243,7 +243,7 @@ nwdiag===1.0.4
 XStatic-bootswatch===3.3.7.0
 XStatic-term.js===0.0.7.0
 oslo.log===3.28.1
-nodeenv===1.1.2
+nodeenv===1.1.4
 pylev===1.3.0
 python-searchlightclient===1.1.0
 oslo.middleware===3.29.0
@@ -275,6 +275,7 @@ urwid===1.3.1;python_version=='3.5'
 singledispatch===3.4.0.3;python_version=='2.7'
 oslo.serialization===2.18.0
 warlock===1.2.0
+exabgp===4.0.1
 sphinxcontrib-httpdomain===1.5.0
 thriftpy===0.3.9;python_version=='2.7'
 murano-pkg-check===0.3.0
@@ -300,7 +301,7 @@ txaio===2.8.0
 elasticsearch===2.4.1
 django-nose===1.4.4
 XStatic-JQuery.TableSorter===2.14.5.1
-pifpaf===1.4.1
+pifpaf===1.6.0
 pysmi===0.1.3
 blockdiag===1.5.3
 testtools===2.3.0
@@ -375,7 +376,7 @@ msgpack-python===0.4.8
 proboscis===1.2.6.0
 fortiosclient===0.0.2
 stevedore===1.23.0
-botocore===1.5.75
+botocore===1.5.78
 xmltodict===0.11.0
 pyasn1===0.2.2
 python-utils===2.1.0
@@ -415,7 +416,7 @@ testresources===2.0.1
 falcon===1.2.0
 etcd3gw===0.1.0
 pycryptodome===3.4.6
-pyldap===2.4.36
+pyldap===2.4.37
 Flask-RESTful===0.3.6
 GitPython===2.1.5
 python-ironicclient===1.13.0
@@ -436,12 +437,12 @@ oslo.privsep===1.21.0
 zope.interface===4.4.2
 oslo.policy===1.24.0
 python-muranoclient===0.13.0
-pyeclib===1.4.0
+pyeclib===1.5.0
 django-openstack-auth===3.2.0
 wsgi-intercept===1.5.0
 ndg-httpsclient===0.4.2;python_version=='2.7'
 tempest-lib===1.0.0
-spec-cleaner===0.9.7
+spec-cleaner===0.9.8
 repoze.lru===0.6
 rfc3986===1.0.0
 tenacity===4.1.0
@@ -536,4 +537,3 @@ XStatic-D3===3.5.17.0
 actdiag===0.5.4
 sysv-ipc===0.7.0
 scikit-learn===0.18.2
-exabgp===4.0.1
