@@ -454,7 +454,7 @@ functools32===3.2.3.post2;python_version=='2.7'
 watchdog===0.8.3;python_version=='3.4'
 watchdog===0.8.3;python_version=='3.5'
 gevent===1.2.2
-os-vif===1.5.0
+os-vif===1.6.0
 Werkzeug===0.12.2
 pyasn1-modules===0.0.9
 APScheduler===3.3.1
