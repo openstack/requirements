@@ -351,7 +351,7 @@ seqdiag===0.9.5
 numpy===1.13.0
 repoze.who===2.3
 Sphinx===1.6.2
-oslo.config===4.6.0
+oslo.config===4.7.0
 tempest===16.0.0
 django-floppyforms===1.7.0
 openstackdocstheme===1.11.0
