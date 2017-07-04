@@ -246,7 +246,7 @@ oslo.log===3.28.1
 nodeenv===1.1.2
 pylev===1.3.0
 python-searchlightclient===1.1.0
-oslo.middleware===3.29.0
+oslo.middleware===3.29.1
 brotlipy===0.6.0;python_version=='3.4'
 brotlipy===0.6.0;python_version=='3.5'
 XStatic-mdi===1.4.57.0
