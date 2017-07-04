@@ -22,7 +22,7 @@ ryu===4.14
 os-api-ref===1.4.0
 oslo.concurrency===3.20.0
 websocket-client===0.44.0
-osprofiler===1.10.0
+osprofiler===1.10.1
 bandit===1.4.0
 tabulate===0.7.7
 python-ironic-inspector-client===1.12.0
