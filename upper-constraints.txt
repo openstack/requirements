@@ -33,7 +33,7 @@ setproctitle===1.1.10
 pytest===3.1.2
 python-etcd===0.4.5
 cursive===0.1.2
-oslo.service===1.23.0
+oslo.service===1.24.0
 django-appconf===1.0.2
 pykerberos===1.1.14
 certifi===2017.4.17
