@@ -251,7 +251,7 @@ oslo.utils===3.22.0
 oslo.versionedobjects===1.21.0
 oslo.vmware===2.17.0
 oslosphinx===4.10.0
-oslotest===2.13.0
+oslotest===2.13.1
 osprofiler===1.5.0
 ovs===2.6.1
 packaging===16.8
