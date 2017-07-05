@@ -343,7 +343,7 @@ ceilometermiddleware===1.1.0
 python-nss===1.0.1
 testrepository===0.0.20
 sympy===1.0
-sphinxmark===0.1.18
+sphinxmark===0.1.19
 openpyxl===2.4.8
 PyNaCl===1.1.2
 osc-lib===1.6.0
