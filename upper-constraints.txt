@@ -209,7 +209,7 @@ os-vif===1.2.1
 os-win===1.2.2
 osc-lib===1.1.0
 oslo.cache===1.14.0
-oslo.concurrency===3.14.0
+oslo.concurrency===3.14.1
 oslo.config===3.17.1
 oslo.context===2.9.0
 oslo.db===4.13.5
