@@ -71,7 +71,7 @@ aodhclient===0.8.0
 appdirs===1.4.3
 astroid===1.3.8
 autobahn===0.17.1
-automaton===1.7.0
+automaton===1.7.1
 backports.ssl-match-hostname===3.5.0.1
 bandit===1.4.0
 bashate===0.5.1
