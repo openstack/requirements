@@ -374,7 +374,7 @@ msgpack-python===0.4.8
 proboscis===1.2.6.0
 fortiosclient===0.0.2
 stevedore===1.23.0
-botocore===1.5.78
+botocore===1.5.79
 xmltodict===0.11.0
 pyasn1===0.2.2
 python-utils===2.1.0
@@ -444,7 +444,6 @@ spec-cleaner===0.9.8
 repoze.lru===0.6
 rfc3986===1.0.0
 tenacity===4.2.0
-logilab-common===1.4.0
 XStatic-Magic-Search===0.2.5.1
 python-designateclient===2.6.0
 Paste===2.0.3
