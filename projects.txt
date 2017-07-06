@@ -205,6 +205,7 @@ openstack/oslo.vmware
 openstack/oslosphinx
 openstack/oslotest
 openstack/ovsdbapp
+openstack/patrole
 openstack/pycadf
 openstack/pymod2pkg
 openstack/python-barbicanclient
