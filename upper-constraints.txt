@@ -436,7 +436,7 @@ zope.interface===4.4.2
 oslo.policy===1.24.0
 python-muranoclient===0.13.0
 pyeclib===1.5.0
-django-openstack-auth===3.2.0
+django-openstack-auth===3.3.0
 wsgi-intercept===1.5.0
 ndg-httpsclient===0.4.2;python_version=='2.7'
 tempest-lib===1.0.0
