@@ -411,7 +411,7 @@ selenium>=2.50.1  # Apache-2.0
 # Blacklist setuptools 34.0.0-34.3.2 due to https://github.com/pypa/setuptools/issues/951
 setuptools>=16.0,!=24.0.0,!=34.0.0,!=34.0.1,!=34.0.2,!=34.0.3,!=34.1.0,!=34.1.1,!=34.2.0,!=34.3.0,!=34.3.1,!=34.3.2  # PSF/ZPL
 sphinx>=1.6.2  # BSD
-sphinx-testing # BSD License
+sphinx-testing>=0.7.2  # BSD License
 sphinxcontrib-actdiag  # BSD
 sphinxcontrib-blockdiag  # BSD
 sphinxcontrib-httpdomain  # BSD
