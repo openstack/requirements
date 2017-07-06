@@ -213,7 +213,7 @@ pyngus>=2.0.2  # Apache-2.0
 
 pyOpenSSL>=0.14  # Apache-2.0
 pyparsing>=2.1.0  # MIT
-pyroute2>=0.4.15  # Apache-2.0 (+ dual licensed GPL2)
+pyroute2>=0.4.17  # Apache-2.0 (+ dual licensed GPL2)
 pysnmp>=4.2.3,!=4.3.4,!=4.3.5,!=4.3.6,!=4.3.7  # BSD
 pystache  # MIT
 
