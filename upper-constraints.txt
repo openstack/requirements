@@ -225,7 +225,7 @@ oslo.serialization===2.13.1
 oslo.service===1.16.1
 oslo.utils===3.16.1
 oslo.versionedobjects===1.17.1
-oslo.vmware===2.14.0
+oslo.vmware===2.14.1
 oslosphinx===4.7.0
 oslotest===2.10.1
 osprofiler===1.4.0
