@@ -379,7 +379,7 @@ botocore===1.5.80
 xmltodict===0.11.0
 pyasn1===0.2.2
 python-utils===2.1.0
-oslo.rootwrap===5.7.0
+oslo.rootwrap===5.8.0
 Django===1.10.7
 pexpect===4.2.1
 cmd2===0.7.5
