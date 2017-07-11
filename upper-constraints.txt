@@ -352,7 +352,7 @@ numpy===1.13.1
 repoze.who===2.3
 Sphinx===1.6.3
 oslo.config===4.8.0
-tempest===16.0.0
+tempest===16.1.0
 django-floppyforms===1.7.0
 openstackdocstheme===1.13.0
 progressbar2===3.30.2
