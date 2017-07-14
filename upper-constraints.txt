@@ -237,7 +237,7 @@ pyperclip===1.5.27
 cassandra-driver===3.10
 mox===0.5.3
 XStatic-Angular-Schema-Form===0.8.13.0
-gabbi===1.34.1
+gabbi===1.35.0
 nwdiag===1.0.4
 XStatic-bootswatch===3.3.7.0
 XStatic-term.js===0.0.7.0
@@ -300,7 +300,7 @@ txaio===2.8.0
 elasticsearch===2.4.1
 django-nose===1.4.4
 XStatic-JQuery.TableSorter===2.14.5.1
-pifpaf===1.8.1
+pifpaf===1.9.0
 pysmi===0.1.3
 blockdiag===1.5.3
 testtools===2.3.0
