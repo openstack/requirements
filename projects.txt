@@ -4,6 +4,7 @@ openstack-infra/shade
 openstack-infra/requestsexceptions
 openstack/almanach
 openstack/anchor
+openstack/ansible-hardening
 openstack/automaton
 openstack/bandit
 openstack/barbican
@@ -139,6 +140,7 @@ openstack/openstack-ansible-os_ceilometer
 openstack/openstack-ansible-os_cinder
 openstack/openstack-ansible-os_cloudkitty
 openstack/openstack-ansible-os_designate
+openstack/openstack-ansible-os_freezer
 openstack/openstack-ansible-os_glance
 openstack/openstack-ansible-os_gnocchi
 openstack/openstack-ansible-os_heat
@@ -148,6 +150,7 @@ openstack/openstack-ansible-os_keystone
 openstack/openstack-ansible-os_magnum
 openstack/openstack-ansible-os_molteniron
 openstack/openstack-ansible-os_monasca
+openstack/openstack-ansible-os_monasca-agent
 openstack/openstack-ansible-os_monasca-ui
 openstack/openstack-ansible-os_neutron
 openstack/openstack-ansible-os_nova
@@ -167,7 +170,6 @@ openstack/openstack-ansible-repo_build
 openstack/openstack-ansible-repo_server
 openstack/openstack-ansible-rsyslog_client
 openstack/openstack-ansible-rsyslog_server
-openstack/openstack-ansible-security
 openstack/openstack-ansible-specs
 openstack/openstack-ansible-tests
 openstack/openstack-doc-tools
