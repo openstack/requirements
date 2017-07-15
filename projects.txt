@@ -178,6 +178,7 @@ openstack/openstackdocstheme
 openstack/os-api-ref
 openstack/os-apply-config
 openstack/os-brick
+openstack/os-client-config
 openstack/os-collect-config
 openstack/os-refresh-config
 openstack/os-service-types
