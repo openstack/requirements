@@ -180,6 +180,7 @@ openstack/os-apply-config
 openstack/os-brick
 openstack/os-collect-config
 openstack/os-refresh-config
+openstack/os-service-types
 openstack/os-testr
 openstack/os-traits
 openstack/os-vif
