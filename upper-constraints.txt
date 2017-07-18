@@ -174,7 +174,7 @@ gunicorn===19.7.1
 unittest2===1.1.0
 django-compressor===2.1.1
 libvirt-python===3.5.0
-python-zunclient===0.2.0
+python-zunclient===0.3.0
 tzlocal===1.4
 python-novaclient===9.0.1
 bcrypt===3.1.3
