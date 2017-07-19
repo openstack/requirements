@@ -161,8 +161,9 @@ pycparser===2.18
 mock===2.0.0
 PyYAML===3.12
 beautifulsoup4===4.6.0
+os-net-config===7.1.0
 ovs===2.7.0
-cryptography===1.9
+cryptography===2.0
 backports.ssl-match-hostname===3.5.0.1
 pylxd===2.2.4
 anyjson===0.3.3
@@ -202,7 +203,7 @@ XStatic-JQuery-Migrate===1.2.1.1
 appdirs===1.4.3
 tinyrpc===0.5
 Flask-SQLAlchemy===2.2
-daiquiri===1.1.0
+daiquiri===1.2.0
 influxdb===4.1.1
 funcparserlib===0.3.6
 passlib===1.7.1
@@ -375,7 +376,7 @@ msgpack-python===0.4.8
 proboscis===1.2.6.0
 fortiosclient===0.0.2
 stevedore===1.25.0
-botocore===1.5.83
+botocore===1.5.84
 xmltodict===0.11.0
 pyasn1===0.2.2
 python-utils===2.1.0
@@ -443,7 +444,7 @@ ndg-httpsclient===0.4.2;python_version=='2.7'
 tempest-lib===1.0.0
 spec-cleaner===0.9.8
 repoze.lru===0.6
-rfc3986===1.0.0
+rfc3986===1.1.0
 tenacity===4.3.0
 XStatic-Magic-Search===0.2.5.1
 python-designateclient===2.6.0
@@ -535,4 +536,3 @@ XStatic-D3===3.5.17.0
 actdiag===0.5.4
 sysv-ipc===0.7.0
 scikit-learn===0.18.2
-os-net-config===7.1.0
