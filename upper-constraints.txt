@@ -117,7 +117,7 @@ sqlparse===0.2.3
 oslotest===2.17.0
 jsonpointer===1.10
 netaddr===0.7.19
-pyghmi===1.0.20
+pyghmi===1.0.22
 sphinxcontrib-blockdiag===1.5.5
 kaitaistruct===0.6;python_version=='3.4'
 kaitaistruct===0.6;python_version=='3.5'
