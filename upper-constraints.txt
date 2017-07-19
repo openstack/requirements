@@ -284,7 +284,7 @@ gitdb===0.6.4
 python-monascaclient===1.6.0
 ldap3===2.2.4
 requests-ntlm===1.0.0
-automaton===1.11.0
+automaton===1.12.0
 argh===0.26.2;python_version=='3.4'
 argh===0.26.2;python_version=='3.5'
 keyring===10.4.0
