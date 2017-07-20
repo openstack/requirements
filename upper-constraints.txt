@@ -328,7 +328,7 @@ PuLP===1.6.8
 crc16===0.1.1
 protobuf===3.3.0
 os-dpm===1.0.0
-sushy===0.2.0
+sushy===1.0.0
 python-neutronclient===6.3.0
 pika===0.10.0
 oslo.cache===1.25.0
