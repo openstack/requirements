@@ -203,7 +203,7 @@ XStatic-JQuery-Migrate===1.2.1.1
 appdirs===1.4.3
 tinyrpc===0.5
 Flask-SQLAlchemy===2.2
-daiquiri===1.2.0
+daiquiri===1.2.1
 influxdb===4.1.1
 funcparserlib===0.3.6
 passlib===1.7.1
