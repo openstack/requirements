@@ -18,7 +18,7 @@ castellan>=0.7.0 # Apache-2.0
 ceilometermiddleware>=0.1.0  # Apache-2.0
 cachetools>=1.1.0 # MIT License
 cffi  # MIT
-cliff>=2.6.0  # Apache-2.0
+cliff>=2.8.0  # Apache-2.0
 cmd2>=0.6.7  # MIT
 cotyledon>=1.3.0  # Apache-2.0
 construct>=2.8.10 # MIT
