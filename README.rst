@@ -2,8 +2,8 @@
 Team and repository tags
 ========================
 
-.. image:: http://governance.openstack.org/badges/requirements.svg
-    :target: http://governance.openstack.org/reference/tags/index.html
+.. image:: https://governance.openstack.org/tc/badges/requirements.svg
+    :target: https://governance.openstack.org/tc/reference/tags/index.html
 
 .. Change things from this point on
 
@@ -335,7 +335,7 @@ For new Requirements
   to ``upper-constraints.txt``. After that, OpenStack Proposal Bot will
   propose updates.
 
-.. _Licensing requirements: http://governance.openstack.org/reference/licensing.html
+.. _Licensing requirements: https://governance.openstack.org/tc/reference/licensing.html
 
 For Upgrading Requirements Versions
 -----------------------------------
@@ -442,7 +442,7 @@ require it.
 Resources
 =========
 
-- Documentation: http://docs.openstack.org/developer/requirements
+- Documentation: https://docs.openstack.org/requirements/latest/
 - Wiki: https://wiki.openstack.org/wiki/Requirements
 - Bugs: https://launchpad.net/openstack-requirements
 
