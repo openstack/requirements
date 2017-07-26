@@ -163,7 +163,7 @@ PyYAML===3.12
 beautifulsoup4===4.6.0
 os-net-config===7.1.0
 ovs===2.7.0
-cryptography===2.0
+cryptography===1.9
 backports.ssl-match-hostname===3.5.0.1
 pylxd===2.2.4
 anyjson===0.3.3
