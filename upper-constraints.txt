@@ -355,7 +355,7 @@ Sphinx===1.6.3
 oslo.config===4.11.0
 tempest===16.1.0
 django-floppyforms===1.7.0
-openstackdocstheme===1.15.0
+openstackdocstheme===1.16.0
 progressbar2===3.32.0
 zake===0.2.2
 python-solumclient===2.4.0
