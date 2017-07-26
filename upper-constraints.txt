@@ -78,7 +78,7 @@ os-xenapi===0.2.0
 python-vitrageclient===1.2.0
 nosexcover===1.0.11
 krest===1.3.1
-psycopg2===2.7.2
+psycopg2===2.7.3
 networkx===1.11
 bashate===0.5.1
 XStatic-Angular===1.5.8.0
@@ -132,7 +132,7 @@ semantic-version===2.6.0
 tablib===0.11.5
 virtualbmc===1.1.0
 deprecation===1.0.1
-SQLAlchemy===1.1.11
+SQLAlchemy===1.1.12
 pyroute2===0.4.18
 google-auth===1.0.1
 kazoo===2.4.0
@@ -151,7 +151,7 @@ reno===2.4.1
 unicodecsv===0.14.1
 imagesize===0.7.1
 pathlib===1.0.1;python_version=='2.7'
-urllib3===1.21.1
+urllib3===1.22
 graphviz===0.8
 PyKMIP===0.6.0
 python-subunit===1.2.0
@@ -185,7 +185,7 @@ Pygments===2.2.0
 XStatic-Hogan===2.0.0.2
 XStatic-objectpath===1.2.1.0
 python-manilaclient===1.16.0
-requests===2.18.1
+requests===2.18.2
 snowballstemmer===1.2.1
 Jinja2===2.9.6
 XStatic-Bootstrap-SCSS===3.3.7.1
@@ -235,7 +235,7 @@ coverage===4.4.1
 freezegun===0.3.9
 python-pytun===2.2.1
 pyperclip===1.5.27
-cassandra-driver===3.10
+cassandra-driver===3.11.0
 mox===0.5.3
 XStatic-Angular-Schema-Form===0.8.13.0
 gabbi===1.35.0
@@ -259,8 +259,8 @@ pycrypto===2.6.1
 ujson===1.35
 selenium===3.4.3
 python-glareclient===0.4.1
-mypy===0.520;python_version=='3.4'
-mypy===0.520;python_version=='3.5'
+mypy===0.521;python_version=='3.4'
+mypy===0.521;python_version=='3.5'
 mistral-lib===0.2.0
 dogtag-pki===10.3.5.1
 sphinxcontrib-seqdiag===0.8.5
@@ -356,7 +356,7 @@ oslo.config===4.11.0
 tempest===16.1.0
 django-floppyforms===1.7.0
 openstackdocstheme===1.16.0
-progressbar2===3.32.0
+progressbar2===3.32.1
 zake===0.2.2
 python-solumclient===2.4.0
 PyMySQL===0.7.11
@@ -376,7 +376,7 @@ msgpack-python===0.4.8
 proboscis===1.2.6.0
 fortiosclient===0.0.2
 stevedore===1.25.0
-botocore===1.5.86
+botocore===1.5.88
 xmltodict===0.11.0
 pyasn1===0.2.2
 python-utils===2.2.0
@@ -406,7 +406,7 @@ h2===2.6.2;python_version=='3.4'
 h2===2.6.2;python_version=='3.5'
 dulwich===0.17.3
 pykafka===2.6.0
-kombu===4.0.1
+kombu===4.1.0
 mitmproxy===2.0.2;python_version=='3.4'
 mitmproxy===2.0.2;python_version=='3.5'
 betamax-matchers===0.4.0
@@ -445,7 +445,7 @@ tempest-lib===1.0.0
 spec-cleaner===0.9.8
 repoze.lru===0.6
 rfc3986===1.1.0
-tenacity===4.3.0
+tenacity===4.4.0
 XStatic-Magic-Search===0.2.5.1
 python-designateclient===2.6.0
 Paste===2.0.3
@@ -475,7 +475,7 @@ statsd===3.2.1
 XenAPI===1.2
 python-keystoneclient===3.12.0
 demjson===2.2.4
-diskimage-builder===2.7.0
+diskimage-builder===2.7.1
 heat-translator===0.9.0
 python-magnumclient===2.6.0
 docker===2.4.2
