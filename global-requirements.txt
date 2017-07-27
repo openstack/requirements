@@ -218,6 +218,8 @@ pyzabbix  # LGPL
 statsd  # MIT
 weakrefmethod;python_version=='2.7'  # PSF
 zVMCloudConnector;sys_platform!='win32'  # Apache 2.0 License
+opentracing  # Apache-2.0
+jaeger-client  # Apache-2.0
 
 # NOTE(flaper87): This added 2 packages to `integration.sh`
 # uuid-dev and swig
