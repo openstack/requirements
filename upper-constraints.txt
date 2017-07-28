@@ -437,7 +437,7 @@ wrapt===1.10.10
 oslo.privsep===1.22.0
 zope.interface===4.4.2
 oslo.policy===1.25.0
-python-muranoclient===0.13.0
+python-muranoclient===0.14.0
 pyeclib===1.5.0
 django-openstack-auth===3.5.0
 wsgi-intercept===1.5.0
