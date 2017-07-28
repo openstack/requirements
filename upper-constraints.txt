@@ -3,7 +3,7 @@ voluptuous===0.10.5
 chardet===3.0.4
 enum-compat===0.0.2
 rsa===3.4.2
-restructuredtext-lint===1.0.1
+restructuredtext-lint===1.1.1
 netmiko===1.4.2
 instack-undercloud===7.2.0
 PasteDeploy===1.5.2
@@ -41,7 +41,7 @@ sphinxcontrib-nwdiag===0.9.5
 requests-aws===0.1.8
 alabaster===0.7.10
 pbr===3.1.1
-munch===2.1.1
+munch===2.2.0
 microversion-parse===0.1.4
 Pint===0.8.1
 oslo.i18n===3.17.0
@@ -163,7 +163,7 @@ PyYAML===3.12
 beautifulsoup4===4.6.0
 os-net-config===7.1.0
 ovs===2.7.0
-cryptography===1.9
+cryptography===2.0.2
 backports.ssl-match-hostname===3.5.0.1
 pylxd===2.2.4
 anyjson===0.3.3
@@ -288,6 +288,7 @@ requests-ntlm===1.0.0
 automaton===1.12.0
 argh===0.26.2;python_version=='3.4'
 argh===0.26.2;python_version=='3.5'
+os-service-types===1.0.0
 keyring===10.4.0
 testscenarios===0.5.0
 sphinxcontrib-pecanwsme===0.8.0
@@ -307,7 +308,7 @@ blockdiag===1.5.3
 testtools===2.3.0
 Parsley===1.3
 XStatic-tv4===1.2.7.0
-positional===1.1.1
+positional===1.1.2
 XStatic-JSEncrypt===2.3.1.1
 python-cinderclient===3.1.0
 keystonemiddleware===4.17.0
@@ -342,7 +343,7 @@ oslo.reports===1.22.0
 ceilometermiddleware===1.1.0
 python-nss===1.0.1
 testrepository===0.0.20
-sympy===1.1
+sympy===1.1.1
 sphinxmark===0.1.19
 openpyxl===2.4.8
 PyNaCl===1.1.2
@@ -367,7 +368,7 @@ betamax===0.8.0
 construct===2.8.12
 pyparsing===2.2.0
 dogpile.cache===0.6.4
-python-barbicanclient===4.4.0
+python-barbicanclient===4.5.0
 blinker===1.4;python_version=='3.4'
 blinker===1.4;python_version=='3.5'
 tricircleclient===0.1.1
@@ -376,7 +377,7 @@ msgpack-python===0.4.8
 proboscis===1.2.6.0
 fortiosclient===0.0.2
 stevedore===1.25.0
-botocore===1.5.88
+botocore===1.5.89
 xmltodict===0.11.0
 pyasn1===0.3.1
 python-utils===2.2.0
@@ -456,7 +457,7 @@ watchdog===0.8.3;python_version=='3.5'
 gevent===1.2.2
 os-vif===1.7.0
 Werkzeug===0.12.2
-pyasn1-modules===0.0.9
+pyasn1-modules===0.0.10
 APScheduler===3.3.1
 monotonic===1.3
 python-smaugclient===0.0.8
@@ -475,14 +476,14 @@ statsd===3.2.1
 XenAPI===1.2
 python-keystoneclient===3.12.0
 demjson===2.2.4
-diskimage-builder===2.7.1
+diskimage-builder===2.7.2
 heat-translator===0.9.0
 python-magnumclient===2.6.0
 docker===2.4.2
-prompt-toolkit===1.0.14
+prompt-toolkit===1.0.15
 pathtools===0.1.2;python_version=='3.4'
 pathtools===0.1.2;python_version=='3.5'
-qpid-python===1.36.0;python_version=='2.7'
+qpid-python===1.36.0.post1;python_version=='2.7'
 contextlib2===0.5.5
 XStatic-Angular-lrdragndrop===1.0.2.2
 python-congressclient===1.8.0
@@ -536,4 +537,3 @@ XStatic-D3===3.5.17.0
 actdiag===0.5.4
 sysv-ipc===0.7.0
 scikit-learn===0.18.2
-os-service-types===1.0.0
