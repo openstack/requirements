@@ -440,6 +440,7 @@ xmltodict>=0.10.1  # MIT
 wsgi_intercept>=1.4.1 # MIT License
 xvfbwrapper>=0.1.3 #license: MIT
 zake>=0.1.6 # Apache-2.0
+zuul-sphinx>=0.1.2 # Apache-2.0
 
 # Indirect dependencies that need blocking
 daiquiri!=1.2.0
