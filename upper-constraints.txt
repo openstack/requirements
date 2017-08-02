@@ -412,7 +412,7 @@ testscenarios===0.5.0
 testtools===2.2.0
 thrift===0.10.0;python_version=='2.7'
 tinyrpc===0.5
-tooz===1.48.1
+tooz===1.48.2
 tosca-parser===0.7.0
 traceback2===1.4.0
 tripleo-common===6.1.0
