@@ -12,16 +12,6 @@
 # License for the specific language governing permissions and limitations
 # under the License.
 
-# This script, when run from the root directory of this repository, will
-# search the default and feature branches of all projects listed in the
-# projects.txt file for declared dependencies, then output a list of any
-# entries in the global-requirements.txt file which are not actual
-# dependencies of those projects. Old dependencies which were removed
-# from projects or which were used only for projects which have since
-# been removed should be cleaned up, but many entries likely represent
-# recent additions which still have pending changes to add them to one
-# or more projects. In most cases, git pickaxe will yield the answer.
-
 # Note(tonyb): Expand HEAD into something that's hopefully more human
 #              readable
 declare -a branches=($(git describe --always) origin/master
