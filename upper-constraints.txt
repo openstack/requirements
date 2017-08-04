@@ -368,7 +368,7 @@ betamax===0.8.0
 construct===2.8.12
 pyparsing===2.2.0
 dogpile.cache===0.6.4
-python-barbicanclient===4.4.0
+python-barbicanclient===4.5.2
 blinker===1.4;python_version=='3.4'
 blinker===1.4;python_version=='3.5'
 tricircleclient===0.1.1
