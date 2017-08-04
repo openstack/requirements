@@ -101,7 +101,7 @@ cssutils===1.0.2;python_version=='3.5'
 scipy===0.19.1
 MySQL-python===1.2.5;python_version=='2.7'
 XStatic-Jasmine===2.4.1.1
-python-glanceclient===2.7.0
+python-glanceclient===2.8.0
 pyinotify===0.9.6
 debtcollector===1.17.0
 requests-unixsocket===0.1.5
