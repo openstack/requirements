@@ -97,6 +97,7 @@ openstack/networking-bgpvpn
 openstack/networking-dpm
 openstack/networking-generic-switch
 openstack/networking-fujitsu
+openstack/networking-hpe
 openstack/networking-hyperv
 openstack/networking-l2gw
 openstack/networking-midonet
