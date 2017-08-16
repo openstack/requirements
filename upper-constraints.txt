@@ -130,7 +130,7 @@ taskflow===2.14.0
 traceback2===1.4.0
 semantic-version===2.6.0
 tablib===0.11.5
-virtualbmc===1.1.0
+virtualbmc===1.2.0
 deprecation===1.0.1
 SQLAlchemy===1.1.12
 pyroute2===0.4.18
