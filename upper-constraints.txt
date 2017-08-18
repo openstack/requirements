@@ -539,3 +539,4 @@ actdiag===0.5.4
 sysv-ipc===0.7.0
 scikit-learn===0.18.2
 zuul-sphinx===0.1.2
+stestr===1.0.0
