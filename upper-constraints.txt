@@ -540,3 +540,4 @@ XStatic-D3===3.5.17.0
 actdiag===0.5.4
 sysv-ipc===0.7.0
 scikit-learn===0.19.0
+shade===1.22.2
