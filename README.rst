@@ -371,10 +371,10 @@ on these platforms (and ideally Debian, Gentoo, and SUSE as well).
 For people unfamiliar with Linux Distro packaging you can use the
 following tools to search for packages:
 
- - Ubuntu - http://packages.ubuntu.com/
- - Fedora - https://apps.fedoraproject.org/packages/
- - Gentoo - https://packages.gentoo.org/
- - SUSE - https://build.opensuse.org/project/show/devel:languages:python
+- Ubuntu - http://packages.ubuntu.com/
+- Fedora - https://apps.fedoraproject.org/packages/
+- Gentoo - https://packages.gentoo.org/
+- SUSE - https://build.opensuse.org/project/show/devel:languages:python
 
 For ``upper-constraints.txt`` changes
 -------------------------------------
