@@ -76,7 +76,7 @@ modindex_common_prefix = ['requirements-doc.']
 
 # openstackdocstheme options
 repository_name = 'openstack/requirements'
-bug_project = 'requirements'
+bug_project = 'openstack-requirements'
 bug_tag = ''
 
 # -- Options for man page output ----------------------------------------------
