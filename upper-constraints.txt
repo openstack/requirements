@@ -401,7 +401,7 @@ sympy===1.0
 sysv-ipc===0.7.0
 tablib===0.11.4
 tabulate===0.7.7
-taskflow===2.9.0
+taskflow===2.9.1
 tempest===14.0.0
 tempest-lib===1.0.0
 tenacity===3.7.1
