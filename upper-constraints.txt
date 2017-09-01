@@ -133,7 +133,7 @@ tablib===0.11.5
 virtualbmc===1.2.0
 deprecation===1.0.1
 SQLAlchemy===1.1.12
-pyroute2===0.4.18
+pyroute2===0.4.20
 google-auth===1.0.1
 kazoo===2.4.0
 XStatic-roboto-fontface===0.5.0.0
