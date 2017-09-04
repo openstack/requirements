@@ -133,7 +133,7 @@ semantic-version===2.6.0
 tablib===0.12.1
 virtualbmc===1.2.0
 deprecation===1.0.1
-SQLAlchemy===1.1.12
+SQLAlchemy===1.1.13
 pyroute2===0.4.21
 google-auth===1.0.2
 kazoo===2.4.0
