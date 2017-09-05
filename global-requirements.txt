@@ -316,7 +316,7 @@ urllib3>=1.21.1  # MIT
 unicodecsv>=0.8.0;python_version<'3.0' # BSD
 warlock>=1.0.1,!=1.3.0,<2  # Apache-2.0
 WebOb>=1.7.1  # MIT
-websocket-client>=0.32.0 # LGPLv2+
+websocket-client>=0.33.0 # LGPLv2+
 websockify>=0.8.0  # LGPLv3
 wheel  # MIT
 PyMI>=1.0.0;sys_platform=='win32' # Apache 2.0 License
