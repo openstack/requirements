@@ -438,7 +438,7 @@ simplegeneric===0.8.1
 abclient===0.2.3
 pymemcache===1.4.3
 wrapt===1.10.11
-oslo.privsep===1.22.0
+oslo.privsep===1.23.0
 zope.interface===4.4.2
 oslo.policy===1.25.1
 python-muranoclient===0.14.0
