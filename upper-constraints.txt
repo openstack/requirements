@@ -142,7 +142,7 @@ pyudev===0.21.0
 eventlet===0.20.0
 openstack-doc-tools===1.6.0
 frozendict===1.2
-oslo.messaging===5.30.0
+oslo.messaging===5.31.0
 extras===1.0.0
 PyJWT===1.5.2
 et-xmlfile===1.0.1
