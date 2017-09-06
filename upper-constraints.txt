@@ -18,14 +18,14 @@ paunch===1.5.0
 WebOb===1.7.3
 sphinxcontrib-actdiag===0.8.5
 pecan===1.2.1
-ryu===4.16
+ryu===4.17
 os-api-ref===1.4.0
 oslo.concurrency===3.22.0
 websocket-client===0.44.0
 osprofiler===1.12.0
 bandit===1.4.0
 tabulate===0.7.7
-python-ironic-inspector-client===2.0.0
+python-ironic-inspector-client===2.1.0
 lxml===3.8.0
 jdcal===1.3
 python-kingbirdclient===0.2.0
@@ -74,7 +74,7 @@ jsonmodels===2.2
 ddt===1.1.1
 ipaddress===1.0.18
 python-freezerclient===1.5.0
-os-xenapi===0.2.0
+os-xenapi===0.3.0
 python-vitrageclient===1.3.0
 nosexcover===1.0.11
 krest===1.3.1
@@ -133,7 +133,7 @@ semantic-version===2.6.0
 tablib===0.12.1
 virtualbmc===1.2.0
 deprecation===1.0.1
-SQLAlchemy===1.1.13
+SQLAlchemy===1.1.14
 pyroute2===0.4.21
 google-auth===1.0.2
 kazoo===2.4.0
@@ -144,7 +144,7 @@ openstack-doc-tools===1.6.0
 frozendict===1.2
 oslo.messaging===5.30.0
 extras===1.0.0
-PyJWT===1.5.2
+PyJWT===1.5.3
 et-xmlfile===1.0.1
 paramiko===2.2.1
 ordereddict===1.1
@@ -175,7 +175,7 @@ mox3===0.23.0
 gunicorn===19.7.1
 unittest2===1.1.0
 django-compressor===2.2
-libvirt-python===3.6.0
+libvirt-python===3.7.0
 python-zunclient===0.4.0
 tzlocal===1.4
 python-novaclient===9.1.0
@@ -230,9 +230,8 @@ castellan===0.12.0
 oslo.versionedobjects===1.26.0
 webcolors===1.7
 aodhclient===0.9.0
-autobahn===17.8.1
+autobahn===17.9.1
 SQLAlchemy-Utils===0.32.16
-pluggy===0.5.1
 coverage===4.4.1
 freezegun===0.3.9
 python-pytun===2.2.1
@@ -302,7 +301,7 @@ flask-keystone===0.2
 nose-exclude===0.5.0
 psutil===5.3.0
 py===1.4.34
-txaio===2.8.1
+txaio===2.8.2
 elasticsearch===2.4.1
 django-nose===1.4.5
 XStatic-JQuery.TableSorter===2.14.5.1
@@ -381,12 +380,12 @@ msgpack-python===0.4.8
 proboscis===1.2.6.0
 fortiosclient===0.0.2
 stevedore===1.26.0
-botocore===1.7.3
+botocore===1.7.4
 xmltodict===0.11.0
 pyasn1===0.3.3
 python-utils===2.2.0
 oslo.rootwrap===5.9.0
-Django===1.11.4
+Django===1.11.5
 pexpect===4.2.1
 cmd2===0.7.7
 redis===2.10.6
