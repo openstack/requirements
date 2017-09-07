@@ -269,7 +269,7 @@ sphinxcontrib-seqdiag===0.8.5
 os-win===2.2.0
 pydot3===1.0.9
 retrying===1.3.3
-shade===1.23.0
+shade===1.22.2
 pathlib2===2.3.0
 pydotplus===2.0.2
 flask-oslolog===0.1
