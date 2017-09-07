@@ -157,7 +157,7 @@ os-dpm>=1.0.0  # Apache-2.0
 os-net-config>=7.1.0  # Apache-2.0
 os-refresh-config  # Apache-2.0
 os-service-types>=1.1.0  # Apache-2.0
-os-testr>=0.8.2  # Apache-2.0
+os-testr>=1.0.0  # Apache-2.0
 os-traits>=0.3.2  # Apache-2.0
 os-vif>=1.7.0                           # Apache-2.0
 ovs>=2.7.0                              # Apache-2.0
