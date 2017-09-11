@@ -129,25 +129,25 @@ oauthlib>=0.6.0  # BSD
 openstackdocstheme>=1.16.0  # Apache-2.0
 ordereddict  # MIT
 osc-lib>=1.7.0  # Apache-2.0
-oslo.cache>=1.5.0  # Apache-2.0
-oslo.config>=4.0.0,!=4.3.0,!=4.4.0  # Apache-2.0
-oslo.concurrency>=3.8.0         # Apache-2.0
+oslo.cache>=1.22.0  # Apache-2.0
+oslo.config>=4.6.0  # Apache-2.0
+oslo.concurrency>=3.20.0         # Apache-2.0
 oslo.context>=2.14.0  # Apache-2.0
 oslo.db>=4.24.0  # Apache-2.0
-oslo.i18n>=2.1.0,!=3.15.2  # Apache-2.0
+oslo.i18n>=3.15.3  # Apache-2.0
 oslo.log>=3.30.0  # Apache-2.0
-oslo.messaging>=5.24.2,!=5.25.0 # Apache-2.0
-oslo.middleware>=3.27.0                  # Apache-2.0
+oslo.messaging>=5.29.0 # Apache-2.0
+oslo.middleware>=3.30.0                  # Apache-2.0
 oslo.policy>=1.23.0  # Apache-2.0
-oslo.privsep>=1.9.0,!=1.17.0  # Apache-2.0
-oslo.reports>=0.6.0  # Apache-2.0
-oslo.rootwrap>=5.0.0  # Apache-2.0
+oslo.privsep>=1.22.0  # Apache-2.0
+oslo.reports>=1.18.0  # Apache-2.0
+oslo.rootwrap>=5.8.0  # Apache-2.0
 # NOTE(mriedem): oslo.serialization 2.19.1 is blocked for bug 1593641
-oslo.serialization>=1.10.0,!=2.19.1      # Apache-2.0
-oslo.service>=1.10.0                     # Apache-2.0
-oslo.utils>=3.20.0                       # Apache-2.0
+oslo.serialization>=2.18.0,!=2.19.1      # Apache-2.0
+oslo.service>=1.24.0                     # Apache-2.0
+oslo.utils>=3.28.0                       # Apache-2.0
 oslo.vmware>=2.17.0                     # Apache-2.0
-oslo.versionedobjects>=1.17.0            # Apache-2.0
+oslo.versionedobjects>=1.25.0            # Apache-2.0
 osprofiler>=1.4.0                       # Apache-2.0
 os-apply-config  # Apache-2.0
 os-brick>=1.15.2  # Apache-2.0
@@ -157,7 +157,7 @@ os-dpm>=1.0.0  # Apache-2.0
 os-net-config>=7.1.0  # Apache-2.0
 os-refresh-config  # Apache-2.0
 os-service-types>=1.1.0  # Apache-2.0
-os-testr>=0.8.0  # Apache-2.0
+os-testr>=0.8.2  # Apache-2.0
 os-traits>=0.3.2  # Apache-2.0
 os-vif>=1.7.0                           # Apache-2.0
 ovs>=2.7.0                              # Apache-2.0
@@ -224,20 +224,20 @@ pystache  # MIT
 # we should block versions higher then 4.0.2. Also, once all projects and
 # dependencies like paramiko switch to pycryptodome, we should revisit this
 # and fully switch over to pycryptodome and stop using pycrypto
-pysaml2>=2.4.0,<4.0.3  # Apache-2.0
+pysaml2>=4.0.2,<4.0.3  # Apache-2.0
 
 # OpenStack clients. None of these should have an upper bound
 # as that has implications for testing in the gate.
-aodhclient>=0.7.0  # Apache-2.0
-gnocchiclient>=2.7.0  # Apache-2.0
+aodhclient>=0.9.0  # Apache-2.0
+gnocchiclient>=3.3.1  # Apache-2.0
 tricircleclient>=0.1.1 # Apache-2.0
 python-barbicanclient>=4.0.0,!=4.5.0,!=4.5.1  # Apache-2.0
 python-ceilometerclient>=2.5.0  # Apache-2.0
 python-cinderclient>=3.2.0  # Apache-2.0
 python-congressclient>=1.3.0,<2000  # Apache-2.0
-python-designateclient>=1.5.0  # Apache-2.0
+python-designateclient>=2.7.0  # Apache-2.0
 python-freezerclient>=1.3.0 # Apache-2.0
-python-heatclient>=1.6.1  # Apache-2.0
+python-heatclient>=1.10.0  # Apache-2.0
 python-hnvclient>=0.1.0  # Apache-2.0
 python-glanceclient>=2.8.0  # Apache-2.0
 python-glareclient>=0.3.0  # Apache-2.0
@@ -248,15 +248,15 @@ python-keystoneclient>=3.8.0  # Apache-2.0
 python-kingbirdclient>=0.1.0 # Apache-2.0
 python-magnumclient>=2.0.0  # Apache-2.0
 python-masakariclient>=3.0.1  # Apache-2.0
-python-manilaclient>=1.12.0  # Apache-2.0
+python-manilaclient>=1.16.0  # Apache-2.0
 python-mistralclient>=3.1.0  # Apache-2.0
 python-muranoclient>=0.8.2  # Apache-2.0
 python-monascaclient>=1.7.0 # Apache-2.0
 python-neutronclient>=6.3.0  # Apache-2.0
 python-novaclient>=9.1.0  # Apache-2.0
 python-octaviaclient>=1.0.0  # Apache-2.0
-python-openstackclient>=3.3.0,!=3.10.0  # Apache-2.0
-python-saharaclient>=1.1.0  # Apache-2.0
+python-openstackclient>=3.12.0  # Apache-2.0
+python-saharaclient>=1.2.0  # Apache-2.0
 python-searchlightclient>=1.0.0 #Apache-2.0
 python-senlinclient>=1.1.0  # Apache-2.0
 python-smaugclient>=0.0.5  # Apache-2.0
@@ -265,7 +265,7 @@ python-swiftclient>=3.2.0  # Apache-2.0
 python-tackerclient>=0.8.0  # Apache-2.0
 python-troveclient>=2.2.0  # Apache-2.0
 python-vitrageclient>=1.3.0  # Apache-2.0
-python-watcherclient>=0.23.0  # Apache-2.0
+python-watcherclient>=1.1.0  # Apache-2.0
 python-zaqarclient>=1.0.0  # Apache-2.0
 python-zunclient>=0.2.0  # Apache-2.0
 
@@ -385,10 +385,10 @@ nose  # LGPL
 nose-exclude  # LGPL
 nosehtmloutput>=0.0.3  # Apache-2.0
 nosexcover  # BSD
-openstack-doc-tools>=1.4.0  # Apache-2.0
+openstack-doc-tools>=1.5.0  # Apache-2.0
 openstack.nose_plugin>=0.7  # Apache-2.0
 openstacksdk>=0.9.18  # Apache-2.0
-os-api-ref>=1.0.0  # Apache-2.0
+os-api-ref>=1.4.0  # Apache-2.0
 oslosphinx>=4.7.0  # Apache-2.0
 oslotest>=1.10.0  # Apache-2.0
 ovsdbapp>=0.4.0 # Apache-2.0
