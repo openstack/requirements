@@ -203,3 +203,36 @@ def to_reqs(content, permit_urls=False):
             yield None, content_line
         else:
             yield parse_line(req_line, permit_urls=permit_urls), content_line
+
+
+def check_reqs_bounds_policy(global_reqs):
+    """Check that the global requirement version specifiers match the policy.
+
+    The policy is defined as
+        * There needs to be exactly one lower bound (>=1.2 defined)
+        * There can be one or more excludes (!=1.2.1, !=1.2.2)
+        * TODO: Clarify (non-) existance of upper caps
+    """
+
+    for pkg_requirement in global_reqs.values():
+        req = pkg_requirement[0][0]
+        if req.package:
+            _specifiers = packaging.specifiers.SpecifierSet(req.specifiers)
+            lower_bound = set()
+            for spec in _specifiers:
+                if spec.operator == '>=':
+                    lower_bound.add(spec)
+            if len(lower_bound) < 1:
+                yield ('Requirement %s needs a >= specifier' % req.package)
+            elif len(lower_bound) > 1:
+                yield ('Requirement %s has multiple >= specifier' %
+                       req.package)
+            else:
+                lower_bound = lower_bound.pop()
+                for spec in _specifiers:
+                    if spec.operator == '!=':
+                        if not lower_bound.contains(spec.version):
+                            yield('Requirement %s has a !=%s specifier '
+                                  'that is not >=%s' % (req.package,
+                                                        spec.version,
+                                                        lower_bound.version))

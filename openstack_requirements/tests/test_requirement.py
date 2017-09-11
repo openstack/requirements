@@ -194,3 +194,28 @@ class TestToDict(testtools.TestCase):
         req = requirement.Requirement('Foo_bar', '', '', '', '')
         self.assertEqual(
             {'foo-bar': [(req, '')]}, requirement.to_dict([(req, '')]))
+
+
+class TestReqPolicy(testtools.TestCase):
+
+    def test_requirements_policy_pass(self):
+        content = textwrap.dedent("""\
+            cffi>=1.1.1,!=1.1.2
+            other>=1.1.1
+            """)
+        reqs = requirement.parse(content)
+        policy_check = [x for x in requirement.check_reqs_bounds_policy(reqs)]
+        self.assertEqual(len(policy_check), 0)
+
+    def test_requirements_policy_fail(self):
+        content = textwrap.dedent("""\
+            cffi>=1.1.1,!=1.1.0
+            other>=1,>=2,!=1.1.0
+            no_lower_bound
+            """)
+        reqs = requirement.parse(content)
+        self.assertEqual([
+            'Requirement cffi has a !=1.1.0 specifier that is not >=1.1.1',
+            'Requirement no-lower-bound needs a >= specifier',
+            'Requirement other has multiple >= specifier'],
+            sorted([x for x in requirement.check_reqs_bounds_policy(reqs)]))
