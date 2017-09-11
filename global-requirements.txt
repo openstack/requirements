@@ -3,7 +3,7 @@ alembic>=0.8.10  # MIT
 amqp>=2.1.1,!=2.1.4  # BSD
 anyjson>=0.3.3  # BSD
 appdirs>=1.3.0  # MIT License
-apscheduler # MIT License
+apscheduler>=3.0.5  # MIT License
 autobahn>=0.10.1  # MIT License
 automaton>=1.9.0  # Apache-2.0
 beautifulsoup4>=4.6.0  # MIT
@@ -17,7 +17,7 @@ cassandra-driver>=2.1.4,!=3.6.0 # Apache-2.0
 castellan>=0.7.0 # Apache-2.0
 ceilometermiddleware>=1.1.0  # Apache-2.0
 cachetools>=2.0.0 # MIT License
-cffi  # MIT
+cffi>=1.1.2  # MIT
 cliff>=2.8.0  # Apache-2.0
 cmd2>=0.6.7  # MIT
 cotyledon>=1.3.0  # Apache-2.0
@@ -30,13 +30,13 @@ cursive>=0.1.2 # Apache-2.0
 ddt>=1.0.1  # MIT
 debtcollector>=1.2.0  # Apache-2.0
 decorator>=3.4.0  # BSD
-dib-utils  # Apache-2.0
+dib-utils>=0.0.8  # Apache-2.0
 diskimage-builder>=1.1.2,!=1.6.0,!=1.7.0,!=1.7.1  # Apache-2.0
 Django>=1.8,<2.0  # BSD
 django-babel>=0.5.1  # BSD
 django_compressor>=2.0  # MIT
 django-floppyforms>=1.0,<2  # BSD
-django-formtools  # BSD
+django-formtools>=1.0  # BSD
 django_openstack_auth>=3.5.0  # Apache-2.0
 dnspython>=1.14.0;python_version=='2.7'  # http://www.dnspython.org/LICENSE
 dnspython3>=1.12.0,!=1.13.0,!=1.14.0;python_version>='3.0'  # http://www.dnspython.org/LICENSE
@@ -48,18 +48,18 @@ dogpile.cache>=0.6.2  # BSD
 dogtag-pki>=10.3.5.1  # LGPLv3+
 dulwich>=0.15.0  # Apache-2.0
 elasticsearch>=2.0.0,<=3.0.0 # Apache-2.0
-enum34;python_version=='2.7' or python_version=='2.6' or python_version=='3.3'  # BSD
+enum34>=1.0.4;python_version=='2.7' or python_version=='2.6' or python_version=='3.3'  # BSD
 # NOTE: New versions of eventlet should not be accepted lightly
 # as they have earned a reputation of frequently breaking things.
 # NOTE(sdague): before allowing in >= 0.21 please be sure
 # https://github.com/eventlet/eventlet/issues/401 is resolved
 eventlet!=0.18.3,>=0.18.2,!=0.20.1,<0.21.0  # MIT
 exabgp>=4.0.1  # BSD
-extras  # MIT
+extras>=0.0.3  # MIT
 falcon>=1.0.0 # Apache-2.0
 Flask>=0.10,!=0.11,<1.0  # BSD
-flask-keystone>0.1  # Apache-2.0
-flask-oslolog    # Apache-2.0
+flask-keystone>=0.2  # Apache-2.0
+flask-oslolog>=0.1    # Apache-2.0
 Flask-RESTful>=0.3.5     # BSD
 Flask-SQLAlchemy>=2.0    # BSD
 fortiosclient>=0.0.2 # Apache-2.0
@@ -127,7 +127,7 @@ notifier>=1.0.3  # Apache-2.0
 oauth2client>=1.5.0,!=4.0.0  # Apache-2.0
 oauthlib>=0.6.0  # BSD
 openstackdocstheme>=1.17.0  # Apache-2.0
-ordereddict  # MIT
+ordereddict>=1.1  # MIT
 osc-lib>=1.7.0  # Apache-2.0
 oslo.cache>=1.22.0  # Apache-2.0
 oslo.config>=4.6.0  # Apache-2.0
@@ -149,13 +149,13 @@ oslo.utils>=3.28.0                       # Apache-2.0
 oslo.vmware>=2.17.0                     # Apache-2.0
 oslo.versionedobjects>=1.25.0            # Apache-2.0
 osprofiler>=1.4.0                       # Apache-2.0
-os-apply-config  # Apache-2.0
+os-apply-config>=0.1.31  # Apache-2.0
 os-brick>=1.15.2  # Apache-2.0
 os-client-config>=1.28.0  # Apache-2.0
-os-collect-config  # Apache-2.0
+os-collect-config>=0.1.35  # Apache-2.0
 os-dpm>=1.0.0  # Apache-2.0
 os-net-config>=7.1.0  # Apache-2.0
-os-refresh-config  # Apache-2.0
+os-refresh-config>=0.1.10  # Apache-2.0
 os-service-types>=1.1.0  # Apache-2.0
 os-testr>=1.0.0  # Apache-2.0
 os-traits>=0.3.2  # Apache-2.0
@@ -164,10 +164,10 @@ ovs>=2.7.0                              # Apache-2.0
 os-win>=2.0.0                           # Apache-2.0
 os-xenapi>=0.2.0  # Apache-2.0
 paramiko>=2.0.0 # LGPLv2.1+
-Parsley  # MIT
+Parsley>=1.2  # MIT
 pathlib2>=2.1.0  # MIT
 passlib>=1.7.0  # BSD
-Paste  # MIT
+Paste>=2.0.2  # MIT
 PasteDeploy>=1.5.0  # MIT
 paunch>=1.0.0  # Apache-2.0
 pbr>=2.0.0,!=2.1.0  # Apache-2.0
@@ -181,8 +181,8 @@ Pint>=0.5  # BSD
 pip>=7.1.0  # MIT
 PrettyTable>=0.7.1,<0.8  # BSD
 psutil>=3.2.2  # BSD
-pyasn1!=0.2.3  # BSD
-pyasn1-modules  # BSD
+pyasn1>=0.1.8,!=0.2.3  # BSD
+pyasn1-modules>=0.0.6  # BSD
 pycadf>=1.1.0,!=2.0.0  # Apache-2.0
 pycrypto>=2.6  # Public Domain
 PyECLib>=1.3.1                          # BSD
@@ -217,7 +217,7 @@ pyOpenSSL>=16.2.0 # Apache-2.0
 pyparsing>=2.1.0  # MIT
 pyroute2>=0.4.21  # Apache-2.0 (+ dual licensed GPL2)
 pysnmp>=4.2.3  # BSD
-pystache  # MIT
+pystache>=0.5.4  # MIT
 
 # NOTE(dims): pysaml 4.0.3 uses pycryptodome instead of pycrypto, for mitaka
 # we cannot switch to pycryptodome as many projects are likely to break. So
@@ -274,9 +274,9 @@ python-dateutil>=2.4.2  # BSD
 
 # 2013.6 is the first version of pytz that is PEP 440 compatible.
 pytz>=2013.6  # MIT
-pyudev  # LGPLv2.1+
+pyudev>=0.16.1  # LGPLv2.1+
 PyYAML>=3.10  # MIT
-qpid-python;python_version=='2.7'  # Apache-2.0
+qpid-python>=0.26;python_version=='2.7'  # Apache-2.0
 reno>=2.5.0  # Apache-2.0
 requests>=2.14.2  # Apache-2.0
 requests-aws>=0.1.4    # BSD License (3 clause)
@@ -298,7 +298,7 @@ scikit-learn>=0.17.1  # BSD
 # https://bitbucket.org/zzzeek/sqlalchemy/issues/3952/
 # The fix which is in git master branch is planned for 1.1.9
 SQLAlchemy>=1.0.10,!=1.1.5,!=1.1.6,!=1.1.7,!=1.1.8  # MIT
-SQLAlchemy-Utils  # BSD License
+SQLAlchemy-Utils>=0.30.11  # BSD License
 sqlalchemy-migrate>=0.11.0  # Apache-2.0
 sqlparse>=0.2.2 # BSD
 stevedore>=1.20.0  # Apache-2.0
@@ -318,9 +318,9 @@ warlock>=1.2.0,!=1.3.0,<2  # Apache-2.0
 WebOb>=1.7.1  # MIT
 websocket-client>=0.33.0 # LGPLv2+
 websockify>=0.8.0  # LGPLv3
-wheel  # MIT
+wheel>=0.24.0  # MIT
 PyMI>=1.0.0;sys_platform=='win32' # Apache 2.0 License
-wmi;sys_platform=='win32'  # MIT
+wmi>=0.5;sys_platform=='win32'  # MIT
 WSME>=0.8.0  # MIT
 xattr>=0.9.2  # MIT
 XenAPI>=1.2  # LGPL
@@ -364,10 +364,10 @@ bashate>=0.5.1 # Apache-2.0
 cliff-tablib>=1.0  # Apache-2.0
 couchdb>=0.8 # Apache-2.0
 coverage>=4.0,!=4.4  # Apache-2.0
-demjson # GLGPLv3+
+demjson>=2.2.2  # GLGPLv3+
 docker>=2.4.2  # Apache-2.0
 django-nose>=1.4.4  # BSD
-doc8  # Apache-2.0
+doc8>=0.6.0  # Apache-2.0
 fixtures>=3.0.0  # Apache-2.0/BSD
 freezegun>=0.3.6  # Apache-2.0
 gabbi>=1.35.0  # Apache-2.0
@@ -379,12 +379,12 @@ ldappool>=2.0.0 # MPL
 mock>=2.0.0  # BSD
 mox>=0.5.3  # Apache-2.0
 mox3>=0.20.0  # Apache-2.0
-MySQL-python;python_version=='2.7'  # GPL with FOSS exception
+MySQL-python>=1.2.5;python_version=='2.7'  # GPL with FOSS exception
 nodeenv>=0.9.4  # BSD
-nose  # LGPL
-nose-exclude  # LGPL
+nose>=1.3.7  # LGPL
+nose-exclude>=0.3.0  # LGPL
 nosehtmloutput>=0.0.3  # Apache-2.0
-nosexcover  # BSD
+nosexcover>=1.0.10  # BSD
 openstack-doc-tools>=1.5.0  # Apache-2.0
 openstack.nose_plugin>=0.7  # Apache-2.0
 openstacksdk>=0.9.18  # Apache-2.0
@@ -415,13 +415,13 @@ selenium>=2.50.1  # Apache-2.0
 setuptools>=16.0,!=24.0.0,!=34.0.0,!=34.0.1,!=34.0.2,!=34.0.3,!=34.1.0,!=34.1.1,!=34.2.0,!=34.3.0,!=34.3.1,!=34.3.2,!=36.2.0  # PSF/ZPL
 sphinx>=1.6.2  # BSD
 sphinx-testing>=0.7.2  # BSD License
-sphinxcontrib-actdiag  # BSD
-sphinxcontrib-blockdiag  # BSD
-sphinxcontrib-httpdomain  # BSD
-sphinxcontrib-nwdiag  # BSD
-sphinxcontrib-seqdiag  # BSD
+sphinxcontrib-actdiag>=0.8.5  # BSD
+sphinxcontrib-blockdiag>=1.5.4  # BSD
+sphinxcontrib-httpdomain>=1.3.0  # BSD
+sphinxcontrib-nwdiag>=0.9.5  # BSD
+sphinxcontrib-seqdiag>=0.8.4  # BSD
 sphinxcontrib-pecanwsme>=0.8.0  # Apache-2.0
-sphinxcontrib-fulltoc  # Apache-2.0
+sphinxcontrib-fulltoc>=1.2.0  # Apache-2.0
 sphinxmark>=0.1.14  # Apache-2.0
 stestr>=1.0.0 # Apache-2.0
 sushy>=0.1.0  # Apache-2.0
@@ -431,7 +431,7 @@ testscenarios>=0.4  # Apache-2.0/BSD
 testtools>=1.4.0  # MIT
 trollius>=1.0  # Apache-2.0
 ujson>=1.35  # BSD
-unittest2  # BSD
+unittest2>=1.1.0  # BSD
 virtualbmc>=1.0.0 # Apache-2.0
 virtualenv>=13.1.0  # MIT
 wrapt>=1.7.0 # BSD License
@@ -446,4 +446,4 @@ zuul-sphinx>=0.1.2 # Apache-2.0
 shade>=1.17.0 # Apache-2.0
 
 # Indirect dependencies that need blocking
-daiquiri!=1.2.0
+daiquiri>=1.2.1
