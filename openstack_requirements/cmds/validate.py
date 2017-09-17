@@ -61,6 +61,12 @@ def main():
         print(msg)
         error_count += 1
 
+    # Check requirements to satisfy policy.
+    print('\nChecking requirements on %s' % args.global_requirements)
+    for msg in requirement.check_reqs_bounds_policy(global_reqs):
+        print(msg)
+        error_count += 1
+
     # Check that all of the items in the global-requirements list
     # appear in exactly one of the constraints file or the blacklist.
     print('\nChecking %s' % args.blacklist)
