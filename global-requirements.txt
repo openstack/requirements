@@ -256,7 +256,7 @@ python-monascaclient>=1.7.0 # Apache-2.0
 python-neutronclient>=6.3.0  # Apache-2.0
 python-novaclient>=9.0.0  # Apache-2.0
 python-octaviaclient>=1.0.0  # Apache-2.0
-python-openstackclient>=3.3.0,!=3.10.0  # Apache-2.0
+python-openstackclient>=3.11.0  # Apache-2.0
 python-saharaclient>=1.1.0  # Apache-2.0
 python-searchlightclient>=1.0.0 #Apache-2.0
 python-senlinclient>=1.1.0  # Apache-2.0
