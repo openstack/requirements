@@ -22,7 +22,7 @@ ryu===4.17
 os-api-ref===1.4.0
 oslo.concurrency===3.22.0
 websocket-client===0.44.0
-osprofiler===1.12.0
+osprofiler===1.13.0
 bandit===1.4.0
 tabulate===0.7.7
 python-ironic-inspector-client===2.1.0
@@ -74,7 +74,7 @@ jsonmodels===2.2
 ddt===1.1.1
 ipaddress===1.0.18
 python-freezerclient===1.5.0
-os-xenapi===0.3.0
+os-xenapi===0.3.1
 python-vitrageclient===1.3.0
 nosexcover===1.0.11
 krest===1.3.1
@@ -381,7 +381,7 @@ msgpack-python===0.4.8
 proboscis===1.2.6.0
 fortiosclient===0.0.2
 stevedore===1.26.0
-botocore===1.7.13
+botocore===1.7.14
 xmltodict===0.11.0
 pyasn1===0.3.5
 python-utils===2.2.0
