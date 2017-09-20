@@ -51,6 +51,11 @@ integration.sh
 
 Used in the gate!  Install all the "$PROJECTS" to verify that g-r and the each project are compatible
 
+publish_constraints.sh
+----------------------
+Used in the gate!  Generate the constraints files from git for publishing to a
+static server.
+
 what-broke.py
 -------------
 figure out what requirements change likely broke us.
