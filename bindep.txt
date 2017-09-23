@@ -40,3 +40,5 @@ liberasurecode-devel [platform:rpm]
 dev-libs/liberasurecode [platform:gentoo]
 libsystemd-dev [platform:dpkg !platform:ubuntu-trusty]
 libsystemd-journal-dev [platform:ubuntu-trusty]
+# NOTE(pabelanger): Needed for build-wheel-mirror jobs
+parallel [test]
