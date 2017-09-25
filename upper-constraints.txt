@@ -127,7 +127,7 @@ wcwidth===0.1.7
 jsonpath-rw===1.4.0
 prettytable===0.7.2
 vine===1.1.4
-taskflow===2.15.0
+taskflow===2.16.0
 traceback2===1.4.0
 semantic-version===2.6.0
 tablib===0.12.1
