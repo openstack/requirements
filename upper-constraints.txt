@@ -20,7 +20,7 @@ sphinxcontrib-actdiag===0.8.5
 pecan===1.2.1
 ryu===4.17
 os-api-ref===1.4.0
-oslo.concurrency===3.22.0
+oslo.concurrency===3.23.0
 websocket-client===0.44.0
 osprofiler===1.13.0
 bandit===1.4.0
