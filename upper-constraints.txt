@@ -4,7 +4,7 @@ chardet===3.0.4
 enum-compat===0.0.2
 rsa===3.4.2
 restructuredtext-lint===1.1.1
-netmiko===1.4.2
+netmiko===1.4.3
 instack-undercloud===7.4.0
 PasteDeploy===1.5.2
 typing===3.6.2
@@ -107,7 +107,7 @@ pyinotify===0.9.6
 debtcollector===1.17.0
 requests-unixsocket===0.1.5
 odfpy===1.3.5
-asn1crypto===0.22.0
+asn1crypto===0.23.0
 croniter===0.3.19
 python-watcherclient===1.3.0
 MarkupSafe===1.0
@@ -146,7 +146,7 @@ oslo.messaging===5.32.0
 extras===1.0.0
 PyJWT===1.5.3
 et-xmlfile===1.0.1
-paramiko===2.3.0
+paramiko===2.3.1
 ordereddict===1.1
 reno===2.5.0
 unicodecsv===0.14.1
@@ -231,7 +231,7 @@ castellan===0.14.0
 oslo.versionedobjects===1.27.0
 webcolors===1.7
 aodhclient===0.9.0
-autobahn===17.9.2
+autobahn===17.9.3
 SQLAlchemy-Utils===0.32.16
 coverage===4.4.1
 freezegun===0.3.9
@@ -306,7 +306,7 @@ txaio===2.8.2
 elasticsearch===2.4.1
 django-nose===1.4.5
 XStatic-JQuery.TableSorter===2.14.5.1
-pifpaf===1.10.2
+pifpaf===1.10.4
 pysmi===0.1.3
 blockdiag===1.5.3
 testtools===2.3.0
@@ -419,7 +419,7 @@ yaql===1.1.3
 requestsexceptions===1.3.0
 testresources===2.0.1
 falcon===1.3.0
-etcd3gw===0.1.0
+etcd3gw===0.2.0
 pycryptodome===3.4.7
 pyldap===2.4.37
 Flask-RESTful===0.3.6
