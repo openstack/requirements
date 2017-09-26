@@ -115,7 +115,7 @@ pypowervm===1.1.8
 doc8===0.8.0
 pymongo===3.5.1
 sqlparse===0.2.3
-oslotest===2.18.0
+oslotest===2.18.1
 jsonpointer===1.12
 netaddr===0.7.19
 pyghmi===1.0.22
