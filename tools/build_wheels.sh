@@ -33,8 +33,7 @@
 
 versions="$*"
 
-if [ -z "$versions" ]
-then
+if [ -z "$versions" ] ; then
     echo "ERROR: Usage: $0 <version>" 1>&2
     echo "Example: $0 2.7 3.3 3.4" 1>&2
     exit 1

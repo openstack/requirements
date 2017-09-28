@@ -14,13 +14,14 @@
 
 # Note(tonyb): Expand HEAD into something that's hopefully more human
 #              readable
-declare -a branches=($(git describe --always) origin/master
-                     origin/stable/pike
-                     origin/stable/ocata
-                     origin/stable/newton
+declare -a branches=(
+                        $(git describe --always) origin/master
+                        origin/stable/pike
+                        origin/stable/ocata
+                        origin/stable/newton
                     )
 
-function search() {
+function search {
     git grep -hEi "^${1}[=><!]" ${2} -- "${3}"
 }
 

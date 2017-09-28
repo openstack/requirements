@@ -12,8 +12,7 @@
 # License for the specific language governing permissions and limitations
 # under the License.
 
-function get_from_git()
-{
+function get_from_git {
     ref=$1
     series=$2
     path=${3:-publish/constraints/upper}
@@ -32,7 +31,7 @@ stable/*)
     get_from_git origin/$ZUUL_BRANCH $series
 ;;
 master)
-    # NOTE(tonyb): Publish EOL'd constraints files.  We do this here as a 
+    # NOTE(tonyb): Publish EOL'd constraints files.  We do this here as a
     # quick way to publish the data.  It can be removed anytime after the first
     # successful run
     for tag in juno-eol kilo-eol liberty-eol mitaka-eol ; do
