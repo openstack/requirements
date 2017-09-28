@@ -84,7 +84,7 @@ bashate===0.5.1
 XStatic-Angular===1.5.8.0
 pyngus===2.2.1
 Pillow===4.2.1
-zuul-sphinx===0.1.5
+zuul-sphinx===0.1.6
 python-mimeparse===1.6.0
 tripleo-common===7.6.0
 Tempita===0.5.2
@@ -114,7 +114,7 @@ MarkupSafe===1.0
 pypowervm===1.1.8
 doc8===0.8.0
 pymongo===3.5.1
-sqlparse===0.2.3
+sqlparse===0.2.4
 oslotest===2.18.1
 jsonpointer===1.12
 netaddr===0.7.19
@@ -259,7 +259,7 @@ docutils===0.14
 notifier===1.0.3
 pycrypto===2.6.1
 ujson===1.35
-selenium===3.5.0
+selenium===3.6.0
 python-glareclient===0.4.2
 mypy===0.521;python_version=='3.4'
 mypy===0.521;python_version=='3.5'
@@ -356,7 +356,7 @@ python-consul===0.7.2
 seqdiag===0.9.5
 numpy===1.13.1
 repoze.who===2.3
-Sphinx===1.6.3
+Sphinx===1.6.4
 oslo.config===4.13.0
 tempest===17.0.0
 django-floppyforms===1.7.0
@@ -381,7 +381,7 @@ msgpack-python===0.4.8
 proboscis===1.2.6.0
 fortiosclient===0.0.2
 stevedore===1.27.0
-botocore===1.7.16
+botocore===1.7.18
 xmltodict===0.11.0
 pyasn1===0.3.6
 python-utils===2.2.0
@@ -423,8 +423,8 @@ etcd3gw===0.2.0
 pycryptodome===3.4.7
 pyldap===2.4.37
 Flask-RESTful===0.3.6
-GitPython===2.1.5
-python-ironicclient===1.17.0
+GitPython===2.1.6
+python-ironicclient===1.17.1
 XStatic===1.0.1
 click-repl===0.1.2
 XStatic-Angular-FileUpload===12.0.4.0
@@ -444,10 +444,10 @@ oslo.policy===1.28.0
 python-muranoclient===0.14.0
 pyeclib===1.5.0
 django-openstack-auth===3.5.0
-wsgi-intercept===1.5.0
+wsgi-intercept===1.5.1
 ndg-httpsclient===0.4.3;python_version=='2.7'
 tempest-lib===1.0.0
-spec-cleaner===0.9.9
+spec-cleaner===1.0.0
 repoze.lru===0.7
 rfc3986===1.1.0
 tenacity===4.4.0
