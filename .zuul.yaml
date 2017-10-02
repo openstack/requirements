@@ -1,0 +1,5 @@
+- job:
+    name: requirements-check
+    parent: unittests
+    required-projects:
+      - openstack/requirements
