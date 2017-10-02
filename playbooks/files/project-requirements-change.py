@@ -153,25 +153,9 @@ def main():
 
     # build a list of requirements from the global list in the
     # openstack/requirements project so we can match them to the changes
+    reqdir = os.path.expanduser(
+        '~/src/git.openstack.org/openstack/requirements')
     with tempdir() as reqroot:
-        # Only clone requirements repo if no local repo is specified
-        # on the command line.
-        if args.reqs is None:
-            reqdir = os.path.join(reqroot, "openstack/requirements")
-            if args.zc is not None:
-                zc = args.zc
-            else:
-                zc = '/usr/zuul-env/bin/zuul-cloner'
-            out, err = run_command("%(zc)s "
-                                   "--cache-dir /opt/git "
-                                   "--workspace %(root)s "
-                                   "git://git.openstack.org "
-                                   "openstack/requirements"
-                                   % dict(zc=zc, root=reqroot))
-            print(out)
-            print(err)
-        else:
-            reqdir = args.reqs
 
         install_and_load_requirements(reqroot, reqdir)
         global_reqs = requirement.parse(
