@@ -296,6 +296,7 @@ os-service-types===1.1.0
 keyring===10.4.0
 testscenarios===0.5.0
 sphinxcontrib-pecanwsme===0.8.0
+sadisplay===0.4.8
 enum34===1.1.6
 packaging===16.8
 flask-keystone===0.2
