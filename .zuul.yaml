@@ -1,3 +1,20 @@
+- project-template:
+    name: check-requirements
+    check:
+      jobs:
+        - requirements-check:
+            files:
+              - ^tools/.*-requires$
+              - ^.*requirements.txt$
+              - ^.*requirements-py[2,3].txt$
+    gate:
+      jobs:
+        - requirements-check:
+            files:
+              - ^tools/.*-requires$
+              - ^.*requirements.txt$
+              - ^.*requirements-py[2,3].txt$
+
 - job:
     name: requirements-check
     parent: unittests
