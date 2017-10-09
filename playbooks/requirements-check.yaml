@@ -1,9 +1,6 @@
 - hosts: all
   tasks:
-    - name: Copy requirements check script
-      copy:
-        src: files/project-requirements-change.py
-        dest: "{{ ansible_user_dir }}/project-requirements-change.py"
-
     - name: Run requirements check script
-      command: "python project-requirements-change.py {{ zuul.branch }}"
+      script: "files/project-requirements-change.py {{ zuul.branch }}"
+      args:
+        chdir: "{{ zuul.project.src_dir }}"
