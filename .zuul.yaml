@@ -7,6 +7,7 @@
               - ^tools/.*-requires$
               - ^.*requirements.txt$
               - ^.*requirements-py[2,3].txt$
+              - playbooks/requirements-check.yaml
     gate:
       jobs:
         - requirements-check:
@@ -14,6 +15,7 @@
               - ^tools/.*-requires$
               - ^.*requirements.txt$
               - ^.*requirements-py[2,3].txt$
+              - playbooks/requirements-check.yaml
 
 - job:
     name: requirements-check
