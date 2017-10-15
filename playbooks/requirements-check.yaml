@@ -1,6 +1,4 @@
 - hosts: all
   tasks:
     - name: Run requirements check script
-      script: "files/project-requirements-change.py {{ zuul.branch }}"
-      args:
-        chdir: "{{ zuul.project.src_dir }}"
+      script: "files/project-requirements-change.py {{ zuul.project.src_dir }} {{ zuul.branch }}"
