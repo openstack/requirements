@@ -2,23 +2,18 @@
     name: check-requirements
     check:
       jobs:
-        - requirements-check:
-            files:
-              - ^tools/.*-requires$
-              - ^.*requirements.txt$
-              - ^.*requirements-py[2,3].txt$
-              - playbooks/requirements-check.yaml
+        - requirements-check
     gate:
       jobs:
-        - requirements-check:
-            files:
-              - ^tools/.*-requires$
-              - ^.*requirements.txt$
-              - ^.*requirements-py[2,3].txt$
-              - playbooks/requirements-check.yaml
+        - requirements-check
 
 - job:
     name: requirements-check
     parent: unittests
     required-projects:
       - openstack/requirements
+    files:
+      - ^tools/.*-requires$
+      - ^.*requirements.txt$
+      - ^.*requirements-py[2,3].txt$
+      - playbooks/requirements-check.yaml
