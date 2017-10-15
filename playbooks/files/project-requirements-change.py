@@ -100,6 +100,7 @@ def grab_args():
     )
     parser.add_argument('--local', action='store_true',
                         help='check local changes (not yet in git)')
+    parser.add_argument('src_dir', help='directory to process')
     parser.add_argument('branch', nargs='?', default='master',
                         help='target branch for diffs')
     parser.add_argument('--zc', help='what zuul cloner to call')
@@ -149,6 +150,7 @@ def _is_requirement_in_global_reqs(req, global_reqs):
 def main():
     args = grab_args()
     branch = args.branch
+    os.chdir(args.src_dir)
     failed = False
 
     # build a list of requirements from the global list in the
