@@ -12,8 +12,11 @@
       .. zuul:jobvar:: tox_envlist
 
          Use the specified tox environments (``ALL`` selects all).
-    run: playbooks/requirements-cross-test
-    files: ^upper-constraints.txt$
+    vars:
+      zuul_work_dir: "{{ (zuul.projects | selectattr('required') | selectattr('name', 'match', '^(?!openstack/requirements)') | list)[0].src_dir }}"
+    files:
+      - upper-constraints.txt
+      - .zuul.d/cross-jobs.yaml
 
 - job:
     name: cross-cinder-py27
