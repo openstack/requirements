@@ -450,3 +450,8 @@ sadisplay>=0.4.8 # BSD
 
 # Indirect dependencies that need blocking
 daiquiri>=1.2.1
+
+# NOTE(dhellmann): We need to include this package for testing the
+# release jobs that propose constraint updates, even though it is not
+# a real requirement of any of our software.
+openstack-release-test>=0.8.0
