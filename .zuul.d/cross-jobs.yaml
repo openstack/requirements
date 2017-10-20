@@ -1,0 +1,136 @@
+- job:
+    name: requirements-cross-test
+    parent: openstack-tox
+    description: |
+      A parent job to perform cross-repository tests.
+
+      Inherit from this job, and add the intended project to
+      ``required-projects``.
+
+      Also, set the following variable:
+
+      .. zuul:jobvar:: tox_envlist
+
+         Use the specified tox environments (``ALL`` selects all).
+    run: playbooks/requirements-cross-test
+    files: ^upper-constraints.txt$
+
+- job:
+    name: cross-cinder-py27
+    parent: requirements-cross-test
+    description: Run cross-project tests on cinder with py27.
+    required-projects: openstack/cinder
+    vars:
+      tox_envlist: py27
+
+- job:
+    name: cross-cinder-py35
+    parent: requirements-cross-test
+    description: Run cross-project tests on cinder with py35.
+    required-projects: openstack/cinder
+    vars:
+      tox_envlist: py35
+
+- job:
+    name: cross-glance-py27
+    parent: requirements-cross-test
+    description: Run cross-project tests on glance with py27.
+    required-projects: openstack/glance
+    vars:
+      tox_envlist: py27
+
+- job:
+    name: cross-glance-py35
+    parent: requirements-cross-test
+    description: Run cross-project tests on glance with py35.
+    required-projects: openstack/glance
+    vars:
+      tox_envlist: py35
+
+- job:
+    name: cross-horizon-py27
+    parent: requirements-cross-test
+    description: Run cross-project tests on horizon with py27.
+    required-projects: openstack/horizon
+    vars:
+      tox_envlist: py27
+
+- job:
+    name: cross-horizon-py35
+    parent: requirements-cross-test
+    description: Run cross-project tests on horizon with py35.
+    required-projects: openstack/horizon
+    vars:
+      tox_envlist: py35
+
+- job:
+    name: cross-keystone-py27
+    parent: requirements-cross-test
+    description: Run cross-project tests on keystone with py27.
+    required-projects: openstack/keystone
+    vars:
+      tox_envlist: py27
+
+- job:
+    name: cross-keystone-py35
+    parent: requirements-cross-test
+    description: Run cross-project tests on keystone with py35.
+    required-projects: openstack/keystone
+    vars:
+      tox_envlist: py35
+
+- job:
+    name: cross-neutron-py27
+    parent: requirements-cross-test
+    description: Run cross-project tests on neutron with py27.
+    required-projects: openstack/neutron
+    vars:
+      tox_envlist: py27
+
+- job:
+    name: cross-neutron-py35
+    parent: requirements-cross-test
+    description: Run cross-project tests on neutron with py35.
+    required-projects: openstack/neutron
+    vars:
+      tox_envlist: py35
+
+- job:
+    name: cross-nova-functional
+    parent: requirements-cross-test
+    description: Run cross-project functional tests on nova.
+    required-projects: openstack/nova
+    vars:
+      tox_envlist: functional
+
+- job:
+    name: cross-nova-py27
+    parent: requirements-cross-test
+    description: Run cross-project tests on nova with py27.
+    required-projects: openstack/nova
+    vars:
+      tox_envlist: py27
+
+- job:
+    name: cross-nova-py35
+    parent: requirements-cross-test
+    description: Run cross-project tests on nova with py35.
+    required-projects: openstack/nova
+    vars:
+      tox_envlist: py35
+
+- job:
+    name: cross-swift-py27
+    parent: requirements-cross-test
+    description: Run cross-project tests on swift with py27.
+    required-projects: openstack/swift
+    vars:
+      tox_envlist: py27
+
+- job:
+    name: cross-swift-py35
+    parent: requirements-cross-test
+    description: Run cross-project tests on swift with py35.
+    required-projects: openstack/swift
+    vars:
+      tox_envlist: py35
