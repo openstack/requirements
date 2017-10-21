@@ -1,5 +1,0 @@
-- hosts: all
-  roles:
-    - role: tox
-      zuul_work_dir: "{{ (zuul.projects | selectattr('required') | selectattr('name', 'match', '^(?!openstack/requirements)') | list)[0].src_dir }}"
-      tox_constraints_file: "{{ ansible_user_dir }}/src/git.openstack.org/openstack/requirements/upper-constraints.txt"
