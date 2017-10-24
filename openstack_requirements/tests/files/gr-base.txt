@@ -105,9 +105,7 @@ nose-exclude
 nosehtmloutput>=0.0.3
 nosexcover
 openstack.nose_plugin>=0.7
-pep8==1.4.5
 psycopg2
-pyflakes==0.7.2
 pylint==0.25.2
 pysendfile==2.0.0
 pysqlite
