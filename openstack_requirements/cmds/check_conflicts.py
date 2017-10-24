@@ -69,9 +69,9 @@ def main():
                         xfail_requirement.package == conflict_name and
                         conflict_specifiers == xfail_requirement.specifiers):
 
-                    print ('XFAIL while checking conflicts '
-                           'for %s: %s conflicts with %s' %
-                           (name, e.dist, str(e.req)))
+                    print('XFAIL while checking conflicts '
+                          'for %s: %s conflicts with %s' %
+                          (name, e.dist, str(e.req)))
                     continue
 
             print('Checking conflicts for %s:\n'
