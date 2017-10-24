@@ -32,19 +32,12 @@ _REQS_HEADER = [
 ]
 
 
-def cmp_specifier(a, b):
+def key_specifier(a):
     weight = {'>=': 0, '>': 0,
-              '==': 1, '~=': 1, '!=': 1,
+              '===': 1, '==': 1, '~=': 1, '!=': 1,
               '<': 2, '<=': 2}
     a = a._spec
-    b = b._spec
-    wa, wb = weight[a[0]], weight[b[0]]
-    res = cmp(wa, wb)
-    if res != 0:
-        return res
-    else:
-        return cmp(distutils.version.LooseVersion(a[1]),
-                   distutils.version.LooseVersion(b[1]))
+    return (weight[a[0]], distutils.version.LooseVersion(a[1]))
 
 
 class Requirement(collections.namedtuple('Requirement',
@@ -68,7 +61,7 @@ class Requirement(collections.namedtuple('Requirement',
         if sort_specifiers:
             _specifiers = packaging.specifiers.SpecifierSet(specifiers)
             _specifiers = ['%s' % s for s in sorted(_specifiers,
-                                                    cmp=cmp_specifier)]
+                                                    key=key_specifier)]
             specifiers = ','.join(_specifiers)
         return '%s%s%s%s%s%s\n' % (location,
                                    package,
