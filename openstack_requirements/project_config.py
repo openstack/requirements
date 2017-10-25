@@ -17,17 +17,12 @@ import requests
 import yaml
 
 
-ZUUL_LAYOUT_URL = 'http://git.openstack.org/cgit/openstack-infra/project-config/plain/zuul/layout.yaml'  # noqa
-ZUUL_LAYOUT_FILENAME = 'openstack-infra/project-config/zuul/layout.yaml'
-
-# We use this key to modify the data structure read from the zuul
-# layout file. We don't control what are valid keys there, so make it
-# easy to change the key we use, just in case.
-_VALIDATE_KEY = 'validate-projects-by-name'
+ZUUL_PROJECTS_URL = 'https://git.openstack.org/cgit/openstack-infra/project-config/plain/zuul.d/projects.yaml'  # noqa
+ZUUL_PROJECTS_FILENAME = 'openstack-infra/project-config/zuul.d/projects.yaml'
 
 
-def get_zuul_layout_data(url=ZUUL_LAYOUT_URL):
-    """Return the parsed data structure for the zuul/layout.yaml file.
+def get_zuul_projects_data(url=ZUUL_PROJECTS_URL):
+    """Return the parsed data structure for the zuul.d/projects.yaml file.
 
     :param url: Optional URL to the location of the file. Defaults to
       the most current version in the public git repository.
@@ -37,14 +32,14 @@ def get_zuul_layout_data(url=ZUUL_LAYOUT_URL):
     raw = yaml.safe_load(r.text)
     # Add a mapping from repo name to repo settings, since that is how
     # we access this most often.
-    raw[_VALIDATE_KEY] = {
-        p['name']: p
-        for p in raw['projects']
+    projects = {
+        p['project']['name']: p['project']
+        for p in raw
     }
-    return raw
+    return projects
 
 
-def require_check_requirements_for_repo(zuul_layout, repo):
+def require_check_requirements_for_repo(zuul_projects, repo):
     """Check the repository for the jobs related to requirements.
 
     Returns a list of error messages.
@@ -52,22 +47,19 @@ def require_check_requirements_for_repo(zuul_layout, repo):
     """
     errors = []
 
-    if repo not in zuul_layout[_VALIDATE_KEY]:
+    if repo not in zuul_projects:
         errors.append(
-            ('did not find %s in %s' % (repo, ZUUL_LAYOUT_FILENAME),
+            ('did not find %s in %s' % (repo, ZUUL_PROJECTS_FILENAME),
              True)
         )
     else:
-        p = zuul_layout[_VALIDATE_KEY][repo]
-        templates = [
-            t['name']
-            for t in p.get('template', [])
-        ]
+        p = zuul_projects[repo]
+        templates = p.get('templates', [])
         # NOTE(dhellmann): We don't mess around looking for individual
         # jobs, because we want projects to use the templates.
         if 'check-requirements' not in templates:
             errors.append(
                 '%s no check-requirements job specified for %s'
-                % (ZUUL_LAYOUT_FILENAME, repo)
+                % (ZUUL_PROJECTS_FILENAME, repo)
             )
     return errors
