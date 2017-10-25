@@ -228,7 +228,7 @@ hpack===3.0.0;python_version=='3.5'
 hiredis===0.2.0
 google-api-python-client===1.6.4
 castellan===0.14.0
-oslo.versionedobjects===1.28.0
+oslo.versionedobjects===1.29.0
 webcolors===1.7
 aodhclient===0.9.0
 autobahn===17.9.3
