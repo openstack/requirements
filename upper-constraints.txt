@@ -156,7 +156,7 @@ pathlib===1.0.1;python_version=='2.7'
 urllib3===1.22
 graphviz===0.8
 PyKMIP===0.6.0
-whereto===0.2.0
+whereto===0.3.0
 python-subunit===1.2.0
 tornado===4.4.3;python_version=='3.4'
 tornado===4.4.3;python_version=='3.5'
