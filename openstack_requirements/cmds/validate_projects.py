@@ -39,7 +39,7 @@ def main():
     )
     args = parser.parse_args()
 
-    zuul_layout = project_config.get_zuul_layout_data()
+    zuul_projects = project_config.get_zuul_projects_data()
 
     error_count = 0
 
@@ -52,7 +52,7 @@ def main():
             if repo in _BLACKLIST:
                 continue
             pe = project_config.require_check_requirements_for_repo(
-                zuul_layout, repo)
+                zuul_projects, repo)
             for e in pe:
                 print(e)
                 error_count += 1
