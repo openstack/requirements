@@ -14,7 +14,7 @@ Routes===2.4.1
 rtslib-fb===2.1.64
 smmap===0.9.0
 XStatic-Angular-Bootstrap===2.2.0.0
-paunch===1.5.0
+paunch===2.0.0
 WebOb===1.7.3
 sphinxcontrib-actdiag===0.8.5
 pecan===1.2.1
