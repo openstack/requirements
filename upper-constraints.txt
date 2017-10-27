@@ -171,7 +171,7 @@ backports.ssl-match-hostname===3.5.0.1
 pylxd===2.2.4
 anyjson===0.3.3
 requests-mock===1.3.0
-os-apply-config===7.2.0
+os-apply-config===8.0.0
 oslosphinx===4.17.0
 mox3===0.23.0
 gunicorn===19.7.1
