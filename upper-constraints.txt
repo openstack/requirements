@@ -519,7 +519,7 @@ xvfbwrapper===0.2.9
 futures===3.1.1;python_version=='2.7'
 tosca-parser===0.8.1
 Flask===0.12.2
-pymod2pkg===0.10.1
+pymod2pkg===0.10.2
 happybase===1.1.0;python_version=='2.7'
 marathon===0.9.2
 fasteners===0.14.1
