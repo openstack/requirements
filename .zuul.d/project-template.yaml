@@ -10,6 +10,7 @@
 - job:
     name: requirements-check
     parent: unittests
+    run: playbooks/requirements-check.yaml
     required-projects:
       - openstack/requirements
     files:
