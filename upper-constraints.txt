@@ -278,7 +278,7 @@ stestr===1.1.0
 urwid===1.3.1;python_version=='3.4'
 urwid===1.3.1;python_version=='3.5'
 singledispatch===3.4.0.3;python_version=='2.7'
-oslo.serialization===2.21.2
+oslo.serialization===2.21.1
 warlock===1.2.0
 exabgp===4.0.2
 sphinxcontrib-httpdomain===1.5.0
