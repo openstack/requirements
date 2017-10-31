@@ -1,4 +1,8 @@
 - hosts: all
   tasks:
     - name: Run requirements check script
-      script: "files/project-requirements-change.py {{ zuul.project.src_dir }} {{ zuul.branch }}"
+      # Use command module here instead of script since Zuul gets output
+      # with command into job-output.txt file.
+      # Command expects the file to be at the remote system - the system
+      # running the tests. Ask zuul variables for the path.
+      command: "{{ zuul._projects['git.openstack.org/openstack/requirements'].src_dir }}/playbooks/files/project-requirements-change.py {{ zuul.project.src_dir }} {{ zuul.branch }}"
