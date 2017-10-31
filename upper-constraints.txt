@@ -287,7 +287,7 @@ murano-pkg-check===0.3.0
 oslo.vmware===2.24.0
 sqlalchemy-migrate===0.11.0
 gitdb===0.6.4
-python-monascaclient===1.7.0
+python-monascaclient===1.8.0
 ldap3===2.3
 requests-ntlm===1.0.0
 automaton===1.13.0
