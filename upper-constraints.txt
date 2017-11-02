@@ -62,7 +62,7 @@ nose===1.3.7
 click-spinner===0.1.7
 nosehtmloutput===0.0.5
 waitress===1.1.0
-os-refresh-config===7.1.0
+os-refresh-config===8.0.0
 jsbeautifier===1.6.14;python_version=='3.4'
 jsbeautifier===1.6.14;python_version=='3.5'
 pysnmp===4.3.10
