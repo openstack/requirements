@@ -2,4 +2,4 @@
 # <dependency that is incompatible>==<version>;<list,of,affected,packages>
 pyopenssl==17.3.0;mitmproxy
 pyasn1==0.3.7;mitmproxy
-cryptography==2.1.1;mitmproxy
+cryptography==2.1.2;mitmproxy
