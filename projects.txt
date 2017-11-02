@@ -143,7 +143,6 @@ openstack/openstack-ansible-os_ceilometer
 openstack/openstack-ansible-os_cinder
 openstack/openstack-ansible-os_cloudkitty
 openstack/openstack-ansible-os_designate
-openstack/openstack-ansible-os_freezer
 openstack/openstack-ansible-os_glance
 openstack/openstack-ansible-os_gnocchi
 openstack/openstack-ansible-os_heat
