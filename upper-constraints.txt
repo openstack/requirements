@@ -262,9 +262,9 @@ notifier===1.0.3
 pycrypto===2.6.1
 ujson===1.35
 selenium===3.6.0
-python-glareclient===0.4.2
-mypy===0.530;python_version=='3.4'
-mypy===0.530;python_version=='3.5'
+python-glareclient===0.5.0
+mypy===0.540;python_version=='3.4'
+mypy===0.540;python_version=='3.5'
 mistral-lib===0.3.2
 dogtag-pki===10.3.5.1
 sphinxcontrib-seqdiag===0.8.5
@@ -450,7 +450,7 @@ tempest-lib===1.0.0
 spec-cleaner===1.0.0
 repoze.lru===0.7
 rfc3986===1.1.0
-tenacity===4.4.0
+tenacity===4.5.0
 XStatic-Magic-Search===0.2.5.1
 python-designateclient===2.7.0
 future===0.16.0
