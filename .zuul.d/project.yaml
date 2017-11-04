@@ -30,8 +30,6 @@
       jobs:
         - openstack-tox-validate
         - cross-cinder-py27
-        - cross-cinder-py35:
-            branches: ^(?!stable/(newton|ocata)).*$
         - cross-glance-py27
         - cross-glance-py35:
             branches: ^(?!stable/(newton|ocata)).*$
