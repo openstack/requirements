@@ -97,7 +97,7 @@ kubernetes>=1.0.0  # Apache-2.0
 kuryr-lib>=0.5.0  # Apache-2.0
 packaging>=16.5  # Apache-2.0
 pylev>=1.3.0  # BSD
-pypowervm>=1.1.7  # Apache-2.0
+pypowervm>=1.1.9  # Apache-2.0
 pyScss>=1.3.4,!=1.3.5  # MIT License
 django-pyscss>=2.0.2  # BSD License (2 clause)
 kombu>=4.0.0,!=4.0.2  # BSD
