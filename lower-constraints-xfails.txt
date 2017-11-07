@@ -1,0 +1,6 @@
+# Format is
+# <dependency that is incompatible>==<version>;<list,of,affected,packages>
+pyopenssl==16.2.0;mitmproxy
+pyperclip==1.5.27;mitmproxy
+pyasn1==0.1.8;mitmproxy
+cryptography==1.9;mitmproxy

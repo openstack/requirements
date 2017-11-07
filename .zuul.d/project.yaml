@@ -15,6 +15,7 @@
         - requirements-tox-bindep:
             branches: ^(?!stable/(newton|ocata|pike)).*$
             voting: false
+        - requirements-tox-py27-check-lc
         - requirements-tox-py27-check-uc
         - requirements-tox-py35-check-uc:
             branches: ^(?!stable/(newton|ocata|pike)).*$
