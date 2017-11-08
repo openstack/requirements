@@ -34,6 +34,8 @@
     parent: requirements-cross-test
     description: Run cross-project tests on cinder with py35.
     required-projects: openstack/cinder
+    # cinder seems to have very nasty races in its unit tests
+    voting: false
     vars:
       tox_envlist: py35
 
