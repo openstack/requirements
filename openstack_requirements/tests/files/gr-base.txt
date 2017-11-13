@@ -83,7 +83,6 @@ WSME>=0.5b2
 xattr>=0.4
 # Testing tools below, which are typically in test-requires.txt
 
-cliff-tablib>=1.0
 configobj
 coverage>=3.6
 discover
