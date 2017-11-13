@@ -63,7 +63,7 @@ waitress===1.1.0
 os-refresh-config===8.0.0
 jsbeautifier===1.6.14;python_version=='3.4'
 jsbeautifier===1.6.14;python_version=='3.5'
-pysnmp===4.4.1
+pysnmp===4.4.2
 sphinxcontrib-websupport===1.0.1
 Mako===1.0.7
 XStatic-angular-ui-router===0.3.1.2
@@ -165,7 +165,7 @@ PyYAML===3.12
 beautifulsoup4===4.6.0
 os-net-config===8.0.0
 ovs===2.7.2
-cryptography===2.1.2
+cryptography===2.1.3
 backports.ssl-match-hostname===3.5.0.1;python_version=='2.7'
 openstack-release-test===0.10.2
 pylxd===2.2.4
@@ -178,7 +178,7 @@ mox3===0.23.0
 gunicorn===19.7.1
 unittest2===1.1.0
 django-compressor===2.2
-libvirt-python===3.8.0
+libvirt-python===3.9.0
 python-zunclient===0.5.0
 tzlocal===1.4
 python-novaclient===9.1.1
@@ -191,7 +191,7 @@ XStatic-objectpath===1.2.1.0
 python-manilaclient===1.18.0
 requests===2.18.4
 snowballstemmer===1.2.1
-Jinja2===2.9.6
+Jinja2===2.10
 XStatic-Bootstrap-SCSS===3.3.7.1
 pyzabbix===0.7.4
 ptyprocess===0.5.2
@@ -234,7 +234,7 @@ oslo.versionedobjects===1.29.0
 webcolors===1.7
 aodhclient===0.9.0
 autobahn===17.10.1
-SQLAlchemy-Utils===0.32.19
+SQLAlchemy-Utils===0.32.21
 coverage===4.4.2
 freezegun===0.3.9
 python-pytun===2.2.1
@@ -261,10 +261,10 @@ docutils===0.14
 notifier===1.0.3
 pycrypto===2.6.1
 ujson===1.35
-selenium===3.6.0
+selenium===3.7.0
 python-glareclient===0.5.0
-mypy===0.540;python_version=='3.4'
-mypy===0.540;python_version=='3.5'
+mypy===0.550;python_version=='3.4'
+mypy===0.550;python_version=='3.5'
 mistral-lib===0.3.2
 dogtag-pki===10.3.5.1
 sphinxcontrib-seqdiag===0.8.5
@@ -295,7 +295,7 @@ automaton===1.13.0
 argh===0.26.2;python_version=='3.4'
 argh===0.26.2;python_version=='3.5'
 os-service-types===1.1.0
-keyring===10.4.0
+keyring===10.5.0
 testscenarios===0.5.0
 sphinxcontrib-pecanwsme===0.8.0
 sadisplay===0.4.8
@@ -310,7 +310,7 @@ elasticsearch===2.4.1
 django-nose===1.4.5
 XStatic-JQuery.TableSorter===2.14.5.1
 pifpaf===1.11.1
-pysmi===0.1.4
+pysmi===0.2.2
 blockdiag===1.5.3
 testtools===2.3.0
 Parsley===1.3
@@ -411,7 +411,7 @@ openstacksdk===0.9.19
 six===1.11.0
 h2===2.6.2;python_version=='3.4'
 h2===2.6.2;python_version=='3.5'
-dulwich===0.18.5
+dulwich===0.18.6
 pykafka===2.6.0
 kombu===4.1.0
 mitmproxy===2.0.2;python_version=='3.4'
@@ -450,7 +450,7 @@ tempest-lib===1.0.0
 spec-cleaner===1.0.0
 repoze.lru===0.7
 rfc3986===1.1.0
-tenacity===4.5.0
+tenacity===4.7.0
 XStatic-Magic-Search===0.2.5.1
 python-designateclient===2.7.0
 future===0.16.0
