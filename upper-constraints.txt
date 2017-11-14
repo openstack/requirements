@@ -3,7 +3,7 @@ voluptuous===0.10.5
 chardet===3.0.4
 enum-compat===0.0.2
 rsa===3.4.2
-restructuredtext-lint===1.1.1
+restructuredtext-lint===1.1.2
 netmiko===1.4.3
 instack-undercloud===8.0.0
 PasteDeploy===1.5.2
@@ -30,7 +30,7 @@ lxml===4.1.1
 jdcal===1.3
 python-kingbirdclient===0.2.0
 setproctitle===1.1.10
-pytest===3.2.3
+pytest===3.2.4
 python-etcd===0.4.5
 cursive===0.2.0
 oslo.service===1.27.0
@@ -119,7 +119,7 @@ sqlparse===0.2.4
 oslotest===3.0.0
 jsonpointer===1.14
 netaddr===0.7.19
-pyghmi===1.0.22
+pyghmi===1.0.28
 sphinxcontrib-blockdiag===1.5.5
 kaitaistruct===0.6;python_version=='3.4'
 kaitaistruct===0.6;python_version=='3.5'
@@ -135,7 +135,7 @@ virtualbmc===1.2.0
 deprecation===1.0.1
 SQLAlchemy===1.1.15
 pyroute2===0.4.21
-google-auth===1.2.0
+google-auth===1.2.1
 kazoo===2.4.0
 XStatic-roboto-fontface===0.5.0.0
 pyudev===0.21.0
@@ -154,7 +154,7 @@ imagesize===0.7.1
 pathlib===1.0.1;python_version=='2.7'
 urllib3===1.22
 graphviz===0.8.1
-PyKMIP===0.6.0
+PyKMIP===0.7.0
 whereto===0.3.0
 python-subunit===1.2.0
 tornado===4.4.3;python_version=='3.4'
