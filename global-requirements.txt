@@ -37,7 +37,6 @@ django-babel>=0.5.1  # BSD
 django-compressor>=2.0  # MIT
 django-floppyforms>=1.0,<2  # BSD
 django-formtools>=1.0  # BSD
-django-openstack-auth>=3.5.0  # Apache-2.0
 dnspython>=1.14.0;python_version=='2.7'  # http://www.dnspython.org/LICENSE
 dnspython3>=1.12.0,!=1.13.0,!=1.14.0;python_version>='3.0'  # http://www.dnspython.org/LICENSE
 # Note(tonyb): We don't actually directly depend on docutils but we pull it in
