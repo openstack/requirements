@@ -261,7 +261,7 @@ selenium===3.4.3
 python-glareclient===0.4.3
 mypy===0.521;python_version=='3.4'
 mypy===0.521;python_version=='3.5'
-mistral-lib===0.3.1
+mistral-lib===0.3.3
 python-masakariclient===3.0.1
 dogtag-pki===10.3.5.1
 sphinxcontrib-seqdiag===0.8.5
