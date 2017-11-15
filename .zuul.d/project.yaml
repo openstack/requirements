@@ -2,6 +2,15 @@
     name: openstack/requirements
     check:
       jobs:
+        - build-wheel-mirror-centos-7:
+            files:
+              - bindep.txt
+        - build-wheel-mirror-ubuntu-trusty:
+            files:
+              - bindep.txt
+        - build-wheel-mirror-ubuntu-xenial:
+            files:
+              - bindep.txt
         - openstack-tox-validate
         - requirements-tox-babel
         - requirements-tox-py27-check-uc
@@ -33,6 +42,15 @@
     gate:
       queue: integrated
       jobs:
+        - build-wheel-mirror-centos-7:
+            files:
+              - bindep.txt
+        - build-wheel-mirror-ubuntu-trusty:
+            files:
+              - bindep.txt
+        - build-wheel-mirror-ubuntu-xenial:
+            files:
+              - bindep.txt
         - openstack-tox-validate
         - requirements-tox-babel
         - requirements-tox-py27-check-uc
