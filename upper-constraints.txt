@@ -318,7 +318,7 @@ XStatic-tv4===1.2.7.0
 positional===1.2.1
 XStatic-JSEncrypt===2.3.1.1
 python-cinderclient===3.2.0
-keystonemiddleware===4.17.0
+keystonemiddleware===4.18.0
 django-formtools===2.1
 python-ceilometerclient===2.9.0
 XStatic-Spin===1.2.5.2
