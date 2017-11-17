@@ -8,7 +8,7 @@ netmiko===1.4.3
 instack-undercloud===8.0.0
 PasteDeploy===1.5.2
 typing===3.6.2
-python-saharaclient===1.3.0
+python-saharaclient===1.4.0
 python-hnvclient===0.1.0
 Routes===2.4.1
 rtslib-fb===2.1.64
@@ -118,6 +118,7 @@ pymongo===3.5.1
 sqlparse===0.2.4
 oslotest===3.0.0
 jsonpointer===1.14
+defusedxml===0.5.0
 netaddr===0.7.19
 pyghmi===1.0.28
 sphinxcontrib-blockdiag===1.5.5
@@ -304,7 +305,7 @@ packaging===16.8
 flask-keystone===0.2
 nose-exclude===0.5.0
 psutil===5.4.1
-py===1.5.1
+py===1.5.2
 txaio===2.8.2
 elasticsearch===2.4.1
 django-nose===1.4.5
@@ -334,7 +335,7 @@ python-karborclient===0.6.0
 weakrefmethod===1.0.3;python_version=='2.7'
 PuLP===1.6.8
 crc16===0.1.1
-protobuf===3.4.0
+protobuf===3.5.0
 os-dpm===1.1.0
 sushy===1.2.0
 python-neutronclient===6.5.0
@@ -384,7 +385,7 @@ msgpack-python===0.4.8
 proboscis===1.2.6.0
 fortiosclient===0.0.2
 stevedore===1.27.1
-botocore===1.7.44
+botocore===1.7.46
 xmltodict===0.11.0
 pyasn1===0.3.7
 oslo.rootwrap===5.11.0
@@ -539,4 +540,3 @@ XStatic-D3===3.5.17.0
 actdiag===0.5.4
 sysv-ipc===0.7.0
 scikit-learn===0.19.1
-defusedxml===0.5.0
