@@ -1,0 +1,60 @@
+- project:
+    name: openstack/requirements
+    check:
+      jobs:
+        - openstack-tox-validate
+        - requirements-tox-babel
+        - requirements-tox-py27-check-uc
+        - requirements-tox-py35-check-uc:
+            branches: ^(?!stable/(newton|ocata|pike)).*$
+        - cross-cinder-py27
+        - cross-cinder-py35:
+            branches: ^(?!stable/(newton|ocata)).*$
+        - cross-glance-py27
+        - cross-glance-py35:
+            branches: ^(?!stable/(newton|ocata)).*$
+        - cross-horizon-py27
+        - cross-horizon-py35:
+            branches: ^(?!stable/(newton|ocata)).*$
+        - cross-keystone-py27
+        - cross-keystone-py35:
+            branches: ^(?!stable/(newton|ocata)).*$
+        - cross-neutron-py27
+        - cross-neutron-py35:
+            branches: ^(?!stable/(newton|ocata)).*$
+        - cross-nova-py27
+        - cross-nova-py35:
+            branches: ^(?!stable/(newton|ocata)).*$
+        - cross-nova-functional
+        - cross-swift-py27
+        - cross-swift-py35:
+            branches: ^(?!stable/(newton|ocata)).*$
+    gate:
+      queue: integrated
+      jobs:
+        - openstack-tox-validate
+        - requirements-tox-babel
+        - requirements-tox-py27-check-uc
+        - requirements-tox-py35-check-uc:
+            branches: ^(?!stable/(newton|ocata|pike)).*$
+        - cross-cinder-py27
+        - cross-glance-py27
+        - cross-glance-py35:
+            branches: ^(?!stable/(newton|ocata)).*$
+        - cross-horizon-py27
+        - cross-horizon-py35:
+            branches: ^(?!stable/(newton|ocata)).*$
+        - cross-keystone-py27
+        - cross-keystone-py35:
+            branches: ^(?!stable/(newton|ocata)).*$
+        - cross-neutron-py27
+        - cross-neutron-py35:
+            branches: ^(?!stable/(newton|ocata)).*$
+        - cross-nova-py27
+        - cross-nova-py35:
+            branches: ^(?!stable/(newton|ocata)).*$
+            files: ^upper-constraints.txt$
+        - cross-nova-functional
+        - cross-swift-py27
+        - cross-swift-py35:
+            branches: ^(?!stable/(newton|ocata)).*$
