@@ -338,7 +338,7 @@ WebTest===2.0.27
 openstack.nose-plugin===0.11
 os-collect-config===7.2.0
 python-qpid-proton===0.17.0
-python-octaviaclient===1.1.0
+python-octaviaclient===1.2.0
 pysaml2===4.0.2
 oslo.reports===1.22.0
 ceilometermiddleware===1.1.0
