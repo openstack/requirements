@@ -1,45 +1,65 @@
 # These are needed to build all the things in global-requirements, which we do
 # for integration testing.  (see tools/integration.sh)
-python-all-dev
-python3-all-dev
-libvirt-dev
-libxml2-dev
-libxslt1-dev
-libmysqlclient-dev
-libpq-dev
-pkg-config
-libsqlite3-dev
-libzmq-dev
-libffi-dev
-libldap2-dev
-libkrb5-dev
-libsasl2-dev
-ccache
-pypy
-pypy-dev
-# NOTE(flaper87): Temporarily needed for proton
-uuid-dev
+
+krb5-devel [platform:redhat]
+libffi-dev [platform:dpkg]
+libffi-devel [platform:redhat]
+libkrb5-dev [platform:dpkg]
+libldap2-dev [platform:dpkg]
+libmysqlclient-dev [platform:dpkg]
+libnss3-dev [platform:dpkg]
+libpq-dev [platform:dpkg]
+libsasl2-dev [platform:dpkg]
+libsqlite3-dev [platform:dpkg]
+libuuid-devel [platform:rpm]
+libvirt-dev [platform:dpkg]
+libvirt-devel [platform:redhat]
+libxml2-dev [platform:dpkg]
+libxml2-devel [platform:rpm]
+libxslt-devel [platform:rpm]
+libxslt1-dev [platform:dpkg]
+libzmq-dev [platform:dpkg]
+mariadb-devel [platform:redhat]
+mozilla-nss-devel [platform:suse]
+nss-devel [platform:redhat]
+openssl-devel [platform:redhat]
+openldap-devel [platform:redhat]
+pkg-config [platform:dkpg]
+pkgconfig [platform:redhat]
+postgresql-devel [platform:redhat]
+pypy [platform:dpkg]
+pypy-dev [platform:dpkg]
+# Note that python3-all-dev includes python3-all, added
+# both here for documentary purpose.
+python3-all-dev [platform:dpkg]
+python3-all [platform:dpkg]
+python-all-dev [platform:dpkg]
+python-devel [platform:rpm]
 swig
+systemd-devel [platform:redhat]
+uuid-dev [platform:dpkg]
+
 # Python things that change rarely and we're willing to risk breakage vs latest
 python-numpy [python]
 python-yaml [python]
+
 # NOTE(jaegerandi): Temporarily needed for running as part of
 # OpenStack gates:
-mysql-client
-mysql-server
+# TODO(pabelanger): Remove in follow up patch.
+mysql-client [platform:dpkg]
+mysql-server [platform:dpkg]
 postgresql
-postgresql-client
-# NOTE(toabctl): libnss3-dev is needed for python-nss
-# which is used by dogtag-pki
-libnss3-dev [platform:dpkg]
-mozilla-nss-devel [platform:rpm]
-nss-devel [platform:rpm]
+postgresql-client [platform:dpkg]
+
 # NOTE(dirk) needed for PyECLib
 liberasurecode-dev [platform:dpkg]
 liberasurecode-devel [platform:rpm]
 dev-libs/liberasurecode [platform:gentoo]
 libsystemd-dev [platform:dpkg !platform:ubuntu-trusty]
 libsystemd-journal-dev [platform:ubuntu-trusty]
+
 # NOTE(pabelanger): Needed for build-wheel-mirror jobs
 gawk [test]
+# NOTE(pabelanger): You must first enable epel to install parallel RPM on
+# centos-7.
 parallel [test]
