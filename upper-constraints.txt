@@ -220,7 +220,7 @@ openstackdocstheme===1.6.1
 openstacksdk===0.9.13
 ordereddict===1.1
 os-api-ref===1.2.0
-os-apply-config===6.1.0
+os-apply-config===6.1.2
 os-brick===1.11.0
 os-client-config===1.26.0
 os-cloud-config===6.0.0
