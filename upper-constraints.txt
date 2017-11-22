@@ -224,7 +224,7 @@ os-apply-config===6.1.0
 os-brick===1.11.0
 os-client-config===1.26.0
 os-cloud-config===6.0.0
-os-collect-config===6.1.1
+os-collect-config===6.1.2
 os-dpm===1.0.0
 os-refresh-config===6.1.1
 os-testr===0.8.0
