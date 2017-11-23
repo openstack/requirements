@@ -335,7 +335,7 @@ python-karborclient===0.6.0
 weakrefmethod===1.0.3;python_version=='2.7'
 PuLP===1.6.8
 crc16===0.1.1
-protobuf===3.5.0
+protobuf===3.4.0
 os-dpm===1.1.0
 sushy===1.2.0
 python-neutronclient===6.5.0
