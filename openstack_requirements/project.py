@@ -132,6 +132,7 @@ def read(root):
     target_files = [
         'requirements.txt', 'tools/pip-requires',
         'test-requirements.txt', 'tools/test-requires',
+        'doc/requirements.txt'
     ]
     for py_version in (2, 3):
         target_files.append('requirements-py%s.txt' % py_version)

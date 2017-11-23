@@ -57,7 +57,8 @@ Solution
 The mechanics of the solution are relatively simple. We maintain a
 central list of all the requirements (``global-requirements.txt``)
 that are allowed in OpenStack projects. This is enforced for
-``requirements.txt``, ``test-requirements.txt`` and extras defined in
+``requirements.txt``, ``test-requirements.txt``,
+``doc/requirements.txt``, and extras defined in
 ``setup.cfg``. This is maintained by hand, with changes going through CI.
 
 We also maintain a compiled list of the exact versions, including transitive
