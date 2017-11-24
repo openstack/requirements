@@ -415,7 +415,7 @@ tinyrpc===0.5
 tooz===1.48.2
 tosca-parser===0.7.0
 traceback2===1.4.0
-tripleo-common===6.1.2
+tripleo-common===6.1.4
 trollius===2.1
 txaio===2.6.0
 typing===3.5.3.0
