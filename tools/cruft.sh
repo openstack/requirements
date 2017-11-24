@@ -57,7 +57,8 @@ for PROJECT in $(cat projects.txt); do
             test-requirements-py3.txt \
             test-requirements.txt \
             tools/pip-requires \
-            tools/test-requires
+            tools/test-requires \
+            doc/requirements.txt
         do
             if [ -f $FILE ]; then
                 # Add diagnostic comments to aid debugging.
