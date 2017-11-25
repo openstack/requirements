@@ -43,3 +43,14 @@
       Uses tox with the ``validate-projects`` environment.
     vars:
       tox_envlist: validate-projects
+
+- job:
+    name: requirements-tox-bindep
+    parent: openstack-tox
+    description: |
+      Run test for requirements project.
+
+      Uses tox with the ``bindep`` environment.
+    files: ^bindep.txt$
+    vars:
+      tox_envlist: bindep

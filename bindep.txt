@@ -43,8 +43,7 @@ uuid-dev [platform:dpkg]
 python-numpy [python]
 python-yaml [python]
 
-# NOTE(jaegerandi): Temporarily needed for running as part of
-# OpenStack gates:
+# NOTE(jaegerandi): Temporarily needed for part of OpenStack gates
 # TODO(pabelanger): Remove in follow up patch.
 mysql-client [platform:dpkg]
 mysql-server [platform:dpkg]
