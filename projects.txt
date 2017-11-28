@@ -95,6 +95,7 @@ openstack/murano-pkg-check
 openstack/nemesis
 openstack/networking-arista
 openstack/networking-bagpipe
+openstack/networking-baremetal
 openstack/networking-bgpvpn
 openstack/networking-dpm
 openstack/networking-generic-switch
