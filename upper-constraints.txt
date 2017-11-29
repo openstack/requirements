@@ -268,6 +268,7 @@ python-glareclient===0.5.0
 mypy===0.550;python_version=='3.4'
 mypy===0.550;python_version=='3.5'
 mistral-lib===0.3.3
+mistral-extra===5.2.0  # Apache-2.0
 dogtag-pki===10.3.5.1
 sphinxcontrib-seqdiag===0.8.5
 os-win===2.6.0
