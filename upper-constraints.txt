@@ -478,7 +478,7 @@ CouchDB===1.1
 netifaces===0.10.6
 cachetools===2.0.1
 ws4py===0.4.2
-keystoneauth1===3.2.0
+keystoneauth1===3.3.0
 statsd===3.2.1
 XenAPI===1.2
 python-keystoneclient===3.13.0
