@@ -28,7 +28,7 @@ requirements update.
 
 An example of how bad this had gotten is that python-keystoneclient
 would typically be installed / uninstalled 6 times during the course
-of a devstack gate run during Havana. If the last version of python
+of a DevStack gate run during Havana. If the last version of python
 keystoneclient happened to be incompatible with some piece of
 OpenStack a very hard to diagnose break occurs.
 
@@ -85,23 +85,12 @@ an exact list of versions.
 Enforcement for Test Runs
 -------------------------
 
-Devstack
+DevStack
 ++++++++
 
-When ``USE_CONSTRAINTS`` is set ``True``, devstack uses the pip ``-c`` option
-to pin all the libraries to known good versions. ``edit-constraints`` can be
-used to unpin a single constraint, and this is done to install libraries from
-git. This is the **recommended** way to use devstack.
-
-When ``USE_CONSTRAINTS`` is set ``False``, devstack overwrites the
-``requirements.txt`` and ``test-requirements.txt`` for **all** installed
-projects with the versions from ``global-requirements.txt``. Projects that are
-not in ``projects.txt`` get 'soft' updates, ones that are get 'hard' updated.
-This attempts to ensure that we will get a deterministic set of requirements
-installed in the test system, and it won't be a guessing game based on the
-last piece of software to be installed. However due to the interactions with
-transitive dependencies this doesn't actually deliver what we need, and is
-**not recommended**.
+DevStack uses the pip ``-c`` option to pin all the libraries to known good
+versions. ``edit-constraints`` can be used to unpin a single constraint, and
+this is done to install libraries from git.
 
 Tox
 +++
@@ -171,7 +160,7 @@ edit-constraints
 ----------------
 
 Replace all references to a package in a constraints file with a new
-specification. Used by devstack to enable git installations of libraries that
+specification. Used by DevStack to enable git installations of libraries that
 are normally constrained::
 
   edit-constraints oslo.db "-e file://opt/stack/oslo.db#egg=oslo.db"
@@ -237,7 +226,7 @@ General Review Criteria
 
   Bare library names are bad. If it's unknown what a working minimum
   is, look at the output of pip freeze at the end of a successful
-  devstack/tempest run and use that version. At least that's known to
+  DevStack/tempest run and use that version. At least that's known to
   be working now.
 
 - Commit message should refer to consuming projects(s)
