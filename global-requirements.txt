@@ -86,7 +86,7 @@ iso8601>=0.1.11  # MIT
 Jinja2>=2.8,!=2.9.0,!=2.9.1,!=2.9.2,!=2.9.3,!=2.9.4  # BSD License (3 clause)
 jmespath>=0.9.0  # MIT
 jsonmodels>=2.1.3  # BSD License (3 clause)
-jsonpatch>=1.16  # BSD
+jsonpatch>=1.16,!=1.20  # BSD
 jsonpath-rw>=1.2.0,<2.0  # Apache-2.0
 jsonpath-rw-ext>=1.1.2  # Apache-2.0
 jsonschema>=2.6.0,<3.0.0  # MIT
