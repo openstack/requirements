@@ -293,7 +293,7 @@ gitdb===0.6.4
 python-monascaclient===1.8.0
 ldap3===2.4
 requests-ntlm===1.1.0
-automaton===1.13.0
+automaton===1.13.1
 argh===0.26.2;python_version=='3.4'
 argh===0.26.2;python_version=='3.5'
 os-service-types===1.1.0
