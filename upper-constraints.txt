@@ -442,7 +442,7 @@ python-pcre===0.7
 abclient===0.2.3
 pymemcache===1.4.3
 wrapt===1.10.11
-oslo.privsep===1.23.0
+oslo.privsep===1.24.0
 zope.interface===4.4.3
 oslo.policy===1.30.0
 python-muranoclient===0.14.0
