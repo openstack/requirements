@@ -244,7 +244,7 @@ oslo.middleware===3.23.2
 oslo.policy===1.18.0
 oslo.privsep===1.16.0
 oslo.reports===1.17.1
-oslo.rootwrap===5.4.1
+oslo.rootwrap===5.4.2
 oslo.serialization===2.16.1
 oslo.service===1.19.1
 oslo.utils===3.22.1
