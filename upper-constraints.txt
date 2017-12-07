@@ -166,7 +166,7 @@ PyYAML===3.12
 beautifulsoup4===4.6.0
 os-net-config===8.1.0
 ovs===2.7.2
-cryptography===2.1.4
+cryptography===2.1.3
 backports.ssl-match-hostname===3.5.0.1;python_version=='2.7'
 openstack-release-test===0.10.2
 pylxd===2.2.4
