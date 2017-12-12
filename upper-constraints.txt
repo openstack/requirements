@@ -147,6 +147,7 @@ oslo.messaging===5.34.1
 extras===1.0.0
 PyJWT===1.5.3
 et-xmlfile===1.0.1
+zVMCloudConnector===0.3.2
 paramiko===2.4.0
 ordereddict===1.1
 reno===2.6.0
