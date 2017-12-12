@@ -21,7 +21,7 @@ docopt===0.6.2
 pecan===1.2.1
 ryu===4.20
 os-api-ref===1.4.0
-oslo.concurrency===3.23.0
+oslo.concurrency===3.24.0
 websocket-client===0.44.0
 osprofiler===1.14.0
 tabulate===0.8.2
