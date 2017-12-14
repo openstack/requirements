@@ -52,7 +52,7 @@ oslo.context===2.19.3
 python-senlinclient===1.5.0
 rcssmin===1.0.6
 pycadf===2.6.0
-grpcio===1.8.0
+grpcio===1.7.3
 pysendfile===2.0.1
 fixtures===3.0.0
 neutron-lib===1.11.0
