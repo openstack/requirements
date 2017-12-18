@@ -428,6 +428,7 @@ sphinxcontrib-seqdiag>=0.8.4  # BSD
 sphinxcontrib-pecanwsme>=0.8.0  # Apache-2.0
 sphinxcontrib-fulltoc>=1.2.0  # Apache-2.0
 sphinxmark>=0.1.14  # Apache-2.0
+sphinxcontrib.datatemplates>=0.1.0  # BSD License
 stestr>=1.0.0  # Apache-2.0
 sushy>=0.1.0  # Apache-2.0
 testrepository>=0.0.18  # Apache-2.0/BSD
