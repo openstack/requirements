@@ -15,6 +15,7 @@ openstack/blazar-nova
 openstack/castellan
 openstack/ceilometer-powervm
 openstack/cinder
+openstack/cinder-tempest-plugin
 openstack/cliff
 openstack/compute-hyperv
 openstack/congress
