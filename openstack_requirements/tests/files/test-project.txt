@@ -5,7 +5,6 @@ feedparser
 fixtures>=0.3.12
 mox==0.5.3
 mox3==0.21.0
-MySQL-python
 psycopg2
 pylint==0.25.2
 # Imported by ldapdns so required to generate
