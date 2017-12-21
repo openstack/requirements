@@ -32,11 +32,11 @@ python-kingbirdclient===0.2.0
 setproctitle===1.1.10
 pytest===3.3.1
 python-etcd===0.4.5
-raven===6.3.0
+raven===6.4.0
 cursive===0.2.0
 oslo.service===1.28.0
 django-appconf===1.0.2
-pykerberos===1.1.14
+pykerberos===1.2.1
 certifi===2017.11.5
 sphinxcontrib-nwdiag===0.9.5
 requests-aws===0.1.8
@@ -53,7 +53,7 @@ oslo.context===2.19.3
 python-senlinclient===1.5.0
 rcssmin===1.0.6
 pycadf===2.6.0
-grpcio===1.8.1
+grpcio===1.8.2
 pysendfile===2.0.1
 fixtures===3.0.0
 neutron-lib===1.11.0
@@ -126,7 +126,7 @@ pyghmi===1.0.30
 sphinxcontrib-blockdiag===1.5.5
 kaitaistruct===0.6;python_version=='3.4'
 kaitaistruct===0.6;python_version=='3.5'
-gnocchiclient===6.0.0
+gnocchiclient===7.0.0
 jsonpath-rw===1.4.0
 prettytable===0.7.2
 vine===1.1.4
@@ -168,7 +168,7 @@ mock===2.0.0
 PyYAML===3.12
 beautifulsoup4===4.6.0
 os-net-config===8.1.0
-ovs===2.7.2
+ovs===2.8.1
 cryptography===2.1.4
 backports.ssl-match-hostname===3.5.0.1;python_version=='2.7'
 openstack-release-test===0.10.2
@@ -262,7 +262,7 @@ brotlipy===0.6.0;python_version=='3.5'
 XStatic-mdi===1.4.57.0
 django-pyscss===2.0.2
 uritemplate===3.0.0
-django-babel===0.6.1
+django-babel===0.6.2
 docutils===0.14
 notifier===1.0.3
 pycrypto===2.6.1
@@ -391,7 +391,7 @@ msgpack-python===0.4.8
 proboscis===1.2.6.0
 fortiosclient===0.0.2
 stevedore===1.28.0
-botocore===1.8.15
+botocore===1.8.18
 xmltodict===0.11.0
 pyasn1===0.4.2
 oslo.rootwrap===5.12.1
@@ -482,7 +482,7 @@ XStatic-Bootstrap-Datepicker===1.3.1.0
 CouchDB===1.1
 netifaces===0.10.6
 cachetools===2.0.1
-ws4py===0.4.2
+ws4py===0.4.3
 keystoneauth1===3.3.0
 statsd===3.2.2
 XenAPI===1.2
@@ -491,7 +491,7 @@ demjson===2.2.4
 diskimage-builder===2.9.0
 heat-translator===0.9.0
 python-magnumclient===2.7.0
-docker===2.6.1
+docker===2.7.0
 pathtools===0.1.2;python_version=='3.4'
 pathtools===0.1.2;python_version=='3.5'
 qpid-python===1.36.0.post1;python_version=='2.7'
@@ -534,7 +534,7 @@ kafka-python===1.3.5
 oslo.utils===3.33.0
 python-editor===1.0.3
 gitdb2===2.0.3
-requests-kerberos===0.11.0
+requests-kerberos===0.12.0
 itsdangerous===0.24
 XStatic-jquery-ui===1.12.0.1
 monasca-statsd===1.8.0
