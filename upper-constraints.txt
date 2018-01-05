@@ -19,7 +19,7 @@ WebOb===1.7.4
 sphinxcontrib-actdiag===0.8.5
 docopt===0.6.2
 pecan===1.2.1
-ryu===4.20
+ryu===4.21
 os-api-ref===1.4.0
 oslo.concurrency===3.24.0
 websocket-client===0.40.0
@@ -33,7 +33,7 @@ setproctitle===1.1.10
 pytest===3.3.1
 python-etcd===0.4.5
 raven===6.4.0
-cursive===0.2.0
+cursive===0.2.1
 oslo.service===1.28.0
 django-appconf===1.0.2
 pykerberos===1.2.1
@@ -43,7 +43,7 @@ requests-aws===0.1.8
 alabaster===0.7.10
 pbr===3.1.1
 munch===2.2.0
-attrs===17.3.0
+attrs===17.4.0
 microversion-parse===0.1.4
 Pint===0.8.1
 oslo.i18n===3.19.0
@@ -65,7 +65,7 @@ waitress===1.1.0
 os-refresh-config===8.1.0
 jsbeautifier===1.6.14;python_version=='3.4'
 jsbeautifier===1.6.14;python_version=='3.5'
-pysnmp===4.4.2
+pysnmp===4.4.4
 sphinxcontrib-websupport===1.0.1
 Mako===1.0.7
 XStatic-angular-ui-router===0.3.1.2
@@ -85,7 +85,7 @@ networkx===1.11
 bashate===0.5.1
 XStatic-Angular===1.5.8.0
 pyngus===2.2.1
-Pillow===4.3.0
+Pillow===5.0.0
 zuul-sphinx===0.2.1
 python-mimeparse===1.6.0
 tripleo-common===8.3.0
@@ -113,7 +113,7 @@ asn1crypto===0.24.0
 croniter===0.3.20
 python-watcherclient===1.5.0
 MarkupSafe===1.0
-pypowervm===1.1.9
+pypowervm===1.1.10
 doc8===0.8.0
 pymongo===3.6.0
 sqlparse===0.2.4
@@ -126,6 +126,7 @@ sphinxcontrib-blockdiag===1.5.5
 kaitaistruct===0.6;python_version=='3.4'
 kaitaistruct===0.6;python_version=='3.5'
 gnocchiclient===7.0.0
+sphinxcontrib.datatemplates===0.1.0
 jsonpath-rw===1.4.0
 prettytable===0.7.2
 vine===1.1.4
@@ -156,7 +157,7 @@ unicodecsv===0.14.1
 imagesize===0.7.1
 pathlib===1.0.1;python_version=='2.7'
 urllib3===1.22
-graphviz===0.8.1
+graphviz===0.8.2
 PyKMIP===0.7.0
 whereto===0.4.0
 python-subunit===1.2.0
@@ -247,7 +248,7 @@ pyperclip===1.6.0
 cassandra-driver===3.12.0
 mox===0.5.3
 XStatic-Angular-Schema-Form===0.8.13.0
-gabbi===1.38.0
+gabbi===1.39.1
 nwdiag===1.0.4
 XStatic-bootswatch===3.3.7.0
 XStatic-term.js===0.0.7.0
@@ -308,13 +309,13 @@ enum34===1.1.6
 packaging===16.8
 flask-keystone===0.2
 nose-exclude===0.5.0
-psutil===5.4.2
+psutil===5.4.3
 py===1.5.2
 txaio===2.8.2
 elasticsearch===2.4.1
 django-nose===1.4.5
 XStatic-JQuery.TableSorter===2.14.5.1
-pifpaf===1.11.4
+pifpaf===1.12.0
 pysmi===0.2.2
 blockdiag===1.5.3
 testtools===2.3.0
@@ -338,7 +339,7 @@ python-karborclient===0.7.0
 weakrefmethod===1.0.3;python_version=='2.7'
 PuLP===1.6.8
 crc16===0.1.1
-protobuf===3.5.0.post1
+protobuf===3.5.1
 os-dpm===1.1.0
 sushy===1.2.0
 python-neutronclient===6.6.0
@@ -373,12 +374,12 @@ zake===0.2.2
 python-rsdclient===0.1.0
 python-magic===0.4.15
 python-solumclient===2.5.0
-PyMySQL===0.7.11
+PyMySQL===0.8.0
 kubernetes===4.0.0
 httplib2===0.10.3
 bottle===0.12.13
 betamax===0.8.0
-construct===2.8.17
+construct===2.8.20
 pyparsing===2.2.0
 dogpile.cache===0.6.4
 python-barbicanclient===4.5.2
@@ -390,11 +391,11 @@ msgpack-python===0.4.8
 proboscis===1.2.6.0
 fortiosclient===0.0.2
 stevedore===1.28.0
-botocore===1.8.18
+botocore===1.8.22
 xmltodict===0.11.0
 pyasn1===0.4.2
 oslo.rootwrap===5.12.1
-Django===1.11.8
+Django===1.11.9
 pexpect===4.3.1
 mistral-extra===5.2.0
 cmd2===0.7.8
@@ -405,7 +406,7 @@ docker-pycreds===0.2.1
 XStatic-smart-table===1.4.13.2
 kuryr-lib===0.7.0
 scrypt===0.8.0
-jsonpatch===1.16
+jsonpatch===1.21
 typed-ast===1.1.0;python_version=='3.4'
 typed-ast===1.1.0;python_version=='3.5'
 os-testr===1.0.0
@@ -469,9 +470,9 @@ watchdog===0.8.3;python_version=='3.5'
 gevent===1.2.2
 os-vif===1.7.0
 python-masakariclient===4.0.0
-Werkzeug===0.13
+Werkzeug===0.14.1
 pyasn1-modules===0.2.1
-APScheduler===3.4.0
+APScheduler===3.5.0
 monotonic===1.4
 python-smaugclient===0.0.8
 python-troveclient===2.13.0
@@ -514,9 +515,7 @@ Babel===2.5.1
 logutils===0.3.5
 scandir===1.6;python_version=='2.7'
 sphinxcontrib-fulltoc===1.2.0
-sphinxcontrib.datatemplates===0.1.0
 smmap2===2.0.3
-olefile===0.44
 greenlet===0.4.12
 xvfbwrapper===0.2.9
 futures===3.2.0;python_version=='2.7'
