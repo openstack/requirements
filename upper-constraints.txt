@@ -184,7 +184,7 @@ textfsm===0.3.2
 unittest2===1.1.0
 django-compressor===2.2
 libvirt-python===3.10.0
-python-zunclient===0.5.0
+python-zunclient===1.0.0
 tzlocal===1.5.1
 python-novaclient===9.1.1
 bcrypt===3.1.4
