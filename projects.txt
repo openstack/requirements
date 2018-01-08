@@ -19,6 +19,8 @@ openstack/cinder-tempest-plugin
 openstack/cliff
 openstack/compute-hyperv
 openstack/congress
+openstack/congress-dashboard
+openstack/congress-tempest-plugin
 openstack/debtcollector
 openstack/designate
 openstack/designate-dashboard
