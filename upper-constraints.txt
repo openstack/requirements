@@ -49,7 +49,7 @@ Pint===0.8.1
 oslo.i18n===3.19.0
 jsonpath-rw-ext===1.1.3
 python-mistralclient===3.1.4
-oslo.context===2.19.3
+oslo.context===2.20.0
 python-senlinclient===1.5.0
 rcssmin===1.0.6
 pycadf===2.6.0
