@@ -252,7 +252,7 @@ gabbi===1.39.1
 nwdiag===1.0.4
 XStatic-bootswatch===3.3.7.0
 XStatic-term.js===0.0.7.0
-oslo.log===3.35.0
+oslo.log===3.36.0
 nodeenv===1.2.0
 pylev===1.3.0
 python-searchlightclient===1.2.0
