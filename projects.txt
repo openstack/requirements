@@ -51,6 +51,7 @@ openstack/ironic
 openstack/ironic-inspector
 openstack/ironic-lib
 openstack/ironic-staging-drivers
+openstack/ironic-tempest-plugin
 openstack/ironic-python-agent
 openstack/ironic-python-agent-builder
 openstack/ironic-ui
