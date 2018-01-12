@@ -272,7 +272,7 @@ python-troveclient>=2.2.0  # Apache-2.0
 python-vitrageclient>=1.3.0  # Apache-2.0
 python-watcherclient>=1.1.0  # Apache-2.0
 python-zaqarclient>=1.0.0  # Apache-2.0
-python-zunclient>=0.2.0  # Apache-2.0
+python-zunclient>=1.0.0  # Apache-2.0
 
 python-magic>=0.4.13  # MIT
 python-memcached>=1.56  # PSF
