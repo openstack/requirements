@@ -268,7 +268,7 @@ notifier===1.0.3
 pycrypto===2.6.1
 ujson===1.35
 selenium===3.8.0
-python-glareclient===0.5.0
+python-glareclient===0.5.1
 mypy===0.560;python_version=='3.4'
 mypy===0.560;python_version=='3.5'
 mistral-lib===0.3.3
