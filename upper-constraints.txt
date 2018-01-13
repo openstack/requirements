@@ -460,7 +460,7 @@ repoze.lru===0.7
 rfc3986===1.1.0
 tenacity===4.8.0
 XStatic-Magic-Search===0.2.5.1
-python-designateclient===2.7.0
+python-designateclient===2.8.0
 future===0.16.0
 Paste===2.0.3
 boto===2.48.0
