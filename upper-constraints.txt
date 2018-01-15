@@ -352,7 +352,7 @@ python-qpid-proton===0.17.0
 python-octaviaclient===1.3.0
 pysaml2===4.0.2
 requests-oauthlib===0.8.0
-oslo.reports===1.25.0
+oslo.reports===1.26.0
 ceilometermiddleware===1.1.0
 python-nss===1.0.1
 testrepository===0.0.20
