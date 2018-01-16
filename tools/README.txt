@@ -28,6 +28,10 @@ Used in tox environment pip-install.  Only installs requirements (as opposed to
 test-requirements and verifies that all console-scripts have all modules
 needed.
 
+code-search.sh
+--------------
+Assuming you have a set of local git repos grep them all for interesting things.
+
 cruft.sh
 --------
 
