@@ -44,7 +44,7 @@ def _validate_options(options, args):
     :param args: The args for this program.
     """
     if len(args) < 2:
-        raise Exception("No enough arguments given")
+        raise Exception("Not enough arguments given")
     if not os.path.exists(args[0]):
         raise Exception(
             "Constraints file %(con)s not found."
