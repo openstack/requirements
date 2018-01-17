@@ -451,7 +451,7 @@ wrapt===1.10.11
 oslo.privsep===1.26.0
 zope.interface===4.4.3
 oslo.policy===1.33.1
-python-muranoclient===0.14.0
+python-muranoclient===1.0.0
 pyeclib===1.5.0
 wsgi-intercept===1.6.0
 ndg-httpsclient===0.4.3;python_version=='2.7'
