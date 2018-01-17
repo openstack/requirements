@@ -365,7 +365,7 @@ python-consul===0.7.2
 seqdiag===0.9.5
 numpy===1.14.0
 repoze.who===2.3
-Sphinx===1.6.6
+Sphinx===1.6.5
 oslo.config===5.2.0
 tempest===17.2.0
 django-floppyforms===1.7.0
