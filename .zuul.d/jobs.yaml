@@ -37,6 +37,8 @@
 - job:
     name: requirements-tox-validate-projects
     parent: openstack-tox
+    files:
+      - ^projects.txt
     description: |
       Run test for requirements project.
 
