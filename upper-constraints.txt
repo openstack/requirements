@@ -218,7 +218,7 @@ funcparserlib===0.3.6
 passlib===1.7.1
 dib-utils===0.0.11
 xlwt===1.3.0
-cliff===2.10.0
+cliff===2.11.0
 os-brick===2.2.0
 trollius===2.1
 scp===0.10.2
