@@ -17,6 +17,7 @@
 declare -a branches=($(git describe --always) origin/master)
 branches+=($(git branch --no-color -r --list 'origin/stable/*'))
 
+declare -a tags=($(git tag --list '*-eol' | sort))
 
 if [ $# -ne 1 ]; then
     echo "Usage: $0 dependency-name" 1>&2
@@ -24,15 +25,23 @@ if [ $# -ne 1 ]; then
 fi
 
 function search {
-    git grep -hEi "^${1}[=><!]" ${2} -- "${3}"
+    git grep -hEi "^${1}[=><!]" "${2}:${3}" 2>/dev/null
 }
 
-printf '\nRequirements\n'
+printf '\nRequirements\n------------\n'
 for branch in ${branches[@]} ; do
     printf "%-22s: %s\n" $branch "$(search $1 $branch global-requirements.txt)"
 done
+echo
+for tag in ${tags[@]} ; do
+    printf "%-22s: %s\n" $tag "$(search $1 $tag global-requirements.txt)"
+done
 
-printf '\nConstraints\n'
+printf '\nConstraints\n-----------\n'
 for branch in ${branches[@]} ; do
     printf "%-22s: %s\n" $branch "$(search $1 $branch upper-constraints.txt)"
+done
+echo
+for tag in ${tags[@]} ; do
+    printf "%-22s: %s\n" $tag "$(search $1 $tag upper-constraints.txt)"
 done
