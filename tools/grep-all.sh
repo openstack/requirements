@@ -17,6 +17,12 @@
 declare -a branches=($(git describe --always) origin/master)
 branches+=($(git branch --no-color -r --list 'origin/stable/*'))
 
+
+if [ $# -ne 1 ]; then
+    echo "Usage: $0 dependency-name" 1>&2
+    exit 1
+fi
+
 function search {
     git grep -hEi "^${1}[=><!]" ${2} -- "${3}"
 }
