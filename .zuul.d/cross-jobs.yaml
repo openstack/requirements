@@ -42,6 +42,8 @@
     parent: requirements-cross-test
     description: Run cross-project tests on glance with py27.
     required-projects: openstack/glance
+    # glance py27 is failing, but being activly worked on
+    voting: false
     vars:
       tox_envlist: py27
 
