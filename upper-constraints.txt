@@ -367,7 +367,7 @@ openstackdocstheme===1.18.1
 zake===0.2.2
 python-rsdclient===0.1.1
 python-magic===0.4.15
-python-solumclient===2.6.0
+python-solumclient===2.6.1
 PyMySQL===0.8.0
 kubernetes===4.0.0
 httplib2===0.10.3
