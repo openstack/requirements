@@ -499,7 +499,7 @@ cffi===1.11.4
 futurist===1.6.0
 jsonschema===2.6.0
 alembic===0.9.6
-glance-store===0.22.0
+glance-store===0.23.0
 sphinx-testing===0.7.2
 dnspython===1.15.0
 oauthlib===2.0.6
