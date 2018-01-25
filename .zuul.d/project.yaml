@@ -1,5 +1,4 @@
 - project:
-    name: openstack/requirements
     check:
       jobs:
         - openstack-tox-validate
