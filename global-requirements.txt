@@ -134,6 +134,7 @@ oauthlib>=0.6.0  # BSD
 openstackdocstheme>=1.18.1  # Apache-2.0
 ordereddict>=1.1  # MIT
 osc-lib>=1.8.0  # Apache-2.0
+osc-placement>=1.0.0  # Apache-2.0
 oslo.cache>=1.26.0  # Apache-2.0
 oslo.config>=5.1.0  # Apache-2.0
 oslo.concurrency>=3.25.0  # Apache-2.0
