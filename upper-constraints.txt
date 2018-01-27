@@ -109,7 +109,7 @@ debtcollector===1.19.0
 requests-unixsocket===0.1.5
 asn1crypto===0.24.0
 croniter===0.3.20
-python-watcherclient===1.5.0
+python-watcherclient===1.6.0
 MarkupSafe===1.0
 pypowervm===1.1.10
 doc8===0.8.0
