@@ -14,10 +14,9 @@
 
 # Note(tonyb): Expand HEAD into something that's hopefully more human
 #              readable
-declare -a branches=($(git describe --always) origin/master)
-branches+=($(git branch --no-color -r --list 'origin/stable/*'))
-
-declare -a tags=($(git tag --list '*-eol' | sort))
+declare -a refs=($(git describe --always) origin/master)
+refs+=($(git branch --no-color -r --list 'origin/stable/*'))
+refs+=($(git tag --list '*-eol' | sort -r))
 
 if [ $# -ne 1 ]; then
     echo "Usage: $0 dependency-name" 1>&2
@@ -29,19 +28,11 @@ function search {
 }
 
 printf '\nRequirements\n------------\n'
-for branch in ${branches[@]} ; do
-    printf "%-22s: %s\n" $branch "$(search $1 $branch global-requirements.txt)"
-done
-echo
-for tag in ${tags[@]} ; do
-    printf "%-22s: %s\n" $tag "$(search $1 $tag global-requirements.txt)"
+for ref in ${refs[@]}; do
+    printf "%-22s: %s\n" $ref "$(search $1 $ref global-requirements.txt)"
 done
 
 printf '\nConstraints\n-----------\n'
-for branch in ${branches[@]} ; do
-    printf "%-22s: %s\n" $branch "$(search $1 $branch upper-constraints.txt)"
-done
-echo
-for tag in ${tags[@]} ; do
-    printf "%-22s: %s\n" $tag "$(search $1 $tag upper-constraints.txt)"
+for ref in ${refs[@]}; do
+    printf "%-22s: %s\n" $ref "$(search $1 $ref upper-constraints.txt)"
 done
