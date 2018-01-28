@@ -74,7 +74,7 @@ jsonmodels===2.2
 ddt===1.1.1
 pyserial===3.4
 ipaddress===1.0.19
-python-freezerclient===1.5.0
+python-freezerclient===1.6.0
 os-xenapi===0.3.1
 python-vitrageclient===1.4.0
 nosexcover===1.0.11
