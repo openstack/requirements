@@ -217,7 +217,7 @@ cliff===2.11.0
 os-brick===2.3.0
 trollius===2.1
 scp===0.10.2
-python-zaqarclient===1.8.0
+python-zaqarclient===1.9.0
 funcsigs===1.0.2;python_version=='2.7'
 zhmcclient===0.18.0
 dnspython3===1.15.0;python_version=='3.4'
