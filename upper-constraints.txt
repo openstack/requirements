@@ -290,7 +290,7 @@ pykafka===2.5.0
 pykerberos===1.1.13
 pyldap===2.4.28
 pylev===1.3.0
-pylxd===2.2.2
+pylxd===2.2.4
 pymemcache===1.4.0
 pymod2pkg===0.7.1
 pymongo===3.4.0
