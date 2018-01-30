@@ -1,6 +1,7 @@
 - job:
     name: requirements-cross-test
     parent: openstack-tox
+    timeout: 2400
     description: |
       A parent job to perform cross-repository tests.
 
