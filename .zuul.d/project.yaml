@@ -1,5 +1,4 @@
 - project:
-    name: openstack/requirements
     check:
       jobs:
         - build-wheel-mirror-centos-7:
