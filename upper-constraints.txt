@@ -381,7 +381,6 @@ blinker===1.4;python_version=='3.4'
 blinker===1.4;python_version=='3.5'
 tricircleclient===0.2.0
 WSME===0.9.2
-msgpack-python===0.5.1
 proboscis===1.2.6.0
 fortiosclient===0.0.2
 stevedore===1.28.0
