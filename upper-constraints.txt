@@ -324,7 +324,7 @@ XStatic-Spin===1.2.5.2
 os-traits===0.5.0
 SecretStorage===2.3.1
 XStatic-Rickshaw===1.5.0.0
-iso8601===0.1.11
+iso8601===0.1.12
 tooz===1.59.0
 linecache2===1.0.0
 oauth2client===4.1.2
