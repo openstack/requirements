@@ -34,7 +34,7 @@ master)
     # NOTE(tonyb): Publish EOL'd constraints files.  We do this here as a
     # quick way to publish the data.  It can be removed anytime after the first
     # successful run
-    for tag in juno-eol kilo-eol liberty-eol mitaka-eol ; do
+    for tag in juno-eol kilo-eol liberty-eol mitaka-eol newton-eol ; do
         # trim the '-eol'
         series=${tag::-4}
         get_from_git $tag $series
