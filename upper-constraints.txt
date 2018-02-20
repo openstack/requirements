@@ -480,7 +480,7 @@ statsd===3.2.2
 XenAPI===1.2
 python-keystoneclient===3.15.0
 demjson===2.2.4
-diskimage-builder===2.10.1
+diskimage-builder===2.11.0
 heat-translator===0.9.0
 python-magnumclient===2.8.0
 docker===2.7.0
