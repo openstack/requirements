@@ -366,7 +366,7 @@ tempest===17.2.0
 django-floppyforms===1.7.0
 openstackdocstheme===1.18.1
 zake===0.2.2
-python-rsdclient===0.1.1
+python-rsdclient===0.1.2
 python-magic===0.4.15
 python-solumclient===2.6.1
 PyMySQL===0.8.0
