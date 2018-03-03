@@ -3,7 +3,7 @@ voluptuous===0.11.1
 chardet===3.0.4
 enum-compat===0.0.2
 rsa===3.4.2
-restructuredtext-lint===1.1.2
+restructuredtext-lint===1.1.3
 netmiko===2.0.2
 instack-undercloud===8.2.0
 PasteDeploy===1.5.2
@@ -19,7 +19,7 @@ WebOb===1.7.4
 sphinxcontrib-actdiag===0.8.5
 docopt===0.6.2
 pecan===1.2.1
-ryu===4.21
+ryu===4.23
 os-api-ref===1.5.0
 oslo.concurrency===3.25.0
 websocket-client===0.40.0
@@ -31,7 +31,7 @@ python-kingbirdclient===0.2.1
 setproctitle===1.1.10
 pytest===3.4.1
 python-etcd===0.4.5
-raven===6.5.0
+raven===6.6.0
 cursive===0.2.1
 oslo.service===1.29.0
 django-appconf===1.0.2
@@ -52,7 +52,7 @@ oslo.context===2.20.0
 python-senlinclient===1.7.0
 rcssmin===1.0.6
 pycadf===2.7.0
-grpcio===1.9.1
+grpcio===1.10.0
 pysendfile===2.0.1
 fixtures===3.0.0
 neutron-lib===1.13.0
@@ -109,13 +109,13 @@ python-watcherclient===1.6.0
 MarkupSafe===1.0
 pypowervm===1.1.11
 doc8===0.8.0
-pymongo===3.6.0
+pymongo===3.6.1
 sqlparse===0.2.4
 oslotest===3.2.0
 jsonpointer===2.0
 defusedxml===0.5.0
 netaddr===0.7.19
-pyghmi===1.0.38
+pyghmi===1.0.40
 sphinxcontrib-blockdiag===1.5.5
 kaitaistruct===0.8;python_version=='3.4'
 kaitaistruct===0.8;python_version=='3.5'
@@ -128,8 +128,8 @@ taskflow===3.1.0
 traceback2===1.4.0
 semantic-version===2.6.0
 virtualbmc===1.3.0
-deprecation===1.0.1
-SQLAlchemy===1.2.1
+deprecation===2.0
+SQLAlchemy===1.2.4
 pyroute2===0.4.21
 google-auth===1.4.1
 kazoo===2.4.0
@@ -178,7 +178,7 @@ django-compressor===2.2
 libvirt-python===4.0.0
 python-zunclient===1.1.0
 tzlocal===1.5.1
-python-novaclient===9.1.1
+python-novaclient===10.1.0
 bcrypt===3.1.4
 os-client-config===1.29.0
 XStatic-Angular-Gettext===2.3.8.0
@@ -259,8 +259,8 @@ pycrypto===2.6.1
 ujson===1.35
 selenium===3.9.0
 python-glareclient===0.5.2
-mypy===0.560;python_version=='3.4'
-mypy===0.560;python_version=='3.5'
+mypy===0.570;python_version=='3.4'
+mypy===0.570;python_version=='3.5'
 mistral-lib===0.4.0
 dogtag-pki===10.3.5.1
 sphinxcontrib-seqdiag===0.8.5
@@ -299,7 +299,7 @@ flask-keystone===0.2
 nose-exclude===0.5.0
 psutil===5.4.3
 py===1.5.2
-txaio===2.8.2
+txaio===2.9.0
 elasticsearch===2.4.1
 django-nose===1.4.5
 XStatic-JQuery.TableSorter===2.14.5.1
@@ -380,7 +380,7 @@ msgpack-python===0.5.5
 proboscis===1.2.6.0
 fortiosclient===0.0.2
 stevedore===1.28.0
-botocore===1.9.2
+botocore===1.9.3
 xmltodict===0.11.0
 pyasn1===0.4.2
 oslo.rootwrap===5.13.0
