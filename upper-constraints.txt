@@ -353,7 +353,7 @@ seqdiag===0.9.5
 numpy===1.14.1
 repoze.who===2.3
 msgpack===0.5.6
-Sphinx===1.7.1
+Sphinx===1.6.5
 oslo.config===5.2.0
 tempest===17.2.0
 django-floppyforms===1.7.0
