@@ -79,7 +79,7 @@ icalendar>=3.10  # BSD
 influxdb>=2.9.2  # MIT
 instack-undercloud>=7.0.0  # Apache-2.0
 ironic-lib>=2.5.0  # Apache-2.0
-ipaddress>=1.0.16;python_version<'3.3'  # PSF
+ipaddress>=1.0.17;python_version<'3.3'  # PSF
 iso8601>=0.1.11  # MIT
 Jinja2>=2.8,!=2.9.0,!=2.9.1,!=2.9.2,!=2.9.3,!=2.9.4  # BSD License (3 clause)
 jmespath>=0.9.0  # MIT
@@ -127,7 +127,7 @@ networkx>=1.10,<2.0  # BSD
 neutron-lib>=1.13.0  # Apache-2.0
 notifier>=1.0.3  # Apache-2.0
 oauth2client>=1.5.0,!=4.0.0  # Apache-2.0
-oauthlib>=0.6.0  # BSD
+oauthlib>=0.6.2  # BSD
 openstackdocstheme>=1.18.1  # Apache-2.0
 ordereddict>=1.1  # MIT
 osc-lib>=1.8.0  # Apache-2.0
@@ -276,12 +276,12 @@ python-zunclient>=1.0.0  # Apache-2.0
 
 python-magic>=0.4.13  # MIT
 python-memcached>=1.56  # PSF
-python-dateutil>=2.4.2  # BSD
+python-dateutil>=2.5.3  # BSD
 
 # 2013.6 is the first version of pytz that is PEP 440 compatible.
 pytz>=2013.6  # MIT
 pyudev>=0.16.1  # LGPLv2.1+
-PyYAML>=3.10  # MIT
+PyYAML>=3.12  # MIT
 qpid-python>=0.26;python_version=='2.7'  # Apache-2.0
 raven>=6.0.0  # BSD
 reno>=2.5.0  # Apache-2.0
@@ -418,7 +418,7 @@ selenium>=2.50.1  # Apache-2.0
 # situations as progressive releases of projects are done.
 # Blacklist setuptools 34.0.0-34.3.2 due to https://github.com/pypa/setuptools/issues/951
 # Blacklist setuptools 36.2.0 due to https://github.com/pypa/setuptools/issues/1086
-setuptools>=16.0,!=24.0.0,!=34.0.0,!=34.0.1,!=34.0.2,!=34.0.3,!=34.1.0,!=34.1.1,!=34.2.0,!=34.3.0,!=34.3.1,!=34.3.2,!=36.2.0  # PSF/ZPL
+setuptools>=21.0.0,!=24.0.0,!=34.0.0,!=34.0.1,!=34.0.2,!=34.0.3,!=34.1.0,!=34.1.1,!=34.2.0,!=34.3.0,!=34.3.1,!=34.3.2,!=36.2.0  # PSF/ZPL
 sphinx>=1.6.2,!=1.6.6  # BSD
 sphinx-testing>=0.7.2  # BSD License
 sphinxcontrib-actdiag>=0.8.5  # BSD
