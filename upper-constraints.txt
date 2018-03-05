@@ -5,16 +5,15 @@ enum-compat===0.0.2
 rsa===3.4.2
 restructuredtext-lint===1.1.3
 netmiko===2.0.2
-instack-undercloud===8.2.0
+instack-undercloud===8.3.0
 PasteDeploy===1.5.2
 typing===3.6.4
 python-saharaclient===1.5.0
 python-hnvclient===0.1.0
 Routes===2.4.1
 rtslib-fb===2.1.66
-smmap===0.9.0
 XStatic-Angular-Bootstrap===2.2.0.0
-paunch===2.2.0
+paunch===2.3.0
 WebOb===1.7.4
 sphinxcontrib-actdiag===0.8.5
 docopt===0.6.2
@@ -61,7 +60,7 @@ XStatic-Font-Awesome===4.7.0.0
 nose===1.3.7
 nosehtmloutput===0.0.5
 waitress===1.1.0
-os-refresh-config===8.2.0
+os-refresh-config===8.3.0
 pysnmp===4.4.4
 sphinxcontrib-websupport===1.0.1
 Mako===1.0.7
@@ -85,7 +84,7 @@ pyngus===2.2.2
 Pillow===5.0.0
 zuul-sphinx===0.2.1
 python-mimeparse===1.6.0
-tripleo-common===8.4.0
+tripleo-common===8.5.0
 Tempita===0.5.2
 ply===3.11
 requests-toolbelt===0.8.0
@@ -97,7 +96,7 @@ monasca-common===2.8.0
 hyperframe===5.1.0;python_version=='3.4'
 hyperframe===5.1.0;python_version=='3.5'
 scipy===1.0.0
-rsd-lib===0.2.0
+rsd-lib===0.2.1
 XStatic-Jasmine===2.4.1.1
 python-glanceclient===2.9.1
 pyinotify===0.9.6
@@ -140,7 +139,7 @@ openstack-doc-tools===1.7.0
 frozendict===1.2
 oslo.messaging===5.35.0
 extras===1.0.0
-PyJWT===1.5.3
+PyJWT===1.6.0
 zVMCloudConnector===0.3.5
 paramiko===2.4.0
 ordereddict===1.1
@@ -159,7 +158,7 @@ pycparser===2.18
 mock===2.0.0
 PyYAML===3.12
 beautifulsoup4===4.6.0
-os-net-config===8.2.0
+os-net-config===8.3.0
 ovs===2.8.1
 cryptography===2.1.4
 backports.ssl-match-hostname===3.5.0.1;python_version=='2.7'
@@ -168,7 +167,7 @@ pylxd===2.2.5
 pycryptodomex===3.4.12
 anyjson===0.3.3
 requests-mock===1.4.0
-os-apply-config===8.2.0
+os-apply-config===8.3.0
 oslosphinx===4.18.0
 mox3===0.24.0
 gunicorn===19.7.1
@@ -278,12 +277,11 @@ singledispatch===3.4.0.3;python_version=='2.7'
 oslo.serialization===2.24.0
 warlock===1.3.0
 exabgp===4.0.5
-sphinxcontrib-httpdomain===1.6.0
+sphinxcontrib-httpdomain===1.6.1
 thriftpy===0.3.9;python_version=='2.7'
 murano-pkg-check===0.3.0
 oslo.vmware===2.26.0
 sqlalchemy-migrate===0.11.0
-gitdb===0.6.4
 python-monascaclient===1.10.0
 ldap3===2.4.1
 requests-ntlm===1.1.0
@@ -303,7 +301,7 @@ txaio===2.9.0
 elasticsearch===2.4.1
 django-nose===1.4.5
 XStatic-JQuery.TableSorter===2.14.5.1
-pifpaf===2.0.6
+pifpaf===2.0.7
 pysmi===0.2.2
 blockdiag===1.5.3
 testtools===2.3.0
@@ -335,7 +333,7 @@ pika===0.10.0
 oslo.cache===1.28.0
 WebTest===2.0.29
 openstack.nose-plugin===0.11
-os-collect-config===8.2.0
+os-collect-config===8.3.0
 python-qpid-proton===0.19.0
 python-octaviaclient===1.4.0
 pysaml2===4.0.2
@@ -355,12 +353,12 @@ repoze.who===2.3
 msgpack===0.5.6
 Sphinx===1.6.5
 oslo.config===5.2.0
-tempest===17.2.0
+tempest===18.0.0
 django-floppyforms===1.7.0
 openstackdocstheme===1.18.1
 osc-placement===1.0.0
 zake===0.2.2
-python-rsdclient===0.1.2
+python-rsdclient===0.1.3
 python-magic===0.4.15
 python-solumclient===2.6.1
 PyMySQL===0.8.0
@@ -368,7 +366,7 @@ kubernetes===4.0.0
 httplib2===0.10.3
 bottle===0.12.13
 betamax===0.8.0
-construct===2.9.35
+construct===2.9.36
 pyparsing===2.2.0
 dogpile.cache===0.6.4
 python-barbicanclient===4.6.0
@@ -476,7 +474,7 @@ python-keystoneclient===3.15.0
 demjson===2.2.4
 diskimage-builder===2.11.0
 heat-translator===1.0.0
-python-magnumclient===2.8.0
+python-magnumclient===2.9.0
 docker===2.7.0
 qpid-python===1.36.0.post1;python_version=='2.7'
 contextlib2===0.5.5
