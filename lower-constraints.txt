@@ -193,7 +193,7 @@ XStatic-objectpath===1.2.1.0
 python-manilaclient===1.16.0
 requests===2.14.2
 snowballstemmer===1.2.1
-Jinja2===2.8
+Jinja2===2.10
 XStatic-Bootstrap-SCSS===3.3.7.1
 pyzabbix===0.7.4
 ptyprocess===0.5.2
