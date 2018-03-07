@@ -15,6 +15,7 @@ openstack/blazar-dashboard
 openstack/blazar-nova
 openstack/blazar-tempest-plugin
 openstack/castellan
+openstack/castellan-ui
 openstack/ceilometer-powervm
 openstack/cinder
 openstack/cinder-tempest-plugin
