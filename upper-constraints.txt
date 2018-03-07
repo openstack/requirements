@@ -366,7 +366,7 @@ kubernetes===4.0.0
 httplib2===0.10.3
 bottle===0.12.13
 betamax===0.8.0
-construct===2.9.36
+construct===2.8.22
 pyparsing===2.2.0
 dogpile.cache===0.6.4
 python-barbicanclient===4.6.0
