@@ -94,7 +94,7 @@ suds-jurko===0.6
 python-swiftclient===3.2.0
 pyOpenSSL===16.2.0
 validictory===1.1.1
-monasca-common===1.4.0
+monasca-common===2.7.0
 hyperframe===4.0.2
 cssutils===1.0.2
 scipy===0.17.1
