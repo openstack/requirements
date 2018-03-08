@@ -50,8 +50,8 @@ def check_blacklist_coverage(global_reqs, constraints, blacklist,
     # the constraints file.
     dupes = constrained.intersection(set(blacklist.keys()))
     for d in dupes:
-        yield ('%r appears in both blacklist.txt and upper-constraints.txt'
-               % d)
+        yield ('%r appears in both blacklist.txt and %s'
+               % (d, constraints_list_name))
 
 
 def check_format(parsed_constraints):
@@ -71,8 +71,8 @@ def check_compatible(global_reqs, constraints):
     those constraints.
 
     * Load global-requirements
-    * Load upper-constraints.txt
-    * Check that every version within upper-constraints.txt is either
+    * Load given constraints.txt
+    * Check that every version within given constraints.txt is either
 
       A) Missing from global-requirements - its a transitive dep or
          a removed dep.
@@ -83,7 +83,7 @@ def check_compatible(global_reqs, constraints):
          requirements is good enough proxy to catch most cases.
 
     :param global_reqs: A set of global requirements after parsing.
-    :param constraints: The same from upper-constraints.txt.
+    :param constraints: The same from given constraints.txt.
     :return: A list of the error messages for constraints that failed.
     """
     def satisfied(reqs, name, version, failures):

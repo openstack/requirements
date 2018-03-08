@@ -15,6 +15,7 @@
 """
 
 import argparse
+import os
 
 from openstack_requirements import constraints
 from openstack_requirements import requirement
@@ -49,15 +50,15 @@ def main():
 
     # Check the format of the constraints file.
     print('\nChecking %s' % args.upper_constraints)
-    upper_constraints = read_requirements_file(args.upper_constraints)
-    for msg in constraints.check_format(upper_constraints):
+    constraints_txt = read_requirements_file(args.upper_constraints)
+    for msg in constraints.check_format(constraints_txt):
         print(msg)
         error_count += 1
 
     # Check that the constraints and requirements are compatible.
     print('\nChecking %s' % args.global_requirements)
     global_reqs = read_requirements_file(args.global_requirements)
-    for msg in constraints.check_compatible(global_reqs, upper_constraints):
+    for msg in constraints.check_compatible(global_reqs, constraints_txt):
         print(msg)
         error_count += 1
 
@@ -83,10 +84,9 @@ def main():
     # appear in exactly one of the constraints file or the blacklist.
     print('\nChecking %s' % args.blacklist)
     blacklist = read_requirements_file(args.blacklist)
-    for msg in constraints.check_blacklist_coverage(global_reqs,
-                                                    upper_constraints,
-                                                    blacklist,
-                                                    'upper-constraints.txt'):
+    for msg in constraints.check_blacklist_coverage(
+            global_reqs, constraints_txt, blacklist,
+            os.path.basename(args.upper_constraints)):
         print(msg)
         error_count += 1
 
