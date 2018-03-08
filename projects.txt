@@ -112,7 +112,6 @@ openstack/networking-bgpvpn
 openstack/networking-dpm
 openstack/networking-fujitsu
 openstack/networking-generic-switch
-openstack/networking-hpe
 openstack/networking-hyperv
 openstack/networking-l2gw
 openstack/networking-l2gw-tempest-plugin
@@ -299,7 +298,6 @@ openstack/taskflow
 openstack/tempest
 openstack/tosca-parser
 openstack/tricircle
-openstack/trio2o
 openstack/tripleo-common
 openstack/tripleo-common-tempest-plugin
 openstack/tripleo-heat-templates
