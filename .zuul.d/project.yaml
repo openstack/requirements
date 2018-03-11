@@ -42,6 +42,7 @@
         - cross-nova-py35:
             branches: ^(?!stable/(newton|ocata)).*$
         - cross-nova-functional
+        - cross-osc-build-sphinx-docs
         - cross-swift-py27
         - cross-swift-py35:
             branches: ^(?!stable/(newton|ocata)).*$
@@ -86,6 +87,7 @@
             branches: ^(?!stable/(newton|ocata)).*$
             files: ^upper-constraints.txt$
         - cross-nova-functional
+        - cross-osc-build-sphinx-docs
         - cross-swift-py27
         - cross-swift-py35:
             branches: ^(?!stable/(newton|ocata)).*$
