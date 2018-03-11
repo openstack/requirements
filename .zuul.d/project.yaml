@@ -16,36 +16,27 @@
         - openstack-tox-validate
         - requirements-tox-babel
         - requirements-tox-bindep:
-            branches: ^(?!stable/(newton|ocata|pike)).*$
             voting: false
         - requirements-tox-py27-check-lc
         - requirements-tox-py27-check-uc
-        - requirements-tox-py35-check-uc:
-            branches: ^(?!stable/(newton|ocata|pike)).*$
+        - requirements-tox-py35-check-uc
         - requirements-tox-validate-projects
         - cross-cinder-py27
-        - cross-cinder-py35:
-            branches: ^(?!stable/(newton|ocata)).*$
+        - cross-cinder-py35
         - cross-glance-py27
-        - cross-glance-py35:
-            branches: ^(?!stable/(newton|ocata)).*$
+        - cross-glance-py35
         - cross-horizon-py27
-        - cross-horizon-py35:
-            branches: ^(?!stable/(newton|ocata)).*$
+        - cross-horizon-py35
         - cross-keystone-py27
-        - cross-keystone-py35:
-            branches: ^(?!stable/(newton|ocata)).*$
+        - cross-keystone-py35
         - cross-neutron-py27
-        - cross-neutron-py35:
-            branches: ^(?!stable/(newton|ocata)).*$
+        - cross-neutron-py35
         - cross-nova-py27
-        - cross-nova-py35:
-            branches: ^(?!stable/(newton|ocata)).*$
+        - cross-nova-py35
         - cross-nova-functional
         - cross-osc-build-sphinx-docs
         - cross-swift-py27
-        - cross-swift-py35:
-            branches: ^(?!stable/(newton|ocata)).*$
+        - cross-swift-py35
     gate:
       queue: integrated
       jobs:
@@ -64,30 +55,22 @@
         - openstack-tox-validate
         - requirements-tox-babel
         - requirements-tox-py27-check-uc
-        - requirements-tox-py35-check-uc:
-            branches: ^(?!stable/(newton|ocata|pike)).*$
+        - requirements-tox-py35-check-uc
         - requirements-tox-validate-projects
         - cross-cinder-py27
-        - cross-cinder-py35:
-            branches: ^(?!stable/(newton|ocata)).*$
+        - cross-cinder-py35
         - cross-glance-py27
-        - cross-glance-py35:
-            branches: ^(?!stable/(newton|ocata)).*$
+        - cross-glance-py35
         - cross-horizon-py27
-        - cross-horizon-py35:
-            branches: ^(?!stable/(newton|ocata)).*$
+        - cross-horizon-py35
         - cross-keystone-py27
-        - cross-keystone-py35:
-            branches: ^(?!stable/(newton|ocata)).*$
+        - cross-keystone-py35
         - cross-neutron-py27
-        - cross-neutron-py35:
-            branches: ^(?!stable/(newton|ocata)).*$
+        - cross-neutron-py35
         - cross-nova-py27
         - cross-nova-py35:
-            branches: ^(?!stable/(newton|ocata)).*$
             files: ^upper-constraints.txt$
         - cross-nova-functional
         - cross-osc-build-sphinx-docs
         - cross-swift-py27
-        - cross-swift-py35:
-            branches: ^(?!stable/(newton|ocata)).*$
+        - cross-swift-py35
