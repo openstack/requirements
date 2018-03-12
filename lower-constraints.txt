@@ -487,7 +487,7 @@ qpid-python===0.26
 contextlib2===0.4.0
 XStatic-Angular-lrdragndrop===1.0.2.2
 python-congressclient===1.9.0
-ovsdbapp===0.9.1
+ovsdbapp===0.10.0
 rjsmin===1.0.12
 icalendar===3.10
 decorator===3.4.0
