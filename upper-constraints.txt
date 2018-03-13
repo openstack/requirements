@@ -114,7 +114,7 @@ oslotest===3.2.0
 jsonpointer===2.0
 defusedxml===0.5.0
 netaddr===0.7.19
-pyghmi===1.0.40
+pyghmi===1.0.42
 sphinxcontrib-blockdiag===1.5.5
 kaitaistruct===0.8;python_version=='3.4'
 kaitaistruct===0.8;python_version=='3.5'
@@ -141,7 +141,7 @@ oslo.messaging===5.35.0
 extras===1.0.0
 PyJWT===1.6.0
 zVMCloudConnector===1.0.0
-paramiko===2.4.0
+paramiko===2.4.1
 ordereddict===1.1
 reno===2.7.0
 unicodecsv===0.14.1;python_version=='2.7'
@@ -256,7 +256,7 @@ docutils===0.14
 notifier===1.0.3
 pycrypto===2.6.1
 ujson===1.35
-selenium===3.10.0
+selenium===3.11.0
 python-glareclient===0.5.2
 mypy===0.570;python_version=='3.4'
 mypy===0.570;python_version=='3.5'
@@ -348,7 +348,7 @@ PyNaCl===1.2.1
 osc-lib===1.9.0
 python-consul===0.7.2
 seqdiag===0.9.5
-numpy===1.14.1
+numpy===1.14.2
 repoze.who===2.3
 msgpack===0.5.6
 Sphinx===1.6.7
@@ -378,7 +378,7 @@ msgpack-python===0.5.6
 proboscis===1.2.6.0
 fortiosclient===0.0.2
 stevedore===1.28.0
-botocore===1.9.6
+botocore===1.9.7
 xmltodict===0.11.0
 pyasn1===0.4.2
 oslo.rootwrap===5.13.0
