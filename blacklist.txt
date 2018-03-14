@@ -12,3 +12,6 @@ pep8
 pyflakes
 pycodestyle
 pylint
+# Only temporarily
+neutron
+horizon
