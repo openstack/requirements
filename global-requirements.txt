@@ -120,7 +120,7 @@ mypy>=0.560;python_version>='3.4'  # MIT
 ndg-httpsclient>=0.4.2;python_version<'3.0'  # BSD
 netaddr>=0.7.18  # BSD
 netifaces>=0.10.4  # MIT
-netmiko>=1.2.5  # MIT
+netmiko>=2.0.2  # MIT
 # Pinned to 1.0 branch until projects update, see:
 #  https://bugs.launchpad.net/openstack-requirements/+bug/1718576
 networkx>=1.10,<2.0  # BSD
