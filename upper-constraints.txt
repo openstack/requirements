@@ -435,7 +435,7 @@ wsproto===0.11.0;python_version=='3.4'
 wsproto===0.11.0;python_version=='3.5'
 pymemcache===1.4.4
 wrapt===1.10.11
-oslo.privsep===1.27.0
+oslo.privsep===1.28.0
 zope.interface===4.4.3
 oslo.policy===1.33.1
 python-muranoclient===1.0.1
