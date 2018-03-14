@@ -44,7 +44,7 @@ munch===2.2.0
 attrs===17.4.0
 microversion-parse===0.1.4
 Pint===0.8.1
-oslo.i18n===3.19.0
+oslo.i18n===3.20.0
 jsonpath-rw-ext===1.1.3
 python-mistralclient===3.3.0
 oslo.context===2.20.0
