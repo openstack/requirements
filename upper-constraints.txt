@@ -508,7 +508,7 @@ marathon===0.9.3
 fasteners===0.14.1
 sortedcontainers===1.5.9;python_version=='3.4'
 sortedcontainers===1.5.9;python_version=='3.5'
-python-tackerclient===0.11.0
+python-tackerclient===0.12.0
 python-heatclient===1.14.0
 kafka-python===1.4.2
 oslo.utils===3.35.0
