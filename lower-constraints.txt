@@ -459,7 +459,7 @@ watchdog===0.8.3
 gevent===1.2.2
 os-vif===1.7.0
 python-masakariclient===3.0.1
-Werkzeug===0.7
+Werkzeug===0.9
 pyasn1-modules===0.0.6
 APScheduler===3.4.0
 pip===8.0.3
