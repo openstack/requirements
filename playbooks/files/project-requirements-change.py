@@ -104,7 +104,9 @@ def grab_args():
     parser.add_argument('branch', nargs='?', default='master',
                         help='target branch for diffs')
     parser.add_argument('--zc', help='what zuul cloner to call')
-    parser.add_argument('--reqs', help='use a specified requirements tree')
+    parser.add_argument('--reqs', help='use a specified requirements tree',
+                        default=os.path.expanduser(
+                            '~/src/git.openstack.org/openstack/requirements'))
 
     return parser.parse_args()
 
@@ -152,11 +154,10 @@ def main():
     branch = args.branch
     os.chdir(args.src_dir)
     failed = False
+    reqdir = args.reqs
 
     # build a list of requirements from the global list in the
     # openstack/requirements project so we can match them to the changes
-    reqdir = os.path.expanduser(
-        '~/src/git.openstack.org/openstack/requirements')
     with tempdir() as reqroot:
 
         install_and_load_requirements(reqroot, reqdir)
