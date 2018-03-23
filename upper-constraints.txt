@@ -4,7 +4,7 @@ chardet===3.0.4
 enum-compat===0.0.2
 rsa===3.4.2
 restructuredtext-lint===1.1.3
-netmiko===2.1.0
+netmiko===2.1.1
 instack-undercloud===8.3.0
 PasteDeploy===1.5.2
 typing===3.6.4
@@ -29,7 +29,7 @@ python-ironic-inspector-client===3.1.1
 lxml===4.2.1
 python-kingbirdclient===0.2.1
 setproctitle===1.1.10
-pytest===3.4.2
+pytest===3.5.0
 python-etcd===0.4.5
 raven===6.6.0
 cursive===0.2.1
@@ -94,8 +94,6 @@ suds-jurko===0.6
 python-swiftclient===3.5.0
 pyOpenSSL===17.5.0
 monasca-common===2.8.0
-hyperframe===5.1.0;python_version=='3.4'
-hyperframe===5.1.0;python_version=='3.5'
 scipy===1.0.0
 rsd-lib===0.2.1
 XStatic-Jasmine===2.4.1.1
@@ -117,8 +115,6 @@ defusedxml===0.5.0
 netaddr===0.7.19
 pyghmi===1.0.42
 sphinxcontrib-blockdiag===1.5.5
-kaitaistruct===0.8;python_version=='3.4'
-kaitaistruct===0.8;python_version=='3.5'
 gnocchiclient===7.0.1
 sphinxcontrib.datatemplates===0.1.0
 jsonpath-rw===1.4.0
@@ -130,7 +126,7 @@ semantic-version===2.6.0
 virtualbmc===1.3.0
 deprecation===2.0
 SQLAlchemy===1.2.5
-pyroute2===0.4.21
+pyroute2===0.5.0
 google-auth===1.4.1
 kazoo===2.4.0
 XStatic-roboto-fontface===0.5.0.0
@@ -153,15 +149,13 @@ graphviz===0.8.2
 PyKMIP===0.7.0
 whereto===0.4.0
 python-subunit===1.2.0
-tornado===4.5.3;python_version=='3.4'
-tornado===4.5.3;python_version=='3.5'
 pycparser===2.18
 mock===2.0.0
 PyYAML===3.12
 beautifulsoup4===4.6.0
 os-net-config===8.3.0
 ovs===2.9.0
-cryptography===2.1.4
+cryptography===2.2.1
 backports.ssl-match-hostname===3.5.0.1;python_version=='2.7'
 openstack-release-test===0.13.0
 pylxd===2.2.6
@@ -172,7 +166,7 @@ os-apply-config===8.3.0
 oslosphinx===4.18.0
 mox3===0.25.0
 gunicorn===19.7.1
-textfsm===0.3.2
+textfsm===0.4.0
 unittest2===1.1.0
 django-compressor===2.2
 libvirt-python===4.0.0
@@ -182,8 +176,6 @@ python-novaclient===10.1.0
 bcrypt===3.1.4
 os-client-config===1.29.0
 XStatic-Angular-Gettext===2.3.8.0
-h11===0.7.0;python_version=='3.4'
-h11===0.7.0;python_version=='3.5'
 Pygments===2.2.0
 XStatic-Hogan===2.0.0.2
 XStatic-objectpath===1.2.1.0
@@ -195,8 +187,6 @@ XStatic-Bootstrap-SCSS===3.3.7.1
 pyzabbix===0.7.4
 ptyprocess===0.5.2
 amqp===2.2.2
-ruamel.yaml===0.15.37;python_version=='3.4'
-ruamel.yaml===0.15.37;python_version=='3.5'
 websockify===0.8.0
 XStatic-JQuery.quicksearch===2.0.3.1
 mpmath===1.0.0
@@ -220,8 +210,6 @@ dnspython3===1.15.0;python_version=='3.4'
 dnspython3===1.15.0;python_version=='3.5'
 ldappool===2.2.0
 termcolor===1.1.0
-hpack===3.0.0;python_version=='3.4'
-hpack===3.0.0;python_version=='3.5'
 hiredis===0.2.0
 google-api-python-client===1.6.5
 castellan===0.17.0
@@ -247,8 +235,6 @@ nodeenv===1.3.0
 pylev===1.3.0
 python-searchlightclient===1.3.0
 oslo.middleware===3.35.0
-brotlipy===0.7.0;python_version=='3.4'
-brotlipy===0.7.0;python_version=='3.5'
 XStatic-mdi===1.4.57.0
 django-pyscss===2.0.2
 uritemplate===3.0.0
@@ -272,8 +258,6 @@ pathlib2===2.3.0
 pydotplus===2.0.2
 flask-oslolog===0.1
 stestr===2.0.0
-urwid===2.0.1;python_version=='3.4'
-urwid===2.0.1;python_version=='3.5'
 singledispatch===3.4.0.3;python_version=='2.7'
 oslo.serialization===2.25.0
 warlock===1.3.0
@@ -297,7 +281,7 @@ packaging===17.1
 flask-keystone===0.2
 nose-exclude===0.5.0
 psutil===5.4.3
-py===1.5.2
+py===1.5.3
 txaio===2.9.0
 elasticsearch===2.4.1
 django-nose===1.4.5
@@ -348,6 +332,7 @@ sphinxmark===0.1.19
 PyNaCl===1.2.1
 osc-lib===1.10.0
 python-consul===0.7.2
+more-itertools===4.1.0
 seqdiag===0.9.5
 numpy===1.14.2
 repoze.who===2.3
@@ -371,8 +356,6 @@ construct===2.8.22
 pyparsing===2.2.0
 dogpile.cache===0.6.5
 python-barbicanclient===4.6.0
-blinker===1.4;python_version=='3.4'
-blinker===1.4;python_version=='3.5'
 tricircleclient===0.3.0
 WSME===0.9.2
 msgpack-python===0.5.6
@@ -405,8 +388,6 @@ systemd-python===234
 python-memcached===1.59
 openstacksdk===0.12.0
 six===1.11.0
-h2===3.0.1;python_version=='3.4'
-h2===3.0.1;python_version=='3.5'
 dulwich===0.19.0
 pykafka===2.7.0
 kombu===4.1.0
@@ -430,8 +411,6 @@ oslo.db===4.35.0
 simplegeneric===0.8.1
 python-pcre===0.7
 abclient===0.2.3
-wsproto===0.11.0;python_version=='3.4'
-wsproto===0.11.0;python_version=='3.5'
 pymemcache===1.4.4
 wrapt===1.10.11
 oslo.privsep===1.28.0
@@ -489,7 +468,7 @@ cffi===1.11.5
 futurist===1.6.0
 jsonschema===2.6.0
 python-blazarclient===1.0.1
-alembic===0.9.8
+alembic===0.9.9
 glance-store===0.23.0
 sphinx-testing===0.7.2
 dnspython===1.15.0
@@ -507,8 +486,6 @@ Flask===0.12.2
 happybase===1.1.0;python_version=='2.7'
 marathon===0.9.3
 fasteners===0.14.1
-sortedcontainers===1.5.9;python_version=='3.4'
-sortedcontainers===1.5.9;python_version=='3.5'
 python-tackerclient===0.12.0
 python-heatclient===1.14.0
 kafka-python===1.4.2
