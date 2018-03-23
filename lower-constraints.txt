@@ -43,7 +43,7 @@ requests-aws===0.1.4
 alabaster===0.7.10
 pbr===2.0.0
 munch===2.1.0
-microversion-parse===0.1.2
+microversion-parse===0.2.1
 Pint===0.5
 oslo.i18n===3.15.3
 jsonpath-rw-ext===1.1.2
