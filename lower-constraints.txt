@@ -446,7 +446,7 @@ ndg-httpsclient===0.4.2
 spec-cleaner===0.8.2
 repoze.lru===0.7
 rfc3986===0.3.1
-tenacity===3.2.1
+tenacity===4.4.0
 XStatic-Magic-Search===0.2.5.1
 python-designateclient===2.7.0
 future===0.16.0
