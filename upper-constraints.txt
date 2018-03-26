@@ -139,7 +139,6 @@ extras===1.0.0
 PyJWT===1.6.1
 zVMCloudConnector===1.0.0
 paramiko===2.4.1
-ordereddict===1.1
 reno===2.7.0
 unicodecsv===0.14.1;python_version=='2.7'
 imagesize===1.0.0

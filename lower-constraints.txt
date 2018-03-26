@@ -149,7 +149,6 @@ PyJWT===1.0.1
 zVMCloudConnector===0.3.2
 et-xmlfile===1.0.1
 paramiko===2.0.0
-ordereddict===1.1
 reno===2.5.0
 unicodecsv===0.8.0
 imagesize===0.7.1
