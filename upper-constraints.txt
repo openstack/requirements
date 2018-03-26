@@ -94,7 +94,7 @@ suds-jurko===0.6
 python-swiftclient===3.5.0
 pyOpenSSL===17.5.0
 monasca-common===2.8.0
-scipy===1.0.0
+scipy===1.0.1
 rsd-lib===0.2.1
 XStatic-Jasmine===2.4.1.1
 python-glanceclient===2.9.1
@@ -245,8 +245,8 @@ pycrypto===2.6.1
 ujson===1.35
 selenium===3.11.0
 python-glareclient===0.5.2
-mypy===0.570;python_version=='3.4'
-mypy===0.570;python_version=='3.5'
+mypy===0.580;python_version=='3.4'
+mypy===0.580;python_version=='3.5'
 mistral-lib===0.4.0
 dogtag-pki===10.3.5.1
 sphinxcontrib-seqdiag===0.8.5
@@ -400,7 +400,7 @@ subprocess32===3.2.7;python_version=='2.7'
 etcd3gw===0.2.1
 pyldap===3.0.0
 Flask-RESTful===0.3.6
-GitPython===2.1.8
+GitPython===2.1.9
 python-ironicclient===2.3.0
 XStatic===1.0.1
 XStatic-Angular-FileUpload===12.0.4.0
@@ -496,7 +496,7 @@ requests-kerberos===0.12.0
 itsdangerous===0.24
 XStatic-jquery-ui===1.12.0.1
 monasca-statsd===1.9.0
-python-dateutil===2.7.0
+python-dateutil===2.7.1
 virtualenv===15.2.0
 colorama===0.3.9
 ironic-lib===2.12.0
