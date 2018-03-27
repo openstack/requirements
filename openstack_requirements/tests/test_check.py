@@ -66,7 +66,7 @@ class TestIsReqInGlobalReqs(testtools.TestCase):
 
     def test_min_mismatch(self):
         req = requirement.parse('name>=1.3,!=1.4')['name'][0][0]
-        self.assertFalse(
+        self.assertTrue(
             check._is_requirement_in_global_reqs(
                 req,
                 self.global_reqs['name'],
@@ -84,11 +84,35 @@ class TestIsReqInGlobalReqs(testtools.TestCase):
 
     def test_missing_exclusion(self):
         req = requirement.parse('name>=1.2')['name'][0][0]
-        self.assertFalse(
+        self.assertTrue(
             check._is_requirement_in_global_reqs(
                 req,
                 self.global_reqs['name'],
             )
+        )
+
+
+class TestGetExclusions(testtools.TestCase):
+
+    def test_none(self):
+        req = list(check.get_global_reqs('name>=1.2')['name'])[0]
+        self.assertEqual(
+            set(),
+            check._get_exclusions(req),
+        )
+
+    def test_one(self):
+        req = list(check.get_global_reqs('name>=1.2,!=1.4')['name'])[0]
+        self.assertEqual(
+            set(['!=1.4']),
+            check._get_exclusions(req),
+        )
+
+    def test_cap(self):
+        req = list(check.get_global_reqs('name>=1.2,!=1.4,<2.0')['name'])[0]
+        self.assertEqual(
+            set(['!=1.4', '<2.0']),
+            check._get_exclusions(req),
         )
 
 
@@ -212,9 +236,32 @@ class TestValidateOne(testtools.TestCase):
             )
         )
 
-    def test_new_item_mismatches_global_list(self):
-        # If the new item does not match the global value, that is an
-        # error.
+    def test_new_item_lower_min(self):
+        # If the new item has a lower minimum value than the global
+        # list, that is OK.
+        reqs = [
+            r
+            for r, line in requirement.parse('name>=1.1,!=1.4')['name']
+        ]
+        branch_reqs = check.RequirementsList(
+            'testproj',
+            {'requirements': {'requirements.txt': ''}},
+        )
+        branch_reqs.process(False)
+        global_reqs = check.get_global_reqs('name>=1.2,!=1.4')
+        self.assertFalse(
+            check._validate_one(
+                'name',
+                reqs=reqs,
+                branch_reqs=branch_reqs,
+                blacklist=requirement.parse(''),
+                global_reqs=global_reqs,
+            )
+        )
+
+    def test_new_item_extra_exclusion(self):
+        # If the new item includes an exclusion that is not present in
+        # the global list that is not OK.
         reqs = [
             r
             for r, line in requirement.parse('name>=1.2,!=1.4,!=1.5')['name']
@@ -226,6 +273,29 @@ class TestValidateOne(testtools.TestCase):
         branch_reqs.process(False)
         global_reqs = check.get_global_reqs('name>=1.2,!=1.4')
         self.assertTrue(
+            check._validate_one(
+                'name',
+                reqs=reqs,
+                branch_reqs=branch_reqs,
+                blacklist=requirement.parse(''),
+                global_reqs=global_reqs,
+            )
+        )
+
+    def test_new_item_missing_exclusion(self):
+        # If the new item does not include an exclusion that is
+        # present in the global list that is OK.
+        reqs = [
+            r
+            for r, line in requirement.parse('name>=1.2')['name']
+        ]
+        branch_reqs = check.RequirementsList(
+            'testproj',
+            {'requirements': {'requirements.txt': ''}},
+        )
+        branch_reqs.process(False)
+        global_reqs = check.get_global_reqs('name>=1.2,!=1.4')
+        self.assertFalse(
             check._validate_one(
                 'name',
                 reqs=reqs,

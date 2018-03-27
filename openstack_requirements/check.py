@@ -72,17 +72,37 @@ class RequirementsList(object):
             self.reqs_by_file[name] = self.extract_reqs(content, strict)
 
 
+def _get_exclusions(req):
+    return set(
+        spec
+        for spec in req.specifiers.split(',')
+        if '!=' in spec or '<' in spec
+    )
+
+
 def _is_requirement_in_global_reqs(req, global_reqs):
-    # Compare all fields except the extras field as the global
-    # requirements should not have any lines with the extras syntax
-    # example: oslo.db[xyz]<1.2.3
+    req_exclusions = _get_exclusions(req)
     for req2 in global_reqs:
+
         if (req.package == req2.package and
            req.location == req2.location and
-           req.specifiers == req2.specifiers and
            req.markers == req2.markers and
            req.comment == req2.comment):
-            return True
+            # This matches the right package and other properties, so
+            # ensure that any exclusions are a subset of the global
+            # set.
+            global_exclusions = _get_exclusions(req2)
+            if req_exclusions.issubset(global_exclusions):
+                return True
+            else:
+                print(
+                    "Requirement for package {} "
+                    "has an exclusion not found in the "
+                    "global list: {} vs. {}".format(
+                        req.package, req_exclusions, global_exclusions)
+                )
+                return False
+
     return False
 
 
@@ -103,7 +123,7 @@ def get_global_reqs(content):
 
 def _validate_one(name, reqs, branch_reqs, blacklist, global_reqs):
     "Returns True if there is a failure."
-    print(name, reqs, branch_reqs, blacklist, global_reqs)
+    print('_validate_one', name, reqs, branch_reqs, blacklist, global_reqs)
     if (name in branch_reqs.reqs and
        reqs == branch_reqs.reqs[name]):
         # Unchanged [or a change that preserves a current value]
@@ -117,8 +137,6 @@ def _validate_one(name, reqs, branch_reqs, blacklist, global_reqs):
         print("Requirement %s not in openstack/requirements" %
               str(reqs))
         return True
-    if reqs == global_reqs[name]:
-        return False
     counts = {}
     for req in reqs:
         if req.extras:
@@ -141,6 +159,7 @@ def _validate_one(name, reqs, branch_reqs, blacklist, global_reqs):
                       ('[%s]' % extra) if extra else '',
                       len(global_reqs[name])))
             return True
+    return False
 
 
 def validate(head_reqs, branch_reqs, blacklist, global_reqs):
