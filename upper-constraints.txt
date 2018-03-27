@@ -199,7 +199,7 @@ funcparserlib===0.3.6
 passlib===1.7.1
 dib-utils===0.0.11
 cliff===2.11.0
-os-brick===2.3.0
+os-brick===2.4.0
 trollius===2.2
 scp===0.10.2
 python-zaqarclient===1.9.0
