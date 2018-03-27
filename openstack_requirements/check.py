@@ -19,6 +19,9 @@ import collections
 from openstack_requirements import project
 from openstack_requirements import requirement
 
+from packaging import markers
+from packaging import specifiers
+
 
 class RequirementsList(object):
     def __init__(self, name, project):
@@ -180,4 +183,126 @@ def validate(head_reqs, branch_reqs, blacklist, global_reqs):
                 or failed
             )
 
+    return failed
+
+
+def _find_constraint(req, constraints):
+    """Return the constraint matching the markers for req.
+
+    Given a requirement, find the constraint with matching markers.
+    If none match, find a constraint without any markers at all.
+    Otherwise return None.
+    """
+    if req.markers:
+        req_markers = markers.Marker(req.markers)
+        for constraint_setting, _ in constraints:
+            if constraint_setting.markers == req.markers:
+                return constraint_setting
+            # NOTE(dhellmann): This is a very naive attempt to check
+            # marker compatibility that relies on internal
+            # implementation details of the packaging library.  The
+            # best way to ensure the constraint and requirements match
+            # is to use the same marker string in the corresponding
+            # lines.
+            c_markers = markers.Marker(constraint_setting.markers)
+            env = {
+                str(var): str(val)
+                for var, op, val in c_markers._markers  # WARNING: internals
+            }
+            if req_markers.evaluate(env):
+                return constraint_setting
+    # Try looking for a constraint without any markers.
+    for constraint_setting, _ in constraints:
+        if not constraint_setting.markers:
+            return constraint_setting
+    return None
+
+
+def validate_lower_constraints(req_list, constraints, blacklist):
+    """Return True if there is an error.
+
+    :param reqs: RequirementsList for the head of the branch
+    :param constraints: Parsed lower-constraints.txt or None
+
+    """
+    if constraints is None:
+        return False
+
+    parsed_constraints = requirement.parse(constraints)
+
+    failed = False
+
+    for fname, freqs in req_list.reqs_by_file.items():
+
+        if fname == 'doc/requirements.txt':
+            # Skip things that are not needed for unit or functional
+            # tests.
+            continue
+
+        print("Validating lower constraints of {}".format(fname))
+
+        for name, reqs in freqs.items():
+
+            if name in blacklist:
+                continue
+
+            if name not in parsed_constraints:
+                print('Package {!r} is used in {} '
+                      'but not in lower-constraints.txt'.format(
+                          name, fname))
+                failed = True
+                continue
+
+            for req in reqs:
+                spec = specifiers.SpecifierSet(req.specifiers)
+                # FIXME(dhellmann): This will only find constraints
+                # where the markers match the requirements list
+                # exactly, so we can't do things like use different
+                # constrained versions for different versions of
+                # python 3 if the requirement range is expressed as
+                # python_version>3.0. We can support different
+                # versions if there is a different requirement
+                # specification for each version of python. I don't
+                # really know how smart we want this to be, because
+                # I'm not sure we want to support extremely
+                # complicated dependency sets.
+                constraint_setting = _find_constraint(
+                    req,
+                    parsed_constraints[name],
+                )
+                if not constraint_setting:
+                    print('Unable to find constraint for {} '
+                          'matching {!r} or without any markers.'.format(
+                              name, req.markers))
+                    failed = True
+                    continue
+                print('req', req)
+                print('constraint_setting', constraint_setting)
+
+                version = constraint_setting.specifiers.lstrip('=')
+
+                if not spec.contains(version):
+                    print('Package {!r} is constrained to {} '
+                          'which is incompatible with the settings {} '
+                          'from {}.'.format(
+                              name, version, req, fname))
+                    failed = True
+
+                min = [
+                    s
+                    for s in req.specifiers.split(',')
+                    if '>' in s
+                ]
+                if not min:
+                    # No minimum specified. Ignore this and let some
+                    # other validation trap the error.
+                    continue
+
+                expected = min[0].lstrip('>=')
+                if version != expected:
+                    print('Package {!r} is constrained to {} '
+                          'which does not match '
+                          'the minimum version specifier {} in {}'.format(
+                              name, version, expected, fname))
+                    failed = True
     return failed

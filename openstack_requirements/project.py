@@ -132,13 +132,17 @@ def read(root):
     target_files = [
         'requirements.txt', 'tools/pip-requires',
         'test-requirements.txt', 'tools/test-requires',
-        'doc/requirements.txt'
+        'doc/requirements.txt',
     ]
     for py_version in (2, 3):
         target_files.append('requirements-py%s.txt' % py_version)
         target_files.append('test-requirements-py%s.txt' % py_version)
     for target_file in target_files:
         _safe_read(result, target_file, output=requirements)
+    # Read lower-constraints.txt and ensure the key is always present
+    # in case the file is missing.
+    result['lower-constraints.txt'] = None
+    _safe_read(result, 'lower-constraints.txt')
     return result
 
 
