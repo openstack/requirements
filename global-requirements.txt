@@ -422,6 +422,7 @@ setuptools>=21.0.0,!=24.0.0,!=34.0.0,!=34.0.1,!=34.0.2,!=34.0.3,!=34.1.0,!=34.1.
 sphinx>=1.6.2,!=1.6.6,!=1.6.7  # BSD
 sphinx-testing>=0.7.2  # BSD License
 sphinxcontrib-actdiag>=0.8.5  # BSD
+sphinxcontrib-apidoc>=0.2.0  # BSD
 sphinxcontrib-blockdiag>=1.5.4  # BSD
 sphinxcontrib-httpdomain>=1.3.0  # BSD
 sphinxcontrib-nwdiag>=0.9.5  # BSD
