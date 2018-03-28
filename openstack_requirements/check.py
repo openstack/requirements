@@ -101,6 +101,48 @@ def get_global_reqs(content):
     return global_reqs
 
 
+def _validate_one(name, reqs, branch_reqs, blacklist, global_reqs):
+    "Returns True if there is a failure."
+    print(name, reqs, branch_reqs, blacklist, global_reqs)
+    if (name in branch_reqs.reqs and
+       reqs == branch_reqs.reqs[name]):
+        # Unchanged [or a change that preserves a current value]
+        return False
+    if name in blacklist:
+        # Blacklisted items are not synced and are managed
+        # by project teams as they see fit, so no further
+        # testing is needed.
+        return False
+    if name not in global_reqs:
+        print("Requirement %s not in openstack/requirements" %
+              str(reqs))
+        return True
+    if reqs == global_reqs[name]:
+        return False
+    counts = {}
+    for req in reqs:
+        if req.extras:
+            for extra in req.extras:
+                counts[extra] = counts.get(extra, 0) + 1
+        else:
+            counts[''] = counts.get('', 0) + 1
+        if not _is_requirement_in_global_reqs(
+                req, global_reqs[name]):
+            print("Requirement for package %s : %s does "
+                  "not match openstack/requirements value : %s" % (
+                      name, str(req), str(global_reqs[name])))
+            return True
+    for extra, count in counts.items():
+        if count != len(global_reqs[name]):
+            print("Package %s%s requirement does not match "
+                  "number of lines (%d) in "
+                  "openstack/requirements" % (
+                      name,
+                      ('[%s]' % extra) if extra else '',
+                      len(global_reqs[name])))
+            return True
+
+
 def validate(head_reqs, branch_reqs, blacklist, global_reqs):
     failed = False
     # iterate through the changing entries and see if they match the global
@@ -108,42 +150,15 @@ def validate(head_reqs, branch_reqs, blacklist, global_reqs):
     for fname, freqs in head_reqs.reqs_by_file.items():
         print("Validating %(fname)s" % {'fname': fname})
         for name, reqs in freqs.items():
-            counts = {}
-            if (name in branch_reqs.reqs and
-               reqs == branch_reqs.reqs[name]):
-                # Unchanged [or a change that preserves a current value]
-                continue
-            if name in blacklist:
-                # Blacklisted items are not synced and are managed
-                # by project teams as they see fit, so no further
-                # testing is needed.
-                continue
-            if name not in global_reqs:
-                failed = True
-                print("Requirement %s not in openstack/requirements" %
-                      str(reqs))
-                continue
-            if reqs == global_reqs[name]:
-                continue
-            for req in reqs:
-                if req.extras:
-                    for extra in req.extras:
-                        counts[extra] = counts.get(extra, 0) + 1
-                else:
-                    counts[''] = counts.get('', 0) + 1
-                if not _is_requirement_in_global_reqs(
-                        req, global_reqs[name]):
-                    failed = True
-                    print("Requirement for package %s : %s does "
-                          "not match openstack/requirements value : %s" % (
-                              name, str(req), str(global_reqs[name])))
-            for extra, count in counts.items():
-                if count != len(global_reqs[name]):
-                    failed = True
-                    print("Package %s%s requirement does not match "
-                          "number of lines (%d) in "
-                          "openstack/requirements" % (
-                              name,
-                              ('[%s]' % extra) if extra else '',
-                              len(global_reqs[name])))
+            failed = (
+                _validate_one(
+                    name,
+                    reqs,
+                    branch_reqs,
+                    blacklist,
+                    global_reqs,
+                )
+                or failed
+            )
+
     return failed
