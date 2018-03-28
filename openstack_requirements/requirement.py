@@ -224,7 +224,8 @@ def check_reqs_bounds_policy(global_reqs):
                 lower_bound = lower_bound.pop()
                 for spec in _specifiers:
                     if spec.operator == '!=':
-                        if not lower_bound.contains(spec.version):
+                        if not lower_bound.contains(spec.version,
+                                                    prereleases=True):
                             yield('Requirement %s has a !=%s specifier '
                                   'that is not >=%s' % (req.package,
                                                         spec.version,
