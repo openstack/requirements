@@ -5,7 +5,7 @@ enum-compat===0.0.2
 rsa===3.4.2
 restructuredtext-lint===1.1.3
 netmiko===2.1.1
-instack-undercloud===8.3.0
+instack-undercloud===8.4.0
 PasteDeploy===1.5.2
 typing===3.6.4
 python-saharaclient===1.5.0
@@ -13,7 +13,7 @@ python-hnvclient===0.1.0
 Routes===2.4.1
 rtslib-fb===2.1.66
 XStatic-Angular-Bootstrap===2.2.0.0
-paunch===2.3.0
+paunch===2.4.0
 WebOb===1.7.4
 sphinxcontrib-actdiag===0.8.5
 docopt===0.6.2
@@ -85,7 +85,7 @@ pyngus===2.2.2
 Pillow===5.0.0
 zuul-sphinx===0.2.1
 python-mimeparse===1.6.0
-tripleo-common===8.5.0
+tripleo-common===8.6.0
 Tempita===0.5.2
 ply===3.11
 requests-toolbelt===0.8.0
@@ -105,7 +105,7 @@ asn1crypto===0.24.0
 croniter===0.3.20
 python-watcherclient===1.6.0
 MarkupSafe===1.0
-pypowervm===1.1.12
+pypowervm===1.1.13
 doc8===0.8.0
 pymongo===3.6.1
 sqlparse===0.2.4
@@ -152,9 +152,9 @@ pycparser===2.18
 mock===2.0.0
 PyYAML===3.12
 beautifulsoup4===4.6.0
-os-net-config===8.3.0
+os-net-config===8.4.0
 ovs===2.9.0
-cryptography===2.2.1
+cryptography===2.2.2
 backports.ssl-match-hostname===3.5.0.1;python_version=='2.7'
 openstack-release-test===0.13.0
 pylxd===2.2.6
@@ -225,7 +225,7 @@ pyperclip===1.6.0
 cassandra-driver===3.13.0
 mox===0.5.3
 XStatic-Angular-Schema-Form===0.8.13.0
-gabbi===1.40.0
+gabbi===1.40.1
 nwdiag===1.0.4
 XStatic-bootswatch===3.3.7.0
 XStatic-term.js===0.0.7.0
@@ -274,7 +274,7 @@ os-service-types===1.2.0
 keyring===12.0.0
 testscenarios===0.5.0
 sphinxcontrib-pecanwsme===0.8.0
-sadisplay===0.4.8
+sadisplay===0.4.9
 enum34===1.1.6
 packaging===17.1
 flask-keystone===0.2
@@ -340,7 +340,7 @@ Sphinx===1.6.5
 oslo.config===5.2.0
 tempest===18.0.0
 django-floppyforms===1.7.0
-openstackdocstheme===1.19.0
+openstackdocstheme===1.20.0
 osc-placement===1.0.0
 zake===0.2.2
 python-rsdclient===0.1.3
@@ -348,7 +348,7 @@ python-magic===0.4.15
 python-solumclient===2.6.1
 PyMySQL===0.8.0
 kubernetes===5.0.0
-httplib2===0.11.0
+httplib2===0.11.1
 bottle===0.12.13
 betamax===0.8.1
 construct===2.8.22
@@ -367,7 +367,7 @@ pyasn1===0.4.2
 oslo.rootwrap===5.13.0
 Django===1.11.11
 pexpect===4.4.0
-mistral-extra===6.0.0
+mistral-extra===6.0.1
 cmd2===0.8.2
 redis===2.10.6
 jmespath===0.9.3
@@ -495,7 +495,7 @@ requests-kerberos===0.12.0
 itsdangerous===0.24
 XStatic-jquery-ui===1.12.0.1
 monasca-statsd===1.9.0
-python-dateutil===2.7.1
+python-dateutil===2.7.2
 virtualenv===15.2.0
 colorama===0.3.9
 ironic-lib===2.12.0
