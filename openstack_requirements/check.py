@@ -126,7 +126,6 @@ def get_global_reqs(content):
 
 def _validate_one(name, reqs, branch_reqs, blacklist, global_reqs):
     "Returns True if there is a failure."
-    print('_validate_one', name, reqs, branch_reqs, blacklist, global_reqs)
     if (name in branch_reqs.reqs and
        reqs == branch_reqs.reqs[name]):
         # Unchanged [or a change that preserves a current value]
