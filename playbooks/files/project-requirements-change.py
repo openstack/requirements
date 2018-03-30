@@ -149,7 +149,7 @@ def main():
         failed = (
             check.validate_lower_constraints(
                 head_reqs,
-                head_proj['lower_constraints.txt'],
+                head_proj['lower-constraints.txt'],
                 blacklist,
             )
             or failed
