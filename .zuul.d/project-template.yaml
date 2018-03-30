@@ -19,3 +19,4 @@
       - ^.*requirements-py[2,3].txt$
       - ^doc/requirements.txt$
       - playbooks/requirements-check.yaml
+      - ^lower-constraints.txt$
