@@ -146,6 +146,15 @@ def main():
 
         failed = check.validate(head_reqs, branch_reqs, blacklist, global_reqs)
 
+        failed = (
+            check.validate_lower_constraints(
+                head_reqs,
+                head_proj['lower_constraints.txt'],
+                blacklist,
+            )
+            or failed
+        )
+
     # report the results
     if failed or head_reqs.failed or branch_reqs.failed:
         print("*** Incompatible requirement found!")
