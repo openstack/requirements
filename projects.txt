@@ -4,7 +4,9 @@ openstack-infra/requestsexceptions
 openstack-infra/shade
 openstack/almanach
 openstack/anchor
+openstack/ansible-config_template
 openstack/ansible-hardening
+openstack/ansible-role-python_venv_build
 openstack/automaton
 openstack/bandit
 openstack/barbican
@@ -148,6 +150,8 @@ openstack/openstack-ansible-haproxy_server
 openstack/openstack-ansible-lxc_container_create
 openstack/openstack-ansible-lxc_hosts
 openstack/openstack-ansible-memcached_server
+openstack/openstack-ansible-nspawn_container_create
+openstack/openstack-ansible-nspawn_hosts
 openstack/openstack-ansible-openstack_hosts
 openstack/openstack-ansible-openstack_openrc
 openstack/openstack-ansible-ops
@@ -157,6 +161,7 @@ openstack/openstack-ansible-os_barbican
 openstack/openstack-ansible-os_ceilometer
 openstack/openstack-ansible-os_cinder
 openstack/openstack-ansible-os_cloudkitty
+openstack/openstack-ansible-os_congress
 openstack/openstack-ansible-os_designate
 openstack/openstack-ansible-os_glance
 openstack/openstack-ansible-os_gnocchi
@@ -164,6 +169,7 @@ openstack/openstack-ansible-os_heat
 openstack/openstack-ansible-os_horizon
 openstack/openstack-ansible-os_ironic
 openstack/openstack-ansible-os_keystone
+openstack/openstack-ansible-os_karbor
 openstack/openstack-ansible-os_magnum
 openstack/openstack-ansible-os_molteniron
 openstack/openstack-ansible-os_monasca
@@ -172,10 +178,12 @@ openstack/openstack-ansible-os_monasca-ui
 openstack/openstack-ansible-os_neutron
 openstack/openstack-ansible-os_nova
 openstack/openstack-ansible-os_octavia
+openstack/openstack-ansible-os_panko
 openstack/openstack-ansible-os_rally
 openstack/openstack-ansible-os_sahara
 openstack/openstack-ansible-os_searchlight
 openstack/openstack-ansible-os_swift
+openstack/openstack-ansible-os_tacker
 openstack/openstack-ansible-os_tempest
 openstack/openstack-ansible-os_trove
 openstack/openstack-ansible-os_watcher
