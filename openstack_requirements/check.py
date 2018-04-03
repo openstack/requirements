@@ -275,8 +275,6 @@ def validate_lower_constraints(req_list, constraints, blacklist):
                               name, req.markers))
                     failed = True
                     continue
-                print('req', req)
-                print('constraint_setting', constraint_setting)
 
                 version = constraint_setting.specifiers.lstrip('=')
 
