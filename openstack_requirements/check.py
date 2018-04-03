@@ -95,7 +95,6 @@ def _is_requirement_in_global_reqs(req, global_reqs):
                 print('{} {!r}: {!r} does not match {!r}'.format(
                     req, aname, rval, r2val))
                 matching = False
-                break
         if not matching:
             continue
 
