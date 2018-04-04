@@ -88,20 +88,6 @@ def install_and_load_requirements(reqroot, reqdir):
     from openstack_requirements import requirement  # noqa
 
 
-def _is_requirement_in_global_reqs(req, global_reqs):
-    # Compare all fields except the extras field as the global
-    # requirements should not have any lines with the extras syntax
-    # example: oslo.db[xyz]<1.2.3
-    for req2 in global_reqs:
-        if (req.package == req2.package and
-           req.location == req2.location and
-           req.specifiers == req2.specifiers and
-           req.markers == req2.markers and
-           req.comment == req2.comment):
-            return True
-    return False
-
-
 def main():
     args = grab_args()
     branch = args.branch
