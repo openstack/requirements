@@ -503,3 +503,7 @@ XStatic-D3===3.5.17.0
 actdiag===0.5.4
 sysv-ipc===1.0.0
 scikit-learn===0.19.1
+skydive-client===0.4.2
+asyncio===3.4.3;python_version=='3.4'
+asyncio===3.4.3;python_version=='3.5'
+asyncio===3.4.3;python_version=='3.6'
