@@ -41,6 +41,10 @@ def run_command(cmd):
     return (out.strip(), err.strip())
 
 
+_DEFAULT_REQS_DIR = os.path.expanduser(
+    '~/src/git.openstack.org/openstack/requirements')
+
+
 def grab_args():
     """Grab and return arguments"""
     parser = argparse.ArgumentParser(
@@ -53,8 +57,7 @@ def grab_args():
                         help='target branch for diffs')
     parser.add_argument('--zc', help='what zuul cloner to call')
     parser.add_argument('--reqs', help='use a specified requirements tree',
-                        default=os.path.expanduser(
-                            '~/src/git.openstack.org/openstack/requirements'))
+                        default=None)
 
     return parser.parse_args()
 
@@ -104,6 +107,11 @@ def main():
     branch = args.branch
     os.chdir(args.src_dir)
     reqdir = args.reqs
+
+    if reqdir is None and args.local:
+        reqdir = os.path.dirname(os.path.dirname(os.path.dirname(sys.argv[0])))
+    else:
+        reqdir = _DEFAULT_REQS_DIR
 
     # build a list of requirements from the global list in the
     # openstack/requirements project so we can match them to the changes
