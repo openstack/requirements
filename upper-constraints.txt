@@ -90,7 +90,7 @@ chardet===2.3.0
 click===6.7
 click-repl===0.1.1
 click-spinner===0.1.6
-cliff===2.4.0
+cliff===2.4.1
 cliff-tablib===2.0
 cmd2===0.6.9
 colorama===0.3.7
