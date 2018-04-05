@@ -88,7 +88,7 @@ def _is_requirement_in_global_reqs(req, global_reqs):
     for req2 in global_reqs:
 
         matching = True
-        for aname in ['package', 'location', 'markers', 'comment']:
+        for aname in ['package', 'location', 'markers']:
             rval = getattr(req, aname)
             r2val = getattr(req2, aname)
             if rval != r2val:
