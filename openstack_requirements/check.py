@@ -204,6 +204,13 @@ def _find_constraint(req, constraints):
         for constraint_setting, _ in constraints:
             if constraint_setting.markers == req.markers:
                 return constraint_setting
+            if not constraint_setting.markers:
+                # There is no point in performing the complex
+                # comparison for a constraint that has no markers, so
+                # we skip it here. If we find no closer match then the
+                # loop at the end of the function will look for a
+                # constraint without a marker and use that.
+                continue
             # NOTE(dhellmann): This is a very naive attempt to check
             # marker compatibility that relies on internal
             # implementation details of the packaging library.  The
