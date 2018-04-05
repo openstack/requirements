@@ -87,31 +87,32 @@ def _is_requirement_in_global_reqs(req, global_reqs):
     req_exclusions = _get_exclusions(req)
     for req2 in global_reqs:
 
+        matching = True
         for aname in ['package', 'location', 'markers', 'comment']:
             rval = getattr(req, aname)
             r2val = getattr(req2, aname)
             if rval != r2val:
                 print('{} {!r}: {!r} does not match {!r}'.format(
-                    req.package, aname, rval, r2val))
+                    req, aname, rval, r2val))
+                matching = False
+                break
+        if not matching:
+            continue
 
-        if (req.package == req2.package and
-           req.location == req2.location and
-           req.markers == req2.markers and
-           req.comment == req2.comment):
-            # This matches the right package and other properties, so
-            # ensure that any exclusions are a subset of the global
-            # set.
-            global_exclusions = _get_exclusions(req2)
-            if req_exclusions.issubset(global_exclusions):
-                return True
-            else:
-                print(
-                    "Requirement for package {} "
-                    "has an exclusion not found in the "
-                    "global list: {} vs. {}".format(
-                        req.package, req_exclusions, global_exclusions)
-                )
-                return False
+        # This matches the right package and other properties, so
+        # ensure that any exclusions are a subset of the global
+        # set.
+        global_exclusions = _get_exclusions(req2)
+        if req_exclusions.issubset(global_exclusions):
+            return True
+        else:
+            print(
+                "Requirement for package {} "
+                "has an exclusion not found in the "
+                "global list: {} vs. {}".format(
+                    req.package, req_exclusions, global_exclusions)
+            )
+            return False
 
     return False
 
