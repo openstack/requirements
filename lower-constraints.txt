@@ -349,7 +349,7 @@ sympy===0.7.6
 sphinxmark===0.1.14
 openpyxl===2.4.9
 PyNaCl===1.1.2
-osc-lib===1.8.0
+osc-lib===1.10.0
 osc-placement===1.0.0
 python-consul===0.4.7
 seqdiag===0.9.5
