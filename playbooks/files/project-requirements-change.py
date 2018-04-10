@@ -136,21 +136,7 @@ def main():
         head_strict = not branch.startswith('stable/')
         head_reqs.process(strict=head_strict)
 
-        if not args.local:
-            # build a list of requirements already in the target branch,
-            # so that we can create a diff and identify what's being changed
-            run_command("git checkout HEAD^1")
-            branch_proj = project.read(cwd)
-
-            # switch back to the proposed change now
-            run_command("git checkout %s" % branch)
-        else:
-            branch_proj = {'root': cwd}
-        branch_reqs = check.RequirementsList(branch, branch_proj)
-        # Don't error on the target branch being broken.
-        branch_reqs.process(strict=False)
-
-        failed = check.validate(head_reqs, branch_reqs, blacklist, global_reqs)
+        failed = check.validate(head_reqs, blacklist, global_reqs)
 
         failed = (
             check.validate_lower_constraints(
@@ -162,7 +148,7 @@ def main():
         )
 
     # report the results
-    if failed or head_reqs.failed or branch_reqs.failed:
+    if failed or head_reqs.failed:
         print("*** Incompatible requirement found!")
         print("*** See http://docs.openstack.org/developer/requirements")
         sys.exit(1)

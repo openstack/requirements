@@ -131,12 +131,8 @@ def get_global_reqs(content):
     return global_reqs
 
 
-def _validate_one(name, reqs, branch_reqs, blacklist, global_reqs):
+def _validate_one(name, reqs, blacklist, global_reqs):
     "Returns True if there is a failure."
-    if (name in branch_reqs.reqs and
-       reqs == branch_reqs.reqs[name]):
-        # Unchanged [or a change that preserves a current value]
-        return False
     if name in blacklist:
         # Blacklisted items are not synced and are managed
         # by project teams as they see fit, so no further
@@ -171,7 +167,7 @@ def _validate_one(name, reqs, branch_reqs, blacklist, global_reqs):
     return False
 
 
-def validate(head_reqs, branch_reqs, blacklist, global_reqs):
+def validate(head_reqs, blacklist, global_reqs):
     failed = False
     # iterate through the changing entries and see if they match the global
     # equivalents we want enforced
@@ -182,7 +178,6 @@ def validate(head_reqs, branch_reqs, blacklist, global_reqs):
                 _validate_one(
                     name,
                     reqs,
-                    branch_reqs,
                     blacklist,
                     global_reqs,
                 )
