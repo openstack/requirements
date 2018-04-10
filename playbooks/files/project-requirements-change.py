@@ -96,11 +96,20 @@ def main():
 
     if reqdir is None:
         if args.local:
+            print('selecting default requirements directory for local mode')
             reqdir = os.path.dirname(
                 os.path.dirname(
                     os.path.dirname(sys.argv[0])))
         else:
+            print('selecting default requirements directory for normal mode')
             reqdir = _DEFAULT_REQS_DIR
+
+    print('Branch: {}'.format(branch))
+    print('Source: {}'.format(args.src_dir))
+    print('Requirements: {}'.format(reqdir))
+
+    sha, _ = run_command('git log -n 1 --format=%H')
+    print('Patch under test: {}'.format(sha))
 
     # build a list of requirements from the global list in the
     # openstack/requirements project so we can match them to the changes
@@ -115,7 +124,7 @@ def main():
         # build a list of requirements in the proposed change,
         # and check them for style violations while doing so
         head_proj = project.read(cwd)
-        head_reqs = check.RequirementsList('HEAD', head_proj)
+        head_reqs = check.RequirementsList(sha, head_proj)
         # Don't apply strict parsing rules to stable branches.
         # Reasoning is:
         #  - devstack etc protect us from functional issues
