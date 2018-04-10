@@ -19,7 +19,7 @@ WebOb===1.7.1
 sphinxcontrib-actdiag===0.8.5
 docopt===0.6.2
 pecan===1.0.0
-ryu===4.14
+ryu===4.24
 os-api-ref===1.4.0
 oslo.concurrency===3.26.0
 websocket-client===0.44.0
