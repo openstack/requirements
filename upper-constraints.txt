@@ -13,7 +13,7 @@ python-hnvclient===0.1.0
 Routes===2.4.1
 rtslib-fb===2.1.66
 XStatic-Angular-Bootstrap===2.2.0.0
-paunch===2.4.0
+paunch===3.0.0
 WebOb===1.7.4
 sphinxcontrib-actdiag===0.8.5
 docopt===0.6.2
