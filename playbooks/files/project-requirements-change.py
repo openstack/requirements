@@ -94,10 +94,13 @@ def main():
     os.chdir(args.src_dir)
     reqdir = args.reqs
 
-    if reqdir is None and args.local:
-        reqdir = os.path.dirname(os.path.dirname(os.path.dirname(sys.argv[0])))
-    else:
-        reqdir = _DEFAULT_REQS_DIR
+    if reqdir is None:
+        if args.local:
+            reqdir = os.path.dirname(
+                os.path.dirname(
+                    os.path.dirname(sys.argv[0])))
+        else:
+            reqdir = _DEFAULT_REQS_DIR
 
     # build a list of requirements from the global list in the
     # openstack/requirements project so we can match them to the changes
