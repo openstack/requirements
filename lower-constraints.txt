@@ -130,6 +130,8 @@ taskflow===2.16.0
 traceback2===1.4.0
 semantic-version===2.3.1
 wheel===0.24.0
+PyMI===1.0.0;sys_platform=='win32'
+wmi===0.5;sys_platform=='win32'
 tablib===0.12.1
 virtualbmc===1.0.0
 deprecation===1.0
