@@ -72,14 +72,18 @@ def tempdir():
 
 
 def install_and_load_requirements(reqroot, reqdir):
-    sha = run_command("git --git-dir %s/.git rev-parse HEAD" % reqdir)[0]
-    print("requirements git sha: %s" % sha)
-    req_venv = os.path.join(reqroot, 'venv')
-    req_pip = os.path.join(req_venv, 'bin/pip')
-    req_lib = os.path.join(req_venv, 'lib/python2.7/site-packages')
-    out, err = run_command("virtualenv " + req_venv)
-    out, err = run_command(req_pip + " install " + reqdir)
-    sys.path.append(req_lib)
+    if os.environ.get('VIRTUAL_ENV'):
+        print('It looks like we are running from a virtualenv.')
+        print('SKIPPING INSTALLATION')
+    else:
+        sha = run_command("git --git-dir %s/.git rev-parse HEAD" % reqdir)[0]
+        print("requirements git sha: %s" % sha)
+        req_venv = os.path.join(reqroot, 'venv')
+        req_pip = os.path.join(req_venv, 'bin/pip')
+        req_lib = os.path.join(req_venv, 'lib/python2.7/site-packages')
+        out, err = run_command("virtualenv " + req_venv)
+        out, err = run_command(req_pip + " install " + reqdir)
+        sys.path.append(req_lib)
     global check
     global project
     global requirement
