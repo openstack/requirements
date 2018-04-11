@@ -131,17 +131,11 @@ class TestValidateOne(testtools.TestCase):
             r
             for r, line in requirement.parse('name>=1.2,!=1.4')['name']
         ]
-        branch_reqs = check.RequirementsList(
-            'testproj',
-            {'requirements': {'requirements.txt': 'name>=1.2,!=1.4'}},
-        )
-        branch_reqs.process(False)
         global_reqs = check.get_global_reqs('name>=1.2,!=1.4')
         self.assertFalse(
             check._validate_one(
                 'name',
                 reqs=reqs,
-                branch_reqs=branch_reqs,
                 blacklist=requirement.parse(''),
                 global_reqs=global_reqs,
             )
@@ -153,17 +147,11 @@ class TestValidateOne(testtools.TestCase):
             r
             for r, line in requirement.parse('name>=1.2,!=1.4')['name']
         ]
-        branch_reqs = check.RequirementsList(
-            'testproj',
-            {'requirements': {'requirements.txt': 'name>=1.2,!=1.4'}},
-        )
-        branch_reqs.process(False)
         global_reqs = check.get_global_reqs('name>=1.2,!=1.4')
         self.assertFalse(
             check._validate_one(
                 'name',
                 reqs=reqs,
-                branch_reqs=branch_reqs,
                 blacklist=requirement.parse('name'),
                 global_reqs=global_reqs,
             )
@@ -176,17 +164,11 @@ class TestValidateOne(testtools.TestCase):
             r
             for r, line in requirement.parse('name>=1.5')['name']
         ]
-        branch_reqs = check.RequirementsList(
-            'testproj',
-            {'requirements': {'requirements.txt': 'name>=1.2,!=1.4'}},
-        )
-        branch_reqs.process(False)
         global_reqs = check.get_global_reqs('name>=1.2,!=1.4')
         self.assertFalse(
             check._validate_one(
                 'name',
                 reqs=reqs,
-                branch_reqs=branch_reqs,
                 blacklist=requirement.parse('name'),
                 global_reqs=global_reqs,
             )
@@ -198,17 +180,11 @@ class TestValidateOne(testtools.TestCase):
             r
             for r, line in requirement.parse('name>=1.2,!=1.4')['name']
         ]
-        branch_reqs = check.RequirementsList(
-            'testproj',
-            {'requirements': {'requirements.txt': 'name>=1.2,!=1.4'}},
-        )
-        branch_reqs.process(False)
         global_reqs = check.get_global_reqs('')
         self.assertTrue(
             check._validate_one(
                 'name',
                 reqs=reqs,
-                branch_reqs=branch_reqs,
                 blacklist=requirement.parse(''),
                 global_reqs=global_reqs,
             )
@@ -220,17 +196,11 @@ class TestValidateOne(testtools.TestCase):
             r
             for r, line in requirement.parse('name>=1.2,!=1.4')['name']
         ]
-        branch_reqs = check.RequirementsList(
-            'testproj',
-            {'requirements': {'requirements.txt': ''}},
-        )
-        branch_reqs.process(False)
         global_reqs = check.get_global_reqs('name>=1.2,!=1.4')
         self.assertFalse(
             check._validate_one(
                 'name',
                 reqs=reqs,
-                branch_reqs=branch_reqs,
                 blacklist=requirement.parse(''),
                 global_reqs=global_reqs,
             )
@@ -243,17 +213,11 @@ class TestValidateOne(testtools.TestCase):
             r
             for r, line in requirement.parse('name>=1.1,!=1.4')['name']
         ]
-        branch_reqs = check.RequirementsList(
-            'testproj',
-            {'requirements': {'requirements.txt': ''}},
-        )
-        branch_reqs.process(False)
         global_reqs = check.get_global_reqs('name>=1.2,!=1.4')
         self.assertFalse(
             check._validate_one(
                 'name',
                 reqs=reqs,
-                branch_reqs=branch_reqs,
                 blacklist=requirement.parse(''),
                 global_reqs=global_reqs,
             )
@@ -266,17 +230,11 @@ class TestValidateOne(testtools.TestCase):
             r
             for r, line in requirement.parse('name>=1.2,!=1.4,!=1.5')['name']
         ]
-        branch_reqs = check.RequirementsList(
-            'testproj',
-            {'requirements': {'requirements.txt': ''}},
-        )
-        branch_reqs.process(False)
         global_reqs = check.get_global_reqs('name>=1.2,!=1.4')
         self.assertTrue(
             check._validate_one(
                 'name',
                 reqs=reqs,
-                branch_reqs=branch_reqs,
                 blacklist=requirement.parse(''),
                 global_reqs=global_reqs,
             )
@@ -289,17 +247,11 @@ class TestValidateOne(testtools.TestCase):
             r
             for r, line in requirement.parse('name>=1.2')['name']
         ]
-        branch_reqs = check.RequirementsList(
-            'testproj',
-            {'requirements': {'requirements.txt': ''}},
-        )
-        branch_reqs.process(False)
         global_reqs = check.get_global_reqs('name>=1.2,!=1.4')
         self.assertFalse(
             check._validate_one(
                 'name',
                 reqs=reqs,
-                branch_reqs=branch_reqs,
                 blacklist=requirement.parse(''),
                 global_reqs=global_reqs,
             )
@@ -317,11 +269,6 @@ class TestValidateOne(testtools.TestCase):
             r
             for r, line in requirement.parse(r_content)['name']
         ]
-        branch_reqs = check.RequirementsList(
-            'testproj',
-            {'requirements': {'requirements.txt': ''}},
-        )
-        branch_reqs.process(False)
         global_reqs = check.get_global_reqs(textwrap.dedent("""
         name>=1.5;python_version=='3.5'
         name>=1.2,!=1.4;python_version=='2.6'
@@ -330,7 +277,6 @@ class TestValidateOne(testtools.TestCase):
             check._validate_one(
                 'name',
                 reqs=reqs,
-                branch_reqs=branch_reqs,
                 blacklist=requirement.parse(''),
                 global_reqs=global_reqs,
             )
@@ -347,11 +293,6 @@ class TestValidateOne(testtools.TestCase):
             r
             for r, line in requirement.parse(r_content)['name']
         ]
-        branch_reqs = check.RequirementsList(
-            'testproj',
-            {'requirements': {'requirements.txt': ''}},
-        )
-        branch_reqs.process(False)
         global_reqs = check.get_global_reqs(textwrap.dedent("""
         name>=1.5;python_version=='3.5'
         name>=1.2,!=1.4;python_version=='2.6'
@@ -360,7 +301,6 @@ class TestValidateOne(testtools.TestCase):
             check._validate_one(
                 'name',
                 reqs=reqs,
-                branch_reqs=branch_reqs,
                 blacklist=requirement.parse(''),
                 global_reqs=global_reqs,
             )
@@ -378,11 +318,6 @@ class TestValidateOne(testtools.TestCase):
             r
             for r, line in requirement.parse(r_content)['name']
         ]
-        branch_reqs = check.RequirementsList(
-            'testproj',
-            {'requirements': {'requirements.txt': ''}},
-        )
-        branch_reqs.process(False)
         global_reqs = check.get_global_reqs(textwrap.dedent("""
         name>=1.5;python_version=='3.5'
         name>=1.2,!=1.4;python_version=='2.6'
@@ -391,7 +326,6 @@ class TestValidateOne(testtools.TestCase):
             check._validate_one(
                 'name',
                 reqs=reqs,
-                branch_reqs=branch_reqs,
                 blacklist=requirement.parse(''),
                 global_reqs=global_reqs,
             )
