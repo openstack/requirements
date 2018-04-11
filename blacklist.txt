@@ -8,5 +8,6 @@ hacking
 mccabe
 pep257
 pep8
+pycodestyle
 pyflakes
 pylint
