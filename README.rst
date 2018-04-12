@@ -1,15 +1,9 @@
-========================
-Team and repository tags
-========================
-
-.. image:: https://governance.openstack.org/tc/badges/requirements.svg
-    :target: https://governance.openstack.org/tc/reference/tags/index.html
-
-.. Change things from this point on
-
 ============================================
  Global Requirements for OpenStack Projects
 ============================================
+
+.. image:: https://governance.openstack.org/tc/badges/requirements.svg
+    :target: https://governance.openstack.org/tc/reference/tags/index.html
 
 Why Global Requirements?
 ========================
@@ -232,12 +226,11 @@ General Review Criteria
   *is* stable, or to contribute to the upstream community to help
   stabilize it.
 
-- Libraries should contain a sensible known working minimum version
+- Library specifications should not contain a minimum version
 
-  Bare library names are bad. If it's unknown what a working minimum
-  is, look at the output of pip freeze at the end of a successful
-  DevStack/tempest run and use that version. At least that's known to
-  be working now.
+  Individual projects may want to start with different "lower bound"
+  versions of dependencies, so we do not track those explicitly in the
+  ``global-requirements.txt`` file.
 
 - Commit message should refer to consuming projects(s)
 
@@ -336,23 +329,6 @@ For new Requirements
   propose updates.
 
 .. _Licensing requirements: https://governance.openstack.org/tc/reference/licensing.html
-
-For Upgrading Requirements Versions
------------------------------------
-
-- Why is it impossible to use the current version definition?
-
-  Everyone likes everyone else to use the latest version of their
-  code. However, deployers really don't like to be constantly updating
-  things. Unless it's actually **impossible** to use the minimum
-  version specified in ``global-requirements.txt``, it should not be
-  changed.
-
-  Leave that decision to deployers and distros.
-
-- Changes to update the minimum version of a library developed by the
-  OpenStack community can be approved by one reviewer, as long as the
-  constraints are correct and the tests pass.
 
 .. _finding-distro-status:
 
