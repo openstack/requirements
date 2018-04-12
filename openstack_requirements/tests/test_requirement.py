@@ -200,8 +200,8 @@ class TestReqPolicy(testtools.TestCase):
 
     def test_requirements_policy_pass(self):
         content = textwrap.dedent("""\
-            cffi>=1.1.1,!=1.1.2
-            other>=1.1.1
+            cffi!=1.1.2
+            other
             """)
         reqs = requirement.parse(content)
         policy_check = [x for x in requirement.check_reqs_bounds_policy(reqs)]
@@ -211,11 +211,9 @@ class TestReqPolicy(testtools.TestCase):
         content = textwrap.dedent("""\
             cffi>=1.1.1,!=1.1.0
             other>=1,>=2,!=1.1.0
-            no_lower_bound
             """)
         reqs = requirement.parse(content)
         self.assertEqual([
-            'Requirement cffi has a !=1.1.0 specifier that is not >=1.1.1',
-            'Requirement no-lower-bound needs a >= specifier',
-            'Requirement other has multiple >= specifier'],
+            'Requirement cffi should not include a >= specifier',
+            'Requirement other should not include a >= specifier'],
             sorted([x for x in requirement.check_reqs_bounds_policy(reqs)]))

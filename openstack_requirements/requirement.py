@@ -215,18 +215,6 @@ def check_reqs_bounds_policy(global_reqs):
             for spec in _specifiers:
                 if spec.operator == '>=':
                     lower_bound.add(spec)
-            if len(lower_bound) < 1:
-                yield ('Requirement %s needs a >= specifier' % req.package)
-            elif len(lower_bound) > 1:
-                yield ('Requirement %s has multiple >= specifier' %
+            if len(lower_bound):
+                yield ('Requirement %s should not include a >= specifier' %
                        req.package)
-            else:
-                lower_bound = lower_bound.pop()
-                for spec in _specifiers:
-                    if spec.operator == '!=':
-                        if not lower_bound.contains(spec.version,
-                                                    prereleases=True):
-                            yield('Requirement %s has a !=%s specifier '
-                                  'that is not >=%s' % (req.package,
-                                                        spec.version,
-                                                        lower_bound.version))
