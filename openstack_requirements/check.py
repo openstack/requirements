@@ -151,7 +151,7 @@ def _validate_one(name, reqs, blacklist, global_reqs):
             counts[''] = counts.get('', 0) + 1
         if not _is_requirement_in_global_reqs(
                 req, global_reqs[name]):
-            print("Requirement for package %s : %s does "
+            print("Requirement for package %s: %s does "
                   "not match openstack/requirements value : %s" % (
                       name, str(req), str(global_reqs[name])))
             return True
