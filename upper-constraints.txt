@@ -156,7 +156,7 @@ os-net-config===8.4.0
 ovs===2.9.0
 cryptography===2.2.2
 backports.ssl-match-hostname===3.5.0.1;python_version=='2.7'
-openstack-release-test===0.13.0
+openstack-release-test===0.14.0
 pylxd===2.2.6
 pycryptodomex===3.5.1
 anyjson===0.3.3
