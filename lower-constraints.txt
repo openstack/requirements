@@ -536,7 +536,7 @@ sysv-ipc===0.6.8
 scikit-learn===0.17.1
 python-blazarclient===1.0.1
 sphinx-feature-classification===0.1.0
-skydive-client===0.4.2
+skydive-client===0.4.5
 asyncio===3.4.3;python_version=='3.4'
 asyncio===3.4.3;python_version=='3.5'
 asyncio===3.4.3;python_version=='3.6'
