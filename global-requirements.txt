@@ -51,7 +51,7 @@ elasticsearch<=3.0.0  # Apache-2.0
 enum34;python_version=='2.7' or python_version=='2.6' or python_version=='3.3'  # BSD
 # NOTE: New versions of eventlet should not be accepted lightly
 # as they have earned a reputation of frequently breaking things.
-eventlet!=0.18.3,!=0.20.1  # MIT
+eventlet!=0.18.3,!=0.20.1,!=0.21.0  # MIT
 exabgp  # BSD
 extras  # MIT
 falcon  # Apache-2.0
