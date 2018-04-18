@@ -67,31 +67,21 @@ def _freeze(requirements, python):
     :param python: A Python binary to use. E.g. /usr/bin/python3
     :return: A tuple (python_version, list of (package, version)'s)
     """
-    output = []
-    try:
-        version_out = subprocess.check_output(
-            [python, "--version"], stderr=subprocess.STDOUT).decode('utf-8')
-        output.append(version_out)
-        version_all = version_out.split()[1]
-        version = '.'.join(version_all.split('.')[:2])
-        with fixtures.TempDir() as temp:
-            output.append(subprocess.check_output(
-                ['virtualenv', '-p', python, temp.path]))
-            pip_bin = os.path.join(temp.path, 'bin', 'pip')
-            output.append(subprocess.check_output(
-                [pip_bin, 'install', '-U', 'pip', 'setuptools', 'wheel']))
-            output.append(subprocess.check_output(
-                [pip_bin, 'install', '-r', requirements]))
-            freeze = subprocess.check_output(
-                [pip_bin, 'freeze']).decode('utf-8')
-            output.append(freeze)
-            return (version, _parse_freeze(freeze))
-    except Exception as exc:
-        if isinstance(exc, subprocess.CalledProcessError):
-            output.append(exc.output)
-        raise Exception(
-            "Failed to generate freeze: %s %s"
-            % ('\n'.join(output), exc))
+    version_out = subprocess.check_output(
+        [python, "--version"], stderr=subprocess.STDOUT).decode('utf-8')
+    version_all = version_out.split()[1]
+    version = '.'.join(version_all.split('.')[:2])
+    with fixtures.TempDir() as temp:
+        subprocess.check_call(
+            ['virtualenv', '-p', python, temp.path])
+        pip_bin = os.path.join(temp.path, 'bin', 'pip')
+        subprocess.check_call(
+            [pip_bin, 'install', '-U', 'pip', 'setuptools', 'wheel'])
+        subprocess.check_call(
+            [pip_bin, 'install', '-r', requirements])
+        freeze = subprocess.check_output(
+            [pip_bin, 'freeze']).decode('utf-8')
+        return (version, _parse_freeze(freeze))
 
 
 def _combine_freezes(freezes, blacklist=None):
