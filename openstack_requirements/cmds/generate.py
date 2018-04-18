@@ -45,6 +45,16 @@ def _parse_freeze(text):
     return result
 
 
+def _do_cmd(cmd, return_output=False, **kwds):
+    print(' '.join(cmd))
+    if return_output:
+        out = subprocess.check_output(cmd, **kwds).decode('utf-8')
+        print(out)
+        return out
+    else:
+        subprocess.check_call(cmd)
+
+
 def _freeze(requirements, python):
     """Generate a frozen install from requirements.
 
@@ -67,20 +77,16 @@ def _freeze(requirements, python):
     :param python: A Python binary to use. E.g. /usr/bin/python3
     :return: A tuple (python_version, list of (package, version)'s)
     """
-    version_out = subprocess.check_output(
-        [python, "--version"], stderr=subprocess.STDOUT).decode('utf-8')
+    version_out = _do_cmd([python, "--version"], return_output=True,
+                          stderr=subprocess.STDOUT)
     version_all = version_out.split()[1]
     version = '.'.join(version_all.split('.')[:2])
     with fixtures.TempDir() as temp:
-        subprocess.check_call(
-            ['virtualenv', '-p', python, temp.path])
+        _do_cmd(['virtualenv', '-p', python, temp.path])
         pip_bin = os.path.join(temp.path, 'bin', 'pip')
-        subprocess.check_call(
-            [pip_bin, 'install', '-U', 'pip', 'setuptools', 'wheel'])
-        subprocess.check_call(
-            [pip_bin, 'install', '-r', requirements])
-        freeze = subprocess.check_output(
-            [pip_bin, 'freeze']).decode('utf-8')
+        _do_cmd([pip_bin, 'install', '-U', 'pip', 'setuptools', 'wheel'])
+        _do_cmd([pip_bin, 'install', '-r', requirements])
+        freeze = _do_cmd([pip_bin, 'freeze'], return_output=True)
         return (version, _parse_freeze(freeze))
 
 
