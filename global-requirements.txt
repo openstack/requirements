@@ -80,6 +80,7 @@ instack-undercloud  # Apache-2.0
 ironic-lib  # Apache-2.0
 ipaddress;python_version<'3.3'  # PSF
 iso8601  # MIT
+jira  # BSD License (2 clause)
 Jinja2  # BSD License (3 clause)
 jmespath  # MIT
 jsonmodels  # BSD License (3 clause)

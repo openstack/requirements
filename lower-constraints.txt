@@ -541,3 +541,4 @@ asyncio===3.4.3;python_version=='3.4'
 asyncio===3.4.3;python_version=='3.5'
 asyncio===3.4.3;python_version=='3.6'
 sphinxcontrib-apidoc===0.2.0
+jira===1.0.3
