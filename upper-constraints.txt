@@ -8,7 +8,7 @@ netmiko===2.1.1
 instack-undercloud===8.4.0
 PasteDeploy===1.5.2
 typing===3.6.4
-python-saharaclient===1.5.0
+python-saharaclient===1.6.0
 python-hnvclient===0.1.0
 Routes===2.4.1
 rtslib-fb===2.1.66
