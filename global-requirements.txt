@@ -107,7 +107,6 @@ Mako  # MIT
 marathon!=0.9.1  # MIT
 microversion-parse  # Apache-2.0
 mistral-lib  # Apache-2.0
-mistral-extra  # Apache-2.0
 monasca-common  # Apache-2.0
 monasca-statsd  # Apache-2.0
 monotonic  # Apache-2.0

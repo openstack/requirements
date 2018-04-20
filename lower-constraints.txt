@@ -390,7 +390,6 @@ pyasn1===0.1.8
 oslo.rootwrap===5.8.0
 Django===1.11
 pexpect===3.1
-mistral-extra===5.2.0
 cmd2===0.8.0
 redis===2.10.0
 jmespath===0.9.0
