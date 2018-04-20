@@ -101,7 +101,7 @@ django-pyscss  # BSD License (2 clause)
 kombu!=4.0.2  # BSD
 ldap3  # LGPLv3
 deprecation  # Apache-2.0
-libvirt-python!=4.1.0  # LGPLv2+
+libvirt-python!=4.1.0,!=4.2.0  # LGPLv2+
 lxml!=3.7.0  # BSD
 Mako  # MIT
 marathon!=0.9.1  # MIT
