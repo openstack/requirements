@@ -27,7 +27,7 @@ import pkg_resources
 try:
     PYPI_LOCATION = os.environ['PYPI_LOCATION']
 except KeyError:
-    PYPI_LOCATION = 'http://pypi.python.org/pypi'
+    PYPI_LOCATION = 'http://pypi.org/project'
 
 
 KEEP_KEYS = frozenset([

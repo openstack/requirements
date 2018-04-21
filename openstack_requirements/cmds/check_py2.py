@@ -20,7 +20,7 @@ import pkg_resources
 import requests
 
 
-_url_template = 'https://pypi.python.org/pypi/{dist}/{version}/json'
+_url_template = 'https://pypi.org/project/{dist}/{version}/json'
 
 
 def _get_metadata(dist, version):

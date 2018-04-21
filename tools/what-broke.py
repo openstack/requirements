@@ -94,7 +94,7 @@ def get_releases_for_package(name, since):
     our purposes.
 
     """
-    f = urlreq.urlopen("http://pypi.python.org/pypi/%s/json" % name)
+    f = urlreq.urlopen("http://pypi.org/project/%s/json" % name)
     jsondata = f.read()
     data = json.loads(jsondata)
     releases = []
