@@ -267,7 +267,7 @@ thriftpy===0.3.9;python_version=='2.7'
 murano-pkg-check===0.3.0
 oslo.vmware===2.28.0
 sqlalchemy-migrate===0.11.0
-python-monascaclient===1.10.0
+python-monascaclient===1.11.0
 ldap3===2.4.1
 requests-ntlm===1.1.0
 automaton===1.14.0
