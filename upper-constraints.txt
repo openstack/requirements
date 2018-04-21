@@ -355,7 +355,7 @@ numpy===1.13.1
 repoze.who===2.3
 Sphinx===1.6.3
 oslo.config===4.11.1
-tempest===17.0.0
+tempest===17.1.0
 django-floppyforms===1.7.0
 openstackdocstheme===1.16.1
 progressbar2===3.32.1
@@ -396,7 +396,7 @@ scrypt===0.8.0
 jsonpatch===1.16
 typed-ast===1.0.4;python_version=='3.4'
 typed-ast===1.0.4;python_version=='3.5'
-os-testr===0.8.2
+os-testr===1.0.0
 cotyledon===1.6.8
 stomp.py===4.1.18
 xattr===0.9.2
