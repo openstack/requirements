@@ -93,7 +93,7 @@ simplejson===3.13.2
 suds-jurko===0.6
 python-swiftclient===3.5.0
 pyOpenSSL===17.5.0
-monasca-common===2.8.0
+monasca-common===2.9.0
 scipy===1.0.1
 rsd-lib===0.2.1
 XStatic-Jasmine===2.4.1.1
