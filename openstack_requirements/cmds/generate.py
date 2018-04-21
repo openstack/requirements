@@ -88,10 +88,10 @@ def _freeze(requirements, python):
             return (version, _parse_freeze(freeze))
     except Exception as exc:
         if isinstance(exc, subprocess.CalledProcessError):
-            output.append(exc.output)
+            output.append(exc.output.decode('utf-8'))
         raise Exception(
             "Failed to generate freeze: %s %s"
-            % ('\n'.join(output), exc))
+            % ('\n'.join(output).decode('utf-8'), exc))
 
 
 def _combine_freezes(freezes, blacklist=None):
