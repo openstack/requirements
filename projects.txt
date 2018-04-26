@@ -8,7 +8,6 @@ openstack/ansible-config_template
 openstack/ansible-hardening
 openstack/ansible-role-python_venv_build
 openstack/automaton
-openstack/bandit
 openstack/barbican
 openstack/barbican-tempest-plugin
 openstack/bifrost
