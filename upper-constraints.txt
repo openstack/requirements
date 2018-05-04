@@ -302,7 +302,7 @@ os-traits===0.6.0
 SecretStorage===2.3.1
 XStatic-Rickshaw===1.5.0.0
 iso8601===0.1.12
-tooz===1.61.0
+tooz===1.62.0
 linecache2===1.0.0
 oauth2client===4.1.2
 idna===2.6
