@@ -411,7 +411,7 @@ abclient===0.2.3
 pymemcache===1.4.4
 wrapt===1.10.11
 oslo.privsep===1.29.0
-oslo.policy===1.34.0
+oslo.policy===1.35.0
 python-muranoclient===1.0.1
 pyeclib===1.5.0
 wsgi-intercept===1.6.0
