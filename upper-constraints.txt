@@ -491,7 +491,7 @@ fasteners===0.14.1
 python-tackerclient===0.12.0
 python-heatclient===1.15.0
 kafka-python===1.4.2
-oslo.utils===3.36.0
+oslo.utils===3.36.1
 python-editor===1.0.3
 gitdb2===2.0.3
 requests-kerberos===0.12.0
