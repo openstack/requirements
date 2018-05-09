@@ -333,6 +333,11 @@ PyMI;sys_platform=='win32'  # Apache 2.0 License
 wmi;sys_platform=='win32'  # MIT
 WSME  # MIT
 xattr  # MIT
+xstatic-angular-uuid  # MIT License
+xstatic-angular-vis  # MIT License
+xstatic-filesaver  # MIT License
+xstatic-js-yaml  # MIT License
+xstatic-json2yaml  # MIT License
 XenAPI  # LGPL
 XStatic  # MIT License
 XStatic-Angular  # MIT License
