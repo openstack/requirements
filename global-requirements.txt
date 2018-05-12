@@ -264,6 +264,7 @@ python-neutronclient  # Apache-2.0
 python-novaclient  # Apache-2.0
 python-octaviaclient  # Apache-2.0
 python-openstackclient  # Apache-2.0
+python-qinlingclient  # Apache-2.0
 python-rsdclient  # Apache-2.0
 python-saharaclient  # Apache-2.0
 python-searchlightclient  #Apache-2.0
