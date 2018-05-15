@@ -13,7 +13,7 @@ Routes===2.4.1
 rtslib-fb===2.1.66
 XStatic-Angular-Bootstrap===2.2.0.0
 paunch===3.0.0
-WebOb===1.7.4
+WebOb===1.8.1
 sphinxcontrib-actdiag===0.8.5
 docopt===0.6.2
 pecan===1.3.2
@@ -70,7 +70,7 @@ XStatic-angular-ui-router===0.3.1.2
 pyScss===1.3.4
 XStatic-jQuery===1.10.2.1
 jsonmodels===2.3
-ddt===1.1.2
+ddt===1.1.3
 pyserial===3.4
 ipaddress===1.0.22
 python-freezerclient===1.7.0
@@ -222,7 +222,7 @@ ldappool===2.2.0
 termcolor===1.1.0
 hiredis===0.2.0
 google-api-python-client===1.6.7
-castellan===0.17.0
+castellan===0.18.0
 oslo.versionedobjects===1.33.1
 webcolors===1.8.1
 aodhclient===1.0.0
@@ -378,7 +378,7 @@ WSME===0.9.2
 proboscis===1.2.6.0
 fortiosclient===0.0.3
 stevedore===1.28.0
-botocore===1.10.19
+botocore===1.10.20
 xmltodict===0.11.0
 pyasn1===0.4.2
 oslo.rootwrap===5.14.0
@@ -411,7 +411,7 @@ yaql===1.1.3
 requestsexceptions===1.4.0
 testresources===2.0.1
 falcon===1.4.1
-subprocess32===3.2.7;python_version=='2.7'
+subprocess32===3.5.0;python_version=='2.7'
 etcd3gw===0.2.1
 pyldap===3.0.0;python_version=='2.7'
 pyldap===3.0.0;python_version=='3.4'
