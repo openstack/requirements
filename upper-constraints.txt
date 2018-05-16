@@ -354,7 +354,7 @@ more-itertools===4.1.0
 seqdiag===0.9.5
 numpy===1.14.3
 msgpack===0.5.6
-Sphinx===1.7.4
+Sphinx===1.6.5
 oslo.config===6.2.1
 tempest===18.0.0
 django-floppyforms===1.7.0
