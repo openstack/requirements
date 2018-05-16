@@ -380,6 +380,7 @@ demjson  # GLGPLv3+
 docker  # Apache-2.0
 django-nose  # BSD
 doc8  # Apache-2.0
+Pygments  # BSD license
 fixtures  # Apache-2.0/BSD
 freezegun  # Apache-2.0
 gabbi  # Apache-2.0
