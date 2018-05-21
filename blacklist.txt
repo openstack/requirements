@@ -12,6 +12,7 @@ pep8
 pyflakes
 pycodestyle
 pylint
+Pygments
 
 # Temporarily until tools/tox_install.sh is updated everywhere
 horizon

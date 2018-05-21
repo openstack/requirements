@@ -184,7 +184,6 @@ python-novaclient===10.2.0
 bcrypt===3.1.4
 os-client-config===1.31.1
 XStatic-Angular-Gettext===2.3.8.0
-Pygments===2.2.0
 XStatic-Hogan===2.0.0.2
 XStatic-objectpath===1.2.1.0
 python-manilaclient===1.22.0
