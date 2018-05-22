@@ -435,7 +435,6 @@ python-muranoclient===1.0.1
 pyeclib===1.5.0
 wsgi-intercept===1.7.0
 ndg-httpsclient===0.5.0;python_version=='2.7'
-spec-cleaner===1.0.8
 repoze.lru===0.7
 rfc3986===1.1.0
 tenacity===4.12.0
