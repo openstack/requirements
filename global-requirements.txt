@@ -106,6 +106,7 @@ libvirt-python!=4.1.0,!=4.2.0  # LGPLv2+
 lxml!=3.7.0  # BSD
 Mako  # MIT
 marathon!=0.9.1  # MIT
+metalsmith  # Apache-2.0
 microversion-parse  # Apache-2.0
 mistral-lib  # Apache-2.0
 monasca-common  # Apache-2.0
