@@ -84,6 +84,7 @@ openstack/manila-tempest-plugin
 openstack/manila-ui
 openstack/masakari
 openstack/masakari-monitors
+openstack/metalsmith
 openstack/mistral
 openstack/mistral-dashboard
 openstack/mistral-lib
