@@ -383,7 +383,9 @@ pyasn1===0.4.2
 oslo.rootwrap===5.14.1
 Django===1.11.13
 pexpect===4.5.0
-cmd2===0.8.5
+cmd2===0.8.7;python_version=='2.7'
+cmd2===0.9.1;python_version=='3.4'
+cmd2===0.9.1;python_version=='3.5'
 redis===2.10.6
 jmespath===0.9.3
 click===6.7
