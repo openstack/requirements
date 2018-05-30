@@ -18,7 +18,8 @@ ceilometermiddleware>=0.1.0  # Apache-2.0
 cachetools>=1.1.0 # MIT License
 cffi  # MIT
 cliff>=2.3.0  # Apache-2.0
-cmd2>=0.6.7  # MIT
+cmd2>=0.6.7,<0.9.0;python_version<'3.0'  # MIT
+cmd2>=0.6.7;python_version>='3.0'  # MIT
 construct>=2.8.10 # MIT
 PuLP>=1.4.1  # MIT
 contextlib2>=0.4.0 # PSF License
