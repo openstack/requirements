@@ -182,7 +182,7 @@ django-compressor===2.2
 libvirt-python===3.10.0
 python-zunclient===1.1.0
 tzlocal===1.5.1
-python-novaclient===9.1.1
+python-novaclient===10.1.0
 bcrypt===3.1.4
 os-client-config===1.29.0
 XStatic-Angular-Gettext===2.3.8.0
