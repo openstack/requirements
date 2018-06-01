@@ -106,6 +106,7 @@ openstack/murano-dashboard
 openstack/murano-pkg-check
 openstack/murano-tempest-plugin
 openstack/nemesis
+openstack/networking-ansible
 openstack/networking-arista
 openstack/networking-bagpipe
 openstack/networking-baremetal
