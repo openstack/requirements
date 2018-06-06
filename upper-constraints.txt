@@ -98,7 +98,7 @@ monasca-common===2.9.0
 scipy===1.1.0
 rsd-lib===0.2.2
 XStatic-Jasmine===2.4.1.1
-python-glanceclient===2.11.0
+python-glanceclient===2.11.1
 pyinotify===0.9.6
 debtcollector===1.19.0
 requests-unixsocket===0.1.5
