@@ -15,7 +15,7 @@
 Instructions:
 
  1. virtualenv venv
- 2. source virtualenv/bin/activate
+ 2. source venv/bin/activate
  3. pip install /path/to/local/copy/of/requirements/repository
  4. cd /path/to/project/to/fix
  5. .../requirements/tools/fix-lower-constraints.py > new-lc.txt
