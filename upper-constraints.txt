@@ -157,8 +157,8 @@ graphviz===0.8.2
 PyKMIP===0.7.0
 whereto===0.4.0
 python-subunit===1.2.0
-tornado===4.4.3;python_version=='3.4'
-tornado===4.4.3;python_version=='3.5'
+tornado===4.5.3;python_version=='3.4'
+tornado===4.5.3;python_version=='3.5'
 pycparser===2.18
 mock===2.0.0
 PyYAML===3.12
