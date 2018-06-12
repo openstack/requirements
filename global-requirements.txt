@@ -57,6 +57,7 @@ enum34;python_version=='2.7' or python_version=='2.6' or python_version=='3.3'  
 eventlet!=0.18.3,!=0.20.1,!=0.21.0,!=0.23.0  # MIT
 exabgp  # BSD
 extras  # MIT
+faker  # MIT
 falcon  # Apache-2.0
 Flask!=0.11,<1.0  # BSD
 flask-keystone  # Apache-2.0
