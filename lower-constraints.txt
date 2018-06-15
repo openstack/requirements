@@ -490,7 +490,7 @@ decorator===3.4.0
 cffi===1.7.0
 futurist===1.2.0
 jsonschema===2.6.0
-alembic===0.8.10
+alembic===0.9.6
 glance-store===0.22.0
 sphinx-testing===0.7.2
 dnspython===1.14.0
