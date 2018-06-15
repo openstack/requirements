@@ -155,6 +155,11 @@ def _validate_one(name, reqs, blacklist, global_reqs):
                   "not match openstack/requirements value : %s" % (
                       name, str(req), str(global_reqs[name])))
             return True
+        # check for minimum being defined
+        min = [s for s in req.specifiers.split(',') if '>' in s]
+        if not min:
+            print("Requirement for package %s has no lower bound" % name)
+            return True
     for extra, count in counts.items():
         if count != len(global_reqs[name]):
             print("Package %s%s requirement does not match "
