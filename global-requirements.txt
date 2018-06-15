@@ -299,7 +299,7 @@ requests-kerberos  # ISC
 requestsexceptions  # Apache-2.0
 rfc3986  # Apache-2.0
 Routes  # MIT
-rtslib-fb!=2.1.60,!=2.1.61,!=2.1.64  # Apache-2.0
+rtslib-fb  # Apache-2.0
 ryu  # Apache-2.0
 semantic-version  # BSD
 fasteners  # Apache-2.0
