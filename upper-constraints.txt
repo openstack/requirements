@@ -397,7 +397,7 @@ click===6.7
 atomicwrites===1.1.5
 docker-pycreds===0.3.0
 XStatic-smart-table===1.4.13.2
-kuryr-lib===0.7.0
+kuryr-lib===0.8.0
 scrypt===0.8.6
 jsonpatch===1.23
 python-daemon===2.1.2
