@@ -49,7 +49,7 @@ dnspython3!=1.13.0,!=1.14.0;python_version>='3.0'  # http://www.dnspython.org/LI
 docutils  # OSI-Approved Open Source, Public Domain
 dogpile.cache  # BSD
 dogtag-pki  # LGPLv3+
-dulwich  # Apache-2.0
+dulwich!=0.19.3  # Apache-2.0
 elasticsearch<=3.0.0  # Apache-2.0
 enum34;python_version=='2.7' or python_version=='2.6' or python_version=='3.3'  # BSD
 # NOTE: New versions of eventlet should not be accepted lightly
