@@ -509,7 +509,7 @@ XStatic-Angular-Vis===4.16.0.0
 xvfbwrapper===0.2.9
 futures===3.2.0;python_version=='2.7'
 tosca-parser===1.0.0
-Flask===0.12.4
+Flask===1.0.2
 happybase===1.1.0;python_version=='2.7'
 marathon===0.9.3
 fasteners===0.14.1

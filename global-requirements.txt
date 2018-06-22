@@ -58,7 +58,7 @@ eventlet!=0.18.3,!=0.20.1,!=0.21.0,!=0.23.0  # MIT
 exabgp  # BSD
 extras  # MIT
 falcon  # Apache-2.0
-Flask!=0.11,<1.0  # BSD
+Flask!=0.11  # BSD
 flask-keystone  # Apache-2.0
 flask-oslolog  # Apache-2.0
 Flask-RESTful  # BSD
