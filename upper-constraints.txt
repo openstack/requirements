@@ -164,7 +164,7 @@ cryptography===2.2.2
 backports.ssl-match-hostname===3.5.0.1;python_version=='2.7'
 openstack-release-test===1.0.0
 pylxd===2.2.7
-pycryptodomex===3.6.2
+pycryptodomex===3.6.3
 anyjson===0.3.3
 requests-mock===1.5.0
 os-apply-config===9.0.0
