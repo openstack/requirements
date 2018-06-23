@@ -280,6 +280,7 @@ exabgp===4.0.6
 sphinxcontrib-httpdomain===1.6.1
 metalsmith===0.4.0
 thriftpy===0.3.9;python_version=='2.7'
+text-unidecode===1.2
 murano-pkg-check===0.3.0
 oslo.vmware===2.29.2
 sqlalchemy-migrate===0.11.0
@@ -353,6 +354,7 @@ sphinxmark===0.1.19
 PyNaCl===1.2.1
 osc-lib===1.10.0
 python-consul===1.0.1
+Faker===0.8.16
 more-itertools===4.2.0
 seqdiag===0.9.5
 numpy===1.14.5
