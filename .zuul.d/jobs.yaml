@@ -35,6 +35,16 @@
       tox_envlist: py35-check-uc
 
 - job:
+    name: requirements-tox-py36-check-uc
+    parent: openstack-tox-py36
+    description: |
+      Run test for requirements project.
+
+      Uses tox with the ``py36-check-uc`` environment.
+    files: ^upper-constraints.*txt$
+    vars:
+      tox_envlist: py36-check-uc
+- job:
     name: requirements-tox-validate-projects
     parent: openstack-tox
     files:
