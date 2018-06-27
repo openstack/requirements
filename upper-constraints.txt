@@ -174,7 +174,7 @@ mox3===0.23.0
 gunicorn===19.7.1
 unittest2===1.1.0
 django-compressor===2.1.1
-libvirt-python===3.5.0
+libvirt-python===3.10.0
 python-zunclient===0.4.1
 tzlocal===1.4
 python-novaclient===9.1.2
