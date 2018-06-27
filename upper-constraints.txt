@@ -224,7 +224,7 @@ termcolor===1.1.0
 hiredis===0.2.0
 google-api-python-client===1.6.7
 castellan===0.18.0
-oslo.versionedobjects===1.33.2
+oslo.versionedobjects===1.33.3
 webcolors===1.8.1
 aodhclient===1.1.0
 autobahn===18.6.1
