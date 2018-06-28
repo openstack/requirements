@@ -49,7 +49,7 @@ class SmokeTest(testtools.TestCase):
         self.assertIn("jsonschema!=1.4.0,<2,>=1.0.0", reqs)
         self.assertIn("python-keystoneclient>=0.4.1", reqs)
         self.assertIn("SQLAlchemy<=0.7.99,>=0.7", reqs)
-        expected = ('Version change for: greenlet, SQLAlchemy, eventlet, PasteDeploy, routes, WebOb, wsgiref, boto, kombu, pycrypto, python-swiftclient, lxml, jsonschema, python-keystoneclient\n'  # noqa
+        expected = ('Version change for: greenlet, SQLAlchemy, eventlet, PasteDeploy, routes, WebOb, wsgiref, boto, kombu, python-swiftclient, lxml, jsonschema, python-keystoneclient\n'  # noqa
             """Updated %(project)s/requirements.txt:
     greenlet>=0.3.1                ->   greenlet>=0.3.2
     SQLAlchemy>=0.7.8,<=1.0.17     ->   SQLAlchemy<=0.7.99,>=0.7
@@ -60,7 +60,6 @@ class SmokeTest(testtools.TestCase):
     wsgiref                        ->   wsgiref>=0.1.2
     boto                           ->   boto>=2.4.0
     kombu>2.4.7                    ->   kombu>=2.4.8
-    pycrypto>=2.1.0alpha1          ->   pycrypto>=2.6
     python-swiftclient>=1.2,<4     ->   python-swiftclient>=1.2
     lxml                           ->   lxml>=2.3
     jsonschema                     ->   jsonschema!=1.4.0,<2,>=1.0.0
@@ -161,7 +160,7 @@ class UpdateTest(testtools.TestCase):
         capture = six.StringIO()
         project.write(
             common.project_project, actions, capture, False, True)
-        expected = ('Version change for: greenlet, SQLAlchemy, eventlet, PasteDeploy, routes, WebOb, wsgiref, boto, kombu, pycrypto, python-swiftclient, lxml, jsonschema, python-keystoneclient\n'  # noqa
+        expected = ('Version change for: greenlet, SQLAlchemy, eventlet, PasteDeploy, routes, WebOb, wsgiref, boto, kombu, python-swiftclient, lxml, jsonschema, python-keystoneclient\n'  # noqa
             """Updated %(project)s/requirements.txt:
     greenlet>=0.3.1                ->   greenlet>=0.3.2
     SQLAlchemy>=0.7.8,<=1.0.17     ->   SQLAlchemy<=0.7.99,>=0.7
@@ -172,7 +171,6 @@ class UpdateTest(testtools.TestCase):
     wsgiref                        ->   wsgiref>=0.1.2
     boto                           ->   boto>=2.4.0
     kombu>2.4.7                    ->   kombu>=2.4.8
-    pycrypto>=2.1.0alpha1          ->   pycrypto>=2.6
     python-swiftclient>=1.2,<4     ->   python-swiftclient>=1.2
     lxml                           ->   lxml>=2.3
     jsonschema                     ->   jsonschema!=1.4.0,<2,>=1.0.0
@@ -194,7 +192,7 @@ Updated %(project)s/test-requirements.txt:
         project.write(
             common.project_project, actions, capture, True, True)
         expected = ("""Syncing %(project)s/requirements.txt
-Version change for: greenlet, SQLAlchemy, eventlet, PasteDeploy, routes, WebOb, wsgiref, boto, kombu, pycrypto, python-swiftclient, lxml, jsonschema, python-keystoneclient\n"""  # noqa
+Version change for: greenlet, SQLAlchemy, eventlet, PasteDeploy, routes, WebOb, wsgiref, boto, kombu, python-swiftclient, lxml, jsonschema, python-keystoneclient\n"""  # noqa
             """Updated %(project)s/requirements.txt:
     greenlet>=0.3.1                ->   greenlet>=0.3.2
     SQLAlchemy>=0.7.8,<=1.0.17     ->   SQLAlchemy<=0.7.99,>=0.7
@@ -205,7 +203,6 @@ Version change for: greenlet, SQLAlchemy, eventlet, PasteDeploy, routes, WebOb, 
     wsgiref                        ->   wsgiref>=0.1.2
     boto                           ->   boto>=2.4.0
     kombu>2.4.7                    ->   kombu>=2.4.8
-    pycrypto>=2.1.0alpha1          ->   pycrypto>=2.6
     python-swiftclient>=1.2,<4     ->   python-swiftclient>=1.2
     lxml                           ->   lxml>=2.3
     jsonschema                     ->   jsonschema!=1.4.0,<2,>=1.0.0

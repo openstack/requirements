@@ -164,7 +164,6 @@ cryptography===2.2.2
 backports.ssl-match-hostname===3.5.0.1;python_version=='2.7'
 openstack-release-test===1.1.0
 pylxd===2.2.7
-pycryptodomex===3.6.3
 anyjson===0.3.3
 requests-mock===1.5.0
 os-apply-config===9.0.0
@@ -253,7 +252,6 @@ uritemplate===3.0.0
 django-babel===0.6.2
 docutils===0.14
 notifier===1.0.3
-pycrypto===2.6.1
 ujson===1.35
 selenium===3.13.0
 python-glareclient===0.5.3

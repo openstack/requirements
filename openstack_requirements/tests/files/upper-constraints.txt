@@ -234,7 +234,6 @@ uritemplate===3.0.0
 django-babel===0.5.1
 docutils===0.13.1
 notifier===1.0.3
-pycrypto===2.6.1
 ujson===1.35
 selenium===3.3.0
 mypy===0.501;python_version=='3.4'
@@ -374,7 +373,6 @@ yaql===1.1.3
 requestsexceptions===1.2.0
 testresources===2.0.1
 falcon===1.1.0
-pycryptodome===3.4.5
 pyldap===2.4.28
 Flask-RESTful===0.3.5
 GitPython===2.1.3
