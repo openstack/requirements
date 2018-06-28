@@ -551,3 +551,4 @@ xstatic-js-yaml===3.8.1.0
 xstatic-json2yaml===0.1.1.0
 python-qinlingclient===1.0.0
 ansible-runner===1.0.3
+distro===1.2.0
