@@ -82,10 +82,6 @@ dependencies. As such you should always generate a diff against the current
 merged constraints, otherwise your change may fail if it is incompatible with
 the current tested constraints.
 
-A change to the minimum specified vesion of a library in ``global-requirements.txt``
-currenty requires adjusting the ``lower-constraints.txt`` file alongside with the
-new constrainted coinstallable version of minimums.
-
 Regenerating involves five steps.
 
 1) Install the dependencies needed to compile various Python packages::
