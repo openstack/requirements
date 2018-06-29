@@ -51,6 +51,26 @@ are normally constrained::
 
   edit-constraints oslo.db "-e file://opt/stack/oslo.db#egg=oslo.db"
 
+build-lower-constraints
+-----------------------
+
+Combine multiple lower-constraints.txt files to produce a list of the
+highest version of each package mentioned in the files. This can be
+used to produce the "highest minimum" for a global lower constraints
+list (a.k.a., the "TJ Maxx").
+
+To use the script, run::
+
+    $ tox -e venv -- build-lower-constraints input1.txt input2.txt
+
+Where the input files are lower-constraints.txt or requirements.txt
+files from one or more projects.
+
+If the inputs are requirements files, a lower constraints list for the
+requirements is produced. If the inputs are lower-constraints.txt, the
+output includes the highest version of each package referenced in the
+files.
+
 Proposing changes
 =================
 
