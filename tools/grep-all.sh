@@ -24,7 +24,7 @@ if [ $# -ne 1 ]; then
 fi
 
 function search {
-    git grep -hEi "^${1}[=><!]" "${2}:${3}" 2>/dev/null
+    git grep -hEi "^${1}[ =><!]" "${2}:${3}" 2>/dev/null
 }
 
 printf '\nRequirements\n------------\n'
