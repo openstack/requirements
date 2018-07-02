@@ -55,7 +55,7 @@ enum34;python_version=='2.7' or python_version=='2.6' or python_version=='3.3'  
 # NOTE: New versions of eventlet should not be accepted lightly
 # as they have earned a reputation of frequently breaking things.
 eventlet!=0.18.3,!=0.20.1,!=0.21.0,!=0.23.0  # MIT
-exabgp  # BSD
+exabgp!=4.0.6  # BSD
 extras  # MIT
 faker  # MIT
 falcon  # Apache-2.0
