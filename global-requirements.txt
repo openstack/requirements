@@ -126,7 +126,6 @@ netmiko>=1.2.5  # MIT
 #  https://bugs.launchpad.net/openstack-requirements/+bug/1718576
 networkx>=1.10,<2.0  # BSD
 neutron-lib>=1.13.0  # Apache-2.0
-neutron-lbaas>=12.0.0  # Apache-2.0
 notifier>=1.0.3  # Apache-2.0
 oauth2client>=1.5.0,!=4.0.0  # Apache-2.0
 oauthlib>=0.6.0  # BSD
