@@ -35,6 +35,7 @@ decorator  # BSD
 defusedxml  # PSF
 dib-utils  # Apache-2.0
 diskimage-builder!=1.6.0,!=1.7.0,!=1.7.1  # Apache-2.0
+distro  # Apache-2.0
 Django<2;python_version<'3.0'  # BSD
 Django<2.1;python_version>='3.0'  # BSD
 django-babel  # BSD
