@@ -444,7 +444,6 @@ django-openstack-auth===3.6.1
 wsgi-intercept===1.5.0
 ndg-httpsclient===0.4.2;python_version=='2.7'
 tempest-lib===1.0.0
-spec-cleaner===0.9.8
 repoze.lru===0.6
 rfc3986===1.1.0
 tenacity===4.4.0
