@@ -55,3 +55,15 @@ class BuildLowerConstraintsTest(testtools.TestCase):
             expected,
             list(build_lower_constraints.merge_constraints_sets(inputs))
         )
+
+    def test_one_input_file_with_comments(self):
+        inputs = [
+            requirement.parse('package==1.2.3\n # package2==0.9.8'),
+        ]
+        expected = [
+            'package==1.2.3\n',
+        ]
+        self.assertEqual(
+            expected,
+            list(build_lower_constraints.merge_constraints_sets(inputs))
+        )
