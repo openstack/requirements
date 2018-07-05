@@ -25,7 +25,7 @@ cmd2!=0.8.3;python_version>='3.0'  # MIT
 cotyledon  # Apache-2.0
 construct<2.9  # MIT
 PuLP  # MIT
-contextlib2  # PSF License
+contextlib2;python_version<'3.0'  # PSF License
 croniter  # MIT License
 cryptography!=2.0  # BSD/Apache-2.0
 cursive  # Apache-2.0
