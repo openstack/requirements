@@ -1,4 +1,4 @@
-#! /usr/bin/env python
+#! /usr/bin/env python3
 # Copyright (C) 2011 OpenStack, LLC.
 # Copyright (c) 2013 Hewlett-Packard Development Company, L.P.
 # Copyright (c) 2013 OpenStack Foundation
@@ -97,6 +97,8 @@ def main():
     branch = args.branch
     os.chdir(args.src_dir)
     reqdir = args.reqs
+
+    print(sys.version_info)
 
     if reqdir is None:
         if args.local:
