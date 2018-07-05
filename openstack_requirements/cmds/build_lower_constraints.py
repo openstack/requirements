@@ -48,7 +48,8 @@ def merge_constraints_sets(constraints_sets):
     all_constraints = collections.defaultdict(list)
     for constraints_set in constraints_sets:
         for constraint_name, constraint in constraints_set.items():
-            all_constraints[constraint_name].extend(constraint)
+            if constraint_name:
+                all_constraints[constraint_name].extend(constraint)
     for constraint_name, constraints in sorted(all_constraints.items()):
         val = max((c[0] for c in constraints), key=get_requirements_version)
         yield val.to_line()
