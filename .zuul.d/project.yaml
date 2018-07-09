@@ -17,7 +17,6 @@
         - requirements-tox-babel
         - requirements-tox-bindep:
             voting: false
-        - requirements-tox-py27-check-lc
         - requirements-tox-py27-check-uc
         - requirements-tox-py35-check-uc
         - requirements-tox-validate-projects
