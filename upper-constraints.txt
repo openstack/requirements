@@ -196,7 +196,7 @@ Jinja2===2.10
 XStatic-Bootstrap-SCSS===3.3.7.1
 pyzabbix===0.7.4
 ptyprocess===0.5.2
-amqp===2.2.2
+amqp===2.3.2
 ruamel.yaml===0.13.14;python_version=='3.4'
 ruamel.yaml===0.13.14;python_version=='3.5'
 websockify===0.8.0
