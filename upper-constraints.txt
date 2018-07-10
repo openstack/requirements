@@ -164,6 +164,7 @@ cryptography===2.2.2
 backports.ssl-match-hostname===3.5.0.1;python_version=='2.7'
 openstack-release-test===1.1.0
 pylxd===2.2.7
+ruamel.ordereddict===0.4.13;python_version=='2.7'
 pycryptodomex===3.6.3
 anyjson===0.3.3
 requests-mock===1.5.0
@@ -194,6 +195,7 @@ pyzabbix===0.7.4
 ptyprocess===0.6.0
 threadloop===1.0.2
 amqp===2.3.2
+ruamel.yaml===0.15.42
 websockify===0.8.0
 XStatic-JQuery.quicksearch===2.0.3.1
 mpmath===1.0.0
@@ -263,6 +265,7 @@ dogtag-pki===10.3.5.1
 XStatic-Angular-UUID===0.0.4.0
 sphinxcontrib-seqdiag===0.8.5
 os-win===4.0.0
+dictdiffer===0.7.1
 pydot3===1.0.9
 retrying===1.3.3
 shade===1.28.0
@@ -286,6 +289,7 @@ sqlalchemy-migrate===0.11.0
 python-monascaclient===1.11.0
 ldap3===2.5
 requests-ntlm===1.1.0
+python-string-utils===0.6.0
 automaton===1.14.0
 os-service-types===1.2.0
 keyring===13.2.1
@@ -315,6 +319,7 @@ keystonemiddleware===5.1.0
 django-formtools===2.1
 python-ceilometerclient===2.9.0
 XStatic-Spin===1.2.5.2
+openshift===0.6.1
 tap-as-a-service===3.0.0
 os-traits===0.8.0
 SecretStorage===2.3.1;python_version=='2.7'
