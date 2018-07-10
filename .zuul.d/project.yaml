@@ -19,6 +19,8 @@
             voting: false
         - requirements-tox-py27-check-uc
         - requirements-tox-py35-check-uc
+        - requirements-tox-py36-check-uc:
+            voting: false
         - requirements-tox-validate-projects
         - cross-cinder-py27
         - cross-cinder-py35
@@ -36,6 +38,7 @@
         - cross-osc-build-sphinx-docs
         - cross-swift-py27
         - cross-swift-py35
+        - openstack-tox-py36
     gate:
       queue: integrated
       jobs:
@@ -73,3 +76,4 @@
         - cross-osc-build-sphinx-docs
         - cross-swift-py27
         - cross-swift-py35
+        - openstack-tox-py36
