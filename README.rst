@@ -71,6 +71,16 @@ requirements is produced. If the inputs are lower-constraints.txt, the
 output includes the highest version of each package referenced in the
 files.
 
+check-requirements
+------------------
+
+Run the validation checks from the ``requirements-check`` job locally
+using the ``requirements-check`` tox environment.
+
+Run::
+
+    $ tox -e requirements-check -- /path/to/repo/to/test
+
 Proposing changes
 =================
 
