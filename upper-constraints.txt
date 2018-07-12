@@ -447,7 +447,7 @@ pymemcache===1.4.4
 wrapt===1.10.11
 oslo.privsep===1.29.0
 sphinxcontrib-apidoc===0.2.1
-oslo.policy===1.37.0
+oslo.policy===1.38.0
 python-muranoclient===1.1.0
 pyeclib===1.5.0
 wsgi-intercept===1.8.0
