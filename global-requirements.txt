@@ -388,6 +388,7 @@ django-nose  # BSD
 doc8  # Apache-2.0
 Pygments  # BSD license
 fixtures  # Apache-2.0/BSD
+fixtures-git  # Apache-2.0
 freezegun  # Apache-2.0
 gabbi  # Apache-2.0
 kafka-python  # Apache-2.0
