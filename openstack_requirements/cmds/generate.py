@@ -139,12 +139,12 @@ def _clone_versions(freezes, options):
     for freeze_data in freezes:
         versions = [v for v, d in freezes]
         version, freeze = freeze_data
-        if (version in options.version_map and
-                options.version_map[version] not in versions):
-            print("Duplicating %s freeze to %s" %
-                  (version, options.version_map[version]),
-                  file=sys.stderr)
-            freezes.append((options.version_map[version], copy.copy(freeze)))
+        if version in options.version_map:
+            for dst_version in sorted(options.version_map[version]):
+                if dst_version not in versions:
+                    print("Duplicating %s freeze to %s" %
+                          (version, dst_version), file=sys.stderr)
+                    freezes.append((dst_version, copy.copy(freeze)))
 
 
 # -- untested UI glue from here down.
@@ -177,7 +177,8 @@ def _validate_options(options):
                 "Invalid version-map entry %(map_entry)s"
                 % dict(map_entry=map_entry))
         src, dst = map_entry.split(':')
-        version_map[src] = dst
+        version_map.setdefault(src, set())
+        version_map[src].add(dst)
     options.version_map = version_map
 
 
