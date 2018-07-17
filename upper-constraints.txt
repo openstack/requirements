@@ -195,7 +195,7 @@ pyzabbix===0.7.4
 ptyprocess===0.6.0
 threadloop===1.0.2
 amqp===2.3.2
-ruamel.yaml===0.15.43
+ruamel.yaml===0.15.44
 websockify===0.8.0
 XStatic-JQuery.quicksearch===2.0.3.1
 mpmath===1.0.0
@@ -433,7 +433,7 @@ pyldap===3.0.0;python_version=='2.7'
 pyldap===3.0.0;python_version=='3.4'
 pyldap===3.0.0;python_version=='3.5'
 Flask-RESTful===0.3.6
-GitPython===2.1.10
+GitPython===2.1.11
 python-ironicclient===2.4.0
 XStatic===1.0.1
 XStatic-Angular-FileUpload===12.0.4.0
@@ -510,7 +510,7 @@ Babel===2.6.0
 logutils===0.3.5
 scandir===1.7;python_version=='2.7'
 sphinxcontrib-fulltoc===1.2.0
-smmap2===2.0.3
+smmap2===2.0.4
 greenlet===0.4.13
 XStatic-Angular-Vis===4.16.0.0
 xvfbwrapper===0.2.9
@@ -526,7 +526,7 @@ python-heatclient===1.16.0
 kafka-python===1.4.3
 oslo.utils===3.36.3
 python-editor===1.0.3
-gitdb2===2.0.3
+gitdb2===2.0.4
 requests-kerberos===0.12.0
 itsdangerous===0.24
 XStatic-jquery-ui===1.12.0.1
@@ -539,4 +539,4 @@ pytz===2018.5
 XStatic-D3===3.5.17.0
 actdiag===0.5.4
 sysv-ipc===1.0.0
-scikit-learn===0.19.1
+scikit-learn===0.19.2
