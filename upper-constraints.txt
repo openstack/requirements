@@ -206,7 +206,7 @@ tinyrpc===0.9.1
 google-auth-httplib2===0.0.3
 Flask-SQLAlchemy===2.3.2
 daiquiri===1.3.0
-influxdb===5.2.0
+influxdb===5.1.0
 funcparserlib===0.3.6
 passlib===1.7.1
 dib-utils===0.0.11

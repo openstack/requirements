@@ -80,7 +80,7 @@ heat-translator  # Apache-2.0
 horizon  # Apache-2.0
 httplib2  # MIT
 icalendar  # BSD
-influxdb  # MIT
+influxdb!=5.2.0  # MIT
 instack-undercloud  # Apache-2.0
 ironic-lib  # Apache-2.0
 ipaddress;python_version<'3.3'  # PSF
