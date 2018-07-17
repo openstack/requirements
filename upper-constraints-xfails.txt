@@ -1,6 +1,2 @@
 # Format is
 # <dependency that is incompatible>==<version>;<list,of,affected,packages>
-pyopenssl==17.5.0;mitmproxy
-pyperclip==1.6.0;mitmproxy
-pyasn1==0.4.2;mitmproxy
-cryptography==2.1.4;mitmproxy
