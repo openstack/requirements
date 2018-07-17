@@ -502,7 +502,7 @@ futurist===1.7.0
 jsonschema===2.6.0
 python-blazarclient===1.1.1
 alembic===1.0.0
-glance-store===0.24.0
+glance-store===0.25.0
 sphinx-testing===0.7.2
 dnspython===1.15.0
 oauthlib===2.1.0
