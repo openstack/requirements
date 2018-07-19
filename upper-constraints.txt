@@ -530,7 +530,7 @@ gitdb2===2.0.4
 requests-kerberos===0.12.0
 itsdangerous===0.24
 XStatic-jquery-ui===1.12.0.1
-monasca-statsd===1.10.0
+monasca-statsd===1.10.1
 python-dateutil===2.7.3
 virtualenv===16.0.0
 colorama===0.3.9
