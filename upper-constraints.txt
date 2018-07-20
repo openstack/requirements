@@ -284,7 +284,7 @@ metalsmith===0.5.0
 thriftpy===0.3.9;python_version=='2.7'
 text-unidecode===1.2
 murano-pkg-check===0.3.0
-oslo.vmware===2.30.0
+oslo.vmware===2.31.0
 sqlalchemy-migrate===0.11.0
 python-monascaclient===1.12.0
 ldap3===2.5
