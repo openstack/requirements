@@ -386,7 +386,7 @@ tricircleclient===0.3.0
 WSME===0.9.3
 proboscis===1.2.6.0
 fortiosclient===0.0.3
-stevedore===1.28.0
+stevedore===1.29.0
 botocore===1.10.58
 xmltodict===0.11.0
 pyasn1===0.4.3
