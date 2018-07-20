@@ -39,7 +39,7 @@ certifi===2018.4.16
 sphinxcontrib-nwdiag===0.9.5
 requests-aws===0.1.8
 alabaster===0.7.11
-pbr===4.1.0
+pbr===4.1.1
 munch===2.3.2
 attrs===18.1.0
 microversion-parse===0.2.1
