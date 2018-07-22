@@ -166,7 +166,7 @@ pylxd===2.2.7
 ruamel.ordereddict===0.4.13;python_version=='2.7'
 pycryptodomex===3.6.4
 anyjson===0.3.3
-requests-mock===1.5.0
+requests-mock===1.5.2
 os-apply-config===9.0.0
 oslosphinx===4.18.0
 mox3===0.26.0
@@ -235,9 +235,7 @@ pluggy===0.6.0
 coverage===4.5.1
 freezegun===0.3.10
 python-pytun===2.2.1
-pyperclip===1.6.2;python_version=='2.7'
-pyperclip===1.6.3;python_version=='3.4'
-pyperclip===1.6.3;python_version=='3.5'
+pyperclip===1.6.4
 cassandra-driver===3.14.0
 mox===0.5.3
 XStatic-Angular-Schema-Form===0.8.13.0
@@ -389,7 +387,7 @@ WSME===0.9.3
 proboscis===1.2.6.0
 fortiosclient===0.0.3
 stevedore===1.29.0
-botocore===1.10.60
+botocore===1.10.62
 xmltodict===0.11.0
 pyasn1===0.4.3
 oslo.rootwrap===5.14.1
