@@ -511,7 +511,7 @@ logutils===0.3.5
 scandir===1.7;python_version=='2.7'
 sphinxcontrib-fulltoc===1.2.0
 smmap2===2.0.4
-greenlet===0.4.14
+greenlet===0.4.13
 XStatic-Angular-Vis===4.16.0.0
 xvfbwrapper===0.2.9
 futures===3.2.0;python_version=='2.7'
