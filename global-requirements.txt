@@ -72,7 +72,7 @@ funcsigs;python_version=='2.7' or python_version=='2.6'  # Apache-2.0
 glance-store  # Apache-2.0
 google-api-python-client  # Apache-2.0
 graphviz!=0.5.0  # MIT License
-greenlet  # MIT
+greenlet!=0.4.14  # MIT
 GitPython  # BSD License (3 clause)
 gunicorn  # MIT
 happybase!=0.7,!=1.0.0;python_version=='2.7'  # MIT
