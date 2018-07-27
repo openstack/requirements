@@ -497,7 +497,7 @@ decorator===4.3.0
 cffi===1.11.5
 futurist===1.7.0
 jsonschema===2.6.0
-python-blazarclient===1.1.1
+python-blazarclient===2.0.0
 alembic===1.0.0
 glance-store===0.26.0
 sphinx-testing===0.7.2
