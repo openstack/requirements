@@ -217,6 +217,7 @@ etcd3  # Apache-2.0
 etcd3gw  # Apache-2.0
 typing  # PSF
 voluptuous  # BSD License
+pydot  # MIT License
 pydotplus  # MIT License
 crc16  # LGPLv3+
 pyzabbix  # LGPL
