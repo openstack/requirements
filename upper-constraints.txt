@@ -440,7 +440,7 @@ pymemcache===1.4.4
 wrapt===1.10.11
 oslo.privsep===1.27.0
 zope.interface===4.4.3
-oslo.policy===1.33.1
+oslo.policy===1.33.2
 python-muranoclient===1.0.1
 pyeclib===1.5.0
 wsgi-intercept===1.6.0
