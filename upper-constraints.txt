@@ -428,7 +428,7 @@ requestsexceptions===1.4.0
 testresources===2.0.1
 falcon===1.4.1
 subprocess32===3.5.2;python_version=='2.7'
-etcd3gw===0.2.2
+etcd3gw===0.2.4
 Flask-RESTful===0.3.6
 GitPython===2.1.11
 python-ironicclient===2.5.0
