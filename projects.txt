@@ -282,6 +282,7 @@ openstack/python-watcherclient
 openstack/python-zaqarclient
 openstack/python-zunclient
 openstack/qinling
+openstack/qinling-dashboard
 openstack/requirements
 openstack/sahara
 openstack/sahara-dashboard
