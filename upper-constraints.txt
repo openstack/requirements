@@ -382,7 +382,7 @@ construct===2.8.22
 pyparsing===2.2.0
 dogpile.cache===0.6.6
 python-barbicanclient===4.7.0
-tricircleclient===0.3.0
+tricircleclient===0.4.0
 WSME===0.9.3
 proboscis===1.2.6.0
 fortiosclient===0.0.3
