@@ -444,6 +444,7 @@ sphinxcontrib-fulltoc  # Apache-2.0
 sphinx-feature-classification  # Apache-2.0
 sphinxmark  # Apache-2.0
 sphinxcontrib.datatemplates  # BSD License
+sphinxcontrib-programoutput  # BSD license
 stestr  # Apache-2.0
 sushy  # Apache-2.0
 testrepository  # Apache-2.0/BSD
