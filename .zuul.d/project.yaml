@@ -1,7 +1,7 @@
 - project:
     templates:
       - openstack-pypy-jobs-nonvoting
-      - publish-openstack-sphinx-docs
+      - publish-openstack-docs-pti
       - openstack-python-jobs
       - openstack-python35-jobs
     check:
