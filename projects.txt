@@ -3,7 +3,6 @@ openstack-dev/pbr
 openstack-infra/shade
 openstack-infra/requestsexceptions
 openstack/almanach
-openstack/anchor
 openstack/ansible-hardening
 openstack/automaton
 openstack/bandit
