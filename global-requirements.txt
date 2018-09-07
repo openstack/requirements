@@ -203,7 +203,6 @@ PyECLib  # BSD
 pyghmi  # Apache-2.0
 pyinotify;sys_platform!='win32' and sys_platform!='darwin' and sys_platform!='sunos5'  # MIT
 PyJWT  # MIT
-pykafka  # Apache 2.0 License
 pykmip  # Apache 2.0 License
 python-ldap  # PSF
 pylxd  # Apache-2.0
