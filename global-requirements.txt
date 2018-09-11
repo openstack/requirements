@@ -468,6 +468,10 @@ zuul-sphinx  # Apache-2.0
 shade  # Apache-2.0
 sadisplay  # BSD
 
+# NOTE(tonyb): Generally adding OpenSatck services isn't allowed but some consumers of ceilometer
+# use it like a library so until there is a ceilometer-lib (or similar) this is our best option.
+ceilometer  # Apache-2.0
+
 # Indirect dependencies that need blocking
 daiquiri
 
