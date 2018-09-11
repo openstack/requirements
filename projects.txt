@@ -39,7 +39,6 @@ openstack/freezer-api
 openstack/freezer-tempest-plugin
 openstack/freezer-web-ui
 openstack/futurist
-openstack/fuxi
 openstack/gce-api
 openstack/glance
 openstack/glance_store
