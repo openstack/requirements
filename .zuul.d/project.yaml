@@ -26,7 +26,8 @@
         - requirements-tox-py35-check-uc
         - requirements-tox-py36-check-uc:
             voting: false
-        - requirements-tox-validate-projects
+        - requirements-tox-validate-projects:
+            voting: false
         - cross-cinder-py27
         - cross-cinder-py35
         - cross-glance-py27
@@ -75,7 +76,6 @@
         - requirements-tox-babel
         - requirements-tox-py27-check-uc
         - requirements-tox-py35-check-uc
-        - requirements-tox-validate-projects
         - cross-cinder-py27
         - cross-cinder-py35
         - cross-glance-py27
