@@ -16,7 +16,11 @@
 #              readable
 declare -a refs=($(git describe --always) origin/master)
 refs+=($(git branch --no-color -r --list 'origin/stable/*' | sort -r -t/ -k 3))
-refs+=($(git tag --list '*-eol' | sort -r))
+
+if [ "$1" == "--with-eol" ] ; then
+    refs+=($(git tag --list '*-eol' | sort -r))
+    shift 1
+fi
 
 if [ $# -ne 1 ]; then
     echo "Usage: $0 dependency-name" 1>&2
