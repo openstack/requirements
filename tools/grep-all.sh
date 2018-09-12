@@ -15,7 +15,7 @@
 # Note(tonyb): Expand HEAD into something that's hopefully more human
 #              readable
 declare -a refs=($(git describe --always) origin/master)
-refs+=($(git branch --no-color -r --list 'origin/stable/*'))
+refs+=($(git branch --no-color -r --list 'origin/stable/*' | sort -r -t/ -k 3))
 refs+=($(git tag --list '*-eol' | sort -r))
 
 if [ $# -ne 1 ]; then
