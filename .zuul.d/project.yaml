@@ -22,7 +22,8 @@
         - requirements-tox-py27-check-uc
         - requirements-tox-py35-check-uc:
             branches: ^(?!stable/(newton|ocata|pike)).*$
-        - requirements-tox-validate-projects
+        - requirements-tox-validate-projects:
+            voting: false
         - cross-cinder-py27
         - cross-cinder-py35:
             branches: ^(?!stable/(newton|ocata)).*$
@@ -74,7 +75,6 @@
         - requirements-tox-py27-check-uc
         - requirements-tox-py35-check-uc:
             branches: ^(?!stable/(newton|ocata|pike)).*$
-        - requirements-tox-validate-projects
         - cross-cinder-py27
         - cross-cinder-py35:
             branches: ^(?!stable/(newton|ocata)).*$
