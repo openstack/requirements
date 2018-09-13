@@ -3,7 +3,6 @@ openstack-dev/pbr
 openstack-infra/requestsexceptions
 openstack-infra/shade
 openstack/almanach
-openstack/anchor
 openstack/ansible-config_template
 openstack/ansible-hardening
 openstack/ansible-role-python_venv_build
