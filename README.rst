@@ -84,7 +84,7 @@ Run::
 Proposing changes
 =================
 
-Look at the `Review Guidelines` and make sure your change meets them.
+Look at the `Review Guidelines`_ and make sure your change meets them.
 
 All changes to ``global-requirements.txt`` may dramatically alter the contents
 of ``upper-constraints.txt`` due to adding or removing transitive
@@ -122,3 +122,5 @@ Resources
 - Documentation: https://docs.openstack.org/requirements/latest/
 - Wiki: https://wiki.openstack.org/wiki/Requirements
 - Bugs: https://launchpad.net/openstack-requirements
+
+.. _Review Guidelines: https://docs.openstack.org/project-team-guide/dependency-management.html#review-guidelines
