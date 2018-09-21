@@ -211,6 +211,7 @@ pymemcache!=1.3.0  # Apache 2.0 License
 pymongo!=3.1  # Apache-2.0
 PyMySQL  # MIT License
 python-etcd  # MIT License
+salt  # Apache-2.0
 tap-as-a-service  # Apache-2.0
 etcd3  # Apache-2.0
 etcd3gw!=0.2.2,!=0.2.3  # Apache-2.0

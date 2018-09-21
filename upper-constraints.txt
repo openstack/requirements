@@ -263,6 +263,7 @@ uritemplate===3.0.0
 django-babel===0.6.2
 docutils===0.14
 notifier===1.0.3
+pycrypto===2.6.1
 ujson===1.35
 selenium===3.14.1
 python-glareclient===0.5.3
@@ -393,6 +394,7 @@ construct===2.8.22
 pyparsing===2.2.2
 dogpile.cache===0.6.7
 python-barbicanclient===4.7.0
+salt===2018.3.2
 tricircleclient===0.4.0
 WSME===0.9.3
 proboscis===1.2.6.0
