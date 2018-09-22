@@ -79,7 +79,7 @@ python-vitrageclient===2.3.0
 nosexcover===1.0.11
 krest===1.3.1
 psycopg2===2.7.5
-networkx===2.1
+networkx===2.2
 bashate===0.6.0
 XStatic-Angular===1.5.8.0
 pyngus===2.2.4
@@ -131,7 +131,7 @@ traceback2===1.4.0
 semantic-version===2.6.0
 virtualbmc===1.4.0
 deprecation===2.0.5
-SQLAlchemy===1.2.11
+SQLAlchemy===1.2.12
 pyroute2===0.5.2
 google-auth===1.5.1
 kazoo===2.5.0
@@ -157,7 +157,7 @@ PyKMIP===0.8.0
 whereto===0.4.0
 python-subunit===1.3.0
 tornado===4.5.3
-pycparser===2.18
+pycparser===2.19
 mock===2.0.0
 PyYAML===3.13
 beautifulsoup4===4.6.3
@@ -201,7 +201,7 @@ pyzabbix===0.7.4
 ptyprocess===0.6.0
 threadloop===1.0.2
 amqp===2.3.2
-ruamel.yaml===0.15.66
+ruamel.yaml===0.15.69
 websockify===0.8.0
 XStatic-JQuery.quicksearch===2.0.3.1
 mpmath===1.0.0
@@ -238,7 +238,7 @@ oslo.versionedobjects===1.33.3
 webcolors===1.8.1
 aodhclient===1.1.1
 autobahn===18.9.2
-SQLAlchemy-Utils===0.33.4
+SQLAlchemy-Utils===0.33.5
 pluggy===0.7.1
 coverage===4.5.1
 freezegun===0.3.10
@@ -264,7 +264,7 @@ django-babel===0.6.2
 docutils===0.14
 notifier===1.0.3
 ujson===1.35
-selenium===3.14.0
+selenium===3.14.1
 python-glareclient===0.5.3
 mypy===0.630;python_version=='3.4'
 mypy===0.630;python_version=='3.5'
@@ -397,7 +397,7 @@ WSME===0.9.3
 proboscis===1.2.6.0
 fortiosclient===0.0.3
 stevedore===1.29.0
-botocore===1.12.6
+botocore===1.12.8
 xmltodict===0.11.0
 pyasn1===0.4.4
 oslo.rootwrap===5.14.1
