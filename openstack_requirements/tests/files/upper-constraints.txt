@@ -58,7 +58,7 @@ pysnmp===4.3.4
 Mako===1.0.6
 XStatic-angular-ui-router===0.3.1.2
 pyScss===1.3.4
-XStatic-jQuery===1.10.2.1
+XStatic-jQuery===1.12.4.1
 jsonmodels===2.1.5
 ddt===1.1.1
 ipaddress===1.0.18
