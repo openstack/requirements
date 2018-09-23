@@ -34,6 +34,7 @@
         - cross-glance-py35
         - cross-horizon-py27
         - cross-horizon-py35
+        - cross-horizon-npm
         - cross-keystone-py27
         - cross-keystone-py35
         - cross-neutron-py27
@@ -82,6 +83,7 @@
         - cross-glance-py35
         - cross-horizon-py27
         - cross-horizon-py35
+        - cross-horizon-npm
         - cross-keystone-py27
         - cross-keystone-py35
         - cross-neutron-py27
