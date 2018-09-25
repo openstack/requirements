@@ -358,7 +358,7 @@ XStatic-D3  # BSD License (3 clause)
 XStatic-Font-Awesome  # SIL OFL 1.1 License, MIT License
 XStatic-Hogan  # Apache 2.0 License
 XStatic-Jasmine  # MIT License
-XStatic-jQuery  # MIT License
+XStatic-jQuery<2  # MIT License
 XStatic-JQuery-Migrate  # MIT License
 XStatic-JQuery.quicksearch  # MIT License
 XStatic-JQuery.TableSorter  # MIT License
