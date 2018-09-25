@@ -443,7 +443,7 @@ python-pcre===0.7
 abclient===0.2.3
 pymemcache===1.4.4
 wrapt===1.10.11
-oslo.privsep===1.29.0
+oslo.privsep===1.29.2
 sphinxcontrib-apidoc===0.2.1
 oslo.policy===1.38.1
 python-muranoclient===1.1.1
