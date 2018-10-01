@@ -132,7 +132,7 @@ semantic-version===2.6.0
 virtualbmc===1.4.0
 deprecation===2.0.6
 SQLAlchemy===1.2.12
-pyroute2===0.5.2
+pyroute2===0.5.3
 google-auth===1.5.1
 kazoo===2.5.0
 XStatic-roboto-fontface===0.5.0.0
@@ -390,7 +390,7 @@ httplib2===0.11.3
 bottle===0.12.13
 betamax===0.8.1
 construct===2.8.22
-pyparsing===2.2.1
+pyparsing===2.2.2
 dogpile.cache===0.6.7
 python-barbicanclient===4.7.0
 tricircleclient===0.4.0
