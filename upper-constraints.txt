@@ -83,7 +83,7 @@ networkx===2.2
 bashate===0.6.0
 XStatic-Angular===1.5.8.0
 pyngus===2.2.4
-Pillow===5.2.0
+Pillow===5.3.0
 zuul-sphinx===0.2.5
 python-mimeparse===1.6.0
 tripleo-common===9.4.0
@@ -140,7 +140,7 @@ pyudev===0.21.0
 eventlet===0.24.1
 openstack-doc-tools===1.8.0
 frozendict===1.2
-oslo.messaging===8.1.0
+oslo.messaging===8.1.2
 jira===2.0.0
 extras===1.0.0
 PyJWT===1.6.4
@@ -398,14 +398,14 @@ WSME===0.9.3
 proboscis===1.2.6.0
 fortiosclient===0.0.3
 stevedore===1.29.0
-botocore===1.12.14
+botocore===1.12.15
 xmltodict===0.11.0
 pyasn1===0.4.4
 oslo.rootwrap===5.14.1
-Django===1.11.15;python_version=='2.7'
-Django===2.0.8;python_version=='3.4'
-Django===2.0.8;python_version=='3.5'
-Django===2.0.8;python_version=='3.6'
+Django===1.11.16;python_version=='2.7'
+Django===2.0.9;python_version=='3.4'
+Django===2.0.9;python_version=='3.5'
+Django===2.0.9;python_version=='3.6'
 pexpect===4.6.0
 cmd2===0.8.9;python_version=='2.7'
 cmd2===0.9.4;python_version=='3.4'
