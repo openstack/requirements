@@ -70,9 +70,9 @@ def _freeze(requirements, python):
     output = []
     try:
         version_out = subprocess.check_output(
-            [python, "--version"], stderr=subprocess.STDOUT).decode('utf-8')
+            [python, "--version"], stderr=subprocess.STDOUT)
         output.append(version_out)
-        version_all = version_out.split()[1]
+        version_all = version_out.decode('utf-8').split()[1]
         version = '.'.join(version_all.split('.')[:2])
         with fixtures.TempDir() as temp:
             output.append(subprocess.check_output(
@@ -83,15 +83,15 @@ def _freeze(requirements, python):
             output.append(subprocess.check_output(
                 [pip_bin, 'install', '-r', requirements]))
             freeze = subprocess.check_output(
-                [pip_bin, 'freeze']).decode('utf-8')
+                [pip_bin, 'freeze'])
             output.append(freeze)
-            return (version, _parse_freeze(freeze))
+            return (version, _parse_freeze(freeze.decode('utf-8')))
     except Exception as exc:
         if isinstance(exc, subprocess.CalledProcessError):
-            output.append(exc.output.decode('utf-8'))
+            output.append(exc.output)
         raise Exception(
             "Failed to generate freeze: %s %s"
-            % ('\n'.join(output).decode('utf-8'), exc))
+            % (b'\n'.join(output).decode('utf-8'), exc))
 
 
 def _combine_freezes(freezes, blacklist=None):
