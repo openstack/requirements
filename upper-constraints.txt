@@ -99,7 +99,7 @@ scipy===1.1.0
 mypy-extensions===0.4.1;python_version=='3.4'
 mypy-extensions===0.4.1;python_version=='3.5'
 mypy-extensions===0.4.1;python_version=='3.6'
-rsd-lib===0.2.2
+rsd-lib===0.3.0
 XStatic-Jasmine===2.4.1.1
 python-glanceclient===2.12.1
 pyinotify===0.9.6
@@ -162,7 +162,7 @@ mock===2.0.0
 PyYAML===3.13
 beautifulsoup4===4.6.3
 os-net-config===10.0.0
-ovs===2.9.2
+ovs===2.10.0
 cryptography===2.3.1
 adal===1.1.0
 backports.ssl-match-hostname===3.5.0.1;python_version=='2.7'
@@ -201,7 +201,7 @@ pyzabbix===0.7.4
 ptyprocess===0.6.0
 threadloop===1.0.2
 amqp===2.3.2
-ruamel.yaml===0.15.71
+ruamel.yaml===0.15.72
 websockify===0.8.0
 XStatic-JQuery.quicksearch===2.0.3.1
 mpmath===1.0.0
@@ -358,7 +358,7 @@ openstack.nose-plugin===0.11
 os-collect-config===10.0.0
 python-qpid-proton===0.23.0
 python-octaviaclient===1.6.0
-pysaml2===4.6.2
+pysaml2===4.6.3
 requests-oauthlib===1.0.0
 oslo.reports===1.29.1
 ceilometermiddleware===1.3.0
@@ -398,7 +398,7 @@ WSME===0.9.3
 proboscis===1.2.6.0
 fortiosclient===0.0.3
 stevedore===1.29.0
-botocore===1.12.18
+botocore===1.12.19
 xmltodict===0.11.0
 pyasn1===0.4.4
 oslo.rootwrap===5.14.1
