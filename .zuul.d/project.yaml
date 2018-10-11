@@ -50,7 +50,7 @@
             irrelevant-files:
               - ^(test-|)requirements.txt$
               - ^setup.cfg$
-        - legacy-tempest-dsvm-neutron-full:
+        - tempest-full:
             irrelevant-files:
               - ^(test-|)requirements.txt$
               - ^setup.cfg$
@@ -99,7 +99,7 @@
             irrelevant-files:
               - ^(test-|)requirements.txt$
               - ^setup.cfg$
-        - legacy-tempest-dsvm-neutron-full:
+        - tempest-full:
             irrelevant-files:
               - ^(test-|)requirements.txt$
               - ^setup.cfg$
