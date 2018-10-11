@@ -111,7 +111,7 @@ python-watcherclient===2.1.0
 MarkupSafe===1.0
 pypowervm===1.1.18
 doc8===0.8.0
-pymongo===3.7.1
+pymongo===3.7.2
 sqlparse===0.2.4
 oslotest===3.7.0
 jsonpointer===2.0
@@ -398,7 +398,7 @@ WSME===0.9.3
 proboscis===1.2.6.0
 fortiosclient===0.0.3
 stevedore===1.29.0
-botocore===1.12.20
+botocore===1.12.21
 xmltodict===0.11.0
 pyasn1===0.4.4
 oslo.rootwrap===5.14.1
@@ -505,7 +505,7 @@ python-congressclient===1.11.0
 ovsdbapp===0.13.0
 aniso8601===3.0.2
 rjsmin===1.0.12
-icalendar===4.0.2
+icalendar===4.0.3
 configparser===3.5.0;python_version=='2.7'
 decorator===4.3.0
 cffi===1.11.5
@@ -546,7 +546,7 @@ XStatic-jquery-ui===1.12.1.1
 monasca-statsd===1.10.1
 python-dateutil===2.7.3
 virtualenv===16.0.0
-colorama===0.3.9
+colorama===0.4.0
 ironic-lib===2.15.1
 pytz===2018.5
 XStatic-D3===3.5.17.0
