@@ -112,7 +112,7 @@
         - publish-loci-requirements
     experimental:
       jobs:
-        - legacy-tempest-dsvm-neutron-pg-full:
+        - tempest-pg-full:
             irrelevant-files:
               - ^(test-|)requirements.txt$
               - ^setup.cfg$
