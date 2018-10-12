@@ -162,6 +162,7 @@ oslo.rootwrap  # Apache-2.0
 # NOTE(mriedem): oslo.serialization 2.19.1 is blocked for bug 1593641
 oslo.serialization!=2.19.1  # Apache-2.0
 oslo.service!=1.28.1  # Apache-2.0
+oslo.upgradecheck  # Apache-2.0
 oslo.utils  # Apache-2.0
 oslo.vmware  # Apache-2.0
 oslo.versionedobjects  # Apache-2.0
