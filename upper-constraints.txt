@@ -408,9 +408,9 @@ Django===2.0.9;python_version=='3.5'
 Django===2.0.9;python_version=='3.6'
 pexpect===4.6.0
 cmd2===0.8.9;python_version=='2.7'
-cmd2===0.9.5;python_version=='3.4'
-cmd2===0.9.5;python_version=='3.5'
-cmd2===0.9.5;python_version=='3.6'
+cmd2===0.9.6;python_version=='3.4'
+cmd2===0.9.6;python_version=='3.5'
+cmd2===0.9.6;python_version=='3.6'
 redis===2.10.6
 jmespath===0.9.3
 atomicwrites===1.2.1
@@ -522,7 +522,7 @@ Babel===2.6.0
 logutils===0.3.5
 scandir===1.9.0;python_version=='2.7'
 sphinxcontrib-fulltoc===1.2.0
-smmap2===2.0.4
+smmap2===2.0.5
 greenlet===0.4.15
 XStatic-Angular-Vis===4.16.0.0
 confluent-kafka===0.11.5
@@ -539,7 +539,7 @@ python-heatclient===1.16.1
 kafka-python===1.4.3
 oslo.utils===3.37.1
 python-editor===1.0.3
-gitdb2===2.0.4
+gitdb2===2.0.5
 requests-kerberos===0.12.0
 itsdangerous===0.24
 XStatic-jquery-ui===1.12.1.1
