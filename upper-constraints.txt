@@ -35,7 +35,7 @@ cursive===0.2.2
 oslo.service===1.32.0
 django-appconf===1.0.2
 pykerberos===1.2.1
-certifi===2018.8.24
+certifi===2018.10.15
 sphinxcontrib-nwdiag===0.9.5
 requests-aws===0.1.8
 alabaster===0.7.12
@@ -266,9 +266,9 @@ notifier===1.0.3
 ujson===1.35
 selenium===3.14.1
 python-glareclient===0.5.3
-mypy===0.630;python_version=='3.4'
-mypy===0.630;python_version=='3.5'
-mypy===0.630;python_version=='3.6'
+mypy===0.641;python_version=='3.4'
+mypy===0.641;python_version=='3.5'
+mypy===0.641;python_version=='3.6'
 mistral-lib===1.0.0
 Click===7.0
 dogtag-pki===10.3.5.1
@@ -397,8 +397,9 @@ tricircleclient===0.4.0
 WSME===0.9.3
 proboscis===1.2.6.0
 fortiosclient===0.0.3
+oslo.upgradecheck===0.1.0
 stevedore===1.29.0
-botocore===1.12.23
+botocore===1.12.24
 xmltodict===0.11.0
 pyasn1===0.4.4
 oslo.rootwrap===5.14.1
@@ -553,4 +554,3 @@ XStatic-D3===3.5.17.0
 actdiag===0.5.4
 sysv-ipc===1.0.0
 scikit-learn===0.20.0
-oslo.upgradecheck===0.1.0
