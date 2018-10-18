@@ -58,6 +58,7 @@ pcre-devel [platform:rpm]
 
 # NOTE(pabelanger): Needed for build-wheel-mirror jobs
 gawk [test]
+unzip [test]
 # NOTE(pabelanger): You must first enable epel to install parallel RPM on
 # centos-7.
 parallel [test]
