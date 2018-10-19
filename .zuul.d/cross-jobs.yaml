@@ -20,6 +20,27 @@
       - .zuul.d/cross-jobs.yaml
 
 - job:
+    name: requirements-cross-npm
+    parent: nodejs-npm-run-test
+    timeout: 2400
+    description: |
+      A parent job to perform cross-repository npm tests.
+
+      Inherit from this job, and add the intended project to
+      ``required-projects``.
+
+      Also, set the following variable:
+
+      .. zuul:jobvar:: tox_envlist
+
+         Use the specified tox environments (``ALL`` selects all).
+    vars:
+      zuul_work_dir: "{{ (zuul.projects.values() | selectattr('required') | selectattr('name', 'match', '^(?!openstack/requirements)') | list)[0].src_dir }}"
+    files:
+      - upper-constraints.txt
+      - .zuul.d/cross-jobs.yaml
+
+- job:
     name: cross-cinder-py27
     parent: requirements-cross-test
     description: Run cross-project tests on cinder with py27.
@@ -66,6 +87,14 @@
     required-projects: openstack/horizon
     vars:
       tox_envlist: py35
+
+- job:
+    name: cross-horizon-npm
+    parent: requirements-cross-npm
+    description: Run cross-project tests on horizon with npm.
+    required-projects: openstack/horizon
+    vars:
+      tox_envlist: npm
 
 - job:
     name: cross-keystone-py27
