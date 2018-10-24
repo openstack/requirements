@@ -400,7 +400,7 @@ WSME===0.9.3
 proboscis===1.2.6.0
 fortiosclient===0.0.3
 oslo.upgradecheck===0.1.0
-stevedore===1.29.0
+stevedore===1.30.0
 botocore===1.12.24
 xmltodict===0.11.0
 pyasn1===0.4.4
