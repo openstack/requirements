@@ -24,7 +24,7 @@ oslo.concurrency===3.28.1
 websocket-client===0.53.0
 osprofiler===2.5.0
 tabulate===0.8.2
-python-ironic-inspector-client===3.3.0
+python-ironic-inspector-client===3.4.0
 lxml===4.2.5
 python-kingbirdclient===0.2.1
 setproctitle===1.1.10
