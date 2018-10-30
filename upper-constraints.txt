@@ -27,7 +27,7 @@ python-ironic-inspector-client===3.4.0
 lxml===4.2.5
 python-kingbirdclient===0.2.1
 setproctitle===1.1.10
-pytest===3.8.2
+pytest===3.9.3
 python-etcd===0.4.5
 raven===6.9.0
 cursive===0.2.2
@@ -150,7 +150,7 @@ unicodecsv===0.14.1;python_version=='2.7'
 imagesize===1.1.0
 pydot===1.2.4
 pathlib===1.0.1;python_version=='2.7'
-urllib3===1.23
+urllib3===1.24
 graphviz===0.10.1
 PyKMIP===0.8.0
 whereto===0.4.0
@@ -168,7 +168,7 @@ backports.ssl-match-hostname===3.5.0.1;python_version=='2.7'
 openstack-release-test===1.2.0
 pylxd===2.2.7
 ruamel.ordereddict===0.4.13;python_version=='2.7'
-pycryptodomex===3.6.6
+pycryptodomex===3.7.0
 anyjson===0.3.3
 requests-mock===1.5.2
 os-apply-config===10.0.0
@@ -192,7 +192,7 @@ XStatic-Angular-Gettext===2.3.8.0
 XStatic-Hogan===2.0.0.2
 XStatic-objectpath===1.2.1.0
 python-manilaclient===1.25.0
-requests===2.19.1
+requests===2.20.0
 snowballstemmer===1.2.1
 Jinja2===2.10
 XStatic-Bootstrap-SCSS===3.3.7.1
@@ -200,7 +200,7 @@ pyzabbix===0.7.4
 ptyprocess===0.6.0
 threadloop===1.0.2
 amqp===2.3.2
-ruamel.yaml===0.15.74
+ruamel.yaml===0.15.75
 websockify===0.8.0
 XStatic-JQuery.quicksearch===2.0.3.1
 mpmath===1.0.0
@@ -302,7 +302,7 @@ requests-ntlm===1.1.0
 python-string-utils===0.6.0
 automaton===1.15.0
 os-service-types===1.3.0
-keyring===15.1.0
+keyring===16.0.0
 testscenarios===0.5.0
 sphinxcontrib-pecanwsme===0.9.0
 sadisplay===0.4.9
@@ -545,7 +545,7 @@ requests-kerberos===0.12.0
 itsdangerous===1.1.0
 XStatic-jquery-ui===1.12.1.1
 monasca-statsd===1.10.1
-python-dateutil===2.7.4
+python-dateutil===2.7.5
 virtualenv===16.0.0
 colorama===0.4.0
 ironic-lib===2.16.0
