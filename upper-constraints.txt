@@ -554,3 +554,4 @@ XStatic-D3===3.5.17.0
 actdiag===0.5.4
 sysv-ipc===1.0.0
 scikit-learn===0.20.0
+os-ken===0.1.0
