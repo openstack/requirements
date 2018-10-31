@@ -68,7 +68,7 @@ flask-oslolog  # Apache-2.0
 Flask-RESTful  # BSD
 Flask-SQLAlchemy  # BSD
 fortiosclient  # Apache-2.0
-futures;python_version=='2.7' or python_version=='2.6'  # PSF
+futures!=0.17.0;python_version=='2.7' or python_version=='2.6'  # PSF
 futurist  # Apache-2.0
 funcsigs;python_version=='2.7' or python_version=='2.6'  # Apache-2.0
 glance-store  # Apache-2.0
