@@ -116,7 +116,7 @@ oslotest===3.7.0
 jsonpointer===2.0
 defusedxml===0.5.0
 netaddr===0.7.19
-pyghmi===1.2.14
+pyghmi===1.2.16
 sphinxcontrib-blockdiag===1.5.5
 thrift===0.11.0
 gnocchiclient===7.0.5
@@ -468,7 +468,7 @@ rfc3986===1.1.0
 tenacity===5.0.2
 python-designateclient===2.10.0
 future===0.16.0
-Paste===2.0.3
+Paste===3.0.1
 jaeger-client===3.11.0
 XStatic-Json2yaml===0.1.1.0
 boto===2.49.0
@@ -504,7 +504,7 @@ contextlib2===0.5.5
 XStatic-Angular-lrdragndrop===1.0.2.2
 python-congressclient===1.11.0
 ovsdbapp===0.13.0
-aniso8601===3.0.2
+aniso8601===4.0.1
 rjsmin===1.0.12
 icalendar===4.0.3
 configparser===3.5.0;python_version=='2.7'
@@ -549,7 +549,7 @@ python-dateutil===2.7.5
 virtualenv===16.0.0
 colorama===0.4.0
 ironic-lib===2.16.0
-pytz===2018.6
+pytz===2018.7
 XStatic-D3===3.5.17.0
 actdiag===0.5.4
 sysv-ipc===1.0.0
