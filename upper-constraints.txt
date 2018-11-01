@@ -512,7 +512,7 @@ decorator===4.3.0
 cffi===1.11.5
 futurist===1.7.0
 jsonschema===2.6.0
-python-blazarclient===2.0.1
+python-blazarclient===2.1.0
 alembic===1.0.1
 glance-store===0.27.0
 sphinxcontrib-programoutput===0.11
