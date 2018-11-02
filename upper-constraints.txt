@@ -432,7 +432,7 @@ stomp.py===4.1.21
 xattr===0.9.6
 systemd-python===234
 python-memcached===1.59
-openstacksdk===0.17.2
+openstacksdk===0.19.0
 six===1.11.0
 dulwich===0.19.6
 kombu===4.2.1
