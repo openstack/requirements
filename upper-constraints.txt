@@ -21,7 +21,7 @@ ryu===4.29
 os-api-ref===1.5.0
 python-ldap===3.1.0
 oslo.concurrency===3.28.1
-websocket-client===0.53.0
+websocket-client===0.54.0
 osprofiler===2.5.0
 python-ironic-inspector-client===3.4.0
 lxml===4.2.5
@@ -130,7 +130,7 @@ traceback2===1.4.0
 semantic-version===2.6.0
 virtualbmc===1.4.0
 deprecation===2.0.6
-SQLAlchemy===1.2.12
+SQLAlchemy===1.2.13
 pyroute2===0.5.3
 google-auth===1.5.1
 kazoo===2.5.0
@@ -223,7 +223,7 @@ trollius===2.2;python_version=='2.7'
 scp===0.12.1
 python-zaqarclient===1.11.0
 funcsigs===1.0.2;python_version=='2.7'
-zhmcclient===0.20.0
+zhmcclient===0.21.0
 lockfile===0.12.2
 dnspython3===1.15.0;python_version=='3.4'
 dnspython3===1.15.0;python_version=='3.5'
@@ -262,6 +262,7 @@ uritemplate===3.0.0
 django-babel===0.6.2
 docutils===0.14
 notifier===1.0.3
+os-ken===0.2.0
 pycrypto===2.6.1
 ujson===1.35
 selenium===3.14.1
@@ -400,7 +401,7 @@ proboscis===1.2.6.0
 fortiosclient===0.0.3
 oslo.upgradecheck===0.1.0
 stevedore===1.30.0
-botocore===1.12.34
+botocore===1.12.35
 xmltodict===0.11.0
 pyasn1===0.4.4
 oslo.rootwrap===5.14.1
@@ -468,7 +469,7 @@ rfc3986===1.1.0
 tenacity===5.0.2
 python-designateclient===2.11.0
 future===0.17.1
-Paste===3.0.1
+Paste===3.0.2
 jaeger-client===3.11.0
 XStatic-Json2yaml===0.1.1.0
 boto===2.49.0
@@ -513,7 +514,7 @@ cffi===1.11.5
 futurist===1.7.0
 jsonschema===2.6.0
 python-blazarclient===2.1.0
-alembic===1.0.1
+alembic===1.0.2
 glance-store===0.27.0
 sphinxcontrib-programoutput===0.11
 sphinx-testing===0.7.2
@@ -546,7 +547,7 @@ itsdangerous===1.1.0
 XStatic-jquery-ui===1.12.1.1
 monasca-statsd===1.10.1
 python-dateutil===2.7.5
-virtualenv===16.0.0
+virtualenv===16.1.0
 colorama===0.4.0
 ironic-lib===2.16.0
 pytz===2018.7
@@ -554,4 +555,3 @@ XStatic-D3===3.5.17.0
 actdiag===0.5.4
 sysv-ipc===1.0.0
 scikit-learn===0.20.0
-os-ken===0.2.0
