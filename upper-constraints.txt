@@ -200,7 +200,7 @@ pyzabbix===0.7.4
 ptyprocess===0.6.0
 threadloop===1.0.2
 amqp===2.3.2
-ruamel.yaml===0.15.75
+ruamel.yaml===0.15.76
 websockify===0.8.0
 XStatic-JQuery.quicksearch===2.0.3.1
 mpmath===1.0.0
@@ -265,7 +265,7 @@ notifier===1.0.3
 os-ken===0.2.0
 pycrypto===2.6.1
 ujson===1.35
-selenium===3.14.1
+selenium===3.141.0
 python-glareclient===0.5.3
 mypy===0.641;python_version=='3.4'
 mypy===0.641;python_version=='3.5'
@@ -401,7 +401,7 @@ proboscis===1.2.6.0
 fortiosclient===0.0.3
 oslo.upgradecheck===0.1.0
 stevedore===1.30.0
-botocore===1.12.35
+botocore===1.12.36
 xmltodict===0.11.0
 pyasn1===0.4.4
 oslo.rootwrap===5.14.1
