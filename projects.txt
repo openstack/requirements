@@ -89,6 +89,7 @@ openstack/mistral-lib
 openstack/mistral-tempest-plugin
 openstack/mixmatch
 openstack/mogan
+openstack/monasca-analytics
 openstack/monasca-api
 openstack/monasca-common
 openstack/monasca-log-api
