@@ -399,7 +399,7 @@ tricircleclient===0.4.0
 WSME===0.9.3
 proboscis===1.2.6.0
 fortiosclient===0.0.3
-oslo.upgradecheck===0.1.0
+oslo.upgradecheck===0.1.1
 stevedore===1.30.0
 botocore===1.12.37
 xmltodict===0.11.0
