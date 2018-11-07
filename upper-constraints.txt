@@ -236,7 +236,7 @@ castellan===1.0.0
 oslo.versionedobjects===1.34.1
 webcolors===1.8.1
 aodhclient===1.1.1
-autobahn===18.10.1
+autobahn===18.11.1
 SQLAlchemy-Utils===0.33.6
 pluggy===0.8.0
 coverage===4.5.1
@@ -252,7 +252,7 @@ XStatic-bootswatch===3.3.7.0
 XStatic-JS-Yaml===3.8.1.0
 XStatic-term.js===0.0.7.0
 oslo.log===3.40.1
-nodeenv===1.3.2
+nodeenv===1.3.3
 pylev===1.3.0
 python-searchlightclient===1.4.0
 oslo.middleware===3.36.0
@@ -303,7 +303,7 @@ requests-ntlm===1.1.0
 python-string-utils===0.6.0
 automaton===1.15.0
 os-service-types===1.3.0
-keyring===16.0.0
+keyring===16.0.1
 testscenarios===0.5.0
 sphinxcontrib-pecanwsme===0.9.0
 sadisplay===0.4.9
@@ -330,7 +330,7 @@ keystonemiddleware===5.3.0
 django-formtools===2.1
 python-ceilometerclient===2.9.0
 XStatic-Spin===1.2.5.2
-openshift===0.8.0
+openshift===0.8.1
 tap-as-a-service===3.0.0
 os-traits===0.10.0
 SecretStorage===2.3.1;python_version=='2.7'
@@ -401,7 +401,7 @@ proboscis===1.2.6.0
 fortiosclient===0.0.3
 oslo.upgradecheck===0.1.1
 stevedore===1.30.0
-botocore===1.12.38
+botocore===1.12.39
 xmltodict===0.11.0
 pyasn1===0.4.4
 oslo.rootwrap===5.14.1
@@ -434,7 +434,7 @@ systemd-python===234
 python-memcached===1.59
 openstacksdk===0.19.0
 six===1.11.0
-dulwich===0.19.6
+dulwich===0.19.8
 kombu===4.2.1
 distro===1.3.0
 betamax-matchers===0.4.0
