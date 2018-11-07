@@ -393,7 +393,7 @@ betamax===0.8.1
 construct===2.8.22
 pyparsing===2.3.0
 dogpile.cache===0.6.7
-python-barbicanclient===4.7.0
+python-barbicanclient===4.8.0
 salt===2018.3.2
 tricircleclient===0.4.0
 WSME===0.9.3
