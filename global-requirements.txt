@@ -295,7 +295,7 @@ PyYAML  # MIT
 qpid-python;python_version=='2.7'  # Apache-2.0
 raven  # BSD
 reno  # Apache-2.0
-requests  # Apache-2.0
+requests!=2.20.0  # Apache-2.0
 requests-aws  # BSD License (3 clause)
 requests-kerberos  # ISC
 requestsexceptions  # Apache-2.0
