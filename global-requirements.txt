@@ -197,6 +197,7 @@ pika  # BSD
 Pillow  # PIL License
 Pint  # BSD
 pip  # MIT
+prometheus-client  # Apache-2.0
 PrettyTable<0.8  # BSD
 psutil  # BSD
 pyasn1!=0.2.3  # BSD
