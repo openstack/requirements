@@ -2,7 +2,7 @@ ntlm-auth===1.2.0
 voluptuous===0.11.5
 chardet===3.0.4
 rsa===4.0
-restructuredtext-lint===1.2.0
+restructuredtext-lint===1.2.1
 netmiko===2.3.0
 instack-undercloud===9.4.0
 PasteDeploy===1.5.2
@@ -50,7 +50,7 @@ oslo.context===2.21.0
 python-senlinclient===1.9.0
 rcssmin===1.0.6
 pycadf===2.8.0
-grpcio===1.16.0
+grpcio===1.16.1
 skydive-client===0.4.5
 pysendfile===2.0.1
 fixtures===3.0.0
@@ -172,6 +172,7 @@ pycryptodomex===3.7.0
 anyjson===0.3.3
 requests-mock===1.5.2
 os-apply-config===10.0.0
+prometheus-client===0.4.2
 oslosphinx===4.18.0
 mox3===0.26.0
 gunicorn===19.9.0
@@ -401,7 +402,7 @@ proboscis===1.2.6.0
 fortiosclient===0.0.3
 oslo.upgradecheck===0.1.1
 stevedore===1.30.0
-botocore===1.12.44
+botocore===1.12.45
 xmltodict===0.11.0
 pyasn1===0.4.4
 oslo.rootwrap===5.14.1
@@ -514,7 +515,7 @@ cffi===1.11.5
 futurist===1.8.0
 jsonschema===2.6.0
 python-blazarclient===2.1.0
-alembic===1.0.2
+alembic===1.0.3
 glance-store===0.27.0
 sphinxcontrib-programoutput===0.11
 sphinx-testing===0.8.0
@@ -555,4 +556,3 @@ XStatic-D3===3.5.17.0
 actdiag===0.5.4
 sysv-ipc===1.0.0
 scikit-learn===0.20.0
-prometheus-client===0.4.2
