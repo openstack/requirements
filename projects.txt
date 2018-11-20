@@ -173,7 +173,6 @@ openstack/openstack-ansible-os_magnum
 openstack/openstack-ansible-os_molteniron
 openstack/openstack-ansible-os_monasca
 openstack/openstack-ansible-os_monasca-agent
-openstack/openstack-ansible-os_monasca-ui
 openstack/openstack-ansible-os_neutron
 openstack/openstack-ansible-os_nova
 openstack/openstack-ansible-os_octavia
