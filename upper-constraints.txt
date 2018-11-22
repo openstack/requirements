@@ -201,7 +201,7 @@ pyzabbix===0.7.5
 ptyprocess===0.6.0
 threadloop===1.0.2
 amqp===2.3.2
-ruamel.yaml===0.15.78
+ruamel.yaml===0.15.79
 websockify===0.8.0
 XStatic-JQuery.quicksearch===2.0.3.1
 mpmath===1.0.0
@@ -402,7 +402,7 @@ proboscis===1.2.6.0
 fortiosclient===0.0.3
 oslo.upgradecheck===0.1.1
 stevedore===1.30.0
-botocore===1.12.49
+botocore===1.12.50
 xmltodict===0.11.0
 pyasn1===0.4.4
 oslo.rootwrap===5.15.0
@@ -536,10 +536,10 @@ Flask===1.0.2
 happybase===1.1.0;python_version=='2.7'
 marathon===0.10.0
 fasteners===0.14.1
-sortedcontainers===2.0.5
+sortedcontainers===2.1.0
 python-tackerclient===0.14.0
 python-heatclient===1.16.1
-kafka-python===1.4.3
+kafka-python===1.4.4
 oslo.utils===3.37.1
 python-editor===1.0.3
 gitdb2===2.0.5
