@@ -27,7 +27,7 @@ python-ironic-inspector-client===3.4.0
 lxml===4.2.5
 python-kingbirdclient===0.2.1
 setproctitle===1.1.10
-pytest===4.0.0
+pytest===4.0.1
 python-etcd===0.4.5
 raven===6.9.0
 cursive===0.2.2
@@ -168,7 +168,7 @@ backports.ssl-match-hostname===3.5.0.1;python_version=='2.7'
 openstack-release-test===1.2.0
 pylxd===2.2.8
 ruamel.ordereddict===0.4.13;python_version=='2.7'
-pycryptodomex===3.7.0
+pycryptodomex===3.7.2
 anyjson===0.3.3
 requests-mock===1.5.2
 os-apply-config===10.0.0
@@ -201,7 +201,7 @@ pyzabbix===0.7.5
 ptyprocess===0.6.0
 threadloop===1.0.2
 amqp===2.3.2
-ruamel.yaml===0.15.79
+ruamel.yaml===0.15.80
 websockify===0.8.0
 XStatic-JQuery.quicksearch===2.0.3.1
 mpmath===1.0.0
@@ -237,7 +237,7 @@ castellan===1.0.0
 oslo.versionedobjects===1.34.1
 webcolors===1.8.1
 aodhclient===1.1.1
-autobahn===18.11.1
+autobahn===18.11.2
 SQLAlchemy-Utils===0.33.8
 pluggy===0.8.0
 coverage===4.5.2
@@ -304,7 +304,7 @@ requests-ntlm===1.1.0
 python-string-utils===0.6.0
 automaton===1.15.0
 os-service-types===1.3.0
-keyring===16.1.0
+keyring===16.1.1
 testscenarios===0.5.0
 sphinxcontrib-pecanwsme===0.9.0
 sadisplay===0.4.9
@@ -360,7 +360,7 @@ openstack.nose-plugin===0.11
 os-collect-config===10.0.0
 python-qpid-proton===0.23.0
 python-octaviaclient===1.6.0
-pysaml2===4.6.3
+pysaml2===4.6.4
 requests-oauthlib===1.0.0
 oslo.reports===1.29.1
 ceilometermiddleware===1.3.0
@@ -393,7 +393,7 @@ bottle===0.12.13
 betamax===0.8.1
 construct===2.8.22
 pyparsing===2.3.0
-dogpile.cache===0.6.7
+dogpile.cache===0.6.8
 python-barbicanclient===4.8.0
 salt===2018.3.2
 tricircleclient===0.4.0
@@ -402,7 +402,7 @@ proboscis===1.2.6.0
 fortiosclient===0.0.3
 oslo.upgradecheck===0.1.1
 stevedore===1.30.0
-botocore===1.12.50
+botocore===1.12.51
 xmltodict===0.11.0
 pyasn1===0.4.4
 oslo.rootwrap===5.15.0
@@ -518,7 +518,7 @@ python-blazarclient===2.1.0
 alembic===1.0.3
 glance-store===0.27.0
 sphinxcontrib-programoutput===0.11
-sphinx-testing===0.8.0
+sphinx-testing===0.8.1
 dnspython===1.15.0
 oauthlib===2.1.0
 Babel===2.6.0
@@ -549,10 +549,10 @@ XStatic-jquery-ui===1.12.1.1
 monasca-statsd===1.10.1
 python-dateutil===2.7.5
 virtualenv===16.1.0
-colorama===0.4.0
+colorama===0.4.1
 ironic-lib===2.16.0
 pytz===2018.7
 XStatic-D3===3.5.17.0
 actdiag===0.5.4
 sysv-ipc===1.0.0
-scikit-learn===0.20.0
+scikit-learn===0.20.1
