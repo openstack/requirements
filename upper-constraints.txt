@@ -5,7 +5,7 @@ rsa===4.0
 restructuredtext-lint===1.2.1
 netmiko===2.3.0
 instack-undercloud===9.4.0
-PasteDeploy===1.5.2
+PasteDeploy===2.0.0
 typing===3.6.6
 python-saharaclient===2.0.0
 python-hnvclient===0.1.0
