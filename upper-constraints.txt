@@ -5,7 +5,7 @@ rsa===4.0
 restructuredtext-lint===1.2.1
 netmiko===2.3.0
 instack-undercloud===9.4.0
-PasteDeploy===2.0.0
+PasteDeploy===2.0.1
 typing===3.6.6
 python-saharaclient===2.0.0
 python-hnvclient===0.1.0
@@ -50,7 +50,7 @@ oslo.context===2.22.0
 python-senlinclient===1.9.0
 rcssmin===1.0.6
 pycadf===2.8.0
-grpcio===1.16.1
+grpcio===1.17.0
 skydive-client===0.4.5
 pysendfile===2.0.1
 fixtures===3.0.0
@@ -238,7 +238,7 @@ oslo.versionedobjects===1.34.1
 webcolors===1.8.1
 aodhclient===1.1.1
 autobahn===18.11.2
-SQLAlchemy-Utils===0.33.8
+SQLAlchemy-Utils===0.33.9
 pluggy===0.8.0
 coverage===4.5.2
 freezegun===0.3.11
@@ -360,7 +360,7 @@ openstack.nose-plugin===0.11
 os-collect-config===10.0.0
 python-qpid-proton===0.23.0
 python-octaviaclient===1.6.0
-pysaml2===4.6.4
+pysaml2===4.6.5
 requests-oauthlib===1.0.0
 oslo.reports===1.29.1
 ceilometermiddleware===1.3.0
@@ -402,7 +402,7 @@ proboscis===1.2.6.0
 fortiosclient===0.0.3
 oslo.upgradecheck===0.1.1
 stevedore===1.30.0
-botocore===1.12.58
+botocore===1.12.60
 xmltodict===0.11.0
 pyasn1===0.4.4
 oslo.rootwrap===5.15.0
@@ -466,12 +466,12 @@ pyeclib===1.5.0
 wsgi-intercept===1.8.0
 ndg-httpsclient===0.5.1;python_version=='2.7'
 repoze.lru===0.7
-rfc3986===1.1.0
+rfc3986===1.2.0
 tenacity===5.0.2
 python-designateclient===2.11.0
 future===0.17.1
 Paste===3.0.5
-jaeger-client===3.12.0
+jaeger-client===3.13.0
 XStatic-Json2yaml===0.1.1.0
 boto===2.49.0
 functools32===3.2.3.post2;python_version=='2.7'
