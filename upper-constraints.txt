@@ -103,7 +103,7 @@ cssutils===1.0.2;python_version=='3.5'
 scipy===1.0.0
 rsd-lib===0.1.1
 XStatic-Jasmine===2.4.1.1
-python-glanceclient===2.10.0
+python-glanceclient===2.10.1
 pyinotify===0.9.6
 debtcollector===1.19.0
 requests-unixsocket===0.1.5
