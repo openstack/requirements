@@ -50,7 +50,7 @@ oslo.context===2.22.0
 python-senlinclient===1.9.0
 rcssmin===1.0.6
 pycadf===2.8.0
-grpcio===1.17.1
+grpcio===1.15.0
 skydive-client===0.4.5
 pysendfile===2.0.1
 fixtures===3.0.0
