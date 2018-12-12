@@ -478,7 +478,6 @@ sadisplay  # BSD
 ceilometer  # Apache-2.0
 
 # Indirect dependencies that need blocking
-daiquiri
 # NOTE(bnemec): 1.16.0 introduced a bug that is breaking tooz.
 # See https://bugs.launchpad.net/python-tooz/+bug/1808046
 grpcio<1.16.0

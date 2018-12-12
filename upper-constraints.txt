@@ -213,7 +213,6 @@ appdirs===1.4.3
 tinyrpc===0.9.3
 google-auth-httplib2===0.0.3
 Flask-SQLAlchemy===2.3.2
-daiquiri===1.5.0
 influxdb===5.1.0
 funcparserlib===0.3.6
 passlib===1.7.1
