@@ -490,9 +490,9 @@ sadisplay  # BSD
 ceilometer  # Apache-2.0
 
 # Indirect dependencies that need blocking
-# NOTE(bnemec): 1.16.0 introduced a bug that is breaking tooz.
+# NOTE(bnemec): 1.16.0 introduced a bug that is breaking tooz. 1.18.0 fixes it.
 # See https://bugs.launchpad.net/python-tooz/+bug/1808046
-grpcio<1.16.0
+grpcio!=1.16.0,!=1.16.1,!=1.17.0,!=1.17.1
 
 # NOTE(dhellmann): We need to include this package for testing the
 # release jobs that propose constraint updates, even though it is not
