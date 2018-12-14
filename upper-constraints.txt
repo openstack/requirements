@@ -50,7 +50,7 @@ oslo.context===2.22.0
 python-senlinclient===1.9.0
 rcssmin===1.0.6
 pycadf===2.8.0
-grpcio===1.17.0
+grpcio===1.17.1
 skydive-client===0.4.5
 pysendfile===2.0.1
 fixtures===3.0.0
@@ -390,7 +390,7 @@ python-solumclient===2.7.1
 PyMySQL===0.9.2
 kubernetes===8.0.0
 httplib2===0.12.0
-bottle===0.12.15
+bottle===0.12.16
 betamax===0.8.1
 construct===2.8.22
 pyparsing===2.3.0
@@ -403,7 +403,7 @@ proboscis===1.2.6.0
 fortiosclient===0.0.3
 oslo.upgradecheck===0.1.1
 stevedore===1.30.0
-botocore===1.12.64
+botocore===1.12.65
 xmltodict===0.11.0
 pyasn1===0.4.4
 oslo.rootwrap===5.15.1
