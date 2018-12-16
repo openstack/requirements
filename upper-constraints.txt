@@ -27,7 +27,7 @@ python-ironic-inspector-client===3.4.0
 lxml===4.2.5
 python-kingbirdclient===0.2.1
 setproctitle===1.1.10
-pytest===4.0.1
+pytest===4.0.2
 python-etcd===0.4.5
 raven===6.9.0
 cursive===0.2.2
@@ -243,7 +243,7 @@ SQLAlchemy-Utils===0.33.9
 pluggy===0.8.0
 coverage===4.5.2
 freezegun===0.3.11
-python-pytun===2.2.1
+python-pytun===2.3.0
 pyperclip===1.7.0
 cassandra-driver===3.16.0
 mox===0.5.3
@@ -403,7 +403,7 @@ proboscis===1.2.6.0
 fortiosclient===0.0.3
 oslo.upgradecheck===0.1.1
 stevedore===1.30.0
-botocore===1.12.65
+botocore===1.12.66
 xmltodict===0.11.0
 pyasn1===0.4.4
 oslo.rootwrap===5.15.1
