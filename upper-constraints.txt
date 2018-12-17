@@ -394,7 +394,7 @@ bottle===0.12.16
 betamax===0.8.1
 construct===2.8.22
 pyparsing===2.3.0
-dogpile.cache===0.7.1
+dogpile.cache===0.6.8
 python-barbicanclient===4.8.0
 salt===2018.3.2
 tricircleclient===0.4.0
