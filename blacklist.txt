@@ -9,6 +9,7 @@ hacking
 mccabe
 pep257
 pep8
+pre-commit
 pyflakes
 pycodestyle
 pylint
