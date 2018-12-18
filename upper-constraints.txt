@@ -94,7 +94,7 @@ suds-jurko===0.6
 python-swiftclient===3.6.0
 pyOpenSSL===18.0.0
 monasca-common===2.12.0
-scipy===1.1.0
+scipy===1.2.0
 mypy-extensions===0.4.1;python_version=='3.4'
 mypy-extensions===0.4.1;python_version=='3.5'
 mypy-extensions===0.4.1;python_version=='3.6'
@@ -133,7 +133,7 @@ virtualbmc===1.4.0
 deprecation===2.0.6
 SQLAlchemy===1.2.15
 pyroute2===0.5.3
-google-auth===1.6.1
+google-auth===1.6.2
 kazoo===2.6.0
 XStatic-roboto-fontface===0.5.0.0
 pyudev===0.21.0
@@ -238,7 +238,7 @@ castellan===1.0.0
 oslo.versionedobjects===1.34.1
 webcolors===1.8.1
 aodhclient===1.1.1
-autobahn===18.11.2
+autobahn===18.12.1
 SQLAlchemy-Utils===0.33.9
 pluggy===0.8.0
 coverage===4.5.2
@@ -320,7 +320,7 @@ python-qinlingclient===2.1.0
 elasticsearch===2.4.1
 django-nose===1.4.6
 XStatic-JQuery.TableSorter===2.14.5.1
-pifpaf===2.2.0
+pifpaf===2.2.1
 pysmi===0.3.2
 blockdiag===1.5.4
 testtools===2.3.0
@@ -403,7 +403,7 @@ proboscis===1.2.6.0
 fortiosclient===0.0.3
 oslo.upgradecheck===0.1.1
 stevedore===1.30.0
-botocore===1.12.66
+botocore===1.12.67
 xmltodict===0.11.0
 pyasn1===0.4.4
 oslo.rootwrap===5.15.1
@@ -425,9 +425,9 @@ kuryr-lib===0.8.0
 scrypt===0.8.6
 jsonpatch===1.23
 python-daemon===2.2.0
-typed-ast===1.1.0;python_version=='3.4'
-typed-ast===1.1.0;python_version=='3.5'
-typed-ast===1.1.0;python_version=='3.6'
+typed-ast===1.1.1;python_version=='3.4'
+typed-ast===1.1.1;python_version=='3.5'
+typed-ast===1.1.1;python_version=='3.6'
 os-testr===1.0.0
 cotyledon===1.7.2
 stomp.py===4.1.21
