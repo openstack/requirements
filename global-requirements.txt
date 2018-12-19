@@ -175,6 +175,7 @@ os-collect-config  # Apache-2.0
 os-dpm  # Apache-2.0
 os-net-config  # Apache-2.0
 os-refresh-config  # Apache-2.0
+os-resource-classes  # Apache-2.0
 os-service-types  # Apache-2.0
 os-testr  # Apache-2.0
 os-traits  # Apache-2.0
