@@ -22,5 +22,6 @@ networking-sfc
 neutron
 neutron-dynamic-routing
 neutron-fwaas
+neutron-lbaas
 neutron-vpnaas
 vmware-nsxlib
