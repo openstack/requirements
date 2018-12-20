@@ -23,13 +23,14 @@ python-ldap===3.1.0
 oslo.concurrency===3.29.0
 websocket-client===0.54.0
 osprofiler===2.5.1
+os-resource-classes===0.1.0
 python-ironic-inspector-client===3.4.0
 lxml===4.2.5
 python-kingbirdclient===0.2.1
 setproctitle===1.1.10
 pytest===4.0.2
 python-etcd===0.4.5
-raven===6.9.0
+raven===6.10.0
 cursive===0.2.2
 oslo.service===1.33.0
 django-appconf===1.0.2
@@ -213,13 +214,14 @@ appdirs===1.4.3
 tinyrpc===0.9.3
 google-auth-httplib2===0.0.3
 Flask-SQLAlchemy===2.3.2
+daiquiri===1.5.0
 influxdb===5.1.0
 funcparserlib===0.3.6
 passlib===1.7.1
 dib-utils===0.0.11
 cliff===2.14.0
 os-brick===2.6.2
-ansible-runner===1.1.2
+ansible-runner===1.2.0
 trollius===2.2;python_version=='2.7'
 scp===0.13.0
 python-zaqarclient===1.11.0
@@ -232,7 +234,7 @@ dnspython3===1.15.0;python_version=='3.6'
 ldappool===2.4.0
 termcolor===1.1.0
 hiredis===0.3.0
-google-api-python-client===1.7.6
+google-api-python-client===1.7.7
 castellan===1.0.0
 oslo.versionedobjects===1.34.1
 webcolors===1.8.1
@@ -334,7 +336,6 @@ XStatic-Spin===1.2.5.2
 openshift===0.8.1
 tap-as-a-service===3.0.0
 os-traits===0.10.0
-os-resource-classes===0.1.0
 SecretStorage===2.3.1;python_version=='2.7'
 SecretStorage===3.1.0;python_version=='3.4'
 SecretStorage===3.1.0;python_version=='3.5'
@@ -387,7 +388,7 @@ zake===0.2.2
 python-rsdclient===0.1.3
 python-magic===0.4.15
 python-solumclient===2.7.1
-PyMySQL===0.9.2
+PyMySQL===0.9.3
 kubernetes===8.0.0
 httplib2===0.12.0
 bottle===0.12.16
@@ -403,7 +404,7 @@ proboscis===1.2.6.0
 fortiosclient===0.0.3
 oslo.upgradecheck===0.1.1
 stevedore===1.30.0
-botocore===1.12.67
+botocore===1.12.69
 xmltodict===0.11.0
 pyasn1===0.4.4
 oslo.rootwrap===5.15.1
@@ -446,7 +447,7 @@ testresources===2.0.1
 falcon===1.4.1
 subprocess32===3.5.3;python_version=='2.7'
 etcd3gw===0.2.4
-Flask-RESTful===0.3.6
+Flask-RESTful===0.3.7
 GitPython===2.1.11
 python-ironicclient===2.5.0
 XStatic===1.0.2
@@ -559,4 +560,4 @@ pytz===2018.7
 XStatic-D3===3.5.17.0
 actdiag===0.5.4
 sysv-ipc===1.0.0
-scikit-learn===0.20.1
+scikit-learn===0.20.2
