@@ -52,7 +52,7 @@ python-senlinclient===1.9.0
 rcssmin===1.0.6
 pycadf===2.8.0
 grpcio===1.15.0
-skydive-client===0.4.5
+skydive-client===0.5.0
 pysendfile===2.0.1
 fixtures===3.0.0
 neutron-lib===1.21.0
@@ -404,7 +404,7 @@ proboscis===1.2.6.0
 fortiosclient===0.0.3
 oslo.upgradecheck===0.1.1
 stevedore===1.30.0
-botocore===1.12.70
+botocore===1.12.71
 xmltodict===0.11.0
 pyasn1===0.4.4
 oslo.rootwrap===5.15.1
