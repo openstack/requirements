@@ -490,3 +490,6 @@ openstack-release-test
 
 # NOTE(snapiri): This is required for Dragonflow topology visualization
 skydive-client  # Apache-2.0
+
+# NOTE(anilvenkata): This is required for profiling oslo.service processes
+Yappi  # MIT
