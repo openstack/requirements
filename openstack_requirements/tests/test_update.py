@@ -256,7 +256,7 @@ class TestMain(testtools.TestCase):
                 non_std_reqs):
             self.expectThat(False, matchers.Equals(True),
                             message=("update.main() should riase an "
-                                     "excpetion before getting here"))
+                                     "exception before getting here"))
 
         with testtools.ExpectedException(Exception,
                                          "/dev/zero is not a directory"):
