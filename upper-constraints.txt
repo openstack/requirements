@@ -25,7 +25,7 @@ websocket-client===0.54.0
 osprofiler===2.5.2
 os-resource-classes===0.1.0
 python-ironic-inspector-client===3.4.0
-lxml===4.2.6
+lxml===4.3.0
 python-kingbirdclient===0.2.1
 setproctitle===1.1.10
 pytest===4.0.2
@@ -334,7 +334,7 @@ keystonemiddleware===5.3.0
 django-formtools===2.1
 python-ceilometerclient===2.9.0
 XStatic-Spin===1.2.5.2
-openshift===0.8.1
+openshift===0.8.2
 tap-as-a-service===3.0.0
 os-traits===0.10.0
 SecretStorage===2.3.1;python_version=='2.7'
@@ -405,14 +405,14 @@ proboscis===1.2.6.0
 fortiosclient===0.0.3
 oslo.upgradecheck===0.1.1
 stevedore===1.30.0
-botocore===1.12.73
+botocore===1.12.74
 xmltodict===0.11.0
 pyasn1===0.4.5
 oslo.rootwrap===5.15.1
-Django===1.11.17;python_version=='2.7'
-Django===2.0.9;python_version=='3.4'
-Django===2.0.9;python_version=='3.5'
-Django===2.0.9;python_version=='3.6'
+Django===1.11.18;python_version=='2.7'
+Django===2.0.10;python_version=='3.4'
+Django===2.0.10;python_version=='3.5'
+Django===2.0.10;python_version=='3.6'
 pexpect===4.6.0
 cmd2===0.8.9;python_version=='2.7'
 cmd2===0.9.6;python_version=='3.4'
