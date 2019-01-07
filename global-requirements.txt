@@ -157,7 +157,7 @@ oslo.log  # Apache-2.0
 oslo.messaging!=9.0.0  # Apache-2.0
 oslo.middleware  # Apache-2.0
 oslo.policy  # Apache-2.0
-oslo.privsep  # Apache-2.0
+oslo.privsep!=1.31.0  # Apache-2.0
 oslo.reports  # Apache-2.0
 oslo.rootwrap  # Apache-2.0
 # NOTE(mriedem): oslo.serialization 2.19.1 is blocked for bug 1593641
