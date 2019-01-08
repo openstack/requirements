@@ -414,10 +414,7 @@ Django===2.0.10;python_version=='3.4'
 Django===2.0.10;python_version=='3.5'
 Django===2.0.10;python_version=='3.6'
 pexpect===4.6.0
-cmd2===0.8.9;python_version=='2.7'
-cmd2===0.9.6;python_version=='3.4'
-cmd2===0.9.6;python_version=='3.5'
-cmd2===0.9.6;python_version=='3.6'
+cmd2===0.8.9
 redis===3.0.1
 jmespath===0.9.3
 atomicwrites===1.2.1
