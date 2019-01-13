@@ -28,7 +28,7 @@ python-ironic-inspector-client===3.4.0
 lxml===4.3.0
 python-kingbirdclient===0.2.1
 setproctitle===1.1.10
-pytest===4.1.0
+pytest===4.1.1
 python-etcd===0.4.5
 raven===6.10.0
 cursive===0.2.2
@@ -43,7 +43,7 @@ pbr===5.1.1
 munch===2.3.2
 attrs===18.2.0
 microversion-parse===0.2.1
-Pint===0.8.1
+Pint===0.9
 oslo.i18n===3.23.0
 jsonpath-rw-ext===1.2.0
 python-mistralclient===3.7.0
@@ -113,7 +113,7 @@ MarkupSafe===1.1.0
 pypowervm===1.1.19
 doc8===0.8.0
 pymongo===3.7.2
-soupsieve===1.6.2
+soupsieve===1.7
 sqlparse===0.2.4
 oslotest===3.7.0
 jsonpointer===2.0
@@ -133,7 +133,7 @@ traceback2===1.4.0
 semantic-version===2.6.0
 virtualbmc===1.4.0
 deprecation===2.0.6
-SQLAlchemy===1.2.15
+SQLAlchemy===1.2.16
 pyroute2===0.5.3
 google-auth===1.6.2
 kazoo===2.6.0
@@ -167,7 +167,7 @@ os-net-config===10.2.0
 ovs===2.10.0
 cryptography===2.4.2
 adal===1.2.0
-backports.ssl-match-hostname===3.5.0.1;python_version=='2.7'
+backports.ssl-match-hostname===3.7.0.1;python_version=='2.7'
 openstack-release-test===1.2.0
 pylxd===2.2.8
 ruamel.ordereddict===0.4.13;python_version=='2.7'
@@ -240,7 +240,7 @@ castellan===1.0.0
 oslo.versionedobjects===1.34.1
 webcolors===1.8.1
 aodhclient===1.1.1
-autobahn===18.12.1
+autobahn===19.1.1
 SQLAlchemy-Utils===0.33.10
 pluggy===0.8.1
 coverage===4.5.2
@@ -334,7 +334,7 @@ keystonemiddleware===5.3.0
 django-formtools===2.1
 python-ceilometerclient===2.9.0
 XStatic-Spin===1.2.5.2
-openshift===0.8.2
+openshift===0.8.4
 tap-as-a-service===3.0.0
 os-traits===0.10.0
 SecretStorage===2.3.1;python_version=='2.7'
@@ -405,7 +405,7 @@ proboscis===1.2.6.0
 fortiosclient===0.0.3
 oslo.upgradecheck===0.1.1
 stevedore===1.30.0
-botocore===1.12.76
+botocore===1.12.78
 xmltodict===0.11.0
 pyasn1===0.4.5
 oslo.rootwrap===5.15.1
@@ -501,7 +501,7 @@ demjson===2.2.4
 diskimage-builder===2.19.0
 heat-translator===1.1.0
 python-magnumclient===2.11.0
-docker===3.6.0
+docker===3.7.0
 qpid-python===1.36.0.post1;python_version=='2.7'
 contextlib2===0.5.5;python_version=='2.7'
 XStatic-Angular-lrdragndrop===1.0.2.2
