@@ -113,7 +113,7 @@ MarkupSafe===1.1.0
 pypowervm===1.1.19
 doc8===0.8.0
 pymongo===3.7.2
-soupsieve===1.7
+soupsieve===1.7.1
 sqlparse===0.2.4
 oslotest===3.7.0
 jsonpointer===2.0
@@ -203,7 +203,7 @@ XStatic-Bootstrap-SCSS===3.3.7.1
 pyzabbix===0.7.5
 ptyprocess===0.6.0
 threadloop===1.0.2
-amqp===2.3.2
+amqp===2.4.0
 ruamel.yaml===0.15.85
 websockify===0.8.0
 XStatic-JQuery.quicksearch===2.0.3.1
@@ -241,7 +241,7 @@ oslo.versionedobjects===1.34.1
 webcolors===1.8.1
 aodhclient===1.1.1
 autobahn===19.1.1
-SQLAlchemy-Utils===0.33.10
+SQLAlchemy-Utils===0.33.11
 pluggy===0.8.1
 coverage===4.5.2
 freezegun===0.3.11
@@ -377,7 +377,7 @@ python-consul===1.1.0
 Faker===1.0.1
 more-itertools===5.0.0
 seqdiag===0.9.6
-numpy===1.15.4
+numpy===1.16.0
 msgpack===0.6.0
 Sphinx===1.8.3
 oslo.config===6.7.0
@@ -395,7 +395,7 @@ httplib2===0.12.0
 bottle===0.12.16
 betamax===0.8.1
 construct===2.8.22
-pyparsing===2.3.0
+pyparsing===2.3.1
 dogpile.cache===0.6.8
 python-barbicanclient===4.8.0
 salt===2018.3.2
@@ -516,7 +516,7 @@ cffi===1.11.5
 futurist===1.8.0
 jsonschema===2.6.0
 python-blazarclient===2.1.0
-alembic===1.0.5
+alembic===1.0.6
 glance-store===0.27.0
 sphinxcontrib-programoutput===0.13
 sphinx-testing===0.8.1
