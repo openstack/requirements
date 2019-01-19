@@ -82,7 +82,7 @@ psycopg2===2.7.6.1
 networkx===2.2
 bashate===0.6.0
 XStatic-Angular===1.5.8.0
-pyngus===2.2.4
+pyngus===2.3.0
 Pillow===5.4.1
 zuul-sphinx===0.3.0
 python-mimeparse===1.6.0
@@ -356,12 +356,12 @@ protobuf===3.6.1
 os-dpm===1.1.0
 sushy===1.7.0
 python-neutronclient===6.11.0
-pika===0.12.0
+pika===0.13.0
 oslo.cache===1.32.0
 WebTest===2.0.32
 openstack.nose-plugin===0.11
 os-collect-config===10.1.0
-python-qpid-proton===0.23.0
+python-qpid-proton===0.26.0
 python-octaviaclient===1.7.0
 pysaml2===4.6.5
 requests-oauthlib===1.2.0
@@ -405,7 +405,7 @@ proboscis===1.2.6.0
 fortiosclient===0.0.3
 oslo.upgradecheck===0.1.1
 stevedore===1.30.0
-botocore===1.12.80
+botocore===1.12.81
 xmltodict===0.11.0
 pyasn1===0.4.5
 oslo.rootwrap===5.15.1
@@ -423,7 +423,7 @@ XStatic-smart-table===1.4.13.2
 kuryr-lib===0.9.0
 scrypt===0.8.6
 jsonpatch===1.23
-python-daemon===2.2.0
+python-daemon===2.2.1
 typed-ast===1.2.0;python_version=='3.4'
 typed-ast===1.2.0;python_version=='3.5'
 typed-ast===1.2.0;python_version=='3.6'
