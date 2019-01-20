@@ -113,7 +113,7 @@ MarkupSafe===1.1.0
 pypowervm===1.1.19
 doc8===0.8.0
 pymongo===3.7.2
-soupsieve===1.7.1
+soupsieve===1.7.2
 sqlparse===0.2.4
 oslotest===3.7.0
 jsonpointer===2.0
@@ -405,7 +405,7 @@ proboscis===1.2.6.0
 fortiosclient===0.0.3
 oslo.upgradecheck===0.1.1
 stevedore===1.30.0
-botocore===1.12.81
+botocore===1.12.82
 xmltodict===0.11.0
 pyasn1===0.4.5
 oslo.rootwrap===5.15.1
@@ -423,7 +423,7 @@ XStatic-smart-table===1.4.13.2
 kuryr-lib===0.9.0
 scrypt===0.8.6
 jsonpatch===1.23
-python-daemon===2.2.1
+python-daemon===2.2.2
 typed-ast===1.2.0;python_version=='3.4'
 typed-ast===1.2.0;python_version=='3.5'
 typed-ast===1.2.0;python_version=='3.6'
@@ -455,10 +455,10 @@ pyzmq===17.1.2
 oslo.db===4.43.0
 simplegeneric===0.8.1
 python-pcre===0.7
-yappi===0.98
+yappi===0.99
 abclient===0.2.3
 pymemcache===2.1.0
-wrapt===1.11.0
+wrapt===1.11.1
 oslo.privsep===1.31.0
 sphinxcontrib-apidoc===0.3.0
 oslo.policy===1.44.1
