@@ -171,7 +171,7 @@ backports.ssl-match-hostname===3.7.0.1;python_version=='2.7'
 openstack-release-test===1.2.0
 pylxd===2.2.8
 ruamel.ordereddict===0.4.13;python_version=='2.7'
-pycryptodomex===3.7.2
+pycryptodomex===3.7.3
 anyjson===0.3.3
 requests-mock===1.5.2
 os-apply-config===10.1.0
@@ -234,7 +234,7 @@ dnspython3===1.15.0;python_version=='3.5'
 dnspython3===1.15.0;python_version=='3.6'
 ldappool===2.4.0
 termcolor===1.1.0
-hiredis===0.3.1
+hiredis===1.0.0
 google-api-python-client===1.7.7
 castellan===1.1.0
 oslo.versionedobjects===1.34.1
@@ -312,7 +312,7 @@ testscenarios===0.5.0
 sphinxcontrib-pecanwsme===0.9.0
 sadisplay===0.4.9
 enum34===1.1.6
-packaging===18.0
+packaging===19.0
 flask-keystone===0.2
 nose-exclude===0.5.0
 psutil===5.4.8
@@ -423,7 +423,7 @@ XStatic-smart-table===1.4.13.2
 kuryr-lib===0.9.0
 scrypt===0.8.6
 jsonpatch===1.23
-python-daemon===2.2.2
+python-daemon===2.2.3
 typed-ast===1.2.0;python_version=='3.4'
 typed-ast===1.2.0;python_version=='3.5'
 typed-ast===1.2.0;python_version=='3.6'
