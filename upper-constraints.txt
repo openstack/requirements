@@ -380,7 +380,7 @@ seqdiag===0.9.6
 numpy===1.16.0
 msgpack===0.6.0
 Sphinx===1.8.3
-oslo.config===6.7.0
+oslo.config===6.8.0
 tempest===19.0.0
 django-floppyforms===1.7.0
 openstackdocstheme===1.28.1
