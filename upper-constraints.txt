@@ -545,7 +545,7 @@ sortedcontainers===2.1.0
 python-tackerclient===0.14.0
 python-heatclient===1.17.0
 kafka-python===1.4.4
-oslo.utils===3.40.1
+oslo.utils===3.39.0
 python-editor===1.0.3
 gitdb2===2.0.5
 requests-kerberos===0.12.0
