@@ -300,7 +300,7 @@ thriftpy===0.3.9;python_version=='2.7'
 text-unidecode===1.2
 murano-pkg-check===0.3.0
 oslo.vmware===2.32.1
-sqlalchemy-migrate===0.11.0
+sqlalchemy-migrate===0.12.0
 python-monascaclient===1.12.1
 ldap3===2.5.2
 requests-ntlm===1.1.0
