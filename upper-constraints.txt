@@ -506,7 +506,7 @@ scandir===1.5
 sphinxcontrib-fulltoc===1.2.0
 smmap2===2.0.3
 olefile===0.44
-greenlet===0.4.12
+greenlet===0.4.15
 xvfbwrapper===0.2.9
 futures===3.1.1;python_version=='2.7'
 tosca-parser===0.8.1
