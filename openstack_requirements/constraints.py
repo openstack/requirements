@@ -92,11 +92,12 @@ def check_compatible(global_reqs, constraints):
         tested = []
         for constraint, _ in reqs[name]:
             spec = specifiers.SpecifierSet(constraint.specifiers)
-            if spec.contains(version):
+            # pre-releases are allowed by policy but discouraged
+            if spec.contains(version, prereleases=True):
                 return True
             tested.append(constraint.specifiers)
-        failures.append('Constraint for %s==%s does not match requirement %s' %
-                        (name, version, tested))
+        failures.append('Constraint %s for %s does not match requirement %s' %
+                        (version, name, tested))
         return False
     failures = []
     for pkg_constraints in constraints.values():
