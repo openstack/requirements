@@ -424,7 +424,7 @@ etcd3gw===0.2.1
 pyldap===2.4.45
 Flask-RESTful===0.3.6
 GitPython===2.1.8
-python-ironicclient===2.2.1
+python-ironicclient===2.2.2
 XStatic===1.0.1
 XStatic-Angular-FileUpload===12.0.4.0
 python-openstackclient===3.14.3
