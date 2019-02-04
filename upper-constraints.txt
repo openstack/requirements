@@ -553,7 +553,7 @@ itsdangerous===1.1.0
 XStatic-jquery-ui===1.12.1.1
 monasca-statsd===1.10.1
 python-dateutil===2.7.5
-virtualenv===16.3.0
+virtualenv===16.2.0
 colorama===0.4.1
 ironic-lib===2.16.1
 pytz===2018.9
