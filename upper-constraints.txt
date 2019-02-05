@@ -203,7 +203,7 @@ XStatic-Bootstrap-SCSS===3.3.7.1
 pyzabbix===0.7.5
 ptyprocess===0.6.0
 threadloop===1.0.2
-amqp===2.4.0
+amqp===2.4.1
 ruamel.yaml===0.15.87
 websockify===0.8.0
 XStatic-JQuery.quicksearch===2.0.3.1
