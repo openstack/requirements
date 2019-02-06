@@ -489,7 +489,7 @@ qpid-python===1.36.0.post1;python_version=='2.7'
 contextlib2===0.5.5
 XStatic-Angular-lrdragndrop===1.0.2.2
 python-congressclient===1.11.0
-ovsdbapp===0.12.2
+ovsdbapp===0.12.3
 aniso8601===3.0.2
 rjsmin===1.0.12
 icalendar===4.0.2
