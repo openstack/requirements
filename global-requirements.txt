@@ -316,6 +316,7 @@ simplejson  # MIT
 six  # MIT
 scipy  # BSD
 scikit-learn  # BSD
+setproctitle  # BSD
 # NOTE(yamahata):
 # bug work around of sqlalchemy
 # https://bitbucket.org/zzzeek/sqlalchemy/issues/3952/
