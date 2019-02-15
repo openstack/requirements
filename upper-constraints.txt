@@ -28,7 +28,7 @@ python-ironic-inspector-client===3.4.0
 lxml===4.3.1
 python-kingbirdclient===0.2.1
 setproctitle===1.1.10
-pytest===4.2.0
+pytest===4.2.1
 python-etcd===0.4.5
 raven===6.10.0
 cursive===0.2.2
@@ -240,7 +240,7 @@ castellan===1.1.0
 oslo.versionedobjects===1.34.1
 webcolors===1.8.1
 aodhclient===1.1.1
-autobahn===19.1.1
+autobahn===19.2.1
 SQLAlchemy-Utils===0.33.11
 pluggy===0.8.1
 coverage===4.5.2
@@ -307,7 +307,7 @@ requests-ntlm===1.1.0
 python-string-utils===0.6.0
 automaton===1.15.0
 os-service-types===1.5.0
-keyring===17.1.1
+keyring===18.0.0
 testscenarios===0.5.0
 sphinxcontrib-pecanwsme===0.9.0
 sadisplay===0.4.9
@@ -334,7 +334,7 @@ keystonemiddleware===5.3.0
 django-formtools===2.1
 python-ceilometerclient===2.9.0
 XStatic-Spin===1.2.5.2
-openshift===0.8.4
+openshift===0.8.6
 tap-as-a-service===3.0.0
 os-traits===0.11.0
 SecretStorage===2.3.1;python_version=='2.7'
@@ -394,7 +394,7 @@ python-magic===0.4.15
 python-solumclient===2.7.1
 PyMySQL===0.9.3
 kubernetes===8.0.1
-httplib2===0.12.0
+httplib2===0.12.1
 bottle===0.12.16
 betamax===0.8.1
 construct===2.8.22
@@ -408,7 +408,7 @@ proboscis===1.2.6.0
 fortiosclient===0.0.3
 oslo.upgradecheck===0.1.1
 stevedore===1.30.0
-botocore===1.12.93
+botocore===1.12.95
 xmltodict===0.12.0
 pyasn1===0.4.5
 oslo.rootwrap===5.15.1
@@ -502,7 +502,7 @@ XenAPI===1.2
 python-keystoneclient===3.18.0
 ceilometer===11.0.1
 demjson===2.2.4
-diskimage-builder===2.20.0
+diskimage-builder===2.20.1
 heat-translator===1.2.0
 python-magnumclient===2.11.0
 docker===3.7.0
@@ -516,7 +516,7 @@ rjsmin===1.0.12
 icalendar===4.0.3
 configparser===3.7.1;python_version=='2.7'
 decorator===4.3.2
-cffi===1.11.5
+cffi===1.12.0
 futurist===1.8.0
 jsonschema===2.6.0
 python-blazarclient===2.1.0
