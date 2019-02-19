@@ -28,7 +28,7 @@ python-ironic-inspector-client===3.4.0
 lxml===4.3.1
 python-kingbirdclient===0.2.1
 setproctitle===1.1.10
-pytest===4.2.1
+pytest===4.3.0
 python-etcd===0.4.5
 raven===6.10.0
 cursive===0.2.2
@@ -113,7 +113,7 @@ MarkupSafe===1.1.0
 pypowervm===1.1.20
 doc8===0.8.0
 pymongo===3.7.2
-soupsieve===1.7.3
+soupsieve===1.8
 sqlparse===0.2.4
 oslotest===3.7.0
 jsonpointer===2.0
@@ -133,7 +133,7 @@ traceback2===1.4.0
 semantic-version===2.6.0
 virtualbmc===1.4.0
 deprecation===2.0.6
-SQLAlchemy===1.2.17
+SQLAlchemy===1.2.18
 pyroute2===0.5.3
 google-auth===1.6.2
 kazoo===2.6.1
@@ -315,7 +315,7 @@ enum34===1.1.6
 packaging===19.0
 flask-keystone===0.2
 nose-exclude===0.5.0
-psutil===5.5.0
+psutil===5.5.1
 py===1.7.0
 txaio===18.8.1
 python-qinlingclient===2.1.0
@@ -399,7 +399,7 @@ bottle===0.12.16
 betamax===0.8.1
 construct===2.8.22
 pyparsing===2.3.1
-dogpile.cache===0.6.8
+dogpile.cache===0.7.1
 python-barbicanclient===4.8.1
 salt===2018.3.2
 tricircleclient===0.4.0
@@ -408,7 +408,7 @@ proboscis===1.2.6.0
 fortiosclient===0.0.3
 oslo.upgradecheck===0.2.0
 stevedore===1.30.0
-botocore===1.12.95
+botocore===1.12.97
 xmltodict===0.12.0
 pyasn1===0.4.5
 oslo.rootwrap===5.15.1
@@ -418,7 +418,7 @@ Django===2.0.13;python_version=='3.5'
 Django===2.0.13;python_version=='3.6'
 pexpect===4.6.0
 cmd2===0.8.9
-redis===3.1.0
+redis===3.2.0
 jmespath===0.9.3
 atomicwrites===1.3.0
 docker-pycreds===0.4.0
@@ -516,7 +516,7 @@ rjsmin===1.0.12
 icalendar===4.0.3
 configparser===3.7.1;python_version=='2.7'
 decorator===4.3.2
-cffi===1.12.0
+cffi===1.12.1
 futurist===1.8.0
 jsonschema===2.6.0
 python-blazarclient===2.1.0
