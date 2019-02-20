@@ -458,7 +458,7 @@ pyzmq===17.1.2
 oslo.db===4.44.0
 simplegeneric===0.8.1
 python-pcre===0.7
-yappi===0.99
+yappi===1.0
 abclient===0.2.3
 pymemcache===2.1.1
 wrapt===1.11.1
