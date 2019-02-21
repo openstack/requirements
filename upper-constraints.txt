@@ -135,7 +135,7 @@ virtualbmc===1.4.0
 deprecation===2.0.6
 SQLAlchemy===1.2.18
 pyroute2===0.5.3
-google-auth===1.6.2
+google-auth===1.6.3
 kazoo===2.6.1
 XStatic-roboto-fontface===0.5.0.0
 pyudev===0.21.0
@@ -175,7 +175,7 @@ pycryptodomex===3.7.3
 anyjson===0.3.3
 requests-mock===1.5.2
 os-apply-config===10.1.0
-prometheus-client===0.5.0
+prometheus-client===0.6.0
 oslosphinx===4.18.0
 mox3===0.26.0
 gunicorn===19.9.0
@@ -247,7 +247,7 @@ coverage===4.5.2
 freezegun===0.3.11
 python-pytun===2.3.0
 pyperclip===1.7.0
-cassandra-driver===3.16.0
+cassandra-driver===3.17.0
 mox===0.5.3
 XStatic-Angular-Schema-Form===0.8.13.0
 gabbi===1.44.0
@@ -408,7 +408,7 @@ proboscis===1.2.6.0
 fortiosclient===0.0.3
 oslo.upgradecheck===0.2.0
 stevedore===1.30.0
-botocore===1.12.97
+botocore===1.12.99
 xmltodict===0.12.0
 pyasn1===0.4.5
 oslo.rootwrap===5.15.1
@@ -454,7 +454,7 @@ python-ironicclient===2.6.0
 XStatic===1.0.2
 XStatic-Angular-FileUpload===12.0.4.0
 python-openstackclient===3.17.0
-pyzmq===17.1.2
+pyzmq===18.0.0
 oslo.db===4.44.0
 simplegeneric===0.8.1
 python-pcre===0.7
