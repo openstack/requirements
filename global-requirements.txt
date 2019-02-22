@@ -494,4 +494,4 @@ openstack-release-test
 skydive-client  # Apache-2.0
 
 # NOTE(anilvenkata): This is required for profiling oslo.service processes
-Yappi  # MIT
+Yappi!=0.98,!=0.99  # MIT
