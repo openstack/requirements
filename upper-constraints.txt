@@ -21,7 +21,7 @@ ryu===4.30
 os-api-ref===1.6.0
 python-ldap===3.1.0
 oslo.concurrency===3.29.0
-websocket-client===0.54.0
+websocket-client===0.55.0
 osprofiler===2.6.0
 os-resource-classes===0.2.0
 python-ironic-inspector-client===3.4.0
@@ -316,7 +316,7 @@ packaging===19.0
 flask-keystone===0.2
 nose-exclude===0.5.0
 psutil===5.5.1
-py===1.7.0
+py===1.8.0
 txaio===18.8.1
 python-qinlingclient===2.1.0
 elasticsearch===2.4.1
@@ -408,7 +408,7 @@ proboscis===1.2.6.0
 fortiosclient===0.0.3
 oslo.upgradecheck===0.2.0
 stevedore===1.30.0
-botocore===1.12.99
+botocore===1.12.101
 xmltodict===0.12.0
 pyasn1===0.4.5
 oslo.rootwrap===5.15.1
@@ -514,7 +514,7 @@ ovsdbapp===0.15.0
 aniso8601===4.1.0
 rjsmin===1.0.12
 icalendar===4.0.3
-configparser===3.7.1;python_version=='2.7'
+configparser===3.7.3;python_version=='2.7'
 decorator===4.3.2
 cffi===1.12.1
 futurist===1.8.0
@@ -556,7 +556,7 @@ itsdangerous===1.1.0
 XStatic-jquery-ui===1.12.1.1
 monasca-statsd===1.10.1
 python-dateutil===2.8.0
-virtualenv===16.4.0
+virtualenv===16.4.1
 colorama===0.4.1
 ironic-lib===2.16.1
 pytz===2018.9
