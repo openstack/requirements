@@ -345,7 +345,7 @@ wheel  # MIT
 PyMI;sys_platform=='win32'  # Apache 2.0 License
 wmi;sys_platform=='win32'  # MIT
 WSME  # MIT
-xattr  # MIT
+xattr;sys_platform!='win32'  # MIT
 xstatic-angular-uuid  # MIT License
 xstatic-angular-vis  # MIT License
 xstatic-filesaver  # MIT License
@@ -420,7 +420,7 @@ oslotest  # Apache-2.0
 ovsdbapp  # Apache-2.0
 proboscis  # Apache-2.0
 psycopg2  # LGPL/ZPL
-pysendfile  # MIT
+pysendfile;sys_platform!='win32'  # MIT
 python-consul  # MIT License
 python-subunit  # Apache-2.0/BSD
 python-pytun  # MIT
