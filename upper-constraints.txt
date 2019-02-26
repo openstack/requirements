@@ -233,7 +233,7 @@ lockfile===0.12.2
 dnspython3===1.15.0;python_version=='3.4'
 dnspython3===1.15.0;python_version=='3.5'
 dnspython3===1.15.0;python_version=='3.6'
-ldappool===2.4.0
+ldappool===2.4.1
 termcolor===1.1.0
 hiredis===1.0.0
 google-api-python-client===1.7.8
