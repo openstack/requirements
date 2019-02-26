@@ -209,7 +209,7 @@ websockify===0.8.0
 XStatic-JQuery.quicksearch===2.0.3.1
 mpmath===1.1.0
 django-debreach===1.5.2
-sphinx-feature-classification===0.3.1
+sphinx-feature-classification===0.3.2
 XStatic-JQuery-Migrate===1.2.1.1
 appdirs===1.4.3
 tinyrpc===0.9.4
