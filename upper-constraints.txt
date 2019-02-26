@@ -188,7 +188,7 @@ XStatic-Angular-Gettext===2.3.8.0
 XStatic-Hogan===2.0.0.2
 XStatic-objectpath===1.2.1.0
 python-manilaclient===1.24.1
-requests===2.19.1
+requests===2.20.1
 snowballstemmer===1.2.1
 Jinja2===2.10
 XStatic-Bootstrap-SCSS===3.3.7.1
