@@ -469,6 +469,7 @@ oslo.privsep===1.32.1
 sphinxcontrib-apidoc===0.3.0
 oslo.policy===2.1.1
 python-muranoclient===1.1.1
+hvac===0.7.2
 pyeclib===1.5.0
 wsgi-intercept===1.8.0
 ndg-httpsclient===0.5.1;python_version=='2.7'
