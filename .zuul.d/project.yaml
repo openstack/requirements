@@ -109,9 +109,6 @@
             irrelevant-files:
               - ^(test-|)requirements.txt$
               - ^setup.cfg$
-    post:
-      jobs:
-        - publish-loci-requirements
     experimental:
       jobs:
         - tempest-pg-full:
