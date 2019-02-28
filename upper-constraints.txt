@@ -131,7 +131,6 @@ vine===1.2.0
 taskflow===3.4.0
 traceback2===1.4.0
 semantic-version===2.6.0
-neutron-tempest-plugin===0.2.0
 virtualbmc===1.4.0
 deprecation===2.0.6
 SQLAlchemy===1.2.18

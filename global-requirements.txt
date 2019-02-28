@@ -137,7 +137,6 @@ neutron-lib  # Apache-2.0
 neutron-dynamic-routing  # Apache-2.0
 neutron-fwaas  # Apache-2.0
 neutron-lbaas  # Apache-2.0
-neutron-tempest-plugin  # Apache-2.0
 neutron-vpnaas  # Apache-2.0
 neutron  # Apache-2.0
 notifier  # Apache-2.0
