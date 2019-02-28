@@ -562,7 +562,7 @@ monasca-statsd===1.10.1
 python-dateutil===2.8.0
 virtualenv===16.4.1
 colorama===0.4.1
-ironic-lib===2.16.1
+ironic-lib===2.16.2
 pytz===2018.9
 XStatic-D3===3.5.17.0
 actdiag===0.5.4
