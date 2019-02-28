@@ -521,7 +521,7 @@ icalendar===4.0.3
 configparser===3.7.3;python_version=='2.7'
 decorator===4.3.2
 cffi===1.12.2
-futurist===1.8.0
+futurist===1.8.1
 jsonschema===2.6.0
 python-blazarclient===2.1.0
 alembic===1.0.7
