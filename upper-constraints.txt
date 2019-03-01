@@ -103,7 +103,7 @@ rsd-lib===0.4.0
 XStatic-Jasmine===2.4.1.2
 python-glanceclient===2.15.0
 pyinotify===0.9.6
-debtcollector===1.20.0
+debtcollector===1.21.0
 requests-unixsocket===0.1.5
 asn1crypto===0.24.0
 croniter===0.3.27
