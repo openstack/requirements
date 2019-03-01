@@ -94,7 +94,7 @@ simplejson===3.16.0
 suds-jurko===0.6
 python-swiftclient===3.6.0
 pyOpenSSL===19.0.0
-monasca-common===2.12.0
+monasca-common===2.13.0
 scipy===1.2.1
 mypy-extensions===0.4.1;python_version=='3.4'
 mypy-extensions===0.4.1;python_version=='3.5'
