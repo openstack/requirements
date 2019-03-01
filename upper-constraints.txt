@@ -415,7 +415,7 @@ stevedore===1.30.1
 botocore===1.12.104
 xmltodict===0.12.0
 pyasn1===0.4.5
-oslo.rootwrap===5.15.1
+oslo.rootwrap===5.15.2
 Django===1.11.20;python_version=='2.7'
 Django===2.0.13;python_version=='3.4'
 Django===2.0.13;python_version=='3.5'
