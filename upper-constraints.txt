@@ -25,7 +25,7 @@ websocket-client===0.55.0
 osprofiler===2.6.0
 os-resource-classes===0.3.0
 python-ironic-inspector-client===3.4.0
-lxml===4.3.1
+lxml===4.3.2
 python-kingbirdclient===0.2.1
 setproctitle===1.1.10
 pytest===4.3.0
@@ -356,7 +356,7 @@ python-karborclient===1.2.0
 weakrefmethod===1.0.3;python_version=='2.7'
 PuLP===1.6.9
 crc16===0.1.1
-protobuf===3.6.1
+protobuf===3.7.0
 os-dpm===1.1.0
 sushy===1.8.0
 python-neutronclient===6.11.0
@@ -412,7 +412,7 @@ proboscis===1.2.6.0
 fortiosclient===0.0.3
 oslo.upgradecheck===0.2.1
 stevedore===1.30.1
-botocore===1.12.104
+botocore===1.12.105
 xmltodict===0.12.0
 pyasn1===0.4.5
 oslo.rootwrap===5.15.2
@@ -478,7 +478,7 @@ rfc3986===1.2.0
 tenacity===5.0.3
 python-designateclient===2.11.0
 future===0.17.1
-Paste===3.0.6
+Paste===3.0.7
 jaeger-client===3.13.0
 XStatic-Json2yaml===0.1.1.0
 boto===2.49.0
@@ -506,7 +506,7 @@ XenAPI===1.2
 python-keystoneclient===3.19.0
 ceilometer===11.0.1
 demjson===2.2.4
-diskimage-builder===2.20.2
+diskimage-builder===2.20.3
 heat-translator===1.3.0
 python-magnumclient===2.11.0
 docker===3.7.0
@@ -560,7 +560,7 @@ itsdangerous===1.1.0
 XStatic-jquery-ui===1.12.1.1
 monasca-statsd===1.11.0
 python-dateutil===2.8.0
-virtualenv===16.4.1
+virtualenv===16.4.3
 colorama===0.4.1
 ironic-lib===2.16.2
 pytz===2018.9
