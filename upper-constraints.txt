@@ -115,7 +115,7 @@ doc8===0.8.0
 pymongo===3.7.2
 soupsieve===1.8
 sqlparse===0.2.4
-oslotest===3.7.0
+oslotest===3.7.1
 jsonpointer===2.0
 defusedxml===0.5.0
 netaddr===0.7.19
