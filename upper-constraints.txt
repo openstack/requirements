@@ -118,6 +118,7 @@ sqlparse===0.2.4
 oslotest===3.7.1
 jsonpointer===2.0
 defusedxml===0.5.0
+relativetimebuilder===0.2.0
 netaddr===0.7.19
 pyghmi===1.2.16
 sphinxcontrib-blockdiag===1.5.5
@@ -411,7 +412,7 @@ proboscis===1.2.6.0
 fortiosclient===0.0.3
 oslo.upgradecheck===0.2.1
 stevedore===1.30.1
-botocore===1.12.105
+botocore===1.12.106
 xmltodict===0.12.0
 pyasn1===0.4.5
 oslo.rootwrap===5.15.2
@@ -514,7 +515,7 @@ contextlib2===0.5.5;python_version=='2.7'
 XStatic-Angular-lrdragndrop===1.0.2.4
 python-congressclient===1.12.0
 ovsdbapp===0.15.0
-aniso8601===4.1.0
+aniso8601===5.1.0
 rjsmin===1.0.12
 icalendar===4.0.3
 configparser===3.7.3;python_version=='2.7'
@@ -566,4 +567,4 @@ pytz===2018.9
 XStatic-D3===3.5.17.0
 actdiag===0.5.4
 sysv-ipc===1.0.0
-scikit-learn===0.20.2
+scikit-learn===0.20.3
