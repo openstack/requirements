@@ -186,7 +186,7 @@ pathlib2  # MIT
 passlib  # BSD
 Paste  # MIT
 PasteDeploy  # MIT
-paunch  # Apache-2.0
+paunch<4.0.0  # Apache-2.0
 pbr!=2.1.0  # Apache-2.0
 pecan!=1.0.2,!=1.0.3,!=1.0.4,!=1.2  # BSD
 pexpect!=3.3  # ISC License
