@@ -550,7 +550,7 @@ happybase===1.1.0;python_version=='2.7'
 marathon===0.11.0
 fasteners===0.14.1
 sortedcontainers===2.1.0
-python-tackerclient===0.14.0
+python-tackerclient===0.15.0
 python-heatclient===1.17.0
 kafka-python===1.4.4
 oslo.utils===3.40.3
