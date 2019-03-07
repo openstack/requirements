@@ -81,6 +81,7 @@ happybase!=0.7,!=1.0.0;python_version=='2.7'  # MIT
 heat-translator  # Apache-2.0
 horizon  # Apache-2.0
 httplib2  # MIT
+hvac  # Apache-2.0
 icalendar  # BSD
 influxdb!=5.2.0,!=5.2.1  # MIT
 instack-undercloud  # Apache-2.0
