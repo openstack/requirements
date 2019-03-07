@@ -209,7 +209,8 @@ crc16>=0.1.1  # LGPLv3+
 pyzabbix>=0.7.4  # LGPL
 statsd>=3.2.1  # MIT
 weakrefmethod>=1.0.2;python_version=='2.7'  # PSF
-zVMCloudConnector>=0.3.2  # Apache 2.0 License
+zVMCloudConnector>=0.3.2;python_version>='2.7' and python_version<='3.5'  # Apache 2.0 License
+zVMCloudConnector>=1.0.0;python_version>='3.6'  # Apache 2.0 License
 
 # NOTE(flaper87): This added 2 packages to `integration.sh`
 # uuid-dev and swig
