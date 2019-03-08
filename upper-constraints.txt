@@ -406,7 +406,7 @@ pyparsing===2.3.1
 dogpile.cache===0.7.1
 python-barbicanclient===4.8.1
 salt===2019.2.0
-tricircleclient===0.4.0
+tricircleclient===0.5.0
 WSME===0.9.3
 proboscis===1.2.6.0
 fortiosclient===0.0.3
