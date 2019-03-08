@@ -485,7 +485,7 @@ XStatic-Json2yaml===0.1.1.0
 boto===2.49.0
 functools32===3.2.3.post2;python_version=='2.7'
 os-vif===1.15.1
-python-masakariclient===5.3.0
+python-masakariclient===5.4.0
 Werkzeug===0.14.1
 backports.functools-lru-cache===1.5;python_version=='2.7'
 pyasn1-modules===0.2.4
