@@ -243,7 +243,7 @@ google-api-python-client===1.7.8
 castellan===1.2.2
 oslo.versionedobjects===1.35.1
 webcolors===1.8.1
-aodhclient===1.1.1
+aodhclient===1.2.0
 autobahn===19.2.1
 SQLAlchemy-Utils===0.33.11
 pluggy===0.9.0
