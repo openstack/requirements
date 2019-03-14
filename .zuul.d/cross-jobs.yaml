@@ -53,6 +53,7 @@
     parent: requirements-cross-test
     description: Run cross-project tests on cinder with py35.
     required-projects: openstack/cinder
+    nodeset: ubuntu-xenial
     vars:
       tox_envlist: py35
 
@@ -69,6 +70,7 @@
     parent: requirements-cross-test
     description: Run cross-project tests on glance with py35.
     required-projects: openstack/glance
+    nodeset: ubuntu-xenial
     vars:
       tox_envlist: py35
 
@@ -85,6 +87,7 @@
     parent: requirements-cross-test
     description: Run cross-project tests on horizon with py35.
     required-projects: openstack/horizon
+    nodeset: ubuntu-xenial
     vars:
       tox_envlist: py35
 
@@ -109,6 +112,7 @@
     parent: requirements-cross-test
     description: Run cross-project tests on keystone with py35.
     required-projects: openstack/keystone
+    nodeset: ubuntu-xenial
     vars:
       tox_envlist: py35
 
@@ -125,6 +129,7 @@
     parent: requirements-cross-test
     description: Run cross-project tests on neutron with py35.
     required-projects: openstack/neutron
+    nodeset: ubuntu-xenial
     vars:
       tox_envlist: py35
 
@@ -149,6 +154,7 @@
     parent: requirements-cross-test
     description: Run cross-project tests on nova with py35.
     required-projects: openstack/nova
+    nodeset: ubuntu-xenial
     vars:
       tox_envlist: py35
 
@@ -165,6 +171,7 @@
     parent: requirements-cross-test
     description: Run cross-project tests on swift with py35.
     required-projects: openstack/swift
+    nodeset: ubuntu-xenial
     vars:
       tox_envlist: py35
 

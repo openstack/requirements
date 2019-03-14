@@ -31,6 +31,7 @@
 
       Uses tox with the ``py35-check-uc`` environment.
     files: ^upper-constraints.*txt$
+    nodeset: ubuntu-xenial
     vars:
       tox_envlist: py35-check-uc
 
