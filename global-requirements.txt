@@ -171,7 +171,7 @@ oslo.vmware  # Apache-2.0
 oslo.versionedobjects  # Apache-2.0
 osprofiler  # Apache-2.0
 os-apply-config  # Apache-2.0
-os-brick  # Apache-2.0
+os-brick!=2.8.0  # Apache-2.0
 os-client-config  # Apache-2.0
 os-collect-config  # Apache-2.0
 os-dpm  # Apache-2.0
