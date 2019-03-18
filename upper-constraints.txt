@@ -341,7 +341,7 @@ pika===0.10.0
 oslo.cache===1.28.0
 WebTest===2.0.29
 openstack.nose-plugin===0.11
-os-collect-config===8.3.0
+os-collect-config===8.3.1
 python-qpid-proton===0.19.0
 python-octaviaclient===1.4.0
 pysaml2===4.0.2
