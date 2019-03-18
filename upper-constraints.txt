@@ -145,7 +145,10 @@ frozendict===1.2
 oslo.messaging===5.35.4
 extras===1.0.0
 PyJWT===1.5.3
-zVMCloudConnector===0.3.5
+zVMCloudConnector===0.3.5;python_version=='2.7'
+zVMCloudConnector===0.3.5;python_version=='3.4'
+zVMCloudConnector===0.3.5;python_version=='3.5'
+zVMCloudConnector===1.0.0;python_version=='3.6'
 paramiko===2.4.0
 ordereddict===1.1
 reno===2.7.0
