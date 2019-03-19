@@ -172,7 +172,7 @@ ovs===2.10.0
 cryptography===2.6.1
 adal===1.2.1
 backports.ssl-match-hostname===3.7.0.1;python_version=='2.7'
-openstack-release-test===1.3.0
+openstack-release-test===1.4.0
 pylxd===2.2.9
 ruamel.ordereddict===0.4.13;python_version=='2.7'
 pycryptodomex===3.7.3
