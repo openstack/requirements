@@ -396,13 +396,13 @@ class TestSyncRequirementsFile(testtools.TestCase):
             """)
         project_content = textwrap.dedent("""\
             foo
-            -e git://git.openstack.org/openstack/neutron.git#egg=neutron
+            -e https://git.openstack.org/openstack/neutron.git#egg=neutron
             """)
         global_reqs = requirement.parse(global_content)
         project_reqs = list(requirement.to_reqs(project_content))
         actions, reqs = update._sync_requirements_file(
             global_reqs, project_reqs, 'f', False, False, False)
-        n = '-e git://git.openstack.org/openstack/neutron.git#egg=neutron'
+        n = '-e https://git.openstack.org/openstack/neutron.git#egg=neutron'
         self.assertEqual(requirement.Requirements([
             requirement.Requirement('foo', '', '', '', ''),
             requirement.Requirement('', '', '', '', n)]),
