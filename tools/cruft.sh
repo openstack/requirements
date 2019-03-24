@@ -35,7 +35,7 @@ for PROJECT in $(cat projects.txt); do
         if [ -d /opt/git/$PROJECT/.git ]; then
             git clone file:///opt/git/$PROJECT $PROJECT
         else
-            git clone git://git.openstack.org/$PROJECT.git $PROJECT
+            git clone https://git.openstack.org/$PROJECT.git $PROJECT
         fi
     fi
     pushd $PROJECT
