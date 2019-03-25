@@ -1,0 +1,11 @@
+- project:
+    templates:
+      - openstack-python-jobs
+    check:
+      jobs:
+        - openstack-tox-validate
+        - requirements-tox-py27-check-uc
+    gate:
+      jobs:
+        - openstack-tox-validate
+        - requirements-tox-py27-check-uc

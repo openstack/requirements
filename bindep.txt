@@ -9,7 +9,7 @@ libmysqlclient-dev
 libpq-dev
 pkg-config
 libsqlite3-dev
-libzmq-dev
+libzmq3-dev
 libffi-dev
 libldap2-dev
 libkrb5-dev
