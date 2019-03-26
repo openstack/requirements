@@ -210,7 +210,7 @@ passlib===1.7.1
 dib-utils===0.0.11
 xlwt===1.2.0
 cliff===2.8.2
-os-brick===1.15.7
+os-brick===1.15.8
 trollius===2.1
 scp===0.10.2
 xlrd===1.0.0
