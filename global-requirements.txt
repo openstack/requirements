@@ -128,6 +128,7 @@ ndg-httpsclient;python_version<'3.0'  # BSD
 netaddr  # BSD
 netifaces!=0.10.0,!=0.10.1  # MIT
 netmiko  # MIT
+network-runner  # Apache 2.0
 networking-bagpipe  # Apache-2.0
 networking-bgpvpn  # Apache-2.0
 networking-l2gw  # Apache-2.0
