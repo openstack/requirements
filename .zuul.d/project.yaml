@@ -29,22 +29,22 @@
         - requirements-tox-validate-projects:
             voting: false
         - cross-cinder-py27
-        - cross-cinder-py35
+        - cross-cinder-py36
         - cross-glance-py27
-        - cross-glance-py35
+        - cross-glance-py36
         - cross-horizon-py27
-        - cross-horizon-py35
+        - cross-horizon-py36
         - cross-horizon-npm
         - cross-keystone-py27
-        - cross-keystone-py35
+        - cross-keystone-py36
         - cross-neutron-py27
-        - cross-neutron-py35
+        - cross-neutron-py36
         - cross-nova-py27
-        - cross-nova-py35
+        - cross-nova-py36
         - cross-nova-functional
         - cross-osc-build-sphinx-docs
         - cross-swift-py27
-        - cross-swift-py35
+        - cross-swift-py36
         - openstack-tox-py36
         - requirements-integration
         - neutron-grenade-multinode:
@@ -78,23 +78,23 @@
         - requirements-tox-py27-check-uc
         - requirements-tox-py35-check-uc
         - cross-cinder-py27
-        - cross-cinder-py35
+        - cross-cinder-py36
         - cross-glance-py27
-        - cross-glance-py35
+        - cross-glance-py36
         - cross-horizon-py27
-        - cross-horizon-py35
+        - cross-horizon-py36
         - cross-horizon-npm
         - cross-keystone-py27
-        - cross-keystone-py35
+        - cross-keystone-py36
         - cross-neutron-py27
-        - cross-neutron-py35
+        - cross-neutron-py36
         - cross-nova-py27
-        - cross-nova-py35:
+        - cross-nova-py36:
             files: ^upper-constraints.txt$
         - cross-nova-functional
         - cross-osc-build-sphinx-docs
         - cross-swift-py27
-        - cross-swift-py35
+        - cross-swift-py36
         - openstack-tox-py36
         - requirements-integration
         - neutron-grenade-multinode:

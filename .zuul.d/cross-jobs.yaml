@@ -13,6 +13,7 @@
       .. zuul:jobvar:: tox_envlist
 
          Use the specified tox environments (``ALL`` selects all).
+    nodeset: ubuntu-bionic
     vars:
       zuul_work_dir: "{{ (zuul.projects.values() | selectattr('required') | selectattr('name', 'match', '^(?!openstack/requirements)') | list)[0].src_dir }}"
     files:
@@ -49,13 +50,12 @@
       tox_envlist: py27
 
 - job:
-    name: cross-cinder-py35
+    name: cross-cinder-py36
     parent: requirements-cross-test
-    description: Run cross-project tests on cinder with py35.
+    description: Run cross-project tests on cinder with py36.
     required-projects: openstack/cinder
-    nodeset: ubuntu-xenial
     vars:
-      tox_envlist: py35
+      tox_envlist: py36
 
 - job:
     name: cross-glance-py27
@@ -66,13 +66,12 @@
       tox_envlist: py27
 
 - job:
-    name: cross-glance-py35
+    name: cross-glance-py36
     parent: requirements-cross-test
-    description: Run cross-project tests on glance with py35.
+    description: Run cross-project tests on glance with py36.
     required-projects: openstack/glance
-    nodeset: ubuntu-xenial
     vars:
-      tox_envlist: py35
+      tox_envlist: py36
 
 - job:
     name: cross-horizon-py27
@@ -83,13 +82,12 @@
       tox_envlist: py27
 
 - job:
-    name: cross-horizon-py35
+    name: cross-horizon-py36
     parent: requirements-cross-test
-    description: Run cross-project tests on horizon with py35.
+    description: Run cross-project tests on horizon with py36.
     required-projects: openstack/horizon
-    nodeset: ubuntu-xenial
     vars:
-      tox_envlist: py35
+      tox_envlist: py36
 
 - job:
     name: cross-horizon-npm
@@ -108,13 +106,12 @@
       tox_envlist: py27
 
 - job:
-    name: cross-keystone-py35
+    name: cross-keystone-py36
     parent: requirements-cross-test
-    description: Run cross-project tests on keystone with py35.
+    description: Run cross-project tests on keystone with py36.
     required-projects: openstack/keystone
-    nodeset: ubuntu-xenial
     vars:
-      tox_envlist: py35
+      tox_envlist: py36
 
 - job:
     name: cross-neutron-py27
@@ -125,13 +122,12 @@
       tox_envlist: py27
 
 - job:
-    name: cross-neutron-py35
+    name: cross-neutron-py36
     parent: requirements-cross-test
-    description: Run cross-project tests on neutron with py35.
+    description: Run cross-project tests on neutron with py36.
     required-projects: openstack/neutron
-    nodeset: ubuntu-xenial
     vars:
-      tox_envlist: py35
+      tox_envlist: py36
 
 - job:
     name: cross-nova-functional
@@ -150,13 +146,12 @@
       tox_envlist: py27
 
 - job:
-    name: cross-nova-py35
+    name: cross-nova-py36
     parent: requirements-cross-test
-    description: Run cross-project tests on nova with py35.
+    description: Run cross-project tests on nova with py36.
     required-projects: openstack/nova
-    nodeset: ubuntu-xenial
     vars:
-      tox_envlist: py35
+      tox_envlist: py36
 
 - job:
     name: cross-swift-py27
@@ -167,13 +162,12 @@
       tox_envlist: py27
 
 - job:
-    name: cross-swift-py35
+    name: cross-swift-py36
     parent: requirements-cross-test
-    description: Run cross-project tests on swift with py35.
+    description: Run cross-project tests on swift with py36.
     required-projects: openstack/swift
-    nodeset: ubuntu-xenial
     vars:
-      tox_envlist: py35
+      tox_envlist: py36
 
 - job:
     name: cross-osc-build-sphinx-docs
