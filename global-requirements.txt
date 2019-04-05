@@ -83,7 +83,8 @@ horizon  # Apache-2.0
 httplib2  # MIT
 hvac  # Apache-2.0
 icalendar  # BSD
-influxdb!=5.2.0,!=5.2.1  # MIT
+influxdb!=5.2.0,!=5.2.1,!=5.2.2;python_version<'3.0'  # MIT
+influxdb;python_version>='3.0'  # MIT
 instack-undercloud  # Apache-2.0
 ironic-lib  # Apache-2.0
 ipaddress;python_version<'3.3'  # PSF
