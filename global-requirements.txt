@@ -295,6 +295,7 @@ rfc3986  # Apache-2.0
 rsd-lib  # Apache-2.0
 Routes  # MIT
 rtslib-fb  # Apache-2.0
+rst2txt  # BSD
 ryu  # Apache-2.0
 semantic-version  # BSD
 fasteners!=0.15  # Apache-2.0
