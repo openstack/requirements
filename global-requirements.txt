@@ -135,7 +135,9 @@ networking-bgpvpn  # Apache-2.0
 networking-l2gw  # Apache-2.0
 networking-odl  # Apache-2.0
 networking-sfc  # Apache-2.0
-networkx  # BSD
+# NOTE(fdegir): NetworkX 2.3 dropped support for Python 2
+networkx<2.3;python_version<'3.0'  # BSD
+networkx;python_version>='3.4'  # BSD
 neutron-lib  # Apache-2.0
 neutron-dynamic-routing  # Apache-2.0
 neutron-fwaas  # Apache-2.0
