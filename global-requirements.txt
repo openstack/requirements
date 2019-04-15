@@ -206,6 +206,7 @@ Pillow  # PIL License
 Pint  # BSD
 pip  # MIT
 prometheus-client  # Apache-2.0
+protobuf  # BSD License (3 clause)
 PrettyTable<0.8  # BSD
 psutil  # BSD
 pyasn1!=0.2.3  # BSD
