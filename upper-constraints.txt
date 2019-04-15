@@ -81,7 +81,7 @@ os-xenapi===0.3.4
 python-vitrageclient===2.7.0
 nosexcover===1.0.11
 krest===1.3.1
-psycopg2===2.8.1
+psycopg2===2.8.2
 networkx===2.2;python_version=='2.7'
 networkx===2.3;python_version=='3.4'
 networkx===2.3;python_version=='3.5'
@@ -119,7 +119,7 @@ MarkupSafe===1.1.1
 pypowervm===1.1.20
 doc8===0.8.0
 pymongo===3.7.2
-soupsieve===1.9
+soupsieve===1.9.1
 sqlparse===0.3.0
 oslotest===3.7.1
 jsonpointer===2.0
@@ -343,7 +343,7 @@ elasticsearch===2.4.1
 django-nose===1.4.6
 XStatic-JQuery.TableSorter===2.14.5.1
 pifpaf===2.2.2
-pysmi===0.3.3
+pysmi===0.3.4
 blockdiag===1.5.4
 testtools===2.3.0
 Parsley===1.3
@@ -455,7 +455,7 @@ typed-ast===1.3.1;python_version=='3.5'
 typed-ast===1.3.1;python_version=='3.6'
 os-testr===1.0.0
 cotyledon===1.7.3
-stomp.py===4.1.21
+stomp.py===4.1.22
 xattr===0.9.6
 systemd-python===234
 python-memcached===1.59
