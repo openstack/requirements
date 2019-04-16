@@ -280,7 +280,7 @@ exabgp===4.0.2
 sphinxcontrib-httpdomain===1.5.0
 thriftpy===0.3.9;python_version=='2.7'
 murano-pkg-check===0.3.0
-oslo.vmware===2.23.1
+oslo.vmware===2.23.2
 sqlalchemy-migrate===0.11.0
 gitdb===0.6.4
 python-monascaclient===1.7.1
