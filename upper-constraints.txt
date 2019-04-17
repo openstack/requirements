@@ -360,7 +360,7 @@ django-floppyforms===1.7.0
 openstackdocstheme===1.22.0
 progressbar2===3.32.1
 zake===0.2.2
-python-solumclient===2.5.0
+python-solumclient===2.5.1
 PyMySQL===0.7.11
 kubernetes===2.0.0
 httplib2===0.10.3
