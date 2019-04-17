@@ -187,7 +187,7 @@ os-client-config===1.31.2
 XStatic-Angular-Gettext===2.3.8.0
 XStatic-Hogan===2.0.0.2
 XStatic-objectpath===1.2.1.0
-python-manilaclient===1.24.1
+python-manilaclient===1.24.2
 requests===2.20.1
 snowballstemmer===1.2.1
 Jinja2===2.10
