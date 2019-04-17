@@ -91,7 +91,7 @@ ply===3.10
 requests-toolbelt===0.8.0
 simplejson===3.11.1
 suds-jurko===0.6
-python-swiftclient===3.4.0
+python-swiftclient===3.4.1
 pyOpenSSL===17.2.0
 monasca-common===2.3.0
 hyperframe===4.0.2;python_version=='3.4'
