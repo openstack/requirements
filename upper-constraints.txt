@@ -50,7 +50,7 @@ python-mistralclient===3.1.4
 oslo.context===2.17.2
 python-senlinclient===1.4.0
 rcssmin===1.0.6
-pycadf===2.6.0
+pycadf===2.6.1
 grpcio===1.4.0
 pysendfile===2.0.1
 fixtures===3.0.0
