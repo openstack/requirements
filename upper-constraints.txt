@@ -537,5 +537,5 @@ actdiag===0.5.4
 sysv-ipc===0.7.0
 scikit-learn===0.18.2
 zuul-sphinx===0.1.2
-shade===1.22.2
+shade===1.22.3
 stestr===2.0.0
