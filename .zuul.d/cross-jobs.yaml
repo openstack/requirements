@@ -146,7 +146,7 @@
       Run cross-project tests on python-openstackclient with
       build-openstack-sphinx-docs.
     vars:
-      zuul_work_dir: src/git.openstack.org/openstack/python-openstackclient
+      zuul_work_dir: src/opendev.org/openstack/python-openstackclient
     required-projects:
       - openstack/python-openstackclient
     files:
