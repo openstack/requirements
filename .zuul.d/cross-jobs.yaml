@@ -16,7 +16,7 @@
     vars:
       zuul_work_dir: "{{ (zuul.projects.values() | selectattr('required') | selectattr('name', 'match', '^(?!openstack/requirements)') | list)[0].src_dir }}"
       # NOTE(jeblair): temporarily disabled tox_siblings until the fix
-      # in https://review.openstack.org/514058 lands.
+      # in https://review.opendev.org/514058 lands.
       tox_install_siblings: false
     files:
       - upper-constraints.txt
