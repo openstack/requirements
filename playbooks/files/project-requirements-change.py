@@ -42,7 +42,7 @@ def run_command(cmd):
 
 
 _DEFAULT_REQS_DIR = os.path.expanduser(
-    '~/src/git.openstack.org/openstack/requirements')
+    '~/src/opendev.org/openstack/requirements')
 
 
 def grab_args():
