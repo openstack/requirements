@@ -2,7 +2,6 @@
     templates:
       - openstack-pypy-jobs-nonvoting
       - openstack-python-jobs
-      - openstack-python35-jobs
       - openstack-python36-jobs
     check:
       jobs:
@@ -23,9 +22,7 @@
         - requirements-tox-bindep:
             voting: false
         - requirements-tox-py27-check-uc
-        - requirements-tox-py35-check-uc
-        - requirements-tox-py36-check-uc:
-            voting: false
+        - requirements-tox-py36-check-uc
         - requirements-tox-validate-projects:
             voting: false
         - cross-cinder-py27
@@ -76,7 +73,7 @@
         - openstack-tox-validate
         - requirements-tox-babel
         - requirements-tox-py27-check-uc
-        - requirements-tox-py35-check-uc
+        - requirements-tox-py36-check-uc
         - cross-cinder-py27
         - cross-cinder-py36
         - cross-glance-py27
