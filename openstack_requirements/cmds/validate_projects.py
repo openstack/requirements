@@ -23,8 +23,8 @@ _BLACKLIST = set([
     # NOTE(dhellmann): It's not clear why these don't get updates,
     # except that trying to do so may break the test jobs using them
     # because of the nature of the projects.
-    'openstack-dev/hacking',
-    'openstack-dev/pbr',
+    'openstack/hacking',
+    'openstack/pbr',
     # We can't enforce the check rules against this repo.
     'openstack/requirements',
 ])
