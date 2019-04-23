@@ -474,7 +474,7 @@ backports-abc===0.5;python_version=='3.5'
 keystoneauth1===3.1.0
 statsd===3.2.1
 XenAPI===1.2
-python-keystoneclient===3.13.0
+python-keystoneclient===3.13.1
 demjson===2.2.4
 diskimage-builder===2.7.2
 heat-translator===0.9.0
