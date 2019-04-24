@@ -525,7 +525,7 @@ backports-abc===0.5;python_version=='2.7'
 sphinxcontrib-qthelp===1.0.2;python_version=='3.4'
 sphinxcontrib-qthelp===1.0.2;python_version=='3.5'
 sphinxcontrib-qthelp===1.0.2;python_version=='3.6'
-keystoneauth1===3.13.1
+keystoneauth1===3.14.0
 statsd===3.3.0
 XenAPI===1.2
 python-keystoneclient===3.19.0
