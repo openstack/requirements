@@ -214,7 +214,7 @@ os-brick===1.15.9
 trollius===2.1
 scp===0.10.2
 xlrd===1.0.0
-python-zaqarclient===1.7.0
+python-zaqarclient===1.7.1
 funcsigs===1.0.2;python_version=='2.7'
 zhmcclient===0.14.0
 dnspython3===1.15.0;python_version=='3.4'
