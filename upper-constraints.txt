@@ -377,7 +377,7 @@ os-dpm===1.1.0
 sushy===1.8.1
 python-neutronclient===6.12.0
 pika===1.0.1
-oslo.cache===1.33.2
+oslo.cache===1.34.0
 WebTest===2.0.33
 openstack.nose-plugin===0.11
 os-collect-config===10.2.0
