@@ -421,7 +421,7 @@ pycryptodome===3.4.6
 pyldap===2.4.37
 Flask-RESTful===0.3.6
 GitPython===2.1.5
-python-ironicclient===1.17.0
+python-ironicclient===1.17.2
 XStatic===1.0.1
 click-repl===0.1.2
 XStatic-Angular-FileUpload===12.0.4.0
