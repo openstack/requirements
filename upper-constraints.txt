@@ -437,7 +437,7 @@ pymemcache===1.4.3
 wrapt===1.10.10
 oslo.privsep===1.22.2
 zope.interface===4.4.2
-oslo.policy===1.25.3
+oslo.policy===1.25.4
 python-muranoclient===0.14.1
 pyeclib===1.5.0
 django-openstack-auth===3.6.1
