@@ -448,7 +448,7 @@ repoze.lru===0.6
 rfc3986===1.1.0
 tenacity===4.4.0
 XStatic-Magic-Search===0.2.5.1
-python-designateclient===2.7.0
+python-designateclient===2.7.1
 Paste===2.0.3
 boto===2.48.0
 functools32===3.2.3.post2;python_version=='2.7'
