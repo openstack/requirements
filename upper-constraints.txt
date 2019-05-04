@@ -177,7 +177,7 @@ tornado===4.5.3;python_version=='3.5'
 tornado===4.5.3;python_version=='3.6'
 tornado===4.5.3;python_version=='2.7'
 pycparser===2.19
-mock===2.0.0
+mock===3.0.3
 PyYAML===5.1
 beautifulsoup4===4.7.1
 os-net-config===10.4.0
@@ -272,7 +272,7 @@ coverage===4.5.3
 freezegun===0.3.11
 python-pytun===2.3.0
 pyperclip===1.7.0
-cassandra-driver===3.17.0
+cassandra-driver===3.17.1
 mox===0.5.3
 XStatic-Angular-Schema-Form===0.8.13.0
 gabbi===1.45.0
@@ -439,7 +439,7 @@ proboscis===1.2.6.0
 fortiosclient===0.0.3
 oslo.upgradecheck===0.2.1
 stevedore===1.30.1
-botocore===1.12.140
+botocore===1.12.142
 xmltodict===0.12.0
 pyasn1===0.4.5
 oslo.rootwrap===5.15.2
@@ -504,7 +504,7 @@ ndg-httpsclient===0.5.1;python_version=='2.7'
 pyrsistent===0.15.1
 repoze.lru===0.7
 rfc3986===1.3.1
-network-runner===0.1.5
+network-runner===0.1.6
 tenacity===5.0.4
 python-designateclient===2.11.0
 future===0.17.1
