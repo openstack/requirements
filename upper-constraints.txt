@@ -72,6 +72,7 @@ pyScss===1.3.4
 sphinxcontrib-htmlhelp===1.0.2;python_version=='3.4'
 sphinxcontrib-htmlhelp===1.0.2;python_version=='3.5'
 sphinxcontrib-htmlhelp===1.0.2;python_version=='3.6'
+sphinxcontrib-htmlhelp===1.0.2;python_version=='3.7'
 XStatic-jQuery===1.12.4.1
 jsonmodels===2.4
 ddt===1.2.1
@@ -87,6 +88,7 @@ networkx===2.2;python_version=='2.7'
 networkx===2.3;python_version=='3.4'
 networkx===2.3;python_version=='3.5'
 networkx===2.3;python_version=='3.6'
+networkx===2.3;python_version=='3.7'
 bashate===0.6.0
 XStatic-Angular===1.5.8.0
 pyngus===2.3.0
@@ -106,10 +108,12 @@ zeroconf===0.19.1;python_version=='2.7'
 zeroconf===0.22.0;python_version=='3.4'
 zeroconf===0.22.0;python_version=='3.5'
 zeroconf===0.22.0;python_version=='3.6'
+zeroconf===0.22.0;python_version=='3.7'
 scipy===1.2.1
 mypy-extensions===0.4.1;python_version=='3.4'
 mypy-extensions===0.4.1;python_version=='3.5'
 mypy-extensions===0.4.1;python_version=='3.6'
+mypy-extensions===0.4.1;python_version=='3.7'
 rsd-lib===1.0.0
 XStatic-Jasmine===2.4.1.2
 python-glanceclient===2.16.0
@@ -162,12 +166,13 @@ paramiko===2.4.2
 ifaddr===0.1.6;python_version=='3.4'
 ifaddr===0.1.6;python_version=='3.5'
 ifaddr===0.1.6;python_version=='3.6'
+ifaddr===0.1.6;python_version=='3.7'
 reno===2.11.3
 unicodecsv===0.14.1;python_version=='2.7'
 imagesize===1.1.0
 pydot===1.4.1
 pathlib===1.0.1;python_version=='2.7'
-urllib3===1.24.1
+urllib3===1.24.3
 graphviz===0.10.1
 PyKMIP===0.8.0
 whereto===0.4.0
@@ -175,9 +180,10 @@ python-subunit===1.3.0
 tornado===4.5.3;python_version=='3.4'
 tornado===4.5.3;python_version=='3.5'
 tornado===4.5.3;python_version=='3.6'
+tornado===4.5.3;python_version=='3.7'
 tornado===4.5.3;python_version=='2.7'
 pycparser===2.19
-mock===3.0.3
+mock===3.0.4
 PyYAML===5.1
 beautifulsoup4===4.7.1
 os-net-config===10.4.0
@@ -203,10 +209,12 @@ python-zunclient===3.3.0
 asyncio===3.4.3;python_version=='3.4'
 asyncio===3.4.3;python_version=='3.5'
 asyncio===3.4.3;python_version=='3.6'
+asyncio===3.4.3;python_version=='3.7'
 tzlocal===1.5.1
 sphinxcontrib-jsmath===1.0.1;python_version=='3.4'
 sphinxcontrib-jsmath===1.0.1;python_version=='3.5'
 sphinxcontrib-jsmath===1.0.1;python_version=='3.6'
+sphinxcontrib-jsmath===1.0.1;python_version=='3.7'
 python-novaclient===13.0.0
 bcrypt===3.1.6
 fixtures-git===0.1.0
@@ -218,6 +226,7 @@ python-manilaclient===1.27.0
 sphinxcontrib-serializinghtml===1.1.3;python_version=='3.4'
 sphinxcontrib-serializinghtml===1.1.3;python_version=='3.5'
 sphinxcontrib-serializinghtml===1.1.3;python_version=='3.6'
+sphinxcontrib-serializinghtml===1.1.3;python_version=='3.7'
 requests===2.21.0
 snowballstemmer===1.2.1
 Jinja2===2.10.1
@@ -242,6 +251,7 @@ influxdb===5.1.0;python_version=='2.7'
 influxdb===5.2.2;python_version=='3.4'
 influxdb===5.2.2;python_version=='3.5'
 influxdb===5.2.2;python_version=='3.6'
+influxdb===5.2.2;python_version=='3.7'
 funcparserlib===0.3.6
 passlib===1.7.1
 dib-utils===0.0.11
@@ -257,6 +267,7 @@ lockfile===0.12.2
 dnspython3===1.15.0;python_version=='3.4'
 dnspython3===1.15.0;python_version=='3.5'
 dnspython3===1.15.0;python_version=='3.6'
+dnspython3===1.15.0;python_version=='3.7'
 ldappool===2.4.1
 termcolor===1.1.0
 hiredis===1.0.0
@@ -299,6 +310,7 @@ python-glareclient===0.5.3
 mypy===0.701;python_version=='3.4'
 mypy===0.701;python_version=='3.5'
 mypy===0.701;python_version=='3.6'
+mypy===0.701;python_version=='3.7'
 mistral-lib===1.1.0
 Click===7.0
 dogtag-pki===10.6.9.1
@@ -314,6 +326,7 @@ flask-oslolog===0.1
 jeepney===0.4;python_version=='3.4'
 jeepney===0.4;python_version=='3.5'
 jeepney===0.4;python_version=='3.6'
+jeepney===0.4;python_version=='3.7'
 stestr===2.3.1
 singledispatch===3.4.0.3;python_version=='2.7'
 oslo.serialization===2.29.0
@@ -336,6 +349,7 @@ keyring===18.0.1;python_version=='2.7'
 keyring===19.0.1;python_version=='3.4'
 keyring===19.0.1;python_version=='3.5'
 keyring===19.0.1;python_version=='3.6'
+keyring===19.0.1;python_version=='3.7'
 testscenarios===0.5.0
 sphinxcontrib-pecanwsme===0.10.0
 sadisplay===0.4.9
@@ -369,6 +383,7 @@ SecretStorage===2.3.1;python_version=='2.7'
 SecretStorage===3.1.1;python_version=='3.4'
 SecretStorage===3.1.1;python_version=='3.5'
 SecretStorage===3.1.1;python_version=='3.6'
+SecretStorage===3.1.1;python_version=='3.7'
 opentracing===2.1.0
 XStatic-Rickshaw===1.5.0.0
 iso8601===0.1.12
@@ -407,6 +422,7 @@ more-itertools===5.0.0;python_version=='2.7'
 more-itertools===7.0.0;python_version=='3.4'
 more-itertools===7.0.0;python_version=='3.5'
 more-itertools===7.0.0;python_version=='3.6'
+more-itertools===7.0.0;python_version=='3.7'
 seqdiag===0.9.6
 numpy===1.16.3
 msgpack===0.6.1
@@ -414,6 +430,7 @@ Sphinx===1.8.5;python_version=='2.7'
 Sphinx===2.0.1;python_version=='3.4'
 Sphinx===2.0.1;python_version=='3.5'
 Sphinx===2.0.1;python_version=='3.6'
+Sphinx===2.0.1;python_version=='3.7'
 oslo.config===6.9.0
 tempest===20.0.0
 django-floppyforms===1.7.0
@@ -439,7 +456,7 @@ proboscis===1.2.6.0
 fortiosclient===0.0.3
 oslo.upgradecheck===0.2.1
 stevedore===1.30.1
-botocore===1.12.142
+botocore===1.12.143
 xmltodict===0.12.0
 pyasn1===0.4.5
 oslo.rootwrap===5.15.2
@@ -447,6 +464,7 @@ Django===1.11.20;python_version=='2.7'
 Django===2.0.13;python_version=='3.4'
 Django===2.0.13;python_version=='3.5'
 Django===2.0.13;python_version=='3.6'
+Django===2.0.13;python_version=='3.7'
 pexpect===4.7.0
 cmd2===0.8.9
 redis===3.2.1
@@ -461,6 +479,7 @@ python-daemon===2.2.3
 typed-ast===1.3.5;python_version=='3.4'
 typed-ast===1.3.5;python_version=='3.5'
 typed-ast===1.3.5;python_version=='3.6'
+typed-ast===1.3.5;python_version=='3.7'
 os-testr===1.0.0
 cotyledon===1.7.3
 stomp.py===4.1.22
@@ -533,6 +552,7 @@ backports-abc===0.5;python_version=='2.7'
 sphinxcontrib-qthelp===1.0.2;python_version=='3.4'
 sphinxcontrib-qthelp===1.0.2;python_version=='3.5'
 sphinxcontrib-qthelp===1.0.2;python_version=='3.6'
+sphinxcontrib-qthelp===1.0.2;python_version=='3.7'
 keystoneauth1===3.14.0
 statsd===3.3.0
 XenAPI===1.2
@@ -559,6 +579,7 @@ jsonschema===2.6.0
 sphinxcontrib-devhelp===1.0.1;python_version=='3.4'
 sphinxcontrib-devhelp===1.0.1;python_version=='3.5'
 sphinxcontrib-devhelp===1.0.1;python_version=='3.6'
+sphinxcontrib-devhelp===1.0.1;python_version=='3.7'
 python-blazarclient===2.1.0
 alembic===1.0.10
 glance-store===0.28.0
@@ -567,6 +588,7 @@ sphinx-testing===1.0.1
 dnspython===1.15.0;python_version=='3.4'
 dnspython===1.15.0;python_version=='3.5'
 dnspython===1.15.0;python_version=='3.6'
+dnspython===1.15.0;python_version=='3.7'
 dnspython===1.16.0;python_version=='2.7'
 oauthlib===3.0.1
 Babel===2.6.0
@@ -606,4 +628,5 @@ sysv-ipc===1.0.0
 sphinxcontrib-applehelp===1.0.1;python_version=='3.4'
 sphinxcontrib-applehelp===1.0.1;python_version=='3.5'
 sphinxcontrib-applehelp===1.0.1;python_version=='3.6'
+sphinxcontrib-applehelp===1.0.1;python_version=='3.7'
 scikit-learn===0.20.3
