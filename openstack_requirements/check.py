@@ -121,7 +121,8 @@ def _is_requirement_in_global_reqs(req, global_reqs):
     print(
         "Could not find a global requirements entry to match package {}. "
         "If the package is already included in the global list, "
-        "the name or platform markers there may not match the local settings."
+        "the name or platform markers there may not match the local "
+        "settings.".format(req.package)
     )
     return False
 
