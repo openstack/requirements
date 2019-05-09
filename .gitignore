@@ -12,3 +12,4 @@ dist
 .eggs
 *.egg
 *.pot
+doc/build
