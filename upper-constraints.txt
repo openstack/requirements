@@ -432,7 +432,7 @@ subprocess32===3.5.2;python_version=='2.7'
 etcd3gw===0.2.4
 Flask-RESTful===0.3.6
 GitPython===2.1.11
-python-ironicclient===2.5.1
+python-ironicclient===2.5.2
 XStatic===1.0.1
 XStatic-Angular-FileUpload===12.0.4.0
 python-openstackclient===3.16.2
