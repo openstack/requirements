@@ -155,8 +155,7 @@ def main():
 
     # build a list of requirements from the global list in the
     # openstack/requirements project so we can match them to the changes
-    reqdir = os.path.expanduser(
-        '~/src/git.openstack.org/openstack/requirements')
+    reqdir = os.path.expanduser('~/src/opendev.org/openstack/requirements')
     with tempdir() as reqroot:
 
         install_and_load_requirements(reqroot, reqdir)
