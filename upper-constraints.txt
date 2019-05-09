@@ -192,7 +192,7 @@ XStatic-Angular-Gettext===2.3.8.0
 Pygments===2.2.0
 XStatic-Hogan===2.0.0.2
 XStatic-objectpath===1.2.1.0
-python-manilaclient===1.21.1
+python-manilaclient===1.21.2
 requests===2.18.4
 snowballstemmer===1.2.1
 Jinja2===2.10
