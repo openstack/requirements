@@ -84,6 +84,7 @@ horizon  # Apache-2.0
 httplib2  # MIT
 hvac  # Apache-2.0
 icalendar  # BSD
+infinisdk  # BSD-3
 influxdb!=5.2.0,!=5.2.1,!=5.2.2;python_version<'3.0'  # MIT
 influxdb;python_version>='3.0'  # MIT
 instack-undercloud  # Apache-2.0
