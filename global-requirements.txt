@@ -434,6 +434,7 @@ ovsdbapp  # Apache-2.0
 proboscis  # Apache-2.0
 psycopg2  # LGPL/ZPL
 pysendfile;sys_platform!='win32'  # MIT
+python-3parclient  # Apache-2.0
 python-consul  # MIT License
 python-subunit  # Apache-2.0/BSD
 python-pytun  # MIT
