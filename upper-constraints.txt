@@ -635,3 +635,4 @@ scikit-learn===0.20.0;python_version<='3.4'
 scikit-learn===0.20.3;python_version>='3.5'
 rsd-lib===1.0.0
 python-3parclient===4.2.9
+storops===1.1.0
