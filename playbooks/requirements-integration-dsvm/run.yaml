@@ -122,6 +122,7 @@
           export DEVSTACK_GATE_EXERCISES=0
           export DEVSTACK_GATE_REQS_INTEGRATION=1
           export PIP_PROCESS_DEPENDENCY_LINKS=1
+          export USE_PYTHON3=true
           function gate_hook {
               set -x
               bash $BASE/new/devstack-gate/devstack-vm-gate.sh && \
