@@ -434,6 +434,7 @@ oslotest  # Apache-2.0
 ovsdbapp  # Apache-2.0
 proboscis  # Apache-2.0
 psycopg2  # LGPL/ZPL
+purestorage  # BSD
 pysendfile;sys_platform!='win32'  # MIT
 python-3parclient  # Apache-2.0
 python-consul  # MIT License
