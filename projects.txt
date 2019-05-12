@@ -127,8 +127,6 @@ openstack/neutron
 openstack/neutron-dynamic-routing
 openstack/neutron-fwaas
 openstack/neutron-fwaas-dashboard
-openstack/neutron-lbaas
-openstack/neutron-lbaas-dashboard
 openstack/neutron-lib
 openstack/neutron-tempest-plugin
 openstack/neutron-vpnaas
