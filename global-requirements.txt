@@ -313,6 +313,7 @@ requests-aws  # BSD License (3 clause)
 requests-kerberos  # ISC
 requestsexceptions  # Apache-2.0
 rfc3986  # Apache-2.0
+rsd-lib  # Apache-2.0
 Routes  # MIT
 rtslib-fb  # Apache-2.0
 ryu  # Apache-2.0
