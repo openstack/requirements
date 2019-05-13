@@ -212,7 +212,7 @@ funcparserlib===0.3.6
 passlib===1.7.1
 dib-utils===0.0.11
 cliff===2.13.0
-os-brick===2.5.6
+os-brick===2.5.7
 ansible-runner===1.0.5
 trollius===2.2;python_version=='2.7'
 scp===0.11.0
