@@ -477,7 +477,7 @@ XenAPI===1.2
 python-keystoneclient===3.13.1
 demjson===2.2.4
 diskimage-builder===2.7.2
-heat-translator===0.9.0
+heat-translator===0.9.1
 python-magnumclient===2.7.1
 docker===2.4.2
 prompt-toolkit===1.0.15
