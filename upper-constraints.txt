@@ -46,7 +46,7 @@ microversion-parse===0.1.4
 Pint===0.8.1
 oslo.i18n===3.17.2
 jsonpath-rw-ext===1.1.2
-python-mistralclient===3.1.4
+python-mistralclient===3.1.5
 oslo.context===2.17.2
 python-senlinclient===1.4.1
 rcssmin===1.0.6
