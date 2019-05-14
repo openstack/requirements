@@ -335,6 +335,7 @@ SQLAlchemy-Utils  # BSD License
 sqlalchemy-migrate  # Apache-2.0
 sqlparse  # BSD
 stevedore  # Apache-2.0
+storops  # Apache-2.0
 systemd-python  # LGPLv2+
 sysv-ipc  # BSD License
 suds-jurko  # LGPLv3+
