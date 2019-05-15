@@ -161,7 +161,7 @@ pycparser===2.18
 mock===2.0.0
 PyYAML===3.12
 beautifulsoup4===4.6.0
-os-net-config===7.3.8
+os-net-config===7.3.9
 ovs===2.7.0
 cryptography===2.0.2
 backports.ssl-match-hostname===3.5.0.1
