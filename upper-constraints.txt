@@ -230,7 +230,7 @@ sphinxcontrib-serializinghtml===1.1.3;python_version=='3.4'
 sphinxcontrib-serializinghtml===1.1.3;python_version=='3.5'
 sphinxcontrib-serializinghtml===1.1.3;python_version=='3.6'
 sphinxcontrib-serializinghtml===1.1.3;python_version=='3.7'
-requests===2.21.0
+requests===2.22.0
 snowballstemmer===1.2.1
 Jinja2===2.10.1
 XStatic-Bootstrap-SCSS===3.3.7.1
@@ -238,7 +238,7 @@ pyzabbix===0.7.5
 ptyprocess===0.6.0
 threadloop===1.0.2
 amqp===2.4.2
-ruamel.yaml===0.15.94
+ruamel.yaml===0.15.95
 websockify===0.8.0
 XStatic-JQuery.quicksearch===2.0.3.1
 mpmath===1.1.0
@@ -330,7 +330,7 @@ retrying===1.3.3
 shade===1.31.0
 pathlib2===2.3.3
 pydotplus===2.0.2
-boto3===1.9.148
+boto3===1.9.149
 flask-oslolog===0.1
 jeepney===0.4;python_version=='3.4'
 jeepney===0.4;python_version=='3.5'
@@ -466,7 +466,7 @@ proboscis===1.2.6.0
 fortiosclient===0.0.3
 oslo.upgradecheck===0.2.1
 stevedore===1.30.1
-botocore===1.12.148
+botocore===1.12.149
 xmltodict===0.12.0
 pyasn1===0.4.5
 oslo.rootwrap===5.15.2
@@ -642,7 +642,7 @@ sphinxcontrib-applehelp===1.0.1;python_version=='3.5'
 sphinxcontrib-applehelp===1.0.1;python_version=='3.6'
 sphinxcontrib-applehelp===1.0.1;python_version=='3.7'
 scikit-learn===0.20.0;python_version=='2.7'
-scikit-learn===0.21.0;python_version=='3.4'
-scikit-learn===0.21.0;python_version=='3.5'
-scikit-learn===0.21.0;python_version=='3.6'
-scikit-learn===0.21.0;python_version=='3.7'
+scikit-learn===0.21.1;python_version=='3.4'
+scikit-learn===0.21.1;python_version=='3.5'
+scikit-learn===0.21.1;python_version=='3.6'
+scikit-learn===0.21.1;python_version=='3.7'
