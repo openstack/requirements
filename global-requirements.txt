@@ -264,7 +264,7 @@ python-hnvclient  # Apache-2.0
 python-glanceclient  # Apache-2.0
 python-glareclient  # Apache-2.0
 python-ironic-inspector-client  # Apache-2.0
-python-ironicclient  # Apache-2.0
+python-ironicclient!=2.5.2,!=2.7.1  # Apache-2.0
 python-karborclient  # Apache-2.0
 python-keystoneclient!=2.1.0  # Apache-2.0
 python-kingbirdclient  # Apache-2.0
