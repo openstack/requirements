@@ -111,7 +111,11 @@ zeroconf===0.22.0;python_version=='3.4'
 zeroconf===0.22.0;python_version=='3.5'
 zeroconf===0.22.0;python_version=='3.6'
 zeroconf===0.22.0;python_version=='3.7'
-scipy===1.2.1
+scipy===1.2.1;python_version=='2.7'
+scipy===1.3.0;python_version=='3.4'
+scipy===1.3.0;python_version=='3.5'
+scipy===1.3.0;python_version=='3.6'
+scipy===1.3.0;python_version=='3.7'
 mypy-extensions===0.4.1;python_version=='3.4'
 mypy-extensions===0.4.1;python_version=='3.5'
 mypy-extensions===0.4.1;python_version=='3.6'
@@ -145,7 +149,7 @@ sphinxcontrib.datatemplates===0.2.0
 jsonpath-rw===1.4.0
 prettytable===0.7.2
 vine===1.3.0
-taskflow===3.4.0
+taskflow===3.5.0
 traceback2===1.4.0
 semantic-version===2.6.0
 virtualbmc===1.5.0
@@ -238,7 +242,7 @@ pyzabbix===0.7.5
 ptyprocess===0.6.0
 threadloop===1.0.2
 amqp===2.4.2
-ruamel.yaml===0.15.95
+ruamel.yaml===0.15.96
 websockify===0.8.0
 XStatic-JQuery.quicksearch===2.0.3.1
 mpmath===1.1.0
@@ -330,7 +334,7 @@ retrying===1.3.3
 shade===1.31.0
 pathlib2===2.3.3
 pydotplus===2.0.2
-boto3===1.9.149
+boto3===1.9.151
 flask-oslolog===0.1
 jeepney===0.4;python_version=='3.4'
 jeepney===0.4;python_version=='3.5'
@@ -355,10 +359,10 @@ python-string-utils===0.6.0
 automaton===1.16.0
 os-service-types===1.7.0
 keyring===18.0.1;python_version=='2.7'
-keyring===19.0.1;python_version=='3.4'
-keyring===19.0.1;python_version=='3.5'
-keyring===19.0.1;python_version=='3.6'
-keyring===19.0.1;python_version=='3.7'
+keyring===19.0.2;python_version=='3.4'
+keyring===19.0.2;python_version=='3.5'
+keyring===19.0.2;python_version=='3.6'
+keyring===19.0.2;python_version=='3.7'
 testscenarios===0.5.0
 sphinxcontrib-pecanwsme===0.10.0
 sadisplay===0.4.9
@@ -380,7 +384,7 @@ testtools===2.3.0
 Parsley===1.3
 XStatic-tv4===1.2.7.0
 XStatic-JSEncrypt===2.3.1.1
-python-cinderclient===4.1.0
+python-cinderclient===4.2.0
 keystonemiddleware===6.0.0
 django-formtools===2.1
 python-ceilometerclient===2.9.0
@@ -413,7 +417,7 @@ oslo.cache===1.34.0
 WebTest===2.0.33
 openstack.nose-plugin===0.11
 os-collect-config===10.3.0
-python-qpid-proton===0.27.1
+python-qpid-proton===0.28.0
 python-octaviaclient===1.8.0
 pysaml2===4.7.0
 requests-oauthlib===1.2.0
@@ -466,7 +470,7 @@ proboscis===1.2.6.0
 fortiosclient===0.0.3
 oslo.upgradecheck===0.2.1
 stevedore===1.30.1
-botocore===1.12.149
+botocore===1.12.151
 xmltodict===0.12.0
 pyasn1===0.4.5
 oslo.rootwrap===5.15.2
@@ -570,7 +574,7 @@ XenAPI===1.2
 python-keystoneclient===3.19.0
 ceilometer===12.0.0
 demjson===2.2.4
-diskimage-builder===2.22.0
+diskimage-builder===2.23.0
 heat-translator===1.3.1
 python-magnumclient===2.13.0
 docker===3.7.2
@@ -614,7 +618,7 @@ confluent-kafka===1.0.0
 xvfbwrapper===0.2.9
 futures===3.2.0;python_version=='2.7'
 tosca-parser===1.4.0
-Flask===1.0.2
+Flask===1.0.3
 happybase===1.2.0;python_version=='2.7'
 marathon===0.11.0
 fasteners===0.14.1
