@@ -170,11 +170,11 @@
       tox_envlist: py36
 
 - job:
-    name: cross-osc-build-sphinx-docs
-    parent: build-openstack-sphinx-docs
+    name: cross-osc-tox-docs
+    parent: openstack-tox-docs
     description: |
       Run cross-project tests on python-openstackclient with
-      build-openstack-sphinx-docs.
+      openstack-tox-docs.
     vars:
       zuul_work_dir: src/opendev.org/openstack/python-openstackclient
     required-projects:
