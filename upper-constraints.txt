@@ -149,7 +149,7 @@ sphinxcontrib.datatemplates===0.2.0
 jsonpath-rw===1.4.0
 prettytable===0.7.2
 vine===1.3.0
-taskflow===3.5.0
+taskflow===3.6.0
 traceback2===1.4.0
 semantic-version===2.6.0
 virtualbmc===1.5.0
