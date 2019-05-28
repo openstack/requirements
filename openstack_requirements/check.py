@@ -16,11 +16,11 @@
 
 import collections
 
-from openstack_requirements import project
-from openstack_requirements import requirement
-
 from packaging import markers
 from packaging import specifiers
+
+from openstack_requirements import project
+from openstack_requirements import requirement
 
 
 class RequirementsList(object):
@@ -47,7 +47,7 @@ class RequirementsList(object):
             list_reqs_stripped = [r._replace(comment='') for r in list_reqs]
             if strict and len(list_reqs_stripped) != len(set(
                     list_reqs_stripped)):
-                print("Requirements file has duplicate entries "
+                print("ERROR: Requirements file has duplicate entries "
                       "for package %s : %r." % (name, list_reqs))
                 self.failed = True
             reqs[name].update(list_reqs)
@@ -92,8 +92,12 @@ def _is_requirement_in_global_reqs(req, global_reqs):
             rval = getattr(req, aname)
             r2val = getattr(req2, aname)
             if rval != r2val:
-                print('{} {!r}: {!r} does not match {!r}'.format(
-                    req, aname, rval, r2val))
+                print('WARNING: possible mismatch found for package '
+                      '"{}"'.format(req.package))
+                print('   Attribute "{}" does not match'.format(aname))
+                print('   "{}" does not match "{}"'.format(rval, r2val))
+                print('   {}'.format(req))
+                print('   {}'.format(req2))
                 matching = False
         if not matching:
             continue
@@ -107,7 +111,7 @@ def _is_requirement_in_global_reqs(req, global_reqs):
         else:
             difference = global_exclusions - req_exclusions
             print(
-                "Requirement for package {} "
+                "ERROR: Requirement for package {} "
                 "excludes a version not excluded in the "
                 "global list.\n"
                 "  Local settings : {}\n"
@@ -119,6 +123,7 @@ def _is_requirement_in_global_reqs(req, global_reqs):
             return False
 
     print(
+        "ERROR: "
         "Could not find a global requirements entry to match package {}. "
         "If the package is already included in the global list, "
         "the name or platform markers there may not match the local "
@@ -143,15 +148,14 @@ def get_global_reqs(content):
 
 
 def _validate_one(name, reqs, blacklist, global_reqs):
-    "Returns True if there is a failure."
+    """Returns True if there is a failure."""
     if name in blacklist:
         # Blacklisted items are not synced and are managed
         # by project teams as they see fit, so no further
         # testing is needed.
         return False
     if name not in global_reqs:
-        print("Requirement %s not in openstack/requirements" %
-              str(reqs))
+        print("ERROR: Requirement '%s' not in openstack/requirements" % reqs)
         return True
     counts = {}
     for req in reqs:
@@ -166,11 +170,12 @@ def _validate_one(name, reqs, blacklist, global_reqs):
         # check for minimum being defined
         min = [s for s in req.specifiers.split(',') if '>' in s]
         if not min:
-            print("Requirement for package %s has no lower bound" % name)
+            print("ERROR: Requirement for package '%s' has no lower bound" %
+                  name)
             return True
     for extra, count in counts.items():
         if count != len(global_reqs[name]):
-            print("Package %s%s requirement does not match "
+            print("ERROR: Package '%s%s' requirement does not match "
                   "number of lines (%d) in "
                   "openstack/requirements" % (
                       name,
@@ -268,7 +273,7 @@ def validate_lower_constraints(req_list, constraints, blacklist):
                 continue
 
             if name not in parsed_constraints:
-                print('Package {!r} is used in {} '
+                print('ERROR: Package {!r} is used in {} '
                       'but not in lower-constraints.txt'.format(
                           name, fname))
                 failed = True
@@ -292,7 +297,7 @@ def validate_lower_constraints(req_list, constraints, blacklist):
                     parsed_constraints[name],
                 )
                 if not constraint_setting:
-                    print('Unable to find constraint for {} '
+                    print('ERROR: Unable to find constraint for {} '
                           'matching {!r} or without any markers.'.format(
                               name, req.markers))
                     failed = True
@@ -301,7 +306,7 @@ def validate_lower_constraints(req_list, constraints, blacklist):
                 version = constraint_setting.specifiers.lstrip('=')
 
                 if not spec.contains(version):
-                    print('Package {!r} is constrained to {} '
+                    print('ERROR: Package {!r} is constrained to {} '
                           'which is incompatible with the settings {} '
                           'from {}.'.format(
                               name, version, req, fname))
@@ -319,7 +324,7 @@ def validate_lower_constraints(req_list, constraints, blacklist):
 
                 expected = min[0].lstrip('>=')
                 if version != expected:
-                    print('Package {!r} is constrained to {} '
+                    print('ERROR: Package {!r} is constrained to {} '
                           'which does not match '
                           'the minimum version specifier {} in {}'.format(
                               name, version, expected, fname))
