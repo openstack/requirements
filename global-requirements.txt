@@ -320,7 +320,7 @@ Routes  # MIT
 rtslib-fb  # Apache-2.0
 ryu  # Apache-2.0
 semantic-version  # BSD
-fasteners  # Apache-2.0
+fasteners!=0.15  # Apache-2.0
 scrypt  # BSD
 simplejson  # MIT
 six  # MIT
