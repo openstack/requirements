@@ -464,7 +464,7 @@ Sphinx===2.0.1;python_version=='3.7'
 oslo.config===6.9.0
 tempest===20.0.0
 django-floppyforms===1.7.0
-openstackdocstheme===1.29.3
+openstackdocstheme===1.30.0
 osc-placement===1.5.0
 zake===0.2.2
 python-rsdclient===0.2.0
