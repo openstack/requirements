@@ -187,7 +187,7 @@ urllib3===1.24.3
 graphviz===0.10.1
 PyKMIP===0.8.0
 whereto===0.4.0
-pywbem===0.14.2
+pywbem===0.14.3
 python-subunit===1.3.0
 tornado===4.5.3;python_version=='3.4'
 tornado===4.5.3;python_version=='3.5'
@@ -200,13 +200,13 @@ PyYAML===5.1
 beautifulsoup4===4.7.1
 os-net-config===10.4.0
 ovs===2.10.0
-cryptography===2.6.1
+cryptography===2.7
 URLObject===2.4.3
 backports.ssl-match-hostname===3.7.0.1;python_version=='2.7'
 openstack-release-test===1.4.2
 pylxd===2.2.10
 ruamel.ordereddict===0.4.13;python_version=='2.7'
-pycryptodomex===3.8.1
+pycryptodomex===3.8.2
 anyjson===0.3.3
 requests-mock===1.6.0
 os-apply-config===10.3.0
@@ -217,7 +217,7 @@ gunicorn===19.9.0
 textfsm===0.4.1
 python-3parclient===4.2.9
 unittest2===1.1.0
-django-compressor===2.2
+django-compressor===2.3
 libvirt-python===5.3.0
 python-zunclient===3.3.0
 asyncio===3.4.3;python_version=='3.4'
@@ -249,7 +249,7 @@ XStatic-Bootstrap-SCSS===3.3.7.1
 pyzabbix===0.7.5
 ptyprocess===0.6.0
 threadloop===1.0.2
-amqp===2.4.2
+amqp===2.5.0
 ruamel.yaml===0.15.96
 websockify===0.8.0
 XStatic-JQuery.quicksearch===2.0.3.1
@@ -259,7 +259,7 @@ sphinx-feature-classification===0.4.0
 XStatic-JQuery-Migrate===1.2.1.1
 appdirs===1.4.3
 tinyrpc===1.0.1
-M2Crypto===0.33.0;python_version=='2.7'
+M2Crypto===0.34.0;python_version=='2.7'
 google-auth-httplib2===0.0.3
 Flask-SQLAlchemy===2.4.0
 daiquiri===1.5.0
@@ -347,7 +347,7 @@ retrying===1.3.3
 shade===1.31.0
 pathlib2===2.3.3
 pydotplus===2.0.2
-boto3===1.9.158
+boto3===1.9.159
 flask-oslolog===0.1
 jeepney===0.4;python_version=='3.4'
 jeepney===0.4;python_version=='3.5'
@@ -488,7 +488,7 @@ proboscis===1.2.6.0
 fortiosclient===0.0.3
 oslo.upgradecheck===0.2.1
 stevedore===1.30.1
-botocore===1.12.158
+botocore===1.12.159
 xmltodict===0.12.0
 pyasn1===0.4.5
 oslo.rootwrap===5.16.0
@@ -521,7 +521,7 @@ openstacksdk===0.28.0
 six===1.12.0
 dulwich===0.19.11
 sentinels===1.0.0
-kombu===4.5.0
+kombu===4.6.0
 distro===1.4.0
 betamax-matchers===0.4.0
 yaql===1.1.3
@@ -604,7 +604,7 @@ XStatic-Angular-lrdragndrop===1.0.2.4
 python-congressclient===1.12.0
 ovsdbapp===0.15.0
 aniso8601===6.0.0
-rjsmin===1.0.12
+rjsmin===1.1.0
 icalendar===4.0.3
 configparser===3.7.4;python_version=='2.7'
 decorator===4.4.0
