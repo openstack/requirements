@@ -574,7 +574,7 @@ entrypoints===0.3
 APScheduler===3.6.0
 monotonic===1.5
 python-smaugclient===0.0.8
-python-troveclient===2.17.0
+python-troveclient===2.18.0
 etcd3===0.10.0
 cachez===0.1.2
 XStatic-Bootstrap-Datepicker===1.3.1.0
