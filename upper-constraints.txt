@@ -115,7 +115,7 @@ zeroconf===0.23.0;python_version=='3.4'
 zeroconf===0.23.0;python_version=='3.5'
 zeroconf===0.23.0;python_version=='3.6'
 zeroconf===0.23.0;python_version=='3.7'
-scipy===1.2.1;python_version=='2.7'
+scipy===1.2.2;python_version=='2.7'
 scipy===1.3.0;python_version=='3.4'
 scipy===1.3.0;python_version=='3.5'
 scipy===1.3.0;python_version=='3.6'
@@ -159,7 +159,7 @@ arrow===0.14.2
 semantic-version===2.6.0
 virtualbmc===1.5.0
 deprecation===2.0.6
-SQLAlchemy===1.2.19
+SQLAlchemy===1.3.4
 pyroute2===0.5.6
 google-auth===1.6.3
 kazoo===2.6.1
@@ -196,7 +196,7 @@ tornado===4.5.3;python_version=='3.7'
 tornado===4.5.3;python_version=='2.7'
 pycparser===2.19
 mock===3.0.5
-PyYAML===5.1
+PyYAML===5.1.1
 beautifulsoup4===4.7.1
 os-net-config===10.4.0
 ovs===2.10.0
@@ -296,7 +296,7 @@ castellan===1.2.2
 oslo.versionedobjects===1.36.0
 webcolors===1.9
 aodhclient===1.2.0
-autobahn===19.6.1
+autobahn===19.6.2
 SQLAlchemy-Utils===0.33.11
 retryz===0.1.9
 pluggy===0.12.0
@@ -347,7 +347,7 @@ retrying===1.3.3
 shade===1.31.0
 pathlib2===2.3.3
 pydotplus===2.0.2
-boto3===1.9.162
+boto3===1.9.163
 flask-oslolog===0.1
 jeepney===0.4;python_version=='3.4'
 jeepney===0.4;python_version=='3.5'
@@ -473,7 +473,7 @@ flux===1.3.5
 python-solumclient===2.8.0
 PyMySQL===0.9.3
 kubernetes===8.0.1
-httplib2===0.12.3
+httplib2===0.13.0
 bottle===0.12.16
 betamax===0.8.1
 construct===2.8.22
@@ -488,7 +488,7 @@ proboscis===1.2.6.0
 fortiosclient===0.0.3
 oslo.upgradecheck===0.2.1
 stevedore===1.30.1
-botocore===1.12.162
+botocore===1.12.163
 xmltodict===0.12.0
 pyasn1===0.4.5
 oslo.rootwrap===5.16.0
