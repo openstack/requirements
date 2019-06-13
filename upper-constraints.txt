@@ -535,7 +535,7 @@ GitPython===2.1.11
 python-ironicclient===2.8.0
 XStatic===1.0.2
 XStatic-Angular-FileUpload===12.0.4.0
-python-openstackclient===3.18.0
+python-openstackclient===3.19.0
 pyzmq===18.0.1
 oslo.db===5.0.0
 simplegeneric===0.8.1
