@@ -657,7 +657,7 @@ python-dateutil===2.8.0
 virtualenv===16.6.0
 colorama===0.4.1
 confetti===2.5.3
-ironic-lib===2.17.1
+ironic-lib===2.18.0
 pytz===2019.1
 XStatic-D3===3.5.17.0
 actdiag===0.5.4
