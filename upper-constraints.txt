@@ -617,7 +617,7 @@ sphinxcontrib-devhelp===1.0.1;python_version=='3.6'
 sphinxcontrib-devhelp===1.0.1;python_version=='3.7'
 python-blazarclient===2.1.0
 alembic===1.0.10
-glance-store===0.28.0
+glance-store===0.29.1
 sphinxcontrib-programoutput===0.14
 sphinx-testing===1.0.1
 dnspython===1.15.0;python_version=='3.4'
