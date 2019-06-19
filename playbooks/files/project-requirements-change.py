@@ -33,8 +33,14 @@ check = None
 def run_command(cmd):
     print(cmd)
     cmd_list = shlex.split(str(cmd))
+    kwargs = {}
+    if sys.version_info >= (3, ):
+        kwargs = {
+            'encoding': 'utf-8',
+            'errors': 'surrogateescape',
+        }
     p = subprocess.Popen(cmd_list, stdout=subprocess.PIPE,
-                         stderr=subprocess.PIPE)
+                         stderr=subprocess.PIPE, **kwargs)
     (out, err) = p.communicate()
     if p.returncode != 0:
         raise SystemError(err)
