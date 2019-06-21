@@ -175,7 +175,7 @@ pylxd===2.2.7
 pycryptodomex===3.4.7
 anyjson===0.3.3
 requests-mock===1.4.0
-os-apply-config===8.3.1
+os-apply-config===8.3.2
 oslosphinx===4.18.0
 mox3===0.24.0
 gunicorn===19.7.1
