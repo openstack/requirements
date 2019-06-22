@@ -7,7 +7,7 @@ restructuredtext-lint===1.3.0
 netmiko===2.3.3
 instack-undercloud===9.5.0
 PasteDeploy===2.0.1
-typing===3.6.6
+typing===3.7.4
 python-saharaclient===2.2.0
 python-hnvclient===0.1.0
 Routes===2.4.1
@@ -183,9 +183,9 @@ unicodecsv===0.14.1;python_version=='2.7'
 imagesize===1.1.0
 pydot===1.4.1
 pathlib===1.0.1;python_version=='2.7'
-urllib3===1.24.3
+urllib3===1.25.3
 graphviz===0.11
-PyKMIP===0.9.0
+PyKMIP===0.9.1
 whereto===0.4.0
 pywbem===0.14.3
 python-subunit===1.3.0
@@ -199,7 +199,7 @@ mock===3.0.5
 PyYAML===5.1.1
 beautifulsoup4===4.7.1
 os-net-config===11.0.0
-ovs===2.10.0
+ovs===2.11.0
 cryptography===2.7
 URLObject===2.4.3
 backports.ssl-match-hostname===3.7.0.1;python_version=='2.7'
@@ -210,7 +210,7 @@ pycryptodomex===3.8.2
 anyjson===0.3.3
 requests-mock===1.6.0
 os-apply-config===10.3.0
-prometheus-client===0.7.0
+prometheus-client===0.7.1
 oslosphinx===4.18.0
 mox3===0.27.0
 gunicorn===19.9.0
@@ -231,7 +231,7 @@ sphinxcontrib-jsmath===1.0.1;python_version=='3.6'
 sphinxcontrib-jsmath===1.0.1;python_version=='3.7'
 python-novaclient===14.1.0
 pact===1.12.0
-bcrypt===3.1.6
+bcrypt===3.1.7
 fixtures-git===0.1.0
 os-client-config===1.32.0
 XStatic-Angular-Gettext===2.3.8.0
@@ -330,10 +330,10 @@ pycrypto===2.6.1
 ujson===1.35
 selenium===3.141.0
 python-glareclient===0.5.3
-mypy===0.701;python_version=='3.4'
-mypy===0.701;python_version=='3.5'
-mypy===0.701;python_version=='3.6'
-mypy===0.701;python_version=='3.7'
+mypy===0.710;python_version=='3.4'
+mypy===0.710;python_version=='3.5'
+mypy===0.710;python_version=='3.6'
+mypy===0.710;python_version=='3.7'
 mistral-lib===1.1.0
 Click===7.0
 dogtag-pki===10.6.9.1
@@ -347,7 +347,7 @@ retrying===1.3.3
 shade===1.31.0
 pathlib2===2.3.3
 pydotplus===2.0.2
-boto3===1.9.171
+boto3===1.9.174
 flask-oslolog===0.1
 jeepney===0.4;python_version=='3.4'
 jeepney===0.4;python_version=='3.5'
@@ -404,7 +404,7 @@ keystonemiddleware===6.1.0
 django-formtools===2.1
 python-ceilometerclient===2.9.0
 XStatic-Spin===1.2.5.2
-openshift===0.8.9
+openshift===0.9.0
 tap-as-a-service===3.0.0
 os-traits===0.14.0
 SecretStorage===2.3.1;python_version=='2.7'
@@ -457,10 +457,10 @@ seqdiag===0.9.6
 numpy===1.16.4
 msgpack===0.6.1
 Sphinx===1.8.5;python_version=='2.7'
-Sphinx===2.1.1;python_version=='3.4'
-Sphinx===2.1.1;python_version=='3.5'
-Sphinx===2.1.1;python_version=='3.6'
-Sphinx===2.1.1;python_version=='3.7'
+Sphinx===2.1.2;python_version=='3.4'
+Sphinx===2.1.2;python_version=='3.5'
+Sphinx===2.1.2;python_version=='3.6'
+Sphinx===2.1.2;python_version=='3.7'
 oslo.config===6.10.0
 tempest===20.0.0
 django-floppyforms===1.7.0
@@ -472,7 +472,7 @@ python-magic===0.4.15
 flux===1.3.5
 python-solumclient===2.8.0
 PyMySQL===0.9.3
-kubernetes===8.0.1
+kubernetes===9.0.0
 httplib2===0.13.0
 bottle===0.12.16
 betamax===0.8.1
@@ -488,7 +488,7 @@ proboscis===1.2.6.0
 fortiosclient===0.0.3
 oslo.upgradecheck===0.2.1
 stevedore===1.30.1
-botocore===1.12.171
+botocore===1.12.174
 xmltodict===0.12.0
 pyasn1===0.4.5
 oslo.rootwrap===5.16.0
@@ -507,10 +507,10 @@ kuryr-lib===0.9.0
 scrypt===0.8.13
 jsonpatch===1.23
 python-daemon===2.2.3
-typed-ast===1.3.5;python_version=='3.4'
-typed-ast===1.3.5;python_version=='3.5'
-typed-ast===1.3.5;python_version=='3.6'
-typed-ast===1.3.5;python_version=='3.7'
+typed-ast===1.4.0;python_version=='3.4'
+typed-ast===1.4.0;python_version=='3.5'
+typed-ast===1.4.0;python_version=='3.6'
+typed-ast===1.4.0;python_version=='3.7'
 os-testr===1.0.0
 cotyledon===1.7.3
 stomp.py===4.1.22
@@ -596,7 +596,7 @@ demjson===2.2.4
 diskimage-builder===2.24.0
 heat-translator===1.4.0
 python-magnumclient===2.13.0
-docker===4.0.1
+docker===4.0.2
 storops===1.1.0
 qpid-python===1.36.0.post1;python_version=='2.7'
 contextlib2===0.5.5;python_version=='2.7'
