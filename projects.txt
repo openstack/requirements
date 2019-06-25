@@ -296,6 +296,7 @@ openstack/taskflow
 openstack/tempest
 openstack/tosca-parser
 openstack/tricircle
+openstack/tripleo-ansible
 openstack/tripleo-common
 openstack/tripleo-common-tempest-plugin
 openstack/tripleo-heat-templates
