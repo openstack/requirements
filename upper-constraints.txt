@@ -4,7 +4,7 @@ chardet===3.0.4
 enum-compat===0.0.2;python_version=='2.7'
 rsa===4.0
 restructuredtext-lint===1.3.0
-netmiko===2.3.3
+netmiko===2.4.0
 instack-undercloud===9.5.0
 PasteDeploy===2.0.1
 typing===3.7.4
@@ -300,7 +300,7 @@ castellan===1.3.0
 oslo.versionedobjects===1.36.0
 webcolors===1.9.1
 aodhclient===1.2.0
-autobahn===19.6.2
+autobahn===19.7.1
 SQLAlchemy-Utils===0.34.0
 retryz===0.1.9
 pluggy===0.12.0
@@ -351,7 +351,7 @@ retrying===1.3.3
 shade===1.31.0
 pathlib2===2.3.4
 pydotplus===2.0.2
-boto3===1.9.183
+boto3===1.9.184
 flask-oslolog===0.1
 jeepney===0.4;python_version=='3.4'
 jeepney===0.4;python_version=='3.5'
@@ -438,7 +438,7 @@ openstack.nose-plugin===0.11
 os-collect-config===10.3.0
 python-qpid-proton===0.28.0
 python-octaviaclient===1.9.0
-pysaml2===4.7.0
+pysaml2===4.8.0
 requests-oauthlib===1.2.0
 oslo.reports===1.29.2
 bitmath===1.3.3.1
@@ -492,7 +492,7 @@ proboscis===1.2.6.0
 fortiosclient===0.0.3
 oslo.upgradecheck===0.3.0
 stevedore===1.30.1
-botocore===1.12.183
+botocore===1.12.184
 xmltodict===0.12.0
 pyasn1===0.4.5
 oslo.rootwrap===5.16.0
@@ -552,11 +552,11 @@ oslo.privsep===1.33.1
 sphinxcontrib-apidoc===0.3.0
 oslo.policy===2.2.0
 python-muranoclient===1.2.0
-hvac===0.9.2
+hvac===0.9.3
 pyeclib===1.6.0
 wsgi-intercept===1.8.1
 ndg-httpsclient===0.5.1;python_version=='2.7'
-pyrsistent===0.15.2
+pyrsistent===0.15.3
 repoze.lru===0.7
 rfc3986===1.3.2
 network-runner===0.1.6
@@ -633,7 +633,7 @@ oauthlib===3.0.2
 Babel===2.7.0
 logutils===0.3.5
 scandir===1.10.0;python_version=='2.7'
-zipp===0.5.1
+zipp===0.5.2
 sphinxcontrib-fulltoc===1.2.0
 smmap2===2.0.5
 greenlet===0.4.15
@@ -642,7 +642,7 @@ confluent-kafka===1.0.1
 xvfbwrapper===0.2.9
 futures===3.2.0;python_version=='2.7'
 tosca-parser===1.4.0
-Flask===1.1.0
+Flask===1.1.1
 happybase===1.2.0;python_version=='2.7'
 marathon===0.11.0
 fasteners===0.14.1
