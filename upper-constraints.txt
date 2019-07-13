@@ -515,7 +515,7 @@ typed-ast===1.4.0;python_version=='3.4'
 typed-ast===1.4.0;python_version=='3.5'
 typed-ast===1.4.0;python_version=='3.6'
 typed-ast===1.4.0;python_version=='3.7'
-os-testr===1.0.0
+os-testr===1.1.0
 cotyledon===1.7.3
 stomp.py===4.1.22
 xattr===0.9.6
