@@ -417,7 +417,7 @@ stomp.py===4.1.21
 xattr===0.9.3
 systemd-python===234
 python-memcached===1.59
-openstacksdk===0.17.2
+openstacksdk===0.17.3
 six===1.11.0
 dulwich===0.19.5
 pykafka===2.7.0
