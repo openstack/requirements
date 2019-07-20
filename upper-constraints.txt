@@ -254,7 +254,7 @@ pyzabbix===0.7.5
 ptyprocess===0.6.0
 threadloop===1.0.2
 amqp===2.5.0
-ruamel.yaml===0.15.99
+ruamel.yaml===0.15.100
 websockify===0.8.0
 XStatic-JQuery.quicksearch===2.0.3.1
 mpmath===1.1.0
@@ -351,13 +351,13 @@ retrying===1.3.3
 shade===1.31.0
 pathlib2===2.3.4
 pydotplus===2.0.2
-boto3===1.9.188
+boto3===1.9.191
 flask-oslolog===0.1
 jeepney===0.4;python_version=='3.4'
 jeepney===0.4;python_version=='3.5'
 jeepney===0.4;python_version=='3.6'
 jeepney===0.4;python_version=='3.7'
-stestr===2.3.1
+stestr===2.4.0
 singledispatch===3.4.0.3;python_version=='2.7'
 oslo.serialization===2.29.1
 warlock===1.3.3
@@ -431,7 +431,7 @@ protobuf===3.9.0
 os-dpm===1.1.0
 sushy===1.9.0
 python-neutronclient===6.12.0
-pika===1.0.1
+pika===1.1.0
 oslo.cache===1.36.0
 WebTest===2.0.33
 openstack.nose-plugin===0.11
@@ -492,7 +492,7 @@ proboscis===1.2.6.0
 fortiosclient===0.0.3
 oslo.upgradecheck===0.3.1
 stevedore===1.30.1
-botocore===1.12.188
+botocore===1.12.191
 xmltodict===0.12.0
 pyasn1===0.4.5
 oslo.rootwrap===5.16.0
@@ -552,7 +552,7 @@ oslo.privsep===1.33.1
 sphinxcontrib-apidoc===0.3.0
 oslo.policy===2.2.0
 python-muranoclient===1.2.0
-hvac===0.9.3
+hvac===0.9.5
 pyeclib===1.6.0
 wsgi-intercept===1.8.1
 ndg-httpsclient===0.5.1;python_version=='2.7'
@@ -571,11 +571,11 @@ functools32===3.2.3.post2;python_version=='2.7'
 os-vif===1.16.0
 mitba===1.0.1
 python-masakariclient===5.4.0
-Werkzeug===0.15.4
+Werkzeug===0.15.5
 backports.functools-lru-cache===1.5;python_version=='2.7'
 pyasn1-modules===0.2.5
 entrypoints===0.3
-APScheduler===3.6.0
+APScheduler===3.6.1
 monotonic===1.5
 python-smaugclient===0.0.8
 python-troveclient===2.18.0
