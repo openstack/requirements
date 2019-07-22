@@ -117,7 +117,7 @@ simplejson===3.16.0
 suds-jurko===0.6
 python-swiftclient===3.8.0
 pyOpenSSL===19.0.0
-monasca-common===2.14.0
+monasca-common===2.15.0
 zeroconf===0.19.1;python_version=='2.7'
 zeroconf===0.23.0;python_version=='3.4'
 zeroconf===0.23.0;python_version=='3.5'
