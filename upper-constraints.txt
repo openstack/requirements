@@ -4,7 +4,7 @@ chardet===3.0.4
 enum-compat===0.0.2;python_version=='2.7'
 rsa===4.0
 restructuredtext-lint===1.3.0
-netmiko===2.4.0
+netmiko===2.4.1
 instack-undercloud===9.5.0
 PasteDeploy===2.0.1
 typing===3.7.4
@@ -144,6 +144,7 @@ octavia-lib===1.2.0
 python-watcherclient===2.2.0
 MarkupSafe===1.1.1
 pypowervm===1.1.20
+ruamel.yaml.clib===0.1.0
 doc8===0.8.0
 pymongo===3.8.0
 soupsieve===1.9.2
@@ -222,7 +223,7 @@ prometheus-client===0.7.1
 oslosphinx===4.18.0
 mox3===0.27.0
 gunicorn===19.9.0
-textfsm===0.4.1
+textfsm===1.1.0
 python-3parclient===4.2.9
 unittest2===1.1.0
 django-compressor===2.3
@@ -232,7 +233,7 @@ asyncio===3.4.3;python_version=='3.4'
 asyncio===3.4.3;python_version=='3.5'
 asyncio===3.4.3;python_version=='3.6'
 asyncio===3.4.3;python_version=='3.7'
-tzlocal===1.5.1
+tzlocal===2.0.0
 sphinxcontrib-jsmath===1.0.1;python_version=='3.4'
 sphinxcontrib-jsmath===1.0.1;python_version=='3.5'
 sphinxcontrib-jsmath===1.0.1;python_version=='3.6'
@@ -258,7 +259,7 @@ pyzabbix===0.7.5
 ptyprocess===0.6.0
 threadloop===1.0.2
 amqp===2.5.0
-ruamel.yaml===0.15.100
+ruamel.yaml===0.16.0
 websockify===0.8.0
 XStatic-JQuery.quicksearch===2.0.3.1
 mpmath===1.1.0
@@ -299,12 +300,12 @@ joblib===0.13.2;python_version=='3.5'
 joblib===0.13.2;python_version=='3.6'
 joblib===0.13.2;python_version=='3.7'
 hiredis===1.0.0
-google-api-python-client===1.7.9
+google-api-python-client===1.7.10
 castellan===1.3.0
 oslo.versionedobjects===1.36.0
 webcolors===1.9.1
 aodhclient===1.2.0
-autobahn===19.7.1
+autobahn===19.7.2
 SQLAlchemy-Utils===0.34.1
 retryz===0.1.9
 pluggy===0.12.0
@@ -331,7 +332,11 @@ XStatic-mdi===1.6.50.2
 django-pyscss===2.0.2
 uritemplate===3.0.0
 django-babel===0.6.2
-docutils===0.15
+docutils===0.15.1;python_version=='2.7'
+docutils===0.15;python_version=='3.4'
+docutils===0.15;python_version=='3.5'
+docutils===0.15;python_version=='3.6'
+docutils===0.15;python_version=='3.7'
 notifier===1.0.3
 os-ken===0.4.0
 pycrypto===2.6.1
@@ -466,7 +471,11 @@ more-itertools===7.2.0;python_version=='3.5'
 more-itertools===7.2.0;python_version=='3.6'
 more-itertools===7.2.0;python_version=='3.7'
 seqdiag===0.9.6
-numpy===1.16.4
+numpy===1.16.4;python_version=='2.7'
+numpy===1.17.0;python_version=='3.4'
+numpy===1.17.0;python_version=='3.5'
+numpy===1.17.0;python_version=='3.6'
+numpy===1.17.0;python_version=='3.7'
 msgpack===0.6.1
 Sphinx===1.8.5;python_version=='2.7'
 Sphinx===2.1.2;python_version=='3.4'
@@ -489,7 +498,7 @@ httplib2===0.13.0
 bottle===0.12.17
 betamax===0.8.1
 construct===2.8.22
-pyparsing===2.4.0
+pyparsing===2.4.1.1
 dogpile.cache===0.7.1
 python-barbicanclient===4.8.1
 salt===2019.2.0
@@ -575,7 +584,7 @@ network-runner===0.1.6
 tenacity===5.0.4
 python-designateclient===2.11.0
 future===0.17.1
-Paste===3.0.8
+Paste===3.1.0
 jaeger-client===4.0.0
 XStatic-Json2yaml===0.1.1.0
 boto===2.49.0
@@ -674,7 +683,7 @@ typing-extensions===3.7.4;python_version=='3.4'
 typing-extensions===3.7.4;python_version=='3.5'
 typing-extensions===3.7.4;python_version=='3.6'
 typing-extensions===3.7.4;python_version=='3.7'
-virtualenv===16.6.2
+virtualenv===16.7.2
 colorama===0.4.1
 confetti===2.5.3
 ironic-lib===2.18.0
