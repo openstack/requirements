@@ -686,7 +686,7 @@ typing-extensions===3.7.4;python_version=='3.7'
 virtualenv===16.7.2
 colorama===0.4.1
 confetti===2.5.3
-ironic-lib===2.18.0
+ironic-lib===2.19.0
 pytz===2019.1
 XStatic-D3===3.5.17.0
 actdiag===0.5.4
