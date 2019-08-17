@@ -111,7 +111,7 @@ pylev  # BSD
 pypowervm!=1.1.21,!=1.1.22  # Apache-2.0
 pyScss!=1.3.5  # MIT License
 django-pyscss  # BSD License (2 clause)
-kombu!=4.0.2  # BSD
+kombu!=4.0.2,!=4.6.4  # BSD
 ldap3  # LGPLv3
 deprecation  # Apache-2.0
 libvirt-python!=4.1.0,!=4.2.0  # LGPLv2+
