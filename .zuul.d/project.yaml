@@ -38,6 +38,7 @@
         - cross-neutron-py36
         - cross-nova-py27
         - cross-nova-py36
+        - cross-nova-py37
         - cross-nova-functional
         - cross-osc-tox-docs
         - cross-swift-py27
@@ -87,6 +88,8 @@
         - cross-neutron-py36
         - cross-nova-py27
         - cross-nova-py36:
+            files: ^upper-constraints.txt$
+        - cross-nova-py37:
             files: ^upper-constraints.txt$
         - cross-nova-functional
         - cross-osc-tox-docs

@@ -154,6 +154,15 @@
       tox_envlist: py36
 
 - job:
+    name: cross-nova-py37
+    parent: requirements-cross-test
+    description: Run cross-project tests on nova with py37.
+    required-projects: openstack/nova
+    vars:
+      tox_envlist: py37
+      python_version: 3.7
+
+- job:
     name: cross-swift-py27
     parent: requirements-cross-test
     description: Run cross-project tests on swift with py27.
