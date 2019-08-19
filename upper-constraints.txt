@@ -224,7 +224,7 @@ python-3parclient===4.2.10
 unittest2===1.1.0
 django-compressor===2.3
 libvirt-python===5.6.0
-python-zunclient===3.3.0
+python-zunclient===3.4.0
 asyncio===3.4.3;python_version=='3.4'
 asyncio===3.4.3;python_version=='3.5'
 asyncio===3.4.3;python_version=='3.6'
