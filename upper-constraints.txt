@@ -257,7 +257,7 @@ ptyprocess===0.6.0
 threadloop===1.0.2
 amqp===2.5.1
 ruamel.yaml===0.16.5
-websockify===0.8.0
+websockify===0.9.0
 XStatic-JQuery.quicksearch===2.0.3.1
 mpmath===1.1.0
 django-debreach===1.5.2
