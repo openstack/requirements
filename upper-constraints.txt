@@ -425,7 +425,7 @@ tooz===1.66.1
 linecache2===1.0.0
 oauth2client===4.1.3
 idna===2.8
-python-karborclient===1.2.0
+python-karborclient===1.3.0
 weakrefmethod===1.0.3;python_version=='2.7'
 PuLP===1.6.10
 crc16===0.1.1
