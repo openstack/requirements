@@ -473,6 +473,7 @@ sphinx-feature-classification  # Apache-2.0
 sphinxmark  # Apache-2.0
 sphinxcontrib.datatemplates  # BSD License
 sphinxcontrib-programoutput  # BSD license
+sphinxcontrib-svg2pdfconverter  # BSD License
 stestr!=2.3.0  # Apache-2.0
 sushy  # Apache-2.0
 testrepository  # Apache-2.0/BSD
