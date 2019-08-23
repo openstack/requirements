@@ -629,7 +629,7 @@ sphinxcontrib-devhelp===1.0.1;python_version=='3.4'
 sphinxcontrib-devhelp===1.0.1;python_version=='3.5'
 sphinxcontrib-devhelp===1.0.1;python_version=='3.6'
 sphinxcontrib-devhelp===1.0.1;python_version=='3.7'
-python-blazarclient===2.1.0
+python-blazarclient===2.2.0
 alembic===1.0.11
 glance-store===1.0.0
 sphinxcontrib-programoutput===0.14
