@@ -295,7 +295,6 @@ openstack/solum-tempest-plugin
 openstack/stevedore
 openstack/sushy
 openstack/sushy-tools
-openstack/swauth
 openstack/swift
 openstack/syntribos
 openstack/tacker
