@@ -212,7 +212,7 @@ backports.ssl-match-hostname===3.7.0.1;python_version=='2.7'
 openstack-release-test===1.4.2
 pylxd===2.2.10
 ruamel.ordereddict===0.4.14;python_version=='2.7'
-pycryptodomex===3.8.2
+pycryptodomex===3.9.0
 anyjson===0.3.3
 requests-mock===1.6.0
 os-apply-config===10.4.0
@@ -298,7 +298,7 @@ castellan===1.3.0
 oslo.versionedobjects===1.36.0
 webcolors===1.9.1
 aodhclient===1.3.0
-autobahn===19.8.1
+autobahn===19.9.2
 SQLAlchemy-Utils===0.34.2
 retryz===0.1.9
 pluggy===0.12.0
@@ -349,7 +349,7 @@ retrying===1.3.3
 shade===1.32.0
 pathlib2===2.3.4
 pydotplus===2.0.2
-boto3===1.9.217
+boto3===1.9.219
 flask-oslolog===0.1
 jeepney===0.4.1;python_version=='3.4'
 jeepney===0.4.1;python_version=='3.5'
@@ -478,7 +478,7 @@ python-magic===0.4.15
 flux===1.3.5
 python-solumclient===2.9.0
 PyMySQL===0.9.3
-kubernetes===9.0.0
+kubernetes===10.0.1
 httplib2===0.13.1
 bottle===0.12.17
 betamax===0.8.1
@@ -494,7 +494,7 @@ proboscis===1.2.6.0
 fortiosclient===0.0.3
 oslo.upgradecheck===0.3.1
 stevedore===1.30.1
-botocore===1.12.217
+botocore===1.12.219
 xmltodict===0.12.0
 pyasn1===0.4.6
 oslo.rootwrap===5.16.0
