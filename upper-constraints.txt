@@ -407,7 +407,6 @@ keystonemiddleware===7.0.0
 django-formtools===2.1
 python-ceilometerclient===2.9.0
 XStatic-Spin===1.2.5.2
-openshift===0.9.1
 tap-as-a-service===3.0.0
 os-traits===0.16.0
 SecretStorage===2.3.1;python_version=='2.7'
