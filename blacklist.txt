@@ -1,6 +1,7 @@
 # linters - each project may have a different version with loose convergence
 # over time.
 astroid
+ansible-lint
 bandit
 flake8
 flake8-docstrings
