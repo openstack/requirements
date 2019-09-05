@@ -367,7 +367,7 @@ sqlalchemy-migrate===0.12.0
 python-monascaclient===1.15.0
 ldap3===2.6
 requests-ntlm===1.1.0
-automaton===1.16.0
+automaton===1.17.0
 os-service-types===1.7.0
 keyring===18.0.1;python_version=='2.7'
 keyring===19.1.0;python_version=='3.4'
