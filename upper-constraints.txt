@@ -362,7 +362,7 @@ s3transfer===0.2.1
 text-unidecode===1.2
 sphinxcontrib-svg2pdfconverter===0.1.0
 murano-pkg-check===0.3.0
-oslo.vmware===2.34.0
+oslo.vmware===2.34.1
 sqlalchemy-migrate===0.12.0
 python-monascaclient===1.15.0
 ldap3===2.6
