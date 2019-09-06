@@ -57,7 +57,7 @@ python-mistralclient===3.9.0
 oslo.context===2.23.0
 python-senlinclient===1.11.0
 rcssmin===1.0.6
-pycadf===2.9.0
+pycadf===2.10.0
 grpcio===1.23.0
 skydive-client===0.5.0
 pysendfile===2.0.1
