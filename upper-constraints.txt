@@ -435,7 +435,7 @@ pysaml2===4.8.0
 requests-oauthlib===1.2.0
 oslo.reports===1.30.0
 bitmath===1.3.3.1
-ceilometermiddleware===1.4.0
+ceilometermiddleware===1.5.0
 python-nss===1.0.1
 testrepository===0.0.20
 sympy===1.4
