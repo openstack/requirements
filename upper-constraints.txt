@@ -12,6 +12,7 @@ python-saharaclient===2.2.1
 python-hnvclient===0.1.0
 Routes===2.4.1
 rtslib-fb===2.1.69
+confget===2.2.1
 XStatic-Angular-Bootstrap===2.2.0.0
 paunch===5.1.0
 WebOb===1.8.5
@@ -218,6 +219,7 @@ prometheus-client===0.7.1
 oslosphinx===4.18.0
 mox3===0.28.0
 gunicorn===19.9.0
+storpool===5.1.0
 textfsm===1.1.0
 python-3parclient===4.2.10
 unittest2===1.1.0
@@ -628,6 +630,7 @@ python-blazarclient===2.2.0
 alembic===1.1.0
 glance-store===1.0.0
 sphinxcontrib-programoutput===0.14
+storpool.spopenstack===2.2.1
 sphinx-testing===1.0.1
 dnspython===1.15.0;python_version=='3.4'
 dnspython===1.15.0;python_version=='3.5'
