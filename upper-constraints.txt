@@ -4,7 +4,7 @@ chardet===3.0.4
 enum-compat===0.0.2;python_version=='2.7'
 rsa===4.0
 restructuredtext-lint===1.3.0
-netmiko===2.4.1
+netmiko===2.4.2
 instack-undercloud===9.5.0
 PasteDeploy===2.0.1
 typing===3.7.4.1
@@ -249,7 +249,7 @@ sphinxcontrib-serializinghtml===1.1.3;python_version=='3.5'
 sphinxcontrib-serializinghtml===1.1.3;python_version=='3.6'
 sphinxcontrib-serializinghtml===1.1.3;python_version=='3.7'
 requests===2.22.0
-snowballstemmer===1.9.0
+snowballstemmer===1.9.1
 Jinja2===2.10.1
 XStatic-Bootstrap-SCSS===3.3.7.1
 pyzabbix===0.7.5
@@ -351,7 +351,7 @@ retrying===1.3.3
 shade===1.32.0
 pathlib2===2.3.4
 pydotplus===2.0.2
-boto3===1.9.222
+boto3===1.9.224
 flask-oslolog===0.1
 jeepney===0.4.1;python_version=='3.4'
 jeepney===0.4.1;python_version=='3.5'
@@ -371,7 +371,7 @@ murano-pkg-check===0.3.0
 oslo.vmware===2.34.1
 sqlalchemy-migrate===0.12.0
 python-monascaclient===1.15.0
-ldap3===2.6
+ldap3===2.6.1
 requests-ntlm===1.1.0
 automaton===1.17.0
 os-service-types===1.7.0
@@ -458,10 +458,10 @@ more-itertools===7.2.0;python_version=='3.6'
 more-itertools===7.2.0;python_version=='3.7'
 seqdiag===0.9.6
 numpy===1.16.5;python_version=='2.7'
-numpy===1.17.1;python_version=='3.4'
-numpy===1.17.1;python_version=='3.5'
-numpy===1.17.1;python_version=='3.6'
-numpy===1.17.1;python_version=='3.7'
+numpy===1.17.2;python_version=='3.4'
+numpy===1.17.2;python_version=='3.5'
+numpy===1.17.2;python_version=='3.6'
+numpy===1.17.2;python_version=='3.7'
 msgpack===0.6.1
 Sphinx===1.8.5;python_version=='2.7'
 Sphinx===2.2.0;python_version=='3.4'
@@ -495,7 +495,7 @@ proboscis===1.2.6.0
 fortiosclient===0.0.3
 oslo.upgradecheck===0.3.2
 stevedore===1.31.0
-botocore===1.12.222
+botocore===1.12.224
 xmltodict===0.12.0
 pyasn1===0.4.7
 oslo.rootwrap===5.16.1
@@ -570,7 +570,7 @@ network-runner===0.1.7
 tenacity===5.1.1
 python-designateclient===2.12.0
 future===0.17.1
-Paste===3.1.1
+Paste===3.2.0
 jaeger-client===4.1.0
 XStatic-Json2yaml===0.1.1.0
 boto===2.49.0
@@ -621,7 +621,7 @@ configparser===3.8.1;python_version=='2.7'
 decorator===4.4.0
 cffi===1.12.3
 futurist===1.9.0
-jsonschema===3.0.1
+jsonschema===3.0.2
 sphinxcontrib-devhelp===1.0.1;python_version=='3.4'
 sphinxcontrib-devhelp===1.0.1;python_version=='3.5'
 sphinxcontrib-devhelp===1.0.1;python_version=='3.6'
@@ -637,7 +637,7 @@ dnspython===1.15.0;python_version=='3.5'
 dnspython===1.15.0;python_version=='3.6'
 dnspython===1.15.0;python_version=='3.7'
 dnspython===1.16.0;python_version=='2.7'
-oauthlib===3.0.2
+oauthlib===3.1.0
 Babel===2.7.0
 logutils===0.3.5
 scandir===1.10.0;python_version=='2.7'
