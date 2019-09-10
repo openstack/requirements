@@ -102,6 +102,7 @@
     parent: requirements-cross-test
     description: Run cross-project tests on keystone with py27.
     required-projects: openstack/keystone
+    timeout: 3600
     vars:
       tox_envlist: py27
 
@@ -110,6 +111,7 @@
     parent: requirements-cross-test
     description: Run cross-project tests on keystone with py36.
     required-projects: openstack/keystone
+    timeout: 3600
     vars:
       tox_envlist: py36
 
