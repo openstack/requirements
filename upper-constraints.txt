@@ -484,7 +484,7 @@ jaeger-client===3.13.0
 XStatic-Json2yaml===0.1.1.0
 boto===2.49.0
 functools32===3.2.3.post2;python_version=='2.7'
-os-vif===1.15.1
+os-vif===1.15.2
 python-masakariclient===5.4.0
 Werkzeug===0.14.1
 backports.functools-lru-cache===1.5;python_version=='2.7'
