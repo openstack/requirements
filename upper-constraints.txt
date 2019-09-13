@@ -5,7 +5,7 @@ enum-compat===0.0.2
 rsa===3.4.2
 restructuredtext-lint===1.1.2
 netmiko===2.0.1
-instack-undercloud===8.4.8
+instack-undercloud===8.4.9
 PasteDeploy===1.5.2
 typing===3.6.2
 python-saharaclient===1.5.0
