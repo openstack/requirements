@@ -568,7 +568,7 @@ repoze.lru===0.7
 rfc3986===1.3.2
 network-runner===0.1.7
 tenacity===5.1.1
-python-designateclient===2.12.0
+python-designateclient===3.0.0
 future===0.17.1
 Paste===3.2.0
 jaeger-client===4.1.0
