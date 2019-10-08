@@ -209,7 +209,7 @@ cryptography===2.7
 URLObject===2.4.3
 psycopg2-binary===2.8.3
 backports.ssl-match-hostname===3.7.0.1;python_version=='2.7'
-openstack-release-test===1.4.2
+openstack-release-test===2.0.0
 pylxd===2.2.10
 pycryptodomex===3.9.0
 anyjson===0.3.3
