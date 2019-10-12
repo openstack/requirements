@@ -209,7 +209,7 @@ cryptography===2.7
 URLObject===2.4.3
 psycopg2-binary===2.8.3
 backports.ssl-match-hostname===3.7.0.1;python_version=='2.7'
-openstack-release-test===1.4.2
+openstack-release-test===2.0.0
 pylxd===2.2.10
 pycryptodomex===3.9.0
 anyjson===0.3.3
@@ -259,7 +259,7 @@ amqp===2.5.1
 websockify===0.9.0
 XStatic-JQuery.quicksearch===2.0.3.1
 mpmath===1.1.0
-django-debreach===1.5.2
+django-debreach===2.0.1
 sphinx-feature-classification===0.4.1
 XStatic-JQuery-Migrate===1.2.1.1
 appdirs===1.4.3
@@ -351,7 +351,7 @@ retrying===1.3.3
 shade===1.32.0
 pathlib2===2.3.5
 pydotplus===2.0.2
-boto3===1.9.246
+boto3===1.9.248
 flask-oslolog===0.1
 jeepney===0.4.1;python_version=='3.4'
 jeepney===0.4.1;python_version=='3.5'
@@ -499,7 +499,7 @@ proboscis===1.2.6.0
 fortiosclient===0.0.3
 oslo.upgradecheck===0.3.2
 stevedore===1.31.0
-botocore===1.12.246
+botocore===1.12.248
 xmltodict===0.12.0
 pyasn1===0.4.7
 oslo.rootwrap===5.16.1
@@ -510,7 +510,7 @@ Django===2.0.13;python_version=='3.6'
 Django===2.0.13;python_version=='3.7'
 pexpect===4.7.0
 cmd2===0.8.9
-redis===3.3.8
+redis===3.3.10
 jmespath===0.9.4
 atomicwrites===1.3.0
 XStatic-smart-table===1.4.13.2
@@ -614,7 +614,7 @@ python-magnumclient===2.15.0
 docker===4.1.0
 storops===1.2.1
 qpid-python===1.36.0.post1;python_version=='2.7'
-contextlib2===0.6.0;python_version=='2.7'
+contextlib2===0.6.0.post1;python_version=='2.7'
 XStatic-Angular-lrdragndrop===1.0.2.4
 python-congressclient===1.13.0
 ovsdbapp===0.17.0
