@@ -14,3 +14,4 @@ date documentation on how to use and interact with the requirements project.
 - Documentation: https://docs.openstack.org/project-team-guide/dependency-management.html
 - Wiki: https://wiki.openstack.org/wiki/Requirements
 - Bugs: https://launchpad.net/openstack-requirements
+- Source: https://opendev.org/openstack/requirements
