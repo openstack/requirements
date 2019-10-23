@@ -14,7 +14,7 @@ Routes===2.4.1
 rtslib-fb===2.1.69
 confget===2.3.0
 XStatic-Angular-Bootstrap===2.2.0.0
-paunch===5.2.0
+paunch===5.3.0
 WebOb===1.8.5
 sphinxcontrib-actdiag===0.8.5
 docopt===0.6.2
@@ -59,7 +59,7 @@ oslo.context===2.23.0
 python-senlinclient===1.11.0
 rcssmin===1.0.6
 pycadf===2.10.0
-grpcio===1.24.1
+grpcio===1.24.3
 skydive-client===0.5.0
 pysendfile===2.0.1
 fixtures===3.0.0
@@ -72,7 +72,7 @@ XStatic-Font-Awesome===4.7.0.0
 nose===1.3.7
 nosehtmloutput===0.0.5
 waitress===1.3.1
-os-refresh-config===10.3.0
+os-refresh-config===10.4.0
 pysnmp===4.4.12
 sphinxcontrib-websupport===1.1.2;python_version=='2.7'
 Mako===1.1.0
@@ -94,7 +94,7 @@ os-xenapi===0.3.4
 python-vitrageclient===3.0.0
 nosexcover===1.0.11
 krest===1.3.1
-psycopg2===2.8.3
+psycopg2===2.8.4
 networkx===2.2;python_version=='2.7'
 networkx===2.3;python_version=='3.4'
 networkx===2.3;python_version=='3.5'
@@ -103,7 +103,7 @@ networkx===2.3;python_version=='3.7'
 bashate===0.6.0
 XStatic-Angular===1.5.8.0
 pyngus===2.3.0
-Pillow===6.2.0
+Pillow===6.2.1
 zuul-sphinx===0.4.1
 python-mimeparse===1.6.0
 tripleo-common===11.3.0
@@ -202,18 +202,18 @@ pycparser===2.19
 mock===3.0.5
 PyYAML===5.1.2
 beautifulsoup4===4.8.1
-os-net-config===11.2.0
+os-net-config===11.3.0
 ovs===2.11.0
 cryptography===2.8
 URLObject===2.4.3
-psycopg2-binary===2.8.3
+psycopg2-binary===2.8.4
 backports.ssl-match-hostname===3.7.0.1;python_version=='2.7'
 openstack-release-test===2.0.0
 pylxd===2.2.10
 pycryptodomex===3.9.0
 anyjson===0.3.3
 requests-mock===1.6.0
-os-apply-config===10.4.1
+os-apply-config===10.5.0
 prometheus-client===0.7.1
 oslosphinx===4.18.0
 mox3===0.28.0
@@ -350,7 +350,7 @@ retrying===1.3.3
 shade===1.32.0
 pathlib2===2.3.5
 pydotplus===2.0.2
-boto3===1.9.253
+boto3===1.10.0
 flask-oslolog===0.1
 jeepney===0.4.1;python_version=='3.4'
 jeepney===0.4.1;python_version=='3.5'
@@ -437,7 +437,7 @@ pika===1.1.0
 oslo.cache===1.37.0
 WebTest===2.0.33
 openstack.nose-plugin===0.11
-os-collect-config===10.4.0
+os-collect-config===10.5.0
 python-qpid-proton===0.28.0
 python-octaviaclient===1.10.0
 pysaml2===4.8.0
@@ -498,7 +498,7 @@ proboscis===1.2.6.0
 fortiosclient===0.0.3
 oslo.upgradecheck===0.3.2
 stevedore===1.31.0
-botocore===1.12.253
+botocore===1.13.0
 xmltodict===0.12.0
 pyasn1===0.4.7
 oslo.rootwrap===5.16.1
@@ -542,10 +542,10 @@ subprocess32===3.5.4;python_version=='2.7'
 etcd3gw===0.2.4
 Flask-RESTful===0.3.7
 GitPython===2.1.11;python_version=='2.7'
-GitPython===3.0.3;python_version=='3.4'
-GitPython===3.0.3;python_version=='3.5'
-GitPython===3.0.3;python_version=='3.6'
-GitPython===3.0.3;python_version=='3.7'
+GitPython===3.0.4;python_version=='3.4'
+GitPython===3.0.4;python_version=='3.5'
+GitPython===3.0.4;python_version=='3.6'
+GitPython===3.0.4;python_version=='3.7'
 python-ironicclient===3.1.0
 XStatic===1.0.2
 XStatic-Angular-FileUpload===12.0.4.0
@@ -622,7 +622,7 @@ rjsmin===1.1.0
 icalendar===4.0.3
 configparser===4.0.2;python_version=='2.7'
 decorator===4.4.0
-cffi===1.13.0
+cffi===1.13.1
 futurist===1.9.0
 jsonschema===3.1.1
 sphinxcontrib-devhelp===1.0.1;python_version=='3.4'
@@ -673,7 +673,7 @@ typing-extensions===3.7.4;python_version=='3.4'
 typing-extensions===3.7.4;python_version=='3.5'
 typing-extensions===3.7.4;python_version=='3.6'
 typing-extensions===3.7.4;python_version=='3.7'
-virtualenv===16.7.6
+virtualenv===16.7.7
 colorama===0.4.1
 confetti===2.5.3
 ironic-lib===2.21.0
