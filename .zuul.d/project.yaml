@@ -40,6 +40,8 @@
         - cross-nova-py36
         - cross-nova-py37
         - cross-nova-functional
+        - cross-octavia-py36
+        - cross-octavia-py37
         - cross-osc-tox-docs
         - cross-swift-py27
         - cross-swift-py36
@@ -92,6 +94,8 @@
         - cross-nova-py37:
             files: ^upper-constraints.txt$
         - cross-nova-functional
+        - cross-octavia-py36
+        - cross-octavia-py37
         - cross-osc-tox-docs
         - cross-swift-py27
         - cross-swift-py36
