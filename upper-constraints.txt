@@ -78,7 +78,7 @@ sphinxcontrib-websupport===1.1.2;python_version=='2.7'
 Mako===1.1.0
 XStatic-angular-ui-router===0.3.1.2
 pyScss===1.3.4
-thriftpy2===0.4.7;python_version=='2.7'
+thriftpy2===0.4.8;python_version=='2.7'
 sphinxcontrib-htmlhelp===1.0.2;python_version=='3.4'
 sphinxcontrib-htmlhelp===1.0.2;python_version=='3.5'
 sphinxcontrib-htmlhelp===1.0.2;python_version=='3.6'
@@ -277,7 +277,7 @@ passlib===1.7.1
 dib-utils===0.0.11
 cliff===2.16.0
 os-brick===2.10.0
-ansible-runner===1.4.2
+ansible-runner===1.4.4
 trollius===2.2.post1;python_version=='2.7'
 scp===0.13.2
 python-zaqarclient===1.12.0
@@ -308,7 +308,7 @@ coverage===4.5.4
 freezegun===0.3.12
 python-pytun===2.3.0
 pyperclip===1.7.0
-cassandra-driver===3.19.0
+cassandra-driver===3.20.0
 mox===0.5.3
 XStatic-Angular-Schema-Form===0.8.13.0
 gabbi===1.49.0
@@ -350,7 +350,7 @@ retrying===1.3.3
 shade===1.32.0
 pathlib2===2.3.5
 pydotplus===2.0.2
-boto3===1.10.2
+boto3===1.10.4
 flask-oslolog===0.1
 jeepney===0.4.1;python_version=='3.4'
 jeepney===0.4.1;python_version=='3.5'
@@ -467,10 +467,10 @@ numpy===1.17.3;python_version=='3.6'
 numpy===1.17.3;python_version=='3.7'
 msgpack===0.6.2
 Sphinx===1.8.5;python_version=='2.7'
-Sphinx===2.2.0;python_version=='3.4'
-Sphinx===2.2.0;python_version=='3.5'
-Sphinx===2.2.0;python_version=='3.6'
-Sphinx===2.2.0;python_version=='3.7'
+Sphinx===2.2.1;python_version=='3.4'
+Sphinx===2.2.1;python_version=='3.5'
+Sphinx===2.2.1;python_version=='3.6'
+Sphinx===2.2.1;python_version=='3.7'
 oslo.config===6.11.1
 tempest===22.1.0
 django-floppyforms===1.8.0
@@ -488,7 +488,7 @@ bottle===0.12.17
 betamax===0.8.1
 construct===2.8.22
 pyparsing===2.4.2
-dogpile.cache===0.8.0
+dogpile.cache===0.9.0
 python-barbicanclient===4.9.0
 salt===2019.2.0
 api-object-schema===2.0.0
@@ -498,7 +498,7 @@ proboscis===1.2.6.0
 fortiosclient===0.0.3
 oslo.upgradecheck===0.3.2
 stevedore===1.31.0
-botocore===1.13.2
+botocore===1.13.4
 xmltodict===0.12.0
 pyasn1===0.4.7
 oslo.rootwrap===5.16.1
@@ -516,7 +516,7 @@ XStatic-smart-table===1.4.13.2
 kuryr-lib===1.1.1
 scrypt===0.8.13
 jsonpatch===1.24
-python-daemon===2.2.3
+python-daemon===2.2.4
 typed-ast===1.4.0;python_version=='3.4'
 typed-ast===1.4.0;python_version=='3.5'
 typed-ast===1.4.0;python_version=='3.6'
@@ -566,11 +566,11 @@ hvac===0.9.5
 pyeclib===1.6.0
 wsgi-intercept===1.9.0
 ndg-httpsclient===0.5.1;python_version=='2.7'
-pyrsistent===0.15.4
+pyrsistent===0.15.5
 repoze.lru===0.7
 rfc3986===1.3.2
 network-runner===0.1.7
-tenacity===5.1.1
+tenacity===5.1.4
 python-designateclient===3.0.0
 future===0.18.1
 Paste===3.2.2
@@ -621,7 +621,7 @@ aniso8601===8.0.0
 rjsmin===1.1.0
 icalendar===4.0.3
 configparser===4.0.2;python_version=='2.7'
-decorator===4.4.0
+decorator===4.4.1
 cffi===1.13.1
 futurist===1.9.0
 jsonschema===3.1.1
@@ -669,10 +669,10 @@ itsdangerous===1.1.0
 XStatic-jquery-ui===1.12.1.1
 monasca-statsd===1.12.0
 python-dateutil===2.8.0
-typing-extensions===3.7.4;python_version=='3.4'
-typing-extensions===3.7.4;python_version=='3.5'
-typing-extensions===3.7.4;python_version=='3.6'
-typing-extensions===3.7.4;python_version=='3.7'
+typing-extensions===3.7.4.1;python_version=='3.4'
+typing-extensions===3.7.4.1;python_version=='3.5'
+typing-extensions===3.7.4.1;python_version=='3.6'
+typing-extensions===3.7.4.1;python_version=='3.7'
 virtualenv===16.7.7
 colorama===0.4.1
 confetti===2.5.3
