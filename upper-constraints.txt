@@ -460,7 +460,7 @@ boto===2.48.0
 functools32===3.2.3.post2;python_version=='2.7'
 watchdog===0.8.3;python_version=='3.4'
 watchdog===0.8.3;python_version=='3.5'
-os-vif===1.9.1
+os-vif===1.9.2
 python-masakariclient===4.0.0
 Werkzeug===0.14.1
 pyasn1-modules===0.2.1
