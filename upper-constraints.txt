@@ -142,7 +142,7 @@ MarkupSafe===1.1.1
 pypowervm===1.1.23
 doc8===0.8.0
 pymongo===3.9.0
-soupsieve===1.9.4
+soupsieve===1.9.5
 sqlparse===0.3.0
 oslotest===3.8.1
 jsonpointer===2.0
@@ -159,7 +159,7 @@ prettytable===0.7.2
 vine===1.3.0
 taskflow===3.7.1
 traceback2===1.4.0
-arrow===0.15.2
+arrow===0.15.4
 semantic-version===2.8.2
 virtualbmc===1.6.0
 deprecation===2.0.7
@@ -210,7 +210,7 @@ psycopg2-binary===2.8.4
 backports.ssl-match-hostname===3.7.0.1;python_version=='2.7'
 openstack-release-test===2.0.0
 pylxd===2.2.10
-pycryptodomex===3.9.0
+pycryptodomex===3.9.1
 anyjson===0.3.3
 requests-mock===1.6.0
 os-apply-config===10.5.0
@@ -301,7 +301,7 @@ oslo.versionedobjects===1.36.1
 webcolors===1.10
 aodhclient===1.4.0
 autobahn===19.10.1
-SQLAlchemy-Utils===0.34.2
+SQLAlchemy-Utils===0.35.0
 retryz===0.1.9
 pluggy===0.13.0
 coverage===4.5.4
@@ -350,7 +350,7 @@ retrying===1.3.3
 shade===1.32.0
 pathlib2===2.3.5
 pydotplus===2.0.2
-boto3===1.10.6
+boto3===1.10.8
 flask-oslolog===0.1
 jeepney===0.4.1;python_version=='3.4'
 jeepney===0.4.1;python_version=='3.5'
@@ -438,7 +438,7 @@ oslo.cache===1.37.0
 WebTest===2.0.33
 openstack.nose-plugin===0.11
 os-collect-config===10.5.0
-python-qpid-proton===0.28.0
+python-qpid-proton===0.29.0
 python-octaviaclient===1.11.0
 pysaml2===4.8.0
 requests-oauthlib===1.2.0
@@ -498,7 +498,7 @@ proboscis===1.2.6.0
 fortiosclient===0.0.3
 oslo.upgradecheck===0.3.2
 stevedore===1.31.0
-botocore===1.13.6
+botocore===1.13.8
 xmltodict===0.12.0
 pyasn1===0.4.7
 oslo.rootwrap===5.16.1
@@ -582,7 +582,7 @@ os-vif===1.17.0
 mitba===1.1.1
 python-masakariclient===5.5.0
 Werkzeug===0.16.0
-backports.functools-lru-cache===1.5;python_version=='2.7'
+backports.functools-lru-cache===1.6.1;python_version=='2.7'
 pyasn1-modules===0.2.7
 entrypoints===0.3
 APScheduler===3.6.1
@@ -630,7 +630,7 @@ sphinxcontrib-devhelp===1.0.1;python_version=='3.5'
 sphinxcontrib-devhelp===1.0.1;python_version=='3.6'
 sphinxcontrib-devhelp===1.0.1;python_version=='3.7'
 python-blazarclient===2.2.1
-alembic===1.2.1
+alembic===1.3.0
 glance-store===1.0.1
 sphinxcontrib-programoutput===0.15
 storpool.spopenstack===2.2.1
@@ -668,7 +668,7 @@ requests-kerberos===0.12.0
 itsdangerous===1.1.0
 XStatic-jquery-ui===1.12.1.1
 monasca-statsd===1.12.0
-python-dateutil===2.8.0
+python-dateutil===2.8.1
 typing-extensions===3.7.4.1;python_version=='3.4'
 typing-extensions===3.7.4.1;python_version=='3.5'
 typing-extensions===3.7.4.1;python_version=='3.6'
