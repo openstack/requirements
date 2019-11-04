@@ -298,7 +298,7 @@ django-debreach===2.0.1
 sphinx-feature-classification===1.0.0
 XStatic-JQuery-Migrate===1.2.1.1
 appdirs===1.4.3
-tinyrpc===1.0.3
+tinyrpc===1.0.4
 M2Crypto===0.35.2;python_version=='2.7'
 google-auth-httplib2===0.0.3
 Flask-SQLAlchemy===2.4.1
