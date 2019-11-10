@@ -22,6 +22,8 @@ from packaging import specifiers
 from openstack_requirements import project
 from openstack_requirements import requirement
 
+MIN_PY_VERSION = '3.5'
+
 
 class RequirementsList(object):
     def __init__(self, name, project):
@@ -147,7 +149,22 @@ def get_global_reqs(content):
     return global_reqs
 
 
-def _validate_one(name, reqs, blacklist, global_reqs):
+def _get_python3_reqs(reqs):
+    """Filters out the reqs that are less than our minimum version."""
+    results = []
+    for req in reqs:
+        if not req.markers:
+            results.append(req)
+        else:
+            req_markers = markers.Marker(req.markers)
+            if req_markers.evaluate({
+                'python_version': MIN_PY_VERSION,
+            }):
+                results.append(req)
+    return results
+
+
+def _validate_one(name, reqs, blacklist, global_reqs, allow_3_only=False):
     """Returns True if there is a failure."""
     if name in blacklist:
         # Blacklisted items are not synced and are managed
@@ -174,7 +191,18 @@ def _validate_one(name, reqs, blacklist, global_reqs):
                   name)
             return True
     for extra, count in counts.items():
+        # Make sure the number of entries matches. If allow_3_only, then we
+        # just need to make sure we have at least the number of entries for
+        # supported Python 3 versions.
         if count != len(global_reqs[name]):
+            if (allow_3_only and
+                    count >= len(_get_python3_reqs(global_reqs[name]))):
+                print("WARNING: Package '%s%s' is only tracking python 3 "
+                      "requirements" % (
+                        name,
+                        ('[%s]' % extra) if extra else ''))
+                continue
+
             print("ERROR: Package '%s%s' requirement does not match "
                   "number of lines (%d) in "
                   "openstack/requirements" % (
@@ -185,7 +213,7 @@ def _validate_one(name, reqs, blacklist, global_reqs):
     return False
 
 
-def validate(head_reqs, blacklist, global_reqs):
+def validate(head_reqs, blacklist, global_reqs, allow_3_only=False):
     failed = False
     # iterate through the changing entries and see if they match the global
     # equivalents we want enforced
@@ -198,6 +226,7 @@ def validate(head_reqs, blacklist, global_reqs):
                     reqs,
                     blacklist,
                     global_reqs,
+                    allow_3_only,
                 )
                 or failed
             )
