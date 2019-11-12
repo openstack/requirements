@@ -44,7 +44,6 @@
         - cross-swift-py27
         - cross-swift-py35
         - openstack-tox-py36
-        - requirements-integration
         - neutron-grenade-multinode:
             irrelevant-files:
               - ^(test-|)requirements.txt$
@@ -93,7 +92,6 @@
         - cross-swift-py27
         - cross-swift-py35
         - openstack-tox-py36
-        - requirements-integration
         - neutron-grenade-multinode:
             irrelevant-files:
               - ^(test-|)requirements.txt$
