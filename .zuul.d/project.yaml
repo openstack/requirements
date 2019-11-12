@@ -43,7 +43,6 @@
         - cross-swift-py27
         - cross-swift-py35:
             branches: ^(?!stable/(newton|ocata)).*$
-        - requirements-integration
         - neutron-grenade-multinode:
             irrelevant-files:
               - ^(test-|)requirements.txt$
@@ -92,7 +91,6 @@
         - cross-swift-py27
         - cross-swift-py35:
             branches: ^(?!stable/(newton|ocata)).*$
-        - requirements-integration
         - neutron-grenade-multinode:
             irrelevant-files:
               - ^(test-|)requirements.txt$
