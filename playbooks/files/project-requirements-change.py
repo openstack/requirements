@@ -101,7 +101,6 @@ def install_and_load_requirements(reqroot, reqdir):
 def main():
     args = grab_args()
     branch = args.branch
-    os.chdir(args.src_dir)
     reqdir = args.reqs
 
     print(sys.version_info)
@@ -111,7 +110,8 @@ def main():
             print('selecting default requirements directory for local mode')
             reqdir = os.path.dirname(
                 os.path.dirname(
-                    os.path.dirname(sys.argv[0])))
+                    os.path.dirname(
+                        os.path.abspath(sys.argv[0]))))
         else:
             print('selecting default requirements directory for normal mode')
             reqdir = _DEFAULT_REQS_DIR
@@ -120,6 +120,7 @@ def main():
     print('Source: {}'.format(args.src_dir))
     print('Requirements: {}'.format(reqdir))
 
+    os.chdir(args.src_dir)
     sha, _ = run_command('git log -n 1 --format=%H')
     print('Patch under test: {}'.format(sha))
 
