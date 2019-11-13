@@ -1,5 +1,8 @@
 - hosts: all
   tasks:
+    - name: Install openstack_requirements
+      command: "pip3 install --user {{ zuul.projects['opendev.org/openstack/requirements'].src_dir }}"
+
     - name: Run requirements check script
       # Use command module here instead of script since Zuul gets output
       # with command into job-output.txt file.

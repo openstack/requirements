@@ -24,10 +24,9 @@ import subprocess
 import sys
 import tempfile
 
-
-requirement = None
-project = None
-check = None
+from openstack_requirements import check  # noqa
+from openstack_requirements import project  # noqa
+from openstack_requirements import requirement  # noqa
 
 
 def run_command(cmd):
@@ -77,27 +76,6 @@ def tempdir():
         shutil.rmtree(reqroot)
 
 
-def install_and_load_requirements(reqroot, reqdir):
-    if os.environ.get('VIRTUAL_ENV'):
-        print('It looks like we are running from a virtualenv.')
-        print('SKIPPING INSTALLATION')
-    else:
-        sha = run_command("git --git-dir %s/.git rev-parse HEAD" % reqdir)[0]
-        print("requirements git sha: %s" % sha)
-        req_venv = os.path.join(reqroot, 'venv')
-        req_pip = os.path.join(req_venv, 'bin/pip')
-        req_lib = os.path.join(req_venv, 'lib/python2.7/site-packages')
-        out, err = run_command("virtualenv " + req_venv)
-        out, err = run_command(req_pip + " install " + reqdir)
-        sys.path.append(req_lib)
-    global check
-    global project
-    global requirement
-    from openstack_requirements import check  # noqa
-    from openstack_requirements import project  # noqa
-    from openstack_requirements import requirement  # noqa
-
-
 def main():
     args = grab_args()
     branch = args.branch
@@ -125,9 +103,7 @@ def main():
 
     # build a list of requirements from the global list in the
     # openstack/requirements project so we can match them to the changes
-    with tempdir() as reqroot:
-
-        install_and_load_requirements(reqroot, reqdir)
+    with tempdir():
         with open(reqdir + '/global-requirements.txt', 'rt') as f:
             global_reqs = check.get_global_reqs(f.read())
         blacklist = requirement.parse(
