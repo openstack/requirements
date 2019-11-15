@@ -180,7 +180,7 @@ python-zunclient===2.1.0
 asyncio===3.4.3;python_version=='3.4'
 asyncio===3.4.3;python_version=='3.5'
 tzlocal===1.5.1
-python-novaclient===11.0.0
+python-novaclient===11.0.1
 bcrypt===3.1.4
 fixtures-git===0.1.0
 os-client-config===1.31.2
