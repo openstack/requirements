@@ -339,7 +339,7 @@ mypy===0.720;python_version=='3.4'
 mypy===0.720;python_version=='3.5'
 mypy===0.720;python_version=='3.6'
 mypy===0.720;python_version=='3.7'
-mistral-lib===1.2.0
+mistral-lib===1.2.1
 Click===7.0
 dogtag-pki===10.6.9.1
 XStatic-Angular-UUID===0.0.4.0
