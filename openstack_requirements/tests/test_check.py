@@ -331,6 +331,83 @@ class TestValidateOne(testtools.TestCase):
             )
         )
 
+    def test_new_item_matches_py3_allowed_no_version(self):
+        # If the global list has multiple entries for an item but the branch
+        # allows python 3 only, then only the py3 entries need to match.
+        # Requirements without a python_version marker should always be used.
+        r_content = textwrap.dedent("""
+        name>=1.5;python_version=='3.5'
+        other-name
+        """)
+        reqs = [
+            r
+            for r, line in requirement.parse(r_content)['name']
+        ]
+        global_reqs = check.get_global_reqs(textwrap.dedent("""
+        name>=1.5;python_version=='3.5'
+        name>=1.2,!=1.4;python_version=='2.6'
+        other-name
+        """))
+        self.assertFalse(
+            check._validate_one(
+                'name',
+                reqs=reqs,
+                blacklist=requirement.parse(''),
+                global_reqs=global_reqs,
+                allow_3_only=True,
+            )
+        )
+
+    def test_new_item_matches_py3_allowed_with_py2(self):
+        # If the global list has multiple entries for an item but the branch
+        # allows python 3 only, then only the py3 entries need to match.
+        # It should continue to pass with py2 entries though.
+        r_content = textwrap.dedent("""
+        name>=1.5;python_version=='3.5'
+        name>=1.2,!=1.4;python_version=='2.6'
+        """)
+        reqs = [
+            r
+            for r, line in requirement.parse(r_content)['name']
+        ]
+        global_reqs = check.get_global_reqs(textwrap.dedent("""
+        name>=1.5;python_version=='3.5'
+        name>=1.2,!=1.4;python_version=='2.6'
+        """))
+        self.assertFalse(
+            check._validate_one(
+                'name',
+                reqs=reqs,
+                blacklist=requirement.parse(''),
+                global_reqs=global_reqs,
+                allow_3_only=True,
+            )
+        )
+
+    def test_new_item_matches_py3_allowed_no_py2(self):
+        # If the global list has multiple entries for an item but the branch
+        # allows python 3 only, then only the py3 entries need to match.
+        r_content = textwrap.dedent("""
+        name>=1.5;python_version=='3.5'
+        """)
+        reqs = [
+            r
+            for r, line in requirement.parse(r_content)['name']
+        ]
+        global_reqs = check.get_global_reqs(textwrap.dedent("""
+        name>=1.5;python_version=='3.5'
+        name>=1.2,!=1.4;python_version=='2.6'
+        """))
+        self.assertFalse(
+            check._validate_one(
+                'name',
+                reqs=reqs,
+                blacklist=requirement.parse(''),
+                global_reqs=global_reqs,
+                allow_3_only=True,
+            )
+        )
+
 
 class TestValidateLowerConstraints(testtools.TestCase):
 
