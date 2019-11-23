@@ -78,7 +78,7 @@ graphviz!=0.5.0  # MIT License
 greenlet!=0.4.14  # MIT
 GitPython<2.1.12;python_version<'3.0'  # BSD License (3 clause)
 GitPython;python_version>='3.0'  # BSD License (3 clause)
-gunicorn<2.0.0;python_version<'3.0'  # MIT
+gunicorn<20.0.0;python_version<'3.0'  # MIT
 gunicorn;python_version>='3.0'  # MIT
 happybase!=0.7,!=1.0.0;python_version=='2.7'  # MIT
 heat-translator  # Apache-2.0

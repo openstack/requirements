@@ -217,7 +217,7 @@ os-apply-config===10.5.0
 prometheus-client===0.7.1
 oslosphinx===4.18.0
 mox3===0.28.0
-gunicorn===0.17.4;python_version=='2.7'
+gunicorn===19.9.0;python_version=='2.7'
 gunicorn===20.0.0;python_version=='3.4'
 gunicorn===20.0.0;python_version=='3.5'
 gunicorn===20.0.0;python_version=='3.6'
