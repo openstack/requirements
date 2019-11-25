@@ -475,7 +475,7 @@ Sphinx===2.2.1;python_version=='3.4'
 Sphinx===2.2.1;python_version=='3.5'
 Sphinx===2.2.1;python_version=='3.6'
 Sphinx===2.2.1;python_version=='3.7'
-oslo.config===6.11.1
+oslo.config===6.12.0
 tempest===22.1.0
 django-floppyforms===1.8.0
 openstackdocstheme===1.31.1
