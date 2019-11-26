@@ -27,7 +27,7 @@ websocket-client===0.56.0
 osprofiler===2.9.0
 os-resource-classes===0.5.0
 python-ironic-inspector-client===3.7.0
-lxml===4.4.1
+lxml===4.4.2
 vintage===0.4.1
 python-kingbirdclient===0.2.1
 setproctitle===1.1.10
@@ -96,10 +96,10 @@ nosexcover===1.0.11
 krest===1.3.1
 psycopg2===2.8.4
 networkx===2.2;python_version=='2.7'
-networkx===2.3;python_version=='3.4'
-networkx===2.3;python_version=='3.5'
-networkx===2.3;python_version=='3.6'
-networkx===2.3;python_version=='3.7'
+networkx===2.4;python_version=='3.4'
+networkx===2.4;python_version=='3.5'
+networkx===2.4;python_version=='3.6'
+networkx===2.4;python_version=='3.7'
 bashate===0.6.0
 XStatic-Angular===1.5.8.0
 pyngus===2.3.0
@@ -218,10 +218,10 @@ prometheus-client===0.7.1
 oslosphinx===4.18.0
 mox3===0.28.0
 gunicorn===19.10.0;python_version=='2.7'
-gunicorn===20.0.2;python_version=='3.4'
-gunicorn===20.0.2;python_version=='3.5'
-gunicorn===20.0.2;python_version=='3.6'
-gunicorn===20.0.2;python_version=='3.7'
+gunicorn===20.0.3;python_version=='3.4'
+gunicorn===20.0.3;python_version=='3.5'
+gunicorn===20.0.3;python_version=='3.6'
+gunicorn===20.0.3;python_version=='3.7'
 storpool===5.1.0
 textfsm===1.1.0
 python-3parclient===4.2.11
@@ -395,7 +395,7 @@ infinisdk===141.1.0
 packaging===19.2
 flask-keystone===0.2
 nose-exclude===0.5.0
-psutil===5.6.5
+psutil===5.6.6
 py===1.8.0
 txaio===18.8.1
 python-qinlingclient===4.0.0
@@ -433,7 +433,7 @@ python-karborclient===1.3.0
 weakrefmethod===1.0.3;python_version=='2.7'
 PuLP===2.0
 crc16===0.1.1
-protobuf===3.10.0
+protobuf===3.11.0
 os-dpm===1.1.0
 sushy===2.0.0
 python-neutronclient===6.14.0
@@ -577,7 +577,7 @@ network-runner===0.1.7
 tenacity===6.0.0
 python-designateclient===3.0.0
 future===0.18.2
-Paste===3.2.2
+Paste===3.2.3
 jaeger-client===4.1.0
 XStatic-Json2yaml===0.1.1.0
 boto===2.49.0
@@ -623,7 +623,7 @@ python-congressclient===1.13.0
 ovsdbapp===0.18.0
 aniso8601===8.0.0
 rjsmin===1.1.0
-icalendar===4.0.3
+icalendar===4.0.4
 configparser===4.0.2;python_version=='2.7'
 decorator===4.4.1
 cffi===1.13.2
