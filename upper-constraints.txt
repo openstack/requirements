@@ -46,7 +46,7 @@ certifi===2019.9.11
 sphinxcontrib-nwdiag===0.9.5
 requests-aws===0.1.8
 alabaster===0.7.12
-pbr===5.4.3
+pbr===5.4.4
 munch===2.5.0
 waiting===1.4.1
 attrs===19.3.0
