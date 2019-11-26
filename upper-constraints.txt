@@ -303,7 +303,7 @@ google-api-python-client===1.7.11
 castellan===1.4.0
 oslo.versionedobjects===1.36.1
 webcolors===1.10
-aodhclient===1.4.0
+aodhclient===1.5.0
 autobahn===19.11.1
 SQLAlchemy-Utils===0.35.0
 retryz===0.1.9
