@@ -54,6 +54,7 @@ docutils  # OSI-Approved Open Source, Public Domain
 dogpile.cache  # BSD
 dogtag-pki  # LGPLv3+
 dulwich!=0.19.3,!=0.19.7  # Apache-2.0
+edgegrid-python  # Apache-2.0
 elasticsearch<3.0.0  # Apache-2.0
 enum34;python_version=='2.7' or python_version=='2.6' or python_version=='3.3'  # BSD
 # NOTE: New versions of eventlet should not be accepted lightly
