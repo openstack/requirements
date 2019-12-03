@@ -86,7 +86,7 @@ sphinxcontrib-htmlhelp===1.0.2;python_version=='3.6'
 sphinxcontrib-htmlhelp===1.0.2;python_version=='3.7'
 XStatic-jQuery===1.12.4.1
 jsonmodels===2.4
-ddt===1.2.1
+ddt===1.2.2
 pyserial===3.4
 ipaddress===1.0.23;python_version=='2.7'
 infi.dtypes.wwn===0.1.1
@@ -140,7 +140,7 @@ croniter===0.3.30
 octavia-lib===1.4.0
 python-watcherclient===2.5.0
 MarkupSafe===1.1.1
-pypowervm===1.1.23
+pypowervm===1.1.24
 doc8===0.8.0
 pymongo===3.9.0
 soupsieve===1.9.5
@@ -192,7 +192,7 @@ urllib3===1.25.7
 graphviz===0.13.2
 PyKMIP===0.9.1
 whereto===0.4.0
-pywbem===0.14.6
+pywbem===0.15.0
 python-subunit===1.3.0
 tornado===4.5.3;python_version=='3.4'
 tornado===4.5.3;python_version=='3.5'
@@ -201,7 +201,7 @@ tornado===4.5.3;python_version=='3.7'
 tornado===5.1.1;python_version=='2.7'
 pycparser===2.19
 mock===3.0.5
-PyYAML===5.1.2
+PyYAML===5.2
 beautifulsoup4===4.8.1
 os-net-config===12.0.0
 ovs===2.11.0
@@ -325,7 +325,7 @@ oslo.log===3.45.0
 nodeenv===1.3.3
 gossip===2.4.0
 pylev===1.3.0
-importlib-metadata===1.0.0
+importlib-metadata===1.1.0
 python-searchlightclient===1.6.0
 oslo.middleware===3.38.1
 XStatic-mdi===1.6.50.2
@@ -473,10 +473,10 @@ numpy===1.17.4;python_version=='3.6'
 numpy===1.17.4;python_version=='3.7'
 msgpack===0.6.2
 Sphinx===1.8.5;python_version=='2.7'
-Sphinx===2.2.1;python_version=='3.4'
-Sphinx===2.2.1;python_version=='3.5'
-Sphinx===2.2.1;python_version=='3.6'
-Sphinx===2.2.1;python_version=='3.7'
+Sphinx===2.2.2;python_version=='3.4'
+Sphinx===2.2.2;python_version=='3.5'
+Sphinx===2.2.2;python_version=='3.6'
+Sphinx===2.2.2;python_version=='3.7'
 oslo.config===6.12.0
 tempest===22.1.0
 django-floppyforms===1.8.0
@@ -490,7 +490,7 @@ python-solumclient===2.9.0
 PyMySQL===0.9.3
 kubernetes===10.0.1
 httplib2===0.14.0
-bottle===0.12.17
+bottle===0.12.18
 betamax===0.8.1
 construct===2.8.22
 pyparsing===2.4.5
@@ -530,7 +530,7 @@ typed-ast===1.4.0;python_version=='3.7'
 os-testr===1.1.0
 cotyledon===1.7.3
 stomp.py===4.1.22
-xattr===0.9.6
+xattr===0.9.7
 systemd-python===234
 python-memcached===1.59
 openstacksdk===0.38.0
