@@ -1,8 +1,7 @@
 - project:
     templates:
       - openstack-pypy-jobs-nonvoting
-      - openstack-python-jobs
-      - openstack-python3-train-jobs
+      - openstack-python3-ussuri-jobs
     check:
       jobs:
         - build-wheel-mirror-centos-7:
