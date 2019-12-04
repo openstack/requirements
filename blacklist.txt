@@ -25,7 +25,6 @@ networking-bgpvpn
 networking-l2gw
 networking-odl
 networking-sfc
-neutron
 neutron-dynamic-routing
 neutron-fwaas
 neutron-lbaas
