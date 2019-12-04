@@ -42,14 +42,6 @@
       - .zuul.d/cross-jobs.yaml
 
 - job:
-    name: cross-cinder-py27
-    parent: requirements-cross-test
-    description: Run cross-project tests on cinder with py27.
-    required-projects: openstack/cinder
-    vars:
-      tox_envlist: py27
-
-- job:
     name: cross-cinder-py36
     parent: requirements-cross-test
     description: Run cross-project tests on cinder with py36.
@@ -58,28 +50,12 @@
       tox_envlist: py36
 
 - job:
-    name: cross-glance-py27
-    parent: requirements-cross-test
-    description: Run cross-project tests on glance with py27.
-    required-projects: openstack/glance
-    vars:
-      tox_envlist: py27
-
-- job:
     name: cross-glance-py36
     parent: requirements-cross-test
     description: Run cross-project tests on glance with py36.
     required-projects: openstack/glance
     vars:
       tox_envlist: py36
-
-- job:
-    name: cross-horizon-py27
-    parent: requirements-cross-test
-    description: Run cross-project tests on horizon with py27.
-    required-projects: openstack/horizon
-    vars:
-      tox_envlist: py27
 
 - job:
     name: cross-horizon-py36
@@ -98,15 +74,6 @@
       tox_envlist: npm
 
 - job:
-    name: cross-keystone-py27
-    parent: requirements-cross-test
-    description: Run cross-project tests on keystone with py27.
-    required-projects: openstack/keystone
-    timeout: 3600
-    vars:
-      tox_envlist: py27
-
-- job:
     name: cross-keystone-py36
     parent: requirements-cross-test
     description: Run cross-project tests on keystone with py36.
@@ -114,14 +81,6 @@
     timeout: 3600
     vars:
       tox_envlist: py36
-
-- job:
-    name: cross-neutron-py27
-    parent: requirements-cross-test
-    description: Run cross-project tests on neutron with py27.
-    required-projects: openstack/neutron
-    vars:
-      tox_envlist: py27
 
 - job:
     name: cross-neutron-py36
@@ -138,14 +97,6 @@
     required-projects: openstack/nova
     vars:
       tox_envlist: functional
-
-- job:
-    name: cross-nova-py27
-    parent: requirements-cross-test
-    description: Run cross-project tests on nova with py27.
-    required-projects: openstack/nova
-    vars:
-      tox_envlist: py27
 
 - job:
     name: cross-nova-py36

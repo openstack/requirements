@@ -25,18 +25,12 @@
         - requirements-tox-py36-check-uc
         - requirements-tox-validate-projects:
             voting: false
-        - cross-cinder-py27
         - cross-cinder-py36
-        - cross-glance-py27
         - cross-glance-py36
-        - cross-horizon-py27
         - cross-horizon-py36
         - cross-horizon-npm
-        - cross-keystone-py27
         - cross-keystone-py36
-        - cross-neutron-py27
         - cross-neutron-py36
-        - cross-nova-py27
         - cross-nova-py36
         - cross-nova-py37
         - cross-nova-functional
@@ -76,18 +70,12 @@
         - requirements-tox-babel
         - requirements-tox-py27-check-uc
         - requirements-tox-py36-check-uc
-        - cross-cinder-py27
         - cross-cinder-py36
-        - cross-glance-py27
         - cross-glance-py36
-        - cross-horizon-py27
         - cross-horizon-py36
         - cross-horizon-npm
-        - cross-keystone-py27
         - cross-keystone-py36
-        - cross-neutron-py27
         - cross-neutron-py36
-        - cross-nova-py27
         - cross-nova-py36:
             files: ^upper-constraints.txt$
         - cross-nova-py37:
