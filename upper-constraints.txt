@@ -696,3 +696,4 @@ scikit-learn===0.21.3;python_version=='3.4'
 scikit-learn===0.21.3;python_version=='3.5'
 scikit-learn===0.21.3;python_version=='3.6'
 scikit-learn===0.21.3;python_version=='3.7'
+python-cloudkittyclient===3.1.0
