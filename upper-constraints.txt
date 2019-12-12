@@ -674,7 +674,7 @@ gitdb2===2.0.6
 requests-kerberos===0.12.0
 itsdangerous===1.1.0
 XStatic-jquery-ui===1.12.1.1
-monasca-statsd===1.12.0
+monasca-statsd===2.0.0
 python-dateutil===2.8.1
 typing-extensions===3.7.4.1;python_version=='3.4'
 typing-extensions===3.7.4.1;python_version=='3.5'
