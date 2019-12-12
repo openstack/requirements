@@ -463,12 +463,16 @@ setuptools!=24.0.0,!=34.0.0,!=34.0.1,!=34.0.2,!=34.0.3,!=34.1.0,!=34.1.1,!=34.2.
 sphinx!=1.6.6,!=1.6.7,<2.0.0;python_version=='2.7'  # BSD
 sphinx!=1.6.6,!=1.6.7,!=2.1.0;python_version>='3.4'  # BSD
 sphinx-testing  # BSD License
-sphinxcontrib-actdiag  # BSD
+sphinxcontrib-actdiag<2.0.0;python_version=='2.7'  # BSD
+sphinxcontrib-actdiag;python_version>='3.4'  # BSD
 sphinxcontrib-apidoc  # BSD
-sphinxcontrib-blockdiag  # BSD
+sphinxcontrib-blockdiag<2.0.0;python_version=='2.7'  # BSD
+sphinxcontrib-blockdiag;python_version>='3.4'  # BSD
 sphinxcontrib-httpdomain  # BSD
-sphinxcontrib-nwdiag  # BSD
-sphinxcontrib-seqdiag  # BSD
+sphinxcontrib-nwdiag<2.0.0;python_version=='2.7'  # BSD
+sphinxcontrib-nwdiag;python_version>='3.4'  # BSD
+sphinxcontrib-seqdiag<2.0.0;python_version=='2.7'  # BSD
+sphinxcontrib-seqdiag;python_version>='3.4'  # BSD
 sphinxcontrib-pecanwsme  # Apache-2.0
 sphinxcontrib-fulltoc  # Apache-2.0
 sphinx-feature-classification  # Apache-2.0
