@@ -512,8 +512,8 @@ oslo.rootwrap===5.17.0
 Django===1.11.26;python_version=='2.7'
 Django===2.0.13;python_version=='3.4'
 Django===2.0.13;python_version=='3.5'
-Django===2.0.13;python_version=='3.6'
-Django===2.0.13;python_version=='3.7'
+Django===2.2;python_version=='3.6'
+Django===2.2;python_version=='3.7'
 pexpect===4.7.0
 cmd2===0.8.9
 redis===3.3.11
