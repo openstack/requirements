@@ -85,21 +85,22 @@ def _get_exclusions(req):
     )
 
 
-def _is_requirement_in_global_reqs(req, global_reqs):
-    req_exclusions = _get_exclusions(req)
-    for req2 in global_reqs:
+def _is_requirement_in_global_reqs(local_req, global_reqs):
+    req_exclusions = _get_exclusions(local_req)
+    for global_req in global_reqs:
 
         matching = True
         for aname in ['package', 'location', 'markers']:
-            rval = getattr(req, aname)
-            r2val = getattr(req2, aname)
-            if rval != r2val:
+            local_req_val = getattr(local_req, aname)
+            global_req_val = getattr(global_req, aname)
+            if local_req_val != global_req_val:
                 print('WARNING: possible mismatch found for package '
-                      '"{}"'.format(req.package))
+                      '"{}"'.format(local_req.package))
                 print('   Attribute "{}" does not match'.format(aname))
-                print('   "{}" does not match "{}"'.format(rval, r2val))
-                print('   {}'.format(req))
-                print('   {}'.format(req2))
+                print('   "{}" does not match "{}"'.format(
+                    local_req_val, global_req_val))
+                print('   {}'.format(local_req))
+                print('   {}'.format(global_req))
                 matching = False
         if not matching:
             continue
@@ -107,7 +108,7 @@ def _is_requirement_in_global_reqs(req, global_reqs):
         # This matches the right package and other properties, so
         # ensure that any exclusions are a subset of the global
         # set.
-        global_exclusions = _get_exclusions(req2)
+        global_exclusions = _get_exclusions(global_req)
         if req_exclusions.issubset(global_exclusions):
             return True
         else:
@@ -119,7 +120,7 @@ def _is_requirement_in_global_reqs(req, global_reqs):
                 "  Local settings : {}\n"
                 "  Global settings: {}\n"
                 "  Unexpected     : {}".format(
-                    req.package, req_exclusions, global_exclusions,
+                    local_req.package, req_exclusions, global_exclusions,
                     difference)
             )
             return False
@@ -129,7 +130,7 @@ def _is_requirement_in_global_reqs(req, global_reqs):
         "Could not find a global requirements entry to match package {}. "
         "If the package is already included in the global list, "
         "the name or platform markers there may not match the local "
-        "settings.".format(req.package)
+        "settings.".format(local_req.package)
     )
     return False
 
