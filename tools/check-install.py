@@ -11,7 +11,7 @@ import six.moves.configparser as configparser
 
 def main():
     errors = 0
-    pattern = re.compile('^(.*?)\s*=\s*([^:]*?):.*$')
+    pattern = re.compile(r'^(.*?)\s*=\s*([^:]*?):.*$')
     config = configparser.ConfigParser()
     config.read('setup.cfg')
     console_scripts = config.get('entry_points', 'console_scripts')
