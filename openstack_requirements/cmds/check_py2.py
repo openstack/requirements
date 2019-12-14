@@ -74,5 +74,6 @@ def main():
             for classifier in classifiers:
                 print('  {}'.format(classifier))
 
+
 if __name__ == '__main__':
     main()
