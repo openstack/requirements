@@ -659,7 +659,7 @@ XStatic-Angular-Vis===4.16.0.0
 confluent-kafka===1.2.0
 xvfbwrapper===0.2.9
 futures===3.3.0;python_version=='2.7'
-tosca-parser===1.6.1
+tosca-parser===1.7.0
 Flask===1.1.1
 happybase===1.2.0;python_version=='2.7'
 marathon===0.12.0
