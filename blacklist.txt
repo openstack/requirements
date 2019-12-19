@@ -6,6 +6,7 @@ bandit
 flake8
 flake8-docstrings
 flake8-import-order
+flake8-logging-format
 hacking
 mccabe
 pep257
