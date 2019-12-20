@@ -55,6 +55,18 @@ class TestIsReqInGlobalReqs(testtools.TestCase):
             )
         )
 
+    def test_match_without_python3_markers(self):
+        req = requirement.parse(textwrap.dedent("""
+        withmarker>=1.5'
+        """))['withmarker'][0][0]
+        self.assertTrue(
+            check._is_requirement_in_global_reqs(
+                req,
+                self.global_reqs['withmarker'],
+                allow_3_only=True
+            )
+        )
+
     def test_name_mismatch(self):
         req = requirement.parse('wrongname>=1.2,!=1.4')['wrongname'][0][0]
         self.assertFalse(
@@ -345,6 +357,33 @@ class TestValidateOne(testtools.TestCase):
         ]
         global_reqs = check.get_global_reqs(textwrap.dedent("""
         name>=1.5;python_version=='3.5'
+        name>=1.2,!=1.4;python_version=='2.6'
+        other-name
+        """))
+        self.assertFalse(
+            check._validate_one(
+                'name',
+                reqs=reqs,
+                blacklist=requirement.parse(''),
+                global_reqs=global_reqs,
+                allow_3_only=True,
+            )
+        )
+
+    def test_new_item_matches_py3_allowed(self):
+        # If the global list has multiple entries for an item but the branch
+        # allows python 3 only, then only the py3 entries need to match.
+        # Requirements without a python_version marker should always be used.
+        r_content = textwrap.dedent("""
+        name>=1.5
+        other-name
+        """)
+        reqs = [
+            r
+            for r, line in requirement.parse(r_content)['name']
+        ]
+        global_reqs = check.get_global_reqs(textwrap.dedent("""
+        name>=1.5;python_version>='3.5'
         name>=1.2,!=1.4;python_version=='2.6'
         other-name
         """))
