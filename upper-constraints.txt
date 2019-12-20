@@ -638,7 +638,7 @@ sphinxcontrib-devhelp===1.0.1;python_version=='3.6'
 sphinxcontrib-devhelp===1.0.1;python_version=='3.7'
 python-blazarclient===2.2.1
 alembic===1.3.1
-glance-store===1.0.1
+glance-store===1.1.0
 sphinxcontrib-programoutput===0.15
 storpool.spopenstack===2.2.1
 sphinx-testing===1.0.1
