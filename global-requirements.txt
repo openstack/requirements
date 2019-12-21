@@ -449,7 +449,7 @@ python-pytun  # MIT
 pyzmq  # LGPL+BSD
 redis  # MIT
 hiredis  # BSD
-requests-mock!=1.7.0  # Apache-2.0
+requests-mock  # Apache-2.0
 tenacity  # Apache-2.0
 retrying!=1.3.0  # Apache-2.0
 selenium  # Apache-2.0

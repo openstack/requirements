@@ -214,7 +214,7 @@ openstack-release-test===2.0.0
 pylxd===2.2.10
 pycryptodomex===3.9.4
 anyjson===0.3.3
-requests-mock===1.6.0
+requests-mock===1.7.0
 os-apply-config===11.0.0
 prometheus-client===0.7.1
 oslosphinx===4.18.0
