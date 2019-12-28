@@ -348,7 +348,10 @@ oslo.middleware===3.38.1
 XStatic-mdi===1.6.50.2
 django-pyscss===2.0.2
 uritemplate===3.0.1
-django-babel===0.6.2
+enmerkar===0.7.1;python_version=='3.4'
+enmerkar===0.7.1;python_version=='3.5'
+enmerkar===0.7.1;python_version=='3.6'
+enmerkar===0.7.1;python_version=='3.7'
 docutils===0.15.2
 notifier===1.0.3
 os-ken===0.4.1
