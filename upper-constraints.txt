@@ -319,7 +319,7 @@ joblib===0.14.1;python_version=='3.7'
 hiredis===1.0.1
 google-api-python-client===1.7.11
 castellan===1.4.0
-oslo.versionedobjects===1.36.1
+oslo.versionedobjects===1.37.0
 webcolors===1.10
 aodhclient===1.5.0
 autobahn===19.11.1
