@@ -15,10 +15,9 @@ pycodestyle
 pylint
 Pygments
 
-# The following horizon and Neutron libraries need to be blacklisted
+# The following Neutron libraries need to be blacklisted
 # as they do not use cycle-with-intermediary.  The only time they
 # would be updated is at release time.
-horizon
 networking-bagpipe
 networking-bgpvpn
 networking-l2gw
