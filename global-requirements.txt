@@ -20,7 +20,7 @@ castellan  # Apache-2.0
 ceilometermiddleware  # Apache-2.0
 cachetools  # MIT License
 cffi  # MIT
-cliff!=2.9.0  # Apache-2.0
+cliff!=2.9.0,!=2.17.0  # Apache-2.0
 # NOTE(mordred) python-openstackclient is broken due to bug 1810213
 cmd2!=0.8.3,<0.9.0  # MIT
 confluent-kafka!=1.3.0  # Apache-2.0
