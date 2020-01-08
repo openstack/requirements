@@ -297,7 +297,7 @@ influxdb===5.2.3;python_version=='3.7'
 funcparserlib===0.3.6
 passlib===1.7.2
 dib-utils===0.0.11
-cliff===2.16.0
+cliff===2.18.0
 os-brick===2.11.0
 ansible-runner===1.4.4
 trollius===2.2.post1;python_version=='2.7'
