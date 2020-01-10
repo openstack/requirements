@@ -260,7 +260,7 @@ python-novaclient===16.0.0
 pact===1.12.0
 bcrypt===3.1.7
 fixtures-git===0.1.0
-os-client-config===1.33.0
+os-client-config===2.0.0
 XStatic-Angular-Gettext===2.3.8.0
 XStatic-Hogan===2.0.0.2
 XStatic-objectpath===1.2.1.0
