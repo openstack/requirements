@@ -466,7 +466,7 @@ yappi===1.0
 abclient===0.2.3
 pymemcache===2.1.1
 wrapt===1.11.1
-oslo.privsep===1.32.1
+oslo.privsep===1.32.2
 sphinxcontrib-apidoc===0.3.0
 oslo.policy===2.1.2
 python-muranoclient===1.2.0
