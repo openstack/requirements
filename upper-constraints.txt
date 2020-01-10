@@ -23,7 +23,7 @@ os-api-ref===1.5.0
 python-ldap===3.1.0
 oslo.concurrency===3.27.0
 websocket-client===0.48.0
-osprofiler===2.3.0
+osprofiler===2.3.1
 tabulate===0.8.2
 python-ironic-inspector-client===3.3.0
 lxml===4.2.3
