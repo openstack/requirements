@@ -404,7 +404,7 @@ sphinxcontrib-svg2pdfconverter===1.0.1;python_version=='3.5'
 sphinxcontrib-svg2pdfconverter===1.0.1;python_version=='3.6'
 sphinxcontrib-svg2pdfconverter===1.0.1;python_version=='3.7'
 murano-pkg-check===0.3.0
-oslo.vmware===2.34.1
+oslo.vmware===2.35.0
 sqlalchemy-migrate===0.13.0
 python-monascaclient===1.16.0
 ldap3===2.6.1
