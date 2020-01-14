@@ -60,8 +60,8 @@ munch===2.5.0
 waiting===1.4.1
 attrs===19.3.0
 microversion-parse===0.2.1
-Pint===0.10.1;python_version=='3.4'
-Pint===0.10.1;python_version=='3.5'
+Pint===0.9;python_version=='3.4'
+Pint===0.9;python_version=='3.5'
 Pint===0.10.1;python_version=='3.6'
 Pint===0.10.1;python_version=='3.7'
 Pint===0.9;python_version=='2.7'

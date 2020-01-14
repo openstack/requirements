@@ -207,7 +207,8 @@ pexpect!=3.3  # ISC License
 pifpaf  # Apache-2.0
 pika  # BSD
 Pillow  # PIL License
-Pint  # BSD
+Pint<0.10;python_version<'3.6'  # BSD
+Pint;python_version>='3.6'  # BSD
 pip  # MIT
 prometheus-client  # Apache-2.0
 protobuf  # BSD License (3 clause)
