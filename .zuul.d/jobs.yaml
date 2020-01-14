@@ -13,17 +13,6 @@
       tox_envlist: babel
 
 - job:
-    name: requirements-tox-py27-check-uc
-    parent: openstack-tox
-    description: |
-      Run test for requirements project.
-
-      Uses tox with the ``py27-check-uc`` environment.
-    files: ^upper-constraints.*txt$
-    vars:
-      tox_envlist: py27-check-uc
-
-- job:
     name: requirements-tox-py36-check-uc
     parent: openstack-tox-py36
     description: |
