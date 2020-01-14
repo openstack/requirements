@@ -283,7 +283,8 @@ python-zaqarclient  # Apache-2.0
 python-zunclient  # Apache-2.0
 
 python-magic  # MIT
-python-memcached  # PSF
+python-memcached>1.55;python_version=='2.7'  # PSF
+python-memcached>1.57;python_version>='3.4'  # PSF
 python-dateutil  # BSD
 
 # 2013.6 is the first version of pytz that is PEP 440 compatible.
