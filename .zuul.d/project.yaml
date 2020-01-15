@@ -8,9 +8,6 @@
         - build-wheel-mirror-centos-7:
             files:
               - bindep.txt
-        - build-wheel-mirror-ubuntu-trusty:
-            files:
-              - bindep.txt
         - build-wheel-mirror-ubuntu-xenial:
             files:
               - bindep.txt
@@ -62,9 +59,6 @@
     gate:
       jobs:
         - build-wheel-mirror-centos-7:
-            files:
-              - bindep.txt
-        - build-wheel-mirror-ubuntu-trusty:
             files:
               - bindep.txt
         - build-wheel-mirror-ubuntu-xenial:
