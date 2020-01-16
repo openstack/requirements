@@ -10,9 +10,6 @@
         - build-wheel-mirror-ubuntu-bionic:
             files:
               - bindep.txt
-        - build-wheel-mirror-ubuntu-trusty:
-            files:
-              - bindep.txt
         - build-wheel-mirror-ubuntu-xenial:
             files:
               - bindep.txt
@@ -57,9 +54,6 @@
             files:
               - bindep.txt
         - build-wheel-mirror-ubuntu-bionic:
-            files:
-              - bindep.txt
-        - build-wheel-mirror-ubuntu-trusty:
             files:
               - bindep.txt
         - build-wheel-mirror-ubuntu-xenial:
