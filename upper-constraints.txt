@@ -445,7 +445,7 @@ django-formtools===2.2
 python-ceilometerclient===2.9.0
 XStatic-Spin===1.2.5.2
 tap-as-a-service===3.0.0
-os-traits===2.1.0
+os-traits===2.2.0
 SecretStorage===2.3.1;python_version=='2.7'
 SecretStorage===3.1.1;python_version=='3.4'
 SecretStorage===3.1.1;python_version=='3.5'
