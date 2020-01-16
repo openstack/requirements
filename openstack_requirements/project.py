@@ -59,7 +59,7 @@ def extras(project):
     if 'setup.cfg' not in project:
         return {}
     c = configparser.ConfigParser()
-    c.readfp(io.StringIO(project['setup.cfg']))
+    c.read_file(io.StringIO(project['setup.cfg']))
     if not c.has_section('extras'):
         return {}
     return dict(c.items('extras'))
