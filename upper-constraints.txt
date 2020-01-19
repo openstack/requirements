@@ -222,7 +222,7 @@ tornado===4.5.3;python_version=='3.7'
 tornado===5.1.1;python_version=='2.7'
 pycparser===2.19
 mock===3.0.5
-PyYAML===5.2
+PyYAML===5.3
 beautifulsoup4===4.8.2
 os-net-config===12.0.0
 ovs===2.11.0
@@ -324,9 +324,13 @@ hiredis===1.0.1
 google-api-python-client===1.7.11
 castellan===1.4.0
 oslo.versionedobjects===1.37.0
+enmerkar===0.7.1;python_version=='3.4'
+enmerkar===0.7.1;python_version=='3.5'
+enmerkar===0.7.1;python_version=='3.6'
+enmerkar===0.7.1;python_version=='3.7'
 webcolors===1.10
 aodhclient===1.5.0
-autobahn===19.11.1
+autobahn===19.11.2
 SQLAlchemy-Utils===0.36.1
 retryz===0.1.9
 pluggy===0.13.1
@@ -352,10 +356,6 @@ oslo.middleware===3.38.1
 XStatic-mdi===1.6.50.2
 django-pyscss===2.0.2
 uritemplate===3.0.1
-enmerkar===0.7.1;python_version=='3.4'
-enmerkar===0.7.1;python_version=='3.5'
-enmerkar===0.7.1;python_version=='3.6'
-enmerkar===0.7.1;python_version=='3.7'
 docutils===0.15.2
 notifier===1.0.3
 os-ken===0.4.1
@@ -383,7 +383,7 @@ retrying===1.3.3
 shade===1.32.0
 pathlib2===2.3.5
 pydotplus===2.0.2
-boto3===1.10.46
+boto3===1.10.50
 flask-oslolog===0.1
 jeepney===0.4.2;python_version=='3.4'
 jeepney===0.4.2;python_version=='3.5'
@@ -421,7 +421,7 @@ sphinxcontrib-pecanwsme===0.10.0
 sadisplay===0.4.9
 enum34===1.1.6
 infinisdk===151.1.1
-packaging===19.2
+packaging===20.0
 flask-keystone===0.2
 nose-exclude===0.5.0
 psutil===5.6.7
@@ -431,7 +431,7 @@ python-qinlingclient===4.0.0
 elasticsearch===2.4.1
 django-nose===1.4.6
 XStatic-JQuery.TableSorter===2.14.5.1
-pifpaf===2.3.0
+pifpaf===2.4.0
 pysmi===0.3.4
 blockdiag===1.5.4
 testtools===2.3.0
@@ -447,10 +447,10 @@ XStatic-Spin===1.2.5.2
 tap-as-a-service===3.0.0
 os-traits===2.2.0
 SecretStorage===2.3.1;python_version=='2.7'
-SecretStorage===3.1.1;python_version=='3.4'
-SecretStorage===3.1.1;python_version=='3.5'
-SecretStorage===3.1.1;python_version=='3.6'
-SecretStorage===3.1.1;python_version=='3.7'
+SecretStorage===3.1.2;python_version=='3.4'
+SecretStorage===3.1.2;python_version=='3.5'
+SecretStorage===3.1.2;python_version=='3.6'
+SecretStorage===3.1.2;python_version=='3.7'
 opentracing===2.3.0
 XStatic-Rickshaw===1.5.0.0
 iso8601===0.1.12
@@ -532,7 +532,7 @@ proboscis===1.2.6.0
 fortiosclient===0.0.3
 oslo.upgradecheck===0.3.2
 stevedore===1.31.0
-botocore===1.13.46
+botocore===1.13.50
 xmltodict===0.12.0
 pyasn1===0.4.8
 oslo.rootwrap===5.17.1
@@ -557,7 +557,7 @@ typed-ast===1.4.0;python_version=='3.6'
 typed-ast===1.4.0;python_version=='3.7'
 os-testr===1.1.0
 cotyledon===1.7.3
-stomp.py===5.0.0
+stomp.py===5.0.1
 xattr===0.9.7
 systemd-python===234
 python-memcached===1.59
@@ -607,7 +607,7 @@ network-runner===0.1.7
 tenacity===6.0.0
 python-designateclient===3.0.0
 future===0.18.2
-Paste===3.2.4
+Paste===3.2.5
 jaeger-client===4.2.0
 XStatic-Json2yaml===0.1.1.0
 boto===2.49.0
@@ -617,7 +617,7 @@ mitba===1.1.1
 python-masakariclient===5.5.0
 Werkzeug===0.16.0
 backports.functools-lru-cache===1.6.1;python_version=='2.7'
-pyasn1-modules===0.2.7
+pyasn1-modules===0.2.8
 entrypoints===0.3;python_version=='2.7'
 APScheduler===3.6.3
 monotonic===1.5
