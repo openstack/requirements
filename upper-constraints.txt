@@ -692,4 +692,4 @@ scikit-learn===0.21.3;python_version=='3.4'
 scikit-learn===0.21.3;python_version=='3.5'
 scikit-learn===0.21.3;python_version=='3.6'
 scikit-learn===0.21.3;python_version=='3.7'
-horizon===16.0.0
+horizon===16.1.0
