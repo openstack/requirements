@@ -579,6 +579,7 @@ python-memcached===1.59
 openstacksdk===0.39.0
 six===1.14.0
 dulwich===0.19.14
+dfs-sdk===1.2.25
 sentinels===1.0.0
 kombu===4.6.7
 distro===1.4.0
