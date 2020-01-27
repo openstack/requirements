@@ -697,9 +697,9 @@ oauthlib===3.1.0
 Babel===2.8.0
 logutils===0.3.5
 scandir===1.10.0;python_version=='2.7'
-zipp===1.0.0;python_version=='2.7'
-zipp===2.0.1;python_version=='3.4'
-zipp===2.0.1;python_version=='3.5'
+zipp===1.1.0;python_version=='2.7'
+zipp===1.1.0;python_version=='3.4'
+zipp===1.1.0;python_version=='3.5'
 zipp===2.0.1;python_version=='3.6'
 zipp===2.0.1;python_version=='3.7'
 sphinxcontrib-fulltoc===1.2.0
