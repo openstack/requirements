@@ -12,6 +12,7 @@ Babel!=2.4.0  # BSD
 bcrypt  # Apache-2.0
 betamax  # Apache-2.0
 betamax-matchers  # Apache-2.0
+blockdiag!=2.0.0  # Apache-2.0
 boto  # MIT
 boto3  # Apache-2.0
 botocore  # Apache-2.0
