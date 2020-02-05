@@ -1,6 +1,5 @@
 - project:
     templates:
-      - openstack-pypy-jobs-nonvoting
       - openstack-python3-ussuri-jobs
     check:
       jobs:
