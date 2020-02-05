@@ -155,7 +155,11 @@ rsd-lib===1.2.0
 XStatic-Jasmine===2.4.1.2
 python-glanceclient===2.17.0
 pyinotify===0.9.6
-debtcollector===1.22.0
+debtcollector===1.22.0;python_version=='2.7'
+debtcollector===2.0.0;python_version=='3.4'
+debtcollector===2.0.0;python_version=='3.5'
+debtcollector===2.0.0;python_version=='3.6'
+debtcollector===2.0.0;python_version=='3.7'
 requests-unixsocket===0.2.0
 croniter===0.3.31
 octavia-lib===1.5.0
