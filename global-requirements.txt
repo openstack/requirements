@@ -31,6 +31,7 @@ contextlib2;python_version<'3.0'  # PSF License
 croniter  # MIT License
 cryptography!=2.0  # BSD/Apache-2.0
 cursive  # Apache-2.0
+dataclasses;python_version=='3.6'  # Apache-2.0
 ddt  # MIT
 debtcollector  # Apache-2.0
 decorator  # BSD
