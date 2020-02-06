@@ -60,7 +60,7 @@ pbr===5.4.4
 munch===2.5.0
 waiting===1.4.1
 attrs===19.3.0
-microversion-parse===0.2.1
+microversion-parse===1.0.0
 Pint===0.10.1;python_version=='3.4'
 Pint===0.10.1;python_version=='3.5'
 Pint===0.10.1;python_version=='3.6'
