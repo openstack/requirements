@@ -331,7 +331,7 @@ joblib===0.14.1;python_version=='3.6'
 joblib===0.14.1;python_version=='3.7'
 hiredis===1.0.1
 google-api-python-client===1.7.11
-castellan===1.4.0
+castellan===2.0.0
 oslo.versionedobjects===1.37.0
 enmerkar===0.7.1
 webcolors===1.10
