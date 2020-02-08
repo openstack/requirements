@@ -69,7 +69,11 @@ Pint===0.9;python_version=='2.7'
 oslo.i18n===3.25.1
 jsonpath-rw-ext===1.2.2
 python-mistralclient===3.10.0
-oslo.context===2.23.0
+oslo.context===2.23.0;python_version=='2.7'
+oslo.context===3.0.0;python_version=='3.4'
+oslo.context===3.0.0;python_version=='3.5'
+oslo.context===3.0.0;python_version=='3.6'
+oslo.context===3.0.0;python_version=='3.7'
 python-senlinclient===1.11.0
 rcssmin===1.0.6
 pycadf===2.10.0
