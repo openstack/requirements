@@ -520,7 +520,9 @@ tricircleclient===0.6.0
 WSME===0.9.3
 proboscis===1.2.6.0
 fortiosclient===0.0.3
-oslo.upgradecheck===0.3.2
+oslo.upgradecheck===0.3.2;python_version=='2.7'
+oslo.upgradecheck===0.4.0;python_version=='3.6'
+oslo.upgradecheck===0.4.0;python_version=='3.7'
 stevedore===1.32.0
 botocore===1.14.13
 xmltodict===0.12.0
