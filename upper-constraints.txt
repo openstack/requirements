@@ -312,7 +312,7 @@ castellan===2.0.0;python_version=='3.7'
 oslo.versionedobjects===1.37.0
 enmerkar===0.7.1
 webcolors===1.10
-aodhclient===1.5.0
+aodhclient===2.0.0
 autobahn===19.11.2;python_version=='2.7'
 autobahn===20.2.1;python_version=='3.6'
 autobahn===20.2.1;python_version=='3.7'
