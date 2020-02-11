@@ -586,7 +586,7 @@ dataclasses===0.7;python_version=='3.7'
 abclient===0.2.3
 pymemcache===3.0.0
 wrapt===1.11.2
-oslo.privsep===1.33.3
+oslo.privsep===1.34.0
 sphinxcontrib-apidoc===0.3.0
 oslo.policy===2.4.1
 python-muranoclient===1.3.0
