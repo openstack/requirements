@@ -347,7 +347,9 @@ django-pyscss===2.0.2
 uritemplate===3.0.1
 docutils===0.15.2
 notifier===1.0.3
-os-ken===0.4.1
+os-ken===0.4.1;python_version=='2.7'
+os-ken===1.0.0;python_version=='3.6'
+os-ken===1.0.0;python_version=='3.7'
 pycrypto===2.6.1
 ujson===1.35
 selenium===3.141.0
