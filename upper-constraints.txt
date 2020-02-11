@@ -576,7 +576,7 @@ construct===2.8.22
 pyparsing===2.4.6
 geomet===0.1.2
 dogpile.cache===0.9.0
-python-barbicanclient===4.9.0
+python-barbicanclient===4.10.0
 salt===2019.2.0
 api-object-schema===2.0.0
 tricircleclient===0.6.0
