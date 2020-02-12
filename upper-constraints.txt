@@ -637,7 +637,7 @@ ceilometer===13.0.0
 demjson===2.2.4
 diskimage-builder===2.33.0
 heat-translator===1.5.0
-python-magnumclient===2.16.0
+python-magnumclient===2.17.0
 docker===4.2.0
 storops===1.2.3
 qpid-python===1.36.0.post1;python_version=='2.7'
