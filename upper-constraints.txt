@@ -444,7 +444,9 @@ infi.dtypes.iqn===0.4.0
 Parsley===1.3
 XStatic-tv4===1.2.7.0
 XStatic-JSEncrypt===2.3.1.1
-python-cinderclient===5.0.0
+python-cinderclient===5.0.0;python_version=='2.7'
+python-cinderclient===6.0.0;python_version=='3.6'
+python-cinderclient===6.0.0;python_version=='3.7'
 keystonemiddleware===8.0.0
 django-formtools===2.2
 python-ceilometerclient===2.9.0
