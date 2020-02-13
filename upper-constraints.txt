@@ -73,7 +73,9 @@ oslo.context===3.0.0;python_version=='3.6'
 oslo.context===3.0.0;python_version=='3.7'
 python-senlinclient===1.11.0
 rcssmin===1.0.6
-pycadf===2.10.0
+pycadf===2.10.0;python_version=='2.7'
+pycadf===3.0.0;python_version=='3.6'
+pycadf===3.0.0;python_version=='3.7'
 grpcio===1.27.1
 skydive-client===0.7.0
 pysendfile===2.0.1
