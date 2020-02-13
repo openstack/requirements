@@ -311,7 +311,8 @@ python-neutronclient  # Apache-2.0
 python-novaclient  # Apache-2.0
 python-octaviaclient  # Apache-2.0
 python-openstackclient  # Apache-2.0
-python-qinlingclient  # Apache-2.0
+python-qinlingclient<5.0.0;python_version=='2.7'  # Apache-2.0
+python-qinlingclient;python_version>='3.6'  # Apache-2.0
 python-rsdclient  # Apache-2.0
 python-saharaclient<3.0.0;python_version=='2.7'  # Apache-2.0
 python-saharaclient;python_version>='3.6'  # Apache-2.0

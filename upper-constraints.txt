@@ -414,7 +414,9 @@ py===1.8.1
 txaio===18.8.1;python_version=='2.7'
 txaio===20.1.1;python_version=='3.6'
 txaio===20.1.1;python_version=='3.7'
-python-qinlingclient===4.0.0
+python-qinlingclient===4.0.0;python_version=='2.7'
+python-qinlingclient===5.0.0;python_version=='3.6'
+python-qinlingclient===5.0.0;python_version=='3.7'
 elasticsearch===2.4.1
 django-nose===1.4.6
 XStatic-JQuery.TableSorter===2.14.5.1
