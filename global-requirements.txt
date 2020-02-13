@@ -319,7 +319,8 @@ python-saharaclient<3.0.0;python_version=='2.7'  # Apache-2.0
 python-saharaclient;python_version>='3.6'  # Apache-2.0
 python-searchlightclient<2.0.0;python_version=='2.7'  #Apache-2.0
 python-searchlightclient;python_version>='3.6'  #Apache-2.0
-python-senlinclient  # Apache-2.0
+python-senlinclient<2.0.0;python_version=='2.7'  # Apache-2.0
+python-senlinclient;python_version>='3.6'  # Apache-2.0
 python-smaugclient  # Apache-2.0
 python-solumclient<3.0.0;python_version=='2.7'  # Apache-2.0
 python-solumclient;python_version>='3.6'  # Apache-2.0

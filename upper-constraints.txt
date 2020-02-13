@@ -73,7 +73,9 @@ python-mistralclient===3.10.0
 oslo.context===2.23.0;python_version=='2.7'
 oslo.context===3.0.0;python_version=='3.6'
 oslo.context===3.0.0;python_version=='3.7'
-python-senlinclient===1.11.0
+python-senlinclient===1.11.0;python_version=='2.7'
+python-senlinclient===2.0.0;python_version=='3.6'
+python-senlinclient===2.0.0;python_version=='3.7'
 rcssmin===1.0.6
 pycadf===2.10.0;python_version=='2.7'
 pycadf===3.0.0;python_version=='3.6'
