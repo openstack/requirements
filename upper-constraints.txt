@@ -661,7 +661,9 @@ icalendar===4.0.4
 configparser===4.0.2;python_version=='2.7'
 decorator===4.4.1
 cffi===1.14.0
-futurist===1.10.0
+futurist===1.10.0;python_version=='2.7'
+futurist===2.0.0;python_version=='3.6'
+futurist===2.0.0;python_version=='3.7'
 jsonschema===3.2.0
 sphinxcontrib-devhelp===1.0.1;python_version=='3.6'
 sphinxcontrib-devhelp===1.0.1;python_version=='3.7'
