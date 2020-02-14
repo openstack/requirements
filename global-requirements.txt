@@ -207,7 +207,8 @@ os-testr  # Apache-2.0
 os-traits  # Apache-2.0
 os-ken<1.0.0;python_version=='2.7'  # Apache-2.0
 os-ken;python_version>='3.6'  # Apache-2.0
-os-vif!=1.8.0,!=1.12.0  # Apache-2.0
+os-vif!=1.8.0,!=1.12.0,<2.0.0;python_version=='2.7'  # Apache-2.0
+os-vif!=1.8.0,!=1.12.0;python_version>='3.6'  # Apache-2.0
 ovs  # Apache-2.0
 os-win<5.0.0;python_version=='2.7'  # Apache-2.0
 os-win;python_version>='3.6'  # Apache-2.0
