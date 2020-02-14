@@ -290,7 +290,8 @@ python-cinderclient!=4.0.0,<6.0.0;python_version=='2.7'  # Apache-2.0
 python-cinderclient!=4.0.0;python_version>='3.6'  # Apache-2.0
 python-cloudkittyclient<4.0.0;python_version=='2.7'  # Apache-2.0
 python-cloudkittyclient;python_version>='3.6'  # Apache-2.0
-python-congressclient<2000  # Apache-2.0
+python-congressclient<2.0.0;python_version=='2.7'  # Apache-2.0
+python-congressclient<2000;python_version>='3.6'  # Apache-2.0
 python-designateclient  # Apache-2.0
 python-freezerclient  # Apache-2.0
 python-heatclient  # Apache-2.0

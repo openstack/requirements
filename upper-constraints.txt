@@ -681,7 +681,9 @@ storops===1.2.3
 qpid-python===1.36.0.post1;python_version=='2.7'
 contextlib2===0.6.0.post1;python_version=='2.7'
 XStatic-Angular-lrdragndrop===1.0.2.4
-python-congressclient===1.13.0
+python-congressclient===1.13.0;python_version=='2.7'
+python-congressclient===2.0.0;python_version=='3.6'
+python-congressclient===2.0.0;python_version=='3.7'
 ovsdbapp===0.18.0;python_version=='2.7'
 ovsdbapp===1.0.0;python_version=='3.6'
 ovsdbapp===1.0.0;python_version=='3.7'
