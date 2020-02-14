@@ -112,7 +112,9 @@ ddt===1.2.2
 pyserial===3.4
 ipaddress===1.0.23;python_version=='2.7'
 infi.dtypes.wwn===0.1.1
-python-freezerclient===2.2.0
+python-freezerclient===2.2.0;python_version=='2.7'
+python-freezerclient===3.0.0;python_version=='3.6'
+python-freezerclient===3.0.0;python_version=='3.7'
 os-xenapi===0.3.4
 python-vitrageclient===3.0.0
 nosexcover===1.0.11
