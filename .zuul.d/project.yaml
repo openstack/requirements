@@ -39,7 +39,7 @@
             irrelevant-files:
               - ^(test-|)requirements.txt$
               - ^setup.cfg$
-        - tempest-full:
+        - tempest-full-py3:
             irrelevant-files:
               - ^(test-|)requirements.txt$
               - ^setup.cfg$
@@ -83,7 +83,7 @@
             irrelevant-files:
               - ^(test-|)requirements.txt$
               - ^setup.cfg$
-        - tempest-full:
+        - tempest-full-py3:
             irrelevant-files:
               - ^(test-|)requirements.txt$
               - ^setup.cfg$
