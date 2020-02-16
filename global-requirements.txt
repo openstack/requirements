@@ -333,7 +333,8 @@ python-smaugclient  # Apache-2.0
 python-solumclient<3.0.0;python_version=='2.7'  # Apache-2.0
 python-solumclient;python_version>='3.6'  # Apache-2.0
 python-swiftclient  # Apache-2.0
-python-tackerclient  # Apache-2.0
+python-tackerclient<1.0.0;python_version=='2.7'  # Apache-2.0
+python-tackerclient;python_version>='3.6'  # Apache-2.0
 python-troveclient  # Apache-2.0
 python-vitrageclient<4.0.0;python_version=='2.7'  # Apache-2.0
 python-vitrageclient;python_version>='3.6'  # Apache-2.0

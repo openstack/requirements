@@ -736,7 +736,9 @@ happybase===1.2.0;python_version=='2.7'
 marathon===0.12.0
 fasteners===0.14.1
 sortedcontainers===2.1.0
-python-tackerclient===0.16.1
+python-tackerclient===0.16.1;python_version=='2.7'
+python-tackerclient===1.0.0;python_version=='3.6'
+python-tackerclient===1.0.0;python_version=='3.7'
 python-heatclient===1.18.0
 kafka-python===1.4.7
 oslo.utils===3.42.1;python_version=='2.7'
