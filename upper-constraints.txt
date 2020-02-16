@@ -650,7 +650,9 @@ jaeger-client===4.3.0
 XStatic-Json2yaml===0.1.1.0
 boto===2.49.0
 functools32===3.2.3.post2;python_version=='2.7'
-os-vif===1.17.0
+os-vif===1.17.0;python_version=='2.7'
+os-vif===2.0.0;python_version=='3.6'
+os-vif===2.0.0;python_version=='3.7'
 mitba===1.1.1
 python-masakariclient===5.6.0
 Werkzeug===0.16.1
