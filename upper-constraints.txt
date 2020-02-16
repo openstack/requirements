@@ -552,7 +552,9 @@ dogpile.cache===0.9.0
 python-barbicanclient===4.10.0
 salt===2019.2.0
 api-object-schema===2.0.0
-tricircleclient===0.6.0
+tricircleclient===0.6.0;python_version=='2.7'
+tricircleclient===1.0.0;python_version=='3.6'
+tricircleclient===1.0.0;python_version=='3.7'
 WSME===0.9.3
 proboscis===1.2.6.0
 fortiosclient===0.0.3
