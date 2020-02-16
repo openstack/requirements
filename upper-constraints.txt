@@ -137,7 +137,7 @@ ply===3.11
 requests-toolbelt===0.9.1
 simplejson===3.17.0
 suds-jurko===0.6
-python-swiftclient===3.8.1
+python-swiftclient===3.9.0
 pyOpenSSL===19.1.0
 monasca-common===3.0.0
 zeroconf===0.19.1;python_version=='2.7'
