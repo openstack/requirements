@@ -466,7 +466,8 @@ keyring;python_version>='3.4'  # MIT/PSF
 ldappool  # MPL
 # Do not make mock conditional on Python version: we depend on newer code than
 # in [most] releases of the Python std library.
-mock  # BSD
+# https://github.com/testing-cabal/mock/issues/487  for 4.0.[0-1] blacklist
+mock!=4.0.0,!=4.0.1  # BSD
 mox  # Apache-2.0
 mox3  # Apache-2.0
 nodeenv  # BSD
