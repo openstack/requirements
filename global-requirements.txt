@@ -288,7 +288,8 @@ gnocchiclient  # Apache-2.0
 tricircleclient<1.0.0;python_version=='2.7'  # Apache-2.0
 tricircleclient;python_version>='3.6'  # Apache-2.0
 python-barbicanclient  # Apache-2.0
-python-blazarclient  # Apache-2.0
+python-blazarclient<3.0.0;python_version=='2.7'  # Apache-2.0
+python-blazarclient;python_version>='3.6'  # Apache-2.0
 python-ceilometerclient  # Apache-2.0
 python-cinderclient!=4.0.0,<6.0.0;python_version=='2.7'  # Apache-2.0
 python-cinderclient!=4.0.0;python_version>='3.6'  # Apache-2.0
