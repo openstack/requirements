@@ -175,6 +175,8 @@ oslo.context;python_version>='3.0'  # Apache-2.0
 oslo.db  # Apache-2.0
 oslo.i18n<4.0.0;python_version=='2.7'  # Apache-2.0
 oslo.i18n;python_version>='3.6'  # Apache-2.0
+oslo.limit<1.0.0;python_version=='2.7'  # Apache-2.0
+oslo.limit;python_version>='3.0'  # Apache-2.0
 oslo.log<4.0.0;python_version<'3.0'  # Apache-2.0
 oslo.log;python_version>='3.0'  # Apache-2.0
 oslo.messaging!=9.0.0  # Apache-2.0
