@@ -360,7 +360,7 @@ crc16===0.1.1
 protobuf===3.7.0
 os-dpm===1.1.0
 sushy===1.8.2
-python-neutronclient===6.12.0
+python-neutronclient===6.12.1
 pika===0.13.0
 oslo.cache===1.33.3
 WebTest===2.0.33
