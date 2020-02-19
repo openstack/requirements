@@ -253,6 +253,7 @@ pymongo!=3.1  # Apache-2.0
 PyMySQL  # MIT License
 python-etcd  # MIT License
 pywbem  # LGPLv2.1+
+pywinrm  # MIT
 salt!=2019.2.1,!=2019.2.2  # Apache-2.0
 storpool  # Apache-2.0
 storpool.spopenstack  # Apache-2.0
