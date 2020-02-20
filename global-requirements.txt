@@ -301,7 +301,8 @@ python-congressclient<2000;python_version>='3.6'  # Apache-2.0
 python-designateclient  # Apache-2.0
 python-freezerclient<3.0.0;python_version=='2.7'  # Apache-2.0
 python-freezerclient;python_version>='3.6'  # Apache-2.0
-python-heatclient  # Apache-2.0
+python-heatclient<2.0.0;python_version=='2.7'  # Apache-2.0
+python-heatclient;python_version>='3.6'  # Apache-2.0
 python-hnvclient  # Apache-2.0
 python-glanceclient  # Apache-2.0
 python-glareclient  # Apache-2.0
