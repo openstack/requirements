@@ -22,7 +22,8 @@
         - cross-cinder-py36
         - cross-glance-py36
         - cross-horizon-py36
-        - cross-horizon-npm
+        - cross-horizon-npm:
+            voting: false
         - cross-keystone-py36
         - cross-neutron-py36
         - cross-nova-py36
@@ -64,7 +65,6 @@
         - cross-cinder-py36
         - cross-glance-py36
         - cross-horizon-py36
-        - cross-horizon-npm
         - cross-keystone-py36
         - cross-neutron-py36
         - cross-nova-py36:
