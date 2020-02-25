@@ -542,8 +542,8 @@ Sphinx===1.8.5;python_version=='2.7'
 Sphinx===2.4.3;python_version=='3.6'
 Sphinx===2.4.3;python_version=='3.7'
 oslo.config===7.0.0;python_version=='2.7'
-oslo.config===8.0.0;python_version=='3.6'
-oslo.config===8.0.0;python_version=='3.7'
+oslo.config===8.0.1;python_version=='3.6'
+oslo.config===8.0.1;python_version=='3.7'
 tempest===23.0.0
 django-floppyforms===1.8.0
 openstackdocstheme===1.31.2;python_version=='2.7'
