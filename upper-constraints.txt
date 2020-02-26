@@ -427,8 +427,8 @@ sphinxcontrib-svg2pdfconverter===1.0.1;python_version=='3.6'
 sphinxcontrib-svg2pdfconverter===1.0.1;python_version=='3.7'
 murano-pkg-check===0.3.0
 oslo.vmware===2.35.0;python_version=='2.7'
-oslo.vmware===3.0.0;python_version=='3.6'
-oslo.vmware===3.0.0;python_version=='3.7'
+oslo.vmware===3.1.0;python_version=='3.6'
+oslo.vmware===3.1.0;python_version=='3.7'
 sqlalchemy-migrate===0.13.0
 gitdb===4.0.1;python_version=='3.6'
 gitdb===4.0.1;python_version=='3.7'
