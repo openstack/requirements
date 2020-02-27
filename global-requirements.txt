@@ -580,3 +580,9 @@ Yappi!=0.98,!=0.99  # MIT
 # NOTE(yoctozepto): To avoid repeated breakage (this is a dep of deps)
 zipp<2;python_version<'3.6'  # MIT
 zipp;python_version>='3.6'  # MIT
+
+# NOTE(prometheanfire): python3 caps, are not approved for use in OpenStack
+gitdb<4.0.0;python_version=='2.7'  # BSD
+gitdb;python_version>='3.4'  # BSD
+gitdb2<3.0.0;python_version=='2.7'  # BSD
+gitdb2;python_version>='3.4'  # BSD
