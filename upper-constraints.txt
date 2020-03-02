@@ -162,7 +162,7 @@ mypy-extensions===0.4.3;python_version=='3.6'
 mypy-extensions===0.4.3;python_version=='3.7'
 rsd-lib===1.2.0
 XStatic-Jasmine===2.4.1.2
-python-glanceclient===2.17.0
+python-glanceclient===3.0.0
 pyinotify===0.9.6
 debtcollector===1.22.0;python_version=='2.7'
 debtcollector===2.0.0;python_version=='3.6'
