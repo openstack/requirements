@@ -219,8 +219,8 @@ openstack-doc-tools===3.0.0;python_version=='3.6'
 openstack-doc-tools===3.0.0;python_version=='3.7'
 frozendict===1.2
 oslo.messaging===10.5.0;python_version=='2.7'
-oslo.messaging===11.0.0;python_version=='3.6'
-oslo.messaging===11.0.0;python_version=='3.7'
+oslo.messaging===12.0.0;python_version=='3.6'
+oslo.messaging===12.0.0;python_version=='3.7'
 jira===2.0.0
 extras===1.0.0
 PyJWT===1.7.1
