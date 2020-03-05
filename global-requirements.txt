@@ -166,7 +166,7 @@ openstackdocstheme  # Apache-2.0
 osc-lib  # Apache-2.0
 osc-placement  # Apache-2.0
 oslo.cache!=1.31.1,<2.0.0;python_version<'3.0'  # Apache-2.0
-oslo.cache!=1.31.1;python_version>='3.0'  # Apache-2.0
+oslo.cache!=1.31.1,!=2.1.0;python_version>='3.0'  # Apache-2.0
 oslo.config!=4.3.0,!=4.4.0,<8.0.0;python_version<'3.0'  # Apache-2.0
 oslo.config!=4.3.0,!=4.4.0;python_version>='3.0'  # Apache-2.0
 oslo.concurrency<4.0.0;python_version<'3.0'  # Apache-2.0
