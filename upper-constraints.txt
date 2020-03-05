@@ -645,8 +645,8 @@ XStatic-Angular-FileUpload===12.0.4.0
 python-openstackclient===5.0.0
 pyzmq===19.0.0
 oslo.db===6.0.0;python_version=='2.7'
-oslo.db===7.0.0;python_version=='3.6'
-oslo.db===7.0.0;python_version=='3.7'
+oslo.db===8.0.0;python_version=='3.6'
+oslo.db===8.0.0;python_version=='3.7'
 simplegeneric===0.8.1
 python-pcre===0.7
 yappi===1.2.3
