@@ -134,8 +134,8 @@ networkx===2.2;python_version=='2.7'
 networkx===2.4;python_version=='3.6'
 networkx===2.4;python_version=='3.7'
 bashate===0.6.0;python_version=='2.7'
-bashate===1.0.0;python_version=='3.6'
-bashate===1.0.0;python_version=='3.7'
+bashate===2.0.0;python_version=='3.6'
+bashate===2.0.0;python_version=='3.7'
 XStatic-Angular===1.5.8.0
 pyngus===2.3.0
 Pillow===6.2.2;python_version=='2.7'
