@@ -153,8 +153,8 @@ python-swiftclient===3.9.0
 pyOpenSSL===19.1.0
 monasca-common===3.0.0
 zeroconf===0.19.1;python_version=='2.7'
-zeroconf===0.24.4;python_version=='3.6'
-zeroconf===0.24.4;python_version=='3.7'
+zeroconf===0.24.5;python_version=='3.6'
+zeroconf===0.24.5;python_version=='3.7'
 scipy===1.2.3;python_version=='2.7'
 scipy===1.4.1;python_version=='3.6'
 scipy===1.4.1;python_version=='3.7'
@@ -268,7 +268,7 @@ mox3===1.0.0;python_version=='3.7'
 gunicorn===19.10.0;python_version=='2.7'
 gunicorn===20.0.4;python_version=='3.6'
 gunicorn===20.0.4;python_version=='3.7'
-storpool===5.1.0
+storpool===5.3.1
 textfsm===1.1.0
 python-3parclient===4.2.11
 unittest2===1.1.0
@@ -391,7 +391,7 @@ os-ken===0.4.1;python_version=='2.7'
 os-ken===1.0.0;python_version=='3.6'
 os-ken===1.0.0;python_version=='3.7'
 pycrypto===2.6.1
-ujson===1.35
+ujson===2.0.1
 selenium===3.141.0
 python-glareclient===0.5.3
 mypy===0.761;python_version=='3.6'
@@ -412,7 +412,7 @@ retrying===1.3.3
 shade===1.33.0
 pathlib2===2.3.5
 pydotplus===2.0.2
-boto3===1.12.15
+boto3===1.12.16
 flask-oslolog===0.1
 jeepney===0.4.3;python_version=='3.6'
 jeepney===0.4.3;python_version=='3.7'
@@ -589,7 +589,7 @@ oslo.upgradecheck===1.0.0;python_version=='3.6'
 oslo.upgradecheck===1.0.0;python_version=='3.7'
 stevedore===1.32.0
 pywinrm===0.4.1
-botocore===1.15.15
+botocore===1.15.16
 xmltodict===0.12.0
 pyasn1===0.4.8
 oslo.rootwrap===5.17.1;python_version=='2.7'
@@ -622,7 +622,7 @@ python-memcached===1.59
 openstacksdk===0.41.0
 six===1.14.0
 dulwich===0.19.15
-dfs-sdk===1.2.25
+dfs-sdk===1.2.26
 sentinels===1.0.0
 kombu===4.6.8
 distro===1.4.0
@@ -654,7 +654,7 @@ dataclasses===0.7;python_version=='3.6'
 dataclasses===0.7;python_version=='3.7'
 abclient===0.2.3
 pymemcache===3.0.0
-wrapt===1.12.0
+wrapt===1.12.1
 oslo.privsep===1.34.0;python_version=='2.7'
 oslo.privsep===2.0.0;python_version=='3.6'
 oslo.privsep===2.0.0;python_version=='3.7'
@@ -707,7 +707,7 @@ sphinxcontrib-qthelp===1.0.3;python_version=='3.7'
 keystoneauth1===3.18.0
 statsd===3.3.0
 XenAPI===2.14
-importlib-resources===1.2.0
+importlib-resources===1.3.1
 python-keystoneclient===3.22.0
 ceilometer===13.0.0
 demjson===2.2.4
@@ -790,7 +790,7 @@ monasca-statsd===2.0.0
 python-dateutil===2.8.1
 typing-extensions===3.7.4.1;python_version=='3.6'
 typing-extensions===3.7.4.1;python_version=='3.7'
-virtualenv===20.0.8
+virtualenv===20.0.9
 colorama===0.4.3
 confetti===2.5.3
 ironic-lib===4.0.0
