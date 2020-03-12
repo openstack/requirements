@@ -816,3 +816,9 @@ sphinxcontrib-applehelp===1.0.2;python_version=='3.7'
 scikit-learn===0.20.0;python_version=='2.7'
 scikit-learn===0.22.2.post1;python_version=='3.6'
 scikit-learn===0.22.2.post1;python_version=='3.7'
+XStatic-Dagre===0.6.4.0
+XStatic-Dagre-D3===0.4.17.0
+XStatic-Graphlib===1.0.7.0
+XStatic-lodash===4.16.4.1
+XStatic-moment===2.8.4.1
+XStatic-Moment-Timezone===0.5.22.0
