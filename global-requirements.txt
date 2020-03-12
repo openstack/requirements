@@ -255,6 +255,9 @@ pylxd  # Apache-2.0
 pymemcache!=1.3.0  # Apache 2.0 License
 pymongo!=3.1  # Apache-2.0
 PyMySQL  # MIT License
+pytest  # MIT
+pytest-django  # BSD (3 clause)
+pytest-html  #MPL-2.0
 python-etcd  # MIT License
 pywbem  # LGPLv2.1+
 pywinrm  # MIT
