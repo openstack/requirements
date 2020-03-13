@@ -207,7 +207,7 @@ arrow===0.15.5
 semantic-version===2.8.4
 virtualbmc===2.0.0
 deprecation===2.0.7
-SQLAlchemy===1.3.14
+SQLAlchemy===1.3.15
 pyroute2===0.5.9
 google-auth===1.11.2
 kazoo===2.6.1
@@ -339,7 +339,7 @@ termcolor===1.1.0
 joblib===0.14.1;python_version=='3.6'
 joblib===0.14.1;python_version=='3.7'
 hiredis===1.0.1
-google-api-python-client===1.7.11
+google-api-python-client===1.7.12
 castellan===1.4.0;python_version=='2.7'
 castellan===2.0.0;python_version=='3.6'
 castellan===2.0.0;python_version=='3.7'
@@ -411,7 +411,7 @@ retrying===1.3.3
 shade===1.33.0
 pathlib2===2.3.5
 pydotplus===2.0.2
-boto3===1.12.18
+boto3===1.12.19
 flask-oslolog===0.1
 jeepney===0.4.3;python_version=='3.6'
 jeepney===0.4.3;python_version=='3.7'
@@ -588,7 +588,7 @@ oslo.upgradecheck===1.0.0;python_version=='3.6'
 oslo.upgradecheck===1.0.0;python_version=='3.7'
 stevedore===1.32.0
 pywinrm===0.4.1
-botocore===1.15.18
+botocore===1.15.19
 xmltodict===0.12.0
 pyasn1===0.4.8
 oslo.rootwrap===5.17.1;python_version=='2.7'
