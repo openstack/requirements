@@ -47,8 +47,8 @@ vintage===0.4.1
 python-kingbirdclient===0.2.1
 setproctitle===1.1.10
 pytest===4.6.9;python_version=='2.7'
-pytest===5.3.5;python_version=='3.6'
-pytest===5.3.5;python_version=='3.7'
+pytest===5.4.1;python_version=='3.6'
+pytest===5.4.1;python_version=='3.7'
 python-etcd===0.4.5
 raven===6.10.0
 cursive===0.2.2
@@ -146,6 +146,7 @@ python-mimeparse===1.6.0
 tripleo-common===12.1.0
 Tempita===0.5.2
 ply===3.11
+google-api-core===1.16.0
 requests-toolbelt===0.9.1
 simplejson===3.17.0
 suds-jurko===0.6
@@ -162,6 +163,7 @@ mypy-extensions===0.4.3;python_version=='3.6'
 mypy-extensions===0.4.3;python_version=='3.7'
 rsd-lib===1.2.0
 XStatic-Jasmine===2.4.1.2
+googleapis-common-protos===1.51.0
 python-glanceclient===3.0.0
 pyinotify===0.9.6
 debtcollector===1.22.0;python_version=='2.7'
@@ -208,9 +210,9 @@ semantic-version===2.8.4
 virtualbmc===2.0.0
 deprecation===2.0.7
 SQLAlchemy===1.3.15
-pyroute2===0.5.9
-google-auth===1.11.2
-kazoo===2.6.1
+pyroute2===0.5.10
+google-auth===1.11.3
+kazoo===2.7.0
 XStatic-roboto-fontface===0.5.0.0
 pyudev===0.22.0
 eventlet===0.25.1
@@ -309,6 +311,9 @@ mpmath===1.1.0
 django-debreach===2.0.1
 sphinx-feature-classification===1.0.0
 XStatic-JQuery-Migrate===1.2.1.1
+pytest-html===1.22.1;python_version=='2.7'
+pytest-html===2.1.0;python_version=='3.6'
+pytest-html===2.1.0;python_version=='3.7'
 appdirs===1.4.3
 tinyrpc===1.0.4
 M2Crypto===0.35.2;python_version=='2.7'
@@ -339,7 +344,7 @@ termcolor===1.1.0
 joblib===0.14.1;python_version=='3.6'
 joblib===0.14.1;python_version=='3.7'
 hiredis===1.0.1
-google-api-python-client===1.7.12
+google-api-python-client===1.8.0
 castellan===1.4.0;python_version=='2.7'
 castellan===2.0.0;python_version=='3.6'
 castellan===2.0.0;python_version=='3.7'
@@ -411,7 +416,7 @@ retrying===1.3.3
 shade===1.33.0
 pathlib2===2.3.5
 pydotplus===2.0.2
-boto3===1.12.19
+boto3===1.12.21
 flask-oslolog===0.1
 jeepney===0.4.3;python_version=='3.6'
 jeepney===0.4.3;python_version=='3.7'
@@ -533,8 +538,8 @@ PyNaCl===1.3.0
 osc-lib===2.0.0
 python-consul===1.1.0
 Faker===3.0.1;python_version=='2.7'
-Faker===4.0.1;python_version=='3.6'
-Faker===4.0.1;python_version=='3.7'
+Faker===4.0.2;python_version=='3.6'
+Faker===4.0.2;python_version=='3.7'
 more-itertools===5.0.0;python_version=='2.7'
 more-itertools===8.2.0;python_version=='3.6'
 more-itertools===8.2.0;python_version=='3.7'
@@ -565,11 +570,12 @@ python-solumclient===2.9.0;python_version=='2.7'
 python-solumclient===3.0.0;python_version=='3.6'
 python-solumclient===3.0.0;python_version=='3.7'
 PyMySQL===0.9.3
-kubernetes===10.0.1
+kubernetes===11.0.0
 httplib2===0.17.0
 bottle===0.12.18
 betamax===0.8.1
 construct===2.8.22
+pytest-metadata===1.8.0
 pyparsing===2.4.6
 geomet===0.1.2
 distlib===0.3.0
@@ -588,7 +594,7 @@ oslo.upgradecheck===1.0.0;python_version=='3.6'
 oslo.upgradecheck===1.0.0;python_version=='3.7'
 stevedore===1.32.0
 pywinrm===0.4.1
-botocore===1.15.19
+botocore===1.15.21
 xmltodict===0.12.0
 pyasn1===0.4.8
 oslo.rootwrap===5.17.1;python_version=='2.7'
@@ -675,6 +681,7 @@ tenacity===6.1.0
 python-designateclient===3.1.0
 future===0.18.2
 Paste===3.4.0
+pytest-django===3.8.0
 jaeger-client===4.3.0
 XStatic-Json2yaml===0.1.1.0
 boto===2.49.0
@@ -711,7 +718,7 @@ importlib-resources===1.3.1
 python-keystoneclient===3.22.0
 ceilometer===13.1.0
 demjson===2.2.4
-diskimage-builder===2.34.0
+diskimage-builder===2.34.1
 heat-translator===1.5.0
 python-magnumclient===2.17.0
 docker===4.2.0
@@ -805,6 +812,3 @@ sphinxcontrib-applehelp===1.0.2;python_version=='3.7'
 scikit-learn===0.20.0;python_version=='2.7'
 scikit-learn===0.22.2.post1;python_version=='3.6'
 scikit-learn===0.22.2.post1;python_version=='3.7'
-pytest===5.3.5
-pytest-django===3.8.0
-pytest-html===2.0.1
