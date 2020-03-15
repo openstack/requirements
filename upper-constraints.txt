@@ -617,7 +617,9 @@ jsonpatch===1.25
 python-daemon===2.2.4
 typed-ast===1.4.1;python_version=='3.6'
 typed-ast===1.4.1;python_version=='3.7'
-os-testr===1.1.0
+os-testr===1.1.0;python_version=='2.7'
+os-testr===2.0.0;python_version=='3.6'
+os-testr===2.0.0;python_version=='3.7'
 cotyledon===1.7.3
 stomp.py===4.1.23;python_version=='2.7'
 stomp.py===6.0.0;python_version=='3.6'

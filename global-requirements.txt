@@ -211,7 +211,8 @@ os-net-config  # Apache-2.0
 os-refresh-config  # Apache-2.0
 os-resource-classes  # Apache-2.0
 os-service-types  # Apache-2.0
-os-testr  # Apache-2.0
+os-testr<2.0.0;python_version=='2.7'  # Apache-2.0
+os-testr;python_version>='3.6'  # Apache-2.0
 os-traits  # Apache-2.0
 os-ken<1.0.0;python_version=='2.7'  # Apache-2.0
 os-ken;python_version>='3.6'  # Apache-2.0
