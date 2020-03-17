@@ -111,6 +111,7 @@ sphinxcontrib-websupport===1.1.2;python_version=='2.7'
 Mako===1.1.2
 XStatic-angular-ui-router===0.3.1.2
 pyScss===1.3.4
+pyScss2===1.4.0
 thriftpy2===0.4.10;python_version=='2.7'
 sphinxcontrib-htmlhelp===1.0.3;python_version=='3.6'
 sphinxcontrib-htmlhelp===1.0.3;python_version=='3.7'
@@ -389,6 +390,7 @@ oslo.middleware===4.0.1;python_version=='3.6'
 oslo.middleware===4.0.1;python_version=='3.7'
 XStatic-mdi===1.6.50.2
 django-pyscss===2.0.2
+django-pyscss2===3.0.0
 uritemplate===3.0.1
 docutils===0.15.2
 notifier===1.0.3
