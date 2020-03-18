@@ -395,6 +395,7 @@ setproctitle  # BSD
 SQLAlchemy!=1.1.5,!=1.1.6,!=1.1.7,!=1.1.8  # MIT
 SQLAlchemy-Utils  # BSD License
 sqlalchemy-migrate  # Apache-2.0
+sqlalchemy-filters  # Apache-2.0
 sqlparse  # BSD
 stevedore  # Apache-2.0
 storops  # Apache-2.0
