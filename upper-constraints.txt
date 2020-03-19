@@ -203,8 +203,8 @@ jsonpath-rw===1.4.0
 prettytable===0.7.2
 vine===1.3.0
 taskflow===3.8.0;python_version=='2.7'
-taskflow===4.0.0;python_version=='3.6'
-taskflow===4.0.0;python_version=='3.7'
+taskflow===4.1.0;python_version=='3.6'
+taskflow===4.1.0;python_version=='3.7'
 traceback2===1.4.0
 arrow===0.15.5
 semantic-version===2.8.4
