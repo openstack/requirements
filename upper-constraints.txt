@@ -144,7 +144,7 @@ Pillow===7.0.0;python_version=='3.6'
 Pillow===7.0.0;python_version=='3.7'
 zuul-sphinx===0.4.1
 python-mimeparse===1.6.0
-tripleo-common===12.1.0
+tripleo-common===12.2.0
 Tempita===0.5.2
 ply===3.11
 google-api-core===1.16.0
