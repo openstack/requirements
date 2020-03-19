@@ -502,7 +502,7 @@ netifaces===0.10.9
 cachetools===3.1.0
 ws4py===0.5.1
 backports-abc===0.5;python_version=='2.7'
-keystoneauth1===3.13.1
+keystoneauth1===3.13.2
 statsd===3.3.0
 XenAPI===1.2
 python-keystoneclient===3.19.0
