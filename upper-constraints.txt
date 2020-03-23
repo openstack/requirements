@@ -110,7 +110,7 @@ pysnmp===4.4.12
 sphinxcontrib-websupport===1.1.2;python_version=='2.7'
 Mako===1.1.2
 XStatic-angular-ui-router===0.3.1.2
-pyScss===1.3.4
+pyScss===1.3.6
 thriftpy2===0.4.11;python_version=='2.7'
 sphinxcontrib-htmlhelp===1.0.3;python_version=='3.6'
 sphinxcontrib-htmlhelp===1.0.3;python_version=='3.7'
