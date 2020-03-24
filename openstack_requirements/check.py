@@ -207,7 +207,8 @@ def _validate_one(name, reqs, blacklist, global_reqs, allow_3_only=False):
         if count != len(global_reqs[name]):
             if (allow_3_only and
                     count >= len(_get_python3_reqs(global_reqs[name]))):
-                print("WARNING: Package '%s%s' is only tracking python 3 "
+                print("WARNING (probably OK for Ussuri and later): "
+                      "Package '%s%s' is only tracking python 3 "
                       "requirements" % (
                         name,
                         ('[%s]' % extra) if extra else ''))
