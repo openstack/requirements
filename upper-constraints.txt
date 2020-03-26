@@ -693,3 +693,8 @@ scikit-learn===0.21.3;python_version=='3.5'
 scikit-learn===0.21.3;python_version=='3.6'
 scikit-learn===0.21.3;python_version=='3.7'
 horizon===16.1.0
+Pygments===2.5.2;python_version=='2.7'
+Pygments===2.3.1;python_version=='3.4'
+Pygments===2.6.1;python_version=='3.5'
+Pygments===2.6.1;python_version=='3.6'
+Pygments===2.6.1;python_version=='3.7'
