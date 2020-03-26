@@ -539,3 +539,6 @@ actdiag===0.5.4
 sysv-ipc===1.0.0
 scikit-learn===0.19.2
 horizon===14.1.0
+Pygments===2.5.2;python_version=='2.7'
+Pygments===2.3.1;python_version=='3.4'
+Pygments===2.6.1;python_version=='3.5'
