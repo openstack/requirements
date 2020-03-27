@@ -635,7 +635,7 @@ stomp.py===6.0.0;python_version=='3.7'
 xattr===0.9.7
 systemd-python===234
 python-memcached===1.59
-openstacksdk===0.43.0
+openstacksdk===0.45.0
 six===1.14.0
 dulwich===0.19.15
 dfs-sdk===1.2.26
