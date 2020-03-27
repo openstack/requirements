@@ -302,7 +302,7 @@ sphinxcontrib-serializinghtml===1.1.4;python_version=='3.7'
 requests===2.23.0
 snowballstemmer===2.0.0
 Jinja2===2.11.1
-XStatic-Bootstrap-SCSS===3.3.7.1
+XStatic-Bootstrap-SCSS===3.4.1.0
 pyzabbix===0.7.5
 ptyprocess===0.6.0
 threadloop===1.0.2
