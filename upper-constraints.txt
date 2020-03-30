@@ -430,7 +430,9 @@ boto3===1.12.31
 flask-oslolog===0.1
 jeepney===0.4.3;python_version=='3.6'
 jeepney===0.4.3;python_version=='3.7'
-stestr===3.0.0
+stestr===2.6.0;python_version=='2.7'
+stestr===3.0.1;python_version=='3.6'
+stestr===3.0.1;python_version=='3.7'
 singledispatch===3.4.0.3;python_version=='2.7'
 oslo.serialization===2.29.2;python_version=='2.7'
 oslo.serialization===3.1.0;python_version=='3.6'
