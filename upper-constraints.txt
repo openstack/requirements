@@ -769,7 +769,7 @@ python-blazarclient===2.2.1;python_version=='2.7'
 python-blazarclient===3.0.0;python_version=='3.6'
 python-blazarclient===3.0.0;python_version=='3.7'
 alembic===1.4.2
-glance-store===1.1.0
+glance-store===2.0.0
 sphinxcontrib-programoutput===0.16
 storpool.spopenstack===2.2.1
 sphinx-testing===1.0.1
