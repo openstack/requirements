@@ -174,7 +174,7 @@ debtcollector===2.0.0;python_version=='3.6'
 debtcollector===2.0.0;python_version=='3.7'
 requests-unixsocket===0.2.0
 croniter===0.3.31
-octavia-lib===1.5.0
+octavia-lib===2.0.0
 python-watcherclient===2.5.0
 MarkupSafe===1.1.1
 pypowervm===1.1.24
