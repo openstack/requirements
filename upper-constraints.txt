@@ -732,7 +732,7 @@ ws4py===0.5.1
 backports-abc===0.5;python_version=='2.7'
 sphinxcontrib-qthelp===1.0.3;python_version=='3.6'
 sphinxcontrib-qthelp===1.0.3;python_version=='3.7'
-keystoneauth1===3.18.0
+keystoneauth1===4.0.0
 statsd===3.3.0
 XenAPI===2.14
 importlib-resources===1.4.0
