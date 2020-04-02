@@ -822,7 +822,7 @@ typing-extensions===3.7.4.1;python_version=='3.7'
 virtualenv===20.0.15
 colorama===0.4.3
 confetti===2.5.3
-ironic-lib===4.1.0
+ironic-lib===4.2.0
 pytz===2019.3
 XStatic-D3===3.5.17.0
 actdiag===0.5.4;python_version=='2.7'
