@@ -740,7 +740,7 @@ python-keystoneclient===3.22.0
 ceilometer===13.1.0
 demjson===2.2.4
 diskimage-builder===2.35.0
-heat-translator===1.5.0
+heat-translator===2.0.0
 python-magnumclient===2.17.0
 docker===4.2.0
 storops===1.2.3
