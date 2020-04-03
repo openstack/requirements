@@ -751,8 +751,8 @@ python-congressclient===1.13.0;python_version=='2.7'
 python-congressclient===2.0.0;python_version=='3.6'
 python-congressclient===2.0.0;python_version=='3.7'
 ovsdbapp===0.18.0;python_version=='2.7'
-ovsdbapp===1.0.0;python_version=='3.6'
-ovsdbapp===1.0.0;python_version=='3.7'
+ovsdbapp===1.1.0;python_version=='3.6'
+ovsdbapp===1.1.0;python_version=='3.7'
 aniso8601===8.0.0
 rjsmin===1.1.0
 icalendar===4.0.5
