@@ -411,8 +411,8 @@ python-glareclient===0.5.3
 mypy===0.770;python_version=='3.6'
 mypy===0.770;python_version=='3.7'
 mistral-lib===1.4.0;python_version=='2.7'
-mistral-lib===2.0.0;python_version=='3.6'
-mistral-lib===2.0.0;python_version=='3.7'
+mistral-lib===2.1.0;python_version=='3.6'
+mistral-lib===2.1.0;python_version=='3.7'
 dogtag-pki===10.7.4.1
 XStatic-Angular-UUID===0.0.4.0
 purestorage===1.18.1
