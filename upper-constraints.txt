@@ -364,7 +364,7 @@ enmerkar===0.7.1
 webcolors===1.10;python_version=='2.7'
 webcolors===1.11.1;python_version=='3.6'
 webcolors===1.11.1;python_version=='3.7'
-aodhclient===2.0.0
+aodhclient===2.0.1
 autobahn===19.11.2;python_version=='2.7'
 autobahn===20.4.1;python_version=='3.6'
 autobahn===20.4.1;python_version=='3.7'
