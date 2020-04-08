@@ -463,8 +463,8 @@ python-monascaclient===2.0.0;python_version=='3.7'
 ldap3===2.7
 requests-ntlm===1.1.0
 automaton===1.17.0;python_version=='2.7'
-automaton===2.0.0;python_version=='3.6'
-automaton===2.0.0;python_version=='3.7'
+automaton===2.0.1;python_version=='3.6'
+automaton===2.0.1;python_version=='3.7'
 os-service-types===1.7.0
 keyring===18.0.1;python_version=='2.7'
 keyring===21.2.0;python_version=='3.6'
