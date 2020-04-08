@@ -747,7 +747,7 @@ diskimage-builder===2.35.0
 heat-translator===1.5.0;python_version=='2.7'
 heat-translator===2.0.0;python_version=='3.6'
 heat-translator===2.0.0;python_version=='3.7'
-python-magnumclient===2.17.0
+python-magnumclient===3.0.0
 docker===4.2.0
 storops===1.2.4
 qpid-python===1.36.0.post1;python_version=='2.7'
