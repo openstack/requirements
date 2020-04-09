@@ -505,7 +505,7 @@ python-cinderclient===6.0.0;python_version=='3.7'
 keystonemiddleware===9.0.0
 django-formtools===2.2
 python-ceilometerclient===2.9.0
-XStatic-Spin===1.2.5.2
+XStatic-Spin===1.2.5.3
 tap-as-a-service===3.0.0
 os-traits===2.2.0;python_version=='2.7'
 os-traits===2.3.0;python_version=='3.6'
