@@ -529,7 +529,7 @@ crc16===0.1.1
 protobuf===3.11.3
 os-dpm===1.1.0
 sushy===3.2.0
-python-neutronclient===7.1.0
+python-neutronclient===7.1.1
 pika===1.1.0
 oslo.cache===1.38.1;python_version=='2.7'
 oslo.cache===2.3.0;python_version=='3.6'
