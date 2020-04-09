@@ -667,8 +667,8 @@ GitPython===2.1.11;python_version=='2.7'
 GitPython===3.1.0;python_version=='3.6'
 GitPython===3.1.0;python_version=='3.7'
 python-ironicclient===3.1.1;python_version=='2.7'
-python-ironicclient===4.0.0;python_version=='3.6'
-python-ironicclient===4.0.0;python_version=='3.7'
+python-ironicclient===4.1.0;python_version=='3.6'
+python-ironicclient===4.1.0;python_version=='3.7'
 XStatic===1.0.2
 XStatic-Angular-FileUpload===12.0.4.0
 python-openstackclient===5.2.0
