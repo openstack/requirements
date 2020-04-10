@@ -488,7 +488,7 @@ python-qinlingclient===5.0.1;python_version=='3.6'
 python-qinlingclient===5.0.1;python_version=='3.7'
 elasticsearch===2.4.1
 django-nose===1.4.6
-XStatic-JQuery.TableSorter===2.14.5.1
+XStatic-JQuery.TableSorter===2.14.5.2
 pifpaf===2.4.0
 pysmi===0.3.4
 blockdiag===1.5.4;python_version=='2.7'
