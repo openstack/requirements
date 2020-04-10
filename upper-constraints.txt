@@ -514,7 +514,7 @@ SecretStorage===2.3.1;python_version=='2.7'
 SecretStorage===3.1.2;python_version=='3.6'
 SecretStorage===3.1.2;python_version=='3.7'
 opentracing===2.3.0
-XStatic-Rickshaw===1.5.0.0
+XStatic-Rickshaw===1.5.1.0
 iso8601===0.1.12
 tooz===1.67.2;python_version=='2.7'
 tooz===2.3.0;python_version=='3.6'
