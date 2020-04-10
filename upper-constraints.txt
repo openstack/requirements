@@ -177,7 +177,7 @@ croniter===0.3.31
 octavia-lib===1.5.0;python_version=='2.7'
 octavia-lib===2.0.0;python_version=='3.6'
 octavia-lib===2.0.0;python_version=='3.7'
-python-watcherclient===2.5.0
+python-watcherclient===3.0.0
 MarkupSafe===1.1.1
 pypowervm===1.1.24
 doc8===0.8.0
