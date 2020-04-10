@@ -315,7 +315,7 @@ ptyprocess===0.6.0
 threadloop===1.0.2
 amqp===2.5.2
 websockify===0.9.0
-XStatic-JQuery.quicksearch===2.0.3.1
+XStatic-JQuery.quicksearch===2.0.3.2
 mpmath===1.1.0
 django-debreach===2.0.1
 sphinx-feature-classification===1.0.1
