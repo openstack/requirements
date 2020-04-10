@@ -715,7 +715,7 @@ os-vif===1.17.0;python_version=='2.7'
 os-vif===2.0.0;python_version=='3.6'
 os-vif===2.0.0;python_version=='3.7'
 mitba===1.1.1
-python-masakariclient===5.6.0
+python-masakariclient===6.0.0
 Werkzeug===1.0.1
 backports.functools-lru-cache===1.6.1;python_version=='2.7'
 pyasn1-modules===0.2.8
