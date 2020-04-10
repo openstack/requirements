@@ -726,7 +726,7 @@ python-smaugclient===0.0.8
 python-troveclient===3.3.1
 etcd3===0.12.0
 cachez===0.1.2
-XStatic-Bootstrap-Datepicker===1.3.1.0
+XStatic-Bootstrap-Datepicker===1.4.0.0
 CouchDB===1.2
 netifaces===0.10.9
 cachetools===3.1.1;python_version=='2.7'
