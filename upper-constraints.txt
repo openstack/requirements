@@ -198,8 +198,8 @@ rsd-lib===1.2.0
 XStatic-Jasmine===2.4.1.2
 googleapis-common-protos===1.51.0
 python-glanceclient===3.0.0;python_version=='2.7'
-python-glanceclient===3.1.0;python_version=='3.6'
-python-glanceclient===3.1.0;python_version=='3.7'
+python-glanceclient===3.1.1;python_version=='3.6'
+python-glanceclient===3.1.1;python_version=='3.7'
 python-glanceclient===3.1.0;python_version=='3.8'
 pyinotify===0.9.6
 debtcollector===1.22.0;python_version=='2.7'
