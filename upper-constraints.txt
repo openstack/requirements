@@ -723,7 +723,7 @@ tricircleclient===0.6.0;python_version=='2.7'
 tricircleclient===1.0.0;python_version=='3.6'
 tricircleclient===1.0.0;python_version=='3.7'
 tricircleclient===1.0.0;python_version=='3.8'
-WSME===0.9.3
+WSME===0.10.0
 proboscis===1.2.6.0
 fortiosclient===0.0.3
 oslo.upgradecheck===0.3.2;python_version=='2.7'
