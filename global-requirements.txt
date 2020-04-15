@@ -22,30 +22,25 @@ castellan  # Apache-2.0
 ceilometermiddleware  # Apache-2.0
 cachetools  # MIT License
 cffi  # MIT
-cliff!=2.9.0,!=2.17.0,<3.0.0;python_version=='2.7'  # Apache-2.0
-cliff!=2.9.0,!=2.17.0;python_version>='3.6'  # Apache-2.0
+cliff!=2.9.0,!=2.17.0  # Apache-2.0
 # NOTE(mordred) python-openstackclient is broken due to bug 1810213
 cmd2!=0.8.3,<0.9.0  # MIT
 confluent-kafka!=1.4.0  # Apache-2.0
 cotyledon  # Apache-2.0
-construct<2.10.55;python_version=='2.7'  # MIT
-construct;python_version>='3.6'  # MIT
+construct  # MIT
 PuLP  # MIT
-contextlib2;python_version<'3.0'  # PSF License
 croniter  # MIT License
 cryptography!=2.0  # BSD/Apache-2.0
 cursive  # Apache-2.0
 dataclasses;python_version=='3.6'  # Apache-2.0
 ddt  # MIT
-debtcollector<2.0.0;python_version<'3.0'  # Apache-2.0
-debtcollector;python_version>='3.0'  # Apache-2.0
+debtcollector  # Apache-2.0
 decorator  # BSD
 defusedxml  # PSF
 dib-utils  # Apache-2.0
 diskimage-builder!=1.6.0,!=1.7.0,!=1.7.1  # Apache-2.0
 distro  # Apache-2.0
-Django<2;python_version<'3.0'  # BSD
-Django<3.0;python_version>='3.0'  # BSD
+Django<3.0  # BSD
 django-compressor  # MIT
 django-debreach  # BSD
 django-formtools  # BSD
@@ -59,8 +54,7 @@ dogtag-pki  # LGPLv3+
 dulwich!=0.19.3,!=0.19.7  # Apache-2.0
 edgegrid-python  # Apache-2.0
 elasticsearch<3.0.0  # Apache-2.0
-enmerkar;python_version>='3.0'  # BSD
-enum34;python_version=='2.7' or python_version=='2.6' or python_version=='3.3'  # BSD
+enmerkar  # BSD
 # NOTE: New versions of eventlet should not be accepted lightly
 # as they have earned a reputation of frequently breaking things.
 eventlet!=0.18.3,!=0.20.1,!=0.21.0,!=0.23.0,!=0.25.0  # MIT
@@ -69,19 +63,13 @@ extras  # MIT
 falcon  # Apache-2.0
 Flask!=0.11  # BSD
 Flask-RESTful  # BSD
-futures!=0.17.0;python_version=='2.7' or python_version=='2.6'  # PSF
-futurist<2.0.0;python_version=='2.7'  # Apache-2.0
-futurist;python_version>='3.6'  # Apache-2.0
-funcsigs;python_version=='2.7' or python_version=='2.6'  # Apache-2.0
+futurist  # Apache-2.0
 glance-store!=0.29.0  # Apache-2.0
 google-api-python-client  # Apache-2.0
 graphviz!=0.5.0  # MIT License
 greenlet!=0.4.14  # MIT
-GitPython<2.1.12;python_version<'3.0'  # BSD License (3 clause)
-GitPython;python_version>='3.0'  # BSD License (3 clause)
-gunicorn<20.0.0;python_version<'3.0'  # MIT
-gunicorn;python_version>='3.0'  # MIT
-happybase!=0.7,!=1.0.0;python_version=='2.7'  # MIT
+GitPython  # BSD License (3 clause)
+gunicorn  # MIT
 heat-translator  # Apache-2.0
 horizon  # Apache-2.0
 httplib2  # MIT
@@ -89,10 +77,8 @@ hvac  # Apache-2.0
 icalendar  # BSD
 importlib-metadata  # Apache-2.0
 infinisdk  # BSD-3
-influxdb!=5.2.0,!=5.2.1,!=5.2.2,!=5.2.3;python_version<'3.0'  # MIT
-influxdb!=5.3.0;python_version>='3.0'  # MIT
+influxdb!=5.3.0  # MIT
 ironic-lib  # Apache-2.0
-ipaddress;python_version<'3.3'  # PSF
 iso8601  # MIT
 jira  # BSD License (2 clause)
 Jinja2  # BSD License (3 clause)
@@ -115,8 +101,7 @@ django-pyscss  # BSD License (2 clause)
 kombu!=4.0.2  # BSD
 ldap3  # LGPLv3
 deprecation  # Apache-2.0
-libvirt-python!=4.1.0,!=4.2.0,<6.0.0;python_version<'3.0'  # LGPLv2+
-libvirt-python!=4.1.0,!=4.2.0;python_version>='3.0'  # LGPLv2+
+libvirt-python!=4.1.0,!=4.2.0  # LGPLv2+
 lxml!=3.7.0  # BSD
 Mako  # MIT
 marathon!=0.9.1  # MIT
@@ -125,12 +110,10 @@ microversion-parse  # Apache-2.0
 mistral-lib  # Apache-2.0
 monasca-common  # Apache-2.0
 monasca-statsd  # Apache-2.0
-monotonic;python_version<'3.3'  # Apache-2.0
 msgpack  # Apache-2.0
 munch  # MIT
 murano-pkg-check  # Apache-2.0
-mypy;python_version>='3.4'  # MIT
-ndg-httpsclient;python_version<'3.0'  # BSD
+mypy  # MIT
 netaddr  # BSD
 netifaces!=0.10.0,!=0.10.1  # MIT
 netmiko  # MIT
@@ -140,11 +123,9 @@ networking-l2gw  # Apache-2.0
 networking-odl  # Apache-2.0
 networking-sfc  # Apache-2.0
 # NOTE(fdegir): NetworkX 2.3 dropped support for Python 2
-networkx<2.3;python_version<'3.0'  # BSD
-networkx;python_version>='3.4'  # BSD
+networkx  # BSD
 # NOTE(ralonsoh): neutron-lib 2.0.0 dropped support for Python 2
-neutron-lib<2.0.0;python_version=='2.7'  # Apache-2.0
-neutron-lib;python_version>='3.6'  # Apache-2.0
+neutron-lib  # Apache-2.0
 neutron-dynamic-routing  # Apache-2.0
 neutron-fwaas  # Apache-2.0
 neutron  # Apache-2.0
@@ -155,42 +136,28 @@ octavia-lib  # Apache-2.0
 openstackdocstheme!=2.1.0  # Apache-2.0
 osc-lib  # Apache-2.0
 osc-placement  # Apache-2.0
-oslo.cache!=1.31.1,<2.0.0;python_version<'3.0'  # Apache-2.0
-oslo.cache!=1.31.1,!=2.1.0;python_version>='3.0'  # Apache-2.0
-oslo.config!=4.3.0,!=4.4.0,<8.0.0;python_version<'3.0'  # Apache-2.0
-oslo.config!=4.3.0,!=4.4.0;python_version>='3.0'  # Apache-2.0
-oslo.concurrency<4.0.0;python_version<'3.0'  # Apache-2.0
-oslo.concurrency;python_version>='3.0'  # Apache-2.0
-oslo.context<3.0.0;python_version<'3.0'  # Apache-2.0
-oslo.context;python_version>='3.0'  # Apache-2.0
+oslo.cache!=1.31.1,!=2.1.0  # Apache-2.0
+oslo.config!=4.3.0,!=4.4.0  # Apache-2.0
+oslo.concurrency  # Apache-2.0
+oslo.context  # Apache-2.0
 oslo.db  # Apache-2.0
-oslo.i18n<4.0.0;python_version=='2.7'  # Apache-2.0
-oslo.i18n;python_version>='3.6'  # Apache-2.0
-oslo.limit<1.0.0;python_version=='2.7'  # Apache-2.0
-oslo.limit;python_version>='3.0'  # Apache-2.0
-oslo.log<4.0.0;python_version<'3.0'  # Apache-2.0
-oslo.log;python_version>='3.0'  # Apache-2.0
+oslo.i18n  # Apache-2.0
+oslo.limit  # Apache-2.0
+oslo.log  # Apache-2.0
 oslo.messaging!=9.0.0  # Apache-2.0
 oslo.middleware  # Apache-2.0
-oslo.policy<3.0.0;python_version=='2.7'  # Apache-2.0
-oslo.policy!=3.0.0;python_version>='3.6'  # Apache-2.0
-oslo.privsep<2.0.0;python_version=='2.7'  # Apache-2.0
-oslo.privsep;python_version>='3.6'  # Apache-2.0
-oslo.reports<2.0.0;python_version<'3.0'  # Apache-2.0
-oslo.reports;python_version>='3.6'  # Apache-2.0
+oslo.policy!=3.0.0  # Apache-2.0
+oslo.privsep  # Apache-2.0
+oslo.reports  # Apache-2.0
 oslo.rootwrap  # Apache-2.0
 # NOTE(mriedem): oslo.serialization 2.19.1 is blocked for bug 1593641
-oslo.serialization!=2.19.1,<3.0.0;python_version<'3.0'  # Apache-2.0
-oslo.serialization!=2.19.1;python_version>='3.0'  # Apache-2.0
+oslo.serialization!=2.19.1  # Apache-2.0
 oslo.service!=1.28.1  # Apache-2.0
-oslo.upgradecheck<0.4.0;python_version=='2.7'  # Apache-2.0
-oslo.upgradecheck;python_version>='3.6'  # Apache-2.0
+oslo.upgradecheck  # Apache-2.0
 # NOTE(lajoskatona): oslo.utils version between 3.39.1 and 3.40.1 excluded due to bug 1812922
-oslo.utils!=3.39.1,!=3.40.0,!=3.40.1,<4.0.0;python_version<'3.0'  # Apache-2.0
-oslo.utils!=3.39.1,!=3.40.0,!=3.40.1;python_version>='3.0'  # Apache-2.0
+oslo.utils!=3.39.1,!=3.40.0,!=3.40.1  # Apache-2.0
 oslo.vmware  # Apache-2.0
-oslo.versionedobjects<2.0.0;python_version=='2.7'  # Apache-2.0
-oslo.versionedobjects;python_version>='3.6'  # Apache-2.0
+oslo.versionedobjects  # Apache-2.0
 osprofiler  # Apache-2.0
 os-apply-config  # Apache-2.0
 os-brick!=2.8.0  # Apache-2.0
@@ -200,16 +167,12 @@ os-net-config  # Apache-2.0
 os-refresh-config  # Apache-2.0
 os-resource-classes  # Apache-2.0
 os-service-types  # Apache-2.0
-os-testr<2.0.0;python_version=='2.7'  # Apache-2.0
-os-testr;python_version>='3.6'  # Apache-2.0
+os-testr  # Apache-2.0
 os-traits  # Apache-2.0
-os-ken<1.0.0;python_version=='2.7'  # Apache-2.0
-os-ken;python_version>='3.6'  # Apache-2.0
-os-vif!=1.8.0,!=1.12.0,<2.0.0;python_version=='2.7'  # Apache-2.0
-os-vif!=1.8.0,!=1.12.0;python_version>='3.6'  # Apache-2.0
+os-ken  # Apache-2.0
+os-vif!=1.8.0,!=1.12.0  # Apache-2.0
 ovs  # Apache-2.0
-os-win<5.0.0;python_version=='2.7'  # Apache-2.0
-os-win;python_version>='3.6'  # Apache-2.0
+os-win  # Apache-2.0
 os-xenapi  # Apache-2.0
 paramiko  # LGPLv2.1+
 pathlib2  # MIT
@@ -223,8 +186,7 @@ pexpect!=3.3  # ISC License
 pifpaf  # Apache-2.0
 pika  # BSD
 Pillow  # PIL License
-Pint<0.10;python_version<'3.6'  # BSD
-Pint;python_version>='3.6'  # BSD
+Pint  # BSD
 pip  # MIT
 prometheus-client  # Apache-2.0
 protobuf  # BSD License (3 clause)
@@ -232,8 +194,7 @@ PrettyTable<0.8  # BSD
 psutil  # BSD
 pyasn1!=0.2.3  # BSD
 pyasn1-modules  # BSD
-pycadf!=2.0.0,<3.0.0;python_version=='2.7'  # Apache-2.0
-pycadf!=2.0.0;python_version>='3.6'  # Apache-2.0
+pycadf!=2.0.0  # Apache-2.0
 PyECLib  # BSD
 pyghmi!=1.4.0,!=1.5.11  # Apache-2.0
 pyinotify;sys_platform!='win32' and sys_platform!='darwin' and sys_platform!='sunos5'  # MIT
@@ -249,7 +210,7 @@ pytest-django  # BSD (3 clause)
 pytest-html  #MPL-2.0
 pywbem  # LGPLv2.1+
 pywinrm  # MIT
-salt!=2019.2.1,!=2019.2.2  # Apache-2.0
+salt!=2019.2.1,!=2019.2.2;python_version!='3.8'  # Apache-2.0
 storpool!=5.2.0,!=5.3.0  # Apache-2.0
 storpool.spopenstack  # Apache-2.0
 dfs-sdk  # Apache-2.0
@@ -263,7 +224,6 @@ pydotplus  # MIT License
 crc16  # LGPLv3+
 pyzabbix  # LGPL
 statsd  # MIT
-weakrefmethod;python_version=='2.7'  # PSF
 zVMCloudConnector;sys_platform!='win32'  # Apache 2.0 License
 jaeger-client  # Apache-2.0
 
@@ -280,61 +240,42 @@ pysaml2!=4.0.3,!=4.0.4,!=4.0.5,!=4.0.5rc1,!=4.1.0,!=4.2.0,!=4.3.0,!=4.4.0,!=4.6.
 # as that has implications for testing in the gate.
 aodhclient  # Apache-2.0
 gnocchiclient  # Apache-2.0
-tricircleclient<1.0.0;python_version=='2.7'  # Apache-2.0
-tricircleclient;python_version>='3.6'  # Apache-2.0
+tricircleclient  # Apache-2.0
 python-barbicanclient  # Apache-2.0
-python-blazarclient<3.0.0;python_version=='2.7'  # Apache-2.0
-python-blazarclient;python_version>='3.6'  # Apache-2.0
+python-blazarclient  # Apache-2.0
 python-ceilometerclient  # Apache-2.0
-python-cinderclient!=4.0.0,<6.0.0;python_version=='2.7'  # Apache-2.0
-python-cinderclient!=4.0.0;python_version>='3.6'  # Apache-2.0
-python-cloudkittyclient<4.0.0;python_version=='2.7'  # Apache-2.0
-python-cloudkittyclient;python_version>='3.6'  # Apache-2.0
-python-congressclient<2.0.0;python_version=='2.7'  # Apache-2.0
-python-congressclient<2000;python_version>='3.6'  # Apache-2.0
+python-cinderclient!=4.0.0  # Apache-2.0
+python-cloudkittyclient  # Apache-2.0
+python-congressclient<2000  # Apache-2.0
 python-designateclient  # Apache-2.0
-python-freezerclient<3.0.0;python_version=='2.7'  # Apache-2.0
-python-freezerclient;python_version>='3.6'  # Apache-2.0
-python-heatclient<2.0.0;python_version=='2.7'  # Apache-2.0
-python-heatclient;python_version>='3.6'  # Apache-2.0
+python-freezerclient  # Apache-2.0
+python-heatclient  # Apache-2.0
 python-glanceclient  # Apache-2.0
 python-glareclient  # Apache-2.0
 python-ironic-inspector-client  # Apache-2.0
-python-ironicclient!=2.5.2,!=2.7.1,!=3.0.0,<4.0.0;python_version=='2.7'  # Apache-2.0
-python-ironicclient!=2.5.2,!=2.7.1,!=3.0.0;python_version>='3.6'  # Apache-2.0
+python-ironicclient!=2.5.2,!=2.7.1,!=3.0.0  # Apache-2.0
 python-karborclient  # Apache-2.0
 python-keystoneclient!=2.1.0  # Apache-2.0
 python-magnumclient  # Apache-2.0
 python-masakariclient  # Apache-2.0
-python-manilaclient<2.0.0;python_version=='2.7'  # Apache-2.0
-python-manilaclient;python_version>='3.6'  # Apache-2.0
-python-mistralclient!=3.2.0,<4.0.0;python_version=='2.7'  # Apache-2.0
-python-mistralclient!=3.2.0;python_version>='3.6'  # Apache-2.0
-python-muranoclient<2.0.0;python_version=='2.7'  # Apache-2.0
-python-muranoclient;python_version>='3.6'  # Apache-2.0
-python-monascaclient<2.0.0;python_version=='2.7'  # Apache-2.0
-python-monascaclient;python_version>='3.6'  # Apache-2.0
+python-manilaclient  # Apache-2.0
+python-mistralclient!=3.2.0  # Apache-2.0
+python-muranoclient  # Apache-2.0
+python-monascaclient  # Apache-2.0
 python-neutronclient  # Apache-2.0
 python-novaclient  # Apache-2.0
 python-octaviaclient  # Apache-2.0
 python-openstackclient  # Apache-2.0
-python-qinlingclient<5.0.0;python_version=='2.7'  # Apache-2.0
-python-qinlingclient;python_version>='3.6'  # Apache-2.0
+python-qinlingclient  # Apache-2.0
 python-rsdclient  # Apache-2.0
-python-saharaclient<3.0.0;python_version=='2.7'  # Apache-2.0
-python-saharaclient;python_version>='3.6'  # Apache-2.0
-python-searchlightclient<2.0.0;python_version=='2.7'  #Apache-2.0
-python-searchlightclient;python_version>='3.6'  #Apache-2.0
-python-senlinclient<2.0.0;python_version=='2.7'  # Apache-2.0
-python-senlinclient;python_version>='3.6'  # Apache-2.0
-python-solumclient<3.0.0;python_version=='2.7'  # Apache-2.0
-python-solumclient;python_version>='3.6'  # Apache-2.0
+python-saharaclient  # Apache-2.0
+python-searchlightclient  #Apache-2.0
+python-senlinclient  # Apache-2.0
+python-solumclient  # Apache-2.0
 python-swiftclient  # Apache-2.0
-python-tackerclient<1.0.0;python_version=='2.7'  # Apache-2.0
-python-tackerclient;python_version>='3.6'  # Apache-2.0
+python-tackerclient  # Apache-2.0
 python-troveclient  # Apache-2.0
-python-vitrageclient<4.0.0;python_version=='2.7'  # Apache-2.0
-python-vitrageclient;python_version>='3.6'  # Apache-2.0
+python-vitrageclient  # Apache-2.0
 python-watcherclient  # Apache-2.0
 python-zaqarclient  # Apache-2.0
 python-zunclient  # Apache-2.0
@@ -346,9 +287,7 @@ python-dateutil  # BSD
 pytz  # MIT
 pyudev  # LGPLv2.1+
 PyYAML  # MIT
-qpid-python;python_version=='2.7'  # Apache-2.0
-reno<3.0.0;python_version<'3.0'  # Apache-2.0
-reno;python_version>='3.0'  # Apache-2.0
+reno  # Apache-2.0
 requests!=2.20.0  # Apache-2.0
 requests-aws  # BSD License (3 clause)
 requests-kerberos  # ISC
@@ -364,8 +303,7 @@ scrypt  # BSD
 simplejson  # MIT
 six  # MIT
 scipy  # BSD
-scikit-learn<=0.20.0;python_version<='3.4'  # BSD
-scikit-learn;python_version>='3.5'  # BSD
+scikit-learn  # BSD
 setproctitle  # BSD
 # NOTE(yamahata):
 # bug work around of sqlalchemy
@@ -389,7 +327,6 @@ tosca-parser  # Apache-2.0
 tripleo-common!=11.3.0  # Apache-2.0
 validations-libs  # Apache-2.0
 urllib3  # MIT
-unicodecsv;python_version<'3.0'  # BSD
 warlock<2  # Apache-2.0
 WebOb  # MIT
 websocket-client  # LGPLv2+
@@ -441,13 +378,11 @@ XStatic-tv4  # MIT
 XStatic-Angular-FileUpload  # MIT License
 yaql  # Apache 2.0 License
 # NOTE(dtantsur): zeroconf dropped compatibility with Python 2 in version 0.20
-zeroconf<0.20;python_version=='2.7'  # LGPL
-zeroconf;python_version>='3.0'  # LGPL
+zeroconf  # LGPL
 
 # Testing tools below, which are typically in test-requires.txt
 
-bashate<1.0.0;python_version=='2.7'  # Apache-2.0
-bashate;python_version>='3.6'  # Apache-2.0
+bashate  # Apache-2.0
 couchdb  # Apache-2.0
 coverage!=4.4  # Apache-2.0
 demjson  # GLGPLv3+
@@ -459,8 +394,7 @@ fixtures  # Apache-2.0/BSD
 freezegun  # Apache-2.0
 gabbi  # Apache-2.0
 kafka-python  # Apache-2.0
-keyring<19.0.0;python_version=='2.7'  # MIT/PSF
-keyring;python_version>='3.4'  # MIT/PSF
+keyring  # MIT/PSF
 ldappool  # MPL
 # Do not make mock conditional on Python version: we depend on newer code than
 # in [most] releases of the Python std library.
@@ -502,21 +436,15 @@ selenium  # Apache-2.0
 # situations as progressive releases of projects are done.
 # Blacklist setuptools 34.0.0-34.3.2 due to https://github.com/pypa/setuptools/issues/951
 # Blacklist setuptools 36.2.0 due to https://github.com/pypa/setuptools/issues/1086
-setuptools!=24.0.0,!=34.0.0,!=34.0.1,!=34.0.2,!=34.0.3,!=34.1.0,!=34.1.1,!=34.2.0,!=34.3.0,!=34.3.1,!=34.3.2,!=36.2.0;python_version>='3.5'  # PSF/ZPL
-setuptools!=24.0.0,!=34.0.0,!=34.0.1,!=34.0.2,!=34.0.3,!=34.1.0,!=34.1.1,!=34.2.0,!=34.3.0,!=34.3.1,!=34.3.2,!=36.2.0,<45.0.0;python_version<='2.7'  # PSF/ZPL
-sphinx!=1.6.6,!=1.6.7,<2.0.0;python_version=='2.7'  # BSD
-sphinx!=1.6.6,!=1.6.7,!=2.1.0,!=3.0.0;python_version>='3.4'  # BSD
+setuptools!=24.0.0,!=34.0.0,!=34.0.1,!=34.0.2,!=34.0.3,!=34.1.0,!=34.1.1,!=34.2.0,!=34.3.0,!=34.3.1,!=34.3.2,!=36.2.0  # PSF/ZPL
+sphinx!=1.6.6,!=1.6.7,!=2.1.0,!=3.0.0  # BSD
 sphinx-testing  # BSD License
-sphinxcontrib-actdiag<2.0.0;python_version=='2.7'  # BSD
-sphinxcontrib-actdiag;python_version>='3.4'  # BSD
+sphinxcontrib-actdiag  # BSD
 sphinxcontrib-apidoc  # BSD
-sphinxcontrib-blockdiag<2.0.0;python_version=='2.7'  # BSD
-sphinxcontrib-blockdiag;python_version>='3.4'  # BSD
+sphinxcontrib-blockdiag  # BSD
 sphinxcontrib-httpdomain  # BSD
-sphinxcontrib-nwdiag<2.0.0;python_version=='2.7'  # BSD
-sphinxcontrib-nwdiag;python_version>='3.4'  # BSD
-sphinxcontrib-seqdiag<2.0.0;python_version=='2.7'  # BSD
-sphinxcontrib-seqdiag;python_version>='3.4'  # BSD
+sphinxcontrib-nwdiag  # BSD
+sphinxcontrib-seqdiag  # BSD
 sphinxcontrib-pecanwsme  # Apache-2.0
 sphinx-feature-classification  # Apache-2.0
 sphinxmark  # Apache-2.0
@@ -524,14 +452,12 @@ sphinxcontrib.datatemplates  # BSD License
 sphinxcontrib-programoutput  # BSD license
 sphinxcontrib-svg2pdfconverter  # BSD License
 stestr!=2.3.0,!=3.0.0  # Apache-2.0
-sushy!=1.9.0<3.0.0;python_version=='2.7'  # Apache-2.0
-sushy!=1.9.0;python_version>='3.6'  # Apache-2.0
+sushy!=1.9.0  # Apache-2.0
 tabulate  # MIT
 testrepository  # Apache-2.0/BSD
 testresources  # Apache-2.0/BSD
 testscenarios  # Apache-2.0/BSD
 testtools  # MIT
-trollius;python_version=='2.7'  # Apache-2.0
 ujson  # BSD
 unittest2  # BSD
 virtualbmc  # Apache-2.0
@@ -569,11 +495,8 @@ skydive-client  # Apache-2.0
 Yappi!=0.98,!=0.99  # MIT
 
 # NOTE(yoctozepto): To avoid repeated breakage (this is a dep of deps)
-zipp<2;python_version<'3.6'  # MIT
-zipp;python_version>='3.6'  # MIT
+zipp  # MIT
 
 # NOTE(prometheanfire): python3 caps, are not approved for use in OpenStack
-gitdb<4.0.0;python_version=='2.7'  # BSD
-gitdb;python_version>='3.4'  # BSD
-gitdb2<3.0.0;python_version=='2.7'  # BSD
-gitdb2;python_version>='3.4'  # BSD
+gitdb  # BSD
+gitdb2  # BSD

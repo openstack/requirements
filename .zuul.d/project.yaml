@@ -17,6 +17,7 @@
         - requirements-tox-bindep:
             voting: false
         - requirements-tox-py36-check-uc
+        - requirements-tox-py38-check-uc
         - requirements-tox-validate-projects:
             voting: false
         - cross-cinder-py36
@@ -26,12 +27,9 @@
         - cross-keystone-py36
         - cross-neutron-py36
         - cross-nova-py36
-        - cross-nova-py37
         - cross-nova-functional
         - cross-octavia-py36
-        - cross-octavia-py37
         - cross-osc-tox-docs
-        - cross-swift-py27
         - cross-swift-py36
         - openstack-tox-py36
         - openstacksdk-functional-devstack
@@ -61,6 +59,7 @@
         - openstack-tox-validate
         - requirements-tox-babel
         - requirements-tox-py36-check-uc
+        - requirements-tox-py38-check-uc
         - cross-cinder-py36
         - cross-glance-py36
         - cross-horizon-py36
@@ -69,11 +68,8 @@
         - cross-neutron-py36
         - cross-nova-py36:
             files: ^upper-constraints.txt$
-        - cross-nova-py37:
-            files: ^upper-constraints.txt$
         - cross-nova-functional
         - cross-octavia-py36
-        - cross-octavia-py37
         - cross-osc-tox-docs
         - cross-swift-py27
         - cross-swift-py36
