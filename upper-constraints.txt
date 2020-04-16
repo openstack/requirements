@@ -427,7 +427,7 @@ google-api-python-client===1.8.0
 castellan===1.4.0;python_version=='2.7'
 castellan===3.0.1;python_version=='3.6'
 castellan===3.0.1;python_version=='3.7'
-castellan===3.0.0;python_version=='3.8'
+castellan===3.0.1;python_version=='3.8'
 oslo.versionedobjects===1.37.0;python_version=='2.7'
 oslo.versionedobjects===2.0.2;python_version=='3.6'
 oslo.versionedobjects===2.0.2;python_version=='3.7'
