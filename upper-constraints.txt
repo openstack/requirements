@@ -549,9 +549,9 @@ gitdb===4.0.2;python_version=='3.6'
 gitdb===4.0.2;python_version=='3.7'
 gitdb===4.0.2;python_version=='3.8'
 python-monascaclient===1.16.0;python_version=='2.7'
-python-monascaclient===2.0.0;python_version=='3.6'
-python-monascaclient===2.0.0;python_version=='3.7'
-python-monascaclient===2.0.0;python_version=='3.8'
+python-monascaclient===2.1.0;python_version=='3.6'
+python-monascaclient===2.1.0;python_version=='3.7'
+python-monascaclient===2.1.0;python_version=='3.8'
 ldap3===2.7
 requests-ntlm===1.1.0
 automaton===1.17.0;python_version=='2.7'
