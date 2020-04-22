@@ -303,6 +303,8 @@ openstack/tripleo-validations
 openstack/trove
 openstack/trove-tempest-plugin
 openstack/valence
+openstack/validations-common
+openstack/validations-libs
 openstack/virtualbmc
 openstack/vitrage
 openstack/vitrage-tempest-plugin
