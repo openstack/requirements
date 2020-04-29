@@ -255,7 +255,7 @@ taskflow===4.1.0;python_version=='3.8'
 traceback2===1.4.0
 arrow===0.15.5
 semantic-version===2.8.4
-virtualbmc===2.0.0
+virtualbmc===2.1.0
 deprecation===2.0.7
 SQLAlchemy===1.3.16
 pyroute2===0.5.11
