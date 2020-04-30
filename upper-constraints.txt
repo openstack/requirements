@@ -709,7 +709,10 @@ kubernetes===11.0.0
 httplib2===0.17.2
 bottle===0.12.18
 betamax===0.8.1
-construct===2.8.22
+construct===2.10.54;python_version=='2.7'
+construct===2.10.56;python_version=='3.6'
+construct===2.10.56;python_version=='3.7'
+construct===2.10.56;python_version=='3.8'
 pytest-metadata===1.8.0
 pyparsing===2.4.7
 geomet===0.1.2

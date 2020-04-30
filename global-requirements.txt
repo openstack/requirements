@@ -27,7 +27,8 @@ cliff!=2.9.0,!=2.17.0;python_version>='3.6'  # Apache-2.0
 cmd2!=0.8.3,<0.9.0  # MIT
 confluent-kafka!=1.4.0  # Apache-2.0
 cotyledon  # Apache-2.0
-construct<2.9  # MIT
+construct<2.10.55;python_version=='2.7'  # MIT
+construct;python_version>='3.6'  # MIT
 PuLP  # MIT
 contextlib2;python_version<'3.0'  # PSF License
 croniter  # MIT License
