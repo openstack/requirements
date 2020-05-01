@@ -7,3 +7,4 @@ six>=1.10.0 # MIT
 packaging>=16.5 # Apache-2.0
 requests>=2.14.2 # Apache-2.0
 PyYAML>=3.12 # MIT
+beagle>=0.2.1 # Apache-2.0
