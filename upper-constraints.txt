@@ -640,6 +640,7 @@ oslo.reports===2.0.1;python_version=='3.6'
 oslo.reports===2.0.1;python_version=='3.7'
 oslo.reports===2.0.1;python_version=='3.8'
 bitmath===1.3.3.1
+ceilometermiddleware===2.0.0
 python-nss===1.0.1
 testrepository===0.0.20
 sympy===1.5.1
