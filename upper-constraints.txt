@@ -169,7 +169,7 @@ python-mimeparse===1.6.0
 tripleo-common===12.3.0
 Tempita===0.5.2
 ply===3.11
-google-api-core===1.16.0
+google-api-core===1.17.0
 requests-toolbelt===0.9.1
 simplejson===3.17.0
 suds-jurko===0.6
@@ -246,7 +246,7 @@ taskflow===4.1.0;python_version=='3.6'
 taskflow===4.1.0;python_version=='3.7'
 taskflow===4.1.0;python_version=='3.8'
 traceback2===1.4.0
-arrow===0.15.5
+arrow===0.15.6
 semantic-version===2.8.5
 virtualbmc===2.0.0;python_version=='2.7'
 virtualbmc===2.1.0;python_version=='3.6'
@@ -306,11 +306,11 @@ cryptography===2.9.2
 URLObject===2.4.3
 psycopg2-binary===2.8.5
 backports.ssl-match-hostname===3.7.0.1;python_version=='2.7'
-openstack-release-test===3.0.0.0rc1
+openstack-release-test===2.0.0
 pylxd===2.2.10
 pycryptodomex===3.9.7
 anyjson===0.3.3
-requests-mock===1.7.0
+requests-mock===1.8.0
 os-apply-config===11.1.0
 prometheus-client===0.7.1
 oslosphinx===4.18.0
@@ -435,10 +435,10 @@ autobahn===19.11.2;python_version=='2.7'
 autobahn===20.4.3;python_version=='3.6'
 autobahn===20.4.3;python_version=='3.7'
 autobahn===20.4.3;python_version=='3.8'
-SQLAlchemy-Utils===0.36.4
+SQLAlchemy-Utils===0.36.5
 retryz===0.1.9
 pluggy===0.13.1
-coverage===5.0.4
+coverage===5.1
 freezegun===0.3.15
 python-pytun===2.3.0
 pyperclip===1.8.0
@@ -657,9 +657,9 @@ seqdiag===2.0.0;python_version=='3.6'
 seqdiag===2.0.0;python_version=='3.7'
 seqdiag===2.0.0;python_version=='3.8'
 numpy===1.16.6;python_version=='2.7'
-numpy===1.18.3;python_version=='3.6'
-numpy===1.18.3;python_version=='3.7'
-numpy===1.18.3;python_version=='3.8'
+numpy===1.18.4;python_version=='3.6'
+numpy===1.18.4;python_version=='3.7'
+numpy===1.18.4;python_version=='3.8'
 msgpack===0.6.1
 Sphinx===1.8.5;python_version=='2.7'
 Sphinx===3.0.3;python_version=='3.6'
@@ -959,7 +959,7 @@ python-dateutil===2.8.1
 typing-extensions===3.7.4.2;python_version=='3.6'
 typing-extensions===3.7.4.2;python_version=='3.7'
 typing-extensions===3.7.4.2;python_version=='3.8'
-virtualenv===20.0.18
+virtualenv===20.0.19
 colorama===0.4.3
 confetti===2.5.3
 ironic-lib===4.2.0
