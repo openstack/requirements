@@ -43,7 +43,7 @@
             irrelevant-files:
               - ^(test-|)requirements.txt$
               - ^setup.cfg$
-        - grenade-py3:
+        - grenade:
             irrelevant-files:
               - ^(test-|)requirements.txt$
               - ^setup.cfg$
@@ -87,7 +87,7 @@
             irrelevant-files:
               - ^(test-|)requirements.txt$
               - ^setup.cfg$
-        - grenade-py3:
+        - grenade:
             irrelevant-files:
               - ^(test-|)requirements.txt$
               - ^setup.cfg$
