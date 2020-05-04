@@ -444,3 +444,4 @@ zake===0.2.2
 zhmcclient===0.9.0
 zope.interface===4.3.3
 virtualbmc===1.0.0
+stestr===0.4.0
