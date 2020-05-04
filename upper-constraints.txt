@@ -699,7 +699,7 @@ pyparsing===2.4.7
 geomet===0.1.2
 distlib===0.3.0
 XStatic-Moment-Timezone===0.5.22.0
-dogpile.cache===0.9.1
+dogpile.cache===0.9.2
 python-barbicanclient===4.10.0
 salt===3000.2
 api-object-schema===2.0.0
