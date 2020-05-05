@@ -17,7 +17,7 @@ oslo.limit===0.3.0;python_version=='2.7'
 oslo.limit===1.0.2;python_version=='3.6'
 oslo.limit===1.0.2;python_version=='3.7'
 oslo.limit===1.0.2;python_version=='3.8'
-smmap===3.0.2
+smmap===3.0.4
 confget===2.3.3
 XStatic-Angular-Bootstrap===2.5.0.0
 paunch===6.0.2
@@ -502,7 +502,7 @@ shade===1.33.0
 XStatic-Dagre===0.6.4.0
 pathlib2===2.3.5
 pydotplus===2.0.2
-boto3===1.13.1
+boto3===1.13.2
 jeepney===0.4.3;python_version=='3.6'
 jeepney===0.4.3;python_version=='3.7'
 jeepney===0.4.3;python_version=='3.8'
@@ -532,9 +532,9 @@ oslo.vmware===3.3.1;python_version=='3.8'
 XStatic-moment===2.8.4.2
 sqlalchemy-migrate===0.13.0
 gitdb===0.6.4;python_version=='2.7'
-gitdb===4.0.4;python_version=='3.6'
-gitdb===4.0.4;python_version=='3.7'
-gitdb===4.0.4;python_version=='3.8'
+gitdb===4.0.5;python_version=='3.6'
+gitdb===4.0.5;python_version=='3.7'
+gitdb===4.0.5;python_version=='3.8'
 python-monascaclient===1.16.0;python_version=='2.7'
 python-monascaclient===2.1.0;python_version=='3.6'
 python-monascaclient===2.1.0;python_version=='3.7'
@@ -715,7 +715,7 @@ oslo.upgradecheck===1.0.1;python_version=='3.7'
 oslo.upgradecheck===1.0.1;python_version=='3.8'
 stevedore===1.32.0
 pywinrm===0.4.1
-botocore===1.16.1
+botocore===1.16.2
 xmltodict===0.12.0
 pyasn1===0.4.8
 oslo.rootwrap===5.17.1;python_version=='2.7'
@@ -960,7 +960,7 @@ python-dateutil===2.8.1
 typing-extensions===3.7.4.2;python_version=='3.6'
 typing-extensions===3.7.4.2;python_version=='3.7'
 typing-extensions===3.7.4.2;python_version=='3.8'
-virtualenv===20.0.19
+virtualenv===20.0.20
 colorama===0.4.3
 confetti===2.5.3
 ironic-lib===4.2.0
