@@ -389,7 +389,7 @@ tinyrpc===1.0.4
 M2Crypto===0.35.2;python_version=='2.7'
 google-auth-httplib2===0.0.3
 daiquiri===2.1.1
-influxdb===5.3.0
+influxdb===5.2.3
 funcparserlib===0.3.6
 passlib===1.7.2
 dib-utils===0.0.11
