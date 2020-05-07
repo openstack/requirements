@@ -91,7 +91,7 @@ icalendar  # BSD
 importlib-metadata  # Apache-2.0
 infinisdk  # BSD-3
 influxdb!=5.2.0,!=5.2.1,!=5.2.2,!=5.2.3;python_version<'3.0'  # MIT
-influxdb;python_version>='3.0'  # MIT
+influxdb!=5.3.0;python_version>='3.0'  # MIT
 ironic-lib  # Apache-2.0
 ipaddress;python_version<'3.3'  # PSF
 iso8601  # MIT
