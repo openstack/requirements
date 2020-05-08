@@ -116,7 +116,7 @@ doc8===0.8.0
 pymongo===3.7.2
 soupsieve===1.8
 sqlparse===0.2.4
-oslotest===3.7.1
+oslotest===3.7.2
 jsonpointer===2.0
 defusedxml===0.5.0
 relativetimebuilder===0.2.0
