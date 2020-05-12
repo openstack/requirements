@@ -405,9 +405,6 @@ scp===0.13.2
 python-zaqarclient===1.13.1
 funcsigs===1.0.2;python_version=='2.7'
 lockfile===0.12.2
-dnspython3===1.15.0;python_version=='3.6'
-dnspython3===1.15.0;python_version=='3.7'
-dnspython3===1.15.0;python_version=='3.8'
 ldappool===2.4.1
 termcolor===1.1.0
 joblib===0.14.1;python_version=='3.6'
@@ -906,10 +903,7 @@ glance-store===2.0.0
 sphinxcontrib-programoutput===0.16
 storpool.spopenstack===2.2.1
 sphinx-testing===1.0.1
-dnspython===1.15.0;python_version=='3.6'
-dnspython===1.15.0;python_version=='3.7'
-dnspython===1.15.0;python_version=='3.8'
-dnspython===1.16.0;python_version=='2.7'
+dnspython===1.16.0
 oauthlib===3.1.0
 Babel===2.8.0
 logutils===0.3.5
