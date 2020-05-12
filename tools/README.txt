@@ -46,11 +46,6 @@ grep-all.sh
 
 List a requirements specification and constratint for a given libarary
 
-integration.sh
---------------
-
-Used in the gate!  Install all the "$PROJECTS" to verify that g-r and the each project are compatible
-
 publish_constraints.sh
 ----------------------
 Used in the gate!  Generate the constraints files from git for publishing to a

@@ -32,19 +32,6 @@
         - cross-swift-py27
         - cross-swift-py35:
             branches: ^(?!stable/(newton|ocata)).*$
-        - requirements-integration
-        - neutron-grenade-multinode:
-            irrelevant-files:
-              - ^(test-|)requirements.txt$
-              - ^setup.cfg$
-        - legacy-tempest-dsvm-neutron-full:
-            irrelevant-files:
-              - ^(test-|)requirements.txt$
-              - ^setup.cfg$
-        - neutron-grenade:
-            irrelevant-files:
-              - ^(test-|)requirements.txt$
-              - ^setup.cfg$
     gate:
       jobs:
         - openstack-tox-validate
@@ -73,19 +60,6 @@
         - cross-swift-py27
         - cross-swift-py35:
             branches: ^(?!stable/(newton|ocata)).*$
-        - requirements-integration
-        - neutron-grenade-multinode:
-            irrelevant-files:
-              - ^(test-|)requirements.txt$
-              - ^setup.cfg$
-        - legacy-tempest-dsvm-neutron-full:
-            irrelevant-files:
-              - ^(test-|)requirements.txt$
-              - ^setup.cfg$
-        - neutron-grenade:
-            irrelevant-files:
-              - ^(test-|)requirements.txt$
-              - ^setup.cfg$
     experimental:
       jobs:
         - legacy-tempest-dsvm-neutron-pg-full:
