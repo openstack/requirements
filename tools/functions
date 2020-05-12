@@ -1,0 +1,45 @@
+# Licensed under the Apache License, Version 2.0 (the "License"); you may
+# not use this file except in compliance with the License. You may obtain
+# a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+# License for the specific language governing permissions and limitations
+# under the License.
+
+# Shared functions for shell scripts
+
+function enable_venv () {
+    BASE="${1}"
+    if [[ -z "${VIRTUAL_ENV}" ]]; then
+        if [[ ! -d ${BASE}/.tox/venv ]]; then
+            (cd ${BASE} && tox -e venv --notest > /dev/null)
+        fi
+        source ${BASE}/.tox/venv/bin/activate
+    fi
+}
+
+# Search for requirements used in openstack/ repos
+function search_reqs () {
+    beagle search --ignore-case --file '(.*requirement.*|setup.cfg)' "${1}" | \
+        grep "openstack/" | \
+        # Sometimes we get false positives from a package name being a
+        # substring within another package. This filter isn't working right
+        # though. This just means we might miss a package that isn't being
+        # used.
+        # grep "${1}[ |\!|>]" | \
+        grep -v "openstack.requirements"
+}
+
+# Get a list of all package names by filtering out comments, blank lines, and
+# any package modifiers like version constraints.
+function get_tracked_requirements () {
+    reqs=$(sed 's/[!|>|<|=|;].*//g' global-requirements.txt |
+            sed 's/  .*//g' |
+            sed '/^#/d' |
+            sed '/^$/d' |
+            sort | uniq)
+}

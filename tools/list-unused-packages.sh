@@ -17,41 +17,19 @@
 TOOLSDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 BASEDIR=$(dirname ${TOOLSDIR})
 
+source ${TOOLSDIR}/functions
+
 # Make sure we are using our venv
-if [[ -z "${VIRTUAL_ENV}" ]]; then
-    if [[ ! -d ${BASEDIR}/.tox/venv ]]; then
-        (cd ${BASEDIR} && tox -e venv --notest > /dev/null)
-    fi
-    source ${BASEDIR}/.tox/venv/bin/activate
-fi
+enable_venv "${BASEDIR}"
 
 update=
 if [[ "$#" -eq 1 ]]; then
     update="${1}"
 fi
 
-search_reqs ()
-{
-    beagle search --ignore-case --file '(.*requirement.*|setup.cfg)' "${1}" | \
-        grep "openstack/" | \
-        # Sometimes we get false positives from a package name being a
-        # substring within another package. This filter isn't working right
-        # though. This just means we might miss a package that isn't being
-        # used.
-        # grep "${1}[ |\!|>]" | \
-        grep -v "openstack.requirements"
-}
-
-# Get a list of all package names by filtering out comments, blank lines, and
-# any package modifiers like version constraints.
-reqs=$(sed 's/[!|>|<|=|;].*//g' global-requirements.txt |
-        sed 's/  .*//g' |
-        sed '/^#/d' |
-        sed '/^$/d' |
-        sort | uniq)
-
 # Loop through each package and check for its presence in any repo's
 # requirements files other than mentions in its own repo
+get_tracked_requirements
 for req in $reqs; do
     count=$(search_reqs ${req} |
             grep -v " openstack/${req}  " |
