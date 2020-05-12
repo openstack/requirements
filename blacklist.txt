@@ -34,3 +34,6 @@ vmware-nsxlib
 
 # Sahara uses cycle-with-rc, but it promises a stable plugin interface
 sahara
+
+# Projects are free to specify their own version of ansible
+ansible
