@@ -186,7 +186,7 @@ def _parse_blacklist(path):
     if path is None:
         return []
     with open(path, 'rt') as f:
-        return [l.strip() for l in f]
+        return [line.strip() for line in f]
 
 
 def _make_sort_key(line):
