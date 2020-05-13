@@ -885,7 +885,7 @@ python-keystoneclient===3.22.0;python_version=='2.7'
 python-keystoneclient===4.0.0;python_version=='3.6'
 python-keystoneclient===4.0.0;python_version=='3.7'
 python-keystoneclient===4.0.0;python_version=='3.8'
-ceilometer===14.0.0.0rc1
+ceilometer===14.0.0
 demjson===2.2.4
 diskimage-builder===2.35.0
 heat-translator===1.5.0;python_version=='2.7'
