@@ -152,7 +152,7 @@ notifier  # Apache-2.0
 oauth2client!=4.0.0  # Apache-2.0
 oauthlib  # BSD
 octavia-lib  # Apache-2.0
-openstackdocstheme  # Apache-2.0
+openstackdocstheme!=2.1.0  # Apache-2.0
 osc-lib  # Apache-2.0
 osc-placement  # Apache-2.0
 oslo.cache!=1.31.1,<2.0.0;python_version<'3.0'  # Apache-2.0
