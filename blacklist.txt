@@ -15,6 +15,7 @@ pre-commit
 pyflakes
 pycodestyle
 pylint
+yamllint
 
 # The following horizon and Neutron libraries need to be blacklisted
 # as they do not use cycle-with-intermediary.  The only time they
