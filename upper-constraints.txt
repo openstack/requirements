@@ -672,9 +672,9 @@ tempest===24.0.0;python_version=='3.6'
 tempest===24.0.0;python_version=='3.7'
 tempest===24.0.0;python_version=='3.8'
 openstackdocstheme===1.31.2;python_version=='2.7'
-openstackdocstheme===2.1.0;python_version=='3.6'
-openstackdocstheme===2.1.0;python_version=='3.7'
-openstackdocstheme===2.1.0;python_version=='3.8'
+openstackdocstheme===2.1.1;python_version=='3.6'
+openstackdocstheme===2.1.1;python_version=='3.7'
+openstackdocstheme===2.1.1;python_version=='3.8'
 osc-placement===2.0.0
 zake===0.2.2
 python-rsdclient===1.0.2
