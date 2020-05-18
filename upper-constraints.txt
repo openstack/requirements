@@ -117,7 +117,7 @@ pypowervm===1.1.24
 doc8===0.8.0
 pymongo===3.10.1
 python-cloudkittyclient===4.0.0
-soupsieve===2.0
+soupsieve===2.0.1
 sqlparse===0.3.1
 oslotest===4.2.0
 jsonpointer===2.0
@@ -168,7 +168,7 @@ tornado===6.0.4
 pycparser===2.20
 mock===3.0.5
 PyYAML===5.3.1
-beautifulsoup4===4.9.0
+beautifulsoup4===4.9.1
 os-net-config===12.2.0
 ovs===2.13.0
 cryptography===2.9.2
