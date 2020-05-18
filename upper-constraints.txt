@@ -402,7 +402,6 @@ dogpile.cache===0.9.2
 python-barbicanclient===4.10.0
 salt===3000.3;python_version=='3.6'
 api-object-schema===2.0.0
-tricircleclient===1.0.0
 WSME===0.10.0
 proboscis===1.2.6.0
 oslo.upgradecheck===1.0.1
