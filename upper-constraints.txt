@@ -350,7 +350,7 @@ idna===2.9
 python-karborclient===2.0.0
 PuLP===2.1
 crc16===0.1.1
-protobuf===3.12.0
+protobuf===3.11.3
 sushy===3.2.0
 python-neutronclient===7.1.1
 pika===1.1.0
