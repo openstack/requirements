@@ -525,7 +525,10 @@ dnspython===1.16.0
 oauthlib===3.1.0
 Babel===2.8.0
 logutils===0.3.5
-zipp===3.1.0
+zipp===1.1.0;python_version=='3.5'
+zipp===3.1.0;python_version=='3.6'
+zipp===3.1.0;python_version=='3.7'
+zipp===3.1.0;python_version=='3.8'
 greenlet===0.4.15
 XStatic-Angular-Vis===4.16.0.0
 confluent-kafka===1.4.1
