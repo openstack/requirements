@@ -174,7 +174,7 @@ ovs===2.13.0
 cryptography===2.9.2
 URLObject===2.4.3
 psycopg2-binary===2.8.5
-openstack-release-test===3.0.1
+openstack-release-test===3.1.0
 validations-libs===1.0.0
 pylxd===2.2.10
 pycryptodomex===3.9.7
