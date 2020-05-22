@@ -34,7 +34,8 @@ cryptography!=2.0  # BSD/Apache-2.0
 cursive  # Apache-2.0
 dataclasses;python_version=='3.6'  # Apache-2.0
 ddt  # MIT
-debtcollector  # Apache-2.0
+debtcollector<2.0.0;python_version<'3.6'  # Apache-2.0
+debtcollector;python_version>='3.6'  # Apache-2.0
 decorator  # BSD
 defusedxml  # PSF
 dib-utils  # Apache-2.0
@@ -137,11 +138,14 @@ openstackdocstheme!=2.1.0,!=2.1.1  # Apache-2.0
 osc-lib  # Apache-2.0
 osc-placement  # Apache-2.0
 oslo.cache!=1.31.1,!=2.1.0  # Apache-2.0
-oslo.config!=4.3.0,!=4.4.0  # Apache-2.0
+oslo.config!=4.3.0,!=4.4.0,<8.0.0;python_version<'3.6'  # Apache-2.0
+oslo.config!=4.3.0,!=4.4.0;python_version>='3.6'  # Apache-2.0
 oslo.concurrency  # Apache-2.0
 oslo.context  # Apache-2.0
 oslo.db  # Apache-2.0
 oslo.i18n  # Apache-2.0
+oslo.i18n<4.0.0;python_version<'3.6'  # Apache-2.0
+oslo.i18n;python_version>='3.6'  # Apache-2.0
 oslo.limit  # Apache-2.0
 oslo.log  # Apache-2.0
 oslo.messaging!=9.0.0  # Apache-2.0
@@ -155,7 +159,8 @@ oslo.serialization!=2.19.1  # Apache-2.0
 oslo.service!=1.28.1  # Apache-2.0
 oslo.upgradecheck  # Apache-2.0
 # NOTE(lajoskatona): oslo.utils version between 3.39.1 and 3.40.1 excluded due to bug 1812922
-oslo.utils!=3.39.1,!=3.40.0,!=3.40.1  # Apache-2.0
+oslo.utils!=3.39.1,!=3.40.0,!=3.40.1,<4.0.0;python_version<'3.6'  # Apache-2.0
+oslo.utils!=3.39.1,!=3.40.0,!=3.40.1;python_version>='3.6'  # Apache-2.0
 oslo.vmware  # Apache-2.0
 oslo.versionedobjects  # Apache-2.0
 osprofiler  # Apache-2.0
@@ -287,7 +292,8 @@ python-dateutil  # BSD
 pytz  # MIT
 pyudev  # LGPLv2.1+
 PyYAML  # MIT
-reno  # Apache-2.0
+reno<3;python_version<'3.6'  # Apache-2.0
+reno;python_version>='3.6'  # Apache-2.0
 requests!=2.20.0  # Apache-2.0
 requests-aws  # BSD License (3 clause)
 requests-kerberos  # ISC
@@ -401,7 +407,8 @@ ldappool  # MPL
 # https://github.com/testing-cabal/mock/issues/487  for 4.0.[0-1] blacklist
 mock!=4.0.0,!=4.0.1  # BSD
 mox  # Apache-2.0
-mox3  # Apache-2.0
+mox3<1;python_version<'3.6'  # Apache-2.0
+mox3;python_version>='3.6'  # Apache-2.0
 nodeenv  # BSD
 nose  # LGPL
 nose-exclude  # LGPL
@@ -412,7 +419,8 @@ openstack.nose-plugin  # Apache-2.0
 openstacksdk  # Apache-2.0
 os-api-ref  # Apache-2.0
 oslosphinx  # Apache-2.0
-oslotest  # Apache-2.0
+oslotest<4;python_version<'3.6'  # Apache-2.0
+oslotest;python_version>='3.6'  # Apache-2.0
 ovsdbapp  # Apache-2.0
 proboscis  # Apache-2.0
 psycopg2  # LGPL/ZPL
