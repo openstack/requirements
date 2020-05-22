@@ -208,6 +208,7 @@ PyMySQL  # MIT License
 pytest  # MIT
 pytest-django  # BSD (3 clause)
 pytest-html  #MPL-2.0
+pytest-xdist  # MIT
 pywbem  # LGPLv2.1+
 pywinrm  # MIT
 salt!=2019.2.1,!=2019.2.2;python_version!='3.8'  # Apache-2.0
