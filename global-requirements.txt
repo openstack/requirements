@@ -143,7 +143,6 @@ oslo.config!=4.3.0,!=4.4.0;python_version>='3.6'  # Apache-2.0
 oslo.concurrency  # Apache-2.0
 oslo.context  # Apache-2.0
 oslo.db  # Apache-2.0
-oslo.i18n  # Apache-2.0
 oslo.i18n<4.0.0;python_version<'3.6'  # Apache-2.0
 oslo.i18n;python_version>='3.6'  # Apache-2.0
 oslo.limit  # Apache-2.0
