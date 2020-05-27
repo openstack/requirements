@@ -22,7 +22,7 @@ oslo.limit===1.0.2;python_version=='3.8'
 smmap===3.0.1
 confget===2.3.3
 XStatic-Angular-Bootstrap===2.5.0.0
-paunch===6.0.2
+paunch===7.0.0
 WebOb===1.8.6
 sphinxcontrib-actdiag===0.8.5;python_version=='2.7'
 sphinxcontrib-actdiag===2.0.0;python_version=='3.6'
