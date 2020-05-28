@@ -6,10 +6,16 @@
         - build-wheel-cache-centos-7:
             files:
               - bindep.txt
-        - build-wheel-cache-ubuntu-bionic:
+        - build-wheel-cache-centos-8:
             files:
               - bindep.txt
         - build-wheel-cache-ubuntu-xenial:
+            files:
+              - bindep.txt
+        - build-wheel-cache-ubuntu-bionic:
+            files:
+              - bindep.txt
+        - build-wheel-cache-ubuntu-focal:
             files:
               - bindep.txt
         - openstack-tox-validate
@@ -45,15 +51,35 @@
             irrelevant-files:
               - ^(test-|)requirements.txt$
               - ^setup.cfg$
+    check-arm64:
+      jobs:
+        - build-wheel-cache-centos-8-arm64:
+            files:
+              - bindep.txt
+        - build-wheel-cache-ubuntu-xenial-arm64:
+            files:
+              - bindep.txt
+        - build-wheel-cache-ubuntu-bionic-arm64:
+            files:
+              - bindep.txt
+        - build-wheel-cache-ubuntu-focal-arm64:
+            files:
+              - bindep.txt
     gate:
       jobs:
         - build-wheel-cache-centos-7:
             files:
               - bindep.txt
-        - build-wheel-cache-ubuntu-bionic:
+        - build-wheel-cache-centos-8:
             files:
               - bindep.txt
         - build-wheel-cache-ubuntu-xenial:
+            files:
+              - bindep.txt
+        - build-wheel-cache-ubuntu-bionic:
+            files:
+              - bindep.txt
+        - build-wheel-cache-ubuntu-focal:
             files:
               - bindep.txt
         - openstack-tox-validate
