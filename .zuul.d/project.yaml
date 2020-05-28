@@ -31,10 +31,6 @@
         - cross-swift-py27
         - cross-swift-py35:
             branches: ^(?!stable/(newton|ocata)).*$
-        - legacy-tempest-dsvm-neutron-full:
-            irrelevant-files:
-              - ^(test-|)requirements.txt$
-              - ^setup.cfg$
     gate:
       jobs:
         - openstack-tox-validate
@@ -63,10 +59,6 @@
         - cross-swift-py27
         - cross-swift-py35:
             branches: ^(?!stable/(newton|ocata)).*$
-        - legacy-tempest-dsvm-neutron-full:
-            irrelevant-files:
-              - ^(test-|)requirements.txt$
-              - ^setup.cfg$
     experimental:
       jobs:
         - legacy-tempest-dsvm-neutron-pg-full:
