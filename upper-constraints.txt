@@ -519,7 +519,7 @@ ceilometer===14.0.0
 demjson===2.2.4
 diskimage-builder===2.36.0
 heat-translator===2.0.0
-python-magnumclient===3.0.0
+python-magnumclient===3.1.0
 docker===4.2.0
 storops===1.2.4
 XStatic-Angular-lrdragndrop===1.0.2.4
