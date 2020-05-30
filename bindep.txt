@@ -1,5 +1,5 @@
 # These are needed to build all the things in global-requirements, which we do
-# for integration testing.
+# for integration testing, generate-constraints and wheel building.
 
 app-crypt/mit-krb5 [platform:gentoo]
 krb5-devel [platform:redhat]
