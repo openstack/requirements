@@ -20,9 +20,6 @@ openstack/cinder
 openstack/cinder-tempest-plugin
 openstack/cliff
 openstack/compute-hyperv
-openstack/congress
-openstack/congress-dashboard
-openstack/congress-tempest-plugin
 openstack/debtcollector
 openstack/designate
 openstack/designate-dashboard
@@ -230,7 +227,6 @@ openstack/python-barbicanclient
 openstack/python-blazarclient
 openstack/python-brick-cinderclient-ext
 openstack/python-cinderclient
-openstack/python-congressclient
 openstack/python-designateclient
 openstack/python-freezerclient
 openstack/python-glanceclient
