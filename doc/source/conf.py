@@ -69,15 +69,16 @@ add_module_names = False
 show_authors = False
 
 # The name of the Pygments (syntax highlighting) style to use.
-pygments_style = 'sphinx'
+pygments_style = 'native'
 
 # A list of ignored prefixes for module index sorting.
 modindex_common_prefix = ['requirements-doc.']
 
 # openstackdocstheme options
-repository_name = 'openstack/requirements'
-bug_project = 'openstack-requirements'
-bug_tag = ''
+openstackdocs_repo_name = 'openstack/requirements'
+openstackdocs_auto_name = False
+openstackdocs_bug_project = 'openstack-requirements'
+openstackdocs_bug_tag = ''
 
 # -- Options for man page output ----------------------------------------------
 man_pages = []
