@@ -254,7 +254,7 @@ termcolor===1.1.0
 joblib===0.15.1
 hiredis===1.0.1
 google-api-python-client===1.8.0
-castellan===3.0.1
+castellan===3.1.0
 oslo.versionedobjects===2.0.2
 enmerkar===0.7.1
 webcolors===1.11.1
