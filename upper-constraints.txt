@@ -527,7 +527,7 @@ futurist===1.8.1
 jsonschema===2.6.0
 python-blazarclient===2.1.0
 alembic===1.0.8
-glance-store===0.28.0
+glance-store===0.28.1
 sphinxcontrib-programoutput===0.13
 sphinx-testing===1.0.0
 dnspython===1.15.0;python_version=='3.4'
