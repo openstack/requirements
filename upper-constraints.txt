@@ -461,9 +461,9 @@ XStatic-bootswatch===3.3.7.0
 XStatic-JS-Yaml===3.8.1.0
 XStatic-term.js===0.0.7.0
 oslo.log===3.45.2;python_version=='2.7'
-oslo.log===4.1.1;python_version=='3.6'
-oslo.log===4.1.1;python_version=='3.7'
-oslo.log===4.1.1;python_version=='3.8'
+oslo.log===4.1.2;python_version=='3.6'
+oslo.log===4.1.2;python_version=='3.7'
+oslo.log===4.1.2;python_version=='3.8'
 nodeenv===1.3.5
 gossip===2.4.0
 pylev===1.3.0
