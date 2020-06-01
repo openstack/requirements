@@ -395,9 +395,9 @@ numpy===1.18.4
 msgpack===0.6.1
 Sphinx===3.0.3
 oslo.config===7.0.0;python_version=='3.5'
-oslo.config===8.0.2;python_version=='3.6'
-oslo.config===8.0.2;python_version=='3.7'
-oslo.config===8.0.2;python_version=='3.8'
+oslo.config===8.1.0;python_version=='3.6'
+oslo.config===8.1.0;python_version=='3.7'
+oslo.config===8.1.0;python_version=='3.8'
 tempest===24.0.0
 openstackdocstheme===2.2.1
 osc-placement===2.0.0
