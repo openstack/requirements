@@ -31,7 +31,7 @@ vintage===0.4.1
 setproctitle===1.1.10
 pytest===5.4.2
 cursive===0.2.2
-oslo.service===2.1.1
+oslo.service===2.2.0
 django-appconf===1.0.4
 pykerberos===1.2.1
 certifi===2020.4.5.1
