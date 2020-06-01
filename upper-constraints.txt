@@ -398,7 +398,7 @@ oslo.config===8.1.0;python_version=='3.6'
 oslo.config===8.1.0;python_version=='3.7'
 oslo.config===8.1.0;python_version=='3.8'
 tempest===24.0.0
-openstackdocstheme===2.2.1
+openstackdocstheme===2.2.2
 osc-placement===2.0.0
 zake===0.2.2
 python-rsdclient===1.0.2
