@@ -369,7 +369,7 @@ protobuf===3.12.1
 sushy===3.2.0
 python-neutronclient===7.1.1
 pika===1.1.0
-oslo.cache===2.3.0
+oslo.cache===2.4.0
 WebTest===2.0.35
 openstack.nose-plugin===0.11
 os-collect-config===11.0.0
