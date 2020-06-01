@@ -4,10 +4,10 @@
       - openstack-python35-jobs
     check:
       jobs:
-        - build-wheel-mirror-centos-7:
+        - build-wheel-cache-centos-7:
             files:
               - bindep.txt
-        - build-wheel-mirror-ubuntu-xenial:
+        - build-wheel-cache-ubuntu-xenial:
             files:
               - bindep.txt
         - openstack-tox-validate
@@ -56,10 +56,10 @@
               - ^setup.cfg$
     gate:
       jobs:
-        - build-wheel-mirror-centos-7:
+        - build-wheel-cache-centos-7:
             files:
               - bindep.txt
-        - build-wheel-mirror-ubuntu-xenial:
+        - build-wheel-cache-ubuntu-xenial:
             files:
               - bindep.txt
         - openstack-tox-validate
