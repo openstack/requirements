@@ -15,8 +15,6 @@ u-c.
 
 """
 
-from __future__ import print_function
-
 import argparse
 
 from packaging.specifiers import SpecifierSet

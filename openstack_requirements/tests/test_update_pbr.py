@@ -16,8 +16,6 @@
 
 # Based on test_update.py
 
-from __future__ import print_function
-
 import testtools
 
 from openstack_requirements.cmds import update
