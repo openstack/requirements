@@ -9,6 +9,9 @@
         - build-wheel-cache-centos-8:
             files:
               - bindep.txt
+        - build-wheel-cache-debian-buster:
+            files:
+              - bindep.txt
         - build-wheel-cache-ubuntu-xenial:
             files:
               - bindep.txt
@@ -56,6 +59,9 @@
         - build-wheel-cache-centos-8-arm64:
             files:
               - bindep.txt
+        - build-wheel-cache-debian-buster-arm64:
+            files:
+              - bindep.txt
         - build-wheel-cache-ubuntu-xenial-arm64:
             files:
               - bindep.txt
@@ -71,6 +77,9 @@
             files:
               - bindep.txt
         - build-wheel-cache-centos-8:
+            files:
+              - bindep.txt
+        - build-wheel-cache-debian-buster:
             files:
               - bindep.txt
         - build-wheel-cache-ubuntu-xenial:
