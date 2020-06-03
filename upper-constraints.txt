@@ -574,7 +574,7 @@ typing-extensions===3.7.4.2
 virtualenv===20.0.21
 colorama===0.4.3
 confetti===2.5.3
-ironic-lib===4.2.0
+ironic-lib===4.3.0
 pytz===2020.1
 XStatic-D3===3.5.17.0
 actdiag===2.0.0
