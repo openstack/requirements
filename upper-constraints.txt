@@ -45,9 +45,9 @@ attrs===19.3.0
 microversion-parse===1.0.1
 Pint===0.11
 oslo.i18n===3.25.1;python_version=='3.5'
-oslo.i18n===4.0.1;python_version=='3.6'
-oslo.i18n===4.0.1;python_version=='3.7'
-oslo.i18n===4.0.1;python_version=='3.8'
+oslo.i18n===5.0.0;python_version=='3.6'
+oslo.i18n===5.0.0;python_version=='3.7'
+oslo.i18n===5.0.0;python_version=='3.8'
 jsonpath-rw-ext===1.2.2
 python-mistralclient===4.0.1
 oslo.context===3.0.2
