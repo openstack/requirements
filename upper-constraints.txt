@@ -155,7 +155,7 @@ pyudev===0.22.0
 eventlet===0.25.2
 openstack-doc-tools===3.0.0
 frozendict===1.2
-oslo.messaging===12.1.0
+oslo.messaging===12.2.0
 jira===2.0.0
 extras===1.0.0
 PyJWT===1.7.1
