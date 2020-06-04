@@ -110,9 +110,9 @@ googleapis-common-protos===1.51.0
 python-glanceclient===3.1.1
 pyinotify===0.9.6
 debtcollector===1.22.0;python_version=='3.5'
-debtcollector===2.0.1;python_version=='3.6'
-debtcollector===2.0.1;python_version=='3.7'
-debtcollector===2.0.1;python_version=='3.8'
+debtcollector===2.1.0;python_version=='3.6'
+debtcollector===2.1.0;python_version=='3.7'
+debtcollector===2.1.0;python_version=='3.8'
 requests-unixsocket===0.2.0
 croniter===0.3.31
 octavia-lib===2.0.0
