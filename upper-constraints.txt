@@ -125,9 +125,9 @@ python-cloudkittyclient===4.0.0
 soupsieve===2.0.1
 sqlparse===0.3.1
 oslotest===3.9.0;python_version=='3.5'
-oslotest===4.2.0;python_version=='3.6'
-oslotest===4.2.0;python_version=='3.7'
-oslotest===4.2.0;python_version=='3.8'
+oslotest===4.3.0;python_version=='3.6'
+oslotest===4.3.0;python_version=='3.7'
+oslotest===4.3.0;python_version=='3.8'
 jsonpointer===2.0
 defusedxml===0.6.0
 netaddr===0.7.19
