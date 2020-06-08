@@ -464,7 +464,6 @@ testrepository  # Apache-2.0/BSD
 testresources  # Apache-2.0/BSD
 testscenarios  # Apache-2.0/BSD
 testtools  # MIT
-ujson  # BSD
 unittest2  # BSD
 virtualbmc  # Apache-2.0
 virtualenv!=16.3.0  # MIT
