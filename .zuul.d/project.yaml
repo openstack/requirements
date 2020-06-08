@@ -53,6 +53,10 @@
               - ^setup.cfg$
     check-arm64:
       jobs:
+        - requirements-tox-py38-check-uc-aarch64:
+            files:
+              - bindep.txt
+              - upper-constraints.txt
         - build-wheel-cache-centos-8-arm64:
             files:
               - bindep.txt
