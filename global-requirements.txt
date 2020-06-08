@@ -477,7 +477,6 @@ wsgi-intercept  # MIT License
 xvfbwrapper  #license: MIT
 zake  # Apache-2.0
 zuul-sphinx  # Apache-2.0
-shade  # Apache-2.0
 sadisplay  # BSD
 
 # NOTE(tonyb): Generally adding OpenSatck services isn't allowed but some consumers of ceilometer
