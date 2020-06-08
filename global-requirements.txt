@@ -28,7 +28,6 @@ cmd2!=0.8.3,<0.9.0  # MIT
 confluent-kafka!=1.4.0  # Apache-2.0
 cotyledon  # Apache-2.0
 construct  # MIT
-PuLP  # MIT
 croniter  # MIT License
 cryptography!=2.0  # BSD/Apache-2.0
 cursive  # Apache-2.0
