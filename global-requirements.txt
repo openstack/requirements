@@ -466,7 +466,6 @@ testscenarios  # Apache-2.0/BSD
 testtools  # MIT
 ujson  # BSD
 unittest2  # BSD
-virtualbmc  # Apache-2.0
 virtualenv!=16.3.0  # MIT
 wrapt  # BSD License
 WebTest  # MIT
