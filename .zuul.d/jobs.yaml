@@ -55,3 +55,11 @@
     vars:
       tox_envlist: bindep
 
+- job:
+    name: requirements-tox-py38-check-uc-aarch64
+    parent: requirements-tox-py38-check-uc
+    nodeset: ubuntu-focal-arm64
+    timeout: 7200
+    pre-run: playbooks/build-kafka.yaml
+    vars:
+      ansible_python_interpreter: python3
