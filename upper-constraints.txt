@@ -252,7 +252,6 @@ freezegun===0.3.15
 python-pytun===2.3.0
 pyperclip===1.8.0
 cassandra-driver===3.23.0
-mox===0.5.3
 XStatic-Angular-Schema-Form===0.8.13.0
 gabbi===2.0.3
 nwdiag===2.0.0
