@@ -11,8 +11,9 @@
 # under the License.
 
 import io
-import mock
 import os
+from unittest import mock
+
 import testscenarios
 import testtools
 

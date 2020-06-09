@@ -15,9 +15,9 @@
 import six
 import sys
 import textwrap
+from unittest import mock
 
 import fixtures
-import mock
 import testscenarios
 import testtools
 from testtools import matchers
