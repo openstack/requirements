@@ -146,7 +146,7 @@ oslo.db  # Apache-2.0
 oslo.i18n<4.0.0;python_version<'3.6'  # Apache-2.0
 oslo.i18n;python_version>='3.6'  # Apache-2.0
 oslo.limit  # Apache-2.0
-oslo.log  # Apache-2.0
+oslo.log!=3.44.2,!=4.1.2,!=4.2.0  # Apache-2.0
 oslo.messaging!=9.0.0  # Apache-2.0
 oslo.middleware  # Apache-2.0
 oslo.policy!=3.0.0  # Apache-2.0
