@@ -462,7 +462,6 @@ testrepository  # Apache-2.0/BSD
 testresources  # Apache-2.0/BSD
 testscenarios  # Apache-2.0/BSD
 testtools  # MIT
-ujson  # BSD
 unittest2  # BSD
 virtualenv!=16.3.0  # MIT
 wrapt  # BSD License
