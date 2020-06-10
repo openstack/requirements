@@ -135,6 +135,7 @@ taskflow===4.2.0
 traceback2===1.4.0
 arrow===0.15.6
 semantic-version===2.8.5
+virtualbmc===2.1.0
 deprecation===2.1.0
 SQLAlchemy===1.3.17
 pyroute2===0.5.12
