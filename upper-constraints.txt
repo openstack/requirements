@@ -988,7 +988,7 @@ typing-extensions===3.7.4.2;python_version=='3.8'
 virtualenv===20.0.17
 colorama===0.4.3
 confetti===2.5.3
-ironic-lib===4.2.0
+ironic-lib===4.2.1
 pytz===2019.3
 XStatic-D3===3.5.17.0
 actdiag===0.5.4;python_version=='2.7'
