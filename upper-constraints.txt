@@ -607,7 +607,7 @@ keystoneauth1===3.17.2
 statsd===3.3.0
 XenAPI===2.14
 python-keystoneclient===3.21.0
-ceilometer===13.1.0
+ceilometer===13.1.1
 demjson===2.2.4
 diskimage-builder===2.30.0;python_version=='2.7'
 diskimage-builder===2.30.0;python_version=='3.4'
