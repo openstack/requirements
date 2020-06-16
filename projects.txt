@@ -257,7 +257,6 @@ openstack/python-senlinclient
 openstack/python-solumclient
 openstack/python-swiftclient
 openstack/python-tackerclient
-openstack/python-tricircleclient
 openstack/python-tripleoclient
 openstack/python-troveclient
 openstack/python-valenceclient
@@ -290,7 +289,6 @@ openstack/tap-as-a-service
 openstack/taskflow
 openstack/tempest
 openstack/tosca-parser
-openstack/tricircle
 openstack/tripleo-ansible
 openstack/tripleo-common
 openstack/tripleo-common-tempest-plugin
