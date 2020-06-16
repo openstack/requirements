@@ -1,7 +1,7 @@
-openstack-dev/hacking
-openstack-dev/pbr
-openstack-infra/requestsexceptions
-openstack-infra/shade
+openstack/hacking
+openstack/pbr
+openstack/requestsexceptions
+openstack/shade
 openstack/almanach
 openstack/ansible-config_template
 openstack/ansible-hardening
