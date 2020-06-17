@@ -1,4 +1,9 @@
 - hosts: all
+  pre_tasks:
+    - name: Ensure pip
+      include_role:
+        name: ensure-pip
+
   tasks:
     - name: Install openstack_requirements
       command: "pip3 install --user {{ zuul.projects['opendev.org/openstack/requirements'].src_dir }}"
