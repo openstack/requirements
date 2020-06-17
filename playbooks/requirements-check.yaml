@@ -1,4 +1,12 @@
 - hosts: all
+  pre_tasks:
+    - name: Ensure pip
+      include_role:
+        name: ensure-pip
+    - name: Ensure virtualenv
+      include_role:
+        name: ensure-virtualenv
+
   tasks:
     - name: Run requirements check script
       # Use command module here instead of script since Zuul gets output
