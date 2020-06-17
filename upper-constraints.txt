@@ -380,7 +380,7 @@ msgpack===0.6.1
 Sphinx===3.1.0
 oslo.config===8.1.0
 tempest===24.0.0
-openstackdocstheme===2.2.2
+openstackdocstheme===2.2.3
 osc-placement===2.0.0
 zake===0.2.2
 python-rsdclient===1.0.2
