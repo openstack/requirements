@@ -110,7 +110,7 @@ debtcollector===2.1.0
 requests-unixsocket===0.2.0
 croniter===0.3.32
 octavia-lib===2.0.0
-python-watcherclient===3.0.0
+python-watcherclient===3.1.0
 MarkupSafe===1.1.1
 pypowervm===1.1.24
 doc8===0.8.1
