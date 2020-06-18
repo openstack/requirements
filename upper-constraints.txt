@@ -262,7 +262,7 @@ oslo.log===4.2.1
 nodeenv===1.4.0
 gossip===2.4.0
 importlib-metadata===1.6.1
-python-searchlightclient===2.0.1
+python-searchlightclient===2.1.0
 oslo.middleware===4.1.0
 apipkg===1.5
 XStatic-mdi===1.6.50.2
