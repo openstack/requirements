@@ -182,7 +182,6 @@ requests-mock===1.8.0
 os-apply-config===11.2.0
 prometheus-client===0.8.0
 oslosphinx===4.18.0
-mox3===1.1.0
 gunicorn===20.0.4
 storpool===5.4.0
 textfsm===1.1.0
