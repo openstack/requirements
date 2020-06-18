@@ -95,7 +95,6 @@ openstack/monasca-statsd
 openstack/monasca-tempest-plugin
 openstack/monasca-transform
 openstack/monasca-ui
-openstack/mox3
 openstack/murano
 openstack/murano-agent
 openstack/murano-dashboard
