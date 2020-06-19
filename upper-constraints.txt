@@ -271,7 +271,7 @@ uritemplate===3.0.1
 docutils===0.15.2
 threadpoolctl===2.1.0
 notifier===1.0.3
-os-ken===1.0.0
+os-ken===1.1.0
 pycrypto===2.6.1;python_version=='3.6'
 ujson===3.0.0
 selenium===3.141.0
