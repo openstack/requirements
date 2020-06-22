@@ -107,7 +107,7 @@ pyngus===2.3.0
 Pillow===6.1.0
 zuul-sphinx===0.4.1
 python-mimeparse===1.6.0
-tripleo-common===11.3.2
+tripleo-common===11.4.0
 Tempita===0.5.2
 ply===3.11
 requests-toolbelt===0.9.1
