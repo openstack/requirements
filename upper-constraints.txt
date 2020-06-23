@@ -489,7 +489,6 @@ XenAPI===2.14
 importlib-resources===2.0.1;python_version=='3.6'
 python-keystoneclient===4.1.0
 ceilometer===14.0.0
-demjson===2.2.4
 diskimage-builder===3.1.0
 heat-translator===2.1.0
 python-magnumclient===3.1.0

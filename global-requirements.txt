@@ -384,7 +384,6 @@ zeroconf  # LGPL
 bashate  # Apache-2.0
 couchdb  # Apache-2.0
 coverage!=4.4  # Apache-2.0
-demjson  # GLGPLv3+
 docker  # Apache-2.0
 django-nose  # BSD
 doc8  # Apache-2.0
