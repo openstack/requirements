@@ -426,7 +426,6 @@ pysendfile;sys_platform!='win32'  # MIT
 python-3parclient  # Apache-2.0
 python-consul  # MIT License
 python-subunit  # Apache-2.0/BSD
-python-pytun  # MIT
 pyzmq  # LGPL+BSD
 redis  # MIT
 hiredis  # BSD
