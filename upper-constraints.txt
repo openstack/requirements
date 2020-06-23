@@ -234,7 +234,6 @@ lockfile===0.12.2
 ldappool===2.4.1
 termcolor===1.1.0
 joblib===0.16.0
-hiredis===1.1.0
 google-api-python-client===1.10.0
 castellan===3.4.0
 oslo.versionedobjects===2.2.0
