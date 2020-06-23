@@ -128,7 +128,6 @@ neutron-lib  # Apache-2.0
 neutron-dynamic-routing  # Apache-2.0
 neutron-fwaas  # Apache-2.0
 neutron  # Apache-2.0
-notifier  # Apache-2.0
 oauth2client!=4.0.0  # Apache-2.0
 oauthlib  # BSD
 octavia-lib  # Apache-2.0
