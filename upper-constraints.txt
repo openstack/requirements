@@ -365,7 +365,6 @@ ceilometermiddleware===2.0.0
 python-nss===1.0.1
 testrepository===0.0.20
 sympy===1.6
-sphinxmark===0.2.0
 Logbook===1.5.3
 PyNaCl===1.4.0
 osc-lib===2.2.0

@@ -445,7 +445,6 @@ sphinxcontrib-nwdiag  # BSD
 sphinxcontrib-seqdiag  # BSD
 sphinxcontrib-pecanwsme  # Apache-2.0
 sphinx-feature-classification  # Apache-2.0
-sphinxmark  # Apache-2.0
 sphinxcontrib.datatemplates  # BSD License
 sphinxcontrib-programoutput  # BSD license
 sphinxcontrib-svg2pdfconverter  # BSD License
