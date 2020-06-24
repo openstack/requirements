@@ -176,7 +176,6 @@ ovs  # Apache-2.0
 os-win  # Apache-2.0
 os-xenapi  # Apache-2.0
 paramiko  # LGPLv2.1+
-pathlib2  # MIT
 passlib  # BSD
 Paste  # MIT
 PasteDeploy  # MIT
