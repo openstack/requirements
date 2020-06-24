@@ -325,7 +325,7 @@ zake===0.2.2
 python-solumclient===2.2.0
 PyMySQL===0.7.10
 kubernetes===1.0.0
-httplib2===0.10.3
+httplib2===0.18.0
 os-cloud-config===6.0.0
 bottle===0.12.13
 betamax===0.8.0
