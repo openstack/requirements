@@ -434,7 +434,7 @@ crc16===0.1.1
 protobuf===3.9.1
 os-dpm===1.1.0
 sushy===2.0.3
-python-neutronclient===6.14.0
+python-neutronclient===6.14.1
 pika===1.1.0
 oslo.cache===1.37.0
 WebTest===2.0.33
