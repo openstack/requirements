@@ -240,7 +240,7 @@ sphinxcontrib-jsmath===1.0.1;python_version=='3.4'
 sphinxcontrib-jsmath===1.0.1;python_version=='3.5'
 sphinxcontrib-jsmath===1.0.1;python_version=='3.6'
 sphinxcontrib-jsmath===1.0.1;python_version=='3.7'
-python-novaclient===15.1.0
+python-novaclient===15.1.1
 pact===1.12.0
 bcrypt===3.1.7
 fixtures-git===0.1.0
