@@ -42,6 +42,8 @@ python3-all [platform:dpkg]
 python-all-dev [platform:dpkg]
 python-devel [platform:rpm !platform:centos-8]
 python3-devel [platform:rpm]
+# Ubuntu packages venv separately, otherwise standard
+python3-venv [platform:dpkg]
 swig
 systemd-devel [platform:redhat]
 uuid-dev [platform:dpkg]
