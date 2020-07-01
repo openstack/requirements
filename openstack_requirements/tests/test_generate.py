@@ -11,6 +11,7 @@
 #    under the License.
 
 import os.path
+import subprocess
 
 import fixtures
 import testtools
@@ -22,21 +23,36 @@ from openstack_requirements.cmds import generate
 class TestFreeze(testtools.TestCase):
 
     def test_freeze_smoke(self):
-        # Use an aribtrary python. The installation of virtualenv system wide
-        # is presumed.
-        versions = ['/usr/bin/python%(v)s' % dict(v=v) for v in
-                    ["2.7", "3.4"]]
-        found = [v for v in versions if os.path.exists(v)][0]
+        # Use an arbitrary python, but make sure it has the venv standard lib.
+        versions = ['/usr/bin/python3.%(v)s' % dict(v=v) for v in range(5, 10)]
+        found = [v for v in versions if os.path.exists(v)]
+        found_with_venv = []
+        for py in found:
+            output = str(subprocess.check_output(
+                [py,
+                 '-c',
+                 'import pkgutil; [print(x) for x in pkgutil.iter_modules()]']
+            ))
+            # Needs both venv and ensurepip
+            if 'venv' in output and 'ensurepip' in output:
+                found_with_venv.append(py)
+
+        if len(found_with_venv) == 0:
+            self.skipTest('Unable to find python that includes venv module')
+
+        # Grab the latest version available as that is the most likely to
+        # break.
+        pyversion = found_with_venv[-1]
         req = self.useFixture(fixtures.TempDir()).path + '/r.txt'
         with open(req, 'wt') as output:
-            output.write('fixtures==1.2.0')
-        frozen = generate._freeze(req, found)
-        expected_version = found[-3:]
+            output.write('fixtures==2.0.0')
+        frozen = generate._freeze(req, pyversion)
+        expected_version = pyversion[-3:]
         self.expectThat(frozen, matchers.HasLength(2))
         self.expectThat(frozen[0], matchers.Equals(expected_version))
         # There are multiple items in the dependency tree of fixtures.
         # Since this is a smoke test, just ensure fixtures is there.
-        self.expectThat(frozen[1], matchers.Contains(('fixtures', '1.2.0')))
+        self.expectThat(frozen[1], matchers.Contains(('fixtures', '2.0.0')))
 
 
 class TestParse(testtools.TestCase):

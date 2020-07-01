@@ -74,7 +74,7 @@ def _freeze(requirements, python):
         version = '.'.join(version_all.split('.')[:2])
         with fixtures.TempDir() as temp:
             output.append(subprocess.check_output(
-                ['virtualenv', '-p', python, temp.path]))
+                [python, '-m', 'venv', temp.path]))
             pip_bin = os.path.join(temp.path, 'bin', 'pip')
             output.append(subprocess.check_output(
                 [pip_bin, 'install', '-U', 'pip', 'setuptools', 'wheel']))
