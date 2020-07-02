@@ -969,9 +969,9 @@ python-heatclient===2.1.0;python_version=='3.7'
 python-heatclient===2.1.0;python_version=='3.8'
 kafka-python===2.0.1
 oslo.utils===3.42.1;python_version=='2.7'
-oslo.utils===4.1.1;python_version=='3.6'
-oslo.utils===4.1.1;python_version=='3.7'
-oslo.utils===4.1.1;python_version=='3.8'
+oslo.utils===4.1.2;python_version=='3.6'
+oslo.utils===4.1.2;python_version=='3.7'
+oslo.utils===4.1.2;python_version=='3.8'
 python-editor===1.0.4
 gitdb2===2.0.6;python_version=='2.7'
 gitdb2===4.0.2;python_version=='3.6'
