@@ -74,7 +74,7 @@ horizon  # Apache-2.0
 httplib2  # MIT
 hvac  # Apache-2.0
 icalendar  # BSD
-importlib-metadata  # Apache-2.0
+importlib-metadata;python_version<'3.8'  # Apache-2.0
 infinisdk  # BSD-3
 influxdb!=5.3.0  # MIT
 ironic-lib  # Apache-2.0
