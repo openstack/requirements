@@ -118,7 +118,7 @@ pymongo===3.10.1
 python-cloudkittyclient===4.0.0
 soupsieve===2.0.1
 sqlparse===0.3.1
-oslotest===4.3.0
+oslotest===4.4.0
 jsonpointer===2.0
 defusedxml===0.6.0
 netaddr===0.8.0
