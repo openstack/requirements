@@ -8,6 +8,7 @@ flake8-docstrings
 flake8-import-order
 flake8-logging-format
 hacking
+isort
 mccabe
 pep257
 pep8
