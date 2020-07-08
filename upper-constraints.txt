@@ -469,7 +469,7 @@ pymemcache===2.1.1
 wrapt===1.11.1
 oslo.privsep===1.32.2
 sphinxcontrib-apidoc===0.3.0
-oslo.policy===2.1.2
+oslo.policy===2.1.3
 python-muranoclient===1.2.0
 hvac===0.7.2
 pyeclib===1.5.0
