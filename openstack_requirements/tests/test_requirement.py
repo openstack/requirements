@@ -13,6 +13,7 @@
 import textwrap
 
 import pkg_resources
+import pkg_resources.extern.packaging.requirements as pkg_resources_reqs
 import testscenarios
 import testtools
 
@@ -106,8 +107,13 @@ class TestParseRequirementFailures(testtools.TestCase):
         ('-f', dict(line='-f http://tarballs.openstack.org/'))]
 
     def test_does_not_parse(self):
-        with testtools.ExpectedException(pkg_resources.RequirementParseError):
+        try:
             requirement.parse_line(self.line)
+        except (pkg_resources.RequirementParseError,
+                pkg_resources_reqs.InvalidRequirement):
+            pass
+        else:
+            self.fail('No exception triggered')
 
 
 class TestToContent(testtools.TestCase):
@@ -147,8 +153,13 @@ class TestToReqs(testtools.TestCase):
         self.assertEqual(reqs, [(req, line)])
 
     def test_not_urls(self):
-        with testtools.ExpectedException(pkg_resources.RequirementParseError):
+        try:
             list(requirement.to_reqs('file:///foo#egg=foo'))
+        except (pkg_resources.RequirementParseError,
+                pkg_resources_reqs.InvalidRequirement):
+            pass
+        else:
+            self.fail('No exception triggered')
 
     def test_multiline(self):
         content = textwrap.dedent("""\
