@@ -303,7 +303,7 @@ WebTest===2.0.26
 openstack.nose-plugin===0.11
 os-collect-config===6.0.0
 python-qpid-proton===0.17.0
-pysaml2===4.0.2
+pysaml2===5.0.0
 oslo.reports===1.18.0
 ceilometermiddleware===1.0.1
 python-nss===1.0.1
