@@ -397,7 +397,7 @@ api-object-schema===2.0.0
 WSME===0.10.0
 proboscis===1.2.6.0
 oslo.upgradecheck===1.1.0
-stevedore===2.0.1
+stevedore===3.0.0
 pywinrm===0.4.1
 botocore===1.17.17
 xmltodict===0.12.0
