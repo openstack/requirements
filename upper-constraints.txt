@@ -350,7 +350,7 @@ dogtag-pki===10.6.9.1
 XStatic-Angular-UUID===0.0.4.0
 purestorage===1.17.0
 sphinxcontrib-seqdiag===0.8.5
-os-win===4.3.2
+os-win===4.3.3
 capacity===1.3.14
 retrying===1.3.3
 shade===1.32.0
