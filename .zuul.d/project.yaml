@@ -43,7 +43,6 @@
         - cross-swift-py35
         - openstack-tox-py36
         - neutron-grenade-multinode:
-            voting: false
             irrelevant-files:
               - ^(test-|)requirements.txt$
               - ^setup.cfg$
@@ -52,7 +51,6 @@
               - ^(test-|)requirements.txt$
               - ^setup.cfg$
         - neutron-grenade:
-            voting: false
             irrelevant-files:
               - ^(test-|)requirements.txt$
               - ^setup.cfg$
@@ -90,7 +88,15 @@
         - cross-swift-py27
         - cross-swift-py35
         - openstack-tox-py36
+        - neutron-grenade-multinode:
+            irrelevant-files:
+              - ^(test-|)requirements.txt$
+              - ^setup.cfg$
         - tempest-full:
+            irrelevant-files:
+              - ^(test-|)requirements.txt$
+              - ^setup.cfg$
+        - neutron-grenade:
             irrelevant-files:
               - ^(test-|)requirements.txt$
               - ^setup.cfg$
