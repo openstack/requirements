@@ -6,7 +6,7 @@ rsa===4.6
 restructuredtext-lint===1.3.1
 netmiko===3.1.1
 PasteDeploy===2.1.0
-typing===3.7.4.1
+typing===3.7.4.3
 python-saharaclient===3.2.0
 Routes===2.4.1
 rtslib-fb===2.1.73
@@ -26,7 +26,7 @@ osprofiler===3.2.2
 os-resource-classes===1.0.0
 tabulate===0.8.7
 python-ironic-inspector-client===4.2.0
-lxml===4.5.1
+lxml===4.5.2
 vintage===0.4.1
 setproctitle===1.1.10
 pytest===5.4.3
@@ -52,7 +52,7 @@ python-senlinclient===2.1.0
 rcssmin===1.0.6
 pycadf===3.1.0
 grpcio===1.30.0
-skydive-client===0.8.1
+skydive-client===0.9.0
 pysendfile===2.0.1
 fixtures===3.0.0
 neutron-lib===2.4.0
@@ -98,7 +98,7 @@ suds-jurko===0.6
 python-swiftclient===3.10.0
 pyOpenSSL===19.1.0
 monasca-common===3.2.0
-zeroconf===0.27.1
+zeroconf===0.28.0
 scipy===1.5.1
 mypy-extensions===0.4.3
 rsd-lib===1.2.0
@@ -139,8 +139,8 @@ virtualbmc===2.1.0
 deprecation===2.1.0
 SQLAlchemy===1.3.18
 pyroute2===0.5.12
-google-auth===1.18.0
-kazoo===2.7.0
+google-auth===1.19.0
+kazoo===2.8.0
 XStatic-roboto-fontface===0.5.0.0
 pyudev===0.22.0
 eventlet===0.25.2
@@ -157,7 +157,7 @@ reno===3.1.0
 imagesize===1.2.0
 pydot===1.4.1
 urllib3===1.25.9
-graphviz===0.14
+graphviz===0.14.1
 PyKMIP===0.10.0
 whereto===0.4.0
 pywbem===0.17.3
@@ -219,7 +219,7 @@ XStatic-JQuery-Migrate===1.2.1.2
 pytest-html===2.1.1
 appdirs===1.4.4
 tinyrpc===1.0.4
-google-auth-httplib2===0.0.3
+google-auth-httplib2===0.0.4
 daiquiri===2.1.1
 influxdb===5.2.3
 funcparserlib===0.3.6
@@ -242,7 +242,7 @@ enmerkar===0.7.1
 webcolors===1.11.1
 aodhclient===2.1.0
 autobahn===20.6.2
-SQLAlchemy-Utils===0.36.7
+SQLAlchemy-Utils===0.36.8
 retryz===0.1.9
 pluggy===0.13.1
 coverage===5.2
@@ -254,7 +254,7 @@ XStatic-Angular-Schema-Form===0.8.13.0
 gabbi===2.0.3
 nwdiag===2.0.0
 XStatic-bootswatch===3.3.7.0
-pytest-xdist===1.32.0
+pytest-xdist===1.33.0
 XStatic-JS-Yaml===3.8.1.0
 XStatic-term.js===0.0.7.0
 oslo.log===4.3.0
@@ -284,7 +284,7 @@ capacity===1.3.14
 retrying===1.3.3
 XStatic-Dagre===0.6.4.0
 pydotplus===2.0.2
-boto3===1.14.17
+boto3===1.14.20
 jeepney===0.4.3
 stestr===3.0.1
 oslo.serialization===4.0.0
@@ -355,7 +355,7 @@ os-collect-config===11.0.0
 edgegrid-python===1.1.1
 python-qpid-proton===0.31.0
 python-octaviaclient===2.1.0
-pysaml2===5.3.0
+pysaml2===6.1.0
 requests-oauthlib===1.3.0
 oslo.reports===2.1.0
 bitmath===1.3.3.1
@@ -399,13 +399,13 @@ proboscis===1.2.6.0
 oslo.upgradecheck===1.1.0
 stevedore===3.1.0
 pywinrm===0.4.1
-botocore===1.17.17
+botocore===1.17.20
 xmltodict===0.12.0
 pyasn1===0.4.8
 oslo.rootwrap===6.1.0
 Django===2.2.14
 pexpect===4.8.0
-cmd2===1.1.0
+cmd2===1.2.1
 python-json-logger===0.1.11
 redis===3.5.3
 jmespath===0.10.0
@@ -428,13 +428,14 @@ dfs-sdk===1.2.26
 sentinels===1.0.0
 kombu===4.6.11
 distro===1.5.0
+zstd===1.4.5.1
 yaql===1.1.3
 requestsexceptions===1.4.0
 testresources===2.0.1
 falcon===2.0.0
 etcd3gw===0.2.5
 Flask-RESTful===0.3.8
-GitPython===3.1.3
+GitPython===3.1.7
 python-ironicclient===4.2.0
 XStatic===1.0.2
 XStatic-Angular-FileUpload===12.0.4.0
@@ -462,7 +463,7 @@ rfc3986===1.4.0
 tenacity===6.2.0
 python-designateclient===4.0.0
 future===0.18.2
-Paste===3.4.1
+Paste===3.4.2
 pytest-django===3.9.0
 jaeger-client===4.3.0
 XStatic-Json2yaml===0.1.1.0
@@ -489,6 +490,7 @@ XenAPI===2.14
 importlib-resources===3.0.0;python_version=='3.6'
 python-keystoneclient===4.1.0
 ceilometer===14.0.0
+demjson===2.2.4
 diskimage-builder===3.1.0
 heat-translator===2.1.0
 python-magnumclient===3.1.0
@@ -539,7 +541,7 @@ XStatic-jquery-ui===1.12.1.1
 monasca-statsd===2.1.0
 python-dateutil===2.8.1
 typing-extensions===3.7.4.2
-virtualenv===20.0.25
+virtualenv===20.0.26
 colorama===0.4.3
 confetti===2.5.3
 ironic-lib===4.3.0
@@ -550,4 +552,3 @@ actdiag===2.0.0
 sysv-ipc===1.0.1
 sphinxcontrib-applehelp===1.0.2
 scikit-learn===0.23.1
-zstd===1.4.5.1
