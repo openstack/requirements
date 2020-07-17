@@ -17,7 +17,6 @@ XStatic-Angular-Bootstrap===2.5.0.0
 WebOb===1.8.6
 sphinxcontrib-actdiag===2.0.0
 pecan===1.3.3
-rst2txt===1.1.0
 ryu===4.34
 os-api-ref===2.1.0
 python-ldap===3.3.1
@@ -29,6 +28,7 @@ tabulate===0.8.7
 python-ironic-inspector-client===4.2.0
 lxml===4.5.2
 vintage===0.4.1
+rst2txt===1.1.0
 setproctitle===1.1.10
 pytest===5.4.3
 cursive===0.2.2
@@ -94,7 +94,7 @@ Tempita===0.5.2
 ply===3.11
 google-api-core===1.21.0
 requests-toolbelt===0.9.1
-simplejson===3.17.0
+simplejson===3.17.2
 suds-jurko===0.6
 python-swiftclient===3.10.0
 pyOpenSSL===19.1.0
@@ -140,7 +140,7 @@ virtualbmc===2.1.0
 deprecation===2.1.0
 SQLAlchemy===1.3.18
 pyroute2===0.5.12
-google-auth===1.19.0
+google-auth===1.19.1
 kazoo===2.8.0
 XStatic-roboto-fontface===0.5.0.0
 pyudev===0.22.0
@@ -235,8 +235,8 @@ lockfile===0.12.2
 ldappool===2.4.1
 termcolor===1.1.0
 joblib===0.16.0
-hiredis===1.0.1
-google-api-python-client===1.9.3
+hiredis===1.1.0
+google-api-python-client===1.10.0
 castellan===3.4.0
 oslo.versionedobjects===2.2.0
 enmerkar===0.7.1
@@ -285,7 +285,7 @@ capacity===1.3.14
 retrying===1.3.3
 XStatic-Dagre===0.6.4.0
 pydotplus===2.0.2
-boto3===1.14.20
+boto3===1.14.22
 jeepney===0.4.3
 stestr===3.0.1
 oslo.serialization===4.0.0
@@ -314,7 +314,7 @@ infinisdk===161.1.3
 packaging===20.4
 XStatic-Dagre-D3===0.4.17.0
 nose-exclude===0.5.0
-psutil===5.7.0
+psutil===5.7.2
 py===1.9.0
 txaio===20.4.1
 python-qinlingclient===5.1.0
@@ -400,7 +400,7 @@ proboscis===1.2.6.0
 oslo.upgradecheck===1.1.0
 stevedore===3.2.0
 pywinrm===0.4.1
-botocore===1.17.20
+botocore===1.17.22
 xmltodict===0.12.0
 pyasn1===0.4.8
 oslo.rootwrap===6.1.0
@@ -414,7 +414,7 @@ click===7.1.2
 XStatic-smart-table===1.4.13.2
 kuryr-lib===2.1.0
 scrypt===0.8.15
-jsonpatch===1.25
+jsonpatch===1.26
 python-daemon===2.2.4
 typed-ast===1.4.1
 os-testr===2.0.0
@@ -542,7 +542,7 @@ XStatic-jquery-ui===1.12.1.1
 monasca-statsd===2.1.0
 python-dateutil===2.8.1
 typing-extensions===3.7.4.2
-virtualenv===20.0.26
+virtualenv===20.0.27
 colorama===0.4.3
 confetti===2.5.3
 ironic-lib===4.3.0
