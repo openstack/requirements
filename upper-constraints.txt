@@ -296,7 +296,7 @@ metalsmith===1.0.0
 s3transfer===0.3.3
 sphinxcontrib-svg2pdfconverter===1.1.0
 murano-pkg-check===0.3.0
-oslo.vmware===3.4.0
+oslo.vmware===3.5.0
 XStatic-moment===2.8.4.2
 sqlalchemy-migrate===0.13.0
 gitdb===4.0.5
