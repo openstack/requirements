@@ -188,7 +188,7 @@ textfsm===0.4.1
 unittest2===1.1.0
 django-compressor===2.2
 libvirt-python===5.1.0
-python-zunclient===3.3.0
+python-zunclient===3.3.1
 asyncio===3.4.3;python_version=='3.4'
 asyncio===3.4.3;python_version=='3.5'
 asyncio===3.4.3;python_version=='3.6'
