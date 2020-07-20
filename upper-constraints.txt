@@ -241,7 +241,7 @@ ldappool===2.4.1
 termcolor===1.1.0
 hiredis===1.0.0
 google-api-python-client===1.7.8
-castellan===1.2.2
+castellan===1.2.3
 oslo.versionedobjects===1.35.1
 webcolors===1.8.1
 aodhclient===1.2.0
