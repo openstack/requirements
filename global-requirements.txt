@@ -282,6 +282,10 @@ python-zunclient  # Apache-2.0
 python-memcached  # PSF
 python-dateutil  # BSD
 
+#Only required for sasl/binary protocol
+python-binary-memcached  # MIT
+uhashring  # BSD
+
 # 2013.6 is the first version of pytz that is PEP 440 compatible.
 pytz  # MIT
 pyudev  # LGPLv2.1+

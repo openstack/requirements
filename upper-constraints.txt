@@ -422,6 +422,8 @@ cotyledon===1.7.3
 xattr===0.9.7
 systemd-python===234
 python-memcached===1.59
+python-binary-memcached===0.29.0
+uhashring===1.2
 openstacksdk===0.48.0
 six===1.15.0
 dulwich===0.20.5
