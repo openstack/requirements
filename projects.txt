@@ -131,7 +131,6 @@ openstack/openstack-ansible-os_barbican
 openstack/openstack-ansible-os_ceilometer
 openstack/openstack-ansible-os_cinder
 openstack/openstack-ansible-os_cloudkitty
-openstack/openstack-ansible-os_congress
 openstack/openstack-ansible-os_designate
 openstack/openstack-ansible-os_glance
 openstack/openstack-ansible-os_gnocchi
