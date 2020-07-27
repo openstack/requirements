@@ -150,7 +150,7 @@ oslo.messaging===12.2.2
 jira===2.0.0
 extras===1.0.0
 PyJWT===1.7.1
-XStatic-lodash===4.16.4.1
+XStatic-lodash===4.16.4.2
 zVMCloudConnector===1.4.1
 paramiko===2.7.1
 ifaddr===0.1.7
