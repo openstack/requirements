@@ -304,7 +304,7 @@ python-monascaclient===2.2.0
 ldap3===2.7
 natsort===7.0.1
 requests-ntlm===1.1.0
-automaton===2.1.0
+automaton===2.2.0
 os-service-types===1.7.0
 keyring===21.2.1
 testscenarios===0.5.0
