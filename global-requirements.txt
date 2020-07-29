@@ -490,9 +490,6 @@ grpcio!=1.16.0,!=1.16.1,!=1.17.0,!=1.17.1
 # a real requirement of any of our software.
 openstack-release-test
 
-# NOTE(snapiri): This is required for Dragonflow topology visualization
-skydive-client  # Apache-2.0
-
 # NOTE(anilvenkata): This is required for profiling oslo.service processes
 Yappi!=0.98,!=0.99  # MIT
 
