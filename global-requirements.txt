@@ -428,7 +428,6 @@ python-consul  # MIT License
 python-subunit  # Apache-2.0/BSD
 pyzmq  # LGPL+BSD
 redis  # MIT
-hiredis  # BSD
 requests-mock  # Apache-2.0
 tenacity  # Apache-2.0
 retrying!=1.3.0  # Apache-2.0
