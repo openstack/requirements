@@ -221,7 +221,6 @@ typing  # PSF
 voluptuous  # BSD License
 pydot  # MIT License
 pydotplus  # MIT License
-crc16  # LGPLv3+
 pyzabbix  # LGPL
 statsd  # MIT
 zVMCloudConnector;sys_platform!='win32'  # Apache 2.0 License
