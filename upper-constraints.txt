@@ -165,6 +165,7 @@ tornado===6.0.4
 pycparser===2.20
 mock===3.0.5
 PyYAML===5.3.1
+rbd-iscsi-client===0.1.7
 beautifulsoup4===4.9.1
 os-net-config===12.4.0
 ovs===2.13.0
