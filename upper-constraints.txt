@@ -37,6 +37,7 @@ django-appconf===1.0.4
 pykerberos===1.2.1
 certifi===2020.6.20
 sphinxcontrib-nwdiag===2.0.0
+rbd-iscsi-client===0.1.7
 requests-aws===0.1.8
 alabaster===0.7.12
 pbr===5.4.5
@@ -165,7 +166,6 @@ tornado===6.0.4
 pycparser===2.20
 mock===3.0.5
 PyYAML===5.3.1
-rbd-iscsi-client===0.1.7
 beautifulsoup4===4.9.1
 os-net-config===12.4.0
 ovs===2.13.0
@@ -187,7 +187,7 @@ textfsm===1.1.0
 python-3parclient===4.2.11
 unittest2===1.1.0
 django-compressor===2.4
-libvirt-python===6.4.0
+libvirt-python===6.6.0
 python-zunclient===4.1.0
 tzlocal===2.1
 sphinxcontrib-jsmath===1.0.1
@@ -269,7 +269,7 @@ uritemplate===3.0.1
 docutils===0.15.2
 threadpoolctl===2.1.0
 os-ken===1.1.0
-ujson===3.0.0
+ujson===3.1.0
 selenium===3.141.0
 python-glareclient===0.5.3
 mypy===0.782
@@ -304,7 +304,7 @@ natsort===7.0.1
 requests-ntlm===1.1.0
 automaton===2.2.0
 os-service-types===1.7.0
-keyring===21.2.1
+keyring===21.3.0
 testscenarios===0.5.0
 sphinxcontrib-pecanwsme===0.10.0
 sadisplay===0.4.9
