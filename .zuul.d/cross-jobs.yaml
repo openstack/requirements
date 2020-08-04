@@ -119,6 +119,14 @@
       tox_envlist: py36
 
 - job:
+    name: cross-osvif-py3
+    parent: requirements-cross-test
+    description: Run cross-project tests on os-vif with py3.
+    required-projects: openstack/os-vif
+    vars:
+      tox_envlist: py3
+
+- job:
     name: cross-octavia-py36
     parent: requirements-cross-test
     description: Run cross-project tests on octavia with py36.

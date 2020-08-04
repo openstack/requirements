@@ -37,6 +37,7 @@
         - cross-keystone-py36
         - cross-neutron-py36
         - cross-nova-py36
+        - cross-osvif-py3
         - cross-nova-functional
         - cross-octavia-py36
         - cross-osc-tox-docs
@@ -101,6 +102,7 @@
         - cross-neutron-py36
         - cross-nova-py36:
             files: ^upper-constraints.txt$
+        - cross-osvif-py3
         - cross-nova-functional
         - cross-octavia-py36
         - cross-osc-tox-docs
