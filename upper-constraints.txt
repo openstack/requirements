@@ -94,7 +94,7 @@ requests-toolbelt===0.9.1
 simplejson===3.16.0
 suds-jurko===0.6
 python-swiftclient===3.7.1
-pyOpenSSL===19.0.0
+pyOpenSSL===19.1.0
 monasca-common===2.13.0
 scipy===1.2.1
 mypy-extensions===0.4.1;python_version=='3.4'
@@ -170,7 +170,7 @@ PyYAML===3.13
 beautifulsoup4===4.7.1
 os-net-config===10.4.2
 ovs===2.10.0
-cryptography===2.6.1
+cryptography===2.8
 adal===1.2.1
 backports.ssl-match-hostname===3.7.0.1;python_version=='2.7'
 openstack-release-test===1.4.2
