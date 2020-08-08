@@ -160,7 +160,7 @@ urllib3===1.25.10
 graphviz===0.14.1
 PyKMIP===0.10.0
 whereto===0.4.0
-pywbem===0.17.4
+pywbem===1.0.0
 python-subunit===1.4.0
 tornado===6.0.4
 pycparser===2.20
@@ -171,6 +171,7 @@ os-net-config===12.4.0
 ovs===2.13.0
 cryptography===3.0
 URLObject===2.4.3
+nocasedict===0.5.0
 psycopg2-binary===2.8.5
 openstack-release-test===3.3.0
 validations-libs===1.0.2
@@ -283,7 +284,7 @@ capacity===1.3.14
 retrying===1.3.3
 XStatic-Dagre===0.6.4.1
 pydotplus===2.0.2
-boto3===1.14.37
+boto3===1.14.38
 jeepney===0.4.3
 stestr===3.0.1
 oslo.serialization===4.0.0
@@ -319,7 +320,7 @@ python-qinlingclient===5.1.0
 elasticsearch===2.4.1
 django-nose===1.4.6
 XStatic-JQuery.TableSorter===2.14.5.2
-pifpaf===2.5.0
+pifpaf===2.6.0
 pysmi===0.3.4
 blockdiag===2.0.1
 testtools===2.4.0
@@ -342,6 +343,7 @@ linecache2===1.0.0
 oauth2client===4.1.3
 idna===2.10
 python-karborclient===2.1.0
+yamlloader===0.5.5
 protobuf===3.12.4
 sushy===3.3.0
 python-neutronclient===7.2.0
@@ -368,7 +370,7 @@ python-consul===1.1.0
 more-itertools===8.4.0
 seqdiag===2.0.0
 numpy===1.19.1
-msgpack===0.6.1
+msgpack===1.0.0
 Sphinx===3.1.2
 oslo.config===8.3.1
 tempest===24.0.0
@@ -389,16 +391,16 @@ pyparsing===2.4.7
 geomet===0.2.1.post1
 distlib===0.3.1
 XStatic-Moment-Timezone===0.5.22.0
-dogpile.cache===1.0.1
+dogpile.cache===1.0.2
 python-barbicanclient===5.0.0
-salt===3001
+salt===3001.1
 api-object-schema===2.0.0
 WSME===0.10.0
 proboscis===1.2.6.0
 oslo.upgradecheck===1.1.0
 stevedore===3.2.0
 pywinrm===0.4.1
-botocore===1.17.37
+botocore===1.17.38
 xmltodict===0.12.0
 pyasn1===0.4.8
 oslo.rootwrap===6.1.0
@@ -440,6 +442,7 @@ XStatic===1.0.2
 XStatic-Angular-FileUpload===12.0.4.0
 python-openstackclient===5.3.1
 pyzmq===19.0.2
+nocaselist===1.0.1
 oslo.db===8.3.0
 simplegeneric===0.8.1
 python-pcre===0.7
@@ -448,6 +451,7 @@ dataclasses===0.7;python_version=='3.6'
 abclient===0.2.3
 pymemcache===3.2.0
 wrapt===1.12.1
+custom-inherit===2.2.2
 oslo.privsep===2.3.0
 sphinxcontrib-apidoc===0.3.0
 oslo.policy===3.3.2
