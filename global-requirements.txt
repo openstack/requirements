@@ -180,7 +180,7 @@ passlib  # BSD
 Paste  # MIT
 PasteDeploy  # MIT
 pbr!=2.1.0  # Apache-2.0
-pecan!=1.0.2,!=1.0.3,!=1.0.4,!=1.2  # BSD
+pecan!=1.0.2,!=1.0.3,!=1.0.4,!=1.2,!=1.4.0  # BSD
 pexpect!=3.3  # ISC License
 pifpaf  # Apache-2.0
 pika  # BSD
