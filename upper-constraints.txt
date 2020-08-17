@@ -556,3 +556,4 @@ sysv-ipc===1.0.1
 sphinxcontrib-applehelp===1.0.2
 scikit-learn===0.23.2
 httpx===0.14.2
+confspirator===0.2.2
