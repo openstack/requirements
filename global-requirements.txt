@@ -501,3 +501,4 @@ zipp;python_version>='3.6'  # MIT
 # NOTE(prometheanfire): python3 caps, are not approved for use in OpenStack
 gitdb  # BSD
 gitdb2  # BSD
+toml!=0.10.1  # Apache-2.0

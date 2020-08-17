@@ -247,7 +247,7 @@ retryz===0.1.9
 pluggy===0.13.1
 coverage===5.2.1
 freezegun===0.3.15
-toml===0.10.1
+toml===0.10.0
 pyperclip===1.8.0
 cassandra-driver===3.24.0
 XStatic-Angular-Schema-Form===0.8.13.0
