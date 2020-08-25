@@ -73,6 +73,7 @@ gunicorn  # MIT
 heat-translator  # Apache-2.0
 horizon  # Apache-2.0
 httplib2  # MIT
+httpx  # BSD
 hvac  # Apache-2.0
 icalendar  # BSD
 importlib-metadata;python_version<'3.8'  # Apache-2.0
