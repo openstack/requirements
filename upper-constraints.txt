@@ -257,7 +257,7 @@ XStatic-bootswatch===3.3.7.0
 pytest-xdist===2.1.0
 XStatic-JS-Yaml===3.8.1.0
 XStatic-term.js===0.0.7.0
-oslo.log===4.3.0
+oslo.log===4.4.0
 nodeenv===1.5.0
 gossip===2.4.0
 importlib-metadata===1.7.0;python_version=='3.6'
