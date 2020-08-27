@@ -109,7 +109,7 @@ pyinotify===0.9.6
 debtcollector===2.2.0
 requests-unixsocket===0.2.0
 croniter===0.3.34
-octavia-lib===2.1.1
+octavia-lib===2.2.0
 python-watcherclient===3.1.0
 MarkupSafe===1.1.1
 pypowervm===1.1.24
