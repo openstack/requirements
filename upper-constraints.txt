@@ -4,7 +4,7 @@ chardet===3.0.4
 enum-compat===0.0.3
 rsa===4.6
 restructuredtext-lint===1.3.1
-netmiko===3.2.0
+netmiko===3.3.0
 PasteDeploy===2.1.0
 typing===3.7.4.3
 python-saharaclient===3.2.0
@@ -101,7 +101,7 @@ immutables===0.14;python_version=='3.6'
 python-swiftclient===3.10.0
 pyOpenSSL===19.1.0
 monasca-common===3.2.0
-zeroconf===0.28.2
+zeroconf===0.28.3
 scipy===1.5.2
 mypy-extensions===0.4.3
 rsd-lib===1.2.0
@@ -154,7 +154,7 @@ extras===1.0.0
 PyJWT===1.7.1
 XStatic-lodash===4.16.4.2
 zVMCloudConnector===1.4.1
-paramiko===2.7.1
+paramiko===2.7.2
 ifaddr===0.1.7
 reno===3.2.0
 imagesize===1.2.0
@@ -289,7 +289,7 @@ capacity===1.3.14
 retrying===1.3.3
 XStatic-Dagre===0.6.4.1
 pydotplus===2.0.2
-boto3===1.14.51
+boto3===1.14.52
 jeepney===0.4.3
 stestr===3.0.1
 oslo.serialization===4.0.0
@@ -311,7 +311,7 @@ natsort===7.0.1
 requests-ntlm===1.1.0
 automaton===2.2.0
 os-service-types===1.7.0
-keyring===21.3.1
+keyring===21.4.0
 testscenarios===0.5.0
 sphinxcontrib-pecanwsme===0.10.0
 sadisplay===0.4.9
@@ -406,7 +406,7 @@ proboscis===1.2.6.0
 oslo.upgradecheck===1.1.0
 stevedore===3.2.1
 pywinrm===0.4.1
-botocore===1.17.51
+botocore===1.17.52
 xmltodict===0.12.0
 pyasn1===0.4.8
 oslo.rootwrap===6.1.0
@@ -431,7 +431,7 @@ systemd-python===234
 python-memcached===1.59
 openstacksdk===0.48.0
 six===1.15.0
-dulwich===0.20.5
+dulwich===0.20.6
 dfs-sdk===1.2.26
 sentinels===1.0.0
 kombu===5.0.1
