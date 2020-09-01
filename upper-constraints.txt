@@ -156,7 +156,7 @@ XStatic-lodash===4.16.4.2
 zVMCloudConnector===1.4.1
 paramiko===2.7.1
 ifaddr===0.1.7
-reno===3.1.0
+reno===3.2.0
 imagesize===1.2.0
 pydot===1.4.1
 urllib3===1.25.10
