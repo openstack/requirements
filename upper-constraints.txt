@@ -279,7 +279,7 @@ ujson===3.1.0
 selenium===3.141.0
 python-glareclient===0.5.3
 mypy===0.782
-mistral-lib===2.2.0
+mistral-lib===2.3.0
 dogtag-pki===10.7.4.1
 XStatic-Angular-UUID===0.0.4.0
 purestorage===1.19.0
