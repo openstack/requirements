@@ -106,7 +106,6 @@
         - cross-nova-functional
         - cross-octavia-py36
         - cross-osc-tox-docs
-        - cross-swift-py27
         - cross-swift-py36
         - openstack-tox-py36
         - openstacksdk-functional-devstack

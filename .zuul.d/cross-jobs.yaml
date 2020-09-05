@@ -135,14 +135,6 @@
       tox_envlist: py36
 
 - job:
-    name: cross-swift-py27
-    parent: requirements-cross-test
-    description: Run cross-project tests on swift with py27.
-    required-projects: openstack/swift
-    vars:
-      tox_envlist: py27
-
-- job:
     name: cross-swift-py36
     parent: requirements-cross-test
     description: Run cross-project tests on swift with py36.
