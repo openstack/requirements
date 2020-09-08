@@ -53,7 +53,7 @@ python-mistralclient===4.1.0
 oslo.context===3.1.0
 python-senlinclient===2.1.0
 rcssmin===1.0.6
-pycadf===3.1.0
+pycadf===3.1.1
 grpcio===1.31.0
 pysendfile===2.0.1
 sniffio===1.1.0
