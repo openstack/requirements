@@ -220,7 +220,7 @@ XStatic-JQuery.quicksearch===2.0.3.2
 mpmath===1.1.0
 python-binary-memcached===0.30.0
 django-debreach===2.0.1
-sphinx-feature-classification===1.0.1
+sphinx-feature-classification===1.1.0
 XStatic-JQuery-Migrate===1.2.1.2
 pytest-html===2.1.1
 appdirs===1.4.4
