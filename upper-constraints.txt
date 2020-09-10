@@ -515,7 +515,7 @@ cffi===1.14.2
 futurist===2.2.0
 jsonschema===3.2.0
 sphinxcontrib-devhelp===1.0.2
-python-blazarclient===3.1.0
+python-blazarclient===3.1.1
 alembic===1.4.2
 execnet===1.7.1
 glance-store===2.3.0
