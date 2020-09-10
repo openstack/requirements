@@ -196,7 +196,7 @@ libvirt-python===6.6.0
 python-zunclient===4.1.1
 tzlocal===2.1
 sphinxcontrib-jsmath===1.0.1
-python-novaclient===17.2.0
+python-novaclient===17.2.1
 pact===1.12.0
 bcrypt===3.2.0
 os-client-config===2.1.0
