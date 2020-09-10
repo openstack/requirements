@@ -245,7 +245,7 @@ castellan===3.5.0
 oslo.versionedobjects===2.2.0
 enmerkar===0.7.1
 webcolors===1.11.1
-aodhclient===2.1.0
+aodhclient===2.1.1
 autobahn===20.7.1
 SQLAlchemy-Utils===0.36.8
 retryz===0.1.9
