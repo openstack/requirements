@@ -512,7 +512,7 @@ rjsmin===1.1.0
 icalendar===4.0.6
 decorator===4.4.2
 cffi===1.14.2
-futurist===2.2.0
+futurist===2.3.0
 jsonschema===3.2.0
 sphinxcontrib-devhelp===1.0.2
 python-blazarclient===3.1.1
