@@ -809,8 +809,6 @@ simplegeneric===0.8.1
 python-pcre===0.7
 yappi===1.2.3
 dataclasses===0.7;python_version=='3.6'
-dataclasses===0.7;python_version=='3.7'
-dataclasses===0.7;python_version=='3.8'
 abclient===0.2.3
 pymemcache===3.1.0
 wrapt===1.12.1
