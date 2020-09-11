@@ -10,7 +10,7 @@ typing===3.7.4.3
 python-saharaclient===3.2.0
 Routes===2.4.1
 rtslib-fb===2.1.74
-oslo.limit===1.2.0
+oslo.limit===1.2.1
 smmap===3.0.4
 confget===2.3.4
 XStatic-Angular-Bootstrap===2.5.0.0
