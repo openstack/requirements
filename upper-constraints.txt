@@ -459,7 +459,7 @@ abclient===0.2.3
 pymemcache===3.3.0
 wrapt===1.12.1
 custom-inherit===2.2.2
-oslo.privsep===2.3.0
+oslo.privsep===2.4.0
 sphinxcontrib-apidoc===0.3.0
 oslo.policy===3.4.0
 python-muranoclient===2.1.1
