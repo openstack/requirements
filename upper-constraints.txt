@@ -98,7 +98,7 @@ requests-toolbelt===0.9.1
 simplejson===3.17.2
 suds-jurko===0.6
 immutables===0.14;python_version=='3.6'
-python-swiftclient===3.10.0
+python-swiftclient===3.10.1
 pyOpenSSL===19.1.0
 monasca-common===3.2.0
 zeroconf===0.28.3
