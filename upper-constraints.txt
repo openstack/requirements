@@ -550,6 +550,7 @@ XStatic-Angular-Vis===4.16.0.0
 iniconfig===1.1.1
 confluent-kafka===1.6.0
 xvfbwrapper===0.2.9
+futures===3.3.0;python_version=='2.7'
 tosca-parser===2.2.0
 Flask===1.1.2
 httpx===0.16.1
