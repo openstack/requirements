@@ -666,7 +666,7 @@ marathon===0.11.0
 fasteners===0.14.1
 sortedcontainers===2.1.0
 python-tackerclient===0.16.1
-python-heatclient===1.18.0
+python-heatclient===1.18.1
 kafka-python===1.4.6
 oslo.utils===3.41.6
 python-editor===1.0.4
