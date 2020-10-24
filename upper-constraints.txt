@@ -55,7 +55,7 @@ oslo.context===3.1.1
 python-senlinclient===2.1.1
 rcssmin===1.0.6
 pycadf===3.1.1
-grpcio===1.32.0
+grpcio===1.33.1
 pysendfile===2.0.1
 sniffio===1.2.0
 fixtures===3.0.0
@@ -88,13 +88,13 @@ networkx===2.5
 bashate===2.0.0
 XStatic-Angular===1.5.8.0
 pyngus===2.3.1
-Pillow===8.0.0
+Pillow===8.0.1
 zuul-sphinx===0.5.0
 python-mimeparse===1.6.0
 tripleo-common===12.7.0
 Tempita===0.5.2
 ply===3.11
-google-api-core===1.22.4
+google-api-core===1.23.0
 requests-toolbelt===0.9.1
 simplejson===3.17.2
 suds-jurko===0.6
@@ -147,7 +147,7 @@ google-auth===1.22.1
 kazoo===2.8.0
 XStatic-roboto-fontface===0.5.0.0
 pyudev===0.22.0
-eventlet===0.28.0
+eventlet===0.29.1
 openstack-doc-tools===3.3.0
 oslo.messaging===12.6.0
 jira===2.0.0
@@ -160,7 +160,7 @@ ifaddr===0.1.7
 reno===3.2.0
 imagesize===1.2.0
 pydot===1.4.1
-urllib3===1.25.10
+urllib3===1.25.11
 graphviz===0.14.2
 PyKMIP===0.10.0
 whereto===0.4.0
@@ -241,7 +241,7 @@ lockfile===0.12.2
 ldappool===2.4.1
 termcolor===1.1.0
 joblib===0.17.0
-google-api-python-client===1.12.3
+google-api-python-client===1.12.5
 castellan===3.6.0
 oslo.versionedobjects===2.3.0
 enmerkar===0.7.1
@@ -290,7 +290,7 @@ capacity===1.3.14
 retrying===1.3.3
 XStatic-Dagre===0.6.4.1
 pydotplus===2.0.2
-boto3===1.15.18
+boto3===1.16.4
 jeepney===0.4.3
 stestr===3.0.1
 oslo.serialization===4.0.1
@@ -399,14 +399,14 @@ distlib===0.3.1
 XStatic-Moment-Timezone===0.5.22.0
 dogpile.cache===1.0.2
 python-barbicanclient===5.0.1
-salt===3001.1
+salt===3002
 api-object-schema===2.0.0
 WSME===0.10.0
 proboscis===1.2.6.0
 oslo.upgradecheck===1.1.1
 stevedore===3.2.2
 pywinrm===0.4.1
-botocore===1.18.18
+botocore===1.19.4
 xmltodict===0.12.0
 pyasn1===0.4.8
 oslo.rootwrap===6.2.0
@@ -443,7 +443,7 @@ testresources===2.0.1
 falcon===2.0.0
 etcd3gw===0.2.5
 Flask-RESTful===0.3.8
-GitPython===3.1.9
+GitPython===3.1.11
 python-ironicclient===4.4.0
 XStatic===1.0.2
 XStatic-Angular-FileUpload===12.0.4.0
@@ -473,7 +473,7 @@ tenacity===6.2.0
 python-designateclient===4.1.0
 future===0.18.2
 Paste===3.5.0
-pytest-django===4.0.0
+pytest-django===4.1.0
 jaeger-client===4.3.0
 XStatic-Json2yaml===0.1.1.0
 boto===2.49.0
@@ -496,7 +496,7 @@ sphinxcontrib-qthelp===1.0.3
 keystoneauth1===4.2.1
 statsd===3.3.0
 XenAPI===2.14
-importlib-resources===3.0.0;python_version=='3.6'
+importlib-resources===3.1.1;python_version=='3.6'
 python-keystoneclient===4.1.1
 ceilometer===15.0.0
 diskimage-builder===3.3.1
@@ -525,7 +525,7 @@ dnspython===1.16.0
 oauthlib===3.1.0
 Babel===2.8.0
 logutils===0.3.5
-zipp===3.3.1
+zipp===3.3.2
 greenlet===0.4.17
 XStatic-Angular-Vis===4.16.0.0
 iniconfig===1.1.1
