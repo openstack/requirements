@@ -173,7 +173,7 @@ PyYAML===5.3.1
 beautifulsoup4===4.9.3
 os-net-config===12.6.0
 ovs===2.13.0
-cryptography===3.1.1
+cryptography===3.2
 httpcore===0.12.0
 URLObject===2.4.3
 nocasedict===1.0.1
@@ -203,7 +203,7 @@ bcrypt===3.2.0
 os-client-config===2.1.0
 XStatic-Angular-Gettext===2.4.1.0
 h11===0.11.0
-Pygments===2.7.1
+Pygments===2.7.2
 XStatic-Hogan===2.0.0.3
 XStatic-objectpath===1.2.1.0
 python-manilaclient===2.3.0
@@ -320,7 +320,7 @@ infinisdk===161.1.3
 packaging===20.4
 XStatic-Dagre-D3===0.4.17.0
 nose-exclude===0.5.0
-psutil===5.7.2
+psutil===5.7.3
 py===1.9.0
 txaio===20.4.1
 python-qinlingclient===5.1.1
@@ -496,7 +496,7 @@ sphinxcontrib-qthelp===1.0.3
 keystoneauth1===4.2.1
 statsd===3.3.0
 XenAPI===2.14
-importlib-resources===3.1.1;python_version=='3.6'
+importlib-resources===3.2.0;python_version=='3.6'
 python-keystoneclient===4.1.1
 ceilometer===15.0.0
 diskimage-builder===3.3.1
@@ -525,7 +525,7 @@ dnspython===1.16.0
 oauthlib===3.1.0
 Babel===2.8.0
 logutils===0.3.5
-zipp===3.3.2
+zipp===3.4.0
 greenlet===0.4.17
 XStatic-Angular-Vis===4.16.0.0
 iniconfig===1.1.1
@@ -552,7 +552,7 @@ XStatic-jquery-ui===1.12.1.1
 monasca-statsd===2.1.0
 python-dateutil===2.8.1
 typing-extensions===3.7.4.3
-virtualenv===20.0.35
+virtualenv===20.1.0
 colorama===0.4.4
 confetti===2.5.3
 ironic-lib===4.4.0
