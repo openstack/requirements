@@ -147,7 +147,7 @@ mock===2.0.0
 PyYAML===3.12
 beautifulsoup4===4.5.3
 ovs===2.7.0
-cryptography===1.8.1
+cryptography===3.2
 backports.ssl-match-hostname===3.5.0.1
 pylxd===2.2.3
 anyjson===0.3.3
