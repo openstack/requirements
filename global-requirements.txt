@@ -203,7 +203,7 @@ PyJWT  # MIT
 pykmip  # Apache 2.0 License
 python-ldap  # PSF
 pylxd  # Apache-2.0
-pymemcache!=1.3.0  # Apache 2.0 License
+pymemcache!=1.3.0,!=3.4.0  # Apache 2.0 License
 pymongo!=3.1  # Apache-2.0
 PyMySQL  # MIT License
 pytest  # MIT
