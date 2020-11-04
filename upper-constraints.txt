@@ -126,7 +126,7 @@ oslotest===4.4.1
 jsonpointer===2.0
 defusedxml===0.6.0
 netaddr===0.8.0
-pyghmi===1.5.18
+pyghmi===1.5.19
 sphinxcontrib-blockdiag===2.0.0
 thrift===0.13.0
 gnocchiclient===7.0.6
@@ -399,7 +399,7 @@ distlib===0.3.1
 XStatic-Moment-Timezone===0.5.22.0
 dogpile.cache===1.0.2
 python-barbicanclient===5.0.1
-salt===3002
+salt===3002.1
 api-object-schema===2.0.0
 WSME===0.10.0
 proboscis===1.2.6.0
@@ -429,7 +429,7 @@ cotyledon===1.7.3
 xattr===0.9.7
 systemd-python===234
 python-memcached===1.59
-openstacksdk===0.50.0
+openstacksdk===0.51.0
 six===1.15.0
 dulwich===0.20.11
 dfs-sdk===1.2.26
