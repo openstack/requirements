@@ -45,7 +45,7 @@ alabaster===0.7.12
 pbr===5.5.1
 munch===2.5.0
 waiting===1.4.1
-attrs===20.2.0
+attrs===20.3.0
 microversion-parse===1.0.1
 Pint===0.16.1
 oslo.i18n===5.0.1
@@ -103,7 +103,7 @@ python-swiftclient===3.10.1
 pyOpenSSL===19.1.0
 monasca-common===3.2.0
 zeroconf===0.28.6
-scipy===1.5.3
+scipy===1.5.4
 mypy-extensions===0.4.3
 rsd-lib===1.2.0
 XStatic-Jasmine===2.4.1.2
@@ -174,7 +174,7 @@ beautifulsoup4===4.9.3
 os-net-config===13.0.0
 ovs===2.13.0
 cryptography===3.2.1
-httpcore===0.12.0
+httpcore===0.12.1
 URLObject===2.4.3
 nocasedict===1.0.1
 psycopg2-binary===2.8.6
@@ -227,7 +227,7 @@ pytest-html===2.1.1
 appdirs===1.4.4
 tinyrpc===1.0.4
 google-auth-httplib2===0.0.4
-daiquiri===2.1.1
+daiquiri===3.0.0
 influxdb===5.2.3
 funcparserlib===0.3.6
 passlib===1.7.4
@@ -290,7 +290,7 @@ capacity===1.3.14
 retrying===1.3.3
 XStatic-Dagre===0.6.4.1
 pydotplus===2.0.2
-boto3===1.16.10
+boto3===1.16.13
 jeepney===0.4.3
 stestr===3.0.1
 oslo.serialization===4.0.1
@@ -312,7 +312,7 @@ natsort===7.0.1
 requests-ntlm===1.1.0
 automaton===2.2.0
 os-service-types===1.7.0
-keyring===21.4.0
+keyring===21.5.0
 testscenarios===0.5.0
 sphinxcontrib-pecanwsme===0.10.0
 sadisplay===0.4.9
@@ -341,7 +341,7 @@ python-ceilometerclient===2.9.0
 XStatic-Spin===1.2.5.3
 tap-as-a-service===7.0.0
 os-traits===2.4.0
-SecretStorage===3.1.2
+SecretStorage===3.2.0
 opentracing===2.3.0
 XStatic-Rickshaw===1.5.1.0
 iso8601===0.1.13
@@ -406,7 +406,7 @@ proboscis===1.2.6.0
 oslo.upgradecheck===1.1.1
 stevedore===3.2.2
 pywinrm===0.4.1
-botocore===1.19.10
+botocore===1.19.13
 xmltodict===0.12.0
 pyasn1===0.4.8
 oslo.rootwrap===6.2.0
