@@ -232,7 +232,7 @@ influxdb===5.2.3
 funcparserlib===0.3.6
 passlib===1.7.4
 dib-utils===0.0.11
-cliff===3.4.0
+cliff===3.5.0
 os-brick===4.0.1
 ansible-runner===1.4.6
 scp===0.13.3
