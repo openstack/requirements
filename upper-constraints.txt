@@ -372,7 +372,7 @@ testrepository===0.0.20
 sympy===1.6.2
 Logbook===1.5.3
 PyNaCl===1.4.0
-osc-lib===2.2.1
+osc-lib===2.3.0
 python-consul===1.1.0
 seqdiag===2.0.0
 numpy===1.19.4
