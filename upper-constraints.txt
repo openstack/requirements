@@ -37,9 +37,9 @@ os-api-ref===2.0.1;python_version=='3.7'
 os-api-ref===2.0.1;python_version=='3.8'
 python-ldap===3.2.0
 oslo.concurrency===3.31.0;python_version=='2.7'
-oslo.concurrency===4.0.2;python_version=='3.6'
-oslo.concurrency===4.0.2;python_version=='3.7'
-oslo.concurrency===4.0.2;python_version=='3.8'
+oslo.concurrency===4.0.3;python_version=='3.6'
+oslo.concurrency===4.0.3;python_version=='3.7'
+oslo.concurrency===4.0.3;python_version=='3.8'
 websocket-client===0.57.0
 osprofiler===2.9.0;python_version=='2.7'
 osprofiler===3.1.0;python_version=='3.6'
