@@ -378,7 +378,7 @@ seqdiag===2.0.0
 numpy===1.19.4
 msgpack===1.0.0
 Sphinx===3.3.0
-oslo.config===8.3.2
+oslo.config===8.3.3
 tempest===25.0.0
 openstackdocstheme===2.2.6
 osc-placement===2.1.0
