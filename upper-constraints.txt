@@ -323,7 +323,6 @@ nose-exclude===0.5.0
 psutil===5.7.3
 py===1.9.0
 txaio===20.4.1
-python-qinlingclient===5.1.1
 elasticsearch===2.4.1
 django-nose===1.4.7
 XStatic-JQuery.TableSorter===2.14.5.2

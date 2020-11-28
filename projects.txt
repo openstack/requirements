@@ -216,7 +216,6 @@ openstack/python-neutronclient
 openstack/python-novaclient
 openstack/python-octaviaclient
 openstack/python-openstackclient
-openstack/python-qinlingclient
 openstack/python-saharaclient
 openstack/python-searchlightclient
 openstack/python-senlinclient
@@ -229,8 +228,6 @@ openstack/python-vitrageclient
 openstack/python-watcherclient
 openstack/python-zaqarclient
 openstack/python-zunclient
-openstack/qinling
-openstack/qinling-dashboard
 openstack/requirements
 openstack/sahara
 openstack/sahara-dashboard
