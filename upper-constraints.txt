@@ -479,7 +479,7 @@ XStatic-Json2yaml===0.1.1.0
 boto===2.49.0
 os-vif===2.2.0
 mitba===1.1.1
-python-masakariclient===6.1.1
+python-masakariclient===6.2.0
 Werkzeug===1.0.1
 pyasn1-modules===0.2.8
 APScheduler===3.6.3
