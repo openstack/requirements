@@ -44,6 +44,7 @@ Django<3.0  # BSD
 django-compressor  # MIT
 django-debreach  # BSD
 django-formtools  # BSD
+django-pymemcache  # Apache-2.0
 # eventlet is not compatibile with 2.0.0: https://github.com/eventlet/eventlet/issues/619
 dnspython!=2.0.0  # http://www.dnspython.org/LICENSE
 # Note(tonyb): We don't actually directly depend on docutils but we pull it in
