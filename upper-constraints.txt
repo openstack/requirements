@@ -151,6 +151,7 @@ pyudev===0.22.0
 eventlet===0.29.1
 openstack-doc-tools===3.3.0
 oslo.messaging===12.6.0
+oslo.metrics===0.1.0
 jira===2.0.0
 extras===1.0.0
 PyJWT===1.7.1
