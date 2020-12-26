@@ -109,7 +109,6 @@ openstack/octavia-tempest-plugin
 openstack/openstack-ansible
 openstack/openstack-ansible-apt_package_pinning
 openstack/openstack-ansible-ceph_client
-openstack/openstack-ansible-galera_client
 openstack/openstack-ansible-galera_server
 openstack/openstack-ansible-haproxy_server
 openstack/openstack-ansible-lxc_container_create
