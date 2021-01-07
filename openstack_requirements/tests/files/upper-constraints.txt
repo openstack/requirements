@@ -21,7 +21,7 @@ osprofiler===1.6.0
 bandit===1.4.0
 tabulate===0.7.7
 python-ironic-inspector-client===1.11.0
-lxml===3.7.3
+lxml===4.6.2
 python-kingbirdclient===0.1.0
 pytest===3.0.6
 python-etcd===0.4.5
