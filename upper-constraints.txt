@@ -276,7 +276,7 @@ apipkg===1.5
 XStatic-mdi===1.6.50.2
 django-pyscss===2.0.2
 uritemplate===3.0.1
-docutils===0.15.2
+docutils===0.16
 threadpoolctl===2.1.0
 os-ken===1.3.0
 ujson===4.0.1
@@ -566,4 +566,4 @@ actdiag===2.0.0
 sysv-ipc===1.0.1
 sphinxcontrib-applehelp===1.0.2
 scikit-learn===0.24.0
-setuptools===51.1.1
+setuptools===51.1.2
