@@ -568,3 +568,4 @@ sysv-ipc===1.0.1
 sphinxcontrib-applehelp===1.0.2
 scikit-learn===0.24.0
 setuptools===51.1.2
+horizon===19.0.0
