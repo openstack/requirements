@@ -79,6 +79,7 @@ XStatic-jQuery===1.12.4.1
 ddt===1.4.1
 XStatic-Graphlib===2.1.7.0
 pyserial===3.5
+moto===1.3.16
 infi.dtypes.wwn===0.1.1
 python-freezerclient===4.1.0
 os-xenapi===0.3.4

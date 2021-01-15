@@ -406,6 +406,7 @@ ldappool  # MPL
 # in [most] releases of the Python std library.
 # https://github.com/testing-cabal/mock/issues/487  for 4.0.[0-1] blacklist
 mock!=4.0.0,!=4.0.1  # BSD
+moto  # Apache-2.0
 nodeenv  # BSD
 nose  # LGPL
 nose-exclude  # LGPL
