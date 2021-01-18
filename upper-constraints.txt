@@ -363,7 +363,7 @@ cfn-lint===0.44.3
 protobuf===3.14.0
 jsonpickle===1.5.0
 sushy===3.5.0
-python-neutronclient===7.2.1
+python-neutronclient===7.3.0
 pika===1.1.0
 oslo.cache===2.6.1
 WebTest===2.0.35
