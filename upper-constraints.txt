@@ -491,7 +491,7 @@ boto===2.49.0
 os-vif===2.3.0
 hyperlink===21.0.0
 mitba===1.1.1
-python-masakariclient===6.2.0
+python-masakariclient===6.2.1
 Werkzeug===1.0.1
 pyasn1-modules===0.2.8
 APScheduler===3.6.3
