@@ -316,14 +316,14 @@ XStatic-moment===2.8.4.3
 sqlalchemy-migrate===0.13.0
 gitdb===4.0.5
 python-monascaclient===2.2.1
-ldap3===2.8.1
-natsort===7.1.0
+ldap3===2.9
+natsort===7.1.1
 requests-ntlm===1.1.0
 automaton===2.2.0
 jsondiff===1.2.0
 os-service-types===1.7.0
-keyring===21.8.0
-elementpath===2.1.1
+keyring===22.0.0
+elementpath===2.1.2
 testscenarios===0.5.0
 sphinxcontrib-pecanwsme===0.10.0
 sadisplay===0.4.9
@@ -505,7 +505,7 @@ cachez===0.1.2
 XStatic-Bootstrap-Datepicker===1.4.0.0
 CouchDB===1.2
 netifaces===0.10.9
-cachetools===4.2.0
+cachetools===4.2.1
 ws4py===0.5.1
 aws-xray-sdk===2.6.0
 sphinxcontrib-qthelp===1.0.3
@@ -571,7 +571,7 @@ monasca-statsd===2.1.0
 python-dateutil===2.8.1
 typing-extensions===3.7.4.3
 virtualenv===20.2.1
-sshpubkeys===3.1.0
+sshpubkeys===3.2.0
 colorama===0.4.4
 confetti===2.5.3
 ironic-lib===4.5.0
@@ -582,4 +582,4 @@ actdiag===2.0.0
 sysv-ipc===1.1.0
 sphinxcontrib-applehelp===1.0.2
 scikit-learn===0.24.1
-setuptools===51.3.3
+setuptools===52.0.0
