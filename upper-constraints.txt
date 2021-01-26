@@ -32,7 +32,7 @@ vintage===0.4.1
 ntc-templates===1.6.0
 rst2txt===1.1.0
 setproctitle===1.2.2
-pytest===6.2.1
+pytest===6.2.2
 python-slugify===4.0.1
 cursive===0.2.2
 oslo.service===2.4.0
@@ -98,7 +98,7 @@ python-mimeparse===1.6.0
 tripleo-common===13.1.0
 Tempita===0.5.2
 ply===3.11
-google-api-core===1.25.0
+google-api-core===1.25.1
 requests-toolbelt===0.9.1
 simplejson===3.17.2
 suds-jurko===0.6
@@ -133,7 +133,7 @@ oslotest===4.4.1
 jsonpointer===2.0
 defusedxml===0.6.0
 netaddr===0.8.0
-pyghmi===1.5.20
+pyghmi===1.5.21
 sphinxcontrib-blockdiag===2.0.0
 thrift===0.13.0
 gnocchiclient===7.0.6
@@ -360,7 +360,7 @@ linecache2===1.0.0
 oauth2client===4.1.3
 idna===2.10
 yamlloader===0.5.5
-cfn-lint===0.44.4
+cfn-lint===0.44.5
 protobuf===3.14.0
 jsonpickle===1.5.0
 sushy===3.6.0
@@ -444,7 +444,7 @@ python-memcached===1.59
 openstacksdk===0.53.0
 six===1.15.0
 dulwich===0.20.15
-dfs-sdk===1.2.26
+dfs-sdk===1.2.27
 sentinels===1.0.0
 kombu===5.0.2
 distro===1.5.0
@@ -498,7 +498,7 @@ pyasn1-modules===0.2.8
 APScheduler===3.7.0
 junit-xml===1.9
 monotonic===1.5
-xmlschema===1.4.1
+xmlschema===1.4.2
 python-troveclient===6.0.1
 etcd3===0.12.0
 cachez===0.1.2
@@ -571,7 +571,7 @@ monasca-statsd===2.1.0
 python-dateutil===2.8.1
 typing-extensions===3.7.4.3
 virtualenv===20.2.1
-sshpubkeys===3.2.0
+sshpubkeys===3.3.0
 colorama===0.4.4
 confetti===2.5.3
 ironic-lib===4.5.0
