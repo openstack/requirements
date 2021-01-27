@@ -232,7 +232,7 @@ python-binary-memcached===0.30.1
 django-debreach===2.0.1
 sphinx-feature-classification===1.1.0
 django-pymemcache===1.0.0
-XStatic-JQuery-Migrate===1.2.1.2
+XStatic-JQuery-Migrate===3.3.2.1
 pytest-html===3.1.1
 appdirs===1.4.4
 tinyrpc===1.0.4
