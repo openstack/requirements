@@ -224,7 +224,7 @@ XStatic-Bootstrap-SCSS===3.4.1.0
 pyzabbix===0.8.2
 ptyprocess===0.7.0
 threadloop===1.0.2
-amqp===5.0.3
+amqp===5.0.5
 websockify===0.9.0
 XStatic-JQuery.quicksearch===2.0.3.2
 mpmath===1.1.0
