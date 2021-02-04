@@ -363,7 +363,7 @@ yamlloader===0.5.5
 cfn-lint===0.44.5
 protobuf===3.14.0
 jsonpickle===1.5.1
-sushy===3.6.0
+sushy===3.6.1
 python-neutronclient===7.3.0
 pika===1.1.0
 oslo.cache===2.6.1
