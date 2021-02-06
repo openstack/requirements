@@ -125,7 +125,7 @@ python-watcherclient===3.1.1
 MarkupSafe===1.1.1
 pypowervm===1.1.24
 doc8===0.8.1
-pymongo===3.11.2
+pymongo===3.11.3
 python-cloudkittyclient===4.2.0
 soupsieve===2.1
 sqlparse===0.4.1
@@ -133,7 +133,7 @@ oslotest===4.4.1
 jsonpointer===2.0
 defusedxml===0.6.0
 netaddr===0.8.0
-pyghmi===1.5.21
+pyghmi===1.5.22
 sphinxcontrib-blockdiag===2.0.0
 thrift===0.13.0
 gnocchiclient===7.0.6
@@ -150,11 +150,11 @@ virtualbmc===2.2.0
 deprecation===2.1.0
 SQLAlchemy===1.3.23
 pyroute2===0.5.14
-google-auth===1.24.0
+google-auth===1.25.0
 kazoo===2.8.0
 XStatic-roboto-fontface===0.5.0.0
 pyudev===0.22.0
-eventlet===0.30.0
+eventlet===0.30.1
 openstack-doc-tools===3.3.0
 oslo.messaging===12.7.0
 jira===2.0.0
@@ -189,7 +189,7 @@ nocasedict===1.0.2
 psycopg2-binary===2.8.6
 openstack-release-test===3.3.1
 validations-libs===1.0.4
-pylxd===2.2.11
+pylxd===2.3.0
 pycryptodomex===3.9.9
 anyjson===0.3.3
 requests-mock===1.8.0
@@ -257,7 +257,7 @@ oslo.versionedobjects===2.4.0
 enmerkar===0.7.1
 webcolors===1.11.1
 aodhclient===2.1.1
-autobahn===20.12.3
+autobahn===21.1.1
 SQLAlchemy-Utils===0.36.8
 retryz===0.1.9
 pluggy===0.13.1
@@ -299,7 +299,7 @@ capacity===1.3.14
 retrying===1.3.3
 XStatic-Dagre===0.6.4.1
 pydotplus===2.0.2
-boto3===1.16.63
+boto3===1.17.3
 jeepney===0.6.0
 stestr===3.1.0
 oslo.serialization===4.0.1
@@ -345,7 +345,6 @@ infi.dtypes.iqn===0.4.0
 XStatic-tv4===1.2.7.0
 XStatic-JSEncrypt===2.3.1.1
 python-cinderclient===7.3.0
-python-cyborgclient===1.2.1
 keystonemiddleware===9.2.0
 django-formtools===2.2
 python-ceilometerclient===2.9.0
@@ -355,18 +354,18 @@ os-traits===2.4.0
 SecretStorage===3.3.0
 opentracing===2.4.0
 XStatic-Rickshaw===1.5.1.0
-iso8601===0.1.13
+iso8601===0.1.14
 tooz===2.8.0
 linecache2===1.0.0
 oauth2client===4.1.3
 idna===2.10
 yamlloader===0.5.5
-cfn-lint===0.44.5
+cfn-lint===0.44.6
 protobuf===3.14.0
 jsonpickle===1.5.1
 sushy===3.6.1
 python-neutronclient===7.3.0
-pika===1.1.0
+pika===1.2.0
 oslo.cache===2.6.1
 WebTest===2.0.35
 openstack.nose-plugin===0.11
@@ -401,7 +400,7 @@ python-rsdclient===1.0.2
 flux===1.3.5
 python-solumclient===3.2.0
 PyMySQL===1.0.2
-uhashring===1.2
+uhashring===2.0
 kubernetes===12.0.1
 httplib2===0.18.1
 betamax===0.8.1
@@ -420,7 +419,7 @@ proboscis===1.2.6.0
 oslo.upgradecheck===1.3.0
 stevedore===3.3.0
 pywinrm===0.4.1
-botocore===1.19.63
+botocore===1.20.3
 xmltodict===0.12.0
 pyasn1===0.4.8
 oslo.rootwrap===6.2.0
@@ -445,7 +444,7 @@ systemd-python===234
 python-memcached===1.59
 openstacksdk===0.53.0
 six===1.15.0
-dulwich===0.20.15
+dulwich===0.20.18
 dfs-sdk===1.2.27
 sentinels===1.0.0
 kombu===5.0.2
@@ -500,7 +499,7 @@ pyasn1-modules===0.2.8
 APScheduler===3.7.0
 junit-xml===1.9
 monotonic===1.5
-xmlschema===1.4.2
+xmlschema===1.5.0
 python-troveclient===6.0.1
 etcd3===0.12.0
 cachez===0.1.2
@@ -518,7 +517,7 @@ importlib-resources===3.3.1;python_version=='3.6'
 importlib-resources===5.1.0;python_version=='3.8'
 python-keystoneclient===4.2.0
 ceilometer===15.0.0
-diskimage-builder===3.6.0
+diskimage-builder===3.7.0
 heat-translator===2.1.0
 python-magnumclient===3.3.0
 docker===4.4.1
@@ -530,11 +529,12 @@ rjsmin===1.1.0
 icalendar===4.0.7
 decorator===4.4.2
 cffi===1.14.4
+python-cyborgclient===1.3.0
 futurist===2.3.0
 jsonschema===3.2.0
 sphinxcontrib-devhelp===1.0.2
 python-blazarclient===3.1.1
-alembic===1.5.3
+alembic===1.5.4
 execnet===1.8.0
 glance-store===2.4.0
 sphinxcontrib-programoutput===0.16
@@ -548,7 +548,7 @@ zipp===3.4.0
 greenlet===1.0.0
 XStatic-Angular-Vis===4.16.0.0
 iniconfig===1.1.1
-confluent-kafka===1.5.0
+confluent-kafka===1.6.0
 xvfbwrapper===0.2.9
 tosca-parser===2.2.0
 Flask===1.1.2
@@ -573,7 +573,7 @@ monasca-statsd===2.1.0
 python-dateutil===2.8.1
 typing-extensions===3.7.4.3
 virtualenv===20.2.1
-sshpubkeys===3.3.0
+sshpubkeys===3.3.1
 colorama===0.4.4
 confetti===2.5.3
 ironic-lib===4.5.0
@@ -584,4 +584,4 @@ actdiag===2.0.0
 sysv-ipc===1.1.0
 sphinxcontrib-applehelp===1.0.2
 scikit-learn===0.24.1
-setuptools===52.0.0
+setuptools===53.0.0
