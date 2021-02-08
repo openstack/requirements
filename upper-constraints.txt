@@ -366,7 +366,7 @@ jsonpickle===2.0.0
 sushy===3.6.1
 python-neutronclient===7.3.0
 pika===1.2.0
-oslo.cache===2.6.1
+oslo.cache===2.7.0
 WebTest===2.0.35
 openstack.nose-plugin===0.11
 os-collect-config===13.0.0
