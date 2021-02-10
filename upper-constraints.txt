@@ -102,7 +102,7 @@ google-api-core===1.26.0
 requests-toolbelt===0.9.1
 simplejson===3.17.2
 suds-jurko===0.6
-immutables===0.14;python_version=='3.6'
+immutables===0.15;python_version=='3.6'
 python-swiftclient===3.11.0
 pyOpenSSL===20.0.1
 monasca-common===3.2.0
@@ -127,7 +127,7 @@ pypowervm===1.1.24
 doc8===0.8.1
 pymongo===3.11.3
 python-cloudkittyclient===4.2.0
-soupsieve===2.1
+soupsieve===2.2
 sqlparse===0.4.1
 oslotest===4.4.1
 jsonpointer===2.0
@@ -182,7 +182,7 @@ PyYAML===5.4.1
 beautifulsoup4===4.9.3
 os-net-config===14.0.0
 ovs===2.13.0
-cryptography===3.4.3
+cryptography===3.4.4
 httpcore===0.12.3
 URLObject===2.4.3
 nocasedict===1.0.2
@@ -190,7 +190,7 @@ psycopg2-binary===2.8.6
 openstack-release-test===3.3.1
 validations-libs===1.0.4
 pylxd===2.3.0
-pycryptodomex===3.9.9
+pycryptodomex===3.10.1
 anyjson===0.3.3
 requests-mock===1.8.0
 os-apply-config===13.0.0
@@ -227,7 +227,7 @@ threadloop===1.0.2
 amqp===5.0.5
 websockify===0.9.0
 XStatic-JQuery.quicksearch===2.0.3.2
-mpmath===1.1.0
+mpmath===1.2.1
 python-binary-memcached===0.30.1
 django-debreach===2.0.1
 sphinx-feature-classification===1.1.0
@@ -250,7 +250,7 @@ python-zaqarclient===2.0.1
 lockfile===0.12.2
 ldappool===2.4.1
 termcolor===1.1.0
-joblib===1.0.0
+joblib===1.0.1
 google-api-python-client===1.12.8
 castellan===3.7.0
 oslo.versionedobjects===2.4.0
@@ -270,7 +270,7 @@ XStatic-Angular-Schema-Form===0.8.13.0
 gabbi===2.1.0
 nwdiag===2.0.0
 XStatic-bootswatch===3.3.7.0
-pytest-xdist===2.2.0
+pytest-xdist===2.2.1
 XStatic-JS-Yaml===3.8.1.0
 XStatic-term.js===0.0.7.0
 oslo.log===4.4.0
@@ -299,7 +299,7 @@ capacity===1.3.14
 retrying===1.3.3
 XStatic-Dagre===0.6.4.1
 pydotplus===2.0.2
-boto3===1.17.4
+boto3===1.17.5
 jeepney===0.6.0
 stestr===3.1.0
 oslo.serialization===4.1.0
@@ -351,7 +351,7 @@ python-ceilometerclient===2.9.0
 XStatic-Spin===1.2.5.3
 tap-as-a-service===7.0.0
 os-traits===2.4.0
-SecretStorage===3.3.0
+SecretStorage===3.3.1
 opentracing===2.4.0
 XStatic-Rickshaw===1.5.1.0
 iso8601===0.1.14
@@ -419,7 +419,7 @@ proboscis===1.2.6.0
 oslo.upgradecheck===1.3.0
 stevedore===3.3.0
 pywinrm===0.4.1
-botocore===1.20.4
+botocore===1.20.5
 xmltodict===0.12.0
 pyasn1===0.4.8
 oslo.rootwrap===6.2.0
@@ -456,7 +456,7 @@ testresources===2.0.1
 falcon===2.0.0
 etcd3gw===0.2.5
 Flask-RESTful===0.3.8
-GitPython===3.1.12
+GitPython===3.1.13
 python-ironicclient===4.5.0
 XStatic===1.0.2
 XStatic-Angular-FileUpload===12.0.4.0
