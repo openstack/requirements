@@ -638,9 +638,9 @@ python-neutronclient===7.1.1;python_version=='3.7'
 python-neutronclient===7.1.1;python_version=='3.8'
 pika===1.1.0
 oslo.cache===1.38.1;python_version=='2.7'
-oslo.cache===2.3.0;python_version=='3.6'
-oslo.cache===2.3.0;python_version=='3.7'
-oslo.cache===2.3.0;python_version=='3.8'
+oslo.cache===2.3.1;python_version=='3.6'
+oslo.cache===2.3.1;python_version=='3.7'
+oslo.cache===2.3.1;python_version=='3.8'
 WebTest===2.0.34
 openstack.nose-plugin===0.11
 os-collect-config===11.0.1
