@@ -74,7 +74,6 @@ openstack/mistral-lib
 openstack/mistral-tempest-plugin
 openstack/monasca-api
 openstack/monasca-common
-openstack/monasca-log-api
 openstack/monasca-notification
 openstack/monasca-persister
 openstack/monasca-statsd
