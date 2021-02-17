@@ -2,7 +2,7 @@ ntlm-auth===1.5.0
 voluptuous===0.12.1
 chardet===4.0.0
 enum-compat===0.0.3
-rsa===4.7
+rsa===4.7.1
 restructuredtext-lint===1.3.2
 netmiko===3.3.3
 sshtunnel===0.4.0
@@ -168,7 +168,7 @@ paramiko===2.7.2
 ifaddr===0.1.7
 reno===3.2.0
 imagesize===1.2.0
-pydot===1.4.1
+pydot===1.4.2
 urllib3===1.26.3
 graphviz===0.16
 PyKMIP===0.10.0
@@ -182,7 +182,7 @@ PyYAML===5.4.1
 beautifulsoup4===4.9.3
 os-net-config===14.0.0
 ovs===2.13.0
-cryptography===3.4.4
+cryptography===3.4.6
 httpcore===0.12.3
 URLObject===2.4.3
 nocasedict===1.0.2
@@ -212,7 +212,7 @@ bcrypt===3.2.0
 os-client-config===2.1.0
 XStatic-Angular-Gettext===2.4.1.0
 h11===0.12.0
-Pygments===2.7.4
+Pygments===2.8.0
 XStatic-Hogan===2.0.0.3
 XStatic-objectpath===1.2.1.0
 python-manilaclient===2.4.0
@@ -299,7 +299,7 @@ capacity===1.3.14
 retrying===1.3.3
 XStatic-Dagre===0.6.4.1
 pydotplus===2.0.2
-boto3===1.17.6
+boto3===1.17.9
 jeepney===0.6.0
 stestr===3.1.0
 oslo.serialization===4.1.0
@@ -360,7 +360,7 @@ linecache2===1.0.0
 oauth2client===4.1.3
 idna===2.10
 yamlloader===0.5.5
-cfn-lint===0.44.7
+cfn-lint===0.45.0
 protobuf===3.14.0
 jsonpickle===2.0.0
 sushy===3.6.1
@@ -390,7 +390,7 @@ seqdiag===2.0.0
 numpy===1.19.5;python_version=='3.6'
 numpy===1.20.1;python_version=='3.8'
 msgpack===1.0.2
-Sphinx===3.4.3
+Sphinx===3.5.1
 oslo.config===8.4.0
 tempest===26.0.0
 openstackdocstheme===2.2.7
@@ -404,7 +404,7 @@ uhashring===2.0
 kubernetes===12.0.1
 httplib2===0.19.0
 betamax===0.8.1
-construct===2.10.59
+construct===2.10.60
 pytest-metadata===1.11.0
 pyparsing===2.4.7
 geomet===0.2.1.post1
@@ -419,7 +419,7 @@ proboscis===1.2.6.0
 oslo.upgradecheck===1.3.0
 stevedore===3.3.0
 pywinrm===0.4.1
-botocore===1.20.6
+botocore===1.20.9
 xmltodict===0.12.0
 pyasn1===0.4.8
 oslo.rootwrap===6.2.0
@@ -461,7 +461,7 @@ python-ironicclient===4.5.0
 XStatic===1.0.2
 XStatic-Angular-FileUpload===12.0.4.0
 python-openstackclient===5.4.0
-pyzmq===22.0.2
+pyzmq===22.0.3
 nocaselist===1.0.4
 oslo.db===8.5.0
 simplegeneric===0.8.1
@@ -520,7 +520,7 @@ ceilometer===15.0.0
 diskimage-builder===3.7.0
 heat-translator===2.1.0
 python-magnumclient===3.3.0
-docker===4.4.1
+docker===4.4.2
 storops===1.2.8
 XStatic-Angular-lrdragndrop===1.0.2.4
 ovsdbapp===1.8.0
