@@ -500,7 +500,7 @@ APScheduler===3.7.0
 junit-xml===1.9
 monotonic===1.5
 xmlschema===1.5.1
-python-troveclient===6.0.1
+python-troveclient===7.0.0
 etcd3===0.12.0
 cachez===0.1.2
 XStatic-Bootstrap-Datepicker===1.4.0.0
