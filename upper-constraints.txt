@@ -177,7 +177,7 @@ pywbem===1.1.3
 python-subunit===1.4.0
 tornado===6.1
 pycparser===2.20
-mock===3.0.5
+mock===4.0.3
 PyYAML===5.4.1
 beautifulsoup4===4.9.3
 os-net-config===14.0.0
