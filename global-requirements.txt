@@ -308,7 +308,8 @@ rtslib-fb  # Apache-2.0
 rst2txt  # BSD
 ryu  # Apache-2.0
 semantic-version  # BSD
-fasteners!=0.15  # Apache-2.0
+# https://github.com/harlowja/fasteners/issues/36
+fasteners!=0.15,!=0.16  # Apache-2.0
 scrypt  # BSD
 simplejson  # MIT
 six  # MIT
