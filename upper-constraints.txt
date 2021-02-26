@@ -245,7 +245,7 @@ ansible-runner===1.4.7
 scp===0.13.3
 python-zaqarclient===2.0.1
 lockfile===0.12.2
-ldappool===2.4.1
+ldappool===3.0.0
 termcolor===1.1.0
 joblib===1.0.1
 google-api-python-client===1.12.8
