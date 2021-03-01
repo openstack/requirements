@@ -143,7 +143,7 @@ prettytable===0.7.2
 vine===5.0.0
 taskflow===4.6.0
 traceback2===1.4.0
-arrow===1.0.0
+arrow===1.0.2
 semantic-version===2.8.5
 virtualbmc===2.2.0
 deprecation===2.1.0
@@ -259,7 +259,7 @@ autobahn===21.2.2;python_version=='3.8'
 SQLAlchemy-Utils===0.36.8
 retryz===0.1.9
 pluggy===0.13.1
-coverage===5.4
+coverage===5.5
 freezegun===1.1.0
 toml===0.10.0
 pyperclip===1.8.2
@@ -319,7 +319,7 @@ natsort===7.1.1
 requests-ntlm===1.1.0
 automaton===2.3.0
 os-service-types===1.7.0
-keyring===22.2.0
+keyring===22.3.0
 elementpath===2.1.4
 testscenarios===0.5.0
 sphinxcontrib-pecanwsme===0.10.0
@@ -451,7 +451,7 @@ testresources===2.0.1
 falcon===2.0.0
 etcd3gw===0.2.5
 Flask-RESTful===0.3.8
-GitPython===3.1.13
+GitPython===3.1.14
 python-ironicclient===4.6.0
 XStatic===1.0.2
 XStatic-Angular-FileUpload===12.0.4.0
@@ -506,7 +506,7 @@ sphinxcontrib-qthelp===1.0.3
 keystoneauth1===4.3.1
 statsd===3.3.0
 XenAPI===2.14
-importlib-resources===5.1.0
+importlib-resources===5.1.1
 python-keystoneclient===4.2.0
 ceilometer===15.0.0
 diskimage-builder===3.7.0
@@ -545,7 +545,7 @@ xvfbwrapper===0.2.9
 futures===3.3.0;python_version=='2.7'
 tosca-parser===2.2.0
 Flask===1.1.2
-httpx===0.16.1
+httpx===0.17.0
 sqlalchemy-filters===0.12.0
 marathon===0.13.0
 sphinxcontrib-runcmd===0.2.0
@@ -576,4 +576,4 @@ actdiag===2.0.0
 sysv-ipc===1.1.0
 sphinxcontrib-applehelp===1.0.2
 scikit-learn===0.24.1
-setuptools===53.0.0
+setuptools===54.0.0
