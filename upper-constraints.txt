@@ -22,7 +22,7 @@ ryu===4.34
 os-api-ref===2.1.0
 python-ldap===3.3.1
 oslo.concurrency===4.4.0
-websocket-client===0.57.0
+websocket-client===0.58.0
 osprofiler===3.4.0
 os-resource-classes===1.0.0
 tabulate===0.8.9
@@ -117,7 +117,7 @@ pyinotify===0.9.6
 debtcollector===2.2.0
 requests-unixsocket===0.2.0
 responses===0.12.1
-croniter===1.0.6
+croniter===1.0.7
 horizon===19.0.0
 octavia-lib===2.3.0
 python-watcherclient===3.1.1
@@ -132,7 +132,7 @@ oslotest===4.4.1
 jsonpointer===2.0
 defusedxml===0.6.0
 netaddr===0.8.0
-pyghmi===1.5.22
+pyghmi===1.5.23
 sphinxcontrib-blockdiag===2.0.0
 thrift===0.13.0
 gnocchiclient===7.0.6
@@ -255,7 +255,7 @@ enmerkar===0.7.1
 webcolors===1.11.1
 aodhclient===2.1.1
 autobahn===21.2.1;python_version=='3.6'
-autobahn===21.2.2;python_version=='3.8'
+autobahn===21.3.1;python_version=='3.8'
 SQLAlchemy-Utils===0.36.8
 retryz===0.1.9
 pluggy===0.13.1
@@ -297,7 +297,7 @@ capacity===1.3.14
 retrying===1.3.3
 XStatic-Dagre===0.6.4.1
 pydotplus===2.0.2
-boto3===1.17.18
+boto3===1.17.19
 jeepney===0.6.0
 stestr===3.1.0
 oslo.serialization===4.1.0
@@ -414,7 +414,7 @@ proboscis===1.2.6.0
 oslo.upgradecheck===1.3.0
 stevedore===3.3.0
 pywinrm===0.4.1
-botocore===1.20.18
+botocore===1.20.19
 xmltodict===0.12.0
 pyasn1===0.4.8
 oslo.rootwrap===6.2.0
@@ -429,7 +429,7 @@ click===7.1.2
 XStatic-smart-table===1.4.13.2
 kuryr-lib===2.2.0
 scrypt===0.8.17
-jsonpatch===1.28
+jsonpatch===1.30
 python-daemon===2.3.0
 typed-ast===1.4.2
 os-testr===2.0.0
