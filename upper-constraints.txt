@@ -104,7 +104,7 @@ suds-jurko===0.6
 immutables===0.15;python_version=='3.6'
 python-swiftclient===3.11.0
 pyOpenSSL===20.0.1
-monasca-common===3.2.0
+monasca-common===3.3.0
 zeroconf===0.28.8
 scipy===1.5.4;python_version=='3.6'
 scipy===1.6.1;python_version=='3.8'
