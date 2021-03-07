@@ -117,7 +117,7 @@ pyinotify===0.9.6
 debtcollector===2.2.0
 requests-unixsocket===0.2.0
 responses===0.12.1
-croniter===1.0.7
+croniter===1.0.8
 horizon===19.0.0
 octavia-lib===2.3.1
 python-watcherclient===3.1.1
@@ -274,7 +274,7 @@ XStatic-term.js===0.0.7.0
 oslo.log===4.4.0
 nodeenv===1.5.0
 gossip===2.4.0
-importlib-metadata===3.7.0;python_version=='3.6'
+importlib-metadata===3.7.0
 oslo.middleware===4.1.1
 apipkg===1.5
 XStatic-mdi===1.6.50.2
@@ -319,7 +319,7 @@ natsort===7.1.1
 requests-ntlm===1.1.0
 automaton===2.3.0
 os-service-types===1.7.0
-keyring===22.3.0
+keyring===23.0.0
 elementpath===2.2.0
 testscenarios===0.5.0
 sphinxcontrib-pecanwsme===0.10.0
@@ -385,7 +385,7 @@ seqdiag===2.0.0
 numpy===1.19.5;python_version=='3.6'
 numpy===1.20.1;python_version=='3.8'
 msgpack===1.0.2
-Sphinx===3.5.1
+Sphinx===3.5.2
 oslo.config===8.5.0
 tempest===26.0.0
 openstackdocstheme===2.2.7
