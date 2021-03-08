@@ -143,7 +143,7 @@ prettytable===0.7.2
 vine===5.0.0
 taskflow===4.6.0
 traceback2===1.4.0
-arrow===1.0.2
+arrow===1.0.3
 semantic-version===2.8.5
 virtualbmc===2.2.0
 deprecation===2.1.0
@@ -209,7 +209,7 @@ bcrypt===3.2.0
 os-client-config===2.1.0
 XStatic-Angular-Gettext===2.4.1.0
 h11===0.12.0
-Pygments===2.8.0
+Pygments===2.8.1
 XStatic-Hogan===2.0.0.3
 XStatic-objectpath===1.2.1.0
 python-manilaclient===2.4.0
@@ -274,7 +274,7 @@ XStatic-term.js===0.0.7.0
 oslo.log===4.4.0
 nodeenv===1.5.0
 gossip===2.4.0
-importlib-metadata===3.7.0
+importlib-metadata===3.7.2
 oslo.middleware===4.1.1
 apipkg===1.5
 XStatic-mdi===1.6.50.2
@@ -575,4 +575,4 @@ actdiag===2.0.0
 sysv-ipc===1.1.0
 sphinxcontrib-applehelp===1.0.2
 scikit-learn===0.24.1
-setuptools===54.1.0
+setuptools===54.1.1
