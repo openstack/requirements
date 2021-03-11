@@ -313,7 +313,7 @@ oslo.vmware===3.8.0
 XStatic-moment===2.8.4.3
 sqlalchemy-migrate===0.13.0
 gitdb===4.0.5
-python-monascaclient===2.2.1
+python-monascaclient===2.3.0
 ldap3===2.9
 natsort===7.1.1
 requests-ntlm===1.1.0
