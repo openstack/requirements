@@ -102,13 +102,13 @@
     vars:
       tox_envlist: py36
 
-#- job:
-#    name: cross-neutron-py36
-#    parent: requirements-cross-test
-#    description: Run cross-project tests on neutron with py36.
-#    required-projects: openstack/neutron
-#    vars:
-#      tox_envlist: py36
+- job:
+    name: cross-neutron-py36
+    parent: requirements-cross-test
+    description: Run cross-project tests on neutron with py36.
+    required-projects: openstack/neutron
+    vars:
+      tox_envlist: py36
 
 - job:
     name: cross-nova-functional
