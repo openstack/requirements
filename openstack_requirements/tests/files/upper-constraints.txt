@@ -144,7 +144,7 @@ tornado===4.4.2;python_version=='3.4'
 tornado===4.4.2;python_version=='3.5'
 pycparser===2.17
 mock===2.0.0
-PyYAML===3.12
+PyYAML===5.4
 beautifulsoup4===4.5.3
 ovs===2.7.0
 cryptography===1.8.1
