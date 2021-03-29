@@ -510,7 +510,7 @@ importlib-resources===5.1.2
 python-keystoneclient===4.2.0
 ceilometer===16.0.0.0rc1
 diskimage-builder===3.7.0
-heat-translator===2.2.0
+heat-translator===2.3.0
 python-magnumclient===3.4.0
 docker===4.4.4
 storops===1.2.8
