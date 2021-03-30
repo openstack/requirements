@@ -387,7 +387,7 @@ numpy===1.20.1;python_version=='3.8'
 msgpack===1.0.2
 Sphinx===3.5.2
 oslo.config===8.5.0
-tempest===26.1.0
+tempest===27.0.0
 openstackdocstheme===2.2.7
 osc-placement===2.2.0
 zake===0.2.2
