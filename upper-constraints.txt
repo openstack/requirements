@@ -262,6 +262,7 @@ pluggy===0.13.1
 coverage===5.5
 freezegun===1.1.0
 toml===0.10.0
+pycdlib===1.11.0
 pyperclip===1.8.2
 cassandra-driver===3.24.0
 XStatic-Angular-Schema-Form===0.8.13.0
