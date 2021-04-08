@@ -419,7 +419,7 @@ botocore===1.20.26
 xmltodict===0.12.0
 pyasn1===0.4.8
 oslo.rootwrap===6.2.0
-Django===2.2.19
+Django===2.2.20
 pexpect===4.8.0
 contextvars===2.4;python_version=='3.6'
 cmd2===1.5.0
