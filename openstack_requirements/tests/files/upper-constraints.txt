@@ -265,7 +265,7 @@ enum34===1.1.6
 packaging===16.8
 nose-exclude===0.5.0
 psutil===5.2.0
-py===1.4.32
+py===1.10.0
 txaio===2.6.1
 elasticsearch===2.4.1
 django-nose===1.4.4
