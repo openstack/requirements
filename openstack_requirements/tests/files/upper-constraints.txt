@@ -208,7 +208,7 @@ castellan===0.5.0
 oslo.versionedobjects===1.22.0
 webcolors===1.7
 aodhclient===0.9.0
-autobahn===0.17.2
+autobahn===20.12.3
 SQLAlchemy-Utils===0.32.12
 coverage===4.3.4
 freezegun===0.3.8
