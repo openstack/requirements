@@ -1,7 +1,7 @@
 voluptuous===0.9.3
 chardet===2.3.0
 enum-compat===0.0.2
-rsa===3.4.2
+rsa===4.7
 restructuredtext-lint===1.0.1
 netmiko===1.2.8
 PasteDeploy===1.5.2
