@@ -61,9 +61,6 @@
         - build-wheel-cache-debian-buster-arm64:
             files:
               - bindep.txt
-        - build-wheel-cache-ubuntu-xenial-arm64:
-            files:
-              - bindep.txt
         - build-wheel-cache-ubuntu-bionic-arm64:
             files:
               - bindep.txt
