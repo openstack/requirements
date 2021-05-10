@@ -13,13 +13,13 @@
 #    under the License.
 
 from __future__ import print_function
+from unittest import mock
 
 import six
 import sys
 import textwrap
 
 import fixtures
-import mock
 import testscenarios
 import testtools
 from testtools import matchers

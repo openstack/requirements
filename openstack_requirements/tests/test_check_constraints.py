@@ -10,12 +10,13 @@
 # License for the specific language governing permissions and limitations
 # under the License.
 from __future__ import print_function
+from unittest import mock
 
 import io
-import mock
 import os
 import testscenarios
 import testtools
+
 
 from openstack_requirements.cmds import check_exists
 from openstack_requirements import project
