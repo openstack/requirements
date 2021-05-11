@@ -577,3 +577,4 @@ sysv-ipc===1.1.0
 sphinxcontrib-applehelp===1.0.2
 scikit-learn===0.24.2
 setuptools===56.0.0
+python-linstor===1.7.0
