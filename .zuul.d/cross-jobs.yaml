@@ -95,6 +95,14 @@
       tox_envlist: py38
 
 - job:
+    name: cross-manila-py36
+    parent: requirements-cross-test
+    description: Run cross-project tests on manila with py36.
+    required-projects: openstack/manila
+    vars:
+      tox_envlist: py36
+
+- job:
     name: cross-masakari-py36
     parent: requirements-cross-test
     description: Run cross-project tests on masakari with py36.
