@@ -29,21 +29,21 @@
         - requirements-tox-py38-check-uc
         - requirements-tox-validate-projects:
             voting: false
-        - cross-cinder-py36
-        - cross-glance-py36
-        - cross-horizon-py36
+        - cross-cinder-py38
+        - cross-glance-py38
+        - cross-horizon-py38
         - cross-horizon-npm
         - cross-ironic-py38
-        - cross-keystone-py36
-        - cross-manila-py36
-        - cross-masakari-py36
-        - cross-neutron-py36
-        - cross-nova-py36
+        - cross-keystone-py38
+        - cross-manila-py38
+        - cross-masakari-py38
+        - cross-neutron-py38
+        - cross-nova-py38
         - cross-osvif-py3
         - cross-nova-functional
-        - cross-octavia-py36
+        - cross-octavia-py38
         - cross-osc-tox-docs
-        - cross-swift-py36
+        - cross-swift-py38
         - openstack-tox-py36
         - openstacksdk-functional-devstack
         - tempest-full-py3:
@@ -92,22 +92,22 @@
         - requirements-tox-babel
         - requirements-tox-py36-check-uc
         - requirements-tox-py38-check-uc
-        - cross-cinder-py36
-        - cross-glance-py36
-        - cross-horizon-py36
+        - cross-cinder-py38
+        - cross-glance-py38
+        - cross-horizon-py38
         - cross-horizon-npm
         - cross-ironic-py38
-        - cross-keystone-py36
-        - cross-manila-py36
-        - cross-masakari-py36
-        - cross-neutron-py36
-        - cross-nova-py36:
+        - cross-keystone-py38
+        - cross-manila-py38
+        - cross-masakari-py38
+        - cross-neutron-py38
+        - cross-nova-py38:
             files: ^upper-constraints.txt$
         - cross-osvif-py3
         - cross-nova-functional
-        - cross-octavia-py36
+        - cross-octavia-py38
         - cross-osc-tox-docs
-        - cross-swift-py36
+        - cross-swift-py38
         - openstack-tox-py36
         - openstacksdk-functional-devstack
         - tempest-full-py3:
