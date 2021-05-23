@@ -189,7 +189,7 @@ class TestToReqs(testtools.TestCase):
                          frozenset(('fixtures',)))
         self.assertEqual(reqs['oslo.db'][0][0].extras,
                          frozenset(('fixtures', 'mysql')))
-        self.assertItemsEqual(reqs,
+        self.assertCountEqual(reqs,
                               ['oslo.config', 'oslo.concurrency', 'oslo.db'])
 
 
