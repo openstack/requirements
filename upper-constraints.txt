@@ -150,7 +150,7 @@ virtualbmc===2.2.0
 deprecation===2.1.0
 SQLAlchemy===1.3.23
 pyroute2===0.5.19
-google-auth===1.30.0
+google-auth===1.30.1
 kazoo===2.8.0
 pyroute2.ethtool===0.6.1
 XStatic-roboto-fontface===0.5.0.0
@@ -179,6 +179,7 @@ pycparser===2.20
 mock===4.0.3
 PyYAML===5.4.1
 beautifulsoup4===4.9.3
+cached-property===1.5.2;python_version=='3.6'
 os-net-config===14.1.0
 ovs===2.13.3
 cryptography===3.4.7
@@ -258,7 +259,7 @@ webcolors===1.11.1
 aodhclient===2.2.0
 autobahn===21.2.1;python_version=='3.6'
 autobahn===21.3.1;python_version=='3.8'
-SQLAlchemy-Utils===0.37.3
+SQLAlchemy-Utils===0.37.4
 retryz===0.1.9
 pluggy===0.13.1
 coverage===5.5
@@ -300,7 +301,7 @@ capacity===1.3.14
 retrying===1.3.3
 XStatic-Dagre===0.6.4.1
 pydotplus===2.0.2
-boto3===1.17.78
+boto3===1.17.79
 jeepney===0.6.0
 stestr===3.2.0
 oslo.serialization===4.1.0
@@ -359,7 +360,7 @@ linecache2===1.0.0
 oauth2client===4.1.3
 idna===2.10
 yamlloader===1.0.0
-protobuf===3.17.0
+protobuf===3.17.1
 sushy===3.8.0
 python-neutronclient===7.3.0
 pika===1.2.0
@@ -417,7 +418,7 @@ proboscis===1.2.6.0
 oslo.upgradecheck===1.3.0
 stevedore===3.3.0
 pywinrm===0.4.2
-botocore===1.20.78
+botocore===1.20.79
 xmltodict===0.12.0
 pyasn1===0.4.8
 oslo.rootwrap===6.2.0
@@ -443,10 +444,10 @@ systemd-python===234
 python-memcached===1.59
 openstacksdk===0.57.0
 six===1.16.0
-dulwich===0.20.21
+dulwich===0.20.23
 dfs-sdk===1.2.27
 sentinels===1.0.0
-kombu===5.0.2
+kombu===5.1.0
 pyroute2.ndb===0.6.1
 distro===1.5.0
 zstd===1.5.0.2
@@ -534,7 +535,7 @@ futurist===2.3.0
 jsonschema===3.2.0
 sphinxcontrib-devhelp===1.0.2
 python-blazarclient===3.2.0
-alembic===1.6.2
+alembic===1.6.4
 execnet===1.8.0
 glance-store===2.5.0
 sphinxcontrib-programoutput===0.17
@@ -574,7 +575,7 @@ XStatic-jquery-ui===1.12.1.1
 monasca-statsd===2.2.0
 python-dateutil===2.8.1
 typing-extensions===3.10.0.0
-virtualenv===20.4.6
+virtualenv===20.4.7
 colorama===0.4.4
 confetti===2.5.3
 ironic-lib===4.6.1
