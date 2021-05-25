@@ -497,7 +497,7 @@ os-vif===2.4.0
 hyperlink===21.0.0
 mitba===1.1.1
 python-masakariclient===7.0.0
-Werkzeug===1.0.1
+Werkzeug===2.0.1
 pyasn1-modules===0.2.8
 APScheduler===3.7.0
 monotonic===1.6
@@ -552,7 +552,7 @@ confluent-kafka===1.7.0
 xvfbwrapper===0.2.9
 futures===3.1.1;python_version=='3.6'
 tosca-parser===2.3.0
-Flask===1.1.2
+Flask===2.0.1
 httpx===0.18.1
 sqlalchemy-filters===0.12.0
 marathon===0.13.0
