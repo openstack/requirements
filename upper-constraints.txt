@@ -520,7 +520,7 @@ python-keystoneclient===4.2.0
 ceilometer===16.0.0
 diskimage-builder===3.11.0
 heat-translator===2.3.0
-python-magnumclient===3.4.0
+python-magnumclient===3.5.0
 docker===5.0.0
 storops===1.2.9
 XStatic-Angular-lrdragndrop===1.0.2.4
