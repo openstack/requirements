@@ -121,7 +121,7 @@ def _is_requirement_in_global_reqs(local_req, global_reqs, allow_3_only=False):
         if req_exclusions.issubset(global_exclusions):
             return True
         else:
-            difference = global_exclusions - req_exclusions
+            difference = req_exclusions - global_exclusions
             print(
                 "ERROR: Requirement for package {} "
                 "excludes a version not excluded in the "
