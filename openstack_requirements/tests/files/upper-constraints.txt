@@ -136,7 +136,7 @@ reno===2.1.2
 unicodecsv===0.14.1;python_version=='2.7'
 imagesize===0.7.1
 pathlib===1.0.1;python_version=='2.7'
-urllib3===1.20
+urllib3===1.26.5
 graphviz===0.6
 PyKMIP===0.6.0
 python-subunit===1.2.0
