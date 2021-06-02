@@ -194,7 +194,7 @@ pycryptodomex===3.10.1
 anyjson===0.3.3
 requests-mock===1.9.3
 os-apply-config===13.0.1
-prometheus-client===0.10.1
+prometheus-client===0.11.0
 oslosphinx===4.18.0
 gunicorn===20.1.0
 storpool===5.5.0
@@ -202,7 +202,7 @@ textfsm===1.1.0
 python-3parclient===4.2.11
 unittest2===1.1.0
 django-compressor===2.4.1
-libvirt-python===7.3.0
+libvirt-python===7.4.0
 python-zunclient===4.2.0
 tzlocal===2.1
 sphinxcontrib-jsmath===1.0.1
@@ -251,7 +251,7 @@ lockfile===0.12.2
 ldappool===3.0.0
 termcolor===1.1.0
 joblib===1.0.1
-google-api-python-client===2.6.0
+google-api-python-client===2.7.0
 castellan===3.8.0
 oslo.versionedobjects===2.4.0
 enmerkar===0.7.1
@@ -301,7 +301,7 @@ capacity===1.3.14
 retrying===1.3.3
 XStatic-Dagre===0.6.4.1
 pydotplus===2.0.2
-boto3===1.17.84
+boto3===1.17.85
 jeepney===0.6.0
 stestr===3.2.0
 oslo.serialization===4.1.0
@@ -418,7 +418,7 @@ proboscis===1.2.6.0
 oslo.upgradecheck===1.4.0
 stevedore===3.3.0
 pywinrm===0.4.2
-botocore===1.20.84
+botocore===1.20.85
 xmltodict===0.12.0
 pyasn1===0.4.8
 oslo.rootwrap===6.2.0
@@ -542,7 +542,7 @@ sphinxcontrib-programoutput===0.17
 storpool.spopenstack===3.0.0
 sphinx-testing===1.0.1
 dnspython===1.16.0
-oauthlib===3.1.0
+oauthlib===3.1.1
 Babel===2.9.1
 logutils===0.3.5
 zipp===3.4.1
