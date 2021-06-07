@@ -604,7 +604,7 @@ sphinxcontrib-qthelp===1.0.2;python_version=='3.4'
 sphinxcontrib-qthelp===1.0.2;python_version=='3.5'
 sphinxcontrib-qthelp===1.0.2;python_version=='3.6'
 sphinxcontrib-qthelp===1.0.2;python_version=='3.7'
-keystoneauth1===3.17.3
+keystoneauth1===3.17.4
 statsd===3.3.0
 XenAPI===2.14
 python-keystoneclient===3.21.0
