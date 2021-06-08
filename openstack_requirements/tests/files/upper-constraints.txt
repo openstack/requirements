@@ -72,7 +72,7 @@ networkx===1.11
 bashate===0.5.1
 XStatic-Angular===1.5.8.0
 pyngus===2.2.0
-Pillow===4.0.0
+Pillow===8.2.0
 python-mimeparse===1.6.0
 tripleo-common===6.0.0
 Tempita===0.5.2
