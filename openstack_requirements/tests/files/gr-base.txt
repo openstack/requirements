@@ -8,7 +8,7 @@ cffi
 Cheetah>=2.4.4
 cliff>=1.4
 d2to1>=0.2.10,<0.3
-Django>=1.4,<1.6
+Django>=1.4,<2.3
 django_compressor>=1.4
 dnspython>=1.9.4
 eventlet>=0.12.0
