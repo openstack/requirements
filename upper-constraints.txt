@@ -643,7 +643,7 @@ oslo.cache===2.3.1;python_version=='3.7'
 oslo.cache===2.3.1;python_version=='3.8'
 WebTest===2.0.34
 openstack.nose-plugin===0.11
-os-collect-config===11.0.3
+os-collect-config===11.0.4
 edgegrid-python===1.1.1
 python-qpid-proton===0.30.0
 python-octaviaclient===2.0.0;python_version=='2.7'
