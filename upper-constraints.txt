@@ -180,7 +180,7 @@ mock===4.0.3
 PyYAML===5.4.1
 beautifulsoup4===4.9.3
 cached-property===1.5.2;python_version=='3.6'
-os-net-config===14.1.0
+os-net-config===15.0.0
 ovs===2.13.3
 cryptography===3.4.7
 httpcore===0.13.3
