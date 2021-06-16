@@ -29,6 +29,7 @@
         - requirements-tox-py38-check-uc
         - requirements-tox-validate-projects:
             voting: false
+        - cross-barbican-py38
         - cross-cinder-py38
         - cross-glance-py38
         - cross-horizon-py38

@@ -45,6 +45,14 @@
       - .zuul.d/cross-jobs.yaml
 
 - job:
+    name: cross-barbican-py38
+    parent: requirements-cross-test
+    description: Run cross-project tests on barbican with py38.
+    required-projects: openstack/barbican
+    vars:
+      tox_envlist: py38
+
+- job:
     name: cross-cinder-py38
     parent: requirements-cross-test
     description: Run cross-project tests on cinder with py38.
