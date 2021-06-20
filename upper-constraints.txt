@@ -56,7 +56,7 @@ oslo.context===3.3.0
 python-senlinclient===2.2.1
 rcssmin===1.0.6
 pycadf===3.1.1
-types-enum34===0.1.5
+types-enum34===0.1.6
 grpcio===1.38.0
 pysendfile===2.0.1
 sniffio===1.2.0
@@ -80,14 +80,14 @@ XStatic-jQuery===1.12.4.1
 ddt===1.4.2
 XStatic-Graphlib===2.1.7.0
 pyserial===3.5
-moto===2.0.8
+moto===2.0.9
 infi.dtypes.wwn===0.1.1
 python-freezerclient===4.2.0
 os-xenapi===0.3.4
 python-vitrageclient===4.3.0
 nosexcover===1.0.11
 krest===1.3.2
-psycopg2===2.8.6
+psycopg2===2.9.1
 networkx===2.5.1
 bashate===2.0.0
 XStatic-Angular===1.5.8.0
@@ -102,7 +102,7 @@ google-api-core===1.30.0
 requests-toolbelt===0.9.1
 simplejson===3.17.2
 suds-jurko===0.6
-types-paramiko===0.1.4
+types-paramiko===0.1.7
 immutables===0.15
 python-swiftclient===3.12.0
 pyOpenSSL===20.0.1
@@ -140,7 +140,7 @@ sphinxcontrib-blockdiag===2.0.0
 thrift===0.13.0
 gnocchiclient===7.0.6
 wcwidth===0.2.5
-sphinxcontrib.datatemplates===0.7.2
+sphinxcontrib.datatemplates===0.8.1
 jsonpath-rw===1.4.0
 prettytable===0.7.2
 vine===5.0.0
@@ -186,10 +186,10 @@ cached-property===1.5.2;python_version=='3.6'
 os-net-config===15.0.0
 ovs===2.13.3
 cryptography===3.4.7
-httpcore===0.13.4
+httpcore===0.13.6
 URLObject===2.4.3
 nocasedict===1.0.2
-psycopg2-binary===2.8.6
+psycopg2-binary===2.9.1
 openstack-release-test===3.3.1
 validations-libs===1.1.0
 pylxd===2.3.0
@@ -255,7 +255,7 @@ lockfile===0.12.2
 ldappool===3.0.0
 termcolor===1.1.0
 joblib===1.0.1
-google-api-python-client===2.8.0
+google-api-python-client===2.9.0
 castellan===3.8.0
 oslo.versionedobjects===2.4.0
 enmerkar===0.7.1
@@ -263,7 +263,7 @@ webcolors===1.11.1
 aodhclient===2.2.0
 autobahn===21.2.1;python_version=='3.6'
 autobahn===21.3.1;python_version=='3.8'
-SQLAlchemy-Utils===0.37.6
+SQLAlchemy-Utils===0.37.7
 retryz===0.1.9
 pluggy===0.13.1
 coverage===5.5
@@ -276,7 +276,7 @@ XStatic-Angular-Schema-Form===0.8.13.0
 gabbi===2.2.0
 nwdiag===2.0.0
 XStatic-bootswatch===3.3.7.0
-pytest-xdist===2.2.1
+pytest-xdist===2.3.0
 XStatic-JS-Yaml===3.8.1.0
 XStatic-term.js===0.0.7.0
 oslo.log===4.5.0
@@ -284,7 +284,6 @@ nodeenv===1.6.0
 gossip===2.4.0
 importlib-metadata===4.5.0
 oslo.middleware===4.2.0
-apipkg===1.5
 XStatic-mdi===1.6.50.2
 django-pyscss===2.0.2
 uritemplate===3.0.1
@@ -297,7 +296,7 @@ python-glareclient===0.5.3
 mypy===0.902
 mistral-lib===2.4.0
 dogtag-pki===10.7.4.1
-types-ipaddress===0.1.2
+types-ipaddress===0.1.3
 XStatic-Angular-UUID===0.0.4.0
 purestorage===1.19.0
 sphinxcontrib-seqdiag===2.0.0
@@ -306,7 +305,7 @@ capacity===1.3.14
 retrying===1.3.3
 XStatic-Dagre===0.6.4.1
 pydotplus===2.0.2
-boto3===1.17.93
+boto3===1.17.97
 jeepney===0.6.0
 stestr===3.2.0
 oslo.serialization===4.1.0
@@ -328,7 +327,7 @@ requests-ntlm===1.1.0
 automaton===2.3.0
 os-service-types===1.7.0
 keyring===23.0.1
-elementpath===2.2.2
+elementpath===2.2.3
 testscenarios===0.5.0
 sphinxcontrib-pecanwsme===0.10.0
 sadisplay===0.4.9
@@ -423,7 +422,7 @@ proboscis===1.2.6.0
 oslo.upgradecheck===1.4.0
 stevedore===3.3.0
 pywinrm===0.4.2
-botocore===1.20.93
+botocore===1.20.97
 xmltodict===0.12.0
 pyasn1===0.4.8
 oslo.rootwrap===6.2.0
@@ -431,7 +430,7 @@ pyroute2.nslink===0.6.4
 Django===2.2.24
 pexpect===4.8.0
 contextvars===2.4
-cmd2===2.0.1
+cmd2===2.1.1
 python-json-logger===2.0.1
 redis===3.5.3
 jmespath===0.10.0
@@ -441,7 +440,7 @@ kuryr-lib===2.3.0
 scrypt===0.8.18
 jsonpatch===1.32
 python-daemon===2.3.0
-types-cryptography===0.1.2
+types-cryptography===3.3.3
 typed-ast===1.4.3;python_version=='3.6'
 os-testr===2.0.0
 cotyledon===1.7.3
@@ -463,7 +462,7 @@ testresources===2.0.1
 falcon===3.0.1
 etcd3gw===0.2.5
 Flask-RESTful===0.3.9
-GitPython===3.1.17
+GitPython===3.1.18
 python-ironicclient===4.7.0
 XStatic===1.0.2
 XStatic-Angular-FileUpload===12.0.4.0
@@ -529,7 +528,7 @@ heat-translator===2.4.0
 python-magnumclient===3.5.0
 docker===5.0.0
 storops===1.2.10
-anyio===3.1.0
+anyio===3.2.0
 XStatic-Angular-lrdragndrop===1.0.2.4
 ovsdbapp===1.11.0
 aniso8601===9.0.1
@@ -543,7 +542,7 @@ jsonschema===3.2.0
 sphinxcontrib-devhelp===1.0.2
 python-blazarclient===3.2.0
 alembic===1.6.5
-execnet===1.8.1
+execnet===1.9.0
 glance-store===2.5.0
 sphinxcontrib-programoutput===0.17
 storpool.spopenstack===3.0.0
@@ -561,14 +560,14 @@ xvfbwrapper===0.2.9
 futures===3.1.1;python_version=='3.6'
 tosca-parser===2.4.0
 Flask===2.0.1
-httpx===0.18.1
+httpx===0.18.2
 sqlalchemy-filters===0.12.0
 marathon===0.13.0
 sphinxcontrib-runcmd===0.2.0
 confspirator===0.3.0
 fasteners===0.14.1
 sortedcontainers===2.4.0
-python-linstor===1.7.3
+python-linstor===1.8.0
 filelock===3.0.12
 python-tackerclient===1.7.0
 python-heatclient===2.3.0
