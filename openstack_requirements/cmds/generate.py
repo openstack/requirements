@@ -15,6 +15,7 @@ import copy
 import hashlib
 import optparse
 import os.path
+import shutil
 import subprocess
 import sys
 
@@ -155,7 +156,7 @@ def _validate_options(options):
     if not options.pythons:
         raise Exception("No Pythons given - see -p.")
     for python in options.pythons:
-        if not os.path.exists(python):
+        if not shutil.which(python):
             raise Exception(
                 "Python %(python)s not found." % dict(python=python))
     if not options.requirements:
@@ -227,6 +228,8 @@ def main(argv=None, stdout=None):
         _freeze(options.requirements, python) for python in options.pythons]
     _clone_versions(freezes, options)
     blacklist = _parse_blacklist(options.blacklist)
-    frozen = sorted(_combine_freezes(freezes, blacklist), key=_make_sort_key)
+    frozen = [
+        "# generated using: tox -e generate\n",
+        *sorted(_combine_freezes(freezes, blacklist), key=_make_sort_key)]
     stdout.writelines(frozen)
     stdout.flush()
