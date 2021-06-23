@@ -112,8 +112,6 @@ openstack/openstack-ansible-haproxy_server
 openstack/openstack-ansible-lxc_container_create
 openstack/openstack-ansible-lxc_hosts
 openstack/openstack-ansible-memcached_server
-openstack/openstack-ansible-nspawn_container_create
-openstack/openstack-ansible-nspawn_hosts
 openstack/openstack-ansible-openstack_hosts
 openstack/openstack-ansible-openstack_openrc
 openstack/openstack-ansible-ops
