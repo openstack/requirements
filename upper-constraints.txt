@@ -319,6 +319,7 @@ sphinxcontrib-svg2pdfconverter===1.1.1
 murano-pkg-check===0.3.0
 oslo.vmware===3.9.0
 XStatic-moment===2.8.4.3
+autopage===0.4.0
 sqlalchemy-migrate===0.13.0
 gitdb===4.0.7
 python-monascaclient===2.3.0
