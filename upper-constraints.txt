@@ -92,7 +92,7 @@ networkx===2.5.1
 bashate===2.0.0
 XStatic-Angular===1.5.8.0
 pyngus===2.3.1
-Pillow===8.2.0
+Pillow===8.3.0
 zuul-sphinx===0.5.0
 python-mimeparse===1.6.0
 tripleo-common===16.1.0
@@ -107,7 +107,7 @@ immutables===0.15
 python-swiftclient===3.12.0
 pyOpenSSL===20.0.1
 monasca-common===3.3.0
-zeroconf===0.31.0
+zeroconf===0.32.0
 scipy===1.5.4;python_version=='3.6'
 scipy===1.7.0;python_version=='3.8'
 mypy-extensions===0.4.3
@@ -151,9 +151,9 @@ arrow===1.1.1
 semantic-version===2.8.5
 virtualbmc===2.2.0
 deprecation===2.1.0
-SQLAlchemy===1.4.19
+SQLAlchemy===1.4.20
 pyroute2===0.6.4
-google-auth===1.32.0
+google-auth===1.32.1
 kazoo===2.8.0
 pyroute2.ethtool===0.6.4
 XStatic-roboto-fontface===0.5.0.0
@@ -201,11 +201,11 @@ prometheus-client===0.11.0
 oslosphinx===4.18.0
 gunicorn===20.1.0
 storpool===5.5.0
-textfsm===1.1.0
+textfsm===1.1.2
 python-3parclient===4.2.11
 unittest2===1.1.0
 django-compressor===2.4.1
-libvirt-python===7.4.0
+libvirt-python===7.5.0
 python-zunclient===4.2.0
 tzlocal===2.1
 sphinxcontrib-jsmath===1.0.1
@@ -248,14 +248,14 @@ passlib===1.7.4
 dib-utils===0.0.11
 cliff===3.8.0
 os-brick===4.4.0
-ansible-runner===1.4.7
-scp===0.13.4
+ansible-runner===2.0.1
+scp===0.13.5
 python-zaqarclient===2.1.0
 lockfile===0.12.2
 ldappool===3.0.0
 termcolor===1.1.0
 joblib===1.0.1
-google-api-python-client===2.10.0
+google-api-python-client===2.11.0
 castellan===3.8.0
 oslo.versionedobjects===2.4.0
 enmerkar===0.7.1
@@ -263,7 +263,7 @@ webcolors===1.11.1
 aodhclient===2.2.0
 autobahn===21.2.1;python_version=='3.6'
 autobahn===21.3.1;python_version=='3.8'
-SQLAlchemy-Utils===0.37.7
+SQLAlchemy-Utils===0.37.8
 retryz===0.1.9
 pluggy===0.13.1
 coverage===5.5
@@ -305,7 +305,7 @@ capacity===1.3.14
 retrying===1.3.3
 XStatic-Dagre===0.6.4.1
 pydotplus===2.0.2
-boto3===1.17.101
+boto3===1.17.105
 jeepney===0.6.0
 stestr===3.2.0
 oslo.serialization===4.1.0
@@ -422,7 +422,7 @@ proboscis===1.2.6.0
 oslo.upgradecheck===1.4.0
 stevedore===3.3.0
 pywinrm===0.4.2
-botocore===1.20.101
+botocore===1.20.105
 xmltodict===0.12.0
 pyasn1===0.4.8
 oslo.rootwrap===6.2.0
@@ -485,7 +485,7 @@ hvac===0.10.14
 pyeclib===1.6.0
 wsgi-intercept===1.9.2
 ndg-httpsclient===0.5.1
-pyrsistent===0.17.3
+pyrsistent===0.18.0
 repoze.lru===0.7
 rfc3986===1.5.0
 tenacity===6.3.1
@@ -551,7 +551,7 @@ dnspython===1.16.0
 oauthlib===3.1.1
 Babel===2.9.1
 logutils===0.3.5
-zipp===3.4.1
+zipp===3.5.0
 greenlet===1.1.0
 XStatic-Angular-Vis===4.16.0.0
 iniconfig===1.1.1
