@@ -242,7 +242,6 @@ openstack/tempest
 openstack/tosca-parser
 openstack/tripleo-ansible
 openstack/tripleo-common
-openstack/tripleo-common-tempest-plugin
 openstack/tripleo-heat-templates
 openstack/tripleo-validations
 openstack/trove
