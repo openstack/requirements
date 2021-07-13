@@ -158,7 +158,7 @@ kazoo===2.8.0
 pyroute2.ethtool===0.6.4
 XStatic-roboto-fontface===0.5.0.0
 pyudev===0.22.0
-eventlet===0.31.0
+eventlet===0.31.1
 openstack-doc-tools===3.3.0
 oslo.messaging===12.8.0
 jira===3.0.1
