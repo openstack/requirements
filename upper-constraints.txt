@@ -283,7 +283,7 @@ oslo.log===4.6.0
 nodeenv===1.6.0
 gossip===2.4.0
 importlib-metadata===4.6.1
-oslo.middleware===4.2.0
+oslo.middleware===4.3.0
 XStatic-mdi===1.6.50.2
 django-pyscss===2.0.2
 uritemplate===3.0.1
