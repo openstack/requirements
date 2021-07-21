@@ -10,6 +10,7 @@
 - job:
     name: requirements-check
     parent: unittests
+    nodeset: ubuntu-bionic
     run: playbooks/requirements-check.yaml
     required-projects:
       - openstack/requirements
