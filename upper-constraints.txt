@@ -412,7 +412,7 @@ os-brick===3.0.6
 ansible-runner===1.4.6
 trollius===2.2.post1;python_version=='2.7'
 scp===0.13.2
-python-zaqarclient===1.13.1
+python-zaqarclient===1.13.2
 funcsigs===1.0.2;python_version=='2.7'
 zhmcclient===0.26.0
 lockfile===0.12.2
