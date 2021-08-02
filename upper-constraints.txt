@@ -109,7 +109,7 @@ pyOpenSSL===20.0.1
 monasca-common===3.4.0
 zeroconf===0.33.2
 scipy===1.5.4;python_version=='3.6'
-scipy===1.7.0;python_version=='3.8'
+scipy===1.7.1;python_version=='3.8'
 mypy-extensions===0.4.3
 rsd-lib===1.2.0
 XStatic-Jasmine===2.4.1.2
@@ -282,7 +282,7 @@ XStatic-term.js===0.0.7.0
 oslo.log===4.6.0
 nodeenv===1.6.0
 gossip===2.4.0
-importlib-metadata===4.6.2
+importlib-metadata===4.6.3
 oslo.middleware===4.3.0
 XStatic-mdi===1.6.50.2
 django-pyscss===2.0.2
@@ -587,7 +587,7 @@ XStatic-jquery-ui===1.12.1.1
 monasca-statsd===2.2.0
 python-dateutil===2.8.2
 typing-extensions===3.10.0.0
-virtualenv===20.6.0
+virtualenv===20.7.0
 colorama===0.4.4
 confetti===2.5.3
 ironic-lib===4.7.1
