@@ -38,3 +38,12 @@ sahara
 
 # Projects are free to specify their own version of ansible
 ansible
+
+# Tempest and its plugins are branchless which means master version of these
+# tools are used in testing the master + stable branches (except EM stable branch
+# where we pin the Tempest and plugins for testing). Keeping Tempest in the
+# u-c file will block testing the master + stable branches with Tempest master.
+# Bug#1916771 for more details.
+# Once any stable branch move to 'Extended Maintenance' and we pin the
+# older Tempest to test them then we can move it from here to u-c file.
+tempest
