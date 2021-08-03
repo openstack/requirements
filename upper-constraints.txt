@@ -368,7 +368,7 @@ oauth2client===4.1.3
 idna===3.2
 yamlloader===1.1.0
 protobuf===3.17.3
-sushy===3.10.0
+sushy===3.11.0
 python-neutronclient===7.5.0
 pika===1.2.0
 oslo.cache===2.8.1
