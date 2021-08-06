@@ -47,3 +47,6 @@ ansible
 # Once any stable branch move to 'Extended Maintenance' and we pin the
 # older Tempest to test them then we can move it from here to u-c file.
 tempest
+
+# annoying from setuptools
+pkg_resources
