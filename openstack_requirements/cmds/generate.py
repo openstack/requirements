@@ -229,7 +229,6 @@ def main(argv=None, stdout=None):
     _clone_versions(freezes, options)
     blacklist = _parse_blacklist(options.blacklist)
     frozen = [
-        "# generated using: tox -e generate\n",
         *sorted(_combine_freezes(freezes, blacklist), key=_make_sort_key)]
     stdout.writelines(frozen)
     stdout.flush()
