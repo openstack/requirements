@@ -22,7 +22,7 @@ ryu===4.34
 os-api-ref===2.2.0
 python-ldap===3.3.1
 oslo.concurrency===4.4.0
-websocket-client===1.1.1
+websocket-client===1.2.0
 osprofiler===3.4.1
 os-resource-classes===1.1.0
 tabulate===0.8.9
@@ -81,7 +81,7 @@ XStatic-jQuery===1.12.4.1
 ddt===1.4.2
 XStatic-Graphlib===2.1.7.0
 pyserial===3.5
-moto===2.2.1
+moto===2.2.2
 infi.dtypes.wwn===0.1.1
 python-freezerclient===4.2.0
 os-xenapi===0.3.4
@@ -103,12 +103,12 @@ google-api-core===1.31.1
 requests-toolbelt===0.9.1
 simplejson===3.17.3
 suds-jurko===0.6
-types-paramiko===0.1.7
-immutables===0.15
+types-paramiko===0.1.9
+immutables===0.16
 python-swiftclient===3.12.0
 pyOpenSSL===20.0.1
 monasca-common===3.4.0
-zeroconf===0.33.4
+zeroconf===0.34.3
 scipy===1.5.4;python_version=='3.6'
 scipy===1.7.1;python_version=='3.8'
 mypy-extensions===0.4.3
@@ -119,7 +119,7 @@ python-glanceclient===3.4.0
 pyinotify===0.9.6
 debtcollector===2.2.0
 requests-unixsocket===0.2.0
-responses===0.13.3
+responses===0.13.4
 croniter===1.0.15
 horizon===20.0.0
 octavia-lib===2.4.0
@@ -240,7 +240,7 @@ django-pymemcache===1.0.0
 XStatic-JQuery-Migrate===1.2.1.2
 pytest-html===3.1.1
 appdirs===1.4.4
-tinyrpc===1.0.4
+tinyrpc===1.1.0
 google-auth-httplib2===0.1.0
 daiquiri===3.0.0
 influxdb===5.3.1
@@ -307,7 +307,7 @@ retrying===1.3.3
 XStatic-Dagre===0.6.4.1
 platformdirs===2.2.0
 pydotplus===2.0.2
-boto3===1.18.16
+boto3===1.18.18
 jeepney===0.7.1
 stestr===3.2.0
 oslo.serialization===4.1.0
@@ -376,7 +376,7 @@ oslo.cache===2.8.1
 WebTest===2.0.35
 openstack.nose-plugin===0.11
 os-collect-config===13.0.1
-edgegrid-python===1.1.1
+edgegrid-python===1.2.0
 python-qpid-proton===0.35.0
 python-octaviaclient===2.4.0
 pysaml2===7.0.1
@@ -425,7 +425,7 @@ proboscis===1.2.6.0
 oslo.upgradecheck===1.4.0
 stevedore===3.3.0
 pywinrm===0.4.2
-botocore===1.21.16
+botocore===1.21.18
 xmltodict===0.12.0
 pyasn1===0.4.8
 oslo.rootwrap===6.3.0
@@ -443,7 +443,7 @@ kuryr-lib===2.3.0
 scrypt===0.8.18
 jsonpatch===1.32
 python-daemon===2.3.0
-types-cryptography===3.3.3
+types-cryptography===3.3.5
 typed-ast===1.4.3;python_version=='3.6'
 os-testr===2.0.0
 cotyledon===1.7.3
@@ -588,7 +588,7 @@ XStatic-jquery-ui===1.12.1.1
 monasca-statsd===2.2.0
 python-dateutil===2.8.2
 typing-extensions===3.10.0.0
-virtualenv===20.7.0
+virtualenv===20.7.2
 colorama===0.4.4
 confetti===2.5.3
 ironic-lib===4.7.1
