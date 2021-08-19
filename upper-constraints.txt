@@ -99,7 +99,7 @@ zuul-sphinx===0.5.0
 tripleo-common===16.1.0
 Tempita===0.5.2
 ply===3.11
-google-api-core===1.31.2
+google-api-core===2.0.0
 requests-toolbelt===0.9.1
 simplejson===3.17.3
 suds-jurko===0.6
@@ -152,9 +152,9 @@ arrow===1.1.1
 semantic-version===2.8.5
 virtualbmc===2.2.0
 deprecation===2.1.0
-SQLAlchemy===1.4.22
+SQLAlchemy===1.4.23
 pyroute2===0.6.4
-google-auth===1.35.0
+google-auth===2.0.0
 kazoo===2.8.0
 pyroute2.ethtool===0.6.4
 XStatic-roboto-fontface===0.5.0.0
@@ -229,7 +229,7 @@ pyzabbix===1.0.0
 ptyprocess===0.7.0
 threadloop===1.0.2
 amqp===5.0.6
-ruamel.yaml===0.17.10
+ruamel.yaml===0.17.11
 websockify===0.10.0
 XStatic-JQuery.quicksearch===2.0.3.2
 mpmath===1.2.1
@@ -307,7 +307,7 @@ retrying===1.3.3
 XStatic-Dagre===0.6.4.1
 platformdirs===2.2.0
 pydotplus===2.0.2
-boto3===1.18.23
+boto3===1.18.24
 jeepney===0.7.1
 stestr===3.2.0
 oslo.serialization===4.1.0
@@ -425,7 +425,7 @@ proboscis===1.2.6.0
 oslo.upgradecheck===1.4.0
 stevedore===3.3.0
 pywinrm===0.4.2
-botocore===1.21.23
+botocore===1.21.24
 xmltodict===0.12.0
 pyasn1===0.4.8
 oslo.rootwrap===6.3.0
