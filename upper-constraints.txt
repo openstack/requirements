@@ -439,7 +439,7 @@ redis===3.5.3
 jmespath===0.10.0
 click===8.0.1
 XStatic-smart-table===1.4.13.2
-kuryr-lib===2.3.0
+kuryr-lib===2.4.0
 scrypt===0.8.18
 jsonpatch===1.32
 python-daemon===2.3.0
