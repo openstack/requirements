@@ -357,7 +357,7 @@ django-formtools===2.3
 python-ceilometerclient===2.9.0
 XStatic-Spin===1.2.5.3
 tap-as-a-service===7.0.0
-os-traits===2.5.0
+os-traits===2.6.0
 typepy===1.2.0
 SecretStorage===3.3.1
 opentracing===2.4.0
