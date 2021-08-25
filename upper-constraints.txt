@@ -101,7 +101,7 @@ Tempita===0.5.2
 ply===3.11
 google-api-core===2.0.0
 requests-toolbelt===0.9.1
-simplejson===3.17.4
+simplejson===3.17.5
 suds-jurko===0.6
 types-paramiko===0.1.9
 immutables===0.16
@@ -186,7 +186,7 @@ beautifulsoup4===4.9.3
 cached-property===1.5.2;python_version=='3.6'
 os-net-config===15.0.0
 ovs===2.13.3
-cryptography===3.4.7
+cryptography===3.4.8
 httpcore===0.13.6
 URLObject===2.4.3
 nocasedict===1.0.2
@@ -201,7 +201,7 @@ os-apply-config===13.0.1
 prometheus-client===0.11.0
 oslosphinx===4.18.0
 gunicorn===20.1.0
-storpool===5.5.0
+storpool===6.0.0
 textfsm===1.1.2
 python-3parclient===4.2.12
 unittest2===1.1.0
@@ -256,7 +256,7 @@ lockfile===0.12.2
 ldappool===3.0.0
 termcolor===1.1.0
 joblib===1.0.1
-google-api-python-client===2.17.0
+google-api-python-client===2.18.0
 castellan===3.9.1
 oslo.versionedobjects===2.5.0
 enmerkar===0.7.1
@@ -307,7 +307,7 @@ retrying===1.3.3
 XStatic-Dagre===0.6.4.1
 platformdirs===2.2.0
 pydotplus===2.0.2
-boto3===1.18.27
+boto3===1.18.28
 jeepney===0.7.1
 stestr===3.2.0
 oslo.serialization===4.2.0
@@ -425,7 +425,7 @@ proboscis===1.2.6.0
 oslo.upgradecheck===1.4.0
 stevedore===3.4.0
 pywinrm===0.4.2
-botocore===1.21.27
+botocore===1.21.28
 xmltodict===0.12.0
 pyasn1===0.4.8
 oslo.rootwrap===6.3.0
@@ -551,7 +551,7 @@ alembic===1.6.5
 execnet===1.9.0
 glance-store===2.7.0
 sphinxcontrib-programoutput===0.17
-storpool.spopenstack===3.0.0
+storpool.spopenstack===3.0.1
 sphinx-testing===1.0.1
 dnspython===1.16.0
 oauthlib===3.1.1
