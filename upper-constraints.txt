@@ -293,7 +293,6 @@ threadpoolctl===2.2.0
 os-ken===2.1.0
 ujson===4.1.0
 selenium===3.141.0
-python-glareclient===0.5.3
 mypy===0.910
 mistral-lib===2.5.0
 dogtag-pki===10.7.4.1
