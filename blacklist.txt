@@ -38,6 +38,7 @@ sahara
 
 # Projects are free to specify their own version of ansible
 ansible
+ansible-core
 
 # Tempest and its plugins are branchless which means master version of these
 # tools are used in testing the master + stable branches (except EM stable branch
