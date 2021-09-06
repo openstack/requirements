@@ -542,7 +542,7 @@ decorator===5.0.9;python_version=='3.8'
 DateTimeRange===1.2.0
 cffi===1.14.6
 python-cyborgclient===1.4.0
-futurist===2.3.0
+futurist===2.4.0
 jsonschema===3.2.0
 sphinxcontrib-devhelp===1.0.2
 python-blazarclient===3.3.1
