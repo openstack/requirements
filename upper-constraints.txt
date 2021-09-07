@@ -117,7 +117,7 @@ XStatic-Jasmine===2.4.1.2
 googleapis-common-protos===1.53.0
 python-glanceclient===3.5.0
 pyinotify===0.9.6
-debtcollector===2.2.0
+debtcollector===2.3.0
 requests-unixsocket===0.2.0
 responses===0.13.4
 croniter===1.0.15
