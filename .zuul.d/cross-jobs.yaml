@@ -135,10 +135,26 @@
       tox_envlist: functional
 
 - job:
+    name: cross-placement-functional-py38
+    parent: requirements-cross-test
+    description: Run cross-project functional tests on placement with py38.
+    required-projects: openstack/placement
+    vars:
+      tox_envlist: functional-py38
+
+- job:
     name: cross-nova-py38
     parent: requirements-cross-test
     description: Run cross-project tests on nova with py38.
     required-projects: openstack/nova
+    vars:
+      tox_envlist: py38
+
+- job:
+    name: cross-placement-py38
+    parent: requirements-cross-test
+    description: Run cross-project tests on placement with py38.
+    required-projects: openstack/placement
     vars:
       tox_envlist: py38
 
