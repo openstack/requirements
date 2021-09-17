@@ -524,7 +524,7 @@ keystoneauth1===4.3.1
 statsd===3.3.0
 XenAPI===2.14
 importlib-resources===5.2.2
-python-keystoneclient===4.2.0
+python-keystoneclient===4.3.0
 ceilometer===17.0.0.0rc1
 diskimage-builder===3.13.0
 heat-translator===2.4.1
