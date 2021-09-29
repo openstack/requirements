@@ -529,7 +529,7 @@ ceilometer===17.0.0.0rc1
 diskimage-builder===3.13.0
 heat-translator===2.4.1
 python-magnumclient===3.5.0
-docker===5.0.1
+docker===5.0.2
 storops===1.2.10
 anyio===3.3.0
 XStatic-Angular-lrdragndrop===1.0.2.4
