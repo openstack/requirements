@@ -36,6 +36,7 @@
         - cross-horizon-npm
         - cross-ironic-py38
         - cross-keystone-py38
+        - cross-kuryr-py38
         - cross-manila-py38
         - cross-masakari-py38
         - cross-neutron-py38
@@ -101,6 +102,7 @@
         - cross-horizon-npm
         - cross-ironic-py38
         - cross-keystone-py38
+        - cross-kuryr-py38
         - cross-manila-py38
         - cross-masakari-py38
         - cross-neutron-py38
