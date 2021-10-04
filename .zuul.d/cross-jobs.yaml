@@ -94,6 +94,14 @@
       tox_envlist: py38
 
 - job:
+    name: cross-kuryr-py38
+    parent: requirements-cross-test
+    description: Run cross-project tests on kuryr-kubernetes with py38.
+    required-projects: openstack/kuryr-kubernetes
+    vars:
+      tox_envlist: py38
+
+- job:
     name: cross-ironic-py38
     parent: requirements-cross-test
     description: Run cross-project tests on ironic with py38.
