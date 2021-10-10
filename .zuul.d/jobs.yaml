@@ -54,6 +54,46 @@
       tox_envlist: py311-check-uc
 
 - job:
+    name: requirements-tox-py38-check-uc-no-wheels
+    parent: requirements-tox-py38-check-uc
+    description: |
+      Run test for requirements project.
+
+      Uses tox with the ``py38-check-uc`` environment.
+      Does not use wheel mirror.
+    pre-run: playbooks/drop-wheel-mirror.yaml
+
+- job:
+    name: requirements-tox-py39-check-uc-no-wheels
+    parent: requirements-tox-py39-check-uc
+    description: |
+      Run test for requirements project.
+
+      Uses tox with the ``py39-check-uc`` environment.
+      Does not use wheel mirror.
+    pre-run: playbooks/drop-wheel-mirror.yaml
+
+- job:
+    name: requirements-tox-py310-check-uc-no-wheels
+    parent: requirements-tox-py310-check-uc
+    description: |
+      Run test for requirements project.
+
+      Uses tox with the ``py310-check-uc`` environment.
+      Does not use wheel mirror.
+    pre-run: playbooks/drop-wheel-mirror.yaml
+
+- job:
+    name: requirements-tox-py311-check-uc-no-wheels
+    parent: requirements-tox-py311-check-uc
+    description: |
+      Run test for requirements project.
+
+      Uses tox with the ``py311-check-uc`` environment.
+      Does not use wheel mirror.
+    pre-run: playbooks/drop-wheel-mirror.yaml
+
+- job:
     name: requirements-tox-validate-projects
     parent: openstack-tox
     files:

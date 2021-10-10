@@ -123,6 +123,10 @@
       jobs:
         - nova-ceph-multistore
         - nova-next
+        - requirements-tox-py38-check-uc-no-wheels
+        - requirements-tox-py39-check-uc-no-wheels
+        - requirements-tox-py310-check-uc-no-wheels
+        - requirements-tox-py311-check-uc-no-wheels
         - tempest-integrated-storage
         - tempest-pg-full:
             irrelevant-files:
