@@ -81,7 +81,7 @@ XStatic-jQuery===1.12.4.1
 ddt===1.4.4
 XStatic-Graphlib===2.1.7.0
 pyserial===3.5
-moto===2.2.8
+moto===2.2.9
 infi.dtypes.wwn===0.1.1
 python-freezerclient===4.3.0
 os-xenapi===0.3.4
@@ -108,7 +108,7 @@ immutables===0.16
 python-swiftclient===3.12.0
 pyOpenSSL===21.0.0
 monasca-common===3.4.0
-zeroconf===0.36.7
+zeroconf===0.36.8
 scipy===1.5.4;python_version=='3.6'
 scipy===1.7.1;python_version=='3.8'
 mypy-extensions===0.4.3
@@ -167,7 +167,7 @@ extras===1.0.0
 PyJWT===2.2.0
 XStatic-lodash===4.16.4.2
 zVMCloudConnector===1.4.1
-paramiko===2.7.2
+paramiko===2.8.0
 ifaddr===0.1.7
 reno===3.5.0
 imagesize===1.2.0
@@ -436,7 +436,7 @@ cmd2===2.2.0
 python-json-logger===2.0.2
 redis===3.5.3
 jmespath===0.10.0
-click===8.0.2
+click===8.0.3
 XStatic-smart-table===1.4.13.2
 kuryr-lib===2.4.0
 scrypt===0.8.18
@@ -533,7 +533,7 @@ heat-translator===2.4.1
 python-magnumclient===3.5.0
 docker===5.0.3
 storops===1.2.10
-anyio===3.3.2
+anyio===3.3.3
 XStatic-Angular-lrdragndrop===1.0.2.4
 ovsdbapp===1.12.0
 aniso8601===9.0.1
@@ -564,7 +564,7 @@ XStatic-Angular-Vis===4.16.0.0
 iniconfig===1.1.1
 confluent-kafka===1.7.0
 xvfbwrapper===0.2.9
-futures===3.1.1;python_version=='3.6'
+futures===3.0.5;python_version=='3.6'
 tosca-parser===2.4.1
 charset-normalizer===2.0.6
 Flask===2.0.2
