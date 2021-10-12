@@ -103,6 +103,7 @@ ply===3.11
 google-api-core===2.0.1
 requests-toolbelt===0.9.1
 simplejson===3.17.5
+suds-community===0.8.5
 suds-jurko===0.6
 types-paramiko===0.1.9
 immutables===0.16
