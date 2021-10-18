@@ -81,7 +81,7 @@ XStatic-jQuery===1.12.4.1
 ddt===1.4.4
 XStatic-Graphlib===2.1.7.0
 pyserial===3.5
-moto===2.2.9
+moto===2.2.10
 infi.dtypes.wwn===0.1.1
 python-freezerclient===4.3.0
 os-xenapi===0.3.4
@@ -165,7 +165,7 @@ openstack-doc-tools===3.3.0
 oslo.messaging===12.9.1
 jira===3.0.1
 extras===1.0.0
-PyJWT===2.2.0
+PyJWT===2.3.0
 XStatic-lodash===4.16.4.2
 zVMCloudConnector===1.4.1
 paramiko===2.8.0
@@ -530,7 +530,7 @@ sphinxcontrib-qthelp===1.0.3
 keystoneauth1===4.4.0
 statsd===3.3.0
 XenAPI===2.14
-importlib-resources===5.2.2
+importlib-resources===5.2.3
 python-keystoneclient===4.3.0
 ceilometer===17.0.0
 diskimage-builder===3.13.0
@@ -538,12 +538,12 @@ heat-translator===2.4.1
 python-magnumclient===3.5.0
 docker===5.0.3
 storops===1.2.10
-anyio===3.3.3
+anyio===3.3.4
 XStatic-Angular-lrdragndrop===1.0.2.4
 ovsdbapp===1.12.0
 aniso8601===9.0.1
 rjsmin===1.1.0
-icalendar===4.0.8
+icalendar===4.0.9
 decorator===4.4.2;python_version=='3.6'
 decorator===5.1.0;python_version=='3.8'
 DateTimeRange===1.2.0
