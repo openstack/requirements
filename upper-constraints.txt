@@ -143,7 +143,7 @@ gnocchiclient===7.0.6
 wcwidth===0.2.5
 sphinxcontrib.datatemplates===0.9.1
 jsonpath-rw===1.4.0
-prettytable===0.7.2
+prettytable===2.0.0
 vine===5.0.0
 pyroute2.nftables===0.6.5
 taskflow===4.6.2
