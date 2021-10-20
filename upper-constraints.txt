@@ -295,8 +295,7 @@ docutils===0.17.1
 threadpoolctl===3.0.0
 os-ken===2.2.0
 ujson===4.2.0
-selenium===3.141.0;python_version=='3.6'
-selenium===4.0.0;python_version=='3.8'
+selenium===3.141.0
 mypy===0.910
 mistral-lib===2.5.0
 dogtag-pki===10.7.4.1
