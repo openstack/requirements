@@ -450,7 +450,7 @@ glance-store===0.20.0
 sphinx-testing===0.7.1
 dnspython===1.15.0
 oauthlib===2.0.1
-Babel===2.3.4
+Babel===2.9.1
 logutils===0.3.4.1
 scandir===1.5
 sphinxcontrib-fulltoc===1.1
