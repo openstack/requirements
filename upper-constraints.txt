@@ -435,7 +435,7 @@ xmltodict===0.12.0
 pyasn1===0.4.8
 oslo.rootwrap===6.3.0
 pyroute2.nslink===0.6.5
-Django===2.2.24
+Django===3.2
 pexpect===4.8.0
 contextvars===2.4
 cmd2===2.2.0
