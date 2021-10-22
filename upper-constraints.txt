@@ -143,7 +143,7 @@ gnocchiclient===7.0.6
 wcwidth===0.2.5
 sphinxcontrib.datatemplates===0.9.1
 jsonpath-rw===1.4.0
-prettytable===2.0.0
+prettytable===2.2.1
 vine===5.0.0
 pyroute2.nftables===0.6.5
 taskflow===4.6.2
@@ -157,7 +157,6 @@ pyroute2===0.6.5
 google-auth===2.3.0
 kazoo===2.8.0
 pyroute2.ethtool===0.6.5
-trio-websocket===0.9.2;python_version=='3.8'
 XStatic-roboto-fontface===0.5.0.0
 pyudev===0.22.0
 eventlet===0.32.0
@@ -182,7 +181,7 @@ python-subunit===1.4.0
 tornado===6.1
 pycparser===2.20
 mock===4.0.3
-PyYAML===5.4.1
+PyYAML===6.0
 beautifulsoup4===4.10.0
 cached-property===1.5.2;python_version=='3.6'
 os-net-config===15.1.0
@@ -211,7 +210,6 @@ libvirt-python===7.8.0
 python-zunclient===4.3.0
 tzlocal===2.1
 sphinxcontrib-jsmath===1.0.1
-trio===0.19.0;python_version=='3.8'
 python-novaclient===17.6.0
 pact===1.12.0
 bcrypt===3.2.0
@@ -309,7 +307,7 @@ retrying===1.3.3
 XStatic-Dagre===0.6.4.1
 platformdirs===2.4.0
 pydotplus===2.0.2
-boto3===1.18.65
+boto3===1.19.1
 jeepney===0.7.1
 stestr===3.2.1
 oslo.serialization===4.2.0
@@ -369,7 +367,7 @@ linecache2===1.0.0
 oauth2client===4.1.3
 idna===3.3
 yamlloader===1.1.0
-protobuf===3.18.1
+protobuf===3.19.0
 sushy===3.12.0
 python-neutronclient===7.6.0
 pika===1.2.0
@@ -391,12 +389,12 @@ sympy===1.9
 Logbook===1.5.3
 PyNaCl===1.4.0
 osc-lib===2.4.2
-async-generator===1.10
+async-generator===1.10;python_version=='3.6'
 python-consul===1.1.0
 more-itertools===8.10.0
 seqdiag===2.0.0
 numpy===1.19.5;python_version=='3.6'
-numpy===1.21.2;python_version=='3.8'
+numpy===1.21.3;python_version=='3.8'
 msgpack===1.0.2
 Sphinx===4.2.0
 oslo.config===8.7.1
@@ -426,7 +424,7 @@ proboscis===1.2.6.0
 oslo.upgradecheck===1.4.0
 stevedore===3.5.0
 pywinrm===0.4.2
-botocore===1.21.65
+botocore===1.22.1
 xmltodict===0.12.0
 pyasn1===0.4.8
 oslo.rootwrap===6.3.0
@@ -481,7 +479,6 @@ yappi===1.3.3
 mbstrdecoder===1.1.0
 dataclasses===0.8;python_version=='3.6'
 abclient===0.2.3
-wsproto===1.0.0;python_version=='3.8'
 pymemcache===3.5.0
 wrapt===1.13.2
 oslo.privsep===2.6.2
@@ -512,11 +509,10 @@ hyperlink===21.0.0
 mitba===1.1.1
 python-masakariclient===7.1.0
 Werkzeug===2.0.2
-outcome===1.1.0;python_version=='3.8'
 pyasn1-modules===0.2.8
 APScheduler===3.8.0
 monotonic===1.6
-xmlschema===1.8.0
+xmlschema===1.8.1
 python-troveclient===7.1.1
 etcd3===0.12.0
 cachez===0.1.2
@@ -532,7 +528,7 @@ XenAPI===2.14
 importlib-resources===5.3.0
 python-keystoneclient===4.3.0
 ceilometer===17.0.0
-diskimage-builder===3.13.0
+diskimage-builder===3.14.0
 heat-translator===2.4.1
 python-magnumclient===3.5.0
 docker===5.0.3
