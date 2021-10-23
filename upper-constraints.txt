@@ -12,7 +12,7 @@ python-saharaclient===3.4.0
 Routes===2.5.1
 rtslib-fb===2.1.74
 oslo.limit===1.4.0
-smmap===4.0.0
+smmap===5.0.0
 confget===4.0.1
 XStatic-Angular-Bootstrap===2.5.0.0
 WebOb===1.8.7
@@ -108,7 +108,7 @@ immutables===0.16
 python-swiftclient===3.12.0
 pyOpenSSL===21.0.0
 monasca-common===3.4.0
-zeroconf===0.36.8
+zeroconf===0.36.9
 scipy===1.5.4;python_version=='3.6'
 scipy===1.7.1;python_version=='3.8'
 mypy-extensions===0.4.3
@@ -185,7 +185,7 @@ PyYAML===6.0
 beautifulsoup4===4.10.0
 cached-property===1.5.2;python_version=='3.6'
 os-net-config===15.1.0
-ovs===2.13.3
+ovs===2.16.0
 cryptography===35.0.0
 httpcore===0.13.7
 URLObject===2.4.3
@@ -307,7 +307,7 @@ retrying===1.3.3
 XStatic-Dagre===0.6.4.1
 platformdirs===2.4.0
 pydotplus===2.0.2
-boto3===1.19.1
+boto3===1.19.2
 jeepney===0.7.1
 stestr===3.2.1
 oslo.serialization===4.2.0
@@ -323,7 +323,7 @@ oslo.vmware===3.10.0
 XStatic-moment===2.8.4.3
 autopage===0.4.0
 sqlalchemy-migrate===0.13.0
-gitdb===4.0.7
+gitdb===4.0.8
 python-monascaclient===2.4.0
 ldap3===2.9.1
 requests-ntlm===1.1.0
@@ -424,7 +424,7 @@ proboscis===1.2.6.0
 oslo.upgradecheck===1.4.0
 stevedore===3.5.0
 pywinrm===0.4.2
-botocore===1.22.1
+botocore===1.22.2
 xmltodict===0.12.0
 pyasn1===0.4.8
 oslo.rootwrap===6.3.0
@@ -600,4 +600,4 @@ sysv-ipc===1.1.0
 sphinxcontrib-applehelp===1.0.2
 scikit-learn===0.24.2;python_version=='3.6'
 scikit-learn===1.0;python_version=='3.8'
-setuptools===58.2.0
+setuptools===58.3.0
