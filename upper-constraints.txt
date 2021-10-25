@@ -12,6 +12,7 @@ python-saharaclient===3.4.0
 Routes===2.5.1
 rtslib-fb===2.1.74
 oslo.limit===1.4.0
+tzdata===2021.4
 smmap===5.0.0
 confget===4.0.1
 XStatic-Angular-Bootstrap===2.5.0.0
@@ -148,7 +149,7 @@ vine===5.0.0
 pyroute2.nftables===0.6.5
 taskflow===4.6.2
 traceback2===1.4.0
-arrow===1.2.0
+arrow===1.2.1
 semantic-version===2.8.5
 virtualbmc===2.2.1
 deprecation===2.1.0
@@ -208,7 +209,7 @@ unittest2===1.1.0
 django-compressor===2.4.1
 libvirt-python===7.8.0
 python-zunclient===4.3.0
-tzlocal===2.1
+tzlocal===4.0.1
 sphinxcontrib-jsmath===1.0.1
 python-novaclient===17.6.0
 pact===1.12.0
@@ -250,6 +251,7 @@ dib-utils===0.0.11
 cliff===3.9.0
 os-brick===5.0.1
 ansible-runner===2.0.2
+pytz-deprecation-shim===0.1.0.post0
 scp===0.14.1
 python-zaqarclient===2.2.0
 lockfile===0.12.2
@@ -323,7 +325,7 @@ oslo.vmware===3.10.0
 XStatic-moment===2.8.4.3
 autopage===0.4.0
 sqlalchemy-migrate===0.13.0
-gitdb===4.0.8
+gitdb===4.0.9
 python-monascaclient===2.4.0
 ldap3===2.9.1
 requests-ntlm===1.1.0
@@ -421,6 +423,7 @@ salt===3004
 api-object-schema===2.0.0
 WSME===0.11.0
 proboscis===1.2.6.0
+backports.zoneinfo===0.2.1
 oslo.upgradecheck===1.4.0
 stevedore===3.5.0
 pywinrm===0.4.2
@@ -510,7 +513,7 @@ mitba===1.1.1
 python-masakariclient===7.1.0
 Werkzeug===2.0.2
 pyasn1-modules===0.2.8
-APScheduler===3.8.0
+APScheduler===3.8.1
 monotonic===1.6
 xmlschema===1.8.1
 python-troveclient===7.1.1
@@ -588,7 +591,7 @@ XStatic-jquery-ui===1.12.1.1
 monasca-statsd===2.3.0
 python-dateutil===2.8.2
 typing-extensions===3.10.0.2
-virtualenv===20.8.1
+virtualenv===20.9.0
 colorama===0.4.4
 confetti===2.5.3
 ironic-lib===5.0.0
