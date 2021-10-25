@@ -36,7 +36,7 @@ cursive===0.2.2
 oslo.service===2.4.0
 django-appconf===1.0.4
 pykerberos===1.2.1
-certifi===2020.6.20
+certifi===2021.10.8
 sphinxcontrib-nwdiag===2.0.0
 rbd-iscsi-client===0.1.8
 requests-aws===0.1.8
