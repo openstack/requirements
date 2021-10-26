@@ -71,7 +71,7 @@ oslo.service===2.1.1;python_version=='3.7'
 oslo.service===2.1.1;python_version=='3.8'
 django-appconf===1.0.4
 pykerberos===1.2.1
-certifi===2020.4.5.1
+certifi===2021.10.8
 sphinxcontrib-nwdiag===0.9.5;python_version=='2.7'
 sphinxcontrib-nwdiag===2.0.0;python_version=='3.6'
 sphinxcontrib-nwdiag===2.0.0;python_version=='3.7'
