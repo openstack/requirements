@@ -123,7 +123,7 @@ debtcollector===2.3.0
 requests-unixsocket===0.2.0
 responses===0.15.0
 croniter===1.0.15
-horizon===20.1.0
+horizon===20.2.0
 octavia-lib===2.4.1
 python-watcherclient===3.3.0
 MarkupSafe===2.0.1
