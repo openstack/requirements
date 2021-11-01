@@ -51,3 +51,6 @@ tempest
 
 # annoying from setuptools
 pkg_resources
+
+# We want to always have latest list of trusted Certificate Authorities
+certifi
