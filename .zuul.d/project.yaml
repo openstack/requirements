@@ -128,8 +128,3 @@
             irrelevant-files:
               - ^(test-|)requirements.txt$
               - ^setup.cfg$
-        - tempest-full-py3-opensuse15:
-            irrelevant-files:
-              - ^(test-|)requirements.txt$
-              - ^setup.cfg$
-
