@@ -81,7 +81,7 @@ XStatic-jQuery===1.12.4.1
 ddt===1.4.4
 XStatic-Graphlib===2.1.7.0
 pyserial===3.5
-moto===2.2.12
+moto===2.2.13
 infi.dtypes.wwn===0.1.1
 python-freezerclient===4.3.0
 os-xenapi===0.3.4
@@ -108,9 +108,9 @@ immutables===0.16
 python-swiftclient===3.12.0
 pyOpenSSL===21.0.0
 monasca-common===3.4.0
-zeroconf===0.36.11
+zeroconf===0.36.12
 scipy===1.5.4;python_version=='3.6'
-scipy===1.7.1;python_version=='3.8'
+scipy===1.7.2;python_version=='3.8'
 mypy-extensions===0.4.3
 rsd-lib===1.2.0
 XStatic-Jasmine===2.4.1.2
@@ -133,7 +133,7 @@ python-cloudkittyclient===4.3.0
 soupsieve===2.3
 sqlparse===0.4.2
 oslotest===4.5.0
-jsonpointer===2.1
+jsonpointer===2.2
 defusedxml===0.7.1
 netaddr===0.8.0
 pyghmi===1.5.29
@@ -174,13 +174,13 @@ reno===3.5.0
 imagesize===1.2.0
 pydot===1.4.2
 urllib3===1.26.7
-graphviz===0.17
+graphviz===0.18
 PyKMIP===0.10.0
 whereto===0.4.0
 pywbem===1.2.0
 python-subunit===1.4.0
 tornado===6.1
-pycparser===2.20
+pycparser===2.21
 mock===4.0.3
 PyYAML===6.0
 beautifulsoup4===4.10.0
@@ -299,8 +299,7 @@ ujson===4.2.0
 selenium===3.141.0
 mypy===0.910
 mistral-lib===2.5.0
-dogtag-pki===10.3.0.0.2;python_version=='3.8'
-dogtag-pki===10.7.4.1;python_version=='3.6'
+dogtag-pki===10.7.4.1
 types-ipaddress===1.0.1
 XStatic-Angular-UUID===0.0.4.0
 purestorage===1.19.0
@@ -311,7 +310,7 @@ retrying===1.3.3
 XStatic-Dagre===0.6.4.1
 platformdirs===2.4.0
 pydotplus===2.0.2
-boto3===1.19.10
+boto3===1.19.12
 jeepney===0.7.1
 stestr===3.2.1
 oslo.serialization===4.2.0
@@ -321,7 +320,7 @@ sphinxcontrib-httpdomain===1.8.0
 metalsmith===1.5.1
 s3transfer===0.5.0
 text-unidecode===1.3
-sphinxcontrib-svg2pdfconverter===1.1.1
+sphinxcontrib-svg2pdfconverter===1.2.0
 murano-pkg-check===0.3.0
 oslo.vmware===3.10.0
 XStatic-moment===2.8.4.3
@@ -343,7 +342,7 @@ packaging===21.2
 XStatic-Dagre-D3===0.4.17.0
 nose-exclude===0.5.0
 psutil===5.8.0
-py===1.10.0
+py===1.11.0
 txaio===21.2.1
 elasticsearch===2.4.1
 django-nose===1.4.7
@@ -366,7 +365,7 @@ typepy===1.3.0
 SecretStorage===3.3.1
 opentracing===2.4.0
 XStatic-Rickshaw===1.5.1.0
-iso8601===0.1.16
+iso8601===1.0.0
 tooz===2.9.0
 linecache2===1.0.0
 oauth2client===4.1.3
@@ -388,7 +387,7 @@ requests-oauthlib===1.3.0
 oslo.reports===2.3.0
 bitmath===1.3.3.1
 ceilometermiddleware===2.3.0
-python-nss===1.0.1;python_version=='3.6'
+python-nss===1.0.1
 testrepository===0.0.20
 sympy===1.9
 Logbook===1.5.3
@@ -399,7 +398,7 @@ python-consul===1.1.0
 more-itertools===8.10.0
 seqdiag===2.0.0
 numpy===1.19.5;python_version=='3.6'
-numpy===1.21.3;python_version=='3.8'
+numpy===1.21.4;python_version=='3.8'
 msgpack===1.0.2
 Sphinx===4.2.0
 oslo.config===8.7.1
@@ -431,7 +430,7 @@ backports.zoneinfo===0.2.1
 oslo.upgradecheck===1.4.0
 stevedore===3.5.0
 pywinrm===0.4.2
-botocore===1.22.10
+botocore===1.22.12
 xmltodict===0.12.0
 pyasn1===0.4.8
 oslo.rootwrap===6.3.0
@@ -462,7 +461,7 @@ dulwich===0.20.26
 dfs-sdk===1.2.27
 sentinels===1.0.0
 kombu===5.1.0;python_version=='3.6'
-kombu===5.2.0;python_version=='3.8'
+kombu===5.2.1;python_version=='3.8'
 pyroute2.ndb===0.6.5
 distro===1.6.0
 zstd===1.5.0.2
@@ -608,4 +607,4 @@ sysv-ipc===1.1.0
 sphinxcontrib-applehelp===1.0.2
 scikit-learn===0.24.2;python_version=='3.6'
 scikit-learn===1.0.1;python_version=='3.8'
-setuptools===58.5.2
+setuptools===58.5.3
