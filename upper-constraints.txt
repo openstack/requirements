@@ -442,7 +442,7 @@ pexpect===4.8.0
 contextvars===2.4
 cmd2===2.3.0
 python-json-logger===2.0.2
-redis===4.0.0
+redis===4.0.1
 jmespath===0.10.0
 click===8.0.3
 XStatic-smart-table===1.4.13.2
