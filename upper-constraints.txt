@@ -418,7 +418,7 @@ httplib2===0.20.2
 betamax===0.8.1
 construct===2.10.67
 pytest-metadata===1.11.0
-pyparsing===2.4.7
+pyparsing===3.0.6
 geomet===0.2.1.post1
 distlib===0.3.3
 XStatic-Moment-Timezone===0.5.22.0
