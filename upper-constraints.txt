@@ -105,7 +105,7 @@ simplejson===3.17.6
 suds-jurko===0.6
 types-paramiko===2.8.0
 immutables===0.16
-python-swiftclient===3.12.0
+python-swiftclient===3.13.0
 pyOpenSSL===21.0.0
 monasca-common===3.4.0
 zeroconf===0.37.0
