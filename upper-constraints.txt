@@ -508,7 +508,7 @@ repoze.lru===0.7
 rfc3986===1.5.0
 tenacity===6.3.1
 pyroute2.core===0.6.5
-python-designateclient===4.3.0
+python-designateclient===4.4.0
 pyroute2.ipdb===0.6.5
 future===0.18.2
 Paste===3.5.0
