@@ -24,7 +24,7 @@ ryu===4.34
 os-api-ref===2.3.0
 python-ldap===3.4.0
 oslo.concurrency===4.5.0
-websocket-client===1.2.1
+websocket-client===1.2.3
 osprofiler===3.4.2
 os-resource-classes===1.1.0
 tabulate===0.8.9
@@ -100,7 +100,7 @@ zuul-sphinx===0.6.0
 tripleo-common===16.2.0
 Tempita===0.5.2
 ply===3.11
-google-api-core===2.2.2
+google-api-core===2.3.0
 requests-toolbelt===0.9.1
 simplejson===3.17.6
 suds-jurko===0.6
@@ -116,7 +116,7 @@ python-gnupg===0.4.8
 mypy-extensions===0.4.3
 rsd-lib===1.2.0
 XStatic-Jasmine===2.4.1.2
-googleapis-common-protos===1.53.0
+googleapis-common-protos===1.54.0
 python-glanceclient===3.5.0
 pyinotify===0.9.6
 debtcollector===2.3.0
@@ -130,7 +130,7 @@ MarkupSafe===2.0.1
 pypowervm===1.1.27
 ruamel.yaml.clib===0.2.6
 doc8===0.10.1
-pymongo===4.0
+pymongo===4.0.1
 python-cloudkittyclient===4.4.0
 soupsieve===2.3.1
 sqlparse===0.4.2
@@ -265,7 +265,7 @@ lockfile===0.12.2
 ldappool===3.0.0
 termcolor===1.1.0
 joblib===1.1.0
-google-api-python-client===2.32.0
+google-api-python-client===2.33.0
 castellan===3.10.0
 oslo.versionedobjects===2.5.0
 enmerkar===0.7.1
@@ -445,7 +445,7 @@ xmltodict===0.12.0
 pyasn1===0.4.8
 oslo.rootwrap===6.3.0
 pyroute2.nslink===0.6.5
-Django===3.2.9
+Django===3.2.10
 pexpect===4.8.0
 contextvars===2.4
 cmd2===2.3.3
@@ -515,7 +515,7 @@ python-designateclient===4.4.0
 pyroute2.ipdb===0.6.5
 future===0.18.2
 Paste===3.5.0
-pytest-django===4.5.1
+pytest-django===4.5.2
 jaeger-client===4.6.1;python_version=='3.6'
 jaeger-client===4.8.0;python_version=='3.8'
 XStatic-Json2yaml===0.1.1.0
