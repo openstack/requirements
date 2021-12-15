@@ -558,7 +558,7 @@ trollius;python_version=='2.7'  # Apache-2.0
 ujson  # BSD
 unittest2  # BSD
 virtualbmc  # Apache-2.0
-virtualenv!=16.3.0  # MIT
+virtualenv<20.8  # MIT
 vmware-nsxlib  # Apache-2.0
 wrapt  # BSD License
 WebTest  # MIT
