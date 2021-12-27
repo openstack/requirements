@@ -82,7 +82,7 @@ XStatic-jQuery===1.12.4.1
 ddt===1.4.4
 XStatic-Graphlib===2.1.7.0
 pyserial===3.5
-moto===2.2.19
+moto===2.3.0
 infi.dtypes.wwn===0.1.1
 python-freezerclient===4.4.0
 os-xenapi===0.3.4
@@ -109,7 +109,7 @@ immutables===0.16
 python-swiftclient===3.13.0
 pyOpenSSL===21.0.0
 monasca-common===3.4.0
-zeroconf===0.37.0
+zeroconf===0.38.1
 scipy===1.5.4;python_version=='3.6'
 scipy===1.7.3;python_version=='3.8'
 python-gnupg===0.4.8
@@ -120,7 +120,7 @@ googleapis-common-protos===1.54.0
 python-glanceclient===3.5.0
 pyinotify===0.9.6
 debtcollector===2.3.0
-requests-unixsocket===0.2.0
+requests-unixsocket===0.3.0
 responses===0.16.0
 croniter===1.1.0
 horizon===20.2.0
@@ -146,7 +146,7 @@ gnocchiclient===7.0.6
 wcwidth===0.2.5
 sphinxcontrib.datatemplates===0.9.1
 jsonpath-rw===1.4.0
-prettytable===2.4.0
+prettytable===2.5.0
 vine===5.0.0
 pyroute2.nftables===0.6.5
 taskflow===4.6.3
@@ -155,7 +155,7 @@ arrow===1.2.1
 semantic-version===2.8.5
 virtualbmc===2.2.1
 deprecation===2.1.0
-SQLAlchemy===1.4.28
+SQLAlchemy===1.4.29
 pyroute2===0.6.5
 google-auth===2.3.3
 kazoo===2.8.0
@@ -172,7 +172,7 @@ PyJWT===2.3.0
 typing_extensions===4.0.1
 XStatic-lodash===4.16.4.2
 zVMCloudConnector===1.4.1
-paramiko===2.8.1
+paramiko===2.9.1
 ifaddr===0.1.7
 reno===3.5.0
 imagesize===1.3.0
@@ -195,6 +195,7 @@ cryptography===36.0.1
 httpcore===0.14.3
 URLObject===2.4.3
 nocasedict===1.0.2
+task-core===0.1.2
 psycopg2-binary===2.9.2
 openstack-release-test===3.3.1
 validations-libs===1.4.0
@@ -234,8 +235,8 @@ XStatic-Bootstrap-SCSS===3.4.1.0
 pyzabbix===1.0.0
 ptyprocess===0.7.0
 threadloop===1.0.2
-amqp===5.0.8
-ruamel.yaml===0.17.17
+amqp===5.0.9
+ruamel.yaml===0.17.19
 websockify===0.10.0
 gssapi===1.7.2
 XStatic-JQuery.quicksearch===2.0.3.2
@@ -268,12 +269,14 @@ joblib===1.1.0
 google-api-python-client===2.33.0
 castellan===3.10.0
 oslo.versionedobjects===2.5.0
+diskcache===5.3.0
+ssh-python===0.9.0
 enmerkar===0.7.1
 webcolors===1.11.1
 aodhclient===2.3.0
 autobahn===21.11.1;python_version=='3.8'
 autobahn===21.2.1;python_version=='3.6'
-SQLAlchemy-Utils===0.37.9
+SQLAlchemy-Utils===0.38.1
 retryz===0.1.9
 pluggy===1.0.0
 coverage===6.2
@@ -294,8 +297,8 @@ oslo.log===4.6.1
 nodeenv===1.6.0
 gossip===2.4.0
 suds-community===1.0.0
+importlib-metadata===4.10.0;python_version=='3.8'
 importlib-metadata===4.8.3;python_version=='3.6'
-importlib-metadata===4.9.0;python_version=='3.8'
 oslo.middleware===4.5.0
 XStatic-mdi===1.6.50.2
 django-pyscss===2.0.2
@@ -304,9 +307,9 @@ docutils===0.17.1
 threadpoolctl===3.0.0
 os-ken===2.3.0
 ujson===4.3.0;python_version=='3.6'
-ujson===5.0.0;python_version=='3.8'
+ujson===5.1.0;python_version=='3.8'
 selenium===3.141.0
-mypy===0.920
+mypy===0.930
 mistral-lib===2.5.0
 dogtag-pki===10.7.4.1
 types-ipaddress===1.0.1
@@ -318,9 +321,10 @@ os-win===5.5.0
 capacity===1.3.14
 retrying===1.3.3
 XStatic-Dagre===0.6.4.1
-platformdirs===2.4.0
+platformdirs===2.4.0;python_version=='3.6'
+platformdirs===2.4.1;python_version=='3.8'
 pydotplus===2.0.2
-boto3===1.20.24
+boto3===1.20.26
 jeepney===0.7.1
 stestr===3.2.1
 oslo.serialization===4.2.0
@@ -444,9 +448,10 @@ backports.zoneinfo===0.2.1
 oslo.upgradecheck===1.4.0
 stevedore===3.5.0
 pywinrm===0.4.2
-botocore===1.23.24
+botocore===1.23.26
 xmltodict===0.12.0
 pyasn1===0.4.8
+directord===0.11.0
 oslo.rootwrap===6.3.0
 pyroute2.nslink===0.6.5
 Django===3.2.10
@@ -454,7 +459,7 @@ pexpect===4.8.0
 contextvars===2.4
 cmd2===2.3.3
 python-json-logger===2.0.2
-redis===4.0.2
+redis===4.1.0
 jmespath===0.10.0
 click===8.0.3
 XStatic-smart-table===1.4.13.2
@@ -462,7 +467,7 @@ kuryr-lib===2.4.0
 scrypt===0.8.19
 jsonpatch===1.32
 python-daemon===2.3.0
-types-cryptography===3.3.9
+types-cryptography===3.3.10
 typed-ast===1.5.1;python_version=='3.6'
 os-testr===2.0.1
 cotyledon===1.7.3
@@ -533,7 +538,7 @@ Werkzeug===2.0.2
 pyasn1-modules===0.2.8
 APScheduler===3.8.1
 monotonic===1.6
-xmlschema===1.9.1
+xmlschema===1.9.2
 python-troveclient===7.1.1
 etcd3===0.12.0
 cachez===0.1.2
@@ -597,7 +602,8 @@ confspirator===0.3.0
 fasteners===0.14.1
 sortedcontainers===2.4.0
 python-linstor===1.12.0
-filelock===3.4.0
+filelock===3.4.1;python_version=='3.6'
+filelock===3.4.2;python_version=='3.8'
 python-tackerclient===1.8.0
 python-heatclient===2.4.0
 kafka-python===2.0.2
@@ -620,8 +626,6 @@ actdiag===3.0.0;python_version=='3.8'
 sysv-ipc===1.1.0
 sphinxcontrib-applehelp===1.0.2
 scikit-learn===0.24.2;python_version=='3.6'
-scikit-learn===1.0.1;python_version=='3.8'
+scikit-learn===1.0.2;python_version=='3.8'
 setuptools===59.6.0;python_version=='3.6'
-setuptools===59.8.0;python_version=='3.8'
-directord===0.11.0
-task-core===0.1.2
+setuptools===60.1.0;python_version=='3.8'
