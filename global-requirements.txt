@@ -182,7 +182,7 @@ os-vif!=1.8.0,!=1.12.0  # Apache-2.0
 ovs  # Apache-2.0
 os-win  # Apache-2.0
 os-xenapi  # Apache-2.0
-paramiko  # LGPLv2.1+
+paramiko!=2.9.0,!=2.9.1  # LGPLv2.1+
 passlib  # BSD
 Paste  # MIT
 PasteDeploy  # MIT
