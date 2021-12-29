@@ -51,7 +51,6 @@
         - openstack-tox-py36
         - openstacksdk-functional-devstack
         - tempest-full-py3:
-            voting: false
             irrelevant-files:
               - ^(test-|)requirements.txt$
               - ^setup.cfg$
@@ -119,6 +118,10 @@
         - cross-swift-py38
         - openstack-tox-py36
         - openstacksdk-functional-devstack
+        - tempest-full-py3:
+            irrelevant-files:
+              - ^(test-|)requirements.txt$
+              - ^setup.cfg$
     experimental:
       jobs:
         - tempest-pg-full:
