@@ -46,7 +46,7 @@ alabaster===0.7.12
 pbr===5.8.0
 munch===2.5.0
 waiting===1.4.1
-attrs===21.3.0
+attrs===21.4.0
 microversion-parse===1.0.1
 Pint===0.17;python_version=='3.6'
 Pint===0.18;python_version=='3.8'
@@ -88,7 +88,7 @@ os-xenapi===0.3.4
 python-vitrageclient===4.4.0
 nosexcover===1.0.11
 krest===1.3.2
-psycopg2===2.9.2
+psycopg2===2.9.3
 networkx===2.5.1;python_version=='3.6'
 networkx===2.6.3;python_version=='3.8'
 bashate===2.1.0
@@ -195,7 +195,7 @@ httpcore===0.14.3
 URLObject===2.4.3
 nocasedict===1.0.2
 task-core===0.1.2
-psycopg2-binary===2.9.2
+psycopg2-binary===2.9.3
 openstack-release-test===3.3.1
 validations-libs===1.4.0
 pylxd===2.3.1
@@ -240,7 +240,7 @@ websockify===0.10.0
 gssapi===1.7.2
 XStatic-JQuery.quicksearch===2.0.3.2
 mpmath===1.2.1
-python-binary-memcached===0.30.1
+python-binary-memcached===0.31.1
 django-debreach===2.0.1
 sphinx-feature-classification===1.1.0
 django-pymemcache===1.0.0
@@ -275,7 +275,7 @@ webcolors===1.11.1
 aodhclient===2.3.0
 autobahn===21.11.1;python_version=='3.8'
 autobahn===21.2.1;python_version=='3.6'
-SQLAlchemy-Utils===0.38.1
+SQLAlchemy-Utils===0.38.2
 retryz===0.1.9
 pluggy===1.0.0
 coverage===6.2
@@ -355,7 +355,7 @@ infinisdk===185.1.1
 packaging===21.3
 XStatic-Dagre-D3===0.4.17.0
 nose-exclude===0.5.0
-psutil===5.8.0
+psutil===5.9.0
 py===1.11.0
 txaio===21.2.1
 elasticsearch===2.4.1
@@ -479,7 +479,7 @@ dulwich===0.20.26
 dfs-sdk===1.2.27
 sentinels===1.0.0
 kombu===5.1.0;python_version=='3.6'
-kombu===5.2.2;python_version=='3.8'
+kombu===5.2.3;python_version=='3.8'
 pyroute2.ndb===0.6.5
 distro===1.6.0
 zstd===1.5.0.4
@@ -613,7 +613,7 @@ itsdangerous===2.0.1
 XStatic-jquery-ui===1.13.0.1
 monasca-statsd===2.3.0
 python-dateutil===2.8.2
-virtualenv===20.11.1
+virtualenv===20.11.2
 colorama===0.4.4
 confetti===2.5.3
 ironic-lib===5.1.0
@@ -627,4 +627,4 @@ sphinxcontrib-applehelp===1.0.2
 scikit-learn===0.24.2;python_version=='3.6'
 scikit-learn===1.0.2;python_version=='3.8'
 setuptools===59.6.0;python_version=='3.6'
-setuptools===60.1.1;python_version=='3.8'
+setuptools===60.2.0;python_version=='3.8'
