@@ -94,7 +94,8 @@ networkx===2.6.3;python_version=='3.8'
 bashate===2.1.0
 XStatic-Angular===1.5.8.0
 pyngus===2.3.1
-Pillow===8.4.0
+Pillow===8.4.0;python_version=='3.6'
+Pillow===9.0.0;python_version=='3.8'
 zuul-sphinx===0.6.0
 tripleo-common===16.2.0
 Tempita===0.5.2
@@ -180,7 +181,7 @@ urllib3===1.26.7
 graphviz===0.19.1
 PyKMIP===0.10.0
 whereto===0.4.0
-pywbem===1.3.0
+pywbem===1.4.0
 python-subunit===1.4.0
 tornado===6.1
 pycparser===2.21
@@ -222,7 +223,7 @@ os-client-config===2.1.0
 XStatic-Angular-Gettext===2.4.1.0
 Deprecated===1.2.13
 h11===0.12.0
-Pygments===2.10.0
+Pygments===2.11.1
 XStatic-Hogan===2.0.0.3
 XStatic-objectpath===1.2.1.0
 python-manilaclient===3.1.0
@@ -268,7 +269,7 @@ joblib===1.1.0
 google-api-python-client===2.33.0
 castellan===3.10.0
 oslo.versionedobjects===2.5.0
-diskcache===5.3.0
+diskcache===5.4.0
 ssh-python===0.9.0
 enmerkar===0.7.1
 webcolors===1.11.1
@@ -346,7 +347,8 @@ requests-ntlm===1.1.0
 sphinx-rtd-theme===1.0.0
 automaton===2.4.0
 os-service-types===1.7.0
-keyring===23.4.0
+keyring===23.4.1;python_version=='3.6'
+keyring===23.5.0;python_version=='3.8'
 elementpath===2.4.0
 testscenarios===0.5.0
 sphinxcontrib-pecanwsme===0.10.0
@@ -413,7 +415,7 @@ python-consul===1.1.0
 seqdiag===2.0.0;python_version=='3.6'
 seqdiag===3.0.0;python_version=='3.8'
 numpy===1.19.5;python_version=='3.6'
-numpy===1.21.5;python_version=='3.8'
+numpy===1.22.0;python_version=='3.8'
 msgpack===1.0.3
 Sphinx===4.3.2
 oslo.config===8.7.1
@@ -583,7 +585,8 @@ dnspython===2.1.0
 oauthlib===3.1.1
 Babel===2.9.1
 logutils===0.3.5
-zipp===3.6.0
+zipp===3.6.0;python_version=='3.6'
+zipp===3.7.0;python_version=='3.8'
 greenlet===1.1.2
 XStatic-Angular-Vis===4.16.0.0
 iniconfig===1.1.1
@@ -613,7 +616,7 @@ itsdangerous===2.0.1
 XStatic-jquery-ui===1.13.0.1
 monasca-statsd===2.3.0
 python-dateutil===2.8.2
-virtualenv===20.11.2
+virtualenv===20.13.0
 colorama===0.4.4
 confetti===2.5.3
 ironic-lib===5.1.0
