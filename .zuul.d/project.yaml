@@ -6,7 +6,7 @@
         - build-wheel-cache-centos-7:
             files:
               - bindep.txt
-        - build-wheel-cache-centos-8:
+        - build-wheel-cache-centos-8-stream:
             files:
               - bindep.txt
         - build-wheel-cache-debian-buster:
@@ -55,7 +55,7 @@
             files:
               - bindep.txt
               - upper-constraints.txt
-        - build-wheel-cache-centos-8-arm64:
+        - build-wheel-cache-centos-8-stream-arm64:
             files:
               - bindep.txt
         - build-wheel-cache-debian-buster-arm64:
@@ -72,7 +72,7 @@
         - build-wheel-cache-centos-7:
             files:
               - bindep.txt
-        - build-wheel-cache-centos-8:
+        - build-wheel-cache-centos-8-stream:
             files:
               - bindep.txt
         - build-wheel-cache-debian-buster:
