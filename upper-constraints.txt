@@ -199,7 +199,7 @@ nocasedict===1.0.2
 task-core===0.1.2
 psycopg2-binary===2.9.3
 openstack-release-test===3.3.1
-validations-libs===1.4.0
+validations-libs===1.5.0
 pylxd===2.3.1
 pycryptodomex===3.12.0
 anyjson===0.3.3
@@ -325,7 +325,7 @@ XStatic-Dagre===0.6.4.1
 platformdirs===2.4.0;python_version=='3.6'
 platformdirs===2.4.1;python_version=='3.8'
 pydotplus===2.0.2
-boto3===1.20.33
+boto3===1.20.34
 jeepney===0.7.1
 stestr===3.2.1
 oslo.serialization===4.2.0
@@ -450,7 +450,7 @@ backports.zoneinfo===0.2.1
 oslo.upgradecheck===1.4.0
 stevedore===3.5.0
 pywinrm===0.4.2
-botocore===1.23.33
+botocore===1.23.34
 xmltodict===0.12.0
 pyasn1===0.4.8
 directord===0.12.0
