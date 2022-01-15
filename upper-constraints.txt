@@ -122,7 +122,7 @@ pyinotify===0.9.6
 debtcollector===2.3.0
 requests-unixsocket===0.3.0
 responses===0.17.0
-croniter===1.1.0
+croniter===1.2.0
 horizon===20.2.0
 octavia-lib===2.4.1
 python-watcherclient===3.3.0
@@ -196,7 +196,7 @@ cryptography===36.0.1
 httpcore===0.14.4
 URLObject===2.4.3
 nocasedict===1.0.2
-task-core===0.1.2
+task-core===0.2.1
 psycopg2-binary===2.9.3
 openstack-release-test===3.3.1
 validations-libs===1.5.0
@@ -213,7 +213,7 @@ textfsm===1.1.2
 python-3parclient===4.2.12
 unittest2===1.1.0
 django-compressor===2.4.1
-libvirt-python===7.10.0
+libvirt-python===8.0.0
 python-zunclient===4.4.0
 tzlocal===4.1
 sphinxcontrib-jsmath===1.0.1
@@ -268,7 +268,7 @@ lockfile===0.12.2
 ldappool===3.0.0
 termcolor===1.1.0
 joblib===1.1.0
-google-api-python-client===2.34.0
+google-api-python-client===2.35.0
 castellan===3.10.0
 oslo.versionedobjects===2.5.0
 ssh-python===0.9.0
@@ -287,7 +287,7 @@ pycdlib===1.12.0
 pyperclip===1.8.2
 cassandra-driver===3.25.0
 XStatic-Angular-Schema-Form===0.8.13.0
-gabbi===2.4.0
+gabbi===2.5.0
 nwdiag===2.0.0;python_version=='3.6'
 nwdiag===3.0.0;python_version=='3.8'
 XStatic-bootswatch===3.3.7.0
@@ -325,7 +325,7 @@ XStatic-Dagre===0.6.4.1
 platformdirs===2.4.0;python_version=='3.6'
 platformdirs===2.4.1;python_version=='3.8'
 pydotplus===2.0.2
-boto3===1.20.34
+boto3===1.20.36
 jeepney===0.7.1
 stestr===3.2.1
 oslo.serialization===4.2.0
@@ -416,7 +416,7 @@ python-consul===1.1.0
 seqdiag===2.0.0;python_version=='3.6'
 seqdiag===3.0.0;python_version=='3.8'
 numpy===1.19.5;python_version=='3.6'
-numpy===1.22.0;python_version=='3.8'
+numpy===1.22.1;python_version=='3.8'
 msgpack===1.0.3
 Sphinx===4.3.2
 oslo.config===8.7.1
@@ -450,7 +450,7 @@ backports.zoneinfo===0.2.1
 oslo.upgradecheck===1.4.0
 stevedore===3.5.0
 pywinrm===0.4.2
-botocore===1.23.34
+botocore===1.23.36
 xmltodict===0.12.0
 pyasn1===0.4.8
 directord===0.12.0
@@ -515,9 +515,10 @@ oslo.policy===3.10.1
 python-muranoclient===2.4.0
 hvac===0.11.2
 pyeclib===1.6.0
-wsgi-intercept===1.9.2
+wsgi-intercept===1.9.3
 ndg-httpsclient===0.5.1
-pyrsistent===0.18.0
+pyrsistent===0.18.0;python_version=='3.6'
+pyrsistent===0.18.1;python_version=='3.8'
 repoze.lru===0.7
 rfc3986===1.5.0
 tenacity===6.3.1
