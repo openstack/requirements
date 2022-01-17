@@ -108,7 +108,7 @@ Pillow===6.1.0
 zuul-sphinx===0.4.1
 python-mimeparse===1.6.0
 tripleo-common===11.7.0
-validations-libs===1.0.3
+validations-libs===1.6.0
 Tempita===0.5.2
 ply===3.11
 requests-toolbelt===0.9.1
@@ -284,7 +284,7 @@ passlib===1.7.1
 dib-utils===0.0.11
 cliff===2.16.0
 os-brick===2.10.7
-ansible-runner===1.4.0
+ansible-runner===1.4.6
 trollius===2.2.post1;python_version=='2.7'
 scp===0.13.2
 python-zaqarclient===1.12.0
