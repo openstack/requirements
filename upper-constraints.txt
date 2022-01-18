@@ -577,7 +577,7 @@ filelock===3.0.12
 python-tackerclient===1.8.0
 python-heatclient===2.4.0
 kafka-python===2.0.2
-oslo.utils===4.10.0
+oslo.utils===4.10.1
 gitdb2===4.0.2
 requests-kerberos===0.12.0
 itsdangerous===2.0.1
