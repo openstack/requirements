@@ -57,7 +57,7 @@ oslo.context===3.4.0
 python-senlinclient===2.3.0
 rcssmin===1.0.6
 pycadf===3.1.1
-types-enum34===1.1.2
+types-enum34===1.1.3
 grpcio===1.43.0
 pysendfile===2.0.1
 sniffio===1.2.0
@@ -81,7 +81,7 @@ XStatic-jQuery===1.12.4.1
 ddt===1.4.4
 XStatic-Graphlib===2.1.7.0
 pyserial===3.5
-moto===2.3.1
+moto===2.3.2
 infi.dtypes.wwn===0.1.1
 python-freezerclient===4.4.0
 os-xenapi===0.3.4
@@ -104,7 +104,7 @@ google-api-core===2.4.0
 requests-toolbelt===0.9.1
 simplejson===3.17.6
 suds-jurko===0.6
-types-paramiko===2.8.9
+types-paramiko===2.8.10
 immutables===0.16
 python-swiftclient===3.13.0
 pyOpenSSL===21.0.0
@@ -298,7 +298,7 @@ oslo.log===4.6.1
 nodeenv===1.6.0
 gossip===2.4.0
 suds-community===1.0.0
-importlib-metadata===4.10.0;python_version=='3.8'
+importlib-metadata===4.10.1;python_version=='3.8'
 importlib-metadata===4.8.3;python_version=='3.6'
 oslo.middleware===4.5.0
 XStatic-mdi===1.6.50.2
@@ -313,7 +313,7 @@ selenium===3.141.0
 mypy===0.931
 mistral-lib===2.5.0
 dogtag-pki===10.7.4.1
-types-ipaddress===1.0.2
+types-ipaddress===1.0.3
 XStatic-Angular-UUID===0.0.4.0
 purestorage===1.19.0
 sphinxcontrib-seqdiag===2.0.0;python_version=='3.6'
@@ -325,7 +325,7 @@ XStatic-Dagre===0.6.4.1
 platformdirs===2.4.0;python_version=='3.6'
 platformdirs===2.4.1;python_version=='3.8'
 pydotplus===2.0.2
-boto3===1.20.36
+boto3===1.20.37
 jeepney===0.7.1
 stestr===3.2.1
 oslo.serialization===4.2.0
@@ -418,7 +418,7 @@ seqdiag===3.0.0;python_version=='3.8'
 numpy===1.19.5;python_version=='3.6'
 numpy===1.22.1;python_version=='3.8'
 msgpack===1.0.3
-Sphinx===4.3.2
+Sphinx===4.4.0
 oslo.config===8.7.1
 openstackdocstheme===2.3.1
 osc-placement===3.1.1
@@ -450,7 +450,7 @@ backports.zoneinfo===0.2.1
 oslo.upgradecheck===1.4.0
 stevedore===3.5.0
 pywinrm===0.4.2
-botocore===1.23.36
+botocore===1.23.37
 xmltodict===0.12.0
 pyasn1===0.4.8
 directord===0.12.0
@@ -461,7 +461,7 @@ pexpect===4.8.0
 contextvars===2.4
 cmd2===2.3.3
 python-json-logger===2.0.2
-redis===4.1.0
+redis===4.1.1
 jmespath===0.10.0
 click===8.0.3
 XStatic-smart-table===1.4.13.2
@@ -469,7 +469,7 @@ kuryr-lib===2.4.0
 scrypt===0.8.19
 jsonpatch===1.32
 python-daemon===2.3.0
-types-cryptography===3.3.12
+types-cryptography===3.3.14
 typed-ast===1.5.1;python_version=='3.6'
 os-testr===2.0.1
 cotyledon===1.7.3
