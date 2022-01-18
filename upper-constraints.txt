@@ -97,7 +97,7 @@ pyngus===2.3.1
 Pillow===8.4.0;python_version=='3.6'
 Pillow===9.0.0;python_version=='3.8'
 zuul-sphinx===0.6.0
-tripleo-common===16.2.0
+tripleo-common===16.3.0
 Tempita===0.5.2
 ply===3.11
 google-api-core===2.4.0
