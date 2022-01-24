@@ -33,7 +33,7 @@ setproctitle===1.1.10
 pytest===6.0.1
 python-slugify===4.0.1
 cursive===0.2.2
-oslo.service===2.4.0
+oslo.service===2.4.1
 django-appconf===1.0.4
 pykerberos===1.2.1
 certifi===2021.10.8
