@@ -81,7 +81,7 @@ XStatic-jQuery===1.12.4.1
 ddt===1.4.4
 XStatic-Graphlib===2.1.7.0
 pyserial===3.5
-moto===2.3.2
+moto===3.0.0
 infi.dtypes.wwn===0.1.1
 python-freezerclient===4.4.0
 os-xenapi===0.3.4
@@ -156,7 +156,7 @@ arrow===1.2.1
 semantic-version===2.8.5
 virtualbmc===2.2.1
 deprecation===2.1.0
-SQLAlchemy===1.4.30
+SQLAlchemy===1.4.31
 pyroute2===0.6.5
 google-auth===2.3.3
 kazoo===2.8.0
@@ -201,7 +201,7 @@ psycopg2-binary===2.9.3
 openstack-release-test===3.3.1
 validations-libs===1.5.0
 pylxd===2.3.1
-pycryptodomex===3.12.0
+pycryptodomex===3.13.0
 anyjson===0.3.3
 requests-mock===1.9.3
 os-apply-config===13.1.0
@@ -325,7 +325,7 @@ XStatic-Dagre===0.6.4.1
 platformdirs===2.4.0;python_version=='3.6'
 platformdirs===2.4.1;python_version=='3.8'
 pydotplus===2.0.2
-boto3===1.20.39
+boto3===1.20.41
 jeepney===0.7.1
 stestr===3.2.1
 oslo.serialization===4.2.0
@@ -339,7 +339,7 @@ sphinxcontrib-svg2pdfconverter===1.2.0
 murano-pkg-check===0.3.0
 oslo.vmware===3.10.0
 XStatic-moment===2.8.4.3
-autopage===0.4.0
+autopage===0.5.0
 sqlalchemy-migrate===0.13.0
 gitdb===4.0.9
 python-monascaclient===2.4.0
@@ -363,7 +363,8 @@ py===1.11.0
 txaio===21.2.1
 elasticsearch===2.4.1
 django-nose===1.4.7
-asgiref===3.4.1
+asgiref===3.4.1;python_version=='3.6'
+asgiref===3.5.0;python_version=='3.8'
 XStatic-JQuery.TableSorter===2.14.5.2
 pifpaf===3.1.5
 pysmi===0.3.4
@@ -434,7 +435,7 @@ httplib2===0.20.2
 betamax===0.8.1
 construct===2.10.67
 pytest-metadata===1.11.0
-pyparsing===3.0.6
+pyparsing===3.0.7
 geomet===0.2.1.post1
 distlib===0.3.4
 XStatic-Moment-Timezone===0.5.22.0
@@ -450,7 +451,7 @@ backports.zoneinfo===0.2.1
 oslo.upgradecheck===1.4.0
 stevedore===3.5.0
 pywinrm===0.4.2
-botocore===1.23.39
+botocore===1.23.41
 xmltodict===0.12.0
 pyasn1===0.4.8
 directord===0.12.0
@@ -478,7 +479,7 @@ systemd-python===234
 python-memcached===1.59
 openstacksdk===0.61.0
 six===1.16.0
-dulwich===0.20.30
+dulwich===0.20.31
 dfs-sdk===1.2.27
 sentinels===1.0.0
 kombu===5.1.0;python_version=='3.6'
