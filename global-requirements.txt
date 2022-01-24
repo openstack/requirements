@@ -49,7 +49,7 @@ django-debreach  # BSD
 django-formtools  # BSD
 django-pymemcache  # Apache-2.0
 # eventlet is not compatibile with 2.0.0: https://github.com/eventlet/eventlet/issues/619
-dnspython!=2.0.0  # http://www.dnspython.org/LICENSE
+dnspython!=2.0.0,!=2.2.0  # http://www.dnspython.org/LICENSE
 # Note(tonyb): We don't actually directly depend on docutils but we pull it in
 # indirectly and we needed to blacklist 0.13.1 for problems with
 # Sphinx 1.3. This can be now removed once all projects removed it.
