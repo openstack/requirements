@@ -31,6 +31,7 @@
             voting: false
         - cross-barbican-py38
         - cross-cinder-py38
+        - cross-designate-py38
         - cross-glance-py38
         - cross-horizon-py38
         - cross-horizon-npm
@@ -97,6 +98,7 @@
         - requirements-tox-py36-check-uc
         - requirements-tox-py38-check-uc
         - cross-cinder-py38
+        - cross-designate-py38
         - cross-glance-py38
         - cross-horizon-py38
         - cross-horizon-npm

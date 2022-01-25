@@ -61,6 +61,14 @@
       tox_envlist: py38
 
 - job:
+    name: cross-designate-py38
+    parent: requirements-cross-test
+    description: Run cross-project tests on designate with py38.
+    required-projects: openstack/designate
+    vars:
+      tox_envlist: py38
+
+- job:
     name: cross-glance-py38
     parent: requirements-cross-test
     description: Run cross-project tests on glance with py38.
