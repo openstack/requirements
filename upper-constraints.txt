@@ -36,7 +36,7 @@ backports.entry-points-selectable===1.1.0
 pytest===6.2.5
 python-slugify===5.0.2
 cursive===0.2.2
-oslo.service===2.6.0
+oslo.service===2.6.1
 django-appconf===1.0.4
 pykerberos===1.2.1
 certifi===2021.5.30
