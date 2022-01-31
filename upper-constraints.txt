@@ -276,7 +276,7 @@ django-pyscss===2.0.2
 uritemplate===3.0.1
 docutils===0.15.2
 threadpoolctl===2.1.0
-os-ken===1.2.0
+os-ken===1.2.1
 ujson===3.1.0
 selenium===3.141.0
 python-glareclient===0.5.3
