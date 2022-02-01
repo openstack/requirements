@@ -395,8 +395,9 @@ XStatic-term.js  # MIT License
 XStatic-tv4  # MIT
 XStatic-Angular-FileUpload  # MIT License
 yaql  # Apache 2.0 License
-# NOTE(dtantsur): zeroconf dropped compatibility with Python 2 in version 0.20
-zeroconf  # LGPL
+# NOTE(dtantsur): zeroconf dropped compatibility with Python 3.6 in version 0.38.0
+zeroconf<0.38.0;python_version=='3.6'  # LGPL
+zeroconf;python_version>'3.6'  # LGPL
 zstd  # BSD License (2 clause)
 
 # Testing tools below, which are typically in test-requires.txt
