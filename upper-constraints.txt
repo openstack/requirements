@@ -465,7 +465,7 @@ python-pcre===0.7
 yappi===1.3.2
 dataclasses===0.8;python_version=='3.6'
 abclient===0.2.3
-pymemcache===3.4.1
+pymemcache===3.5.0
 wrapt===1.12.1
 oslo.privsep===2.5.0
 sphinxcontrib-apidoc===0.3.0
