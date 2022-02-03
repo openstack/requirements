@@ -487,7 +487,7 @@ Werkzeug===1.0.1
 pyasn1-modules===0.2.8
 APScheduler===3.6.3
 monotonic===1.5
-python-troveclient===5.1.1
+python-troveclient===5.1.2
 etcd3===0.12.0
 cachez===0.1.2
 XStatic-Bootstrap-Datepicker===1.4.0.0
