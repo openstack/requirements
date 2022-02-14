@@ -395,7 +395,7 @@ idna===3.3
 yamlloader===1.1.0
 protobuf===3.19.4
 sushy===4.0.0
-python-neutronclient===7.7.0
+python-neutronclient===7.8.0
 pika===1.2.0
 oslo.cache===2.10.0
 WebTest===3.0.0
