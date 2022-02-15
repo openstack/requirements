@@ -149,7 +149,7 @@ wcwidth===0.2.5
 sphinxcontrib.datatemplates===0.9.1
 jsonpath-rw===1.4.0
 prettytable===2.5.0;python_version=='3.6'
-prettytable===3.0.0;python_version=='3.8'
+prettytable===3.1.0;python_version=='3.8'
 vine===5.0.0
 pyroute2.nftables===0.6.5
 taskflow===4.6.4
@@ -172,7 +172,7 @@ oslo.messaging===12.12.0
 jira===3.1.1
 extras===1.0.0
 PyJWT===2.3.0
-typing_extensions===4.1.0
+typing_extensions===4.1.1
 XStatic-lodash===4.16.4.2
 zVMCloudConnector===1.4.1
 paramiko===2.8.1
@@ -328,7 +328,7 @@ XStatic-Dagre===0.6.4.1
 platformdirs===2.4.0;python_version=='3.6'
 platformdirs===2.5.0;python_version=='3.8'
 pydotplus===2.0.2
-boto3===1.20.54
+boto3===1.21.0
 jeepney===0.7.1
 stestr===3.2.1
 oslo.serialization===4.2.0
@@ -433,7 +433,7 @@ python-solumclient===3.4.0
 krb5===0.2.0
 PyMySQL===1.0.2
 uhashring===2.1
-kubernetes===21.7.0
+kubernetes===22.6.0
 httplib2===0.20.4
 betamax===0.8.1
 construct===2.10.67
@@ -454,7 +454,7 @@ backports.zoneinfo===0.2.1
 oslo.upgradecheck===1.4.0
 stevedore===3.5.0
 pywinrm===0.4.2
-botocore===1.23.54
+botocore===1.24.0
 xmltodict===0.12.0
 pyasn1===0.4.8
 directord===0.12.0
@@ -602,7 +602,7 @@ xvfbwrapper===0.2.9
 futures===3.0.5;python_version=='3.6'
 tosca-parser===2.5.0
 charset-normalizer===2.0.12
-Flask===2.0.2
+Flask===2.0.3
 httpx===0.22.0
 sqlalchemy-filters===0.12.0
 marathon===0.13.0
@@ -637,4 +637,4 @@ sphinxcontrib-applehelp===1.0.2
 scikit-learn===0.24.2;python_version=='3.6'
 scikit-learn===1.0.2;python_version=='3.8'
 setuptools===59.6.0;python_version=='3.6'
-setuptools===60.8.2;python_version=='3.8'
+setuptools===60.9.0;python_version=='3.8'
