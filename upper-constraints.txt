@@ -423,7 +423,7 @@ numpy===1.19.5;python_version=='3.6'
 numpy===1.22.2;python_version=='3.8'
 msgpack===1.0.3
 Sphinx===4.4.0
-oslo.config===8.7.1
+oslo.config===8.8.0
 openstackdocstheme===2.3.1
 osc-placement===3.1.1
 zake===0.2.2
