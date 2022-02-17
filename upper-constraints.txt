@@ -303,7 +303,7 @@ gossip===2.4.0
 suds-community===1.0.0
 importlib-metadata===4.11.0;python_version=='3.8'
 importlib-metadata===4.8.3;python_version=='3.6'
-oslo.middleware===4.5.0
+oslo.middleware===4.5.1
 XStatic-mdi===1.6.50.2
 django-pyscss===2.0.2
 uritemplate===4.1.1
