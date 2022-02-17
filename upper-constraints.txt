@@ -271,7 +271,7 @@ ldappool===3.0.0
 termcolor===1.1.0
 joblib===1.1.0
 google-api-python-client===2.37.0
-castellan===3.10.0
+castellan===3.10.1
 oslo.versionedobjects===2.5.0
 ssh-python===0.9.0
 enmerkar===0.7.1
