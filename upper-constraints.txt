@@ -126,7 +126,7 @@ responses===0.17.0;python_version=='3.6'
 responses===0.18.0;python_version=='3.8'
 croniter===1.2.0
 horizon===21.0.0
-octavia-lib===2.4.1
+octavia-lib===2.5.0
 python-watcherclient===3.3.0
 MarkupSafe===2.0.1
 pypowervm===1.1.27
