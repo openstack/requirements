@@ -108,7 +108,7 @@ types-paramiko===2.8.13
 immutables===0.16
 python-swiftclient===3.13.0
 pyOpenSSL===22.0.0
-monasca-common===3.4.0
+monasca-common===3.5.0
 zeroconf===0.37.0;python_version=='3.6'
 zeroconf===0.38.3;python_version=='3.8'
 scipy===1.5.4;python_version=='3.6'
