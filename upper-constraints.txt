@@ -314,7 +314,7 @@ ujson===4.3.0;python_version=='3.6'
 ujson===5.1.0;python_version=='3.8'
 selenium===3.141.0
 mypy===0.931
-mistral-lib===2.5.0
+mistral-lib===2.6.0
 dogtag-pki===10.7.4.1
 types-ipaddress===1.0.8
 XStatic-Angular-UUID===0.0.4.0
