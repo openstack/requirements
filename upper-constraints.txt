@@ -600,7 +600,7 @@ iniconfig===1.1.1
 confluent-kafka===1.8.2
 xvfbwrapper===0.2.9
 futures===3.0.5;python_version=='3.6'
-tosca-parser===2.5.0
+tosca-parser===2.5.1
 charset-normalizer===2.0.12
 Flask===2.0.3
 httpx===0.22.0
