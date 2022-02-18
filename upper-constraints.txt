@@ -414,7 +414,7 @@ testrepository===0.0.20
 sympy===1.9
 Logbook===1.5.3
 PyNaCl===1.5.0
-osc-lib===2.4.2
+osc-lib===2.5.0
 async-generator===1.10;python_version=='3.6'
 python-consul===1.1.0
 seqdiag===2.0.0;python_version=='3.6'
