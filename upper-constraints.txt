@@ -471,7 +471,7 @@ dataclasses===0.8;python_version=='3.6'
 abclient===0.2.3
 pymemcache===3.5.0
 wrapt===1.12.1
-oslo.privsep===2.5.0
+oslo.privsep===2.5.1
 sphinxcontrib-apidoc===0.3.0
 oslo.policy===3.7.1
 python-muranoclient===2.2.0
