@@ -414,7 +414,7 @@ salt===3002.5
 api-object-schema===2.0.0
 WSME===0.10.1
 proboscis===1.2.6.0
-oslo.upgradecheck===1.3.0
+oslo.upgradecheck===1.3.1
 stevedore===3.3.0
 pywinrm===0.4.1
 botocore===1.20.26
