@@ -577,7 +577,7 @@ decorator===4.4.2;python_version=='3.6'
 decorator===5.1.1;python_version=='3.8'
 DateTimeRange===1.2.0
 cffi===1.15.0
-python-cyborgclient===1.6.0
+python-cyborgclient===1.7.0
 futurist===2.4.0
 jsonschema===3.2.0
 sphinxcontrib-devhelp===1.0.2
