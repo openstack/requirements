@@ -276,7 +276,7 @@ oslo.versionedobjects===2.6.0
 ssh-python===0.9.0
 enmerkar===0.7.1
 webcolors===1.11.1
-aodhclient===2.4.0
+aodhclient===2.4.1
 autobahn===21.2.1;python_version=='3.6'
 autobahn===22.1.1;python_version=='3.8'
 SQLAlchemy-Utils===0.38.2
