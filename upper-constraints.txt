@@ -303,7 +303,7 @@ pydotplus===2.0.2
 boto3===1.17.26
 jeepney===0.6.0
 stestr===3.1.0
-oslo.serialization===4.1.0
+oslo.serialization===4.1.1
 warlock===1.3.3
 exabgp===4.2.11
 sphinxcontrib-httpdomain===1.7.0
