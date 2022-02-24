@@ -581,7 +581,7 @@ python-cyborgclient===1.7.0
 futurist===2.4.0
 jsonschema===3.2.0
 sphinxcontrib-devhelp===1.0.2
-python-blazarclient===3.3.1
+python-blazarclient===3.4.0
 alembic===1.7.6
 execnet===1.9.0
 glance-store===3.0.0
