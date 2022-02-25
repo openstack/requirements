@@ -52,7 +52,7 @@ Pint===0.17;python_version=='3.6'
 Pint===0.18;python_version=='3.8'
 oslo.i18n===5.1.0
 jsonpath-rw-ext===1.2.2
-python-mistralclient===4.3.0
+python-mistralclient===4.4.0
 oslo.context===3.4.0
 python-senlinclient===2.3.0
 rcssmin===1.0.6
