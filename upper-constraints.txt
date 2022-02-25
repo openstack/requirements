@@ -320,7 +320,7 @@ python-monascaclient===2.3.0
 ldap3===2.9
 natsort===7.1.1
 requests-ntlm===1.1.0
-automaton===2.3.0
+automaton===2.3.1
 os-service-types===1.7.0
 keyring===23.0.0
 elementpath===2.2.0
