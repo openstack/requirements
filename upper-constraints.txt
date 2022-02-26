@@ -28,7 +28,7 @@ websocket-client===1.2.3
 osprofiler===3.4.2
 os-resource-classes===1.1.0
 tabulate===0.8.9
-python-ironic-inspector-client===4.7.0
+python-ironic-inspector-client===4.7.1
 lxml===4.8.0
 vintage===0.4.1
 ntc-templates===3.0.0
