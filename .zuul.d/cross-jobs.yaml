@@ -45,10 +45,26 @@
       - .zuul.d/cross-jobs.yaml
 
 - job:
+    name: cross-aodh-py38
+    parent: requirements-cross-test
+    description: Run cross-project tests on aodh with py38.
+    required-projects: openstack/aodh
+    vars:
+      tox_envlist: py38
+
+- job:
     name: cross-barbican-py38
     parent: requirements-cross-test
     description: Run cross-project tests on barbican with py38.
     required-projects: openstack/barbican
+    vars:
+      tox_envlist: py38
+
+- job:
+    name: cross-ceilometer-py38
+    parent: requirements-cross-test
+    description: Run cross-project tests on ceilometer with py38.
+    required-projects: openstack/ceilometer
     vars:
       tox_envlist: py38
 
