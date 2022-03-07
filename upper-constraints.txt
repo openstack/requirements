@@ -557,7 +557,7 @@ cachetools===4.2.4;python_version=='3.6'
 cachetools===5.0.0;python_version=='3.8'
 ws4py===0.5.1
 sphinxcontrib-qthelp===1.0.3
-keystoneauth1===4.4.0
+keystoneauth1===4.5.0
 statsd===3.3.0
 XenAPI===2.14
 importlib-resources===5.4.0
