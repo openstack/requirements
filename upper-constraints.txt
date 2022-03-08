@@ -502,7 +502,7 @@ GitPython===3.1.27;python_version=='3.8'
 python-ironicclient===4.11.0
 XStatic===1.0.2
 XStatic-Angular-FileUpload===12.0.4.0
-python-openstackclient===5.7.0
+python-openstackclient===5.8.0
 pyzmq===21.0.2
 nocaselist===1.0.4
 oslo.db===11.2.0
