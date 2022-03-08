@@ -562,7 +562,7 @@ statsd===3.3.0
 XenAPI===2.14
 importlib-resources===5.4.0
 python-keystoneclient===4.4.0
-ceilometer===17.0.1
+ceilometer===18.0.0.0rc1
 diskimage-builder===3.19.0
 heat-translator===2.5.0
 python-magnumclient===3.6.0
