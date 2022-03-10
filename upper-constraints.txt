@@ -631,7 +631,7 @@ PuLP===2.1
 crc16===0.1.1
 protobuf===3.11.3
 os-dpm===1.1.0
-sushy===3.2.2
+sushy===3.2.3
 python-neutronclient===7.1.0;python_version=='2.7'
 python-neutronclient===7.1.1;python_version=='3.6'
 python-neutronclient===7.1.1;python_version=='3.7'
