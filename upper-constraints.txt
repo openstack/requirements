@@ -130,7 +130,7 @@ octavia-lib===2.5.0
 python-watcherclient===3.4.0
 MarkupSafe===2.0.1;python_version=='3.6'
 MarkupSafe===2.1.0;python_version=='3.8'
-pypowervm===1.1.27
+pypowervm===1.1.24
 ruamel.yaml.clib===0.2.6
 doc8===0.10.1
 pymongo===4.0.1
