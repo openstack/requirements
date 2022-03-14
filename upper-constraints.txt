@@ -120,7 +120,7 @@ XStatic-Jasmine===2.4.1.2
 googleapis-common-protos===1.55.0
 python-glanceclient===3.6.0
 pyinotify===0.9.6
-debtcollector===2.4.0
+debtcollector===2.5.0
 requests-unixsocket===0.3.0
 responses===0.17.0;python_version=='3.6'
 responses===0.18.0;python_version=='3.8'
