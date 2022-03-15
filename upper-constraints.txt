@@ -425,7 +425,7 @@ numpy===1.22.2;python_version=='3.8'
 msgpack===1.0.3
 Sphinx===4.4.0
 oslo.config===8.8.0
-openstackdocstheme===2.3.1
+openstackdocstheme===2.4.0
 osc-placement===3.2.0
 zake===0.2.2
 python-rsdclient===1.0.2
