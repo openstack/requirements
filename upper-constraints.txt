@@ -125,7 +125,7 @@ requests-unixsocket===0.3.0
 responses===0.17.0;python_version=='3.6'
 responses===0.18.0;python_version=='3.8'
 croniter===1.3.4
-horizon===21.0.0
+horizon===22.0.0
 octavia-lib===2.5.0
 python-watcherclient===3.4.0
 MarkupSafe===2.0.1;python_version=='3.6'
