@@ -33,6 +33,7 @@
         - cross-cinder-py38
         - cross-designate-py38
         - cross-glance-py38
+        - cross-heat-py38
         - cross-horizon-py38
         - cross-horizon-npm
         - cross-ironic-py38
@@ -100,6 +101,7 @@
         - cross-cinder-py38
         - cross-designate-py38
         - cross-glance-py38
+        - cross-heat-py38
         - cross-horizon-py38
         - cross-horizon-npm
         - cross-ironic-py38

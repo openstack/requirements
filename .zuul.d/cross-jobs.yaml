@@ -77,6 +77,14 @@
       tox_envlist: py38
 
 - job:
+    name: cross-heat-py38
+    parent: requirements-cross-test
+    description: Run cross-project tests on heat with py38.
+    required-projects: openstack/heat
+    vars:
+      tox_envlist: py38
+
+- job:
     name: cross-horizon-py38
     parent: requirements-cross-test
     description: Run cross-project tests on horizon with py38.
