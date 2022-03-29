@@ -130,7 +130,7 @@ frozendict===1.2
 oslo.messaging===5.18.0
 extras===1.0.0
 PyJWT===1.4.2
-paramiko===2.1.2
+paramiko===2.10.1
 ordereddict===1.1
 reno===2.1.2
 unicodecsv===0.14.1;python_version=='2.7'
