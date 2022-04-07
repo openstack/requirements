@@ -51,7 +51,7 @@ waiting===1.4.1
 attrs===21.4.0
 microversion-parse===1.0.1
 Pint===0.17;python_version=='3.6'
-Pint===0.19;python_version=='3.8'
+Pint===0.19.1;python_version=='3.8'
 oslo.i18n===5.1.0
 jsonpath-rw-ext===1.2.2
 python-mistralclient===4.4.0
@@ -138,7 +138,7 @@ ruamel.yaml.clib===0.2.6
 doc8===0.11.1
 pymongo===4.1.0
 python-cloudkittyclient===4.5.0
-soupsieve===2.3.1
+soupsieve===2.3.2
 sqlparse===0.4.2
 oslotest===4.5.0
 jsonpointer===2.2
@@ -163,7 +163,7 @@ semantic-version===2.9.0
 async-timeout===4.0.2
 virtualbmc===2.2.1
 deprecation===2.1.0
-SQLAlchemy===1.4.34
+SQLAlchemy===1.4.35
 pyroute2===0.6.9
 google-auth===2.6.2
 kazoo===2.8.0
@@ -212,7 +212,7 @@ pycryptodomex===3.14.1
 anyjson===0.3.3
 requests-mock===1.9.3
 os-apply-config===13.1.0
-prometheus-client===0.13.1
+prometheus-client===0.14.0
 oslosphinx===4.18.0
 gunicorn===20.1.0
 storpool===7.0.0
@@ -276,7 +276,7 @@ lockfile===0.12.2
 ldappool===3.0.0
 termcolor===1.1.0
 joblib===1.1.0
-google-api-python-client===2.42.0
+google-api-python-client===2.43.0
 castellan===3.10.1
 oslo.versionedobjects===2.6.0
 ssh-python===0.10.0
@@ -317,7 +317,7 @@ docutils===0.17.1
 threadpoolctl===3.1.0
 os-ken===2.3.1
 ujson===4.3.0;python_version=='3.6'
-ujson===5.1.0;python_version=='3.8'
+ujson===5.2.0;python_version=='3.8'
 selenium===3.141.0
 mypy===0.942
 mistral-lib===2.6.0
@@ -333,7 +333,7 @@ XStatic-Dagre===0.6.4.1
 platformdirs===2.4.0;python_version=='3.6'
 platformdirs===2.5.1;python_version=='3.8'
 pydotplus===2.0.2
-boto3===1.21.33
+boto3===1.21.35
 jeepney===0.7.1;python_version=='3.6'
 jeepney===0.8.0;python_version=='3.8'
 stestr===3.2.1
@@ -464,7 +464,7 @@ backports.zoneinfo===0.2.1
 oslo.upgradecheck===1.5.0
 stevedore===3.5.0
 pywinrm===0.4.2
-botocore===1.24.33
+botocore===1.24.35
 xmltodict===0.12.0
 pyasn1===0.4.8
 directord===0.12.0
@@ -485,7 +485,7 @@ kuryr-lib===2.5.0
 scrypt===0.8.20
 jsonpatch===1.32
 python-daemon===2.3.0
-types-cryptography===3.3.18
+types-cryptography===3.3.19
 typed-ast===1.5.2;python_version=='3.6'
 os-testr===2.0.1;python_version=='3.6'
 os-testr===3.0.0;python_version=='3.8'
