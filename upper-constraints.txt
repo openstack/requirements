@@ -656,3 +656,4 @@ scikit-learn===0.24.2;python_version=='3.6'
 scikit-learn===1.0.2;python_version=='3.8'
 setuptools===59.6.0;python_version=='3.6'
 setuptools===62.0.0;python_version=='3.8'
+ncclient===0.6.12

@@ -119,6 +119,7 @@ msgpack  # Apache-2.0
 munch  # MIT
 murano-pkg-check  # Apache-2.0
 mypy  # MIT
+ncclient  # Apache-2.0
 netaddr  # BSD
 netifaces!=0.10.0,!=0.10.1  # MIT
 netmiko  # MIT
