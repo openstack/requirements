@@ -25,8 +25,8 @@
         - requirements-tox-babel
         - requirements-tox-bindep:
             voting: false
-        - requirements-tox-py36-check-uc
         - requirements-tox-py38-check-uc
+        - requirements-tox-py39-check-uc
         - requirements-tox-validate-projects:
             voting: false
         - cross-barbican-py38
@@ -50,7 +50,7 @@
         - cross-octavia-py38
         - cross-osc-tox-docs
         - cross-swift-py38
-        - openstack-tox-py36
+        - openstack-tox-py38
         - openstacksdk-functional-devstack
         - tempest-full-py3:
             irrelevant-files:
@@ -96,8 +96,8 @@
               - bindep.txt
         - openstack-tox-validate
         - requirements-tox-babel
-        - requirements-tox-py36-check-uc
         - requirements-tox-py38-check-uc
+        - requirements-tox-py39-check-uc
         - cross-cinder-py38
         - cross-designate-py38
         - cross-glance-py38
@@ -120,7 +120,7 @@
         - cross-octavia-py38
         - cross-osc-tox-docs
         - cross-swift-py38
-        - openstack-tox-py36
+        - openstack-tox-py38
         - openstacksdk-functional-devstack
         - tempest-full-py3:
             irrelevant-files:
