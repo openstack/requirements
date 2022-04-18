@@ -221,7 +221,7 @@ h11===0.12.0
 Pygments===2.10.0
 XStatic-Hogan===2.0.0.3
 XStatic-objectpath===1.2.1.0
-python-manilaclient===3.0.1
+python-manilaclient===3.0.2
 sphinxcontrib-serializinghtml===1.1.5
 requests===2.26.0
 snowballstemmer===2.1.0
