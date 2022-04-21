@@ -279,7 +279,7 @@ lockfile===0.12.2
 ldappool===3.0.0
 termcolor===1.1.0
 joblib===1.1.0
-google-api-python-client===2.44.0
+google-api-python-client===2.45.0
 castellan===3.10.1
 oslo.versionedobjects===2.6.0
 ssh-python===0.10.0
@@ -334,9 +334,9 @@ capacity===1.3.14
 retrying===1.3.3
 XStatic-Dagre===0.6.4.1
 platformdirs===2.4.0;python_version=='3.6'
-platformdirs===2.5.1;python_version=='3.8'
+platformdirs===2.5.2;python_version=='3.8'
 pydotplus===2.0.2
-boto3===1.21.42
+boto3===1.21.44
 jeepney===0.7.1;python_version=='3.6'
 jeepney===0.8.0;python_version=='3.8'
 stestr===3.2.1
@@ -394,7 +394,7 @@ XStatic-Spin===1.2.5.3
 tap-as-a-service===9.0.0
 os-traits===2.7.0
 typepy===1.3.0
-SecretStorage===3.3.1
+SecretStorage===3.3.2
 opentracing===2.4.0
 XStatic-Rickshaw===1.5.1.0
 iso8601===1.0.2
@@ -467,7 +467,7 @@ backports.zoneinfo===0.2.1
 oslo.upgradecheck===1.5.0
 stevedore===3.5.0
 pywinrm===0.4.3
-botocore===1.24.42
+botocore===1.24.44
 xmltodict===0.12.0
 pyasn1===0.4.8
 directord===0.12.0
@@ -505,7 +505,7 @@ kombu===5.1.0;python_version=='3.6'
 kombu===5.2.4;python_version=='3.8'
 pyroute2.ndb===0.6.9
 distro===1.7.0
-zstd===1.5.2.2
+zstd===1.5.2.4
 yaql===2.0.0
 requestsexceptions===1.4.0
 testresources===2.0.1
@@ -534,7 +534,7 @@ sphinxcontrib-apidoc===0.3.0
 oslo.policy===3.11.0
 python-muranoclient===2.4.1
 hvac===0.11.2
-pyeclib===1.6.0
+pyeclib===1.6.1
 wsgi-intercept===1.9.3
 ndg-httpsclient===0.5.1
 pyrsistent===0.18.0;python_version=='3.6'
@@ -609,7 +609,7 @@ storpool.spopenstack===3.1.0
 sphinx-testing===1.0.1
 dnspython===2.2.1
 oauthlib===3.2.0
-Babel===2.9.1
+Babel===2.10.1
 logutils===0.3.5
 zipp===3.6.0;python_version=='3.6'
 zipp===3.8.0;python_version=='3.8'
