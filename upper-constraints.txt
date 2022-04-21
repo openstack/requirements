@@ -91,7 +91,7 @@ pyngus===2.3.1
 Pillow===7.2.0
 zuul-sphinx===0.5.0
 python-mimeparse===1.6.0
-tripleo-common===13.2.3
+tripleo-common===13.3.0
 Tempita===0.5.2
 ply===3.11
 google-api-core===1.22.1
