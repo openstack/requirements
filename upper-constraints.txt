@@ -306,7 +306,7 @@ pycparser===2.20
 mock===3.0.5
 PyYAML===5.3.1
 beautifulsoup4===4.9.0
-os-net-config===12.3.5
+os-net-config===12.3.6
 ovs===2.11.0
 cryptography===2.9
 URLObject===2.4.3
