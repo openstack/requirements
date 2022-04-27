@@ -408,7 +408,7 @@ protobuf===3.20.0;python_version=='3.8'
 sushy===4.1.1
 python-neutronclient===7.8.0
 pika===1.2.0
-oslo.cache===2.10.1
+oslo.cache===2.11.0
 WebTest===3.0.0
 openstack.nose-plugin===0.11
 os-collect-config===13.1.0
