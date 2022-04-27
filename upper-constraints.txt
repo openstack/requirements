@@ -353,7 +353,7 @@ idna===2.10
 python-karborclient===2.1.0
 yamlloader===0.5.5
 protobuf===3.13.0
-sushy===3.4.5
+sushy===3.4.6
 python-neutronclient===7.2.1
 pika===1.1.0
 oslo.cache===2.6.3
