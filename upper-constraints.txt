@@ -84,7 +84,7 @@ XStatic-jQuery===1.12.4.1
 ddt===1.4.4
 XStatic-Graphlib===2.1.7.0
 pyserial===3.5
-moto===3.1.6
+moto===3.1.7
 infi.dtypes.wwn===0.1.1
 python-freezerclient===4.4.0
 os-xenapi===0.3.4
@@ -107,13 +107,13 @@ google-api-core===2.7.2
 requests-toolbelt===0.9.1
 simplejson===3.17.6
 suds-jurko===0.6
-types-paramiko===2.8.19
+types-paramiko===2.8.21
 immutables===0.17
 python-swiftclient===3.13.1
 pyOpenSSL===22.0.0
 monasca-common===3.5.0
 zeroconf===0.37.0;python_version=='3.6'
-zeroconf===0.38.4;python_version=='3.8'
+zeroconf===0.38.5;python_version=='3.8'
 scipy===1.5.4;python_version=='3.6'
 scipy===1.8.0;python_version=='3.8'
 python-gnupg===0.4.8
@@ -229,7 +229,7 @@ tzlocal===4.2
 sphinxcontrib-jsmath===1.0.1
 python-novaclient===17.7.0
 pact===1.12.0
-bcrypt===3.2.0
+bcrypt===3.2.2
 os-client-config===2.1.0
 XStatic-Angular-Gettext===2.4.1.0
 Deprecated===1.2.13
@@ -266,7 +266,7 @@ google-auth-httplib2===0.1.0
 daiquiri===3.0.1
 influxdb===5.3.1
 funcparserlib===0.3.6;python_version=='3.6'
-funcparserlib===1.0.0a1;python_version=='3.8'
+funcparserlib===1.0.0a2;python_version=='3.8'
 passlib===1.7.4
 dib-utils===0.0.11
 cliff===3.10.1
@@ -336,7 +336,7 @@ XStatic-Dagre===0.6.4.1
 platformdirs===2.4.0;python_version=='3.6'
 platformdirs===2.5.2;python_version=='3.8'
 pydotplus===2.0.2
-boto3===1.22.3
+boto3===1.22.4
 jeepney===0.7.1;python_version=='3.6'
 jeepney===0.8.0;python_version=='3.8'
 stestr===3.2.1
@@ -377,7 +377,7 @@ txaio===22.2.1
 elasticsearch===2.4.1
 django-nose===1.4.7
 asgiref===3.4.1;python_version=='3.6'
-asgiref===3.5.0;python_version=='3.8'
+asgiref===3.5.1;python_version=='3.8'
 XStatic-JQuery.TableSorter===2.14.5.2
 pifpaf===3.1.5
 pysmi===0.3.4
@@ -467,7 +467,7 @@ backports.zoneinfo===0.2.1
 oslo.upgradecheck===1.5.0
 stevedore===3.5.0
 pywinrm===0.4.3
-botocore===1.25.3
+botocore===1.25.4
 xmltodict===0.12.0
 pyasn1===0.4.8
 directord===0.12.0
