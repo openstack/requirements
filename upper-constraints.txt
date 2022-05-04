@@ -103,11 +103,11 @@ zuul-sphinx===0.6.0
 tripleo-common===16.4.0
 Tempita===0.5.2
 ply===3.11
-google-api-core===2.7.2
+google-api-core===2.7.3
 requests-toolbelt===0.9.1
 simplejson===3.17.6
 suds-jurko===0.6
-types-paramiko===2.8.21
+types-paramiko===2.10.0
 immutables===0.17
 python-swiftclient===3.13.1
 pyOpenSSL===22.0.0
@@ -223,7 +223,7 @@ textfsm===1.1.2
 python-3parclient===4.2.12
 unittest2===1.1.0
 django-compressor===2.4.1
-libvirt-python===8.2.0
+libvirt-python===8.3.0
 python-zunclient===4.4.0
 tzlocal===4.2
 sphinxcontrib-jsmath===1.0.1
@@ -266,7 +266,7 @@ google-auth-httplib2===0.1.0
 daiquiri===3.0.1
 influxdb===5.3.1
 funcparserlib===0.3.6;python_version=='3.6'
-funcparserlib===1.0.0a2;python_version=='3.8'
+funcparserlib===1.0.0;python_version=='3.8'
 passlib===1.7.4
 dib-utils===0.0.11
 cliff===3.10.1
@@ -279,7 +279,7 @@ lockfile===0.12.2
 ldappool===3.0.0
 termcolor===1.1.0
 joblib===1.1.0
-google-api-python-client===2.46.0
+google-api-python-client===2.47.0
 castellan===3.11.0
 oslo.versionedobjects===2.6.0
 ssh-python===0.10.0
@@ -309,7 +309,7 @@ XStatic-term.js===0.0.7.0
 oslo.log===4.7.0
 nodeenv===1.6.0
 gossip===2.4.0
-suds-community===1.1.0
+suds-community===1.1.1
 importlib-metadata===4.11.3;python_version=='3.8'
 importlib-metadata===4.8.3;python_version=='3.6'
 oslo.middleware===4.5.1
@@ -336,7 +336,7 @@ XStatic-Dagre===0.6.4.1
 platformdirs===2.4.0;python_version=='3.6'
 platformdirs===2.5.2;python_version=='3.8'
 pydotplus===2.0.2
-boto3===1.22.4
+boto3===1.22.6
 jeepney===0.7.1;python_version=='3.6'
 jeepney===0.8.0;python_version=='3.8'
 stestr===3.2.1
@@ -467,7 +467,7 @@ backports.zoneinfo===0.2.1
 oslo.upgradecheck===1.5.0
 stevedore===3.5.0
 pywinrm===0.4.3
-botocore===1.25.4
+botocore===1.25.6
 xmltodict===0.12.0
 pyasn1===0.4.8
 directord===0.12.0
@@ -505,7 +505,7 @@ kombu===5.1.0;python_version=='3.6'
 kombu===5.2.4;python_version=='3.8'
 pyroute2.ndb===0.6.9
 distro===1.7.0
-zstd===1.5.2.4
+zstd===1.5.2.5
 yaql===2.0.0
 requestsexceptions===1.4.0
 testresources===2.0.1
@@ -528,7 +528,7 @@ mbstrdecoder===1.1.0
 dataclasses===0.8;python_version=='3.6'
 abclient===0.2.3
 pymemcache===3.5.2
-wrapt===1.14.0
+wrapt===1.14.1
 oslo.privsep===2.8.0
 sphinxcontrib-apidoc===0.3.0
 oslo.policy===3.12.1
@@ -581,7 +581,7 @@ importlib-resources===5.4.0;python_version=='3.6'
 importlib-resources===5.7.1;python_version=='3.8'
 python-keystoneclient===4.4.0
 ceilometer===18.0.0
-diskimage-builder===3.20.3
+diskimage-builder===3.21.0
 heat-translator===2.5.0
 python-magnumclient===3.6.0
 docker===5.0.3
