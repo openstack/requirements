@@ -510,7 +510,7 @@ yaql===2.0.0
 requestsexceptions===1.4.0
 testresources===2.0.1
 falcon===3.1.0
-etcd3gw===1.0.1
+etcd3gw===1.0.2
 Flask-RESTful===0.3.9
 GitPython===3.1.18;python_version=='3.6'
 GitPython===3.1.27;python_version=='3.8'
