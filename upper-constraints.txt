@@ -26,7 +26,7 @@ python-ldap===3.4.0
 oslo.concurrency===4.5.0
 websocket-client===1.3.1;python_version=='3.6'
 websocket-client===1.3.2;python_version=='3.8'
-osprofiler===3.4.2
+osprofiler===3.4.3
 os-resource-classes===1.1.0
 tabulate===0.8.9
 python-ironic-inspector-client===4.7.1
