@@ -59,7 +59,7 @@ oslo.context===4.1.0
 python-senlinclient===2.4.0
 rcssmin===1.0.6
 pycadf===3.1.1
-grpcio===1.44.0
+grpcio===1.46.0
 pysendfile===2.0.1
 sniffio===1.2.0
 fixtures===3.0.0
@@ -153,7 +153,7 @@ wcwidth===0.2.5
 sphinxcontrib.datatemplates===0.9.1
 jsonpath-rw===1.4.0
 prettytable===2.5.0;python_version=='3.6'
-prettytable===3.2.0;python_version=='3.8'
+prettytable===3.3.0;python_version=='3.8'
 vine===5.0.0
 pyroute2.nftables===0.6.9
 taskflow===4.7.0
@@ -271,7 +271,7 @@ passlib===1.7.4
 dib-utils===0.0.11
 cliff===3.10.1
 os-brick===5.2.0
-ansible-runner===2.1.3
+ansible-runner===2.2.0
 pytz-deprecation-shim===0.1.0.post0
 scp===0.14.4
 python-zaqarclient===2.3.0
@@ -287,7 +287,7 @@ enmerkar===0.7.1
 webcolors===1.11.1
 aodhclient===2.4.1
 autobahn===21.2.1;python_version=='3.6'
-autobahn===22.3.2;python_version=='3.8'
+autobahn===22.4.2;python_version=='3.8'
 SQLAlchemy-Utils===0.38.2
 retryz===0.1.9
 pluggy===1.0.0
@@ -336,7 +336,7 @@ XStatic-Dagre===0.6.4.1
 platformdirs===2.4.0;python_version=='3.6'
 platformdirs===2.5.2;python_version=='3.8'
 pydotplus===2.0.2
-boto3===1.22.6
+boto3===1.22.8
 jeepney===0.7.1;python_version=='3.6'
 jeepney===0.8.0;python_version=='3.8'
 stestr===3.2.1
@@ -467,7 +467,7 @@ backports.zoneinfo===0.2.1
 oslo.upgradecheck===1.5.0
 stevedore===3.5.0
 pywinrm===0.4.3
-botocore===1.25.6
+botocore===1.25.8
 xmltodict===0.12.0
 pyasn1===0.4.8
 directord===0.12.0
