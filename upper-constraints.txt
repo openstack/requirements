@@ -84,7 +84,7 @@ XStatic-jQuery===1.12.4.1
 ddt===1.4.4
 XStatic-Graphlib===2.1.7.0
 pyserial===3.5
-moto===3.1.7
+moto===3.1.8
 infi.dtypes.wwn===0.1.1
 python-freezerclient===4.4.0
 os-xenapi===0.3.4
@@ -113,7 +113,7 @@ python-swiftclient===3.13.1
 pyOpenSSL===22.0.0
 monasca-common===3.5.0
 zeroconf===0.37.0;python_version=='3.6'
-zeroconf===0.38.5;python_version=='3.8'
+zeroconf===0.38.6;python_version=='3.8'
 scipy===1.5.4;python_version=='3.6'
 scipy===1.8.0;python_version=='3.8'
 python-gnupg===0.4.8
@@ -336,7 +336,7 @@ XStatic-Dagre===0.6.4.1
 platformdirs===2.4.0;python_version=='3.6'
 platformdirs===2.5.2;python_version=='3.8'
 pydotplus===2.0.2
-boto3===1.22.8
+boto3===1.22.9
 jeepney===0.7.1;python_version=='3.6'
 jeepney===0.8.0;python_version=='3.8'
 stestr===3.2.1
@@ -445,7 +445,7 @@ python-solumclient===3.5.0
 krb5===0.3.0
 PyMySQL===1.0.2
 uhashring===2.1
-kubernetes===23.3.0
+kubernetes===23.6.0
 httplib2===0.20.4
 betamax===0.8.1
 construct===2.10.68
@@ -467,8 +467,8 @@ backports.zoneinfo===0.2.1
 oslo.upgradecheck===1.5.0
 stevedore===3.5.0
 pywinrm===0.4.3
-botocore===1.25.8
-xmltodict===0.12.0
+botocore===1.25.9
+xmltodict===0.13.0
 pyasn1===0.4.8
 directord===0.12.0
 oslo.rootwrap===6.3.1
@@ -478,7 +478,7 @@ pexpect===4.8.0
 contextvars===2.4
 cmd2===2.4.1
 python-json-logger===2.0.2
-redis===4.2.2
+redis===4.3.0
 jmespath===0.10.0;python_version=='3.6'
 jmespath===1.0.0;python_version=='3.8'
 click===8.0.4;python_version=='3.6'
