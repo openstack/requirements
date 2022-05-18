@@ -224,7 +224,7 @@ python-3parclient===4.2.12
 unittest2===1.1.0
 django-compressor===2.4.1
 libvirt-python===8.3.0
-python-zunclient===4.4.0
+python-zunclient===4.5.0
 tzlocal===4.2
 sphinxcontrib-jsmath===1.0.1
 python-novaclient===17.7.0
