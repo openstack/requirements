@@ -318,7 +318,7 @@ django-pyscss===2.0.2
 uritemplate===4.1.1
 docutils===0.17.1
 threadpoolctl===3.1.0
-os-ken===2.3.1
+os-ken===2.4.0
 ujson===4.3.0;python_version=='3.6'
 ujson===5.2.0;python_version=='3.8'
 selenium===3.141.0
