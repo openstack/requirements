@@ -553,7 +553,7 @@ jaeger-client===4.8.0;python_version=='3.8'
 XStatic-Json2yaml===0.1.1.0
 pyroute2.ipset===0.6.9
 boto===2.49.0
-os-vif===2.7.1
+os-vif===2.8.0
 hyperlink===21.0.0
 mitba===1.1.1
 python-masakariclient===7.2.0
