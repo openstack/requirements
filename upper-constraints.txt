@@ -579,7 +579,7 @@ statsd===3.3.0
 XenAPI===2.14
 importlib-resources===5.4.0;python_version=='3.6'
 importlib-resources===5.7.1;python_version=='3.8'
-python-keystoneclient===4.4.0
+python-keystoneclient===4.5.0
 ceilometer===18.0.0
 diskimage-builder===3.21.1
 heat-translator===2.5.0
