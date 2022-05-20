@@ -405,7 +405,7 @@ idna===3.3
 yamlloader===1.1.0
 protobuf===3.19.4;python_version=='3.6'
 protobuf===3.20.1;python_version=='3.8'
-sushy===4.1.1
+sushy===4.2.0
 python-neutronclient===7.8.0
 pika===1.2.1
 oslo.cache===2.11.0
