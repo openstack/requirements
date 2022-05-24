@@ -21,6 +21,9 @@
         - build-wheel-cache-ubuntu-focal:
             files:
               - bindep.txt
+        - build-wheel-cache-ubuntu-jammy:
+            files:
+              - bindep.txt
         - openstack-tox-validate
         - requirements-tox-babel
         - requirements-tox-bindep:
@@ -76,6 +79,9 @@
         - build-wheel-cache-ubuntu-focal-arm64:
             files:
               - bindep.txt
+        - build-wheel-cache-ubuntu-jammy-arm64:
+            files:
+              - bindep.txt
     gate:
       jobs:
         - build-wheel-cache-centos-7:
@@ -94,6 +100,9 @@
             files:
               - bindep.txt
         - build-wheel-cache-ubuntu-focal:
+            files:
+              - bindep.txt
+        - build-wheel-cache-ubuntu-jammy:
             files:
               - bindep.txt
         - openstack-tox-validate
