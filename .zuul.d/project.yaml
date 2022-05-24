@@ -29,7 +29,9 @@
         - requirements-tox-py39-check-uc
         - requirements-tox-validate-projects:
             voting: false
+        - cross-aodh-py38
         - cross-barbican-py38
+        - cross-ceilometer-py38
         - cross-cinder-py38
         - cross-designate-py38
         - cross-glance-py38
