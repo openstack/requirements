@@ -233,7 +233,7 @@ uritemplate===3.0.0
 django-babel===0.5.1
 docutils===0.13.1
 notifier===1.0.3
-ujson===1.35
+ujson===5.2.0
 selenium===3.3.0
 mypy===0.501;python_version=='3.4'
 mypy===0.501;python_version=='3.5'
