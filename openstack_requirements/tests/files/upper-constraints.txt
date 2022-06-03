@@ -325,7 +325,7 @@ PyMySQL===0.7.10
 kubernetes===1.0.0
 httplib2===0.10.3
 os-cloud-config===6.0.0
-bottle===0.12.13
+bottle===0.12.20
 betamax===0.8.0
 construct===2.8.10
 pyparsing===2.2.0
