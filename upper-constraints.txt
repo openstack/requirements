@@ -53,7 +53,7 @@ jsonpath-rw-ext===1.2.2
 python-mistralclient===4.4.0
 oslo.context===4.1.0
 python-senlinclient===2.4.0
-rcssmin===1.0.6
+rcssmin===1.1.0
 pycadf===3.1.1
 grpcio===1.46.3
 pysendfile===2.0.1
@@ -78,7 +78,7 @@ XStatic-jQuery===1.12.4.1
 ddt===1.5.0
 XStatic-Graphlib===2.1.7.0
 pyserial===3.5
-moto===3.1.12
+moto===3.1.13
 infi.dtypes.wwn===0.1.1
 python-freezerclient===4.4.0
 os-xenapi===0.3.4
@@ -86,7 +86,7 @@ python-vitrageclient===4.5.0
 nosexcover===1.0.11
 krest===1.3.3
 psycopg2===2.9.3
-networkx===2.8.3
+networkx===2.8.4
 bashate===2.1.0
 XStatic-Angular===1.8.2.2
 pyngus===2.3.1
@@ -104,7 +104,7 @@ immutables===0.18
 python-swiftclient===4.0.0
 pyOpenSSL===22.0.0
 monasca-common===3.5.0
-zeroconf===0.38.6
+zeroconf===0.38.7
 scipy===1.8.1
 python-gnupg===0.4.9
 mypy-extensions===0.4.3
@@ -132,7 +132,7 @@ oslotest===4.5.0
 jsonpointer===2.3
 defusedxml===0.7.1
 netaddr===0.8.0
-pyghmi===1.5.45
+pyghmi===1.5.47
 sphinxcontrib-blockdiag===3.0.0
 thrift===0.16.0
 gnocchiclient===7.0.6
@@ -141,7 +141,7 @@ sphinxcontrib.datatemplates===0.9.1
 jsonpath-rw===1.4.0
 prettytable===3.3.0
 vine===5.0.0
-pyroute2.nftables===0.6.9
+pyroute2.nftables===0.6.12
 taskflow===5.0.0
 traceback2===1.4.0
 arrow===1.2.2
@@ -150,11 +150,11 @@ async-timeout===4.0.2
 virtualbmc===2.2.1
 deprecation===2.1.0
 SQLAlchemy===1.4.37
-pyroute2===0.6.9
-google-auth===2.7.0
+pyroute2===0.6.12
+google-auth===2.8.0
 kazoo===2.8.0
 pyspnego===0.5.2
-pyroute2.ethtool===0.6.9
+pyroute2.ethtool===0.6.12
 XStatic-roboto-fontface===0.5.0.0
 pyudev===0.23.2
 eventlet===0.33.1
@@ -205,7 +205,7 @@ storpool===7.1.0
 textfsm===1.1.2
 python-3parclient===4.2.12
 unittest2===1.1.0
-django-compressor===2.4.1
+django-compressor===4.0
 libvirt-python===8.4.0
 python-zunclient===4.5.0
 tzlocal===4.2
@@ -259,7 +259,7 @@ lockfile===0.12.2
 ldappool===3.0.0
 termcolor===1.1.0
 joblib===1.1.0
-google-api-python-client===2.50.0
+google-api-python-client===2.51.0
 castellan===3.11.0
 oslo.versionedobjects===2.6.0
 ssh-python===0.10.0
@@ -309,7 +309,7 @@ retrying===1.3.3
 XStatic-Dagre===0.6.4.1
 platformdirs===2.5.2
 pydotplus===2.0.2
-boto3===1.24.7
+boto3===1.24.9
 jeepney===0.8.0
 stestr===3.2.1
 oslo.serialization===4.3.0
@@ -428,12 +428,12 @@ backports.zoneinfo===0.2.1;python_version=='3.8'
 oslo.upgradecheck===1.5.0
 stevedore===3.5.0
 pywinrm===0.4.3
-botocore===1.27.7
+botocore===1.27.9
 xmltodict===0.13.0
 pyasn1===0.4.8
 directord===0.12.0
 oslo.rootwrap===6.3.1
-pyroute2.nslink===0.6.9
+pyroute2.nslink===0.6.12
 Django===3.2.13
 pexpect===4.8.0
 contextvars===2.4
@@ -459,7 +459,7 @@ dulwich===0.20.43
 dfs-sdk===1.2.27
 sentinels===1.0.0
 kombu===5.2.4
-pyroute2.ndb===0.6.9
+pyroute2.ndb===0.6.12
 distro===1.7.0
 zstd===1.5.2.5
 yaql===2.0.0
@@ -495,15 +495,15 @@ pyrsistent===0.18.1
 repoze.lru===0.7
 rfc3986===1.5.0
 tenacity===6.3.1
-pyroute2.core===0.6.9
+pyroute2.core===0.6.12
 python-designateclient===4.5.0
-pyroute2.ipdb===0.6.9
+pyroute2.ipdb===0.6.12
 future===0.18.2
 Paste===3.5.0
 pytest-django===4.5.2
 jaeger-client===4.8.0
 XStatic-Json2yaml===0.1.1.0
-pyroute2.ipset===0.6.9
+pyroute2.ipset===0.6.12
 boto===2.49.0
 os-vif===2.8.0
 hyperlink===21.0.0
@@ -538,7 +538,7 @@ anyio===3.6.1
 XStatic-Angular-lrdragndrop===1.0.2.4
 ovsdbapp===1.16.1
 aniso8601===9.0.1
-rjsmin===1.1.0
+rjsmin===1.2.0
 icalendar===4.0.9
 decorator===5.1.1
 DateTimeRange===1.2.0
@@ -556,7 +556,7 @@ storpool.spopenstack===3.1.0
 sphinx-testing===1.0.1
 dnspython===2.2.1
 oauthlib===3.2.0
-Babel===2.10.1
+Babel===2.10.2
 logutils===0.3.5
 zipp===3.8.0
 greenlet===1.1.2
