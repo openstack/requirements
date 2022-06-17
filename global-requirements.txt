@@ -129,7 +129,7 @@ networking-l2gw  # Apache-2.0
 networking-odl  # Apache-2.0
 networking-sfc  # Apache-2.0
 # NOTE(fdegir): NetworkX 2.3 dropped support for Python 2
-networkx  # BSD
+networkx!=2.8.4  # BSD
 # NOTE(ralonsoh): neutron-lib 2.0.0 dropped support for Python 2
 neutron-lib  # Apache-2.0
 neutron-dynamic-routing  # Apache-2.0
