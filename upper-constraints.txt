@@ -135,7 +135,7 @@ netaddr===0.8.0
 pyghmi===1.5.47
 sphinxcontrib-blockdiag===3.0.0
 thrift===0.16.0
-gnocchiclient===7.0.6
+gnocchiclient===7.0.7
 wcwidth===0.2.5
 sphinxcontrib.datatemplates===0.9.1
 jsonpath-rw===1.4.0
