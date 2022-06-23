@@ -146,7 +146,7 @@ pyghmi===1.5.34
 sphinxcontrib-blockdiag===2.0.0;python_version=='3.6'
 sphinxcontrib-blockdiag===3.0.0;python_version=='3.8'
 thrift===0.15.0
-gnocchiclient===7.0.6
+gnocchiclient===7.0.7
 wcwidth===0.2.5
 sphinxcontrib.datatemplates===0.9.1
 jsonpath-rw===1.4.0
