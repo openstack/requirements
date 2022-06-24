@@ -60,4 +60,3 @@
     parent: requirements-tox-py38-check-uc
     nodeset: ubuntu-focal-arm64
     timeout: 7200
-    pre-run: playbooks/build-kafka.yaml
