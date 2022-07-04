@@ -18,7 +18,7 @@ confget===4.1.0
 XStatic-Angular-Bootstrap===2.5.0.0
 WebOb===1.8.7
 sphinxcontrib-actdiag===3.0.0
-pecan===1.4.1
+pecan===1.4.2
 ryu===4.34
 os-api-ref===2.3.0
 python-ldap===3.4.0
@@ -178,7 +178,7 @@ PyKMIP===0.10.0
 whereto===0.4.0
 pywbem===1.4.1
 python-subunit===1.4.0
-tornado===6.1
+tornado===6.2
 pycparser===2.21
 mock===4.0.3
 PyYAML===6.0
@@ -295,7 +295,7 @@ uritemplate===4.1.1
 docutils===0.17.1
 threadpoolctl===3.1.0
 os-ken===2.4.0
-ujson===5.3.0
+ujson===5.4.0
 selenium===3.141.0
 mypy===0.961
 mistral-lib===2.6.0
