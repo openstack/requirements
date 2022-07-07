@@ -263,7 +263,7 @@ funcparserlib===1.0.0a0;python_version=='3.8'
 passlib===1.7.4
 dib-utils===0.0.11
 cliff===3.10.1
-os-brick===5.2.0
+os-brick===5.2.1
 ansible-runner===2.1.2
 pytz-deprecation-shim===0.1.0.post0
 scp===0.14.4
