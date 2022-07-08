@@ -52,7 +52,7 @@ dnspython!=2.0.0,!=2.2.0  # http://www.dnspython.org/LICENSE
 # indirectly and we needed to blacklist 0.13.1 for problems with
 # Sphinx 1.3. This can be now removed once all projects removed it.
 docutils  # OSI-Approved Open Source, Public Domain
-dogpile.cache!=0.9.1  # BSD
+dogpile.cache!=0.9.1,!=1.1.7  # BSD
 dogtag-pki  # LGPLv3+
 dulwich!=0.19.3,!=0.19.7  # Apache-2.0
 edgegrid-python  # Apache-2.0
