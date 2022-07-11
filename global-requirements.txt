@@ -339,7 +339,7 @@ tosca-parser  # Apache-2.0
 tripleo-common!=11.3.0  # Apache-2.0
 validations-libs  # Apache-2.0
 urllib3  # MIT
-warlock<2  # Apache-2.0
+warlock  # Apache-2.0
 WebOb  # MIT
 websocket-client  # LGPLv2+
 websockify  # LGPLv3
