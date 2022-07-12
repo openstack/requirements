@@ -36,7 +36,7 @@ setproctitle===1.2.3
 pytest===7.1.2
 python-slugify===6.1.2
 cursive===0.2.2
-oslo.service===2.8.0
+oslo.service===3.0.0
 django-appconf===1.0.5
 sphinxcontrib-nwdiag===2.0.0
 rbd-iscsi-client===0.1.8
