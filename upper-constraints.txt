@@ -288,7 +288,7 @@ nodeenv===1.7.0
 gossip===2.4.0
 suds-community===1.1.2
 importlib-metadata===4.12.0
-oslo.middleware===4.5.1
+oslo.middleware===5.0.0
 XStatic-mdi===1.6.50.2
 django-pyscss===2.0.2
 uritemplate===4.1.1
