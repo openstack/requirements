@@ -425,7 +425,7 @@ WSME===0.11.0
 tomli===2.0.1
 proboscis===1.2.6.0
 backports.zoneinfo===0.2.1;python_version=='3.8'
-oslo.upgradecheck===1.5.0
+oslo.upgradecheck===2.0.0
 stevedore===3.5.0
 pywinrm===0.4.3
 botocore===1.27.22
