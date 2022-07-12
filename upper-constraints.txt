@@ -483,7 +483,7 @@ mbstrdecoder===1.1.0
 abclient===0.2.3
 pymemcache===3.5.2
 wrapt===1.14.1
-oslo.privsep===2.8.0
+oslo.privsep===3.0.0
 sphinxcontrib-apidoc===0.3.0
 oslo.policy===4.0.0
 python-muranoclient===2.4.1
