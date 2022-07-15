@@ -80,7 +80,7 @@ XStatic-Graphlib===2.1.7.0
 pyserial===3.5
 moto===3.1.16
 infi.dtypes.wwn===0.1.1
-python-freezerclient===4.4.0
+python-freezerclient===5.0.0
 os-xenapi===0.3.4
 python-vitrageclient===4.5.0
 nosexcover===1.0.11
