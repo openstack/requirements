@@ -25,6 +25,9 @@ from openstack_requirements import requirement
 
 MIN_PY_VERSION = '3.5'
 PY3_SPECIFIER_RE = re.compile(r'python_version(==|>=|>)[\'"]3\.\d+[\'"]')
+BACKPORTS = {
+    'importlib-metadata',
+}
 
 
 class RequirementsList(object):
@@ -98,18 +101,36 @@ def _is_requirement_in_global_reqs(local_req, global_reqs, allow_3_only=False):
             if local_req_val != global_req_val:
                 # if global requirements specifies a python 3 version specifier
                 # but a project doesn't, allow it since python 3-only is okay
-                if (allow_3_only and matching and
-                        aname == 'markers' and not local_req_val):
+                if (
+                    allow_3_only and
+                    matching and
+                    aname == 'markers' and
+                    not local_req_val
+                ):
                     if PY3_SPECIFIER_RE.match(global_req_val):
                         continue
 
-                print('WARNING: possible mismatch found for package '
-                      '"{}"'.format(local_req.package))
-                print('   Attribute "{}" does not match'.format(aname))
-                print('   "{}" does not match "{}"'.format(
-                    local_req_val, global_req_val))
-                print('   {}'.format(local_req))
-                print('   {}'.format(global_req))
+                # likewise, if a package is one of the backport packages then
+                # we're okay with a potential marker (e.g. if a package
+                # requires a feature that is only available in a newer Python
+                # library, while other packages are happy without this feeature
+                if (
+                    allow_3_only and
+                    matching and
+                    aname == 'markers' and
+                    local_req.package in BACKPORTS
+                ):
+                    if (
+                        PY3_SPECIFIER_RE.match(global_req_val) or
+                        PY3_SPECIFIER_RE.match(local_req_val)
+                    ):
+                        continue
+
+                print(f'WARNING: possible mismatch found for package "{local_req.package}"')  # noqa: E501
+                print(f'   Attribute "{aname}" does not match')
+                print(f'   "{local_req_val}" does not match "{global_req_val}"')  # noqa: E501
+                print(f'   {local_req}')
+                print(f'   {global_req}')
                 matching = False
         if not matching:
             continue
