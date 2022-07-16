@@ -398,7 +398,7 @@ msgpack===1.0.4
 Sphinx===4.5.0
 oslo.config===9.0.0
 openstackdocstheme===2.4.0
-osc-placement===3.2.0
+osc-placement===4.0.0
 zake===0.2.2
 python-rsdclient===1.0.2
 flux===1.3.5
