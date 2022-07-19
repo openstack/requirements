@@ -240,7 +240,7 @@ pyngus  # Apache-2.0
 
 pyOpenSSL  # Apache-2.0
 pyparsing  # MIT
-pyroute2!=0.5.4,!=0.5.5;sys_platform!='win32'  # Apache-2.0 (+ dual licensed GPL2)
+pyroute2!=0.5.4,!=0.5.5,!=0.7.1;sys_platform!='win32'  # Apache-2.0 (+ dual licensed GPL2)
 pysnmp  # BSD
 pystache  # MIT
 pysaml2!=4.0.3,!=4.0.4,!=4.0.5,!=4.0.5rc1,!=4.1.0,!=4.2.0,!=4.3.0,!=4.4.0,!=4.6.0  # Apache-2.0
