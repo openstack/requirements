@@ -176,7 +176,7 @@ os-service-types  # Apache-2.0
 os-testr  # Apache-2.0
 os-traits  # Apache-2.0
 os-ken  # Apache-2.0
-os-vif!=1.8.0,!=1.12.0  # Apache-2.0
+os-vif!=1.8.0,!=1.12.0,!=3.0.0  # Apache-2.0
 ovs  # Apache-2.0
 os-win  # Apache-2.0
 os-xenapi  # Apache-2.0
