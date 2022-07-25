@@ -2,7 +2,7 @@ ntlm-auth===1.5.0
 voluptuous===0.13.1
 chardet===4.0.0
 enum-compat===0.0.3
-rsa===4.8
+rsa===4.9
 restructuredtext-lint===1.4.0
 netmiko===4.1.1
 sshtunnel===0.4.0
@@ -124,7 +124,7 @@ MarkupSafe===2.1.1
 pypowervm===1.1.27
 ruamel.yaml.clib===0.2.6
 doc8===0.11.2
-pymongo===4.1.1
+pymongo===4.2.0
 python-cloudkittyclient===4.5.0
 soupsieve===2.3.2.post1
 sqlparse===0.4.2
@@ -171,7 +171,7 @@ ncclient===0.6.13
 imagesize===1.4.1
 pydot===1.4.2
 urllib3===1.26.10
-graphviz===0.20
+graphviz===0.20.1
 PyKMIP===0.10.0
 whereto===0.4.0
 pywbem===1.4.1
@@ -307,7 +307,7 @@ retrying===1.3.3
 XStatic-Dagre===0.6.4.1
 platformdirs===2.5.2
 pydotplus===2.0.2
-boto3===1.24.33
+boto3===1.24.36
 jeepney===0.8.0
 stestr===3.2.1
 oslo.serialization===5.0.0
@@ -331,7 +331,7 @@ sphinx-rtd-theme===1.0.0
 automaton===3.0.0
 os-service-types===1.7.0
 keyring===23.7.0
-elementpath===3.0.0
+elementpath===3.0.1
 testscenarios===0.5.0
 sphinxcontrib-pecanwsme===0.10.0
 sadisplay===0.4.9
@@ -369,7 +369,7 @@ linecache2===1.0.0
 oauth2client===4.1.3
 idna===3.3
 yamlloader===1.1.0
-protobuf===4.21.2
+protobuf===4.21.3
 sushy===4.2.0
 python-neutronclient===8.0.0
 pika===1.3.0
@@ -426,7 +426,7 @@ backports.zoneinfo===0.2.1;python_version=='3.8'
 oslo.upgradecheck===2.0.0
 stevedore===4.0.0
 pywinrm===0.4.3
-botocore===1.27.33
+botocore===1.27.36
 xmltodict===0.13.0
 pyasn1===0.4.8
 directord===0.12.0
@@ -502,11 +502,11 @@ os-vif===3.0.0
 hyperlink===21.0.0
 mitba===1.1.1
 python-masakariclient===7.2.0
-Werkzeug===2.1.2
+Werkzeug===2.2.0
 pyasn1-modules===0.2.8
 APScheduler===3.9.1
 monotonic===1.6
-xmlschema===2.0.0
+xmlschema===2.0.1
 python-troveclient===7.3.0
 etcd3===0.12.0
 cachez===0.1.2
@@ -519,7 +519,7 @@ sphinxcontrib-qthelp===1.0.3
 keystoneauth1===5.0.0
 statsd===3.3.0
 XenAPI===2.14
-importlib-resources===5.8.0;python_version=='3.8'
+importlib-resources===5.9.0;python_version=='3.8'
 python-keystoneclient===5.0.0
 ceilometer===18.0.0
 diskimage-builder===3.22.0
