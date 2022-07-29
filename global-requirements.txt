@@ -479,7 +479,7 @@ virtualbmc  # Apache-2.0
 virtualenv!=16.3.0  # MIT
 wrapt  # BSD License
 WebTest  # MIT
-Werkzeug  # BSD License
+Werkzeug!=2.2.0  # BSD License
 whereto  # Apache-2.0
 xmltodict  # MIT
 wsgi-intercept  # MIT License
