@@ -18,16 +18,11 @@
 import argparse
 import collections
 
-from openstack_requirements import requirement
+from openstack_requirements.utils import read_requirements_file
+
 
 import packaging.specifiers
 import packaging.version
-
-
-def read_requirements_file(filename):
-    with open(filename, 'rt') as f:
-        body = f.read()
-    return requirement.parse(body)
 
 
 def get_requirements_version(req):
