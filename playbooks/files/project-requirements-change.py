@@ -113,6 +113,11 @@ def main():
             global_reqs = check.get_global_reqs(f.read())
         blacklist = requirement.parse(
             open(reqdir + '/blacklist.txt', 'rt').read())
+        backports_file = reqdir + '/backports.txt'
+        if os.path.exists(backports_file):
+            backports = requirement.parse(open(backports_file, 'rt').read())
+        else:
+            backports = {}
         cwd = os.getcwd()
         # build a list of requirements in the proposed change,
         # and check them for style violations while doing so
@@ -136,6 +141,7 @@ def main():
             head_reqs,
             blacklist,
             global_reqs,
+            list(backports.keys()),
             allow_3_only=python_3_branch,
         )
 

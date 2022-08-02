@@ -25,9 +25,6 @@ from openstack_requirements import requirement
 
 MIN_PY_VERSION = '3.5'
 PY3_SPECIFIER_RE = re.compile(r'python_version(==|>=|>)[\'"]3\.\d+[\'"]')
-BACKPORTS = {
-    'importlib-metadata',
-}
 
 
 class RequirementsList(object):
@@ -90,7 +87,12 @@ def _get_exclusions(req):
     )
 
 
-def _is_requirement_in_global_reqs(local_req, global_reqs, allow_3_only=False):
+def _is_requirement_in_global_reqs(
+    local_req,
+    global_reqs,
+    backports,
+    allow_3_only=False,
+):
     req_exclusions = _get_exclusions(local_req)
     for global_req in global_reqs:
 
@@ -118,7 +120,7 @@ def _is_requirement_in_global_reqs(local_req, global_reqs, allow_3_only=False):
                     allow_3_only and
                     matching and
                     aname == 'markers' and
-                    local_req.package in BACKPORTS
+                    local_req.package in backports
                 ):
                     if (
                         PY3_SPECIFIER_RE.match(global_req_val) or
@@ -195,8 +197,16 @@ def _get_python3_reqs(reqs):
     return results
 
 
-def _validate_one(name, reqs, blacklist, global_reqs, allow_3_only=False):
+def _validate_one(
+    name,
+    reqs,
+    blacklist,
+    global_reqs,
+    backports,
+    allow_3_only=False,
+):
     """Returns True if there is a failure."""
+
     if name in blacklist:
         # Blacklisted items are not synced and are managed
         # by project teams as they see fit, so no further
@@ -213,7 +223,8 @@ def _validate_one(name, reqs, blacklist, global_reqs, allow_3_only=False):
         else:
             counts[''] = counts.get('', 0) + 1
         if not _is_requirement_in_global_reqs(
-                req, global_reqs[name], allow_3_only):
+            req, global_reqs[name], backports, allow_3_only,
+        ):
             return True
         # check for minimum being defined
         min = [s for s in req.specifiers.split(',') if '>' in s]
@@ -245,7 +256,13 @@ def _validate_one(name, reqs, blacklist, global_reqs, allow_3_only=False):
     return False
 
 
-def validate(head_reqs, blacklist, global_reqs, allow_3_only=False):
+def validate(
+    head_reqs,
+    blacklist,
+    global_reqs,
+    backports,
+    allow_3_only=False,
+):
     failed = False
     # iterate through the changing entries and see if they match the global
     # equivalents we want enforced
@@ -258,6 +275,7 @@ def validate(head_reqs, blacklist, global_reqs, allow_3_only=False):
                     reqs,
                     blacklist,
                     global_reqs,
+                    backports,
                     allow_3_only,
                 )
                 or failed
