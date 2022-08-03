@@ -451,7 +451,7 @@ cotyledon===1.7.3
 xattr===0.9.9
 systemd-python===234
 python-memcached===1.59
-openstacksdk===0.99.0
+openstacksdk===0.100.0
 six===1.16.0
 dulwich===0.20.45
 dfs-sdk===1.2.27
