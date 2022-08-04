@@ -320,7 +320,7 @@ s3transfer===0.5.0
 text-unidecode===1.3
 sphinxcontrib-svg2pdfconverter===1.1.1
 murano-pkg-check===0.3.0
-oslo.vmware===3.9.2
+oslo.vmware===3.9.3
 XStatic-moment===2.8.4.3
 autopage===0.4.0
 sqlalchemy-migrate===0.13.0
