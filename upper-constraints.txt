@@ -365,7 +365,7 @@ SecretStorage===3.3.2
 opentracing===2.4.0
 XStatic-Rickshaw===1.5.1.0
 iso8601===1.0.2
-tooz===2.11.1
+tooz===3.0.0
 linecache2===1.0.0
 oauth2client===4.1.3
 idna===3.3
