@@ -17,6 +17,7 @@ pyflakes
 pycodestyle
 pylint
 yamllint
+bashate
 
 # The following Neutron libraries need to be blacklisted
 # as they do not use cycle-with-intermediary.  The only time they
