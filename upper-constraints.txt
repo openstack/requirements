@@ -247,7 +247,7 @@ influxdb===5.3.1
 funcparserlib===1.0.0
 passlib===1.7.4
 dib-utils===0.0.11
-cliff===3.10.1
+cliff===4.0.0
 os-brick===6.0.0
 ansible-runner===2.2.1
 pytz-deprecation-shim===0.1.0.post0
