@@ -159,6 +159,14 @@
       tox_envlist: py38
 
 - job:
+    name: cross-mistral-py38
+    parent: requirements-cross-test
+    description: Run cross-project tests on mistral with py38.
+    required-projects: openstack/mistral
+    vars:
+      tox_envlist: py38
+
+- job:
     name: cross-neutron-py38
     parent: requirements-cross-test
     description: Run cross-project tests on neutron with py38.

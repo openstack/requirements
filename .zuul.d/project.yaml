@@ -46,6 +46,7 @@
         - cross-kuryr-py38
         - cross-manila-py38
         - cross-masakari-py38
+        - cross-mistral-py38
         - cross-neutron-py38
         - cross-nova-py38
         - cross-placement-py38
