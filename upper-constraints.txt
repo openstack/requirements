@@ -229,7 +229,7 @@ threadloop===1.0.2
 amqp===5.1.1
 ruamel.yaml===0.17.21
 websockify===0.10.0
-gssapi===1.8.0
+gssapi===1.8.1
 XStatic-JQuery.quicksearch===2.0.3.2
 mpmath===1.2.1
 python-binary-memcached===0.31.1
