@@ -149,15 +149,15 @@ virtualbmc===2.2.2
 deprecation===2.1.0
 SQLAlchemy===1.4.40
 pyroute2===0.7.2
-google-auth===2.10.0
+google-auth===2.11.0
 kazoo===2.8.0
-pyspnego===0.5.4
+pyspnego===0.6.0
 XStatic-roboto-fontface===0.5.0.0
 pyudev===0.23.2
 eventlet===0.33.1
 openstack-doc-tools===3.3.1
 oslo.messaging===13.0.0
-jira===3.3.2
+jira===3.4.0
 extras===1.0.0
 PyJWT===2.4.0
 typing_extensions===4.3.0
@@ -214,7 +214,7 @@ os-client-config===2.1.0
 XStatic-Angular-Gettext===2.4.1.0
 Deprecated===1.2.13
 h11===0.12.0
-Pygments===2.12.0
+Pygments===2.13.0
 XStatic-Hogan===2.0.0.3
 XStatic-objectpath===1.2.1.0
 python-manilaclient===4.0.0
@@ -257,7 +257,7 @@ lockfile===0.12.2
 ldappool===3.0.0
 termcolor===1.1.0
 joblib===1.1.0
-google-api-python-client===2.56.0
+google-api-python-client===2.57.0
 castellan===4.0.0
 oslo.versionedobjects===3.0.0
 ssh-python===0.10.0
@@ -268,7 +268,7 @@ autobahn===22.7.1
 SQLAlchemy-Utils===0.38.3
 retryz===0.1.9
 pluggy===1.0.0
-coverage===6.4.3
+coverage===6.4.4
 freezegun===1.2.2
 toml===0.10.2
 pycdlib===1.13.0
@@ -307,7 +307,7 @@ retrying===1.3.3
 XStatic-Dagre===0.6.4.1
 platformdirs===2.5.2
 pydotplus===2.0.2
-boto3===1.24.51
+boto3===1.24.56
 jeepney===0.8.0
 stestr===3.2.1
 oslo.serialization===5.0.0
@@ -426,7 +426,7 @@ backports.zoneinfo===0.2.1;python_version=='3.8'
 oslo.upgradecheck===2.0.0
 stevedore===4.0.0
 pywinrm===0.4.3
-botocore===1.27.51
+botocore===1.27.56
 xmltodict===0.13.0
 pyasn1===0.4.8
 directord===0.12.0
@@ -444,7 +444,7 @@ kuryr-lib===2.5.0
 scrypt===0.8.20
 jsonpatch===1.32
 python-daemon===2.3.1
-types-cryptography===3.3.21
+types-cryptography===3.3.22
 os-testr===3.0.0
 cotyledon===1.7.3
 xattr===0.9.9
@@ -493,7 +493,7 @@ rfc3986===1.5.0
 tenacity===6.3.1
 python-designateclient===5.0.0
 future===0.18.2
-Paste===3.5.1
+Paste===3.5.2
 pytest-django===4.5.2
 jaeger-client===4.8.0
 XStatic-Json2yaml===0.1.1.0
@@ -525,7 +525,7 @@ ceilometer===18.0.0
 diskimage-builder===3.23.0
 heat-translator===2.5.0
 python-magnumclient===3.7.0
-docker===5.0.3
+docker===6.0.0
 storops===1.2.11
 anyio===3.6.1
 XStatic-Angular-lrdragndrop===1.0.2.4
@@ -540,7 +540,7 @@ python-cyborgclient===2.0.0
 futurist===2.4.1
 jsonschema===4.7.2
 sphinxcontrib-devhelp===1.0.2
-python-blazarclient===3.4.0
+python-blazarclient===3.4.1
 alembic===1.8.1
 execnet===1.9.0
 glance-store===4.0.1
@@ -558,7 +558,7 @@ iniconfig===1.1.1
 confluent-kafka===1.9.2
 xvfbwrapper===0.2.9
 tosca-parser===2.6.0
-charset-normalizer===2.1.0
+charset-normalizer===2.1.1
 Flask===2.2.2
 httpx===0.23.0
 sqlalchemy-filters===0.12.0
