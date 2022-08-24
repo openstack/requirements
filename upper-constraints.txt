@@ -11,7 +11,7 @@ typing===3.7.4.3
 python-saharaclient===4.0.0
 Routes===2.5.1
 rtslib-fb===2.1.75
-oslo.limit===2.0.0
+oslo.limit===2.0.1
 tzdata===2022.2
 smmap===5.0.0
 confget===4.1.0
