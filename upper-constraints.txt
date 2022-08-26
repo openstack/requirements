@@ -296,7 +296,7 @@ os-ken===2.5.0
 ujson===5.4.0
 selenium===3.141.0
 mypy===0.971
-mistral-lib===2.6.0
+mistral-lib===2.7.0
 dogtag-pki===10.7.4.1
 XStatic-Angular-UUID===0.0.4.0
 purestorage===1.19.0
