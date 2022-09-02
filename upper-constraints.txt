@@ -152,6 +152,7 @@ sphinxcontrib.datatemplates===0.9.1
 jsonpath-rw===1.4.0
 prettytable===2.5.0;python_version=='3.6'
 prettytable===3.1.1;python_version=='3.8'
+prettytable===3.3.0;python_version=='3.9'
 vine===5.0.0
 pyroute2.nftables===0.6.6
 taskflow===4.6.4
