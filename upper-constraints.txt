@@ -138,7 +138,7 @@ gnocchiclient===7.0.7
 wcwidth===0.2.5
 sphinxcontrib.datatemplates===0.9.1
 jsonpath-rw===1.4.0
-prettytable===3.3.0
+prettytable===3.4.1
 vine===5.0.0
 taskflow===5.0.0
 traceback2===1.4.0
