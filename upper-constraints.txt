@@ -524,7 +524,7 @@ python-keystoneclient===5.0.1
 ceilometer===19.0.0.0rc1
 diskimage-builder===3.24.0
 heat-translator===2.6.0
-python-magnumclient===3.7.0
+python-magnumclient===4.0.0
 docker===6.0.0
 storops===1.2.11
 anyio===3.6.1
