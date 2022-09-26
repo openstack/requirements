@@ -71,7 +71,7 @@ nosehtmloutput===0.0.7
 waitress===2.1.2
 os-refresh-config===13.1.0
 pysnmp===4.4.12
-Mako===1.2.1
+Mako===1.2.2
 pyScss===1.4.0
 sphinxcontrib-htmlhelp===2.0.0
 XStatic-jQuery===1.12.4.1
