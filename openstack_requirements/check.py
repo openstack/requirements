@@ -115,17 +115,20 @@ def _is_requirement_in_global_reqs(
                 # likewise, if a package is one of the backport packages then
                 # we're okay with a potential marker (e.g. if a package
                 # requires a feature that is only available in a newer Python
-                # library, while other packages are happy without this feeature
+                # library, while other packages are happy without this feature
                 if (
-                    allow_3_only and
                     matching and
                     aname == 'markers' and
                     local_req.package in backports
                 ):
-                    if (
-                        PY3_SPECIFIER_RE.match(global_req_val) or
-                        PY3_SPECIFIER_RE.match(local_req_val)
+                    if re.match(
+                        r'python_version(==|<=|<)[\'"]3\.\d+[\'"]',
+                        local_req_val,
                     ):
+                        print(
+                            'Ignoring backport package with python_version '
+                            'marker'
+                        )
                         continue
 
                 print(f'WARNING: possible mismatch found for package "{local_req.package}"')  # noqa: E501
@@ -212,9 +215,11 @@ def _validate_one(
         # by project teams as they see fit, so no further
         # testing is needed.
         return False
+
     if name not in global_reqs:
         print("ERROR: Requirement '%s' not in openstack/requirements" % reqs)
         return True
+
     counts = {}
     for req in reqs:
         if req.extras:
@@ -222,16 +227,19 @@ def _validate_one(
                 counts[extra] = counts.get(extra, 0) + 1
         else:
             counts[''] = counts.get('', 0) + 1
+
         if not _is_requirement_in_global_reqs(
             req, global_reqs[name], backports, allow_3_only,
         ):
             return True
+
         # check for minimum being defined
         min = [s for s in req.specifiers.split(',') if '>' in s]
         if not min:
             print("ERROR: Requirement for package '%s' has no lower bound" %
                   name)
             return True
+
     for extra, count in counts.items():
         # Make sure the number of entries matches. If allow_3_only, then we
         # just need to make sure we have at least the number of entries for
@@ -253,6 +261,7 @@ def _validate_one(
                       ('[%s]' % extra) if extra else '',
                       len(global_reqs[name])))
             return True
+
     return False
 
 
