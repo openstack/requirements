@@ -32,31 +32,30 @@
         - requirements-tox-py39-check-uc
         - requirements-tox-validate-projects:
             voting: false
-        - cross-aodh-py38
-        - cross-barbican-py38
-        - cross-ceilometer-py38
-        - cross-cinder-py38
-        - cross-designate-py38
-        - cross-glance-py38
-        - cross-heat-py38
-        - cross-horizon-py38
+        - cross-aodh-py310
+        - cross-barbican-py310
+        - cross-ceilometer-py310
+        - cross-cinder-py310
+        - cross-designate-py310
+        - cross-glance-py310
+        - cross-heat-py310
+        - cross-horizon-py310
         - cross-horizon-npm
-        - cross-ironic-py38
-        - cross-keystone-py38
-        - cross-kuryr-py38
-        - cross-manila-py38
-        - cross-masakari-py38
-        - cross-mistral-py38
-        - cross-neutron-py38
-        - cross-nova-py38
-        - cross-placement-py38
+        - cross-ironic-py310
+        - cross-keystone-py310
+        - cross-kuryr-py310
+        - cross-manila-py310
+        - cross-masakari-py310
+        - cross-mistral-py310
+        - cross-neutron-py310
+        - cross-nova-py310
+        - cross-placement-py310
         - cross-osvif-py3
         - cross-nova-functional
-        - cross-placement-functional-py38
-        - cross-octavia-py38
+        - cross-placement-functional-py310
+        - cross-octavia-py310
         - cross-osc-tox-docs
         - cross-swift-py38
-        - openstack-tox-py38
         - openstacksdk-functional-devstack
         - tempest-full-py3:
             irrelevant-files:
@@ -110,29 +109,28 @@
         - requirements-tox-babel
         - requirements-tox-py38-check-uc
         - requirements-tox-py39-check-uc
-        - cross-cinder-py38
-        - cross-designate-py38
-        - cross-glance-py38
-        - cross-heat-py38
-        - cross-horizon-py38
+        - cross-cinder-py310
+        - cross-designate-py310
+        - cross-glance-py310
+        - cross-heat-py310
+        - cross-horizon-py310
         - cross-horizon-npm
-        - cross-ironic-py38
-        - cross-keystone-py38
-        - cross-kuryr-py38
-        - cross-manila-py38
-        - cross-masakari-py38
-        - cross-neutron-py38
-        - cross-nova-py38:
+        - cross-ironic-py310
+        - cross-keystone-py310
+        - cross-kuryr-py310
+        - cross-manila-py310
+        - cross-masakari-py310
+        - cross-neutron-py310
+        - cross-nova-py310:
             files: ^upper-constraints.txt$
-        - cross-placement-py38:
+        - cross-placement-py310:
             files: ^upper-constraints.txt$
         - cross-osvif-py3
         - cross-nova-functional
-        - cross-placement-functional-py38
-        - cross-octavia-py38
+        - cross-placement-functional-py310
+        - cross-octavia-py310
         - cross-osc-tox-docs
         - cross-swift-py38
-        - openstack-tox-py38
         - openstacksdk-functional-devstack
         - tempest-full-py3:
             irrelevant-files:
