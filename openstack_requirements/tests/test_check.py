@@ -26,7 +26,7 @@ class TestIsReqInGlobalReqs(testtools.TestCase):
 
         self._stdout_fixture = fixtures.StringStream('stdout')
         self.stdout = self.useFixture(self._stdout_fixture).stream
-        self.backports = set()
+        self.backports = list()
         self.useFixture(fixtures.MonkeyPatch('sys.stdout', self.stdout))
 
         self.global_reqs = check.get_global_reqs(textwrap.dedent("""
@@ -88,7 +88,7 @@ class TestIsReqInGlobalReqs(testtools.TestCase):
             check._is_requirement_in_global_reqs(
                 req,
                 self.global_reqs['name'],
-                {'name'},
+                ['name'],
             )
         )
 
