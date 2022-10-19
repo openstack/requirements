@@ -22,11 +22,11 @@ import testtools
 class TestIsReqInGlobalReqs(testtools.TestCase):
 
     def setUp(self):
-        super(TestIsReqInGlobalReqs, self).setUp()
+        super().setUp()
 
         self._stdout_fixture = fixtures.StringStream('stdout')
         self.stdout = self.useFixture(self._stdout_fixture).stream
-        self.backports = dict()
+        self.backports = set()
         self.useFixture(fixtures.MonkeyPatch('sys.stdout', self.stdout))
 
         self.global_reqs = check.get_global_reqs(textwrap.dedent("""
@@ -34,9 +34,9 @@ class TestIsReqInGlobalReqs(testtools.TestCase):
         withmarker>=1.5;python_version=='3.5'
         withmarker>=1.2,!=1.4;python_version=='2.7'
         """))
-        print('global_reqs', self.global_reqs)
 
     def test_match(self):
+        """Test a basic package."""
         req = requirement.parse('name>=1.2,!=1.4')['name'][0][0]
         self.assertTrue(
             check._is_requirement_in_global_reqs(
@@ -47,6 +47,7 @@ class TestIsReqInGlobalReqs(testtools.TestCase):
         )
 
     def test_match_with_markers(self):
+        """Test a package specified with python 3 markers."""
         req = requirement.parse(textwrap.dedent("""
         withmarker>=1.5;python_version=='3.5'
         """))['withmarker'][0][0]
@@ -59,6 +60,11 @@ class TestIsReqInGlobalReqs(testtools.TestCase):
         )
 
     def test_match_without_python3_markers(self):
+        """Test a package specified without python 3 markers.
+
+        Python 3 packages are a thing. On those, it's totally unnecessary to
+        specify e.g. a "python_version>'3" marker for packages.
+        """
         req = requirement.parse(textwrap.dedent("""
         withmarker>=1.5'
         """))['withmarker'][0][0]
@@ -71,7 +77,26 @@ class TestIsReqInGlobalReqs(testtools.TestCase):
             )
         )
 
+    def test_backport(self):
+        """Test a stdlib backport pacakge.
+
+        The python_version marker should be ignored for stdlib backport-type
+        packages.
+        """
+        req = requirement.parse("name;python_version<'3.9'")['name'][0][0]
+        self.assertTrue(
+            check._is_requirement_in_global_reqs(
+                req,
+                self.global_reqs['name'],
+                {'name'},
+            )
+        )
+
     def test_name_mismatch(self):
+        """Test a mismatch in package names.
+
+        Obviously a package with a different name is not the same thing.
+        """
         req = requirement.parse('wrongname>=1.2,!=1.4')['wrongname'][0][0]
         self.assertFalse(
             check._is_requirement_in_global_reqs(
@@ -81,7 +106,28 @@ class TestIsReqInGlobalReqs(testtools.TestCase):
             )
         )
 
+    def test_marker_mismatch(self):
+        """Test a mismatch in markers.
+
+        This should be a failure since the only marker we allow to be different
+        is the python_version marker.
+        """
+        req = requirement.parse("name; sys_platform == 'win32'")['name'][0][0]
+        self.assertFalse(
+            check._is_requirement_in_global_reqs(
+                req,
+                self.global_reqs['name'],
+                self.backports,
+            )
+        )
+
     def test_min_mismatch(self):
+        """Test a mismatch in minimum version.
+
+        We actually allow this since we only enforce a common upper constraint.
+        Packages can specify whatever minimum they like so long as it doesn't
+        exceed the upper-constraint value.
+        """
         req = requirement.parse('name>=1.3,!=1.4')['name'][0][0]
         self.assertTrue(
             check._is_requirement_in_global_reqs(
@@ -92,6 +138,11 @@ class TestIsReqInGlobalReqs(testtools.TestCase):
         )
 
     def test_extra_exclusion(self):
+        """Test that we validate exclusions.
+
+        A package can't exclude a version unless that is also excluded in
+        global requirements.
+        """
         req = requirement.parse('name>=1.2,!=1.4,!=1.5')['name'][0][0]
         self.assertFalse(
             check._is_requirement_in_global_reqs(
@@ -102,6 +153,10 @@ class TestIsReqInGlobalReqs(testtools.TestCase):
         )
 
     def test_missing_exclusion(self):
+        """Test that we ignore missing exclusions.
+
+        A package can specify fewer exclusions than global requirements.
+        """
         req = requirement.parse('name>=1.2')['name'][0][0]
         self.assertTrue(
             check._is_requirement_in_global_reqs(
