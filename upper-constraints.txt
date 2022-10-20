@@ -455,7 +455,7 @@ tomli===2.0.1;python_version=='3.8'
 proboscis===1.2.6.0
 backports.zoneinfo===0.2.1
 oslo.upgradecheck===1.5.0
-stevedore===3.5.1
+stevedore===3.5.2
 pywinrm===0.4.2
 botocore===1.24.7
 xmltodict===0.12.0
