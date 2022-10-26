@@ -145,7 +145,7 @@ traceback2===1.4.0
 arrow===1.2.2
 semantic-version===2.10.0
 async-timeout===4.0.2
-virtualbmc===2.2.2
+virtualbmc===3.0.0
 deprecation===2.1.0
 SQLAlchemy===1.4.40
 pyroute2===0.7.2
