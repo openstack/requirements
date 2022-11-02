@@ -91,7 +91,7 @@ XStatic-Angular===1.8.2.2
 pyngus===2.3.1
 Pillow===9.2.0
 zuul-sphinx===0.6.0
-tripleo-common===16.4.0
+tripleo-common===17.0.0
 Tempita===0.5.2
 ply===3.11
 google-api-core===2.8.2
