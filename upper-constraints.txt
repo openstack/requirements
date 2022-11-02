@@ -189,7 +189,7 @@ nocasedict===1.0.4
 task-core===0.2.1
 psycopg2-binary===2.9.3
 openstack-release-test===3.3.1
-validations-libs===1.7.1
+validations-libs===1.8.0
 pylxd===2.3.1
 pycryptodomex===3.15.0
 anyjson===0.3.3
