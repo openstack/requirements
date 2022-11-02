@@ -523,7 +523,7 @@ python-magnumclient===3.4.1
 docker===4.4.4
 storops===1.2.8
 XStatic-Angular-lrdragndrop===1.0.2.4
-ovsdbapp===1.9.3
+ovsdbapp===1.9.4
 aniso8601===9.0.1
 rjsmin===1.1.0
 icalendar===4.0.7
