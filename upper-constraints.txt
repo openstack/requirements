@@ -243,7 +243,7 @@ funcparserlib===0.3.6
 passlib===1.7.4
 dib-utils===0.0.11
 cliff===3.7.0
-os-brick===4.3.3
+os-brick===4.3.4
 ansible-runner===1.4.7
 scp===0.13.3
 python-zaqarclient===2.1.0
