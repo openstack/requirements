@@ -36,6 +36,7 @@
       .. zuul:jobvar:: tox_envlist
 
          Use the specified tox environments (``ALL`` selects all).
+    nodeset: ubuntu-focal
     vars:
       zuul_work_dir: "{{ (zuul.projects.values() | selectattr('required') | selectattr('name', 'match', '^(?!openstack/requirements)') | list)[0].src_dir }}"
       tox_constraints_file: "{{ ansible_user_dir }}/{{ zuul.projects['opendev.org/openstack/requirements'].src_dir }}/upper-constraints.txt"
