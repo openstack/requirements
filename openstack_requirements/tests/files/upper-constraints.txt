@@ -129,7 +129,7 @@ openstack-doc-tools===1.5.0
 frozendict===1.2
 oslo.messaging===5.18.0
 extras===1.0.0
-PyJWT===1.4.2
+PyJWT===2.4.0
 paramiko===2.1.2
 ordereddict===1.1
 reno===2.1.2
