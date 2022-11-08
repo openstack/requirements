@@ -493,7 +493,7 @@ jaeger-client===4.4.0
 XStatic-Json2yaml===0.1.1.0
 pyroute2.ipset===0.6.6
 boto===2.49.0
-os-vif===2.4.0
+os-vif===2.4.1
 hyperlink===21.0.0
 mitba===1.1.1
 python-masakariclient===7.0.0
