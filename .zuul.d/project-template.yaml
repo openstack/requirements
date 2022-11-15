@@ -13,6 +13,7 @@
     run: playbooks/requirements-check.yaml
     required-projects:
       - openstack/requirements
+    nodeset: ubuntu-focal
     files:
       - ^tools/.*-requires$
       - ^.*requirements.txt$
