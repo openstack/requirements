@@ -473,7 +473,7 @@ nocaselist===1.0.6
 oslo.db===12.2.0
 simplegeneric===0.8.1
 python-pcre===0.7
-yappi===1.3.6
+yappi===1.4.0
 mbstrdecoder===1.1.1
 abclient===0.2.3
 pymemcache===3.5.2
