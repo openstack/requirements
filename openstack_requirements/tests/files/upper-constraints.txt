@@ -29,7 +29,7 @@ cursive===0.1.1
 oslo.service===1.20.0
 django-appconf===1.0.2
 pykerberos===1.1.14
-certifi===2017.1.23
+certifi===2022.12.7
 requests-aws===0.1.8
 alabaster===0.7.10
 pbr===2.0.0
