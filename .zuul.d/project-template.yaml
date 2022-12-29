@@ -10,6 +10,14 @@
 - job:
     name: requirements-check
     parent: unittests
+    # NOTE(gmann): Update the nodeset if we move testing to the new version
+    # of ubuntu. We are explicitly setting the nodeset here because the base
+    # job (unittests) moving to the ubuntu latest version can break this
+    # job on stable branch (as this job on stable branch will start running on
+    # ubuntu latest version). This nodeset setting will avoid such breaking
+    # on stable branch and make sure it continue to run on the supported ubuntu
+    # version on stable branches.
+    nodeset: ubuntu-jammy
     run: playbooks/requirements-check.yaml
     required-projects:
       - openstack/requirements
