@@ -1,4 +1,9 @@
 - project:
+    vars:
+      # TODO(gmann): Unpin tox once all the projects which requirements repo runs
+      # checks for are fixed for tox4. Current failure of projects can be found
+      # in this patch: https://review.opendev.org/c/openstack/requirements/+/868922
+      ensure_tox_version: '<4'
     templates:
       - openstack-python3-jobs
     check:
