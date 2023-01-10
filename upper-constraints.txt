@@ -140,7 +140,7 @@ sphinxcontrib.datatemplates===0.9.1
 jsonpath-rw===1.4.0
 prettytable===3.4.1
 vine===5.0.0
-taskflow===5.0.0
+taskflow===5.1.0
 traceback2===1.4.0
 arrow===1.2.3
 semantic-version===2.10.0
