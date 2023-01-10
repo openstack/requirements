@@ -337,6 +337,7 @@ tempest  # Apache-2.0
 tooz  # Apache-2.0
 tosca-parser  # Apache-2.0
 tripleo-common!=11.3.0  # Apache-2.0
+tripleo-ansible  # Apache-2.0
 validations-libs  # Apache-2.0
 urllib3  # MIT
 warlock  # Apache-2.0
