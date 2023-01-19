@@ -292,7 +292,7 @@ django-pyscss===2.0.2
 uritemplate===3.0.1
 docutils===0.17.1
 threadpoolctl===2.2.0
-os-ken===2.1.0
+os-ken===2.1.1
 ujson===4.1.0
 selenium===3.141.0
 mypy===0.910
