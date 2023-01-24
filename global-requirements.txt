@@ -2,7 +2,6 @@ abclient  # Apache-2.0
 alembic!=1.2.0,!=1.6.3  # MIT
 amqp!=2.1.4,!=5.0.4  # BSD
 ansible-runner!=1.3.5  # Apache 2.0
-anyjson  # BSD
 appdirs  # MIT License
 apscheduler  # MIT License
 autobahn  # MIT License
