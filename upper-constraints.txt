@@ -259,7 +259,7 @@ termcolor===2.0.1
 joblib===1.2.0
 google-api-python-client===2.64.0
 castellan===4.1.0
-oslo.versionedobjects===3.0.1
+oslo.versionedobjects===3.1.0
 ssh-python===0.10.0
 enmerkar===0.7.1
 webcolors===1.12
