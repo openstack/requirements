@@ -358,7 +358,7 @@ keystonemiddleware===10.2.0
 django-formtools===2.4
 XStatic-Spin===1.2.5.3
 tap-as-a-service===10.0.0
-os-traits===2.9.0
+os-traits===2.10.0
 typepy===1.3.0
 SecretStorage===3.3.3
 opentracing===2.4.0
