@@ -60,7 +60,7 @@ class TestIsReqInGlobalReqs(testtools.TestCase):
 
     def test_match_without_python3_markers(self):
         req = requirement.parse(textwrap.dedent("""
-        withmarker>=1.5'
+        withmarker>=1.5
         """))['withmarker'][0][0]
         self.assertTrue(
             check._is_requirement_in_global_reqs(
