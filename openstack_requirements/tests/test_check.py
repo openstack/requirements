@@ -66,7 +66,7 @@ class TestIsReqInGlobalReqs(testtools.TestCase):
         specify e.g. a "python_version>'3" marker for packages.
         """
         req = requirement.parse(textwrap.dedent("""
-        withmarker>=1.5'
+        withmarker>=1.5
         """))['withmarker'][0][0]
         self.assertTrue(
             check._is_requirement_in_global_reqs(
