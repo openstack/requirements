@@ -22,7 +22,7 @@ Jinja2
 jsonrpclib
 jsonschema!=1.4.0,<2,>=1.0.0
 kazoo>=0.9,<=1.1
-lesscpy>=0.9h
+lesscpy>=0.10
 kombu>=2.4.8
 lockfile>=0.8
 lxml>=2.3
@@ -59,7 +59,7 @@ python-neutronclient>=2.2.3,<3
 python-novaclient>=2.12.0
 python-swiftclient>=1.2
 python-troveclient
-pytz>=2010h
+pytz>=2011b
 pyudev
 PyYAML>=3.1.0
 qpid-python
