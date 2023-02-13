@@ -522,7 +522,7 @@ XenAPI===2.14
 python-keystoneclient===5.0.1
 ceilometer===19.0.0
 diskimage-builder===3.25.0
-heat-translator===2.6.0
+heat-translator===2.7.0
 python-magnumclient===4.0.0
 docker===6.0.0
 storops===1.2.11
