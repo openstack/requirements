@@ -119,7 +119,7 @@ responses===0.21.0
 croniter===1.3.7
 horizon===23.0.0
 octavia-lib===3.1.0
-python-watcherclient===4.0.0
+python-watcherclient===4.1.0
 MarkupSafe===2.1.1
 pypowervm===1.1.27
 ruamel.yaml.clib===0.2.6
