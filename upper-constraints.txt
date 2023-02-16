@@ -328,7 +328,7 @@ python-monascaclient===2.6.0
 ldap3===2.9.1
 requests-ntlm===1.1.0
 sphinx-rtd-theme===0.5.1
-automaton===3.0.1
+automaton===3.1.0
 os-service-types===1.7.0
 keyring===23.9.3
 elementpath===3.0.2
