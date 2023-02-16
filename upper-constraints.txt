@@ -48,7 +48,7 @@ waiting===1.4.1
 attrs===22.1.0
 microversion-parse===1.0.1
 Pint===0.19.2
-oslo.i18n===5.1.0
+oslo.i18n===6.0.0
 jsonpath-rw-ext===1.2.2
 python-mistralclient===5.0.0
 oslo.context===5.0.0
