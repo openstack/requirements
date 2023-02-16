@@ -417,7 +417,7 @@ geomet===0.2.1.post1
 distlib===0.3.6
 XStatic-Moment-Timezone===0.5.22.0
 dogpile.cache===1.1.8
-python-barbicanclient===5.4.0
+python-barbicanclient===5.5.0
 salt===3005.1
 api-object-schema===2.0.0
 WSME===0.11.0
