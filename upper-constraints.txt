@@ -125,7 +125,7 @@ pypowervm===1.1.27
 ruamel.yaml.clib===0.2.6
 doc8===0.11.2
 pymongo===4.2.0
-python-cloudkittyclient===4.6.0
+python-cloudkittyclient===4.7.0
 soupsieve===2.3.2.post1
 sqlparse===0.4.3
 oslotest===4.5.0
