@@ -252,7 +252,7 @@ os-brick===6.2.0
 ansible-runner===2.2.1
 pytz-deprecation-shim===0.1.0.post0
 scp===0.14.4
-python-zaqarclient===2.5.0
+python-zaqarclient===2.5.1
 lockfile===0.12.2
 ldappool===3.0.0
 termcolor===2.0.1
