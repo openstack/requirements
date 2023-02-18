@@ -82,7 +82,7 @@ moto===3.1.16
 infi.dtypes.wwn===0.1.1
 python-freezerclient===5.0.0
 os-xenapi===0.3.4
-python-vitrageclient===4.6.0
+python-vitrageclient===4.7.0
 nosexcover===1.0.11
 krest===1.3.3
 psycopg2===2.9.4
