@@ -22,7 +22,7 @@ pecan===1.4.2
 ryu===4.34
 os-api-ref===2.3.0
 python-ldap===3.4.3
-oslo.concurrency===5.1.0
+oslo.concurrency===5.1.1
 websocket-client===1.4.1
 osprofiler===3.4.3
 os-resource-classes===1.1.0
