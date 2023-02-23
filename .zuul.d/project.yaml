@@ -43,8 +43,7 @@
         - cross-horizon-npm
         - cross-ironic-py310
         - cross-keystone-py310
-        - cross-kuryr-py310:
-            voting: false
+        - cross-kuryr-py310
         - cross-manila-py310
         - cross-masakari-py310
         - cross-mistral-py310
@@ -118,7 +117,7 @@
         - cross-horizon-npm
         - cross-ironic-py310
         - cross-keystone-py310
-        # - cross-kuryr-py310
+        - cross-kuryr-py310
         - cross-manila-py310
         - cross-masakari-py310
         - cross-neutron-py310
