@@ -519,7 +519,7 @@ sphinxcontrib-qthelp===1.0.3
 keystoneauth1===5.1.2
 statsd===3.3.0
 XenAPI===2.14
-python-keystoneclient===5.0.1
+python-keystoneclient===5.1.0
 ceilometer===19.0.0
 diskimage-builder===3.25.0
 heat-translator===2.7.0
