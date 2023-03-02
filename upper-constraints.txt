@@ -398,7 +398,7 @@ numpy===1.23.3
 msgpack===1.0.4
 Sphinx===4.5.0
 oslo.config===9.1.1
-openstackdocstheme===3.0.1
+openstackdocstheme===3.1.0
 osc-placement===4.1.0
 zake===0.2.2
 python-rsdclient===1.0.2
