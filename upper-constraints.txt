@@ -496,6 +496,8 @@ future===0.18.3
 Paste===3.5.2
 pytest-django===4.5.2
 jaeger-client===4.8.0
+opentelemetry-exporter-otlp===1.16.0
+opentelemetry-sdk===1.16.0
 XStatic-Json2yaml===0.1.1.0
 boto===2.49.0
 os-vif===3.1.1

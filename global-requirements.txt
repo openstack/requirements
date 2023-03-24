@@ -234,6 +234,9 @@ pyzabbix  # LGPL
 statsd  # MIT
 zVMCloudConnector;sys_platform!='win32'  # Apache 2.0 License
 jaeger-client  # Apache-2.0
+opentelemetry-exporter-otlp  # Apache-2.0
+opentelemetry-sdk  # Apache-2.0
+
 python-linstor  # LGPLv3
 
 pyngus  # Apache-2.0
