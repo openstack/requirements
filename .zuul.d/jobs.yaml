@@ -33,6 +33,16 @@
     vars:
       tox_envlist: py39-check-uc
 - job:
+    name: requirements-tox-py310-check-uc
+    parent: openstack-tox-py310
+    description: |
+      Run test for requirements project.
+
+      Uses tox with the ``py310-check-uc`` environment.
+    files: ^upper-constraints.*txt$
+    vars:
+      tox_envlist: py310-check-uc
+- job:
     name: requirements-tox-validate-projects
     parent: openstack-tox
     files:
