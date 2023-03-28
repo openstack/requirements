@@ -192,6 +192,14 @@
       tox_envlist: functional-py310
 
 - job:
+    name: cross-nova-pep8
+    parent: requirements-cross-test
+    description: Run cross-project tests on nova with pep8.
+    required-projects: openstack/nova
+    vars:
+      tox_envlist: pep8
+
+- job:
     name: cross-nova-py310
     parent: requirements-cross-test
     description: Run cross-project tests on nova with py310.

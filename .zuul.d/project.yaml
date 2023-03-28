@@ -49,6 +49,7 @@
         - cross-masakari-py310
         - cross-mistral-py310
         - cross-neutron-py310
+        - cross-nova-pep8
         - cross-nova-py310
         - cross-placement-py310
         - cross-osvif-py3
@@ -123,6 +124,7 @@
         - cross-manila-py310
         - cross-masakari-py310
         - cross-neutron-py310
+        - cross-nova-pep8
         - cross-nova-py310:
             files: ^upper-constraints.txt$
         - cross-placement-py310:
