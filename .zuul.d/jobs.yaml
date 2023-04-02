@@ -42,6 +42,21 @@
     files: ^upper-constraints.*txt$
     vars:
       tox_envlist: py310-check-uc
+
+- job:
+    name: requirements-tox-py311-check-uc
+    # TODO: use the openstack-tox-py311 job as the parent
+    # when it becomes available in openstack/openstack-zuul-jobs
+    parent: openstack-tox
+    description: |
+      Run test for requirements project.
+
+      Uses tox with the ``py311-check-uc`` environment.
+    files: ^upper-constraints.*txt$
+    vars:
+      python_version: '3.11'
+      tox_envlist: py311-check-uc
+
 - job:
     name: requirements-tox-validate-projects
     parent: openstack-tox
