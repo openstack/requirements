@@ -232,14 +232,12 @@
       tox_envlist: py310
 
 - job:
-    # TODO(frickler): Switch to py310 once swift supports it.
-    name: cross-swift-py38
+    name: cross-swift-py310
     parent: requirements-cross-test
-    description: Run cross-project tests on swift with py38.
+    description: Run cross-project tests on swift with py310.
     required-projects: openstack/swift
-    nodeset: ubuntu-focal
     vars:
-      tox_envlist: py38
+      tox_envlist: py310
 
 - job:
     name: cross-osc-tox-docs

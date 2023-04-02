@@ -57,7 +57,7 @@
         - cross-placement-functional-py310
         - cross-octavia-py310
         - cross-osc-tox-docs
-        - cross-swift-py38
+        - cross-swift-py310
         - openstacksdk-functional-devstack
         - tempest-full-py3:
             irrelevant-files:
@@ -134,7 +134,7 @@
         - cross-placement-functional-py310
         - cross-octavia-py310
         - cross-osc-tox-docs
-        - cross-swift-py38
+        - cross-swift-py310
         - openstacksdk-functional-devstack
         - tempest-full-py3:
             irrelevant-files:
