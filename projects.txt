@@ -182,7 +182,6 @@ openstack/oslo.vmware
 openstack/oslotest
 openstack/oswin-tempest-plugin
 openstack/ovsdbapp
-openstack/patrole
 openstack/placement
 openstack/pycadf
 openstack/pymod2pkg
