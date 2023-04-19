@@ -36,7 +36,8 @@ import six
 from openstack_requirements import project
 from openstack_requirements import requirement
 
-_setup_py_text = """# Copyright (c) 2013 Hewlett-Packard Development Company, L.P.
+_setup_py_text = """\
+# Copyright (c) 2013 Hewlett-Packard Development Company, L.P.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
