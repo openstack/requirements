@@ -13,6 +13,16 @@
       tox_envlist: babel
 
 - job:
+    name: requirements-tox-py38-check-uc
+    parent: openstack-tox-py38
+    description: |
+      Run test for requirements project.
+
+      Uses tox with the ``py38-check-uc`` environment.
+    files: ^upper-constraints.*txt$
+    vars:
+      tox_envlist: py38-check-uc
+- job:
     name: requirements-tox-py39-check-uc
     parent: openstack-tox-py39
     description: |

@@ -28,6 +28,7 @@
         - requirements-tox-babel
         - requirements-tox-bindep:
             voting: false
+        - requirements-tox-py38-check-uc
         - requirements-tox-py39-check-uc
         - requirements-tox-py310-check-uc
         - requirements-tox-validate-projects:
@@ -104,6 +105,7 @@
               - bindep.txt
         - openstack-tox-validate
         - requirements-tox-babel
+        - requirements-tox-py38-check-uc
         - requirements-tox-py39-check-uc
         - requirements-tox-py310-check-uc
         - cross-cinder-py310
