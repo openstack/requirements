@@ -244,7 +244,15 @@ pyngus  # Apache-2.0
 pyOpenSSL  # Apache-2.0
 pyparsing  # MIT
 pyroute2!=0.5.4,!=0.5.5,!=0.7.1;sys_platform!='win32'  # Apache-2.0 (+ dual licensed GPL2)
+# pysnmp library is not maintained since 4 years, it is
+# not recommended to use it, use its fork pysnmp-lextudio instead
+# in conjunction with its dependencies pyasn1-lextudio and
+# pyasn1-modules-lextudio
 pysnmp  # BSD
+pysnmp-lextudio  # BSD
+pyasn1-lextudio  # BSD
+pyasn1-modules-lextudio  # BSD
+
 pystache  # MIT
 pysaml2!=4.0.3,!=4.0.4,!=4.0.5,!=4.0.5rc1,!=4.1.0,!=4.2.0,!=4.3.0,!=4.4.0,!=4.6.0  # Apache-2.0
 
