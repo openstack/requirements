@@ -460,7 +460,7 @@ greenlet===0.4.12
 xvfbwrapper===0.2.9
 futures===3.0.5
 tosca-parser===0.7.0
-Flask===0.12
+Flask===2.3.2
 happybase===0.9;python_version=='2.7'
 marathon===0.8.11
 docker-py===1.10.6
