@@ -43,7 +43,10 @@
         - cross-osc-tox-docs
         - cross-swift-py36
         - openstack-tox-py36
-        - openstacksdk-functional-devstack
+        - openstacksdk-functional-devstack:
+            required-projects:
+              - name: opendev.org/openstack/openstacksdk
+                override-branch: stable/victoria
         - tempest-full-py3:
             irrelevant-files:
               - ^(test-|)requirements.txt$
@@ -105,7 +108,10 @@
         - cross-osc-tox-docs
         - cross-swift-py36
         - openstack-tox-py36
-        - openstacksdk-functional-devstack
+        - openstacksdk-functional-devstack:
+            required-projects:
+              - name: opendev.org/openstack/openstacksdk
+                override-branch: stable/victoria
         - tempest-full-py3:
             irrelevant-files:
               - ^(test-|)requirements.txt$
