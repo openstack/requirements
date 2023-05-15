@@ -382,7 +382,7 @@ pyhcl===0.4.4
 sushy===4.4.2
 python-neutronclient===10.0.0
 pika===1.3.1
-oslo.cache===3.3.1
+oslo.cache===3.4.0
 WebTest===3.0.0
 openstack.nose-plugin===0.11
 os-collect-config===13.1.0
