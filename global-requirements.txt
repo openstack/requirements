@@ -382,10 +382,7 @@ XStatic-Graphlib  # MIT License
 XStatic-Hogan  # Apache 2.0 License
 XStatic-Jasmine  # MIT License
 XStatic-jQuery<2  # MIT License
-# NOTE: horizon (at least horizon integration tests) does not work with jquery-migrate 3,
-# so we need to cap the version of xstatic-jquery-migrate.
-# https://bugs.launchpad.net/horizon/+bug/1914782
-XStatic-JQuery-Migrate<3  # MIT License
+XStatic-JQuery-Migrate  # MIT License
 XStatic-JQuery.quicksearch  # MIT License
 XStatic-JQuery.TableSorter  # MIT License
 XStatic-jquery-ui  # MIT License

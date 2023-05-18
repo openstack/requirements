@@ -242,7 +242,7 @@ python-binary-memcached===0.31.2
 django-debreach===2.1.0
 sphinx-feature-classification===1.1.0
 django-pymemcache===1.0.0
-XStatic-JQuery-Migrate===1.2.1.2
+XStatic-JQuery-Migrate===3.3.2.1
 pytest-html===3.2.0
 appdirs===1.4.4
 tinyrpc===1.1.6
