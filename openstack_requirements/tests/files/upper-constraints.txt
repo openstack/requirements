@@ -181,7 +181,7 @@ websockify===0.8.0
 html2text===2016.9.19;python_version=='3.4'
 html2text===2016.9.19;python_version=='3.5'
 XStatic-JQuery.quicksearch===2.0.3.1
-mpmath===0.19
+mpmath===1.3.0
 XStatic-JQuery-Migrate===1.2.1.1
 appdirs===1.4.3
 tinyrpc===0.5
