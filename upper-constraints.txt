@@ -459,7 +459,7 @@ cotyledon===1.7.3
 xattr===0.10.1
 systemd-python===235
 python-memcached===1.59
-openstacksdk===1.1.0
+openstacksdk===1.2.0
 looseversion===1.1.2
 six===1.16.0
 dulwich===0.21.3
