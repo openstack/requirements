@@ -140,7 +140,7 @@ urllib3===1.20
 graphviz===0.6
 PyKMIP===0.6.0
 python-subunit===1.2.0
-tornado===4.4.2;python_version=='3.4'
+tornado===6.3.2;python_version=='3.4'
 tornado===4.4.2;python_version=='3.5'
 pycparser===2.17
 mock===2.0.0
