@@ -565,7 +565,7 @@ XenAPI===2.14
 importlib-resources===5.4.0
 python-keystoneclient===4.4.0
 ceilometer===18.0.0
-diskimage-builder===3.24.0
+diskimage-builder===3.30.0
 heat-translator===2.5.0
 python-magnumclient===3.6.0
 docker===5.0.3
