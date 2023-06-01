@@ -521,7 +521,7 @@ statsd===3.3.0
 XenAPI===2.14
 importlib-resources===5.9.0;python_version=='3.8'
 python-keystoneclient===5.0.1
-ceilometer===19.0.0
+ceilometer===19.1.0
 diskimage-builder===3.24.0
 heat-translator===2.6.0
 python-magnumclient===4.0.0
