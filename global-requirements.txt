@@ -377,7 +377,7 @@ XStatic-bootswatch  # MIT License
 XStatic-D3  # BSD License (3 clause)
 XStatic-Dagre  # MIT License
 XStatic-Dagre-D3  # MIT License
-XStatic-Font-Awesome  # SIL OFL 1.1 License, MIT License
+XStatic-Font-Awesome<4.8.0  # SIL OFL 1.1 License, MIT License
 XStatic-Graphlib  # MIT License
 XStatic-Hogan  # Apache 2.0 License
 XStatic-Jasmine  # MIT License
