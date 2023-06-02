@@ -89,7 +89,6 @@ openstack/networking-baremetal
 openstack/networking-bgpvpn
 openstack/networking-generic-switch
 openstack/networking-hyperv
-openstack/networking-odl
 openstack/networking-ovn
 openstack/networking-powervm
 openstack/networking-sfc
