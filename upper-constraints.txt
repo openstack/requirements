@@ -475,7 +475,7 @@ falcon===3.1.1
 etcd3gw===2.1.0
 Flask-RESTful===0.3.9
 GitPython===3.1.31
-python-ironicclient===5.2.0
+python-ironicclient===5.3.0
 XStatic===1.0.3
 XStatic-Angular-FileUpload===12.0.4.0
 python-openstackclient===6.2.0
