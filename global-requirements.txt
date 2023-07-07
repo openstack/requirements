@@ -382,7 +382,7 @@ XStatic-Font-Awesome<4.8.0  # SIL OFL 1.1 License, MIT License
 XStatic-Graphlib  # MIT License
 XStatic-Hogan  # Apache 2.0 License
 XStatic-Jasmine  # MIT License
-XStatic-jQuery<2  # MIT License
+XStatic-jQuery<3  # MIT License
 XStatic-JQuery-Migrate  # MIT License
 XStatic-JQuery.quicksearch  # MIT License
 XStatic-JQuery.TableSorter  # MIT License
