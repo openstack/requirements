@@ -77,7 +77,7 @@ types-PyYAML===6.0.12.9
 Mako===1.2.4
 pyScss===1.4.0
 sphinxcontrib-htmlhelp===2.0.1
-XStatic-jQuery===1.12.4.1
+XStatic-jQuery===3.3.1.1
 ddt===1.6.0
 XStatic-Graphlib===2.1.7.0
 pyserial===3.5
