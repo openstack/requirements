@@ -616,7 +616,7 @@ sortedcontainers===2.4.0
 python-linstor===1.13.0
 filelock===3.4.1;python_version=='3.6'
 filelock===3.6.0;python_version=='3.8'
-python-tackerclient===1.10.0
+python-tackerclient===1.10.1
 python-heatclient===2.5.1
 kafka-python===2.0.2
 oslo.utils===4.12.3
