@@ -8,7 +8,7 @@ PasteDeploy===1.5.2
 typing===3.5.3.0
 python-saharaclient===1.1.0
 Routes===2.4.1
-rtslib-fb===2.1.63
+rtslib-fb===2.1.73
 smmap===0.9.0
 XStatic-Angular-Bootstrap===2.2.0.0
 WebOb===1.6.3
