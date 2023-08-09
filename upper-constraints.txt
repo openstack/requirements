@@ -567,7 +567,7 @@ XStatic-Angular-Vis===4.16.0.0
 iniconfig===2.0.0
 confluent-kafka===2.1.0
 xvfbwrapper===0.2.9
-tosca-parser===2.8.0
+tosca-parser===2.9.0
 charset-normalizer===3.1.0
 Flask===2.2.3
 httpx===0.24.0
