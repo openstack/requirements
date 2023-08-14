@@ -281,6 +281,7 @@ python-muranoclient  # Apache-2.0
 python-monascaclient  # Apache-2.0
 python-neutronclient  # Apache-2.0
 python-novaclient  # Apache-2.0
+python-observabilityclient  # Apache-2.0
 python-octaviaclient  # Apache-2.0
 python-openstackclient  # Apache-2.0
 python-rsdclient  # Apache-2.0
