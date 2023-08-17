@@ -296,7 +296,7 @@ oslo.middleware===5.1.1
 XStatic-mdi===1.6.50.2
 django-pyscss===2.0.2
 uritemplate===4.1.1
-docutils===0.17.1
+docutils===0.18.1
 threadpoolctl===3.1.0
 os-ken===2.6.0
 ujson===5.7.0
@@ -334,7 +334,7 @@ python-monascaclient===2.7.0
 ldap3===2.9.1
 opentelemetry-api===1.17.0
 requests-ntlm===1.2.0
-sphinx-rtd-theme===1.2.0
+sphinx-rtd-theme===1.2.2
 automaton===3.1.0
 os-service-types===1.7.0
 keyring===23.13.1
@@ -404,7 +404,7 @@ more-itertools===9.1.0
 seqdiag===3.0.0
 numpy===1.24.2
 msgpack===1.0.5
-Sphinx===4.5.0
+Sphinx===6.2.1
 oslo.config===9.1.1
 openstackdocstheme===3.1.1
 osc-placement===4.1.0
