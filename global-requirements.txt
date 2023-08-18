@@ -50,7 +50,7 @@ dnspython!=2.0.0,!=2.2.0  # http://www.dnspython.org/LICENSE
 # Note(tonyb): We don't actually directly depend on docutils but we pull it in
 # indirectly and we needed to blacklist 0.13.1 for problems with
 # Sphinx 1.3. This can be now removed once all projects removed it.
-docutils<0.18  # OSI-Approved Open Source, Public Domain
+docutils  # OSI-Approved Open Source, Public Domain
 dogpile.cache!=0.9.1,!=1.1.7  # BSD
 dogtag-pki  # LGPLv3+
 dulwich!=0.19.3,!=0.19.7  # Apache-2.0
@@ -461,7 +461,7 @@ selenium<4.0.0  # Apache-2.0
 # Blacklist setuptools 36.2.0 due to https://github.com/pypa/setuptools/issues/1086
 # Blacklist setuptools 48.0.0, 49.0.0 due to https://github.com/pypa/setuptools/issues/2232
 setuptools!=24.0.0,!=34.0.0,!=34.0.1,!=34.0.2,!=34.0.3,!=34.1.0,!=34.1.1,!=34.2.0,!=34.3.0,!=34.3.1,!=34.3.2,!=36.2.0,!=48.0.0,!=49.0.0  # PSF/ZPL
-sphinx!=1.6.6,!=1.6.7,!=2.1.0,!=3.0.0,!=3.4.2,<5.0.0  # BSD
+sphinx!=1.6.6,!=1.6.7,!=2.1.0,!=3.0.0,!=3.4.2  # BSD
 sphinx-testing  # BSD License
 sphinxcontrib-actdiag  # BSD
 sphinxcontrib-apidoc  # BSD
