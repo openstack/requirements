@@ -104,7 +104,7 @@ types-paramiko===3.0.0.7
 immutables===0.19
 python-swiftclient===4.3.0
 pyOpenSSL===23.1.1
-monasca-common===3.7.0
+monasca-common===3.8.0
 zeroconf===0.56.0
 scipy===1.10.1
 opentelemetry-exporter-otlp===1.17.0
