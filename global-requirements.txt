@@ -318,7 +318,6 @@ Routes  # MIT
 rtslib-fb  # Apache-2.0
 rst2txt  # BSD
 ruamel.yaml  # MIT
-ryu  # Apache-2.0
 semantic-version  # BSD
 # https://github.com/harlowja/fasteners/issues/36
 fasteners!=0.15,!=0.16  # Apache-2.0
