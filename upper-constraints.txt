@@ -334,7 +334,7 @@ ldap3===2.9.1
 opentelemetry-api===1.17.0
 requests-ntlm===1.2.0
 sphinx-rtd-theme===1.2.2
-automaton===3.1.0
+automaton===3.2.0
 os-service-types===1.7.0
 keyring===23.13.1
 elementpath===4.1.1
