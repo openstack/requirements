@@ -578,7 +578,7 @@ fasteners===0.18
 sortedcontainers===2.4.0
 python-linstor===1.18.0
 filelock===3.12.0
-python-tackerclient===1.13.0
+python-tackerclient===1.14.0
 python-heatclient===3.3.0
 kafka-python===2.0.2
 oslo.utils===6.2.1
