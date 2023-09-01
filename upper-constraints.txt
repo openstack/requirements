@@ -545,7 +545,7 @@ icalendar===5.0.5
 decorator===5.1.1
 DateTimeRange===2.1.0
 cffi===1.15.1
-python-cyborgclient===2.2.0
+python-cyborgclient===2.2.1
 futurist===2.4.1
 jsonschema===4.17.3
 sphinxcontrib-devhelp===1.0.2
