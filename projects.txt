@@ -176,7 +176,6 @@ openstack/oslo.utils
 openstack/oslo.versionedobjects
 openstack/oslo.vmware
 openstack/oslotest
-openstack/oswin-tempest-plugin
 openstack/ovsdbapp
 openstack/placement
 openstack/pycadf
