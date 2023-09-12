@@ -490,7 +490,7 @@ wrapt===1.15.0
 oslo.privsep===3.2.0
 sphinxcontrib-apidoc===0.3.0
 oslo.policy===4.2.1
-python-muranoclient===2.6.0
+python-muranoclient===2.7.0
 hvac===1.1.0
 pyeclib===1.6.1
 wsgi-intercept===1.11.0
