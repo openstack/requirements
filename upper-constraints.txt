@@ -329,7 +329,7 @@ XStatic-moment===2.8.4.3
 autopage===0.5.1
 sqlalchemy-migrate===0.13.0
 gitdb===4.0.10
-python-monascaclient===2.7.0
+python-monascaclient===2.8.0
 ldap3===2.9.1
 opentelemetry-api===1.17.0
 requests-ntlm===1.2.0
