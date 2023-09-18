@@ -38,7 +38,6 @@
         - cross-nova-py27
         - cross-nova-py35
         - cross-nova-functional
-        - cross-osc-build-sphinx-docs
         - cross-swift-py27
         - cross-swift-py35
         - openstack-tox-py36
@@ -84,7 +83,6 @@
         - cross-nova-py35:
             files: ^upper-constraints.txt$
         - cross-nova-functional
-        - cross-osc-build-sphinx-docs
         - cross-swift-py27
         - cross-swift-py35
         - openstack-tox-py36

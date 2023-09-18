@@ -176,17 +176,3 @@
     nodeset: ubuntu-xenial
     vars:
       tox_envlist: py35
-
-- job:
-    name: cross-osc-build-sphinx-docs
-    parent: build-openstack-sphinx-docs
-    description: |
-      Run cross-project tests on python-openstackclient with
-      build-openstack-sphinx-docs.
-    vars:
-      zuul_work_dir: src/opendev.org/openstack/python-openstackclient
-    required-projects:
-      - openstack/python-openstackclient
-    files:
-      - upper-constraints.txt
-      - .zuul.d/cross-jobs.yaml
