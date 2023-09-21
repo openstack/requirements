@@ -479,7 +479,7 @@ XStatic-Angular-FileUpload===12.2.13.0
 python-openstackclient===6.3.0
 pyzmq===25.0.2
 nocaselist===1.1.1
-oslo.db===12.3.2
+oslo.db===14.1.0
 simplegeneric===0.8.1
 python-pcre===0.7
 yappi===1.4.0
