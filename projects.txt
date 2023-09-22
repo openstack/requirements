@@ -158,7 +158,6 @@ openstack/os-service-types
 openstack/os-testr
 openstack/os-traits
 openstack/os-vif
-openstack/os-win
 openstack/osc-lib
 openstack/oslo.cache
 openstack/oslo.concurrency
