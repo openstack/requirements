@@ -403,7 +403,7 @@ seqdiag===3.0.0
 numpy===1.24.2
 msgpack===1.0.5
 Sphinx===6.2.1
-oslo.config===9.1.1
+oslo.config===9.2.0
 openstackdocstheme===3.2.0
 osc-placement===4.2.0
 zake===0.2.2
