@@ -423,7 +423,7 @@ geomet===0.2.1.post1
 distlib===0.3.6
 XStatic-Moment-Timezone===0.5.22.0
 dogpile.cache===1.1.8
-python-barbicanclient===5.6.0
+python-barbicanclient===5.6.1
 salt===3006.0
 opentelemetry-semantic-conventions===0.38b0
 api-object-schema===2.0.0
