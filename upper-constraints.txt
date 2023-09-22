@@ -378,7 +378,7 @@ yamlloader===1.2.2
 protobuf===4.22.3
 pyhcl===0.4.4
 sushy===4.5.1
-python-neutronclient===10.0.0
+python-neutronclient===11.0.0
 pika===1.3.1
 oslo.cache===3.5.0
 WebTest===3.0.0
