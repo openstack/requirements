@@ -338,7 +338,7 @@ os-service-types===1.7.0
 keyring===23.13.1
 elementpath===4.1.1
 testscenarios===0.5.0
-sphinxcontrib-pecanwsme===0.10.0
+sphinxcontrib-pecanwsme===0.11.0
 sadisplay===0.4.9
 infinisdk===215.1.5
 packaging===23.1
@@ -427,7 +427,7 @@ python-barbicanclient===5.6.1
 salt===3006.0
 opentelemetry-semantic-conventions===0.38b0
 api-object-schema===2.0.0
-WSME===0.11.0
+WSME===0.12.1
 tomli===2.0.1
 proboscis===1.2.6.0
 oslo.upgradecheck===2.2.0
