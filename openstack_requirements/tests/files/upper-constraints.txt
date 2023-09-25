@@ -407,7 +407,7 @@ boto===2.46.1
 functools32===3.2.3.post2;python_version=='2.7'
 watchdog===0.8.3;python_version=='3.4'
 watchdog===0.8.3;python_version=='3.5'
-gevent===1.2.1
+gevent===23.9.1
 os-vif===1.4.0
 Werkzeug===0.12
 pyasn1-modules===0.0.8
