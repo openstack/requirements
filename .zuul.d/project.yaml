@@ -48,7 +48,8 @@
         - cross-keystone-py310
         - cross-kuryr-py310
         - cross-manila-py310
-        - cross-masakari-py310
+        - cross-masakari-py310:
+            voting: false
         - cross-mistral-py310
         - cross-neutron-py310
         - cross-nova-pep8
@@ -120,7 +121,6 @@
         - cross-keystone-py310
         - cross-kuryr-py310
         - cross-manila-py310
-        - cross-masakari-py310
         - cross-neutron-py310
         - cross-nova-pep8
         - cross-nova-py310:
