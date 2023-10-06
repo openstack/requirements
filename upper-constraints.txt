@@ -90,7 +90,7 @@ psycopg2===2.9.7
 networkx===3.1
 XStatic-Angular===1.8.2.2
 pyngus===2.3.1
-Pillow===10.0.1
+Pillow===9.5.0
 zuul-sphinx===0.7.0
 tripleo-common===18.0.0
 Tempita===0.5.2
