@@ -228,6 +228,7 @@ tap-as-a-service  # Apache-2.0
 etcd3  # Apache-2.0
 etcd3gw!=0.2.2,!=0.2.3,!=0.2.6  # Apache-2.0
 typing  # PSF
+typing-extensions  # PSF
 voluptuous  # BSD License
 pydot  # MIT License
 pydotplus  # MIT License
