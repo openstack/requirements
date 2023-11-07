@@ -40,7 +40,7 @@ sphinxcontrib-nwdiag===2.0.0
 rbd-iscsi-client===0.1.8
 requests-aws===0.1.8
 alabaster===0.7.13
-pbr===5.11.1
+pbr===6.0.0
 munch===4.0.0
 waiting===1.4.1
 attrs===23.1.0
