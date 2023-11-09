@@ -357,7 +357,7 @@ XStatic-JQuery.TableSorter===2.14.5.2
 pifpaf===3.1.5
 pysmi===0.3.4
 blockdiag===3.0.0
-testtools===2.6.0
+testtools===2.7.0
 infi.dtypes.iqn===0.4.0
 XStatic-tv4===1.2.7.0
 XStatic-JSEncrypt===2.3.1.1
