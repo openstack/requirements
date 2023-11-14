@@ -287,7 +287,7 @@ XStatic-bootswatch===3.3.7.0
 pytest-xdist===3.3.1
 XStatic-JS-Yaml===3.8.1.0
 XStatic-term.js===0.0.7.0
-oslo.log===5.3.0
+oslo.log===5.4.0
 nodeenv===1.8.0
 gossip===2.4.0
 suds-community===1.1.2
