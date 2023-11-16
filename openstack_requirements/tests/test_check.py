@@ -59,6 +59,20 @@ class TestIsReqInGlobalReqs(testtools.TestCase):
             )
         )
 
+    def test_match_with_local_markers(self):
+        """Test a package specified with python 3 markers."""
+        req = requirement.parse(textwrap.dedent("""
+        name;python_version=='3.5'
+        """))['name'][0][0]
+        self.assertTrue(
+            check._is_requirement_in_global_reqs(
+                req,
+                self.global_reqs['name'],
+                self.backports,
+                allow_3_only=True
+            )
+        )
+
     def test_match_without_python3_markers(self):
         """Test a package specified without python 3 markers.
 

@@ -24,7 +24,10 @@ from openstack_requirements import project
 from openstack_requirements import requirement
 
 MIN_PY_VERSION = '3.5'
-PY3_SPECIFIER_RE = re.compile(r'python_version(==|>=|>)[\'"]3\.\d+[\'"]')
+PY3_GLOBAL_SPECIFIER_RE = re.compile(
+    r'python_version(==|>=|>)[\'"]3\.\d+[\'"]')
+PY3_LOCAL_SPECIFIER_RE = re.compile(
+    r'python_version(==|>=|>|<=|<)[\'"]3\.\d+[\'"]')
 
 
 class RequirementsList(object):
@@ -101,15 +104,24 @@ def _is_requirement_in_global_reqs(
             local_req_val = getattr(local_req, aname)
             global_req_val = getattr(global_req, aname)
             if local_req_val != global_req_val:
-                # if global requirements specifies a python 3 version specifier
-                # but a project doesn't, allow it since python 3-only is okay
+                # if a python 3 version is not spefied in only one of
+                # global requirements or local requirements, allow it since
+                # python 3-only is okay
                 if (
                     allow_3_only and
                     matching and
-                    aname == 'markers' and
-                    not local_req_val
+                    aname == 'markers'
                 ):
-                    if PY3_SPECIFIER_RE.match(global_req_val):
+                    if (
+                        not local_req_val and
+                        PY3_GLOBAL_SPECIFIER_RE.match(global_req_val)
+                    ):
+                        continue
+                    if (
+                        not global_req_val and
+                        local_req_val and
+                        PY3_LOCAL_SPECIFIER_RE.match(local_req_val)
+                    ):
                         continue
 
                 # likewise, if a package is one of the backport packages then
