@@ -444,6 +444,7 @@ proboscis  # Apache-2.0
 psycopg2  # LGPL/ZPL
 psycopg2-binary  # LGPL/ZPL
 purestorage  # BSD
+py-pure-client  # BSD
 pysendfile;sys_platform!='win32'  # MIT
 python-3parclient  # Apache-2.0
 python-consul  # MIT License
