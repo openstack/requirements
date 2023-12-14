@@ -480,7 +480,7 @@ requestsexceptions===1.4.0
 testresources===2.0.1
 falcon===3.1.1
 tomlkit===0.12.1
-etcd3gw===2.2.0
+etcd3gw===2.3.0
 Flask-RESTful===0.3.10
 GitPython===3.1.37
 python-ironicclient===5.4.0
