@@ -3,6 +3,7 @@
 astroid
 ansible-lint
 bandit
+bashate
 flake8
 flake8-docstrings
 flake8-import-order
@@ -10,6 +11,7 @@ flake8-logging-format
 hacking
 isort
 mccabe
+mypy
 pep257
 pep8
 pre-commit
@@ -17,8 +19,6 @@ pyflakes
 pycodestyle
 pylint
 yamllint
-bashate
-mypy
 
 # The following Neutron libraries need to be blacklisted
 # as they do not use cycle-with-intermediary.  The only time they
