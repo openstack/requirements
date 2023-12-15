@@ -108,7 +108,6 @@ zeroconf===0.112.0
 scipy===1.10.1
 opentelemetry-exporter-otlp===1.20.0
 python-gnupg===0.5.1
-mypy-extensions===1.0.0
 rsd-lib===1.2.0
 XStatic-Jasmine===2.4.1.2
 googleapis-common-protos===1.60.0
@@ -301,7 +300,6 @@ threadpoolctl===3.2.0
 os-ken===2.8.0
 ujson===5.8.0
 selenium===3.141.0
-mypy===1.2.0
 mistral-lib===2.9.0
 dogtag-pki===11.2.1
 XStatic-Angular-UUID===0.0.4.0

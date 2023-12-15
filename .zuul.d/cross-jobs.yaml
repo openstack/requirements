@@ -78,15 +78,6 @@
       tox_envlist: py310
 
 - job:
-    name: cross-cinder-mypy
-    parent: requirements-cross-test
-    description: Run cross-project tests on cinder with mypy.
-    required-projects: openstack/cinder
-    vars:
-      tox_envlist: mypy
-      tox_inline_comments: false
-
-- job:
     name: cross-designate-py310
     parent: requirements-cross-test
     description: Run cross-project tests on designate with py310.

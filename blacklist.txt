@@ -18,6 +18,7 @@ pycodestyle
 pylint
 yamllint
 bashate
+mypy
 
 # The following Neutron libraries need to be blacklisted
 # as they do not use cycle-with-intermediary.  The only time they
