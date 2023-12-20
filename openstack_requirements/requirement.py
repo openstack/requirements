@@ -15,9 +15,10 @@
 # This module has no IO at all, and none should be added.
 
 import collections
-import distutils.version
+import packaging.requirements
 import packaging.specifiers
-import pkg_resources
+import packaging.utils
+import packaging.version
 import re
 
 
@@ -37,7 +38,7 @@ def key_specifier(a):
               '===': 1, '==': 1, '~=': 1, '!=': 1,
               '<': 2, '<=': 2}
     a = a._spec
-    return (weight[a[0]], distutils.version.LooseVersion(a[1]))
+    return (weight[a[0]], packaging.version.parse(a[1]))
 
 
 class Requirement(collections.namedtuple('Requirement',
@@ -81,7 +82,7 @@ url_re = re.compile(
 
 def canonical_name(req_name):
     """Return the canonical form of req_name."""
-    return pkg_resources.safe_name(req_name).lower()
+    return packaging.utils.canonicalize_name(req_name)
 
 
 def parse(content, permit_urls=False):
@@ -127,7 +128,7 @@ def parse_line(req_line, permit_urls=False):
                 hash_pos = hash_pos + parse_start
         else:
             # Trigger an early failure before we look for ':'
-            pkg_resources.Requirement.parse(req_line)
+            packaging.requirements.Requirement(req_line)
     else:
         parse_start = 0
         location = ''
@@ -149,8 +150,8 @@ def parse_line(req_line, permit_urls=False):
         specifier = ''
     elif req_line:
         # Pulled out a requirement
-        parsed = pkg_resources.Requirement.parse(req_line)
-        name = parsed.project_name
+        parsed = packaging.requirements.Requirement(req_line)
+        name = parsed.name
         extras = parsed.extras
         specifier = str(parsed.specifier)
     else:
