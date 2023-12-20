@@ -154,7 +154,7 @@ class TestToReqs(testtools.TestCase):
             """)
         reqs = requirement.parse(content)
         self.assertEqual(
-            set(['oslo.config', 'oslo.concurrency', 'oslo.context']),
+            {'oslo-config', 'oslo-concurrency', 'oslo-context'},
             set(reqs.keys()),
         )
 
@@ -166,16 +166,16 @@ class TestToReqs(testtools.TestCase):
             """)
         reqs = requirement.parse(content)
         self.assertEqual(
-            set(['oslo.config', 'oslo.concurrency', 'oslo.db']),
+            {'oslo-config', 'oslo-concurrency', 'oslo-db'},
             set(reqs.keys()),
         )
-        self.assertEqual(reqs['oslo.config'][0][0].extras, frozenset(()))
-        self.assertEqual(reqs['oslo.concurrency'][0][0].extras,
+        self.assertEqual(reqs['oslo-config'][0][0].extras, frozenset(()))
+        self.assertEqual(reqs['oslo-concurrency'][0][0].extras,
                          frozenset(('fixtures',)))
-        self.assertEqual(reqs['oslo.db'][0][0].extras,
+        self.assertEqual(reqs['oslo-db'][0][0].extras,
                          frozenset(('fixtures', 'mysql')))
         self.assertCountEqual(reqs,
-                              ['oslo.config', 'oslo.concurrency', 'oslo.db'])
+                              ['oslo-config', 'oslo-concurrency', 'oslo-db'])
 
 
 class TestCanonicalName(testtools.TestCase):
