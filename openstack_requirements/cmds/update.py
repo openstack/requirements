@@ -26,12 +26,11 @@ updated to match the global requirements. Requirements not in the global
 files will be dropped.
 """
 
+import itertools
 import optparse
 import os
 import os.path
 import sys
-
-import six
 
 from openstack_requirements import project
 from openstack_requirements import requirement
@@ -129,7 +128,7 @@ def _sync_requirements_file(
         reference = source_reqs.get(req.package.lower())
         if reference:
             actual = dest_reqs.get(req.package.lower())
-            for req, ref in six.moves.zip_longest(actual, reference):
+            for req, ref in itertools.zip_longest(actual, reference):
                 if not req:
                     # More in globals
                     changes.append(Change(ref[0].package, '', ref[1]))

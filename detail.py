@@ -15,10 +15,10 @@
 import contextlib
 import json
 import os
-import six.moves.urllib.parse as urlparse
-import six.moves.urllib.request as urlreq
 import sys
 import traceback
+import urllib.parse as urlparse
+import urllib.request as urlreq
 
 import pkg_resources
 

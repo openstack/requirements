@@ -35,8 +35,8 @@ checked.
 import argparse
 import datetime
 import json
-import six.moves.urllib.request as urlreq
 import sys
+import urllib.request as urlreq
 
 import pkg_resources
 

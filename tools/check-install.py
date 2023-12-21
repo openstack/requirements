@@ -1,10 +1,9 @@
 #!/usr/bin/env python
 
+import configparser
 import importlib
 import re
 import sys
-
-import six.moves.configparser as configparser
 
 
 def main():
