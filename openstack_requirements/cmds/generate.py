@@ -12,12 +12,14 @@
 # limitations under the License.
 
 import copy
+from datetime import datetime
 import hashlib
 import optparse
 import os.path
 import shutil
 import subprocess
 import sys
+import tempfile
 
 import fixtures
 
@@ -89,8 +91,21 @@ def _freeze(requirements, python):
         if isinstance(exc, subprocess.CalledProcessError):
             output.append(exc.output)
         raise Exception(
-            "Failed to generate freeze: %s %s"
-            % (b'\n'.join(output).decode('utf-8'), exc))
+            "Failed to generate freeze: %s %s" % (
+                b'\n'.join(output).decode('utf-8'),
+                exc,
+            )
+        )
+    finally:
+        # log job results
+        with tempfile.NamedTemporaryFile(
+            mode='w+b',
+            prefix=datetime.now().strftime(
+                'generate-constraints-%Y_%m_%d_%H_%M-'
+            ),
+            delete=False,
+        ) as fh:
+            fh.write(b'\n'.join(output))
 
 
 def _combine_freezes(freezes, blacklist=None):
