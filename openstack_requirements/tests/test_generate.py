@@ -89,8 +89,8 @@ class TestCombine(testtools.TestCase):
         freeze_27 = ('2.7', [('fixtures', '1.2.0')])
         freeze_34 = ('3.4', [('fixtures', '1.5.0')])
         self.assertEqual(
-            ["fixtures===1.2.0;python_version=='2.7'\n",
-             "fixtures===1.5.0;python_version=='3.4'\n"],
+            ["fixtures===1.2.0;python_version<='2.7'\n",
+             "fixtures===1.5.0;python_version>='3.4'\n"],
             list(generate._combine_freezes([freeze_27, freeze_34])))
 
     def test_duplicate_pythons(self):
