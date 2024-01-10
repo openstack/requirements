@@ -25,6 +25,7 @@ openstack/designate-tempest-plugin
 openstack/diskimage-builder
 openstack/ec2-api
 openstack/ec2api-tempest-plugin
+openstack/etcd3gw
 openstack/freezer
 openstack/freezer-api
 openstack/freezer-tempest-plugin
@@ -67,6 +68,7 @@ openstack/manila-ui
 openstack/masakari
 openstack/masakari-monitors
 openstack/metalsmith
+openstack/microversion-parse
 openstack/mistral
 openstack/mistral-dashboard
 openstack/mistral-lib
@@ -163,8 +165,10 @@ openstack/oslo.config
 openstack/oslo.context
 openstack/oslo.db
 openstack/oslo.i18n
+openstack/oslo.limit
 openstack/oslo.log
 openstack/oslo.messaging
+openstack/oslo.metrics
 openstack/oslo.middleware
 openstack/oslo.policy
 openstack/oslo.privsep
@@ -172,10 +176,12 @@ openstack/oslo.reports
 openstack/oslo.rootwrap
 openstack/oslo.serialization
 openstack/oslo.service
+openstack/oslo.upgradecheck
 openstack/oslo.utils
 openstack/oslo.versionedobjects
 openstack/oslo.vmware
 openstack/oslotest
+openstack/osprofiler
 openstack/ovsdbapp
 openstack/placement
 openstack/pycadf
@@ -233,6 +239,7 @@ openstack/tacker
 openstack/tacker-horizon
 openstack/taskflow
 openstack/tempest
+openstack/tooz
 openstack/tosca-parser
 openstack/tripleo-ansible
 openstack/tripleo-common
