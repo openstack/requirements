@@ -589,7 +589,7 @@ sortedcontainers===2.4.0
 python-linstor===1.19.0
 filelock===3.12.4
 python-tackerclient===1.14.0
-python-heatclient===3.3.0
+python-heatclient===3.4.0
 kafka-python===2.0.2
 oslo.utils===6.3.0
 gitdb2===4.0.2
