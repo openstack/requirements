@@ -408,7 +408,7 @@ numpy===1.24.2
 msgpack===1.0.6
 Sphinx===7.1.2;python_version=='3.8'
 Sphinx===7.2.6;python_version>='3.9'
-oslo.config===9.2.0
+oslo.config===9.3.0
 openstackdocstheme===3.2.0
 osc-placement===4.2.0
 rpds-py===0.10.3
