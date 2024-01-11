@@ -32,6 +32,7 @@ openstack/freezer-web-ui
 openstack/futurist
 openstack/glance
 openstack/glance_store
+openstack/glance-tempest-plugin
 openstack/heat
 openstack/heat-agents
 openstack/heat-dashboard
