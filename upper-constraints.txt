@@ -252,7 +252,7 @@ influxdb-client===1.37.0
 funcparserlib===1.0.1
 passlib===1.7.4
 dib-utils===0.0.11
-cliff===4.4.0
+cliff===4.5.0
 os-brick===6.6.0
 ansible-runner===2.3.4
 scp===0.14.5
