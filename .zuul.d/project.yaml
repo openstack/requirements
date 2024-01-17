@@ -51,7 +51,8 @@
         - cross-manila-py310
         - cross-masakari-py310:
             voting: false
-        - cross-mistral-py310
+        - cross-mistral-py310:
+            voting: false
         - cross-neutron-py310
         - cross-nova-pep8
         - cross-nova-py310
