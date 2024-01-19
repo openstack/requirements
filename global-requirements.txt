@@ -226,7 +226,6 @@ storpool.spopenstack  # Apache-2.0
 task-core  # Apache-2.0
 dfs-sdk  # Apache-2.0
 tap-as-a-service  # Apache-2.0
-etcd3  # Apache-2.0
 etcd3gw!=0.2.2,!=0.2.3,!=0.2.6  # Apache-2.0
 typing  # PSF
 typing-extensions  # PSF
