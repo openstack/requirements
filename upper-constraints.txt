@@ -103,7 +103,7 @@ simplejson===3.19.2
 types-paramiko===3.3.0.0
 immutables===0.20
 python-swiftclient===4.4.0
-pyOpenSSL===23.2.0
+pyOpenSSL===23.3.0
 monasca-common===3.8.0
 zeroconf===0.125.0
 scipy===1.10.1;python_version=='3.8'
