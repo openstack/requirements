@@ -445,7 +445,7 @@ xmltodict===0.13.0
 pyasn1===0.4.8
 directord===0.12.0
 oslo.rootwrap===7.1.0
-Django===3.2.21
+Django===4.2.8
 pexpect===4.8.0
 contextvars===2.4
 cmd2===2.4.3
