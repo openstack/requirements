@@ -179,7 +179,6 @@ os-ken  # Apache-2.0
 os-vif!=1.8.0,!=1.12.0,!=3.0.0  # Apache-2.0
 ovs  # Apache-2.0
 os-win  # Apache-2.0
-os-xenapi  # Apache-2.0
 paramiko!=2.9.0,!=2.9.1  # LGPLv2.1+
 passlib  # BSD
 Paste  # MIT
@@ -367,7 +366,6 @@ xstatic-angular-vis  # MIT License
 xstatic-filesaver  # MIT License
 xstatic-js-yaml  # MIT License
 xstatic-json2yaml  # MIT License
-XenAPI  # LGPL
 XStatic  # MIT License
 XStatic-Angular  # MIT License
 XStatic-Angular-Bootstrap  # MIT License
