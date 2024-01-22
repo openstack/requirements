@@ -37,7 +37,6 @@ debtcollector  # Apache-2.0
 decorator  # BSD
 defusedxml  # PSF
 dib-utils  # Apache-2.0
-directord  # Apache-2.0
 diskimage-builder!=1.6.0,!=1.7.0,!=1.7.1  # Apache-2.0
 distro  # Apache-2.0
 Django<4.3  # BSD
@@ -222,7 +221,6 @@ salt!=2019.2.1,!=2019.2.2  # Apache-2.0
 sshtunnel  # MIT
 storpool!=5.2.0,!=5.3.0  # Apache-2.0
 storpool.spopenstack  # Apache-2.0
-task-core  # Apache-2.0
 dfs-sdk  # Apache-2.0
 tap-as-a-service  # Apache-2.0
 etcd3gw!=0.2.2,!=0.2.3,!=0.2.6  # Apache-2.0
