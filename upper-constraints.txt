@@ -61,7 +61,6 @@ pysendfile===2.0.1
 sniffio===1.3.0
 fixtures===4.1.0
 neutron-lib===3.10.0
-tripleo-ansible===6.0.0
 XStatic-FileSaver===1.3.2.0
 oslo.metrics===0.7.0
 storage-interfaces===1.0.5
@@ -93,7 +92,6 @@ networkx===3.2.1;python_version>='3.9'
 XStatic-Angular===1.8.2.2
 pyngus===2.3.1
 zuul-sphinx===0.7.0
-tripleo-common===18.0.0
 Tempita===0.5.2
 ply===3.11
 google-api-core===2.15.0
@@ -191,7 +189,6 @@ pycparser===2.21
 mock===5.1.0
 PyYAML===6.0.1
 beautifulsoup4===4.12.3
-os-net-config===16.0.0
 ovs===3.1.2
 cryptography===41.0.7
 httpcore===1.0.2
@@ -199,7 +196,6 @@ URLObject===2.4.3
 nocasedict===2.0.1
 psycopg2-binary===2.9.9
 openstack-release-test===5.0.0
-validations-libs===1.9.0
 pylxd===2.3.2
 pycryptodomex===3.20.0
 requests-mock===1.11.0

@@ -168,7 +168,6 @@ os-apply-config  # Apache-2.0
 os-brick!=2.8.0  # Apache-2.0
 os-client-config  # Apache-2.0
 os-collect-config  # Apache-2.0
-os-net-config  # Apache-2.0
 os-refresh-config  # Apache-2.0
 os-resource-classes  # Apache-2.0
 os-service-types  # Apache-2.0
@@ -346,9 +345,6 @@ taskflow  # Apache-2.0
 tempest  # Apache-2.0
 tooz  # Apache-2.0
 tosca-parser  # Apache-2.0
-tripleo-common!=11.3.0  # Apache-2.0
-tripleo-ansible  # Apache-2.0
-validations-libs  # Apache-2.0
 urllib3  # MIT
 warlock  # Apache-2.0
 WebOb  # MIT
