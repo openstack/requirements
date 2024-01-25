@@ -15,7 +15,6 @@ import shutil
 
 import fixtures
 
-from openstack_requirements.cmds import update
 from openstack_requirements import project
 from openstack_requirements import requirement
 
@@ -102,16 +101,3 @@ pbr_project = make_project(pbr_fixture)
 project_project = make_project(project_fixture)
 bad_project = make_project(bad_project_fixture)
 oslo_project = make_project(oslo_fixture)
-
-
-def project_file(
-        fail, proj, action_filename, suffix=None, softupdate=None,
-        non_std_reqs=False, blacklist={}):
-    actions = update._process_project(
-        proj, global_reqs, suffix, softupdate, None,
-        non_std_reqs, blacklist)
-    for action in actions:
-        if type(action) is project.File:
-            if action.filename == action_filename:
-                return action.content.splitlines()
-    fail('File %r not found in %r' % (action_filename, actions))
