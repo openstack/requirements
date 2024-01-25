@@ -16,11 +16,10 @@
 """The project abstraction."""
 
 import collections
+import configparser
 import errno
 import io
 import os
-
-from six.moves import configparser
 
 from parsley import makeGrammar
 

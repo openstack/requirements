@@ -12,7 +12,7 @@
 #    License for the specific language governing permissions and limitations
 #    under the License.
 
-import six
+import io
 import sys
 import textwrap
 from unittest import mock
@@ -40,7 +40,7 @@ class SmokeTest(testtools.TestCase):
         self.assertIn("jsonschema!=1.4.0,<2,>=1.0.0", global_reqs)
         # And test the end to end call of update.py, UI and all.
         self.project = self.useFixture(common.project_fixture)
-        capture = six.StringIO()
+        capture = io.StringIO()
         update.main(['--source', global_env.root, self.project.root], capture)
         reqs = common._file_to_list(self.project.req_file)
         # ensure various updates take
@@ -155,7 +155,7 @@ class UpdateTest(testtools.TestCase):
         actions = update._process_project(
             common.project_project, common.global_reqs, None, None, None,
             False)
-        capture = six.StringIO()
+        capture = io.StringIO()
         project.write(
             common.project_project, actions, capture, False, True)
         expected = ('Version change for: greenlet, SQLAlchemy, eventlet, PasteDeploy, routes, WebOb, wsgiref, boto, kombu, python-swiftclient, lxml, jsonschema, python-keystoneclient\n'  # noqa
@@ -186,7 +186,7 @@ Updated %(project)s/test-requirements.txt:
         actions = update._process_project(
             common.project_project, common.global_reqs, None, None, None,
             False)
-        capture = six.StringIO()
+        capture = io.StringIO()
         project.write(
             common.project_project, actions, capture, True, True)
         expected = ("""Syncing %(project)s/requirements.txt
