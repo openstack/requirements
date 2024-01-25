@@ -13,7 +13,7 @@
       .. zuul:jobvar:: tox_envlist
 
          Use the specified tox environments (``ALL`` selects all).
-    nodeset: ubuntu-jammy
+    nodeset: debian-bookworm
     vars:
       zuul_work_dir: "{{ (zuul.projects.values() | selectattr('required') | selectattr('name', 'match', '^(?!openstack/requirements)') | list)[0].src_dir }}"
       tox_constraints_file: "{{ ansible_user_dir }}/{{ zuul.projects['opendev.org/openstack/requirements'].src_dir }}/upper-constraints.txt"
@@ -46,68 +46,68 @@
       - .zuul.d/cross-jobs.yaml
 
 - job:
-    name: cross-aodh-py310
+    name: cross-aodh-py311
     parent: requirements-cross-test
-    description: Run cross-project tests on aodh with py310.
+    description: Run cross-project tests on aodh with py311.
     required-projects: openstack/aodh
     vars:
-      tox_envlist: py310
+      tox_envlist: py311
 
 - job:
-    name: cross-barbican-py310
+    name: cross-barbican-py311
     parent: requirements-cross-test
-    description: Run cross-project tests on barbican with py310.
+    description: Run cross-project tests on barbican with py311.
     required-projects: openstack/barbican
     vars:
-      tox_envlist: py310
+      tox_envlist: py311
 
 - job:
-    name: cross-ceilometer-py310
+    name: cross-ceilometer-py311
     parent: requirements-cross-test
-    description: Run cross-project tests on ceilometer with py310.
+    description: Run cross-project tests on ceilometer with py311.
     required-projects: openstack/ceilometer
     vars:
-      tox_envlist: py310
+      tox_envlist: py311
 
 - job:
-    name: cross-cinder-py310
+    name: cross-cinder-py311
     parent: requirements-cross-test
-    description: Run cross-project tests on cinder with py310.
+    description: Run cross-project tests on cinder with py311.
     required-projects: openstack/cinder
     vars:
-      tox_envlist: py310
+      tox_envlist: py311
 
 - job:
-    name: cross-designate-py310
+    name: cross-designate-py311
     parent: requirements-cross-test
-    description: Run cross-project tests on designate with py310.
+    description: Run cross-project tests on designate with py311.
     required-projects: openstack/designate
     vars:
-      tox_envlist: py310
+      tox_envlist: py311
 
 - job:
-    name: cross-glance-py310
+    name: cross-glance-py311
     parent: requirements-cross-test
-    description: Run cross-project tests on glance with py310.
+    description: Run cross-project tests on glance with py311.
     required-projects: openstack/glance
     vars:
-      tox_envlist: py310
+      tox_envlist: py311
 
 - job:
-    name: cross-heat-py310
+    name: cross-heat-py311
     parent: requirements-cross-test
-    description: Run cross-project tests on heat with py310.
+    description: Run cross-project tests on heat with py311.
     required-projects: openstack/heat
     vars:
-      tox_envlist: py310
+      tox_envlist: py311
 
 - job:
-    name: cross-horizon-py310
+    name: cross-horizon-py311
     parent: requirements-cross-test
-    description: Run cross-project tests on horizon with py310.
+    description: Run cross-project tests on horizon with py311.
     required-projects: openstack/horizon
     vars:
-      tox_envlist: py310
+      tox_envlist: py311
 
 - job:
     name: cross-horizon-npm
@@ -118,62 +118,62 @@
       tox_envlist: npm
 
 - job:
-    name: cross-keystone-py310
+    name: cross-keystone-py311
     parent: requirements-cross-test
-    description: Run cross-project tests on keystone with py310.
+    description: Run cross-project tests on keystone with py311.
     required-projects: openstack/keystone
     timeout: 3600
     vars:
-      tox_envlist: py310
+      tox_envlist: py311
 
 - job:
-    name: cross-kuryr-py310
+    name: cross-kuryr-py311
     parent: requirements-cross-test
-    description: Run cross-project tests on kuryr-kubernetes with py310.
+    description: Run cross-project tests on kuryr-kubernetes with py311.
     required-projects: openstack/kuryr-kubernetes
     vars:
-      tox_envlist: py310
+      tox_envlist: py311
 
 - job:
-    name: cross-ironic-py310
+    name: cross-ironic-py311
     parent: requirements-cross-test
-    description: Run cross-project tests on ironic with py310.
+    description: Run cross-project tests on ironic with py311.
     required-projects: openstack/ironic
     vars:
-      tox_envlist: py310
+      tox_envlist: py311
 
 - job:
-    name: cross-manila-py310
+    name: cross-manila-py311
     parent: requirements-cross-test
-    description: Run cross-project tests on manila with py310.
+    description: Run cross-project tests on manila with py311.
     required-projects: openstack/manila
     vars:
-      tox_envlist: py310
+      tox_envlist: py311
 
 - job:
-    name: cross-masakari-py310
+    name: cross-masakari-py311
     parent: requirements-cross-test
-    description: Run cross-project tests on masakari with py310.
+    description: Run cross-project tests on masakari with py311.
     required-projects: openstack/masakari
     vars:
-      tox_envlist: py310
+      tox_envlist: py311
 
 - job:
-    name: cross-mistral-py310
+    name: cross-mistral-py311
     parent: requirements-cross-test
-    description: Run cross-project tests on mistral with py310.
+    description: Run cross-project tests on mistral with py311.
     required-projects: openstack/mistral
     vars:
-      tox_envlist: py310
+      tox_envlist: py311
 
 - job:
-    name: cross-neutron-py310
+    name: cross-neutron-py311
     parent: requirements-cross-test
-    description: Run cross-project tests on neutron with py310.
+    description: Run cross-project tests on neutron with py311.
     required-projects: openstack/neutron
     timeout: 3600
     vars:
-      tox_envlist: py310
+      tox_envlist: py311
 
 - job:
     name: cross-nova-functional
@@ -184,12 +184,12 @@
       tox_envlist: functional
 
 - job:
-    name: cross-placement-functional-py310
+    name: cross-placement-functional-py311
     parent: requirements-cross-test
-    description: Run cross-project functional tests on placement with py310.
+    description: Run cross-project functional tests on placement with py311.
     required-projects: openstack/placement
     vars:
-      tox_envlist: functional-py310
+      tox_envlist: functional-py311
 
 - job:
     name: cross-nova-pep8
@@ -200,20 +200,20 @@
       tox_envlist: pep8
 
 - job:
-    name: cross-nova-py310
+    name: cross-nova-py311
     parent: requirements-cross-test
-    description: Run cross-project tests on nova with py310.
+    description: Run cross-project tests on nova with py311.
     required-projects: openstack/nova
     vars:
-      tox_envlist: py310
+      tox_envlist: py311
 
 - job:
-    name: cross-placement-py310
+    name: cross-placement-py311
     parent: requirements-cross-test
-    description: Run cross-project tests on placement with py310.
+    description: Run cross-project tests on placement with py311.
     required-projects: openstack/placement
     vars:
-      tox_envlist: py310
+      tox_envlist: py311
 
 - job:
     name: cross-osvif-py3
@@ -224,20 +224,20 @@
       tox_envlist: py3
 
 - job:
-    name: cross-octavia-py310
+    name: cross-octavia-py311
     parent: requirements-cross-test
-    description: Run cross-project tests on octavia with py310.
+    description: Run cross-project tests on octavia with py311.
     required-projects: openstack/octavia
     vars:
-      tox_envlist: py310
+      tox_envlist: py311
 
 - job:
-    name: cross-swift-py310
+    name: cross-swift-py311
     parent: requirements-cross-test
-    description: Run cross-project tests on swift with py310.
+    description: Run cross-project tests on swift with py311.
     required-projects: openstack/swift
     vars:
-      tox_envlist: py310
+      tox_envlist: py311
 
 - job:
     name: cross-osc-tox-docs
