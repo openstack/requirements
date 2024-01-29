@@ -214,7 +214,6 @@ openstack/python-senlinclient
 openstack/python-solumclient
 openstack/python-swiftclient
 openstack/python-tackerclient
-openstack/python-tripleoclient
 openstack/python-troveclient
 openstack/python-vitrageclient
 openstack/python-watcherclient
@@ -241,14 +240,8 @@ openstack/taskflow
 openstack/tempest
 openstack/tooz
 openstack/tosca-parser
-openstack/tripleo-ansible
-openstack/tripleo-common
-openstack/tripleo-heat-templates
-openstack/tripleo-validations
 openstack/trove
 openstack/trove-tempest-plugin
-openstack/validations-common
-openstack/validations-libs
 openstack/virtualbmc
 openstack/vitrage
 openstack/vitrage-tempest-plugin
