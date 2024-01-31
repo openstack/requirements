@@ -64,6 +64,10 @@ extras  # MIT
 falcon  # Apache-2.0
 Flask!=0.11  # BSD
 Flask-RESTful  # BSD
+# NOTE(tonyb): funcparserlib is an indirect requirement (via blockdiag).
+# There has recently been a 2.0.0a0 release which we'd like to exclude.
+# TODO(tonyb): Early in 'D/2024.2' revert this change.
+funcparserlib<2  # MIT
 futurist  # Apache-2.0
 glance-store!=0.29.0  # Apache-2.0
 google-api-python-client  # Apache-2.0
