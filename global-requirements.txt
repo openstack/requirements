@@ -323,7 +323,8 @@ ruamel.yaml  # MIT
 semantic-version  # BSD
 # https://github.com/harlowja/fasteners/issues/36
 fasteners!=0.15,!=0.16  # Apache-2.0
-scrypt  # BSD
+# https://github.com/holgern/py-scrypt/issues/16
+scrypt!=0.8.21  # BSD
 simplejson  # MIT
 six  # MIT
 scipy  # BSD
