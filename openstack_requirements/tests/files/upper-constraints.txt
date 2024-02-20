@@ -95,7 +95,6 @@ asn1crypto===0.21.1
 croniter===0.3.15
 python-watcherclient===1.0.0
 MarkupSafe===1.0
-pypowervm===1.0.0.4.1
 doc8===0.7.0
 pymongo===3.4.0
 sqlparse===0.2.3
