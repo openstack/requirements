@@ -322,7 +322,7 @@ stestr===4.1.0
 pillow===9.5.0
 infoblox-client===0.6.0
 pysmi-lextudio===1.1.13
-oslo.serialization===5.3.0
+oslo.serialization===5.4.0
 warlock===2.0.1
 exabgp===4.2.21
 sphinxcontrib-httpdomain===1.8.1
