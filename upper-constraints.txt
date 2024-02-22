@@ -296,7 +296,7 @@ suds-community===1.1.2
 importlib-metadata===6.2.1;python_version=='3.8'
 importlib-metadata===6.2.1;python_version=='3.9'
 importlib-metadata===6.11.0;python_version>='3.10'
-oslo.middleware===6.0.0
+oslo.middleware===6.1.0
 XStatic-mdi===1.6.50.2
 django-pyscss===2.0.3
 uritemplate===4.1.1
