@@ -583,7 +583,7 @@ referencing===0.33.0
 confluent-kafka===2.3.0
 xvfbwrapper===0.2.9
 influxdb-client===1.40.0
-tosca-parser===2.9.1
+tosca-parser===2.10.0
 charset-normalizer===3.3.2
 Flask===3.0.2
 httpx===0.26.0
