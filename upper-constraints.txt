@@ -302,7 +302,7 @@ django-pyscss===2.0.3
 uritemplate===4.1.1
 docutils===0.20.1
 threadpoolctl===3.3.0
-os-ken===2.8.0
+os-ken===2.8.1
 ujson===5.9.0
 selenium===3.141.0
 mistral-lib===2.10.0
