@@ -14,7 +14,6 @@ openstack/blazar-dashboard
 openstack/blazar-nova
 openstack/blazar-tempest-plugin
 openstack/castellan
-openstack/ceilometer-powervm
 openstack/cinder
 openstack/cinder-tempest-plugin
 openstack/cliff
@@ -91,7 +90,6 @@ openstack/networking-baremetal
 openstack/networking-bgpvpn
 openstack/networking-generic-switch
 openstack/networking-ovn
-openstack/networking-powervm
 openstack/networking-sfc
 openstack/neutron
 openstack/neutron-dynamic-routing
@@ -102,7 +100,6 @@ openstack/neutron-tempest-plugin
 openstack/neutron-vpnaas
 openstack/neutron-vpnaas-dashboard
 openstack/nova
-openstack/nova-powervm
 openstack/octavia
 openstack/octavia-dashboard
 openstack/octavia-tempest-plugin

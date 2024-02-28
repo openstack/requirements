@@ -125,7 +125,6 @@ octavia-lib===3.4.0
 python-watcherclient===4.2.0
 MarkupSafe===2.1.5
 types-python-dateutil===2.8.19.20240106
-pypowervm===1.1.27
 ruamel.yaml.clib===0.2.8
 doc8===1.1.1
 pymongo===4.6.1
