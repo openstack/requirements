@@ -44,6 +44,7 @@
         - cross-keystone-py311
         - cross-kuryr-py311
         - cross-manila-py311
+        - cross-magnum-py311
         - cross-masakari-py311:
             voting: false
         - cross-mistral-py311:
