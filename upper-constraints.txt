@@ -258,7 +258,7 @@ cliff===4.6.0
 os-brick===6.7.0
 ansible-runner===2.3.5
 scp===0.14.5
-python-zaqarclient===2.6.0
+python-zaqarclient===2.7.0
 lockfile===0.12.2
 ldappool===3.0.0
 termcolor===2.4.0
