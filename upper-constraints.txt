@@ -531,7 +531,7 @@ Werkzeug===3.0.1
 pyasn1-modules===0.3.0
 APScheduler===3.10.4
 xmlschema===2.5.1
-python-troveclient===8.3.0
+python-troveclient===8.4.0
 cachez===0.1.2
 XStatic-Bootstrap-Datepicker===1.4.0.0
 CouchDB===1.2
