@@ -128,7 +128,7 @@ types-python-dateutil===2.8.19.20240106
 ruamel.yaml.clib===0.2.8
 doc8===1.1.1
 pymongo===4.6.1
-python-cloudkittyclient===4.8.0
+python-cloudkittyclient===5.0.0
 soupsieve===2.5
 sqlparse===0.4.4
 oslotest===4.5.0
