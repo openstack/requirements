@@ -3,13 +3,7 @@
       - openstack-python3-xena-jobs
     check:
       jobs:
-        - build-wheel-cache-centos-7:
-            files:
-              - bindep.txt
         - build-wheel-cache-centos-8-stream:
-            files:
-              - bindep.txt
-        - build-wheel-cache-ubuntu-xenial:
             files:
               - bindep.txt
         - build-wheel-cache-ubuntu-bionic:
@@ -67,13 +61,7 @@
               - bindep.txt
     gate:
       jobs:
-        - build-wheel-cache-centos-7:
-            files:
-              - bindep.txt
         - build-wheel-cache-centos-8-stream:
-            files:
-              - bindep.txt
-        - build-wheel-cache-ubuntu-xenial:
             files:
               - bindep.txt
         - build-wheel-cache-ubuntu-bionic:
