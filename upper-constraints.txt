@@ -415,7 +415,7 @@ Sphinx===7.1.2;python_version=='3.8'
 Sphinx===7.2.6;python_version>='3.9'
 oslo.config===9.4.0
 openstackdocstheme===3.2.0
-osc-placement===4.2.0
+osc-placement===4.3.0
 rpds-py===0.18.0
 zake===0.2.2
 python-rsdclient===1.0.2
