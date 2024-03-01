@@ -40,7 +40,6 @@ openstack/heat-tempest-plugin
 openstack/heat-translator
 openstack/horizon
 openstack/i18n
-openstack/instack-undercloud
 openstack/ironic
 openstack/ironic-inspector
 openstack/ironic-lib
