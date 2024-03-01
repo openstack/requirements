@@ -131,7 +131,7 @@ pymongo===4.6.1
 python-cloudkittyclient===5.0.0
 soupsieve===2.5
 sqlparse===0.4.4
-oslotest===4.5.0
+oslotest===5.0.0
 jsonpointer===2.4
 defusedxml===0.7.1
 opentelemetry-sdk===1.22.0
