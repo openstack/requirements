@@ -264,7 +264,7 @@ ldappool===3.0.0
 termcolor===2.4.0
 joblib===1.3.2
 google-api-python-client===2.118.0
-castellan===4.3.0
+castellan===5.0.0
 oslo.versionedobjects===3.3.0
 enmerkar===0.7.1
 webcolors===1.13
