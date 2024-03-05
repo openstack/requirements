@@ -514,7 +514,7 @@ ndg-httpsclient===0.5.1
 repoze.lru===0.7
 rfc3986===2.0.0
 tenacity===8.2.3
-python-designateclient===6.0.0
+python-designateclient===6.0.1
 future===0.18.3
 pytest-cov===4.1.0
 reactivex===4.0.4
