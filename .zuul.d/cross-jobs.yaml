@@ -143,6 +143,14 @@
       tox_envlist: py311
 
 - job:
+    name: cross-magnum-py311
+    parent: requirements-cross-test
+    description: Run cross-project tests on magnum with py311.
+    required-projects: openstack/magnum
+    vars:
+      tox_envlist: py311
+
+- job:
     name: cross-manila-py311
     parent: requirements-cross-test
     description: Run cross-project tests on manila with py311.
