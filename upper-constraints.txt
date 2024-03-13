@@ -542,7 +542,7 @@ sphinxcontrib-devhelp===1.0.2
 python-blazarclient===3.6.0
 alembic===1.8.1
 execnet===1.9.0
-glance-store===4.3.2
+glance-store===4.3.3
 sphinxcontrib-programoutput===0.17
 storpool.spopenstack===3.1.0
 sphinx-testing===1.0.1
