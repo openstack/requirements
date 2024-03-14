@@ -482,7 +482,7 @@ sentinels===1.0.0
 kombu===5.3.5
 distro===1.9.0
 zstd===1.5.5.1
-yaql===2.0.1
+yaql===3.0.0
 requestsexceptions===1.4.0
 testresources===2.0.1
 falcon===3.1.3
