@@ -543,7 +543,7 @@ sphinxcontrib-qthelp===1.0.7;python_version>='3.9'
 keystoneauth1===5.6.0
 statsd===4.0.1
 python-keystoneclient===5.4.0
-ceilometer===21.0.0
+ceilometer===22.0.0.0rc1
 diskimage-builder===3.32.0
 heat-translator===3.0.0
 python-magnumclient===4.4.0
