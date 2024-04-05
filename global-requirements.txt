@@ -509,4 +509,3 @@ openstack-release-test
 Yappi!=0.98,!=0.99  # MIT
 
 zipp  # MIT
-toml!=0.10.1  # Apache-2.0
