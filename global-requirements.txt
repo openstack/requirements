@@ -494,12 +494,6 @@ sadisplay  # BSD
 # use it like a library so until there is a ceilometer-lib (or similar) this is our best option.
 ceilometer  # Apache-2.0
 
-# Indirect dependencies that need blocking
-# NOTE(bnemec): 1.16.0 introduced a bug that is breaking tooz. 1.18.0 fixes it.
-# See https://bugs.launchpad.net/python-tooz/+bug/1808046
-grpcio!=1.16.0,!=1.16.1,!=1.17.0,!=1.17.1
-textfsm!=1.1.3
-
 # NOTE(dhellmann): We need to include this package for testing the
 # release jobs that propose constraint updates, even though it is not
 # a real requirement of any of our software.
