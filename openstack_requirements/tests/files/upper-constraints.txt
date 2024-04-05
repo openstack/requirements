@@ -407,7 +407,7 @@ watchdog===0.8.3;python_version=='3.4'
 watchdog===0.8.3;python_version=='3.5'
 gevent===1.2.1
 os-vif===1.4.0
-Werkzeug===0.12
+Werkzeug===2.3.8
 pyasn1-modules===0.0.8
 APScheduler===3.3.1
 monotonic===1.2
