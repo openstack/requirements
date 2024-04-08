@@ -96,7 +96,7 @@ croniter===0.3.15
 python-watcherclient===1.0.0
 MarkupSafe===1.0
 doc8===0.7.0
-pymongo===3.4.0
+pymongo===4.6.3
 sqlparse===0.2.3
 oslotest===2.14.0
 jsonpointer===1.10
