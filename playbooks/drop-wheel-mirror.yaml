@@ -1,0 +1,9 @@
+- hosts: all
+
+  tasks:
+    - name: Drop wheel mirror from pip.conf
+      become: yes
+      lineinfile:
+        path: /etc/pip.conf
+        regexp: "^extra-index-url"
+        state: absent
