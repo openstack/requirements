@@ -281,6 +281,10 @@ testresources  # Apache-2.0/BSD
 testscenarios  # Apache-2.0/BSD
 testtools  # MIT
 types-paramiko  # Apache-2.0
+types-python-dateutil  # Apache-2.0
+types-requests  # Apache-2.0
+types-setuptools  # Apache-2.0
+types-simplejson  # Apache-2.0
 typing  # PSF
 typing-extensions  # PSF
 tzdata  # MIT
