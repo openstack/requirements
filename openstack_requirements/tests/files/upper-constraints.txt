@@ -287,7 +287,7 @@ iso8601===0.1.11
 tooz===1.50.0
 linecache2===1.0.0
 oauth2client===3.0.0
-idna===2.5
+idna===3.7
 weakrefmethod===1.0.3;python_version=='2.7'
 PuLP===1.6.5
 crc16===0.1.1
