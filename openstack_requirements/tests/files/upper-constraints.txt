@@ -446,7 +446,7 @@ jsonschema===2.6.0
 alembic===0.9.1
 glance-store===0.20.0
 sphinx-testing===0.7.1
-dnspython===1.15.0
+dnspython===2.6.1
 oauthlib===2.0.1
 Babel===2.3.4
 logutils===0.3.4.1
