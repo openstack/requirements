@@ -605,7 +605,6 @@ python-linstor===1.22.0
 filelock===3.13.3
 python-tackerclient===2.0.0
 python-heatclient===3.5.0
-kafka-python===2.0.2
 oslo.utils===7.1.0
 gitdb2===4.0.2
 requests-kerberos===0.14.0
