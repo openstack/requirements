@@ -42,7 +42,6 @@ Django<4.3  # BSD
 django-compressor  # MIT
 django-debreach  # BSD
 django-formtools  # BSD
-django-pymemcache  # Apache-2.0
 # eventlet is not compatibile with 2.0.0: https://github.com/eventlet/eventlet/issues/619
 dnspython!=2.0.0,!=2.2.0  # http://www.dnspython.org/LICENSE
 dogpile.cache!=0.9.1,!=1.1.7  # BSD
@@ -102,7 +101,6 @@ ldap3  # LGPLv3
 libvirt-python!=4.1.0,!=4.2.0  # LGPLv2+
 lxml!=3.7.0  # BSD
 Mako  # MIT
-marathon!=0.9.1  # MIT
 metalsmith  # Apache-2.0
 microversion-parse  # Apache-2.0
 mistral-lib  # Apache-2.0
@@ -273,7 +271,6 @@ python-novaclient  # Apache-2.0
 python-observabilityclient  # Apache-2.0
 python-octaviaclient  # Apache-2.0
 python-openstackclient  # Apache-2.0
-python-rsdclient  # Apache-2.0
 python-saharaclient  # Apache-2.0
 python-senlinclient  # Apache-2.0
 python-solumclient  # Apache-2.0
@@ -392,7 +389,6 @@ zstd  # BSD License (2 clause)
 # Testing tools below, which are typically in test-requires.txt
 
 bashate  # Apache-2.0
-couchdb  # Apache-2.0
 coverage!=4.4  # Apache-2.0
 docker  # Apache-2.0
 django-nose  # BSD
@@ -414,17 +410,12 @@ mock!=4.0.0,!=4.0.1  # BSD
 moto  # Apache-2.0
 nodeenv  # BSD
 nose  # LGPL
-nose-exclude  # LGPL
-nosehtmloutput  # Apache-2.0
-nosexcover  # BSD
 openstack-doc-tools  # Apache-2.0
-openstack.nose-plugin  # Apache-2.0
 openstacksdk  # Apache-2.0
 os-api-ref  # Apache-2.0
 oslosphinx  # Apache-2.0
 oslotest  # Apache-2.0
 ovsdbapp  # Apache-2.0
-proboscis  # Apache-2.0
 psycopg2  # LGPL/ZPL
 psycopg2-binary  # LGPL/ZPL
 purestorage  # BSD
@@ -448,7 +439,6 @@ selenium<4.0.0  # Apache-2.0
 # Blacklist setuptools 48.0.0, 49.0.0 due to https://github.com/pypa/setuptools/issues/2232
 setuptools!=24.0.0,!=34.0.0,!=34.0.1,!=34.0.2,!=34.0.3,!=34.1.0,!=34.1.1,!=34.2.0,!=34.3.0,!=34.3.1,!=34.3.2,!=36.2.0,!=48.0.0,!=49.0.0  # PSF/ZPL
 sphinx!=1.6.6,!=1.6.7,!=2.1.0,!=3.0.0,!=3.4.2  # BSD
-sphinx-testing  # BSD License
 sphinxcontrib-actdiag  # BSD
 sphinxcontrib-apidoc  # BSD
 sphinxcontrib-blockdiag  # BSD
@@ -469,7 +459,6 @@ testscenarios  # Apache-2.0/BSD
 testtools  # MIT
 types-paramiko  # Apache-2.0
 tzdata  # MIT
-unittest2  # BSD
 virtualbmc  # Apache-2.0
 virtualenv!=16.3.0  # MIT
 wrapt  # BSD License

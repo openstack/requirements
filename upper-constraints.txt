@@ -73,7 +73,6 @@ pystache===0.6.5
 XStatic-Font-Awesome===4.7.0.0
 nose===1.3.7
 aiohttp===3.9.3
-nosehtmloutput===0.0.7
 waitress===3.0.0
 os-refresh-config===13.2.0
 pysnmp===4.4.12
@@ -91,7 +90,6 @@ infi.dtypes.wwn===0.1.1
 python-freezerclient===5.2.0
 python-vitrageclient===5.0.0
 py-pure-client===1.49.0
-nosexcover===1.0.11
 krest===1.3.6
 psycopg2===2.9.9
 networkx===3.1;python_version=='3.8'
@@ -213,7 +211,6 @@ gunicorn===21.2.0
 storpool===7.3.0
 textfsm===1.1.2
 python-3parclient===4.2.13.4
-unittest2===1.1.0
 django-compressor===4.4
 libvirt-python===10.2.0
 python-zunclient===5.0.0
@@ -254,7 +251,6 @@ python-binary-memcached===0.31.2
 jaraco.context===5.1.0
 django-debreach===2.1.0
 sphinx-feature-classification===1.1.0
-django-pymemcache===1.0.0
 XStatic-JQuery-Migrate===3.3.2.1
 pytest-html===4.1.1
 appdirs===1.4.4
@@ -364,7 +360,6 @@ infinisdk===240.1.2
 packaging===24.0
 opentelemetry-exporter-otlp-proto-grpc===1.24.0
 XStatic-Dagre-D3===0.4.17.0
-nose-exclude===0.5.0
 psutil===5.9.8
 txaio===23.1.1
 elasticsearch===2.4.1
@@ -400,7 +395,6 @@ python-neutronclient===11.2.0
 pika===1.3.2
 oslo.cache===3.7.0
 WebTest===3.0.0
-openstack.nose-plugin===0.11
 os-collect-config===13.2.0
 edgegrid-python===1.3.1
 python-qpid-proton===0.39.0
@@ -432,7 +426,6 @@ openstackdocstheme===3.2.0
 osc-placement===4.3.0
 rpds-py===0.18.0
 zake===0.2.2
-python-rsdclient===1.0.2
 flux===1.3.5
 python-solumclient===3.8.0
 pysnmpcrypto===0.0.4
@@ -459,7 +452,6 @@ WSME===0.12.1
 tomli===2.0.1;python_version=='3.10'
 tomli===2.0.1;python_version=='3.8'
 tomli===2.0.1;python_version=='3.9'
-proboscis===1.2.6.0
 backports.zoneinfo===0.2.1;python_version=='3.8'
 oslo.upgradecheck===2.3.0
 tempora===5.5.1
@@ -551,7 +543,6 @@ xmlschema===2.5.1
 python-troveclient===8.4.0
 cachez===0.1.2
 XStatic-Bootstrap-Datepicker===1.4.0.0
-CouchDB===1.2
 netifaces===0.11.0
 cachetools===5.3.3
 ws4py===0.5.1
@@ -588,7 +579,6 @@ execnet===2.1.0
 glance-store===4.7.0
 sphinxcontrib-programoutput===0.17
 storpool.spopenstack===3.2.0
-sphinx-testing===1.0.1
 dnspython===2.6.1
 oauthlib===3.2.2
 Babel===2.14.0
@@ -606,7 +596,6 @@ charset-normalizer===3.3.2
 Flask===3.0.2
 httpx===0.27.0
 sqlalchemy-filters===0.13.0
-marathon===0.13.0
 sphinxcontrib-runcmd===0.2.0
 confspirator===0.3.0
 fasteners===0.19
