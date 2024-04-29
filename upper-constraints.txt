@@ -578,7 +578,7 @@ sphinxcontrib-devhelp===1.0.6;python_version>='3.9'
 python-blazarclient===4.0.1
 alembic===1.9.4
 execnet===2.1.0
-glance-store===4.7.0
+glance-store===4.8.0
 sphinxcontrib-programoutput===0.17
 storpool.spopenstack===3.2.0
 dnspython===2.6.1
