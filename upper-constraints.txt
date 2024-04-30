@@ -261,10 +261,8 @@ funcparserlib===2.0.0a0
 passlib===1.7.4
 cliff===4.6.0
 os-brick===6.7.0
-ansible-runner===2.3.6
 scp===0.14.5
 python-zaqarclient===2.7.0
-lockfile===0.12.2
 ldappool===3.0.0
 termcolor===2.4.0
 joblib===1.3.2
@@ -469,7 +467,6 @@ XStatic-smart-table===1.4.13.2
 kuryr-lib===3.0.0
 scrypt===0.8.24
 jsonpatch===1.33
-python-daemon===3.0.1
 os-testr===3.0.0
 cotyledon===1.7.3
 xattr===1.1.0
