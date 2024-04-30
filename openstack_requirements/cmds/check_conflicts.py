@@ -52,12 +52,12 @@ def main():
         except pkg_resources.ContextualVersionConflict as e:
             if e.dist.key in xfails:
                 xfail_requirement = xfails[e.dist.key][0][0]
-                xfail_blacklists = set(xfail_requirement.markers.split(','))
+                xfail_denylists = set(xfail_requirement.markers.split(','))
                 conflict = e.dist.as_requirement()
                 conflict_specifiers = ''.join(conflict.specs[0])
                 conflict_name = conflict.name.lower()
 
-                if (e.required_by.issubset(xfail_blacklists) and
+                if (e.required_by.issubset(xfail_denylists) and
                         xfail_requirement.package == conflict_name and
                         conflict_specifiers == xfail_requirement.specifiers):
 

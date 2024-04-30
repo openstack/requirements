@@ -29,8 +29,8 @@ def mock_read_requirements_file(filename):
         return common.upper_constraints
     elif os.path.basename(filename) == 'global-requirements.txt':
         return common.global_reqs
-    elif os.path.basename(filename) == 'blacklist.txt':
-        return common.blacklist
+    elif os.path.basename(filename) == 'denylist.txt':
+        return common.denylist
     else:
         raise IOError('No such file or directory: %s' % filename)
 

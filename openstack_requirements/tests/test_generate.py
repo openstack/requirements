@@ -97,23 +97,23 @@ class TestCombine(testtools.TestCase):
         with testtools.ExpectedException(Exception):
             list(generate._combine_freezes([('2.7', []), ('2.7', [])]))
 
-    def test_blacklist(self):
-        blacklist = ['Fixtures']
+    def test_denylist(self):
+        denylist = ['Fixtures']
         freeze_27 = ('2.7', [('fixtures', '1.2.0')])
         freeze_34 = ('3.4', [('fixtures', '1.2.0'), ('enum', '1.5.0')])
         self.assertEqual(
             ["enum===1.5.0;python_version=='3.4'\n"],
             list(generate._combine_freezes(
-                [freeze_27, freeze_34], blacklist=blacklist)))
+                [freeze_27, freeze_34], denylist=denylist)))
 
-    def test_blacklist_with_safe_name(self):
-        blacklist = ['flake8_docstrings']
+    def test_denylist_with_safe_name(self):
+        denylist = ['flake8_docstrings']
         freeze_27 = ('2.7', [('flake8-docstrings', '0.2.1.post1'),
                              ('enum', '1.5.0')])
         self.assertEqual(
             ['enum===1.5.0\n'],
             list(generate._combine_freezes(
-                [freeze_27], blacklist=blacklist)))
+                [freeze_27], denylist=denylist)))
 
 
 class Namespace(object):

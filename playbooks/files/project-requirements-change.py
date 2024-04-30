@@ -111,8 +111,8 @@ def main():
     with tempdir():
         with open(reqdir + '/global-requirements.txt', 'rt') as f:
             global_reqs = check.get_global_reqs(f.read())
-        blacklist = requirement.parse(
-            open(reqdir + '/blacklist.txt', 'rt').read())
+        denylist = requirement.parse(
+            open(reqdir + '/denylist.txt', 'rt').read())
         backports_file = reqdir + '/backports.txt'
         if os.path.exists(backports_file):
             backports = requirement.parse(open(backports_file, 'rt').read())
@@ -139,7 +139,7 @@ def main():
 
         failed = check.validate(
             head_reqs,
-            blacklist,
+            denylist,
             global_reqs,
             list(backports.keys()),
             allow_3_only=python_3_branch,
@@ -149,7 +149,7 @@ def main():
             check.validate_lower_constraints(
                 head_reqs,
                 head_proj['lower-constraints.txt'],
-                blacklist,
+                denylist,
             )
             or failed
         )

@@ -14,7 +14,7 @@ from packaging import specifiers
 
 
 # FIXME(dhellmann): These items were not in the constraints list but
-# should not be blacklisted. We don't know yet what versions they
+# should not be denylisted. We don't know yet what versions they
 # should have, so just ignore them for a little while until we have
 # time to figure that out.
 UNCONSTRAINABLE = set([
@@ -29,28 +29,28 @@ UNCONSTRAINABLE = set([
 ])
 
 
-def check_blacklist_coverage(global_reqs, constraints, blacklist,
-                             constraints_list_name):
+def check_denylist_coverage(global_reqs, constraints, denylist,
+                            constraints_list_name):
     """Report any items that are not properly constrained.
 
     Check that all of the items in the global-requirements list
-    appear either in the constraints file or the blacklist.
+    appear either in the constraints file or the denylist.
     """
     to_be_constrained = (
-        set(global_reqs.keys()) - set(blacklist.keys())
+        set(global_reqs.keys()) - set(denylist.keys())
         - UNCONSTRAINABLE
     )
     constrained = set(constraints.keys()) - set([''])
     unconstrained = to_be_constrained - constrained
     for u in sorted(unconstrained):
         yield ('%r appears in global-requirements.txt '
-               'but not %s or blacklist.txt' % (u, constraints_list_name))
+               'but not %s or denylist.txt' % (u, constraints_list_name))
 
-    # Verify that the blacklist packages are not also listed in
+    # Verify that the denylist packages are not also listed in
     # the constraints file.
-    dupes = constrained.intersection(set(blacklist.keys()))
+    dupes = constrained.intersection(set(denylist.keys()))
     for d in dupes:
-        yield ('%r appears in both blacklist.txt and %s'
+        yield ('%r appears in both denylist.txt and %s'
                % (d, constraints_list_name))
 
 
