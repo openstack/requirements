@@ -121,7 +121,6 @@ googleapis-common-protos===1.63.0
 python-glanceclient===4.5.0
 prometheus_client===0.20.0
 jaraco.classes===3.4.0
-pyinotify===0.9.6
 debtcollector===3.0.0
 requests-unixsocket===0.3.0
 responses===0.25.0
