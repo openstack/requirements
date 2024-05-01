@@ -255,7 +255,6 @@ pytest-cov  # MIT
 pytest-django  # BSD (3 clause)
 pytest-html  #MPL-2.0
 pytest-xdist  # MIT
-python-consul  # MIT License
 python-subunit  # Apache-2.0/BSD
 pyzmq  # LGPL+BSD
 redis!=4.0.0  # MIT
@@ -496,6 +495,8 @@ extras  # MIT
 jsonpath-rw  # Apache-2.0
 jsonpath-rw-ext  # Apache-2.0
 oauth2client!=4.0.0  # Apache-2.0
+python-consul  # MIT License
+python-consul2  # MIT License
 # pysnmp library is not maintained since 4 years, it is
 # not recommended to use it, use its fork pysnmp-lextudio instead
 # in conjunction with its dependencies pyasn1-lextudio and
