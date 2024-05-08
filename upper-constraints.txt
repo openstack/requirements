@@ -501,7 +501,7 @@ timelib===0.3.0
 rpm_vercmp===0.1.2
 Flask-RESTful===0.3.10
 GitPython===3.1.43
-python-ironicclient===5.5.0
+python-ironicclient===5.6.0
 XStatic===1.0.3
 XStatic-Angular-FileUpload===12.2.13.0
 python-openstackclient===6.6.0
