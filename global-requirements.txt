@@ -438,7 +438,6 @@ python-octaviaclient  # Apache-2.0
 python-openstackclient  # Apache-2.0
 python-saharaclient  # Apache-2.0
 python-senlinclient  # Apache-2.0
-python-solumclient  # Apache-2.0
 python-swiftclient  # Apache-2.0
 python-tackerclient  # Apache-2.0
 python-troveclient  # Apache-2.0
