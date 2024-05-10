@@ -39,7 +39,6 @@ oslo.i18n===3.13.0
 jsonpath-rw-ext===1.1.1
 python-mistralclient===3.0.0
 oslo.context===2.13.0
-python-senlinclient===1.2.0
 rcssmin===1.0.6
 pycadf===2.5.0
 pysendfile===2.0.1
