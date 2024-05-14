@@ -215,15 +215,15 @@ def _get_python3_reqs(reqs):
 def _validate_one(
     name,
     reqs,
-    blacklist,
+    denylist,
     global_reqs,
     backports,
     allow_3_only=False,
 ):
     """Returns True if there is a failure."""
 
-    if name in blacklist:
-        # Blacklisted items are not synced and are managed
+    if name in denylist:
+        # Denylisted items are not synced and are managed
         # by project teams as they see fit, so no further
         # testing is needed.
         return False
@@ -279,7 +279,7 @@ def _validate_one(
 
 def validate(
     head_reqs,
-    blacklist,
+    denylist,
     global_reqs,
     backports,
     allow_3_only=False,
@@ -294,7 +294,7 @@ def validate(
                 _validate_one(
                     name,
                     reqs,
-                    blacklist,
+                    denylist,
                     global_reqs,
                     backports,
                     allow_3_only,
@@ -344,7 +344,7 @@ def _find_constraint(req, constraints):
     return None
 
 
-def validate_lower_constraints(req_list, constraints, blacklist):
+def validate_lower_constraints(req_list, constraints, denylist):
     """Return True if there is an error.
 
     :param reqs: RequirementsList for the head of the branch
@@ -369,7 +369,7 @@ def validate_lower_constraints(req_list, constraints, blacklist):
 
         for name, reqs in freqs.items():
 
-            if name in blacklist:
+            if name in denylist:
                 continue
 
             if name not in parsed_constraints:

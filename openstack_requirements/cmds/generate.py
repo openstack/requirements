@@ -108,7 +108,7 @@ def _freeze(requirements, python):
             fh.write(b'\n'.join(output))
 
 
-def _combine_freezes(freezes, blacklist=None):
+def _combine_freezes(freezes, denylist=None):
     """Combine multiple freezes into a single structure.
 
     This deals with the variation between different python versions by
@@ -116,13 +116,13 @@ def _combine_freezes(freezes, blacklist=None):
     versions of a dependency.
 
     :param freezes: A list of (python_version, frozen_requirements) tuples.
-    :param blacklist: An iterable of package names to exclude. These packages
+    :param denylist: An iterable of package names to exclude. These packages
         won't be included in the output.
     :return: A list of '\n' terminated lines for a requirements file.
     """
     packages = {}  # {package : {version : [py_version]}}
     excludes = frozenset((requirement.canonical_name(s)
-                          for s in blacklist) if blacklist else ())
+                          for s in denylist) if denylist else ())
     reference_versions = []
     for py_version, freeze in freezes:
         if py_version in reference_versions:
@@ -180,10 +180,10 @@ def _validate_options(options):
         raise Exception(
             "Requirements file %(req)s not found."
             % dict(req=options.requirements))
-    if options.blacklist and not os.path.exists(options.blacklist):
+    if options.denylist and not os.path.exists(options.denylist):
         raise Exception(
-            "Blacklist file %(path)s not found."
-            % dict(path=options.blacklist))
+            "Denylist file %(path)s not found."
+            % dict(path=options.denylist))
     version_map = {}
     for map_entry in options.version_map:
         if ':' not in map_entry:
@@ -196,7 +196,7 @@ def _validate_options(options):
     options.version_map = version_map
 
 
-def _parse_blacklist(path):
+def _parse_denylist(path):
     """Return the strings from path if it is not None."""
     if path is None:
         return []
@@ -226,7 +226,7 @@ def main(argv=None, stdout=None):
     parser.add_option(
         "-r", dest="requirements", help="Requirements file to process.")
     parser.add_option(
-        "-b", dest="blacklist",
+        "-b", "-d", dest="denylist",
         help="Filename of a list of package names to exclude.")
     parser.add_option(
         "--version-map", dest='version_map', default=[], action='append',
@@ -242,8 +242,8 @@ def main(argv=None, stdout=None):
     freezes = [
         _freeze(options.requirements, python) for python in options.pythons]
     _clone_versions(freezes, options)
-    blacklist = _parse_blacklist(options.blacklist)
+    denylist = _parse_denylist(options.denylist)
     frozen = [
-        *sorted(_combine_freezes(freezes, blacklist), key=_make_sort_key)]
+        *sorted(_combine_freezes(freezes, denylist), key=_make_sort_key)]
     stdout.writelines(frozen)
     stdout.flush()

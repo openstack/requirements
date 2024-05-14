@@ -237,7 +237,7 @@ keyring  # MIT/PSF
 ldappool  # MPL
 # Do not make mock conditional on Python version: we depend on newer code than
 # in [most] releases of the Python std library.
-# https://github.com/testing-cabal/mock/issues/487  for 4.0.[0-1] blacklist
+# https://github.com/testing-cabal/mock/issues/487  for 4.0.[0-1] denylist
 mock!=4.0.0,!=4.0.1  # BSD
 moto  # Apache-2.0
 mypy  # MIT
@@ -481,16 +481,16 @@ storpool.spopenstack  # Apache-2.0
 
 ## section:internal
 ##
-## Tooling-related caps and blacklists.
+## Tooling-related caps and denylists.
 
 pip  # MIT
 # While setuptools cannot deal with pre-installed incompatible versions,
 # setting a lower bound is not harmful - it makes error messages cleaner. DO
 # NOT set an upper bound on setuptools, as that will lead to uninstallable
 # situations as progressive releases of projects are done.
-# Blacklist setuptools 34.0.0-34.3.2 due to https://github.com/pypa/setuptools/issues/951
-# Blacklist setuptools 36.2.0 due to https://github.com/pypa/setuptools/issues/1086
-# Blacklist setuptools 48.0.0, 49.0.0 due to https://github.com/pypa/setuptools/issues/2232
+# Denylist setuptools 34.0.0-34.3.2 due to https://github.com/pypa/setuptools/issues/951
+# Denylist setuptools 36.2.0 due to https://github.com/pypa/setuptools/issues/1086
+# Denylist setuptools 48.0.0, 49.0.0 due to https://github.com/pypa/setuptools/issues/2232
 setuptools!=24.0.0,!=34.0.0,!=34.0.1,!=34.0.2,!=34.0.3,!=34.1.0,!=34.1.1,!=34.2.0,!=34.3.0,!=34.3.1,!=34.3.2,!=36.2.0,!=48.0.0,!=49.0.0  # PSF/ZPL
 wheel  # MIT
 

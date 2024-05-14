@@ -40,9 +40,9 @@ def main(args=None):
         default='global-requirements.txt',
         help='Path to the global-requirements.txt file')
     parser.add_argument(
-        '-b', '--blacklist',
-        default='blacklist.txt',
-        help='Path to the blacklist.txt file')
+        '-b', '-d', '--denylist',
+        default='denylist.txt',
+        help='Path to the denylist.txt file')
     parser.add_argument(
         '-G', '--gr-check', action='store_true',
         help='Do a specifier check of global-requirements')
@@ -50,7 +50,7 @@ def main(args=None):
 
     upper_constraints = read_requirements_file(args.upper_constraints)
     global_requirements = read_requirements_file(args.global_requirements)
-    blacklist = read_requirements_file(args.blacklist)
+    denylist = read_requirements_file(args.denylist)
     project_data = project.read(args.project)
     error_count = 0
 
@@ -59,7 +59,7 @@ def main(args=None):
               % require_file)
         requirements = requirement.parse(data)
         for name, spec_list in requirements.items():
-            if not name or name in blacklist:
+            if not name or name in denylist:
                 continue
             if name not in global_requirements:
                 print(u'%s from %s not found in global-requirements' % (

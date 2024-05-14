@@ -35,9 +35,9 @@ def main():
         help='path to the upper-constraints.txt file',
     )
     parser.add_argument(
-        'blacklist',
-        default='blacklist.txt',
-        help='path to the blacklist.txt file',
+        'denylist',
+        default='denylist.txt',
+        help='path to the denylist.txt file',
     )
     args = parser.parse_args()
 
@@ -76,11 +76,11 @@ def main():
                 error_count += 1
 
     # Check that all of the items in the global-requirements list
-    # appear in exactly one of the constraints file or the blacklist.
-    print('\nChecking %s' % args.blacklist)
-    blacklist = read_requirements_file(args.blacklist)
-    for msg in constraints.check_blacklist_coverage(
-            global_reqs, constraints_txt, blacklist,
+    # appear in exactly one of the constraints file or the denylist.
+    print('\nChecking %s' % args.denylist)
+    denylist = read_requirements_file(args.denylist)
+    for msg in constraints.check_denylist_coverage(
+            global_reqs, constraints_txt, denylist,
             os.path.basename(args.upper_constraints)):
         print(msg)
         error_count += 1

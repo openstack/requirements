@@ -78,10 +78,10 @@ class GlobalRequirements(fixtures.Fixture):
         self.req_file = os.path.join(self.root, "global-requirements.txt")
         shutil.copy(
             "openstack_requirements/tests/files/gr-base.txt", self.req_file)
-        self.blacklist_file = os.path.join(self.root, "blacklist.txt")
+        self.denylist_file = os.path.join(self.root, "denylist.txt")
         shutil.copy(
-            "openstack_requirements/tests/files/blacklist.txt",
-            self.blacklist_file)
+            "openstack_requirements/tests/files/denylist.txt",
+            self.denylist_file)
 
 
 # Static data for unit testing.
@@ -95,8 +95,8 @@ global_reqs = requirement.parse(
 upper_constraints = requirement.parse(
     open("openstack_requirements/tests/files/upper-constraints.txt",
          "rt").read())
-blacklist = requirement.parse(
-    open("openstack_requirements/tests/files/blacklist.txt", "rt").read())
+denylist = requirement.parse(
+    open("openstack_requirements/tests/files/denylist.txt", "rt").read())
 pbr_project = make_project(pbr_fixture)
 project_project = make_project(project_fixture)
 bad_project = make_project(bad_project_fixture)

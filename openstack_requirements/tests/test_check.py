@@ -226,14 +226,14 @@ class TestValidateOne(testtools.TestCase):
             check._validate_one(
                 'name',
                 reqs=reqs,
-                blacklist=requirement.parse(''),
+                denylist=requirement.parse(''),
                 backports=self.backports,
                 global_reqs=global_reqs,
             )
         )
 
-    def test_blacklisted(self):
-        # If the package is blacklisted, everything is OK.
+    def test_denylisted(self):
+        # If the package is denylisted, everything is OK.
         reqs = [
             r
             for r, line in requirement.parse('name>=1.2,!=1.4')['name']
@@ -243,14 +243,14 @@ class TestValidateOne(testtools.TestCase):
             check._validate_one(
                 'name',
                 reqs=reqs,
-                blacklist=requirement.parse('name'),
+                denylist=requirement.parse('name'),
                 backports=self.backports,
                 global_reqs=global_reqs,
             )
         )
 
-    def test_blacklisted_mismatch(self):
-        # If the package is blacklisted, it doesn't matter if the
+    def test_denylisted_mismatch(self):
+        # If the package is denylisted, it doesn't matter if the
         # version matches.
         reqs = [
             r
@@ -261,7 +261,7 @@ class TestValidateOne(testtools.TestCase):
             check._validate_one(
                 'name',
                 reqs=reqs,
-                blacklist=requirement.parse('name'),
+                denylist=requirement.parse('name'),
                 backports=self.backports,
                 global_reqs=global_reqs,
             )
@@ -278,7 +278,7 @@ class TestValidateOne(testtools.TestCase):
             check._validate_one(
                 'name',
                 reqs=reqs,
-                blacklist=requirement.parse(''),
+                denylist=requirement.parse(''),
                 backports=self.backports,
                 global_reqs=global_reqs,
             )
@@ -295,7 +295,7 @@ class TestValidateOne(testtools.TestCase):
             check._validate_one(
                 'name',
                 reqs=reqs,
-                blacklist=requirement.parse(''),
+                denylist=requirement.parse(''),
                 backports=self.backports,
                 global_reqs=global_reqs,
             )
@@ -313,7 +313,7 @@ class TestValidateOne(testtools.TestCase):
             check._validate_one(
                 'name',
                 reqs=reqs,
-                blacklist=requirement.parse(''),
+                denylist=requirement.parse(''),
                 backports=self.backports,
                 global_reqs=global_reqs,
             )
@@ -331,7 +331,7 @@ class TestValidateOne(testtools.TestCase):
             check._validate_one(
                 'name',
                 reqs=reqs,
-                blacklist=requirement.parse(''),
+                denylist=requirement.parse(''),
                 backports=self.backports,
                 global_reqs=global_reqs,
             )
@@ -349,7 +349,7 @@ class TestValidateOne(testtools.TestCase):
             check._validate_one(
                 'name',
                 reqs=reqs,
-                blacklist=requirement.parse(''),
+                denylist=requirement.parse(''),
                 backports=self.backports,
                 global_reqs=global_reqs,
             )
@@ -375,7 +375,7 @@ class TestValidateOne(testtools.TestCase):
             check._validate_one(
                 'name',
                 reqs=reqs,
-                blacklist=requirement.parse(''),
+                denylist=requirement.parse(''),
                 backports=self.backports,
                 global_reqs=global_reqs,
             )
@@ -400,7 +400,7 @@ class TestValidateOne(testtools.TestCase):
             check._validate_one(
                 'name',
                 reqs=reqs,
-                blacklist=requirement.parse(''),
+                denylist=requirement.parse(''),
                 backports=self.backports,
                 global_reqs=global_reqs,
             )
@@ -426,7 +426,7 @@ class TestValidateOne(testtools.TestCase):
             check._validate_one(
                 'name',
                 reqs=reqs,
-                blacklist=requirement.parse(''),
+                denylist=requirement.parse(''),
                 backports=self.backports,
                 global_reqs=global_reqs,
             )
@@ -453,7 +453,7 @@ class TestValidateOne(testtools.TestCase):
             check._validate_one(
                 'name',
                 reqs=reqs,
-                blacklist=requirement.parse(''),
+                denylist=requirement.parse(''),
                 backports=self.backports,
                 global_reqs=global_reqs,
                 allow_3_only=True,
@@ -481,7 +481,7 @@ class TestValidateOne(testtools.TestCase):
             check._validate_one(
                 'name',
                 reqs=reqs,
-                blacklist=requirement.parse(''),
+                denylist=requirement.parse(''),
                 backports=self.backports,
                 global_reqs=global_reqs,
                 allow_3_only=True,
@@ -508,7 +508,7 @@ class TestValidateOne(testtools.TestCase):
             check._validate_one(
                 'name',
                 reqs=reqs,
-                blacklist=requirement.parse(''),
+                denylist=requirement.parse(''),
                 backports=self.backports,
                 global_reqs=global_reqs,
                 allow_3_only=True,
@@ -533,7 +533,7 @@ class TestValidateOne(testtools.TestCase):
             check._validate_one(
                 'name',
                 reqs=reqs,
-                blacklist=requirement.parse(''),
+                denylist=requirement.parse(''),
                 backports=self.backports,
                 global_reqs=global_reqs,
                 allow_3_only=True,
@@ -561,7 +561,7 @@ class TestValidateLowerConstraints(testtools.TestCase):
             check.validate_lower_constraints(
                 req_list=head_reqs,
                 constraints=project_data['lower-constraints.txt'],
-                blacklist=requirement.parse(''),
+                denylist=requirement.parse(''),
             )
         )
 
@@ -579,7 +579,7 @@ class TestValidateLowerConstraints(testtools.TestCase):
             check.validate_lower_constraints(
                 req_list=head_reqs,
                 constraints=project_data['lower-constraints.txt'],
-                blacklist=requirement.parse(''),
+                denylist=requirement.parse(''),
             )
         )
 
@@ -597,7 +597,7 @@ class TestValidateLowerConstraints(testtools.TestCase):
             check.validate_lower_constraints(
                 req_list=head_reqs,
                 constraints=project_data['lower-constraints.txt'],
-                blacklist=requirement.parse(''),
+                denylist=requirement.parse(''),
             )
         )
 
@@ -614,11 +614,11 @@ class TestValidateLowerConstraints(testtools.TestCase):
             check.validate_lower_constraints(
                 req_list=head_reqs,
                 constraints=project_data['lower-constraints.txt'],
-                blacklist=requirement.parse(''),
+                denylist=requirement.parse(''),
             )
         )
 
-    def test_mismatch_blacklisted(self):
+    def test_mismatch_denylisted(self):
         constraints_content = textwrap.dedent("""
         name==1.2
         """)
@@ -632,7 +632,7 @@ class TestValidateLowerConstraints(testtools.TestCase):
             check.validate_lower_constraints(
                 req_list=head_reqs,
                 constraints=project_data['lower-constraints.txt'],
-                blacklist=requirement.parse('name'),
+                denylist=requirement.parse('name'),
             )
         )
 
@@ -650,7 +650,7 @@ class TestValidateLowerConstraints(testtools.TestCase):
             check.validate_lower_constraints(
                 req_list=head_reqs,
                 constraints=project_data['lower-constraints.txt'],
-                blacklist=requirement.parse(''),
+                denylist=requirement.parse(''),
             )
         )
 
@@ -668,7 +668,7 @@ class TestValidateLowerConstraints(testtools.TestCase):
             check.validate_lower_constraints(
                 req_list=head_reqs,
                 constraints=project_data['lower-constraints.txt'],
-                blacklist=requirement.parse(''),
+                denylist=requirement.parse(''),
             )
         )
 
@@ -686,7 +686,7 @@ class TestValidateLowerConstraints(testtools.TestCase):
             check.validate_lower_constraints(
                 req_list=head_reqs,
                 constraints=project_data['lower-constraints.txt'],
-                blacklist=requirement.parse(''),
+                denylist=requirement.parse(''),
             )
         )
 
@@ -712,7 +712,7 @@ class TestValidateLowerConstraints(testtools.TestCase):
             check.validate_lower_constraints(
                 req_list=head_reqs,
                 constraints=project_data['lower-constraints.txt'],
-                blacklist=requirement.parse(''),
+                denylist=requirement.parse(''),
             )
         )
 
@@ -737,7 +737,7 @@ class TestValidateLowerConstraints(testtools.TestCase):
             check.validate_lower_constraints(
                 req_list=head_reqs,
                 constraints=project_data['lower-constraints.txt'],
-                blacklist=requirement.parse(''),
+                denylist=requirement.parse(''),
             )
         )
 
@@ -762,7 +762,7 @@ class TestValidateLowerConstraints(testtools.TestCase):
             check.validate_lower_constraints(
                 req_list=head_reqs,
                 constraints=project_data['lower-constraints.txt'],
-                blacklist=requirement.parse(''),
+                denylist=requirement.parse(''),
             )
         )
 
@@ -786,7 +786,7 @@ class TestValidateLowerConstraints(testtools.TestCase):
             check.validate_lower_constraints(
                 req_list=head_reqs,
                 constraints=project_data['lower-constraints.txt'],
-                blacklist=requirement.parse(''),
+                denylist=requirement.parse(''),
             )
         )
 
