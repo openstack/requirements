@@ -157,13 +157,8 @@ scipy  # BSD
 scrypt!=0.8.21  # BSD
 semantic-version  # BSD
 setproctitle  # BSD
-# NOTE(yamahata):
-# bug work around of sqlalchemy
-# https://bitbucket.org/zzzeek/sqlalchemy/issues/3952/
-# The fix which is in git master branch is planned for 1.1.9
-SQLAlchemy!=1.1.5,!=1.1.6,!=1.1.7,!=1.1.8  # MIT
+SQLAlchemy  # MIT
 sqlalchemy-filters  # Apache-2.0
-sqlalchemy-migrate  # Apache-2.0
 SQLAlchemy-Utils  # BSD License
 sqlparse  # BSD
 sshtunnel  # MIT
