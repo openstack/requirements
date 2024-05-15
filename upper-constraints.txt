@@ -57,7 +57,6 @@ oslo.context===5.5.0
 rcssmin===1.1.1
 pycadf===3.1.1
 grpcio===1.63.0
-pysendfile===2.0.1
 sniffio===1.3.1
 fixtures===4.1.0
 neutron-lib===3.13.0
