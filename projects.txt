@@ -79,11 +79,6 @@ openstack/monasca-persister
 openstack/monasca-statsd
 openstack/monasca-tempest-plugin
 openstack/monasca-ui
-openstack/murano
-openstack/murano-agent
-openstack/murano-dashboard
-openstack/murano-pkg-check
-openstack/murano-tempest-plugin
 openstack/networking-bagpipe
 openstack/networking-baremetal
 openstack/networking-bgpvpn
@@ -200,7 +195,6 @@ openstack/python-manilaclient
 openstack/python-masakariclient
 openstack/python-mistralclient
 openstack/python-monascaclient
-openstack/python-muranoclient
 openstack/python-neutronclient
 openstack/python-novaclient
 openstack/python-octaviaclient

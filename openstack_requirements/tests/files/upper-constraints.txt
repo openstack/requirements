@@ -245,7 +245,6 @@ singledispatch===3.4.0.3;python_version=='2.7'
 oslo.serialization===2.17.0
 warlock===1.2.0
 sphinxcontrib-httpdomain===1.5.0
-murano-pkg-check===0.3.0
 oslo.vmware===2.18.0
 sqlalchemy-migrate===0.11.0
 gitdb===0.6.4
@@ -384,7 +383,6 @@ wrapt===1.10.8
 oslo.privsep===1.17.0
 zope.interface===4.3.3
 oslo.policy===1.19.0
-python-muranoclient===0.12.0
 pyeclib===1.4.0
 wsgi-intercept===1.5.0
 ndg-httpsclient===0.4.2;python_version=='2.7'
