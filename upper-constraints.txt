@@ -261,7 +261,7 @@ daiquiri===3.2.5.1
 influxdb===5.3.1
 funcparserlib===2.0.0a0
 passlib===1.7.4
-cliff===4.6.0
+cliff===4.7.0
 os-brick===6.7.0
 ansible-runner===2.3.6
 scp===0.14.5
