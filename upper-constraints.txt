@@ -7,7 +7,6 @@ netmiko===4.1.2
 sshtunnel===0.4.0
 PasteDeploy===3.1.0
 typing===3.7.4.3
-python-saharaclient===4.2.0
 Routes===2.5.1
 rtslib-fb===2.1.76
 oslo.limit===2.4.0

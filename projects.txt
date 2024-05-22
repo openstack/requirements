@@ -197,7 +197,6 @@ openstack/python-neutronclient
 openstack/python-novaclient
 openstack/python-octaviaclient
 openstack/python-openstackclient
-openstack/python-saharaclient
 openstack/python-swiftclient
 openstack/python-tackerclient
 openstack/python-troveclient
@@ -206,10 +205,6 @@ openstack/python-watcherclient
 openstack/python-zaqarclient
 openstack/python-zunclient
 openstack/requirements
-openstack/sahara
-openstack/sahara-dashboard
-openstack/sahara-extra
-openstack/sahara-image-elements
 openstack/stevedore
 openstack/sushy
 openstack/sushy-tools

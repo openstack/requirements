@@ -429,7 +429,6 @@ python-novaclient  # Apache-2.0
 python-observabilityclient  # Apache-2.0
 python-octaviaclient  # Apache-2.0
 python-openstackclient  # Apache-2.0
-python-saharaclient  # Apache-2.0
 python-swiftclient  # Apache-2.0
 python-tackerclient  # Apache-2.0
 python-troveclient  # Apache-2.0
