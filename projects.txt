@@ -22,8 +22,6 @@ openstack/designate
 openstack/designate-dashboard
 openstack/designate-tempest-plugin
 openstack/diskimage-builder
-openstack/ec2-api
-openstack/ec2api-tempest-plugin
 openstack/etcd3gw
 openstack/freezer
 openstack/freezer-api
