@@ -527,7 +527,7 @@ pytest-django===4.8.0
 jaeger-client===4.8.0
 XStatic-Json2yaml===0.1.1.0
 boto===2.49.0
-os-vif===3.5.0
+os-vif===3.6.0
 hyperlink===21.0.0
 mitba===1.1.1
 python-masakariclient===8.4.0
