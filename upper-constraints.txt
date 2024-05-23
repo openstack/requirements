@@ -33,7 +33,7 @@ setproctitle===1.3.3
 pytest===8.1.1
 python-slugify===8.0.4
 cursive===0.2.3
-oslo.service===3.4.0
+oslo.service===3.5.0
 django-appconf===1.0.6
 ntc_templates===4.4.0
 sphinxcontrib-nwdiag===2.0.0
