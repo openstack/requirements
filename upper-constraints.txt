@@ -551,7 +551,7 @@ docker===7.0.0
 storops===1.2.11
 anyio===4.2.0
 XStatic-Angular-lrdragndrop===1.0.2.6
-ovsdbapp===2.6.0
+ovsdbapp===2.6.1
 aniso8601===9.0.1
 rjsmin===1.2.1
 icalendar===5.0.11
