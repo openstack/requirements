@@ -213,7 +213,7 @@ tzlocal===5.2
 sphinxcontrib-jsmath===1.0.1
 python-novaclient===18.6.0
 pact===1.12.0
-bcrypt===4.1.2
+bcrypt===4.0.1
 exceptiongroup===1.2.0;python_version=='3.10'
 exceptiongroup===1.2.0;python_version=='3.8'
 exceptiongroup===1.2.0;python_version=='3.9'
