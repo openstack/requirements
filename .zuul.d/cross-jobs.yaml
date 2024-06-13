@@ -22,30 +22,6 @@
       - .zuul.d/cross-jobs.yaml
 
 - job:
-    name: requirements-cross-npm
-    parent: nodejs-run-test-browser
-    timeout: 2400
-    description: |
-      A parent job to perform cross-repository npm tests.
-
-      Inherit from this job, and add the intended project to
-      ``required-projects``.
-
-      Also, set the following variable:
-
-      .. zuul:jobvar:: tox_envlist
-
-         Use the specified tox environments (``ALL`` selects all).
-    nodeset: ubuntu-focal
-    vars:
-      zuul_work_dir: "{{ (zuul.projects.values() | selectattr('required') | selectattr('name', 'match', '^(?!openstack/requirements)') | list)[0].src_dir }}"
-      tox_constraints_file: "{{ ansible_user_dir }}/{{ zuul.projects['opendev.org/openstack/requirements'].src_dir }}/upper-constraints.txt"
-    pre-run: playbooks/nodejs-pre.yaml
-    files:
-      - upper-constraints.txt
-      - .zuul.d/cross-jobs.yaml
-
-- job:
     name: cross-aodh-py311
     parent: requirements-cross-test
     description: Run cross-project tests on aodh with py311.
@@ -111,11 +87,18 @@
 
 - job:
     name: cross-horizon-npm
-    parent: requirements-cross-npm
+    parent: horizon-nodejs20-run-test
+    timeout: 2400
     description: Run cross-project tests on horizon with npm.
     required-projects: openstack/horizon
     vars:
+      tox_constraints_file: "{{ ansible_user_dir }}/{{ zuul.projects['opendev.org/openstack/requirements'].src_dir }}/upper-constraints.txt"
       tox_envlist: npm
+      zuul_work_dir: "{{ (zuul.projects.values() | selectattr('required') | selectattr('name', 'match', '^(?!openstack/requirements)') | list)[0].src_dir }}"
+    pre-run: playbooks/nodejs-pre.yaml
+    files:
+      - upper-constraints.txt
+      - .zuul.d/cross-jobs.yaml
 
 - job:
     name: cross-keystone-py311
