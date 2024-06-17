@@ -52,6 +52,16 @@
     files: ^upper-constraints.*txt$
     vars:
       tox_envlist: py311-check-uc
+- job:
+    name: requirements-tox-py312-check-uc
+    parent: openstack-tox-py312
+    description: |
+      Run test for requirements project.
+
+      Uses tox with the ``py312-check-uc`` environment.
+    files: ^upper-constraints.*txt$
+    vars:
+      tox_envlist: py312-check-uc
 
 - job:
     name: requirements-tox-py38-check-uc-no-wheels
