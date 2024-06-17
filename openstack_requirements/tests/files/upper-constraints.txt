@@ -476,7 +476,7 @@ ironic-lib===2.6.0
 pytz===2016.10
 XStatic-D3===3.5.17.0
 sysv-ipc===0.7.0
-scikit-learn===0.18.1
+scikit-learn===1.5.0
 wsgiref==0.1.2
 discover==0.4.0
 oslo.sphinx==0.9.27
