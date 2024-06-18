@@ -248,7 +248,6 @@ pifpaf  # Apache-2.0
 psycopg2  # LGPL/ZPL
 psycopg2-binary  # LGPL/ZPL
 py-pure-client  # BSD
-pysendfile;sys_platform!='win32'  # MIT
 pytest  # MIT
 pytest-cov  # MIT
 pytest-django  # BSD (3 clause)
