@@ -3,9 +3,6 @@
       - openstack-python3-wallaby-jobs
     check:
       jobs:
-        - build-wheel-cache-centos-8-stream:
-            files:
-              - bindep.txt
         - build-wheel-cache-ubuntu-bionic:
             files:
               - bindep.txt
@@ -49,9 +46,6 @@
             files:
               - bindep.txt
               - upper-constraints.txt
-        - build-wheel-cache-centos-8-stream-arm64:
-            files:
-              - bindep.txt
         - build-wheel-cache-ubuntu-bionic-arm64:
             files:
               - bindep.txt
@@ -60,9 +54,6 @@
               - bindep.txt
     gate:
       jobs:
-        - build-wheel-cache-centos-8-stream:
-            files:
-              - bindep.txt
         - build-wheel-cache-ubuntu-bionic:
             files:
               - bindep.txt
