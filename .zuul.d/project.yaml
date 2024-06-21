@@ -20,6 +20,8 @@
         - requirements-tox-py39-check-uc
         - requirements-tox-py310-check-uc
         - requirements-tox-py311-check-uc
+        - requirements-tox-py312-check-uc:
+            voting: false
         - requirements-tox-validate-projects:
             voting: false
         - cross-aodh-py311
