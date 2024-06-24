@@ -160,7 +160,6 @@ setproctitle  # BSD
 SQLAlchemy  # MIT
 sqlalchemy-filters  # Apache-2.0
 SQLAlchemy-Utils  # BSD License
-sqlparse  # BSD
 sshtunnel  # MIT
 statsd  # MIT
 suds-community  # LGPLv3+

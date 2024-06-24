@@ -134,7 +134,6 @@ doc8===1.1.1
 pymongo===4.7.2
 python-cloudkittyclient===5.1.0
 soupsieve===2.5
-sqlparse===0.5.0
 oslotest===5.0.0
 jsonpointer===2.4
 defusedxml===0.7.1
