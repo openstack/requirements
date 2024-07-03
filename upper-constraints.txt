@@ -436,7 +436,7 @@ opentelemetry-exporter-otlp-proto-common===1.24.0
 distlib===0.3.8
 XStatic-Moment-Timezone===0.5.22.0
 dogpile.cache===1.3.3
-python-barbicanclient===6.0.0
+python-barbicanclient===7.0.0
 salt===3007.0
 opentelemetry-semantic-conventions===0.45b0
 api-object-schema===2.0.0
