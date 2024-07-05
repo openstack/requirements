@@ -581,7 +581,7 @@ confluent-kafka===2.4.0
 backports.tarfile===1.1.1
 xvfbwrapper===0.2.9
 influxdb-client===1.43.0
-tosca-parser===2.10.0
+tosca-parser===2.11.0
 charset-normalizer===3.3.2
 Flask===3.0.3
 httpx===0.27.0
