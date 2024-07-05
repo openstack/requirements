@@ -184,7 +184,7 @@ urllib3===1.26.18
 graphviz===0.20.3
 portend===3.2.0
 PyKMIP===0.10.0
-python-observabilityclient===0.2.0
+python-observabilityclient===0.3.0
 whereto===0.4.0
 pywbem===1.7.2
 python-subunit===1.4.4
