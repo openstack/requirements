@@ -263,7 +263,7 @@ python-zaqarclient===2.7.0
 ldappool===3.0.0
 joblib===1.4.2
 google-api-python-client===2.129.0
-castellan===5.0.0
+castellan===5.1.0
 oslo.versionedobjects===3.3.0
 enmerkar===0.7.1
 webcolors===1.13
