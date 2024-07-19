@@ -161,7 +161,7 @@ XStatic-roboto-fontface===0.5.0.0
 pyudev===0.24.1
 eventlet===0.33.3
 openstack-doc-tools===3.3.1
-oslo.messaging===14.4.1
+oslo.messaging===14.4.2
 jira===3.5.0
 extras===1.0.0
 PyJWT===2.6.0
