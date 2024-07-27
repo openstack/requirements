@@ -544,7 +544,7 @@ DateTimeRange===2.3.0
 cffi===1.17.1
 python-cyborgclient===2.4.0
 futurist===3.0.0
-jsonschema===4.19.2
+jsonschema===4.23.0
 sphinxcontrib-devhelp===2.0.0
 python-blazarclient===4.1.0
 alembic===1.13.3
