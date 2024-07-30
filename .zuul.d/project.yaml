@@ -16,7 +16,6 @@
         - requirements-tox-babel
         - requirements-tox-bindep:
             voting: false
-        - requirements-tox-py38-check-uc
         - requirements-tox-py39-check-uc
         - requirements-tox-py310-check-uc
         - requirements-tox-py311-check-uc
@@ -82,7 +81,6 @@
               - bindep.txt
         - openstack-tox-validate
         - requirements-tox-babel
-        - requirements-tox-py38-check-uc
         - requirements-tox-py39-check-uc
         - requirements-tox-py310-check-uc
         - requirements-tox-py311-check-uc
@@ -118,7 +116,6 @@
       jobs:
         - nova-ceph-multistore
         - nova-next
-        - requirements-tox-py38-check-uc-no-wheels
         - requirements-tox-py39-check-uc-no-wheels
         - requirements-tox-py310-check-uc-no-wheels
         - requirements-tox-py311-check-uc-no-wheels
