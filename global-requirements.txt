@@ -109,9 +109,7 @@ prometheus-client  # Apache-2.0
 protobuf  # BSD License (3 clause)
 psutil  # BSD
 pyasn1!=0.2.3  # BSD
-pyasn1-lextudio  # BSD
 pyasn1-modules  # BSD
-pyasn1-modules-lextudio  # BSD
 pycadf!=2.0.0  # Apache-2.0
 pycdlib  # LGPLv2+
 PyECLib  # BSD
