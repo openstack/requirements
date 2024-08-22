@@ -380,7 +380,7 @@ oauth2client===4.1.3
 idna===3.7
 yamlloader===1.4.1
 protobuf===4.25.3
-sushy===5.1.1
+sushy===5.2.0
 python-neutronclient===11.3.1
 types-setuptools===70.3.0.20240710
 pika===1.3.2
