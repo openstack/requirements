@@ -603,7 +603,7 @@ python-dateutil===2.9.0.post0
 virtualenv===20.26.3
 colorama===0.4.6
 confetti===2.5.3
-ironic-lib===6.1.0
+ironic-lib===6.2.0
 pytz===2024.1
 opentelemetry-proto===1.25.0
 XStatic-D3===3.5.17.0
