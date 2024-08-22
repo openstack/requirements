@@ -445,7 +445,7 @@ tomli===2.0.1;python_version=='3.9'
 backports.zoneinfo===0.2.1;python_version=='3.8'
 oslo.upgradecheck===2.3.0
 tempora===5.6.0
-stevedore===5.2.0
+stevedore===5.3.0
 pywinrm===0.5.0
 botocore===1.34.145
 xmltodict===0.13.0
