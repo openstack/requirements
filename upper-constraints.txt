@@ -542,7 +542,7 @@ proto-plus===1.24.0
 python-keystoneclient===5.4.0
 ceilometer===22.0.0
 diskimage-builder===3.33.0
-heat-translator===3.0.0
+heat-translator===3.1.0
 python-magnumclient===4.6.0
 docker===7.1.0
 storops===1.2.11
