@@ -412,7 +412,7 @@ msgpack===1.0.8
 Sphinx===7.1.2;python_version=='3.8'
 Sphinx===7.4.6;python_version>='3.9'
 oslo.config===9.5.0
-openstackdocstheme===3.2.0
+openstackdocstheme===3.3.0
 osc-placement===4.4.0
 rpds-py===0.19.0
 zake===0.2.2
