@@ -565,7 +565,7 @@ futurist===3.0.0
 jsonschema===4.19.2
 sphinxcontrib-devhelp===1.0.2;python_version=='3.8'
 sphinxcontrib-devhelp===2.0.0;python_version>='3.9'
-python-blazarclient===4.0.1
+python-blazarclient===4.1.0
 alembic===1.13.2
 execnet===2.1.1
 glance-store===4.8.1
