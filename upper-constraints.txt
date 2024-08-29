@@ -48,7 +48,7 @@ pbr===6.1.0
 munch===4.0.0
 waiting===1.4.1
 attrs===24.2.0
-microversion-parse===1.0.1
+microversion-parse===2.0.0
 jwcrypto===1.5.6
 Pint===0.21.1;python_version=='3.8'
 Pint===0.23;python_version=='3.9'
