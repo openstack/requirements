@@ -270,7 +270,7 @@ castellan===5.1.1
 oslo.versionedobjects===3.4.0
 enmerkar===0.7.1
 webcolors===24.8.0
-aodhclient===3.5.1
+aodhclient===3.6.0
 autobahn===23.1.2;python_version=='3.8'
 autobahn===24.4.2;python_version>='3.9'
 SQLAlchemy-Utils===0.41.2
