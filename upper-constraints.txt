@@ -526,7 +526,7 @@ boto===2.49.0
 os-vif===3.7.0
 hyperlink===21.0.0
 mitba===1.1.1
-python-masakariclient===8.4.0
+python-masakariclient===8.5.0
 Werkzeug===3.0.4
 APScheduler===3.10.4
 xmlschema===2.5.1
