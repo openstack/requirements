@@ -530,7 +530,7 @@ python-masakariclient===8.5.0
 Werkzeug===3.0.4
 APScheduler===3.10.4
 xmlschema===2.5.1
-python-troveclient===8.5.0
+python-troveclient===8.6.0
 cachez===0.1.2
 XStatic-Bootstrap-Datepicker===1.4.0.0
 netifaces===0.11.0
