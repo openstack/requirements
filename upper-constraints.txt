@@ -200,7 +200,7 @@ cryptography===42.0.8
 httpcore===1.0.5
 URLObject===2.4.3
 psycopg2-binary===2.9.9
-openstack-release-test===6.0.0
+openstack-release-test===7.0.0
 pycryptodomex===3.20.0
 requests-mock===1.12.1
 os-apply-config===14.0.0
