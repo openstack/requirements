@@ -424,8 +424,7 @@ python-neutronclient  # Apache-2.0
 python-novaclient  # Apache-2.0
 python-observabilityclient  # Apache-2.0
 python-octaviaclient  # Apache-2.0
-# FIXME: Temporary cap to unblock nova during 2024.2 release. Remove asap.
-python-openstackclient<7.0.0  # Apache-2.0
+python-openstackclient  # Apache-2.0
 python-swiftclient  # Apache-2.0
 python-tackerclient  # Apache-2.0
 python-troveclient  # Apache-2.0
