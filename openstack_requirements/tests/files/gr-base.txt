@@ -69,7 +69,7 @@ setuptools_git>=0.4
 simplejson>=2.2.0
 six
 sockjs-tornado>=1.0.0,<2.0.0
-SQLAlchemy<=0.7.99,>=0.7
+SQLAlchemy>=0.7,<=1.2.19
 sqlalchemy-migrate>=0.7
 stevedore>=0.10
 suds>=0.4
