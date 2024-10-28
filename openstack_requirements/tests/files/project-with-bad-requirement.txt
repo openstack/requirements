@@ -4,7 +4,7 @@
 greenlet>=0.3.1
 
 # < 0.8.0/0.8 does not work, see https://bugs.launchpad.net/bugs/1153983
-SQLAlchemy>=0.7.8,<=0.7.99
+SQLAlchemy>=0.7.8,<=1.3.0
 anyjson>=0.3.3
 eventlet>=0.9.12
 PasteDeploy
