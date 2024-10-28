@@ -4,6 +4,8 @@ alembic!=1.2.0,!=1.6.3  # MIT
 amqp!=2.1.4,!=5.0.4  # BSD
 appdirs  # MIT License
 apscheduler  # MIT License
+aiomysql  # MIT License
+aiosqlite  # MIT License
 autobahn  # MIT License
 automaton  # Apache-2.0
 autopage  # Apache-2.0
