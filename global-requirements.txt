@@ -491,7 +491,6 @@ wheel  # MIT
 ## Libraries that are no longer supported upstream and which we should
 ## work to remove usage of.
 
-extras  # MIT
 jsonpath-rw  # Apache-2.0
 jsonpath-rw-ext  # Apache-2.0
 python-consul  # MIT License
