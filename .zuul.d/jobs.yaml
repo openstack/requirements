@@ -84,6 +84,16 @@
     pre-run: playbooks/drop-wheel-mirror.yaml
 
 - job:
+    name: requirements-tox-py312-check-uc-no-wheels
+    parent: requirements-tox-py312-check-uc
+    description: |
+      Run test for requirements project.
+
+      Uses tox with the ``py312-check-uc`` environment.
+      Does not use wheel mirror.
+    pre-run: playbooks/drop-wheel-mirror.yaml
+
+- job:
     name: requirements-tox-validate-projects
     parent: openstack-tox
     files:
