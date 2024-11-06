@@ -36,6 +36,7 @@ django-compressor  # MIT
 django-debreach  # BSD
 django-formtools  # BSD
 django-pyscss  # BSD License (2 clause)
+libsass  # MIT
 Django<4.3  # BSD
 # eventlet is not compatibile with 2.0.0: https://github.com/eventlet/eventlet/issues/619
 dnspython!=2.0.0,!=2.2.0  # http://www.dnspython.org/LICENSE
