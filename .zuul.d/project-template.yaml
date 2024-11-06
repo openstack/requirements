@@ -10,6 +10,21 @@
 - job:
     name: requirements-check
     parent: unittests
+    description: |
+      Check that requirements in the target repo match OpenStack
+      global requirements.
+
+      **Job Variables**
+
+      .. zuul:jobvar:: zuul_work_dir
+         :default: {{ zuul.project.src_dir }}
+
+         Directory holding the project to check.
+
+      .. zuul:jobvar:: zuul_branch
+         :default: {{ zuul.branch }}
+
+         Branch to check.
     # NOTE(gmann): Update the nodeset if we move testing to the new version
     # of ubuntu. We are explicitly setting the nodeset here because the base
     # job (unittests) moving to the ubuntu latest version can break this
@@ -28,3 +43,15 @@
       - ^doc/requirements.txt$
       - playbooks/requirements-check.yaml
       - ^lower-constraints.txt$
+
+- job:
+    name: requirements-check-self
+    description: |
+      Run the requirements-check job on another repo in order to
+      self-test changes to its job configuration.
+    parent: requirements-check
+    # This could be any project, nova is chosen arbitrarily.
+    required-projects: openstack/nova
+    vars:
+      zuul_work_dir: "{{ zuul.projects['opendev.org/openstack/nova'].src_dir }}"
+      zuul_branch: "master"
