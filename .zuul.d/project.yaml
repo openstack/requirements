@@ -19,38 +19,37 @@
         - requirements-tox-py39-check-uc
         - requirements-tox-py310-check-uc
         - requirements-tox-py311-check-uc
-        - requirements-tox-py312-check-uc:
-            voting: false
+        - requirements-tox-py312-check-uc
         - requirements-tox-validate-projects:
             voting: false
-        - cross-aodh-py311
-        - cross-barbican-py311
-        - cross-ceilometer-py311
-        - cross-cinder-py311
-        - cross-designate-py311
-        - cross-glance-py311
-        - cross-heat-py311
-        - cross-horizon-py311
+        - cross-aodh-py312
+        - cross-barbican-py312
+        - cross-ceilometer-py312
+        - cross-cinder-py312
+        - cross-designate-py312
+        - cross-glance-py312
+        - cross-heat-py312
+        - cross-horizon-py312
         - cross-horizon-npm
-        - cross-ironic-py311
-        - cross-keystone-py311
-        - cross-kuryr-py311
-        - cross-manila-py311
-        - cross-magnum-py311
-        - cross-masakari-py311:
+        - cross-ironic-py312
+        - cross-keystone-py312
+        - cross-kuryr-py312
+        - cross-manila-py312
+        - cross-magnum-py312
+        - cross-masakari-py312:
             voting: false
-        - cross-mistral-py311:
+        - cross-mistral-py312:
             voting: false
-        - cross-neutron-py311
+        - cross-neutron-py312
         - cross-nova-pep8
-        - cross-nova-py311
-        - cross-placement-py311
+        - cross-nova-py312
+        - cross-placement-py312
         - cross-osvif-py3
         - cross-nova-functional
-        - cross-placement-functional-py311
-        - cross-octavia-py311
+        - cross-placement-functional-py312
+        - cross-octavia-py312
         - cross-osc-tox-docs
-        - cross-swift-py311
+        - cross-swift-py312
         - openstacksdk-functional-devstack
         - tempest-full-py3:
             irrelevant-files:
@@ -84,28 +83,29 @@
         - requirements-tox-py39-check-uc
         - requirements-tox-py310-check-uc
         - requirements-tox-py311-check-uc
-        - cross-cinder-py311
-        - cross-designate-py311
-        - cross-glance-py311
-        - cross-heat-py311
-        - cross-horizon-py311
+        - requirements-tox-py312-check-uc
+        - cross-cinder-py312
+        - cross-designate-py312
+        - cross-glance-py312
+        - cross-heat-py312
+        - cross-horizon-py312
         - cross-horizon-npm
-        - cross-ironic-py311
-        - cross-keystone-py311
-        - cross-kuryr-py311
-        - cross-manila-py311
-        - cross-neutron-py311
+        - cross-ironic-py312
+        - cross-keystone-py312
+        - cross-kuryr-py312
+        - cross-manila-py312
+        - cross-neutron-py312
         - cross-nova-pep8
-        - cross-nova-py311:
+        - cross-nova-py312:
             files: ^upper-constraints.txt$
-        - cross-placement-py311:
+        - cross-placement-py312:
             files: ^upper-constraints.txt$
         - cross-osvif-py3
         - cross-nova-functional
-        - cross-placement-functional-py311
-        - cross-octavia-py311
+        - cross-placement-functional-py312
+        - cross-octavia-py312
         - cross-osc-tox-docs
-        - cross-swift-py311
+        - cross-swift-py312
         - openstacksdk-functional-devstack
         - tempest-full-py3:
             irrelevant-files:
@@ -119,6 +119,7 @@
         - requirements-tox-py39-check-uc-no-wheels
         - requirements-tox-py310-check-uc-no-wheels
         - requirements-tox-py311-check-uc-no-wheels
+        - requirements-tox-py312-check-uc-no-wheels
         - tempest-integrated-storage
         - tempest-pg-full:
             irrelevant-files:
