@@ -284,7 +284,7 @@ nodeenv===1.9.1
 gossip===2.4.0
 suds-community===1.2.0
 importlib-metadata===6.2.1;python_version=='3.9'
-importlib-metadata===6.11.0;python_version>='3.10'
+importlib-metadata===8.0.0;python_version>='3.10'
 oslo.middleware===6.2.0
 XStatic-mdi===1.6.50.2
 django-pyscss===2.0.3
