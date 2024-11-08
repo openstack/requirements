@@ -1,16 +1,4 @@
 - hosts: all
-  pre_tasks:
-    - name: Ensure pip
-      include_role:
-        name: ensure-pip
-
-  tasks:
-    - name: Install openstack_requirements
-      command: "pip3 install --user {{ zuul.projects['opendev.org/openstack/requirements'].src_dir }}"
-
-    - name: Run requirements check script
-      # Use command module here instead of script since Zuul gets output
-      # with command into job-output.txt file.
-      # Command expects the file to be at the remote system - the system
-      # running the tests. Ask zuul variables for the path.
-      command: "{{ zuul.projects['opendev.org/openstack/requirements'].src_dir }}/playbooks/files/project-requirements-change.py {{ zuul.project.src_dir }} {{ zuul.branch }}"
+  roles:
+    - ensure-pip
+    - check-requirements

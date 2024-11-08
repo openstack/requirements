@@ -13,6 +13,7 @@
             files:
               - bindep.txt
         - openstack-tox-validate
+        - requirements-check-self
         - requirements-tox-babel
         - requirements-tox-bindep:
             voting: false
@@ -79,6 +80,7 @@
             files:
               - bindep.txt
         - openstack-tox-validate
+        - requirements-check-self
         - requirements-tox-babel
         - requirements-tox-py39-check-uc
         - requirements-tox-py310-check-uc

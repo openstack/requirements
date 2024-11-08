@@ -1,0 +1,2 @@
+zuul_work_dir: "{{ zuul.project.src_dir }}"
+zuul_branch: "{{ zuul.branch }}"
