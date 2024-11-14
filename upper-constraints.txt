@@ -587,7 +587,7 @@ python-dateutil===2.9.0.post0
 virtualenv===20.27.0
 colorama===0.4.6
 confetti===2.5.3
-ironic-lib===6.2.0
+ironic-lib===7.0.0
 aiohappyeyeballs===2.4.3
 pytz===2024.2
 opentelemetry-proto===1.27.0
