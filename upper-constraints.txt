@@ -311,7 +311,7 @@ stestr===4.1.0
 pillow===11.0.0
 infoblox-client===0.6.0
 pysmi-lextudio===1.4.3
-oslo.serialization===5.5.0
+oslo.serialization===5.6.0
 warlock===2.0.1
 exabgp===4.2.22
 types-simplejson===3.19.0.20240801
