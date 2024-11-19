@@ -18,7 +18,7 @@ XStatic-Angular-Bootstrap===2.5.0.0
 WebOb===1.8.8
 sphinxcontrib-actdiag===3.0.0
 pecan===1.5.1
-os-api-ref===3.0.0
+os-api-ref===3.0.1
 python-ldap===3.4.4
 oslo.concurrency===6.2.0
 websocket-client===1.8.0
