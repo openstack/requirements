@@ -118,13 +118,11 @@ openstack/openstack-ansible-os_heat
 openstack/openstack-ansible-os_horizon
 openstack/openstack-ansible-os_ironic
 openstack/openstack-ansible-os_keystone
-openstack/openstack-ansible-os_karbor
 openstack/openstack-ansible-os_magnum
 openstack/openstack-ansible-os_neutron
 openstack/openstack-ansible-os_nova
 openstack/openstack-ansible-os_octavia
 openstack/openstack-ansible-os_rally
-openstack/openstack-ansible-os_sahara
 openstack/openstack-ansible-os_swift
 openstack/openstack-ansible-os_tacker
 openstack/openstack-ansible-os_tempest
