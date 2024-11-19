@@ -9,7 +9,7 @@ PasteDeploy===3.1.0
 typing===3.7.4.3
 Routes===2.5.1
 rtslib-fb===2.1.76
-oslo.limit===2.5.0
+oslo.limit===2.6.0
 yarl===1.15.5
 tzdata===2024.2
 smmap===5.0.1
