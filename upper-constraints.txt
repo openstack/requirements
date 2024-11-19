@@ -15,7 +15,7 @@ tzdata===2024.2
 smmap===5.0.1
 confget===5.1.2
 XStatic-Angular-Bootstrap===2.5.0.0
-WebOb===1.8.8
+WebOb===1.8.9
 sphinxcontrib-actdiag===3.0.0
 pecan===1.5.1
 os-api-ref===3.0.0
