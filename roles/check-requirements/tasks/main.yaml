@@ -1,9 +1,12 @@
+- name: Create virtual environment
+  command: "{{ ensure_pip_virtualenv_command }} {{ zuul_work_dir }}/venv"
+
 - name: Install openstack_requirements
-  command: "pip3 install --user {{ zuul.projects['opendev.org/openstack/requirements'].src_dir }}"
+  command: "{{ zuul_work_dir }}/venv/bin/pip3 install {{ zuul.projects['opendev.org/openstack/requirements'].src_dir }}"
 
 - name: Run requirements check script
   # Use command module here instead of script since Zuul gets output
   # with command into job-output.txt file.
   # Command expects the file to be at the remote system - the system
   # running the tests. Ask zuul variables for the path.
-  command: "{{ zuul.projects['opendev.org/openstack/requirements'].src_dir }}/playbooks/files/project-requirements-change.py {{ zuul_work_dir }} {{ zuul_branch }}"
+  command: "{{ zuul_work_dir }}/venv/bin/python3 {{ zuul.projects['opendev.org/openstack/requirements'].src_dir }}/playbooks/files/project-requirements-change.py {{ zuul_work_dir }} {{ zuul_branch }}"

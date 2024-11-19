@@ -32,7 +32,7 @@
     # ubuntu latest version). This nodeset setting will avoid such breaking
     # on stable branch and make sure it continue to run on the supported ubuntu
     # version on stable branches.
-    nodeset: ubuntu-jammy
+    nodeset: ubuntu-noble
     run: playbooks/requirements-check.yaml
     required-projects:
       - openstack/requirements
@@ -41,7 +41,6 @@
       - ^.*requirements.txt$
       - ^.*requirements-py[2,3].txt$
       - ^doc/requirements.txt$
-      - playbooks/requirements-check.yaml
       - ^lower-constraints.txt$
 
 - job:
@@ -54,4 +53,6 @@
     required-projects: openstack/nova
     vars:
       zuul_work_dir: "{{ zuul.projects['opendev.org/openstack/nova'].src_dir }}"
-      zuul_branch: "master"
+    files:
+      - ^playbooks/requirements-check.yaml$
+      - ^roles/check-requirements/
