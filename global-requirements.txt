@@ -387,6 +387,7 @@ oslo.versionedobjects  # Apache-2.0
 oslo.vmware  # Apache-2.0
 osprofiler  # Apache-2.0
 pbr!=2.1.0  # Apache-2.0
+sherlock  # MIT
 stevedore!=3.0.0  # Apache-2.0
 tap-as-a-service  # Apache-2.0
 taskflow  # Apache-2.0
