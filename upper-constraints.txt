@@ -249,7 +249,7 @@ daiquiri===3.2.5.1
 influxdb===5.3.2
 funcparserlib===2.0.0a0
 passlib===1.7.4
-cliff===4.7.0
+cliff===4.8.0
 os-brick===6.9.0
 scp===0.15.0
 python-zaqarclient===2.9.0
