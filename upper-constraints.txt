@@ -135,7 +135,7 @@ oslotest===5.0.0
 jsonpointer===3.0.0
 defusedxml===0.7.1
 opentelemetry-sdk===1.28.2
-netaddr===0.10.1
+netaddr===1.3.0
 pyghmi===1.5.72
 autocommand===2.2.2
 sphinxcontrib-blockdiag===3.0.0
