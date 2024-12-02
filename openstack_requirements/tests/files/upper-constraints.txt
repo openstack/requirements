@@ -190,7 +190,7 @@ trollius===2.1
 scp===0.10.2
 python-zaqarclient===1.4.0
 funcsigs===1.0.2;python_version=='2.7'
-zhmcclient===0.10.0
+zhmcclient===1.18.1
 dnspython3===1.15.0;python_version=='3.4'
 dnspython3===1.15.0;python_version=='3.5'
 ldappool===2.0.0
