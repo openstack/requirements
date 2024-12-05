@@ -58,6 +58,7 @@ GitPython  # BSD License (3 clause)
 google-api-python-client  # Apache-2.0
 graphviz!=0.5.0  # MIT License
 greenlet!=0.4.14  # MIT
+grpcio  # Apache-2.0
 gunicorn  # MIT
 httplib2  # MIT
 httpx  # BSD
