@@ -1,11 +1,11 @@
 ## section:general
 
+aiomysql  # MIT License
+aiosqlite  # MIT License
 alembic!=1.2.0,!=1.6.3  # MIT
 amqp!=2.1.4,!=5.0.4  # BSD
 appdirs  # MIT License
 apscheduler  # MIT License
-aiomysql  # MIT License
-aiosqlite  # MIT License
 autobahn  # MIT License
 automaton  # Apache-2.0
 autopage  # Apache-2.0
@@ -36,7 +36,6 @@ django-compressor  # MIT
 django-debreach  # BSD
 django-formtools  # BSD
 django-pyscss  # BSD License (2 clause)
-libsass  # MIT
 Django<4.3  # BSD
 # eventlet is not compatibile with 2.0.0: https://github.com/eventlet/eventlet/issues/619
 dnspython!=2.0.0,!=2.2.0  # http://www.dnspython.org/LICENSE
@@ -83,6 +82,7 @@ kazoo  # Apache-2.0
 kombu!=4.0.2  # BSD
 kubernetes  # Apache-2.0
 ldap3  # LGPLv3
+libsass  # MIT
 libvirt-python!=4.1.0,!=4.2.0  # LGPLv2+
 lxml!=3.7.0  # BSD
 Mako  # MIT
