@@ -35,7 +35,6 @@ defusedxml  # PSF
 django-compressor  # MIT
 django-debreach  # BSD
 django-formtools  # BSD
-django-pyscss  # BSD License (2 clause)
 Django<4.3  # BSD
 # eventlet is not compatibile with 2.0.0: https://github.com/eventlet/eventlet/issues/619
 dnspython!=2.0.0,!=2.2.0  # http://www.dnspython.org/LICENSE
@@ -128,7 +127,6 @@ pyOpenSSL  # Apache-2.0
 pyparsing  # MIT
 pyroute2!=0.5.4,!=0.5.5,!=0.7.1;sys_platform!='win32'  # Apache-2.0 (+ dual licensed GPL2)
 pysaml2!=4.0.3,!=4.0.4,!=4.0.5,!=4.0.5rc1,!=4.1.0,!=4.2.0,!=4.3.0,!=4.4.0,!=4.6.0  # Apache-2.0
-pyScss!=1.3.5  # MIT License
 pysnmp-lextudio  # BSD
 pystache  # MIT
 # Only required for sasl/binary protocol
