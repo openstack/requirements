@@ -35,9 +35,11 @@ neutron-lbaas
 neutron-vpnaas
 vmware-nsxlib
 
-# Projects are free to specify their own version of ansible
+# Projects are free to specify their own version of ansible and molecule
 ansible
 ansible-core
+molecule
+molecule-plugins
 
 # Tempest and its plugins are branchless which means master version of these
 # tools are used in testing the master + stable branches (except EM stable branch
