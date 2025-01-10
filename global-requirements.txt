@@ -339,7 +339,6 @@ monasca-statsd  # Apache-2.0
 networking-bagpipe  # Apache-2.0
 networking-bgpvpn  # Apache-2.0
 networking-l2gw  # Apache-2.0
-networking-odl  # Apache-2.0
 networking-sfc  # Apache-2.0
 neutron  # Apache-2.0
 neutron-dynamic-routing  # Apache-2.0
