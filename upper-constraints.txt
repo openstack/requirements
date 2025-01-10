@@ -85,7 +85,7 @@ moto===5.0.22
 infi.dtypes.wwn===0.1.1
 rpm-vercmp===0.1.2
 python-freezerclient===5.2.0
-python-vitrageclient===5.1.1
+python-vitrageclient===5.2.0
 py-pure-client===1.59.0
 krest===1.3.6
 psycopg2===2.9.10
