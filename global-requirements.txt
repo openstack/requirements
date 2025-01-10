@@ -120,7 +120,6 @@ pyghmi!=1.4.0,!=1.5.11  # Apache-2.0
 PyJWT  # MIT
 pykmip  # Apache 2.0 License
 pymemcache!=1.3.0  # Apache 2.0 License
-PyMI;sys_platform=='win32'  # Apache 2.0 License
 pymongo!=3.1  # Apache-2.0
 PyMySQL  # MIT License
 pyOpenSSL  # Apache-2.0
@@ -172,7 +171,6 @@ warlock  # Apache-2.0
 WebOb  # MIT
 websocket-client  # LGPLv2+
 websockify  # LGPLv3
-wmi;sys_platform=='win32'  # MIT
 xattr;sys_platform!='win32'  # MIT
 XStatic  # MIT License
 XStatic-Angular  # MIT License
