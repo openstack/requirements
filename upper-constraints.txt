@@ -121,7 +121,7 @@ responses===0.25.5
 croniter===6.0.0
 horizon===25.1.0
 octavia-lib===3.7.0
-python-watcherclient===4.6.0
+python-watcherclient===4.7.0
 MarkupSafe===3.0.2
 types-python-dateutil===2.9.0.20241206
 ruamel.yaml.clib===0.2.12
