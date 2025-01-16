@@ -579,7 +579,7 @@ fasteners===0.19
 sortedcontainers===2.4.0
 python-linstor===1.24.0
 filelock===3.16.1
-python-tackerclient===2.2.0
+python-tackerclient===2.3.0
 python-heatclient===4.1.0
 oslo.utils===8.0.0
 requests-kerberos===0.15.0
