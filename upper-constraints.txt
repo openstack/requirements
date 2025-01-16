@@ -20,7 +20,7 @@ sphinxcontrib-actdiag===3.0.0
 pecan===1.5.1
 os-api-ref===3.0.1
 python-ldap===3.4.4
-oslo.concurrency===6.2.0
+oslo.concurrency===7.0.0
 websocket-client===1.8.0
 osprofiler===4.2.0
 os-resource-classes===1.1.0
