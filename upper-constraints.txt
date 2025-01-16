@@ -294,7 +294,7 @@ threadpoolctl===3.5.0
 os-ken===2.11.2
 ujson===5.10.0
 selenium===3.141.0
-mistral-lib===3.0.0
+mistral-lib===3.1.0
 dogtag-pki===11.2.1
 XStatic-Angular-UUID===0.0.4.0
 purestorage===1.19.0
