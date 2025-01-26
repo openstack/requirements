@@ -196,7 +196,6 @@ openstack-release-test===7.0.0
 pycryptodomex===3.21.0
 requests-mock===1.12.1
 os-apply-config===14.0.0
-oslosphinx===4.18.0
 gunicorn===23.0.0
 storpool===7.3.0
 textfsm===1.1.3
