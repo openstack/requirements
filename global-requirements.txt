@@ -246,7 +246,6 @@ ovsdbapp  # Apache-2.0
 pifpaf  # Apache-2.0
 psycopg2  # LGPL/ZPL
 psycopg2-binary  # LGPL/ZPL
-py-pure-client  # BSD
 pytest  # MIT
 pytest-cov  # MIT
 pytest-django  # BSD (3 clause)
@@ -459,7 +458,7 @@ openstack-release-test
 dfs-sdk  # Apache-2.0
 distro  # Apache-2.0
 krest  # Apache-2.0
-purestorage  # BSD
+py-pure-client  # BSD
 python-3parclient  # Apache-2.0
 python-linstor  # LGPLv3
 pywbem  # LGPLv2.1+
