@@ -37,6 +37,7 @@ vmware-nsxlib
 
 # Projects are free to specify their own version of ansible and molecule
 ansible
+ansible-compat
 ansible-core
 molecule
 molecule-plugins
