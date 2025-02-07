@@ -437,7 +437,6 @@ python-zunclient  # Apache-2.0
 
 openstackdocstheme!=2.1.0,!=2.1.1  # Apache-2.0
 os-api-ref  # Apache-2.0
-oslosphinx  # Apache-2.0
 reno  # Apache-2.0
 sphinx-feature-classification  # Apache-2.0
 zuul-sphinx  # Apache-2.0
