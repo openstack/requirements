@@ -277,6 +277,7 @@ types-simplejson  # Apache-2.0
 typing  # PSF
 typing-extensions  # PSF
 tzdata  # MIT
+valkey  # MIT
 virtualbmc  # Apache-2.0
 virtualenv!=16.3.0  # MIT
 WebTest  # MIT
