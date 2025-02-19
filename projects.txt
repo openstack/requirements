@@ -81,7 +81,6 @@ openstack/networking-bagpipe
 openstack/networking-baremetal
 openstack/networking-bgpvpn
 openstack/networking-generic-switch
-openstack/networking-ovn
 openstack/networking-sfc
 openstack/neutron
 openstack/neutron-dynamic-routing
