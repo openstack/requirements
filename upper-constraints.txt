@@ -282,7 +282,7 @@ oslo.log===7.0.0
 nodeenv===1.9.1
 gossip===2.4.0
 suds-community===1.2.0
-oslo.middleware===6.3.0
+oslo.middleware===6.3.1
 XStatic-mdi===1.6.50.2
 django-pyscss===2.0.3
 uritemplate===4.1.1
