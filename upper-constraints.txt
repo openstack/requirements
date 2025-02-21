@@ -488,7 +488,7 @@ yappi===1.6.10
 mbstrdecoder===1.1.4
 pymemcache===4.0.0
 wrapt===1.17.2
-oslo.privsep===3.5.0
+oslo.privsep===3.6.0
 sphinxcontrib-apidoc===0.5.0
 oslo.policy===4.5.0
 hvac===2.3.0
