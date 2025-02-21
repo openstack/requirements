@@ -427,7 +427,7 @@ blinker===1.9.0
 WSME===0.12.1
 tomli===2.2.1;python_version=='3.10'
 tomli===2.2.1;python_version=='3.9'
-oslo.upgradecheck===2.4.0
+oslo.upgradecheck===2.5.0
 sherlock===0.4.1
 tempora===5.8.0
 stevedore===5.4.0
