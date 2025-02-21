@@ -430,7 +430,7 @@ tomli===2.2.1;python_version=='3.9'
 oslo.upgradecheck===2.5.0
 sherlock===0.4.1
 tempora===5.8.0
-stevedore===5.4.0
+stevedore===5.4.1
 pywinrm===0.5.0
 botocore===1.36.21
 xmltodict===0.14.2
