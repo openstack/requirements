@@ -255,7 +255,7 @@ ldappool===3.0.0
 joblib===1.4.2
 google-api-python-client===2.159.0
 castellan===5.2.0
-oslo.versionedobjects===3.5.0
+oslo.versionedobjects===3.6.0
 enmerkar===0.7.1
 webcolors===24.11.1
 aodhclient===3.7.0
