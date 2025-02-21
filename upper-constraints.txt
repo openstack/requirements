@@ -308,7 +308,7 @@ stestr===4.1.0
 pillow===11.1.0
 infoblox-client===0.6.1
 pysmi-lextudio===1.4.3
-oslo.serialization===5.6.0
+oslo.serialization===5.7.0
 warlock===2.0.1
 exabgp===4.2.22
 aiomysql===0.2.0
