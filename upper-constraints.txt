@@ -104,15 +104,15 @@ immutables===0.21
 python-swiftclient===4.6.0
 pyOpenSSL===24.2.1
 monasca-common===3.8.0
-zeroconf===0.144.3
+zeroconf===0.145.1
 scipy===1.13.1;python_version=='3.9'
-scipy===1.15.1;python_version>='3.10'
+scipy===1.15.2;python_version>='3.10'
 opentelemetry-exporter-otlp===1.30.0
 python-gnupg===0.5.4
 mypy-extensions===1.0.0
 rsd-lib===1.2.0
 XStatic-Jasmine===2.4.1.2
-googleapis-common-protos===1.67.0
+googleapis-common-protos===1.68.0
 python-glanceclient===4.7.0
 prometheus_client===0.21.1
 jaraco.classes===3.4.0
@@ -135,7 +135,7 @@ jsonpointer===3.0.0
 defusedxml===0.7.1
 opentelemetry-sdk===1.30.0
 netaddr===1.3.0
-pyghmi===1.5.76
+pyghmi===1.5.77
 autocommand===2.2.2
 sphinxcontrib-blockdiag===3.0.0
 aiosqlite===0.21.0
@@ -187,11 +187,12 @@ pycparser===2.22
 mock===5.1.0
 PyYAML===6.0.2
 beautifulsoup4===4.13.3
-ovs===3.4.1
+ovs===3.5.0
 cryptography===43.0.3
 httpcore===1.0.7
 URLObject===2.4.3
 psycopg2-binary===2.9.10
+glance_store===4.9.1
 openstack-release-test===8.0.0
 pycryptodomex===3.21.0
 requests-mock===1.12.1
@@ -302,7 +303,7 @@ retrying===1.3.4
 XStatic-Dagre===0.6.4.1
 platformdirs===4.3.6
 pydotplus===2.0.2
-boto3===1.36.21
+boto3===1.36.26
 jeepney===0.8.0
 stestr===4.1.0
 pillow===11.1.0
@@ -312,7 +313,7 @@ oslo.serialization===5.7.0
 warlock===2.0.1
 exabgp===4.2.22
 aiomysql===0.2.0
-types-simplejson===3.19.0.20241221
+types-simplejson===3.20.0.20250218
 sphinxcontrib-httpdomain===1.8.1
 metalsmith===2.4.1
 s3transfer===0.11.2
@@ -346,7 +347,7 @@ elasticsearch===2.4.1
 django-nose===1.4.7
 asgiref===3.8.1
 XStatic-JQuery.TableSorter===2.14.5.2
-pifpaf===3.2.3
+pifpaf===3.3.0
 blockdiag===3.0.0
 testtools===2.7.2
 infi.dtypes.iqn===0.4.0
@@ -400,7 +401,7 @@ Sphinx===8.1.3;python_version>='3.10'
 oslo.config===9.7.1
 openstackdocstheme===3.4.1
 osc-placement===4.5.0
-rpds-py===0.22.3
+rpds-py===0.23.1
 zake===0.2.2
 flux===1.3.5
 pysnmpcrypto===0.0.4
@@ -408,7 +409,7 @@ flexparser===0.4
 krb5===0.7.0
 PyMySQL===1.1.1
 uhashring===2.3
-kubernetes===32.0.0
+kubernetes===32.0.1
 httplib2===0.22.0
 betamax===0.9.0
 construct===2.10.70
@@ -432,7 +433,7 @@ sherlock===0.4.1
 tempora===5.8.0
 stevedore===5.4.1
 pywinrm===0.5.0
-botocore===1.36.21
+botocore===1.36.26
 xmltodict===0.14.2
 pyasn1===0.6.0
 oslo.rootwrap===7.5.1
@@ -463,7 +464,7 @@ dfs-sdk===1.2.27
 sentinels===1.0.0
 kombu===5.4.2
 distro===1.9.0
-zstd===1.5.6.1
+zstd===1.5.6.4
 yaql===3.0.0
 durationpy===0.9
 requestsexceptions===1.4.0
@@ -517,8 +518,8 @@ python-troveclient===8.7.0
 cachez===0.1.2
 XStatic-Bootstrap-Datepicker===1.4.0.0
 netifaces===0.11.0
-propcache===0.2.1
-cachetools===5.5.1
+propcache===0.3.0
+cachetools===5.5.2
 flexcache===0.3
 sphinxcontrib-qthelp===2.0.0
 keystoneauth1===5.10.0
@@ -548,7 +549,6 @@ sphinxcontrib-devhelp===2.0.0
 python-blazarclient===4.2.0
 alembic===1.14.1
 execnet===2.1.1
-glance-store===4.9.1
 sphinxcontrib-programoutput===0.18
 storpool.spopenstack===3.2.0
 dnspython===2.7.0
