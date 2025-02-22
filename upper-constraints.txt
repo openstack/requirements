@@ -490,7 +490,7 @@ pymemcache===4.0.0
 wrapt===1.17.2
 oslo.privsep===3.6.0
 sphinxcontrib-apidoc===0.5.0
-oslo.policy===4.5.0
+oslo.policy===4.5.1
 hvac===2.3.0
 pyeclib===1.6.4
 ndg-httpsclient===0.5.1
