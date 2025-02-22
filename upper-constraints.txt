@@ -50,7 +50,7 @@ microversion-parse===2.0.0
 jwcrypto===1.5.6
 Pint===0.23;python_version=='3.9'
 Pint===0.24.4;python_version>='3.10'
-oslo.i18n===6.5.0
+oslo.i18n===6.5.1
 jsonpath-rw-ext===1.2.2
 python-mistralclient===5.3.0
 oslo.context===5.7.1
