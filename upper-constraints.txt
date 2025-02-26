@@ -480,7 +480,7 @@ python-ironicclient===5.10.0
 babel===2.17.0
 XStatic===1.0.3
 XStatic-Angular-FileUpload===12.2.13.0
-python-openstackclient===7.3.1
+python-openstackclient===7.4.0
 pyzmq===26.2.1
 oslo.db===17.2.0
 simplegeneric===0.8.1
