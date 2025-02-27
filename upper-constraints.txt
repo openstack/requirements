@@ -101,7 +101,7 @@ requests-toolbelt===1.0.0
 simplejson===3.20.1
 types-paramiko===3.5.0.20240928
 immutables===0.21
-python-swiftclient===4.6.0
+python-swiftclient===4.7.0
 pyOpenSSL===24.2.1
 monasca-common===3.8.0
 zeroconf===0.145.1
