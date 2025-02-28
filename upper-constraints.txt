@@ -525,7 +525,7 @@ sphinxcontrib-qthelp===2.0.0
 keystoneauth1===5.10.0
 statsd===4.0.1
 proto-plus===1.26.0
-python-keystoneclient===5.5.0
+python-keystoneclient===5.6.0
 ceilometer===23.0.0
 diskimage-builder===3.37.0
 heat-translator===3.2.0
