@@ -251,7 +251,7 @@ passlib===1.7.4
 cliff===4.8.0
 os-brick===6.11.0
 scp===0.15.0
-python-zaqarclient===2.10.0
+python-zaqarclient===3.0.0
 ldappool===3.0.0
 joblib===1.4.2
 google-api-python-client===2.161.0
