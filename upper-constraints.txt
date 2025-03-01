@@ -113,7 +113,7 @@ mypy-extensions===1.0.0
 rsd-lib===1.2.0
 XStatic-Jasmine===2.4.1.2
 googleapis-common-protos===1.68.0
-python-glanceclient===4.7.0
+python-glanceclient===4.8.0
 prometheus_client===0.21.1
 jaraco.classes===3.4.0
 debtcollector===3.0.0
