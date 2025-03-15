@@ -312,10 +312,6 @@ sphinxcontrib.datatemplates  # BSD License
 ## have their own section)
 
 castellan  # Apache-2.0
-# NOTE(tonyb): Generally adding OpenSatck services isn't allowed but some
-# consumers of ceilometer use it like a library so until there is a
-# ceilometer-lib (or similar) this is our best option.
-ceilometer  # Apache-2.0
 # ceilometermiddleware might not show up with a search of setup.cfg and
 # requirements files, but some projects use it via being installed by devstack
 ceilometermiddleware  # Apache-2.0
