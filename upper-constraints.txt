@@ -539,7 +539,7 @@ ws4py===0.5.1
 flexcache===0.3;python_version>='3.9'
 sphinxcontrib-qthelp===1.0.3;python_version=='3.8'
 sphinxcontrib-qthelp===2.0.0;python_version>='3.9'
-keystoneauth1===5.8.0
+keystoneauth1===5.8.1
 statsd===4.0.1
 proto-plus===1.24.0
 python-keystoneclient===5.5.0
