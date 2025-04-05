@@ -137,7 +137,6 @@ python-ldap  # PSF
 python-memcached  # PSF
 pytz  # MIT
 pyudev  # LGPLv2.1+
-pywinrm  # MIT
 PyYAML  # MIT
 pyzabbix  # LGPL
 qrcode  # BSD
