@@ -127,6 +127,7 @@ def _combine_freezes(freezes, denylist=None):
     for py_version, freeze in freezes:
         if py_version in reference_versions:
             raise Exception("Duplicate python %s" % py_version)
+
         reference_versions.append(py_version)
         for package, version in freeze:
             packages.setdefault(
@@ -135,18 +136,29 @@ def _combine_freezes(freezes, denylist=None):
     for package, versions in sorted(packages.items()):
         if package.lower() in excludes:
             continue
-        if (len(versions) != 1 or
-                list(versions.values())[0] != reference_versions):
-            # markers
-            for version, py_versions in sorted(versions.items()):
-                # Once the ecosystem matures, we can consider using OR.
+
+        if len(versions) > 1:
+            # markers for packages with multiple versions - we use python
+            # version ranges for these
+            for idx, (version, py_versions) in enumerate(sorted(versions.items())):  # noqa: E501
+                if idx == 0:  # lower-bound
+                    marker = f"python_version<='{py_versions[-1]}'"
+                elif idx + 1 != len(versions):  # intermediate version(s)
+                    marker = f"python_version>='{py_versions[0]}',<={py_versions[-1]}"  # noqa: E501
+                else:  # upper-bound
+                    marker = f"python_version>='{py_versions[0]}'"
+
+                yield f'{package}==={version};{marker}\n'
+        elif list(versions.values())[0] != reference_versions:
+            # markers for packages with a single version - these are usually
+            # version specific so we use strict python versions for these
+            for idx, (version, py_versions) in enumerate(sorted(versions.items())):  # noqa: E501
                 for py_version in sorted(py_versions):
-                    yield (
-                        "%s===%s;python_version=='%s'\n" %
-                        (package, version, py_version))
+                    marker = f"python_version=='{py_version}'"
+                    yield f'{package}==={version};{marker}\n'
         else:
             # no markers
-            yield '%s===%s\n' % (package, list(versions.keys())[0])
+            yield f'{package}==={list(versions)[0]}\n'
 
 
 def _clone_versions(freezes, options):
