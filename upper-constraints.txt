@@ -529,7 +529,7 @@ keystoneauth1===5.3.0
 statsd===4.0.1
 XenAPI===23.8.0
 python-keystoneclient===5.2.0
-ceilometer===21.0.0.0rc1
+ceilometer===21.0.1
 diskimage-builder===3.29.0
 heat-translator===2.8.0
 python-magnumclient===4.2.0
