@@ -39,8 +39,7 @@ ntc_templates===7.7.0
 sphinxcontrib-nwdiag===2.0.0
 rbd-iscsi-client===0.1.8
 requests-aws===0.1.8
-alabaster===0.7.16;python_version=='3.9'
-alabaster===1.0.0;python_version>='3.10'
+alabaster===1.0.0
 multidict===6.1.0
 pbr===6.1.1
 munch===4.0.0
@@ -48,8 +47,7 @@ waiting===1.5.0
 attrs===25.1.0
 microversion-parse===2.0.0
 jwcrypto===1.5.6
-Pint===0.23;python_version=='3.9'
-Pint===0.24.4;python_version>='3.10'
+Pint===0.24.4
 oslo.i18n===6.5.1
 jsonpath-rw-ext===1.2.2
 python-mistralclient===5.4.0
@@ -89,8 +87,7 @@ python-vitrageclient===5.2.0
 py-pure-client===1.62.0
 krest===1.3.6
 psycopg2===2.9.10
-networkx===3.2.1;python_version=='3.9'
-networkx===3.4.2;python_version>='3.10'
+networkx===3.4.2
 cheroot===10.0.1
 XStatic-Angular===1.8.2.2
 types-requests===2.31.0.6
@@ -105,8 +102,7 @@ python-swiftclient===4.7.0
 pyOpenSSL===24.2.1
 monasca-common===3.8.0
 zeroconf===0.145.1
-scipy===1.13.1;python_version=='3.9'
-scipy===1.15.2;python_version>='3.10'
+scipy===1.15.2
 opentelemetry-exporter-otlp===1.30.0
 python-gnupg===0.5.4
 mypy-extensions===1.0.0
@@ -150,7 +146,6 @@ taskflow===5.12.0
 arrow===1.3.0
 semantic-version===2.10.0
 async-timeout===5.0.1;python_version=='3.10'
-async-timeout===5.0.1;python_version=='3.9'
 virtualbmc===3.2.0
 SQLAlchemy===2.0.38
 pyroute2===0.8.1
@@ -210,7 +205,6 @@ python-novaclient===18.9.0
 pact===1.12.0
 bcrypt===4.0.1
 exceptiongroup===1.2.2;python_version=='3.10'
-exceptiongroup===1.2.2;python_version=='3.9'
 os-client-config===2.1.0
 XStatic-Angular-Gettext===2.4.1.0
 Deprecated===1.2.18
@@ -243,8 +237,7 @@ XStatic-JQuery-Migrate===3.3.2.1
 pytest-html===4.1.1
 appdirs===1.4.4
 google-auth-httplib2===0.2.0
-daiquiri===3.2.5.1;python_version=='3.9'
-daiquiri===3.3.0;python_version>='3.10'
+daiquiri===3.3.0
 influxdb===5.3.2
 funcparserlib===2.0.0a0
 passlib===1.7.4
@@ -393,11 +386,9 @@ python-consul===1.1.0
 more-itertools===10.6.0
 seqdiag===3.0.0
 zc.lockfile===3.0.post1
-numpy===2.0.0;python_version=='3.9'
-numpy===2.2.3;python_version>='3.10'
+numpy===2.2.3
 msgpack===1.1.0
-Sphinx===7.4.7;python_version=='3.9'
-Sphinx===8.1.3;python_version>='3.10'
+Sphinx===8.1.3
 oslo.config===9.7.1
 openstackdocstheme===3.4.1
 osc-placement===4.6.0
@@ -427,7 +418,6 @@ api-object-schema===2.0.0
 blinker===1.9.0
 WSME===0.12.1
 tomli===2.2.1;python_version=='3.10'
-tomli===2.2.1;python_version=='3.9'
 oslo.upgradecheck===2.5.0
 sherlock===0.4.1
 tempora===5.8.0
@@ -572,8 +562,7 @@ sqlalchemy-filters===0.13.0
 sphinxcontrib-runcmd===0.2.0
 confspirator===0.3.0
 fasteners===0.19
-importlib-metadata===6.2.1;python_version=='3.9'
-importlib-metadata===8.5.0;python_version>='3.10'
+importlib-metadata===8.5.0
 sortedcontainers===2.4.0
 python-linstor===1.24.0
 filelock===3.17.0

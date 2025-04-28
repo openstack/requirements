@@ -17,10 +17,11 @@
         - requirements-tox-babel
         - requirements-tox-bindep:
             voting: false
-        - requirements-tox-py39-check-uc
         - requirements-tox-py310-check-uc
         - requirements-tox-py311-check-uc
         - requirements-tox-py312-check-uc
+        - requirements-tox-py313-check-uc:
+            voting: false
         - requirements-tox-validate-projects:
             voting: false
         - cross-aodh-py312
@@ -82,7 +83,6 @@
         - openstack-tox-validate
         - requirements-check-self
         - requirements-tox-babel
-        - requirements-tox-py39-check-uc
         - requirements-tox-py310-check-uc
         - requirements-tox-py311-check-uc
         - requirements-tox-py312-check-uc
@@ -118,7 +118,6 @@
       jobs:
         - nova-ceph-multistore
         - nova-next
-        - requirements-tox-py39-check-uc-no-wheels
         - requirements-tox-py310-check-uc-no-wheels
         - requirements-tox-py311-check-uc-no-wheels
         - requirements-tox-py312-check-uc-no-wheels
