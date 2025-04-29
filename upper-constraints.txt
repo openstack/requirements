@@ -516,7 +516,7 @@ keystoneauth1===5.10.0
 statsd===4.0.1
 proto-plus===1.26.0
 python-keystoneclient===5.6.0
-ceilometer===24.0.0.0rc1
+ceilometer===24.0.0
 diskimage-builder===3.37.0
 heat-translator===3.2.0
 python-magnumclient===4.8.1
