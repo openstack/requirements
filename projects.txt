@@ -208,6 +208,7 @@ openstack/sushy-tools
 openstack/swift
 openstack/tacker
 openstack/tacker-horizon
+openstack/tap-as-a-service
 openstack/taskflow
 openstack/tempest
 openstack/tooz
