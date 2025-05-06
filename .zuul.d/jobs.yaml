@@ -13,6 +13,17 @@
       tox_envlist: babel
 
 - job:
+    name: requirements-tox-py39-check-uc
+    parent: openstack-tox-py39
+    description: |
+      Run test for requirements project.
+
+      Uses tox with the ``py39-check-uc`` environment.
+    files: ^upper-constraints.*txt$
+    vars:
+      tox_envlist: py39-check-uc
+
+- job:
     name: requirements-tox-py310-check-uc
     parent: openstack-tox-py310
     description: |
@@ -52,6 +63,16 @@
     files: ^upper-constraints.*txt$
     vars:
       tox_envlist: py313-check-uc
+
+- job:
+    name: requirements-tox-py39-check-uc-no-wheels
+    parent: requirements-tox-py39-check-uc
+    description: |
+      Run test for requirements project.
+
+      Uses tox with the ``py39-check-uc`` environment.
+      Does not use wheel mirror.
+    pre-run: playbooks/drop-wheel-mirror.yaml
 
 - job:
     name: requirements-tox-py310-check-uc-no-wheels
