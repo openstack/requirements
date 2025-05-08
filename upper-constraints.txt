@@ -285,7 +285,7 @@ nodeenv===1.9.1
 gossip===2.4.0
 suds-community===1.2.0
 os_vif===4.1.0
-oslo.middleware===6.3.1
+oslo.middleware===6.5.0
 XStatic-mdi===1.6.50.2
 uritemplate===4.1.1
 docutils===0.21.2
