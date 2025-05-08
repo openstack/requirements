@@ -576,7 +576,7 @@ sortedcontainers===2.4.0
 python-linstor===1.25.3
 filelock===3.18.0
 python-tackerclient===2.3.0
-python-heatclient===4.1.0
+python-heatclient===4.2.0
 oslo.utils===8.2.0
 requests-kerberos===0.15.0
 itsdangerous===2.2.0
