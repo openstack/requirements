@@ -251,6 +251,7 @@ pytest  # MIT
 pytest-cov  # MIT
 pytest-django  # BSD (3 clause)
 pytest-html  #MPL-2.0
+pytest-subtests  # MIT
 pytest-xdist  # MIT
 python-subunit  # Apache-2.0/BSD
 pyzmq  # LGPL+BSD
