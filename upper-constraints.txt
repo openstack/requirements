@@ -377,7 +377,7 @@ oslo.cache===3.10.1
 WebTest===3.0.4
 os-collect-config===14.0.0
 edgegrid-python===2.0.1
-python-octaviaclient===3.10.0
+python-octaviaclient===3.11.0
 pysaml2===7.5.2
 requests-oauthlib===2.0.0
 oslo.reports===3.5.1
