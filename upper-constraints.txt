@@ -192,7 +192,7 @@ cryptography===43.0.3
 httpcore===1.0.9
 URLObject===2.4.3
 psycopg2-binary===2.9.10
-glance_store===4.9.1
+glance_store===4.10.0
 openstack-release-test===8.1.0
 pycryptodomex===3.22.0
 requests-mock===1.12.1
