@@ -437,7 +437,7 @@ pywinrm===0.5.0
 botocore===1.38.13
 xmltodict===0.14.2
 pyasn1===0.6.0
-oslo.rootwrap===7.5.1
+oslo.rootwrap===7.6.0
 Django===4.2.21
 pexpect===4.9.0
 contextvars===2.4
