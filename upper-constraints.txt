@@ -370,7 +370,7 @@ idna===3.10
 yamlloader===1.5.1
 protobuf===5.29.4
 sushy===5.6.0
-python-neutronclient===11.4.0
+python-neutronclient===11.5.0
 types-setuptools===80.3.0.20250505
 pika===1.3.2
 oslo.cache===3.10.1
