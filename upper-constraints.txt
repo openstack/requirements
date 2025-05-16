@@ -499,7 +499,7 @@ pyeclib===1.6.4
 repoze.lru===0.7
 rfc3986===2.0.0
 tenacity===9.1.2
-python-designateclient===6.2.0
+python-designateclient===6.3.0
 future===1.0.0
 pytest-cov===4.1.0
 reactivex===4.0.4
