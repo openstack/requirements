@@ -522,7 +522,7 @@ propcache===0.3.1
 cachetools===5.5.2
 flexcache===0.3
 sphinxcontrib-qthelp===2.0.0
-keystoneauth1===5.10.0
+keystoneauth1===5.11.0
 statsd===4.0.1
 proto-plus===1.26.1
 python-keystoneclient===5.6.0
