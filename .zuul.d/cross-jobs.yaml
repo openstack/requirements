@@ -243,3 +243,11 @@
     files:
       - upper-constraints.txt
       - .zuul.d/cross-jobs.yaml
+
+- job:
+    name: cross-watcher-py3
+    parent: requirements-cross-test
+    description: Run cross-project tests on watcher with py3
+    required-projects: openstack/watcher
+    vars:
+      tox_envlist: py3

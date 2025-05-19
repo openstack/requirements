@@ -53,6 +53,7 @@
         - cross-octavia-py312
         - cross-osc-tox-docs
         - cross-swift-py312
+        - cross-watcher-py3
         - openstacksdk-functional-devstack
         - tempest-full-py3:
             irrelevant-files:
@@ -110,6 +111,7 @@
         - cross-octavia-py312
         - cross-osc-tox-docs
         - cross-swift-py312
+        - cross-watcher-py3
         - openstacksdk-functional-devstack
         - tempest-full-py3:
             irrelevant-files:
