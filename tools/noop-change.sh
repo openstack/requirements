@@ -165,6 +165,6 @@ if [ -n "$change" ] ; then
 Depends-On: $change"
 fi
 
-git commit -m "$commit_msg"
+git commit -m "$commit_msg" -s
 git review -t ${topic}
 # TODO(tonyb): Check for vote-a-tron and -W the change if it's available
