@@ -165,6 +165,7 @@ if [ -n "$change" ] ; then
 Depends-On: $change"
 fi
 
-git commit -m "$commit_msg" -s
+git commit -m "$commit_msg" -s \
+    --trailer="Generated-By:openstack/requirements:tools/noop-change.sh"
 git review -t ${topic}
 # TODO(tonyb): Check for vote-a-tron and -W the change if it's available
