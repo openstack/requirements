@@ -35,7 +35,7 @@ python-slugify===8.0.4
 cursive===0.2.3
 oslo.service===4.2.0
 django-appconf===1.1.0
-ntc_templates===7.8.0
+ntc_templates===7.9.0
 sphinxcontrib-nwdiag===2.0.0
 rbd-iscsi-client===0.1.8
 requests-aws===0.1.8
@@ -95,7 +95,6 @@ google-api-core===2.24.2
 requests-toolbelt===1.0.0
 simplejson===3.20.1
 types-paramiko===3.5.0.20250516
-immutables===0.21
 python-swiftclient===4.8.0
 pyOpenSSL===24.2.1
 monasca-common===3.8.0
@@ -133,7 +132,7 @@ netaddr===1.3.0
 pyghmi===1.6.1
 sphinxcontrib-blockdiag===3.0.0
 aiosqlite===0.21.0
-thrift===0.21.0
+thrift===0.22.0
 gnocchiclient===7.2.0
 wcwidth===0.2.13
 sphinxcontrib.datatemplates===0.11.0
@@ -148,7 +147,7 @@ async-timeout===5.0.1;python_version=='3.9'
 virtualbmc===3.2.0
 SQLAlchemy===2.0.41
 pyroute2===0.8.1
-google-auth===2.40.1
+google-auth===2.40.2
 kazoo===2.10.0
 pyspnego===0.11.2
 XStatic-roboto-fontface===0.5.0.0
@@ -174,7 +173,7 @@ python-observabilityclient===0.5.0
 whereto===0.4.0
 pywbem===1.7.3
 python-subunit===1.4.4
-tornado===6.5
+tornado===6.5.1
 pycparser===2.22
 mock===5.2.0
 PyYAML===6.0.2
@@ -245,8 +244,8 @@ scp===0.15.0
 python-zaqarclient===3.0.1
 ldappool===3.0.0
 hpack===4.1.0
-joblib===1.5.0
-google-api-python-client===2.169.0
+joblib===1.5.1
+google-api-python-client===2.170.0
 castellan===5.3.0
 oslo.versionedobjects===3.7.0
 enmerkar===0.7.1
@@ -256,7 +255,7 @@ autobahn===24.4.2
 SQLAlchemy-Utils===0.41.2
 retryz===0.1.9
 pluggy===1.6.0
-coverage===7.8.0
+coverage===7.8.2
 freezegun===1.5.1
 mdurl===0.1.2
 toml===0.10.2
@@ -296,7 +295,7 @@ retrying===1.3.4
 XStatic-Dagre===0.6.4.1
 platformdirs===4.3.8
 pydotplus===2.0.2
-boto3===1.38.18
+boto3===1.38.23
 jeepney===0.9.0
 stestr===4.2.0
 pillow===11.2.1
@@ -309,7 +308,7 @@ aiomysql===0.2.0
 types-simplejson===3.20.0.20250326
 sphinxcontrib-httpdomain===1.8.1
 metalsmith===2.4.1
-s3transfer===0.12.0
+s3transfer===0.13.0
 text-unidecode===1.3
 sphinxcontrib-svg2pdfconverter===1.3.0
 oslo.vmware===4.6.0
@@ -319,7 +318,6 @@ gitdb===4.0.12
 python-monascaclient===2.8.0
 ldap3===2.9.1
 opentelemetry-api===1.33.1
-frozenlist===1.6.0
 automaton===3.2.0
 types-urllib3===1.26.25.14
 os-service-types===1.7.0
@@ -363,7 +361,7 @@ yamlloader===1.5.1
 protobuf===5.29.4
 sushy===5.6.0
 python-neutronclient===11.5.0
-types-setuptools===80.7.0.20250516
+types-setuptools===80.8.0.20250521
 pika===1.3.2
 oslo.cache===3.11.0
 WebTest===3.0.4
@@ -385,14 +383,14 @@ python-consul===1.1.0
 more-itertools===10.7.0
 seqdiag===3.0.0
 numpy===2.0.0;python_version=='3.9'
-numpy===2.2.5;python_version>='3.10'
+numpy===2.2.6;python_version>='3.10'
 msgpack===1.1.0
 Sphinx===7.4.7;python_version=='3.9'
 Sphinx===8.1.3;python_version>='3.10'
 oslo.config===9.8.0
 openstackdocstheme===3.5.0
 osc-placement===4.6.0
-rpds-py===0.25.0
+rpds-py===0.25.1
 zake===0.2.2
 flux===1.3.5
 pysnmpcrypto===0.0.4
@@ -424,7 +422,7 @@ oslo.upgradecheck===2.5.0
 sherlock===0.4.1
 stevedore===5.4.1
 pywinrm===0.5.0
-botocore===1.38.18
+botocore===1.38.23
 xmltodict===0.14.2
 pyasn1===0.6.0
 oslo.rootwrap===7.6.0
@@ -435,7 +433,7 @@ python-json-logger===3.3.0
 redis===6.1.0
 jmespath===1.0.1
 click===8.1.8;python_version=='3.9'
-click===8.2.0;python_version>='3.10'
+click===8.2.1;python_version>='3.10'
 XStatic-smart-table===1.4.13.2
 kuryr-lib===3.2.0
 scrypt===0.8.27
@@ -457,7 +455,7 @@ kombu===5.5.3
 distro===1.9.0
 zstd===1.5.7.0
 yaql===3.0.0
-durationpy===0.9
+durationpy===0.10
 requestsexceptions===1.4.0
 testresources===2.0.2
 falcon===4.0.2
@@ -523,7 +521,7 @@ XStatic-Angular-lrdragndrop===1.0.2.6
 ovsdbapp===2.12.0
 aniso8601===10.0.1
 rjsmin===1.2.2
-icalendar===6.3.0
+icalendar===6.3.1
 decorator===5.2.1
 DateTimeRange===2.3.1
 cffi===1.17.1
@@ -532,7 +530,7 @@ futurist===3.1.1
 jsonschema===4.23.0
 sphinxcontrib-devhelp===2.0.0
 python-blazarclient===4.3.0
-alembic===1.15.2
+alembic===1.16.1
 execnet===2.1.1
 sphinxcontrib-programoutput===0.18
 storpool.spopenstack===3.2.0
@@ -546,7 +544,7 @@ referencing===0.36.2
 confluent-kafka===2.10.0
 backports.tarfile===1.2.0
 xvfbwrapper===0.2.13
-influxdb-client===1.48.0
+influxdb-client===1.49.0
 tosca-parser===2.12.0
 python-consul2===0.1.5
 charset-normalizer===3.4.2
