@@ -81,7 +81,7 @@ moto===5.1.6
 infi.dtypes.wwn===0.1.1
 python-freezerclient===6.0.0
 python-vitrageclient===5.2.0
-py-pure-client===1.67.0
+py-pure-client===1.70.2
 krest===1.3.7
 psycopg2===2.9.10
 networkx===3.2.1;python_version=='3.9'
