@@ -444,7 +444,8 @@ cotyledon===2.0.0
 xattr===1.1.4
 systemd-python===235
 python-memcached===1.62
-openstacksdk===4.5.0
+openstacksdk===4.5.0;python_version=='3.9'
+openstacksdk===4.6.0;python_version>='3.10'
 infi.dtypes.nqn===0.1.0
 six===1.17.0
 h2===4.2.0
