@@ -77,7 +77,7 @@ XStatic-jQuery===3.5.1.1
 ddt===1.7.2
 XStatic-Graphlib===2.1.7.0
 pyserial===3.5
-moto===5.1.4
+moto===5.1.5
 infi.dtypes.wwn===0.1.1
 python-freezerclient===6.0.0
 python-vitrageclient===5.2.0
@@ -139,6 +139,7 @@ sphinxcontrib.datatemplates===0.11.0
 jsonpath-rw===1.4.0
 prettytable===3.16.0
 vine===5.1.0
+pathspec===0.12.1
 taskflow===6.0.1
 arrow===1.3.0
 semantic-version===2.10.0
@@ -218,8 +219,8 @@ pyzabbix===1.3.1
 ptyprocess===0.7.0
 threadloop===1.0.2
 amqp===5.3.1
-ruamel.yaml===0.18.10
-websockify===0.12.0
+ruamel.yaml===0.18.12
+websockify===0.13.0
 gssapi===1.9.0
 XStatic-JQuery.quicksearch===2.0.3.2
 pyasn1_modules===0.4.1
@@ -256,7 +257,7 @@ SQLAlchemy-Utils===0.41.2
 retryz===0.1.9
 pluggy===1.6.0
 coverage===7.8.2
-freezegun===1.5.1
+freezegun===1.5.2
 mdurl===0.1.2
 toml===0.10.2
 pycdlib===1.14.0
@@ -267,7 +268,7 @@ opentelemetry-exporter-otlp-proto-http===1.33.1
 gabbi===3.1.0
 nwdiag===3.0.0
 XStatic-bootswatch===3.3.7.0
-pytest-xdist===3.6.1
+pytest-xdist===3.7.0
 XStatic-JS-Yaml===3.8.1.0
 XStatic-term.js===0.0.7.0
 oslo.log===7.1.0
@@ -295,14 +296,14 @@ retrying===1.3.4
 XStatic-Dagre===0.6.4.1
 platformdirs===4.3.8
 pydotplus===2.0.2
-boto3===1.38.23
+boto3===1.38.27
 jeepney===0.9.0
 stestr===4.2.0
 pillow===11.2.1
 infoblox-client===0.6.1
 pysmi-lextudio===1.4.3
 oslo.serialization===5.7.0
-warlock===2.0.1
+warlock===2.1.0
 exabgp===4.2.25
 aiomysql===0.2.0
 types-simplejson===3.20.0.20250326
@@ -358,10 +359,10 @@ iso8601===2.1.0
 tooz===6.3.0
 idna===3.10
 yamlloader===1.5.1
-protobuf===5.29.4
+protobuf===5.29.5
 sushy===5.6.0
 python-neutronclient===11.5.0
-types-setuptools===80.8.0.20250521
+types-setuptools===80.9.0.20250529
 pika===1.3.2
 oslo.cache===3.11.0
 WebTest===3.0.4
@@ -422,7 +423,7 @@ oslo.upgradecheck===2.5.0
 sherlock===0.4.1
 stevedore===5.4.1
 pywinrm===0.5.0
-botocore===1.38.23
+botocore===1.38.27
 xmltodict===0.14.2
 pyasn1===0.6.0
 oslo.rootwrap===7.6.0
@@ -430,7 +431,7 @@ Django===4.2.21
 pexpect===4.9.0
 cmd2===2.5.11
 python-json-logger===3.3.0
-redis===6.1.0
+redis===6.2.0
 jmespath===1.0.1
 click===8.1.8;python_version=='3.9'
 click===8.2.1;python_version>='3.10'
@@ -529,7 +530,7 @@ DateTimeRange===2.3.1
 cffi===1.17.1
 python-cyborgclient===2.5.0
 futurist===3.1.1
-jsonschema===4.23.0
+jsonschema===4.24.0
 sphinxcontrib-devhelp===2.0.0
 python-blazarclient===4.3.0
 alembic===1.16.1
@@ -538,7 +539,7 @@ sphinxcontrib-programoutput===0.18
 storpool.spopenstack===3.2.0
 dnspython===2.7.0
 oauthlib===3.2.2
-zipp===3.21.0
+zipp===3.22.0
 greenlet===3.2.2
 XStatic-Angular-Vis===4.16.0.0
 iniconfig===2.1.0
