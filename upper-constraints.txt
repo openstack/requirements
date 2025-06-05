@@ -356,7 +356,7 @@ SecretStorage===3.3.3
 opentracing===2.4.0
 XStatic-Rickshaw===1.5.1.0
 iso8601===2.1.0
-tooz===6.3.0
+tooz===7.0.0
 idna===3.10
 yamlloader===1.5.1
 protobuf===5.29.5
