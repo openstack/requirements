@@ -242,7 +242,8 @@ cliff===4.9.1;python_version=='3.9'
 cliff===4.10.0;python_version>='3.10'
 os-brick===6.12.0
 scp===0.15.0
-python-zaqarclient===3.0.1
+python-zaqarclient===3.0.1;python_version=='3.9'
+python-zaqarclient===4.0.0;python_version>='3.10'
 ldappool===3.0.0
 hpack===4.1.0
 joblib===1.5.1
