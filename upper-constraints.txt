@@ -282,7 +282,7 @@ XStatic-mdi===1.6.50.2
 uritemplate===4.2.0
 docutils===0.21.2
 threadpoolctl===3.6.0
-os-ken===3.0.1
+os-ken===3.1.0
 ujson===5.10.0
 selenium===3.141.0
 pytest-subtests===0.14.2
