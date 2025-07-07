@@ -240,7 +240,7 @@ funcparserlib===2.0.0a0
 passlib===1.7.4
 cliff===4.9.1;python_version=='3.9'
 cliff===4.10.0;python_version>='3.10'
-os-brick===6.11.0
+os-brick===6.12.0
 scp===0.15.0
 python-zaqarclient===3.0.1
 ldappool===3.0.0
