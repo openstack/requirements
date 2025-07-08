@@ -322,7 +322,8 @@ ldap3===2.9.1
 opentelemetry-api===1.34.1
 automaton===3.2.0
 types-urllib3===1.26.25.14
-os-service-types===1.7.0
+os-service-types===1.7.0;python_version=='3.9'
+os-service-types===1.8.0;python_version>='3.10'
 keyring===25.6.0
 elementpath===4.8.0
 wsgi_intercept===1.13.1
