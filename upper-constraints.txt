@@ -277,7 +277,7 @@ gossip===2.4.0
 suds-community===1.2.0
 os_vif===4.1.0
 qrcode===8.2
-oslo.middleware===6.5.0
+oslo.middleware===6.6.0
 XStatic-mdi===1.6.50.2
 uritemplate===4.2.0
 docutils===0.21.2
