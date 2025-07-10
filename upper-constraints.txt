@@ -276,7 +276,7 @@ oslo.log===7.2.0
 nodeenv===1.9.1
 gossip===2.4.0
 suds-community===1.2.0
-os_vif===4.1.0
+os_vif===4.2.0
 qrcode===8.2
 oslo.middleware===6.6.0
 XStatic-mdi===1.6.50.2
