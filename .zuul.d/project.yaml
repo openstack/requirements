@@ -47,9 +47,6 @@
             files:
               - bindep.txt
               - upper-constraints.txt
-        - build-wheel-cache-ubuntu-bionic-arm64:
-            files:
-              - bindep.txt
         - build-wheel-cache-ubuntu-focal-arm64:
             files:
               - bindep.txt
