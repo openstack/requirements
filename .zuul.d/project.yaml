@@ -62,9 +62,6 @@
               - ^setup.cfg$
     check-arm64:
       jobs:
-        - build-wheel-cache-ubuntu-bionic-arm64:
-            files:
-              - bindep.txt
         - build-wheel-cache-ubuntu-focal-arm64:
             files:
               - bindep.txt
