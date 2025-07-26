@@ -55,7 +55,7 @@ python-mistralclient===5.4.0
 oslo.context===6.0.0
 rcssmin===1.1.2
 pycadf===4.0.1
-grpcio===1.73.1
+grpcio===1.74.0
 sniffio===1.3.1
 fixtures===4.2.5
 neutron-lib===3.21.0
@@ -81,7 +81,7 @@ moto===5.1.8
 infi.dtypes.wwn===0.1.1
 python-freezerclient===6.0.0
 python-vitrageclient===5.2.0
-py-pure-client===1.71.0
+py-pure-client===1.72.0
 krest===1.3.7
 psycopg2===2.9.10
 networkx===3.2.1;python_version=='3.9'
@@ -156,7 +156,7 @@ kazoo===2.10.0
 pyspnego===0.11.2
 XStatic-roboto-fontface===0.5.0.0
 pyudev===0.24.3
-eventlet===0.40.1
+eventlet===0.40.2
 openstack-doc-tools===4.0.1
 oslo.messaging===17.1.0
 jira===3.8.0
@@ -251,7 +251,7 @@ python-zaqarclient===4.0.0;python_version>='3.10'
 ldappool===3.0.0
 hpack===4.1.0
 joblib===1.5.1
-google-api-python-client===2.176.0
+google-api-python-client===2.177.0
 castellan===5.4.1
 oslo.versionedobjects===3.7.0
 enmerkar===0.7.1
@@ -262,7 +262,7 @@ autobahn===24.4.2
 SQLAlchemy-Utils===0.41.2
 retryz===0.1.9
 pluggy===1.6.0
-coverage===7.9.2
+coverage===7.10.0
 freezegun===1.5.3
 mdurl===0.1.2
 toml===0.10.2
@@ -302,11 +302,11 @@ sphinxcontrib-seqdiag===3.0.0
 os-win===5.9.0
 capacity===1.3.14
 markdown-it-py===3.0.0
-retrying===1.4.0
+retrying===1.4.1
 XStatic-Dagre===0.6.4.1
 platformdirs===4.3.8
 pydotplus===2.0.2
-boto3===1.39.9
+boto3===1.39.14
 jeepney===0.9.0
 stestr===4.2.0
 pillow===11.3.0
@@ -363,7 +363,7 @@ keystonemiddleware===10.10.0;python_version=='3.9'
 keystonemiddleware===10.11.0;python_version>='3.10'
 django-formtools===2.5.1
 XStatic-Spin===1.2.5.3
-rich===14.0.0
+rich===14.1.0
 os-traits===3.5.0
 typepy===1.3.4
 SecretStorage===3.3.3
@@ -439,7 +439,7 @@ oslo.upgradecheck===2.5.0
 sherlock===0.4.1
 stevedore===5.4.1
 pywinrm===0.5.0
-botocore===1.39.9
+botocore===1.39.14
 xmltodict===0.14.2
 pyasn1===0.6.0
 oslo.rootwrap===7.6.0
@@ -480,7 +480,7 @@ falcon===4.0.2
 tomlkit===0.13.3
 etcd3gw===2.4.2
 Flask-RESTful===0.3.10
-GitPython===3.1.44
+GitPython===3.1.45
 requests_ntlm===1.3.0
 python-ironicclient===5.12.0
 babel===2.17.0
@@ -588,7 +588,7 @@ itsdangerous===2.2.0
 XStatic-jquery-ui===1.13.0.1
 monasca-statsd===2.7.0
 python-dateutil===2.9.0.post0
-virtualenv===20.31.2
+virtualenv===20.32.0
 colorama===0.4.6
 confetti===2.5.3
 ironic-lib===7.0.0
@@ -599,4 +599,4 @@ actdiag===3.0.0
 sysv-ipc===1.1.0
 sphinxcontrib-applehelp===2.0.0
 scikit-learn===1.6.1;python_version=='3.9'
-scikit-learn===1.7.0;python_version>='3.10'
+scikit-learn===1.7.1;python_version>='3.10'
