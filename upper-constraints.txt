@@ -124,7 +124,7 @@ ruamel.yaml.clib===0.2.12
 doc8===1.1.2;python_version=='3.9'
 doc8===2.0.0;python_version>='3.10'
 pymongo===4.13.2
-python-cloudkittyclient===5.3.1
+python-cloudkittyclient===5.4.0
 soupsieve===2.7
 sqlparse===0.5.3
 oslotest===5.0.1
