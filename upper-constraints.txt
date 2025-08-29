@@ -546,7 +546,7 @@ decorator===5.2.1
 DateTimeRange===2.3.1
 cffi===1.17.1
 python-cyborgclient===2.6.0
-futurist===3.2.0
+futurist===3.2.1
 jsonschema===4.25.0
 sphinxcontrib-devhelp===2.0.0
 python-blazarclient===4.3.0;python_version=='3.9'
