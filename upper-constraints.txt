@@ -79,7 +79,7 @@ XStatic-Graphlib===2.1.7.0
 pyserial===3.5
 moto===5.1.9
 infi.dtypes.wwn===0.1.1
-python-freezerclient===6.0.0
+python-freezerclient===6.1.0
 python-vitrageclient===5.2.0
 py-pure-client===1.73.0
 krest===1.3.7
