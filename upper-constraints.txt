@@ -533,7 +533,7 @@ proto-plus===1.26.1
 python-keystoneclient===5.7.0
 diskimage-builder===3.39.0
 heat-translator===3.2.0
-python-magnumclient===4.8.1
+python-magnumclient===4.9.0
 docker===7.1.0
 storops===1.2.11
 anyio===4.9.0
