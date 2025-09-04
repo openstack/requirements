@@ -24,8 +24,11 @@ bcrypt==4.0.1  # Apache-2.0
 beautifulsoup4  # MIT
 betamax  # Apache-2.0
 boto  # MIT
-boto3  # Apache-2.0
-botocore  # Apache-2.0
+# Capped until https://bugs.launchpad.net/glance/+bug/2121144 is resolved
+boto3<1.36  # Apache-2.0
+botocore<1.36  # Apache-2.0
+# indirect from boto3/botocore
+s3transfer<0.11  # Apache-2.0
 cachetools  # MIT License
 cassandra-driver!=3.6.0  # Apache-2.0
 cffi  # MIT
