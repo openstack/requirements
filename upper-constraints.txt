@@ -119,7 +119,7 @@ jaraco.classes===3.4.0
 debtcollector===3.0.0
 responses===0.25.6
 croniter===6.0.0
-horizon===25.3.0
+horizon===25.3.1
 octavia-lib===3.8.0
 python-watcherclient===4.8.0
 MarkupSafe===3.0.2
