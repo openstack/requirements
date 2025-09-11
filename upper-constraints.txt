@@ -189,7 +189,7 @@ httpcore===1.0.9
 URLObject===3.0.0
 psycopg2-binary===2.9.10
 glance_store===4.10.0;python_version=='3.9'
-glance_store===5.0.0;python_version>='3.10'
+glance_store===5.2.0;python_version>='3.10'
 openstack-release-test===8.1.0
 requests-mock===1.12.1
 os-apply-config===14.0.1
