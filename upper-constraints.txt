@@ -361,7 +361,7 @@ XStatic-tv4===1.2.7.0
 XStatic-JSEncrypt===2.3.1.1
 python-cinderclient===9.8.0
 keystonemiddleware===10.10.0;python_version=='3.9'
-keystonemiddleware===10.11.0;python_version>='3.10'
+keystonemiddleware===10.12.0;python_version>='3.10'
 django-formtools===2.5.1
 XStatic-Spin===1.2.5.3
 rich===14.1.0
