@@ -258,7 +258,7 @@ oslo.versionedobjects===3.8.0
 enmerkar===0.7.1
 webcolors===24.11.1
 aodhclient===3.8.0;python_version=='3.9'
-aodhclient===3.9.0;python_version>='3.10'
+aodhclient===3.9.1;python_version>='3.10'
 autobahn===24.4.2
 SQLAlchemy-Utils===0.41.2
 retryz===0.1.9
