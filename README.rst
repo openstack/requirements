@@ -5,6 +5,17 @@
 .. image:: https://governance.openstack.org/tc/badges/requirements.svg
     :target: https://governance.openstack.org/tc/reference/tags/index.html
 
+Security Warning
+================
+
+OpenStack makes no security guarantees about third-party
+dependencies listed here, and does not keep track of any
+vulnerabilities they contain. Versions of these dependencies are
+frozen at each coordinated release in order to stabilize upstream
+testing, and can contain known vulnerabilities. Consumers are
+*STRONGLY* encouraged to rely on curated distributions of OpenStack
+or manage security patching of dependencies themselves.
+
 Resources and Documentation
 ===========================
 
