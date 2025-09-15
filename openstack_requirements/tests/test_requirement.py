@@ -116,8 +116,7 @@ class TestToContent(testtools.TestCase):
              'foo', '', '<=1', "python_version=='2.7'", '# BSD')]),
             marker_sep='!')
         self.assertEqual(
-            ''.join(requirement._REQS_HEADER
-                    + ["foo<=1!python_version=='2.7' # BSD\n"]),
+            "foo<=1!python_version=='2.7' # BSD\n",
             reqs)
 
     def test_location(self):
@@ -125,8 +124,7 @@ class TestToContent(testtools.TestCase):
             [requirement.Requirement(
              'foo', 'file://foo', '', "python_version=='2.7'", '# BSD')]))
         self.assertEqual(
-            ''.join(requirement._REQS_HEADER
-                    + ["file://foo#egg=foo;python_version=='2.7' # BSD\n"]),
+            "file://foo#egg=foo;python_version=='2.7' # BSD\n",
             reqs)
 
 

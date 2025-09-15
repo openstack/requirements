@@ -21,17 +21,6 @@ import pkg_resources
 import re
 
 
-# A header for the requirements file(s).
-# TODO(lifeless): Remove this once constraints are in use.
-_REQS_HEADER = [
-    '# The order of packages is significant, because pip processes '
-    'them in the order\n',
-    '# of appearance. Changing the order has an impact on the overall '
-    'integration\n',
-    '# process, which may cause wedges in the gate later.\n',
-]
-
-
 def key_specifier(a):
     weight = {'>=': 0, '>': 0,
               '===': 1, '==': 1, '~=': 1, '!=': 1,
@@ -160,10 +149,8 @@ def parse_line(req_line, permit_urls=False):
     return Requirement(name, location, specifier, markers, comment, extras)
 
 
-def to_content(reqs, marker_sep=';', line_prefix='', prefix=True):
+def to_content(reqs, marker_sep=';', line_prefix=''):
     lines = []
-    if prefix:
-        lines += _REQS_HEADER
     for req in reqs.reqs:
         lines.append(req.to_line(marker_sep, line_prefix))
     return u''.join(lines)
