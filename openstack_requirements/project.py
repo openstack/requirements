@@ -50,18 +50,12 @@ def read(root):
     :param root: A directory path.
     :return: A dict representing the project with the following keys:
         - root: The root dir.
-        - setup.py: Contents of setup.py.
-        - setup.cfg: Contents of setup.cfg.
         - requirements: Dict of requirement file name
         - extras: Dict of extras file name to a dict of extra names and
           requirements
     """
     # Store root directory and installer-related files for later processing
     result = {'root': root}
-    # TODO(stephenfin): Can we delete this now?
-    for filename in {'setup.cfg', 'setup.py'}:
-        if (data := _read_raw(root, filename)) is not None:
-            result[filename] = data
 
     # Store requirements
     result['requirements'] = {}

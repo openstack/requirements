@@ -16,7 +16,6 @@ import textwrap
 import fixtures
 import testscenarios
 import testtools
-from testtools import matchers
 
 from openstack_requirements import project
 from openstack_requirements.tests import common
@@ -29,28 +28,22 @@ class TestReadProject(testtools.TestCase):
     def test_pbr(self):
         root = self.useFixture(common.pbr_fixture).root
         proj = project.read(root)
-        self.expectThat(proj['root'], matchers.Equals(root))
-        setup_py = open(root + '/setup.py').read()
-        self.expectThat(proj['setup.py'], matchers.Equals(setup_py))
-        setup_cfg = open(root + '/setup.cfg').read()
-        self.expectThat(proj['setup.cfg'], matchers.Equals(setup_cfg))
-        self.expectThat(
-            proj['requirements'],
-            matchers.KeysEqual('requirements.txt', 'test-requirements.txt'),
+        self.assertEqual(proj['root'], root)
+        self.assertEqual(
+            list(sorted(proj['requirements'])),
+            ['requirements.txt', 'test-requirements.txt'],
         )
 
     def test_no_setup_py(self):
         root = self.useFixture(fixtures.TempDir()).path
         proj = project.read(root)
-        self.expectThat(
+        self.assertEqual(
             proj,
-            matchers.Equals(
-                {
-                    'root': root,
-                    'requirements': {},
-                    'extras': {},
-                }
-            ),
+            {
+                'root': root,
+                'requirements': {},
+                'extras': {},
+            },
         )
 
 
