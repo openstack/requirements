@@ -37,13 +37,13 @@ def run_command(cmd):
     print(cmd)
     cmd_list = shlex.split(str(cmd))
     kwargs = {}
-    if sys.version_info >= (3, ):
-        kwargs = {
-            'encoding': 'utf-8',
-            'errors': 'surrogateescape',
-        }
-    p = subprocess.Popen(cmd_list, stdout=subprocess.PIPE,
-                         stderr=subprocess.PIPE, **kwargs)
+    kwargs = {
+        'encoding': 'utf-8',
+        'errors': 'surrogateescape',
+    }
+    p = subprocess.Popen(
+        cmd_list, stdout=subprocess.PIPE, stderr=subprocess.PIPE, **kwargs
+    )
     (out, err) = p.communicate()
     if p.returncode != 0:
         raise SystemError(err)
@@ -51,7 +51,8 @@ def run_command(cmd):
 
 
 _DEFAULT_REQS_DIR = os.path.expanduser(
-    '~/src/opendev.org/openstack/requirements')
+    '~/src/opendev.org/openstack/requirements'
+)
 
 
 def grab_args():
@@ -59,14 +60,19 @@ def grab_args():
     parser = argparse.ArgumentParser(
         description="Check if project requirements have changed"
     )
-    parser.add_argument('--local', action='store_true',
-                        help='check local changes (not yet in git)')
+    parser.add_argument(
+        '--local',
+        action='store_true',
+        help='check local changes (not yet in git)',
+    )
     parser.add_argument('src_dir', help='directory to process')
-    parser.add_argument('branch', nargs='?', default='master',
-                        help='target branch for diffs')
+    parser.add_argument(
+        'branch', nargs='?', default='master', help='target branch for diffs'
+    )
     parser.add_argument('--zc', help='what zuul cloner to call')
-    parser.add_argument('--reqs', help='use a specified requirements tree',
-                        default=None)
+    parser.add_argument(
+        '--reqs', help='use a specified requirements tree', default=None
+    )
 
     return parser.parse_args()
 
@@ -91,31 +97,29 @@ def main():
         if args.local:
             print('selecting default requirements directory for local mode')
             reqdir = os.path.dirname(
-                os.path.dirname(
-                    os.path.dirname(
-                        os.path.abspath(sys.argv[0]))))
+                os.path.dirname(os.path.dirname(os.path.abspath(sys.argv[0])))
+            )
         else:
             print('selecting default requirements directory for normal mode')
             reqdir = _DEFAULT_REQS_DIR
 
-    print('Branch: {}'.format(branch))
-    print('Source: {}'.format(args.src_dir))
-    print('Requirements: {}'.format(reqdir))
+    print(f'Branch: {branch}')
+    print(f'Source: {args.src_dir}')
+    print(f'Requirements: {reqdir}')
 
     os.chdir(args.src_dir)
     sha, _ = run_command('git log -n 1 --format=%H')
-    print('Patch under test: {}'.format(sha))
+    print(f'Patch under test: {sha}')
 
     # build a list of requirements from the global list in the
     # openstack/requirements project so we can match them to the changes
     with tempdir():
-        with open(reqdir + '/global-requirements.txt', 'rt') as f:
+        with open(reqdir + '/global-requirements.txt') as f:
             global_reqs = check.get_global_reqs(f.read())
-        denylist = requirement.parse(
-            open(reqdir + '/denylist.txt', 'rt').read())
+        denylist = requirement.parse(open(reqdir + '/denylist.txt').read())
         backports_file = reqdir + '/backports.txt'
         if os.path.exists(backports_file):
-            backports = requirement.parse(open(backports_file, 'rt').read())
+            backports = requirement.parse(open(backports_file).read())
         else:
             backports = {}
         cwd = os.getcwd()

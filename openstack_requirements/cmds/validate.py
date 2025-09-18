@@ -10,9 +10,7 @@
 # License for the specific language governing permissions and limitations
 # under the License.
 
-"""Apply validation rules to the various requirements lists.
-
-"""
+"""Apply validation rules to the various requirements lists."""
 
 import argparse
 import os
@@ -44,44 +42,47 @@ def main():
     error_count = 0
 
     # Check the format of the constraints file.
-    print('\nChecking %s' % args.upper_constraints)
+    print(f'\nChecking {args.upper_constraints}')
     constraints_txt = read_requirements_file(args.upper_constraints)
     for msg in constraints.check_format(constraints_txt):
         print(msg)
         error_count += 1
 
     # Check that the constraints and requirements are compatible.
-    print('\nChecking %s' % args.global_requirements)
+    print(f'\nChecking {args.global_requirements}')
     global_reqs = read_requirements_file(args.global_requirements)
     for msg in constraints.check_compatible(global_reqs, constraints_txt):
         print(msg)
         error_count += 1
 
     # Check requirements to satisfy policy.
-    print('\nChecking requirements on %s' % args.global_requirements)
+    print(f'\nChecking requirements on {args.global_requirements}')
     for msg in requirement.check_reqs_bounds_policy(global_reqs):
         print(msg)
         error_count += 1
 
     # Check that global requirements are uniformly formatted
-    print('\nValidating uniform formatting on %s' % args.global_requirements)
-    with open(args.global_requirements, 'rt') as f:
+    print(f'\nValidating uniform formatting on {args.global_requirements}')
+    with open(args.global_requirements) as f:
         for line in f:
             if line == '\n':
                 continue
             req = requirement.parse_line(line)
             normed_req = req.to_line(comment_prefix='  ', sort_specifiers=True)
             if line.rstrip() != normed_req.rstrip():
-                print("-%s\n+%s" % (line.rstrip(), normed_req.rstrip()))
+                print(f"-{line.rstrip()}\n+{normed_req.rstrip()}")
                 error_count += 1
 
     # Check that all of the items in the global-requirements list
     # appear in exactly one of the constraints file or the denylist.
-    print('\nChecking %s' % args.denylist)
+    print(f'\nChecking {args.denylist}')
     denylist = read_requirements_file(args.denylist)
     for msg in constraints.check_denylist_coverage(
-            global_reqs, constraints_txt, denylist,
-            os.path.basename(args.upper_constraints)):
+        global_reqs,
+        constraints_txt,
+        denylist,
+        os.path.basename(args.upper_constraints),
+    ):
         print(msg)
         error_count += 1
 

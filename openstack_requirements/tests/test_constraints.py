@@ -17,21 +17,18 @@ from openstack_requirements import requirement
 
 
 class TestCheckCompatible(testtools.TestCase):
-
     def test_non_requirement(self):
         global_reqs = {}
         good_constraints = requirement.parse("foo===1.2.5\n")
         self.assertEqual(
-            [],
-            constraints.check_compatible(global_reqs, good_constraints)
+            [], constraints.check_compatible(global_reqs, good_constraints)
         )
 
     def test_compatible(self):
         global_reqs = requirement.parse("foo>=1.2\nbar>2.0\n")
         good_constraints = requirement.parse("foo===1.2.5\n")
         self.assertEqual(
-            [],
-            constraints.check_compatible(global_reqs, good_constraints)
+            [], constraints.check_compatible(global_reqs, good_constraints)
         )
 
     def test_constraint_below_range(self):
@@ -48,32 +45,29 @@ class TestCheckCompatible(testtools.TestCase):
 
 
 class TestCheckFormat(testtools.TestCase):
-
     def test_ok(self):
         good_constraints = requirement.parse("foo===1.2.5\n")
-        self.assertEqual(
-            [],
-            list(constraints.check_format(good_constraints))
-        )
+        self.assertEqual([], list(constraints.check_format(good_constraints)))
 
     def test_two_equals(self):
         bad_constraints = requirement.parse("foo==1.2.5\n")
         self.assertEqual(
-            1,
-            len(list(constraints.check_format(bad_constraints)))
+            1, len(list(constraints.check_format(bad_constraints)))
         )
 
 
 class TestDenylistCoverage(testtools.TestCase):
-
     def test_constrained(self):
         global_reqs = requirement.parse("foo>=1.2\nbar>2.0\n")
         good_constraints = requirement.parse("foo===1.2.5\nbar==2.1")
         denylist = requirement.parse('flake8\nhacking')
         self.assertEqual(
             [],
-            list(constraints.check_denylist_coverage(
-                global_reqs, good_constraints, denylist, 'test'))
+            list(
+                constraints.check_denylist_coverage(
+                    global_reqs, good_constraints, denylist, 'test'
+                )
+            ),
         )
 
     def test_denylisted(self):
@@ -82,16 +76,22 @@ class TestDenylistCoverage(testtools.TestCase):
         denylist = requirement.parse('flake8\nhacking\nbar')
         self.assertEqual(
             [],
-            list(constraints.check_denylist_coverage(
-                global_reqs, good_constraints, denylist, 'test'))
+            list(
+                constraints.check_denylist_coverage(
+                    global_reqs, good_constraints, denylist, 'test'
+                )
+            ),
         )
 
     def test_both(self):
         global_reqs = requirement.parse("foo>=1.2\nbar>2.0\n")
         good_constraints = requirement.parse("foo===1.2.5\nbar>2.0")
         denylist = requirement.parse('flake8\nhacking\nbar')
-        results = list(constraints.check_denylist_coverage(
-            global_reqs, good_constraints, denylist, 'test'))
+        results = list(
+            constraints.check_denylist_coverage(
+                global_reqs, good_constraints, denylist, 'test'
+            )
+        )
         self.assertEqual(1, len(results))
         self.assertIn("'bar' appears in both", results[0])
 
@@ -99,7 +99,10 @@ class TestDenylistCoverage(testtools.TestCase):
         global_reqs = requirement.parse("foo>=1.2\nbar>2.0\n")
         good_constraints = requirement.parse("foo===1.2.5\n")
         denylist = requirement.parse('flake8\nhacking')
-        results = list(constraints.check_denylist_coverage(
-            global_reqs, good_constraints, denylist, 'test'))
+        results = list(
+            constraints.check_denylist_coverage(
+                global_reqs, good_constraints, denylist, 'test'
+            )
+        )
         self.assertEqual(1, len(results))
         self.assertIn("'bar' appears in global-requirements.txt", results[0])

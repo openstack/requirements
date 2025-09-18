@@ -25,18 +25,18 @@ load_tests = testscenarios.load_tests_apply_scenarios
 
 
 class TestReadProject(testtools.TestCase):
-
     def test_pbr(self):
         root = self.useFixture(common.pbr_fixture).root
         proj = project.read(root)
         self.expectThat(proj['root'], matchers.Equals(root))
-        setup_py = open(root + '/setup.py', 'rt').read()
+        setup_py = open(root + '/setup.py').read()
         self.expectThat(proj['setup.py'], matchers.Equals(setup_py))
-        setup_cfg = open(root + '/setup.cfg', 'rt').read()
+        setup_cfg = open(root + '/setup.cfg').read()
         self.expectThat(proj['setup.cfg'], matchers.Equals(setup_cfg))
         self.expectThat(
             proj['requirements'],
-            matchers.KeysEqual('requirements.txt', 'test-requirements.txt'))
+            matchers.KeysEqual('requirements.txt', 'test-requirements.txt'),
+        )
 
     def test_no_setup_py(self):
         root = self.useFixture(fixtures.TempDir()).path
@@ -47,24 +47,22 @@ class TestReadProject(testtools.TestCase):
 
 
 class TestProjectExtras(testtools.TestCase):
-
     def test_smoke(self):
-        proj = {'setup.cfg': textwrap.dedent(u"""
+        proj = {
+            'setup.cfg': textwrap.dedent("""
             [extras]
             1 =
               foo
             2 =
               foo # fred
               bar
-            """)}
-        expected = {
-            '1': '\nfoo',
-            '2': '\nfoo # fred\nbar'
+            """)
         }
+        expected = {'1': '\nfoo', '2': '\nfoo # fred\nbar'}
         self.assertEqual(expected, project.extras(proj))
 
     def test_none(self):
-        proj = {'setup.cfg': u"[metadata]\n"}
+        proj = {'setup.cfg': "[metadata]\n"}
         self.assertEqual({}, project.extras(proj))
 
     def test_no_setup_cfg(self):

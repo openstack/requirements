@@ -78,13 +78,13 @@ def pin(line, new_cap):
         end = parts[1]
     # cap to new max version
     if end:
-        new_end = "<=%s #%s" % (new_cap, end)
+        new_end = f"<={new_cap} #{end}"
     else:
-        new_end = "<=%s" % new_cap
+        new_end = f"<={new_cap}"
     if use_comma is True:
-        return "%s,%s" % (parts[0].strip(), new_end)
+        return f"{parts[0].strip()},{new_end}"
     else:
-        return "%s%s" % (parts[0].strip(), new_end)
+        return f"{parts[0].strip()}{new_end}"
 
 
 def split(line):
@@ -119,12 +119,13 @@ def freeze(lines):
 def main():
     parser = argparse.ArgumentParser(
         description="Take the output of "
-                    "'pip freeze' and use the installed versions to "
-                    "caps requirements.")
+        "'pip freeze' and use the installed versions to "
+        "caps requirements."
+    )
     parser.add_argument('requirements', help='requirements file input')
     parser.add_argument(
-        'freeze',
-        help='output of pip freeze, taken from a full tempest job')
+        'freeze', help='output of pip freeze, taken from a full tempest job'
+    )
     args = parser.parse_args()
     with open(args.requirements) as f:
         requirements = [line.strip() for line in f.readlines()]

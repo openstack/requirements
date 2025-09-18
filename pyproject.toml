@@ -43,3 +43,17 @@ check-constraints = "openstack_requirements.cmds.check_exists:main"
 packages = [
     "openstack_requirements"
 ]
+
+[tool.ruff]
+line-length = 79
+
+[tool.ruff.format]
+quote-style = "preserve"
+docstring-code-format = true
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "U"]
+
+# [tool.ruff.lint.per-file-ignores]
+# "openstack/tests/*" = ["S"]
+# "examples/*" = ["S"]

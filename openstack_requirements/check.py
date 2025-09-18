@@ -24,12 +24,14 @@ from openstack_requirements import requirement
 
 MIN_PY_VERSION = '3.5'
 PY3_GLOBAL_SPECIFIER_RE = re.compile(
-    r'python_version(==|>=|>)[\'"]3\.\d+[\'"]')
+    r'python_version(==|>=|>)[\'"]3\.\d+[\'"]'
+)
 PY3_LOCAL_SPECIFIER_RE = re.compile(
-    r'python_version(==|>=|>|<=|<)[\'"]3\.\d+[\'"]')
+    r'python_version(==|>=|>|<=|<)[\'"]3\.\d+[\'"]'
+)
 
 
-class RequirementsList(object):
+class RequirementsList:
     def __init__(self, name, project):
         self.name = name
         self.reqs_by_file = {}
@@ -38,8 +40,7 @@ class RequirementsList(object):
 
     @property
     def reqs(self):
-        return {k: v for d in self.reqs_by_file.values()
-                for k, v in d.items()}
+        return {k: v for d in self.reqs_by_file.values() for k, v in d.items()}
 
     def extract_reqs(self, content, strict):
         reqs = collections.defaultdict(set)
@@ -51,10 +52,13 @@ class RequirementsList(object):
             list_reqs = [r for (r, line) in entries]
             # Strip the comments out before checking if there are duplicates
             list_reqs_stripped = [r._replace(comment='') for r in list_reqs]
-            if strict and len(list_reqs_stripped) != len(set(
-                    list_reqs_stripped)):
-                print("ERROR: Requirements file has duplicate entries "
-                      "for package %s : %r." % (name, list_reqs))
+            if strict and len(list_reqs_stripped) != len(
+                set(list_reqs_stripped)
+            ):
+                print(
+                    "ERROR: Requirements file has duplicate entries "
+                    f"for package {name} : {list_reqs!r}."
+                )
                 self.failed = True
             reqs[name].update(list_reqs)
         return reqs
@@ -67,17 +71,18 @@ class RequirementsList(object):
           - each has a list of Requirements objects
           - duplicates are not permitted within that list
         """
-        print("Checking %(name)s" % {'name': self.name})
+        print(f"Checking {self.name}")
         # First, parse.
         for fname, content in self.project.get('requirements', {}).items():
-            print("Processing %(fname)s" % {'fname': fname})
+            print(f"Processing {fname}")
             if strict and not content.endswith('\n'):
-                print("Requirements file %s does not "
-                      "end with a newline." % fname)
+                print(
+                    f"Requirements file {fname} does not end with a newline."
+                )
             self.reqs_by_file[fname] = self.extract_reqs(content, strict)
 
         for name, content in project.extras(self.project).items():
-            print("Processing .[%(extra)s]" % {'extra': name})
+            print(f"Processing .[{name}]")
             self.reqs_by_file[name] = self.extract_reqs(content, strict)
 
 
@@ -97,7 +102,6 @@ def _is_requirement_in_global_reqs(
 ):
     req_exclusions = _get_exclusions(local_req)
     for global_req in global_reqs:
-
         matching = True
         for aname in ['package', 'location', 'markers']:
             local_req_val = getattr(local_req, aname)
@@ -106,20 +110,15 @@ def _is_requirement_in_global_reqs(
                 # if a python 3 version is not spefied in only one of
                 # global requirements or local requirements, allow it since
                 # python 3-only is okay
-                if (
-                    allow_3_only and
-                    matching and
-                    aname == 'markers'
-                ):
-                    if (
-                        not local_req_val and
-                        PY3_GLOBAL_SPECIFIER_RE.match(global_req_val)
+                if allow_3_only and matching and aname == 'markers':
+                    if not local_req_val and PY3_GLOBAL_SPECIFIER_RE.match(
+                        global_req_val
                     ):
                         continue
                     if (
-                        not global_req_val and
-                        local_req_val and
-                        PY3_LOCAL_SPECIFIER_RE.match(local_req_val)
+                        not global_req_val
+                        and local_req_val
+                        and PY3_LOCAL_SPECIFIER_RE.match(local_req_val)
                     ):
                         continue
 
@@ -128,9 +127,9 @@ def _is_requirement_in_global_reqs(
                 # requires a feature that is only available in a newer Python
                 # library, while other packages are happy without this feature
                 if (
-                    matching and
-                    aname == 'markers' and
-                    local_req.package in backports
+                    matching
+                    and aname == 'markers'
+                    and local_req.package in backports
                 ):
                     if re.match(
                         r'python_version(==|<=|<)[\'"]3\.\d+[\'"]',
@@ -142,9 +141,13 @@ def _is_requirement_in_global_reqs(
                         )
                         continue
 
-                print(f'WARNING: possible mismatch found for package "{local_req.package}"')  # noqa: E501
+                print(
+                    f'WARNING: possible mismatch found for package "{local_req.package}"'
+                )  # noqa: E501
                 print(f'   Attribute "{aname}" does not match')
-                print(f'   "{local_req_val}" does not match "{global_req_val}"')  # noqa: E501
+                print(
+                    f'   "{local_req_val}" does not match "{global_req_val}"'
+                )  # noqa: E501
                 print(f'   {local_req}')
                 print(f'   {global_req}')
                 matching = False
@@ -160,23 +163,21 @@ def _is_requirement_in_global_reqs(
         else:
             difference = req_exclusions - global_exclusions
             print(
-                "ERROR: Requirement for package {} "
+                f"ERROR: Requirement for package {local_req.package} "
                 "excludes a version not excluded in the "
                 "global list.\n"
-                "  Local settings : {}\n"
-                "  Global settings: {}\n"
-                "  Unexpected     : {}".format(
-                    local_req.package, req_exclusions, global_exclusions,
-                    difference)
+                f"  Local settings : {req_exclusions}\n"
+                f"  Global settings: {global_exclusions}\n"
+                f"  Unexpected     : {difference}"
             )
             return False
 
     print(
         "ERROR: "
-        "Could not find a global requirements entry to match package {}. "
+        f"Could not find a global requirements entry to match package {local_req.package}. "
         "If the package is already included in the global list, "
         "the name or platform markers there may not match the local "
-        "settings.".format(local_req.package)
+        "settings."
     )
     return False
 
@@ -204,9 +205,11 @@ def _get_python3_reqs(reqs):
             results.append(req)
         else:
             req_markers = markers.Marker(req.markers)
-            if req_markers.evaluate({
-                'python_version': MIN_PY_VERSION,
-            }):
+            if req_markers.evaluate(
+                {
+                    'python_version': MIN_PY_VERSION,
+                }
+            ):
                 results.append(req)
     return results
 
@@ -228,7 +231,7 @@ def _validate_one(
         return False
 
     if name not in global_reqs:
-        print("ERROR: Requirement '%s' not in openstack/requirements" % reqs)
+        print(f"ERROR: Requirement '{reqs}' not in openstack/requirements")
         return True
 
     counts = {}
@@ -240,15 +243,19 @@ def _validate_one(
             counts[''] = counts.get('', 0) + 1
 
         if not _is_requirement_in_global_reqs(
-            req, global_reqs[name], backports, allow_3_only,
+            req,
+            global_reqs[name],
+            backports,
+            allow_3_only,
         ):
             return True
 
         # check for minimum being defined
         min = [s for s in req.specifiers.split(',') if '>' in s]
         if not min:
-            print("ERROR: Requirement for package '%s' has no lower bound" %
-                  name)
+            print(
+                f"ERROR: Requirement for package '{name}' has no lower bound"
+            )
             return True
 
     for extra, count in counts.items():
@@ -256,21 +263,27 @@ def _validate_one(
         # just need to make sure we have at least the number of entries for
         # supported Python 3 versions.
         if count != len(global_reqs[name]):
-            if (allow_3_only and
-                    count >= len(_get_python3_reqs(global_reqs[name]))):
-                print("WARNING (probably OK for Ussuri and later): "
-                      "Package '%s%s' is only tracking python 3 "
-                      "requirements" % (
-                        name,
-                        ('[%s]' % extra) if extra else ''))
+            if allow_3_only and count >= len(
+                _get_python3_reqs(global_reqs[name])
+            ):
+                print(
+                    "WARNING (probably OK for Ussuri and later): "
+                    "Package '{}{}' is only tracking python 3 "
+                    "requirements".format(
+                        name, (f'[{extra}]') if extra else ''
+                    )
+                )
                 continue
 
-            print("ERROR: Package '%s%s' requirement does not match "
-                  "number of lines (%d) in "
-                  "openstack/requirements" % (
-                      name,
-                      ('[%s]' % extra) if extra else '',
-                      len(global_reqs[name])))
+            print(
+                "ERROR: Package '{}{}' requirement does not match "
+                "number of lines ({}) in "
+                "openstack/requirements".format(
+                    name,
+                    (f'[{extra}]') if extra else '',
+                    len(global_reqs[name]),
+                )
+            )
             return True
 
     return False
@@ -287,7 +300,7 @@ def validate(
     # iterate through the changing entries and see if they match the global
     # equivalents we want enforced
     for fname, freqs in head_reqs.reqs_by_file.items():
-        print("Validating %(fname)s" % {'fname': fname})
+        print(f"Validating {fname}")
         for name, reqs in freqs.items():
             failed = (
                 _validate_one(

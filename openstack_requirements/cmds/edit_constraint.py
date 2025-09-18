@@ -26,7 +26,8 @@ def edit(reqs, name, replacement):
         reqs.pop(key, None)
     else:
         reqs[key] = [
-            (requirement.Requirement('', '', '', '', replacement), '')]
+            (requirement.Requirement('', '', '', '', replacement), '')
+        ]
     result = []
     for entries in reqs.values():
         for entry, _ in entries:
@@ -47,8 +48,8 @@ def _validate_options(options, args):
         raise Exception("Not enough arguments given")
     if not os.path.exists(args[0]):
         raise Exception(
-            "Constraints file %(con)s not found."
-            % dict(con=args[0]))
+            "Constraints file {con} not found.".format(**dict(con=args[0]))
+        )
 
 
 def main(argv=None, stdout=None):
@@ -59,17 +60,18 @@ def main(argv=None, stdout=None):
             "replacement". If "name" is not present, it is added to the end of
             the file. If "replacement" is missing or empty, remove "name" from
             the file.
-            """))
+            """),
+    )
     options, args = parser.parse_args(argv)
     if stdout is None:
         stdout = sys.stdout
     _validate_options(options, args)
     args = args + [""]
-    content = open(args[0], 'rt').read()
+    content = open(args[0]).read()
     reqs = requirement.parse(content, permit_urls=True)
     out_reqs = edit(reqs, args[1], args[2])
     out = requirement.to_content(out_reqs)
-    with open(args[0] + '.tmp', 'wt') as f:
+    with open(args[0] + '.tmp', 'w') as f:
         f.write(out)
     if os.path.exists(args[0]):
         os.remove(args[0])

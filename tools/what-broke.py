@@ -41,7 +41,7 @@ import urllib.request as urlreq
 import packaging.requirements
 
 
-class Release(object):
+class Release:
     name = ""
     version = ""
     filename = ""
@@ -54,7 +54,7 @@ class Release(object):
         self.released = released
 
     def __repr__(self):
-        return "<Released %s %s %s>" % (self.name, self.version, self.released)
+        return f"<Released {self.name} {self.version} {self.released}>"
 
 
 def _parse_pypi_released(datestr):
@@ -79,7 +79,6 @@ def get_requirements():
 
 
 def get_releases_for_package(name, since):
-
     """Get the release history from pypi
 
     Use the json API to get the release history from pypi. The
@@ -94,7 +93,7 @@ def get_releases_for_package(name, since):
     our purposes.
 
     """
-    f = urlreq.urlopen("http://pypi.org/project/%s/json" % name)
+    f = urlreq.urlopen(f"http://pypi.org/project/{name}/json")
     jsondata = f.read()
     data = json.loads(jsondata)
     releases = []
@@ -106,12 +105,7 @@ def get_releases_for_package(name, since):
                 if when < since:
                     continue
 
-                releases.append(
-                    Release(
-                        name,
-                        relname,
-                        rel['filename'],
-                        when))
+                releases.append(Release(name, relname, rel['filename'], when))
                 break
     return releases
 
@@ -121,9 +115,9 @@ def get_releases_since(reqs, since):
     for req in reqs:
         all_releases.extend(get_releases_for_package(req, since))
     # return these in a sorted order from newest to oldest
-    sorted_releases = sorted(all_releases,
-                             key=lambda x: x.released,
-                             reverse=True)
+    sorted_releases = sorted(
+        all_releases, key=lambda x: x.released, reverse=True
+    )
     return sorted_releases
 
 
@@ -131,17 +125,23 @@ def parse_args():
     parser = argparse.ArgumentParser(
         description=(
             'List recent releases of items in global requirements '
-            'to look for possible breakage'))
-    parser.add_argument('-s', '--since', type=int,
-                        default=14,
-                        help='look back ``since`` days (default 14)')
+            'to look for possible breakage'
+        )
+    )
+    parser.add_argument(
+        '-s',
+        '--since',
+        type=int,
+        default=14,
+        help='look back ``since`` days (default 14)',
+    )
     return parser.parse_args()
 
 
 def main():
     opts = parse_args()
     since = datetime.datetime.today() - datetime.timedelta(days=opts.since)
-    print("Looking for requirements releases since %s" % since)
+    print(f"Looking for requirements releases since {since}")
     reqs = get_requirements()
     # additional sensitive requirements
     reqs.append('tox')

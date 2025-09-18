@@ -19,7 +19,7 @@ from openstack_requirements import requirement
 
 
 def write_requirements_file(filename, reqs):
-    with open(filename + 'tmp', 'wt') as f:
+    with open(filename + 'tmp', 'w') as f:
         f.write(reqs)
     if os.path.exists(filename):
         os.remove(filename)
@@ -28,11 +28,16 @@ def write_requirements_file(filename, reqs):
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Normalize requirements files")
+        description="Normalize requirements files"
+    )
     parser.add_argument('requirements', help='requirements file input')
-    parser.add_argument('-s', '--save', action='store_true', default=False,
-                        help=('save normalized requirements '
-                              'file instead of displaying it'))
+    parser.add_argument(
+        '-s',
+        '--save',
+        action='store_true',
+        default=False,
+        help=('save normalized requirements file instead of displaying it'),
+    )
     args = parser.parse_args()
     with open(args.requirements) as f:
         requirements = [line.strip() for line in f.readlines()]

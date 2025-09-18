@@ -23,42 +23,62 @@ import re
 
 
 def key_specifier(a):
-    weight = {'>=': 0, '>': 0,
-              '===': 1, '==': 1, '~=': 1, '!=': 1,
-              '<': 2, '<=': 2}
+    weight = {
+        '>=': 0,
+        '>': 0,
+        '===': 1,
+        '==': 1,
+        '~=': 1,
+        '!=': 1,
+        '<': 2,
+        '<=': 2,
+    }
     a = a._spec
     return (weight[a[0]], packaging.version.parse(a[1]))
 
 
-class Requirement(collections.namedtuple('Requirement',
-                                         ['package', 'location', 'specifiers',
-                                          'markers', 'comment', 'extras'])):
-    def __new__(cls, package, location, specifiers, markers, comment,
-                extras=None):
-        return super(Requirement, cls).__new__(
-            cls, package, location, specifiers, markers, comment,
-            frozenset(extras or ()))
+class Requirement(
+    collections.namedtuple(
+        'Requirement',
+        ['package', 'location', 'specifiers', 'markers', 'comment', 'extras'],
+    )
+):
+    def __new__(
+        cls, package, location, specifiers, markers, comment, extras=None
+    ):
+        return super().__new__(
+            cls,
+            package,
+            location,
+            specifiers,
+            markers,
+            comment,
+            frozenset(extras or ()),
+        )
 
-    def to_line(self, marker_sep=';', line_prefix='', comment_prefix=' ',
-                sort_specifiers=False):
+    def to_line(
+        self,
+        marker_sep=';',
+        line_prefix='',
+        comment_prefix=' ',
+        sort_specifiers=False,
+    ):
         comment_p = comment_prefix if self.package else ''
-        comment = (comment_p + self.comment if self.comment else '')
+        comment = comment_p + self.comment if self.comment else ''
         marker = marker_sep + self.markers if self.markers else ''
         package = line_prefix + self.package if self.package else ''
         location = self.location + '#egg=' if self.location else ''
-        extras = '[%s]' % ",".join(sorted(self.extras)) if self.extras else ''
+        extras = (
+            '[{}]'.format(",".join(sorted(self.extras))) if self.extras else ''
+        )
         specifiers = self.specifiers
         if sort_specifiers:
             _specifiers = packaging.specifiers.SpecifierSet(specifiers)
-            _specifiers = ['%s' % s for s in sorted(_specifiers,
-                                                    key=key_specifier)]
+            _specifiers = [
+                f'{s}' for s in sorted(_specifiers, key=key_specifier)
+            ]
             specifiers = ','.join(_specifiers)
-        return '%s%s%s%s%s%s\n' % (location,
-                                   package,
-                                   extras,
-                                   specifiers,
-                                   marker,
-                                   comment)
+        return f'{location}{package}{extras}{specifiers}{marker}{comment}\n'
 
 
 Requirements = collections.namedtuple('Requirements', ['reqs'])
@@ -66,7 +86,8 @@ Requirements = collections.namedtuple('Requirements', ['reqs'])
 
 url_re = re.compile(
     r'^(?P<url>\s*(?:-e\s)?\s*(?:(?:[a-z]+\+)?(?:[a-z]+))://[^#]*)'
-    r'#egg=(?P<name>[-\.\w]+)')
+    r'#egg=(?P<name>[-\.\w]+)'
+)
 
 
 def canonical_name(req_name):
@@ -126,7 +147,7 @@ def parse_line(req_line, permit_urls=False):
     marker_pos = max(semi_pos, colon_pos)
     if marker_pos < 0:
         marker_pos = hash_pos
-    markers = req_line[marker_pos + 1:hash_pos].strip()
+    markers = req_line[marker_pos + 1 : hash_pos].strip()
     if hash_pos != end:
         comment = req_line[hash_pos:]
     else:
@@ -154,7 +175,7 @@ def to_content(reqs, marker_sep=';', line_prefix=''):
     lines = []
     for req in reqs.reqs:
         lines.append(req.to_line(marker_sep, line_prefix))
-    return u''.join(lines)
+    return ''.join(lines)
 
 
 def to_dict(req_sequence):
@@ -169,12 +190,15 @@ def to_dict(req_sequence):
 def _pass_through(req_line, permit_urls=False):
     """Identify unparsable lines."""
     if permit_urls:
-        return (req_line.startswith('http://tarballs.openstack.org/') or
-                req_line.startswith('-f'))
+        return req_line.startswith(
+            'http://tarballs.openstack.org/'
+        ) or req_line.startswith('-f')
     else:
-        return (req_line.startswith('http://tarballs.openstack.org/') or
-                req_line.startswith('-e') or
-                req_line.startswith('-f'))
+        return (
+            req_line.startswith('http://tarballs.openstack.org/')
+            or req_line.startswith('-e')
+            or req_line.startswith('-f')
+        )
 
 
 def to_reqs(content, permit_urls=False):
@@ -204,5 +228,6 @@ def check_reqs_bounds_policy(global_reqs):
                 if spec.operator == '>=':
                     lower_bound.add(spec)
             if len(lower_bound):
-                yield ('Requirement %s should not include a >= specifier' %
-                       req.package)
+                yield (
+                    f'Requirement {req.package} should not include a >= specifier'
+                )

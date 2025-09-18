@@ -19,41 +19,46 @@ from openstack_requirements import requirement
 # should not be denylisted. We don't know yet what versions they
 # should have, so just ignore them for a little while until we have
 # time to figure that out.
-UNCONSTRAINABLE = set([
-    'argparse',
-    'pip',
-    'setuptools',
-    'wmi',
-    'pywin32',
-    'pymi',
-    'wheel',
-    '',  # blank lines
-])
+UNCONSTRAINABLE = set(
+    [
+        'argparse',
+        'pip',
+        'setuptools',
+        'wmi',
+        'pywin32',
+        'pymi',
+        'wheel',
+        '',  # blank lines
+    ]
+)
 
 
-def check_denylist_coverage(global_reqs, constraints, denylist,
-                            constraints_list_name):
+def check_denylist_coverage(
+    global_reqs, constraints, denylist, constraints_list_name
+):
     """Report any items that are not properly constrained.
 
     Check that all of the items in the global-requirements list
     appear either in the constraints file or the denylist.
     """
     to_be_constrained = (
-        set(global_reqs.keys()) - set(denylist.keys())
-        - UNCONSTRAINABLE
+        set(global_reqs.keys()) - set(denylist.keys()) - UNCONSTRAINABLE
     )
     constrained = set(constraints.keys()) - set([''])
     unconstrained = to_be_constrained - constrained
     for u in sorted(unconstrained):
-        yield ('%r appears in global-requirements.txt '
-               'but not %s or denylist.txt' % (u, constraints_list_name))
+        yield (
+            f'{u!r} appears in global-requirements.txt '
+            f'but not {constraints_list_name} or denylist.txt'
+        )
 
     # Verify that the denylist packages are not also listed in
     # the constraints file.
     dupes = constrained.intersection(set(denylist.keys()))
     for d in dupes:
-        yield ('%r appears in both denylist.txt and %s'
-               % (d, constraints_list_name))
+        yield (
+            f'{d!r} appears in both denylist.txt and {constraints_list_name}'
+        )
 
 
 def check_format(parsed_constraints):
@@ -61,8 +66,9 @@ def check_format(parsed_constraints):
     for name, spec_list in parsed_constraints.items():
         for req, original_line in spec_list:
             if not req.specifiers.startswith('==='):
-                yield ('Invalid constraint for %s does not have 3 "=": %s' %
-                       (name, original_line))
+                yield (
+                    f'Invalid constraint for {name} does not have 3 "=": {original_line}'
+                )
 
 
 def check_compatible(global_reqs, constraints):
@@ -88,6 +94,7 @@ def check_compatible(global_reqs, constraints):
     :param constraints: The same from given constraints.txt.
     :return: A list of the error messages for constraints that failed.
     """
+
     def satisfied(reqs, name, version, failures):
         if name not in reqs:
             return True
@@ -98,9 +105,11 @@ def check_compatible(global_reqs, constraints):
             if spec.contains(version, prereleases=True):
                 return True
             tested.append(constraint.specifiers)
-        failures.append('Constraint %s for %s does not match requirement %s' %
-                        (version, name, tested))
+        failures.append(
+            f'Constraint {version} for {name} does not match requirement {tested}'
+        )
         return False
+
     failures = []
     for pkg_constraints in constraints.values():
         for constraint, _ in pkg_constraints:

@@ -21,7 +21,7 @@ from swift import __canonical_version__ as version
 name = 'swift'
 
 
-with open('requirements.txt', 'r') as f:
+with open('requirements.txt') as f:
     requires = [x.strip() for x in f if x.strip()]
 
 
