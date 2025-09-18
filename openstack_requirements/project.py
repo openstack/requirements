@@ -20,6 +20,41 @@ import errno
 import io
 import os
 
+try:
+    # Python 3.11+
+    import tomllib
+except ImportError:
+    # Python 3.10 and lower
+    import tomli as tomllib  # type: ignore
+
+
+def _read_pyproject_toml(root):
+    data = _read_raw(root, 'pyproject.toml')
+    if data is None:
+        return None
+
+    return tomllib.loads(data)
+
+
+def _read_pyproject_toml_requirements(root):
+    data = _read_pyproject_toml(root) or {}
+
+    # projects may not have PEP-621 project metadata
+    if 'project' not in data:
+        return None
+
+    return data['project'].get('dependencies')
+
+
+def _read_pyproject_toml_extras(root):
+    data = _read_pyproject_toml(root) or {}
+
+    # projects may not have PEP-621 project metadata
+    if 'project' not in data:
+        return None
+
+    return data['project'].get('optional-dependencies')
+
 
 def _read_setup_cfg_extras(root):
     data = _read_raw(root, 'setup.cfg')
@@ -28,10 +63,10 @@ def _read_setup_cfg_extras(root):
 
     c = configparser.ConfigParser()
     c.read_file(io.StringIO(data))
-    if c.has_section('extras'):
-        return dict(c.items('extras'))
+    if not c.has_section('extras'):
+        return None
 
-    return None
+    return dict(c.items('extras'))
 
 
 def _read_raw(root, filename):
@@ -60,6 +95,9 @@ def read(root):
     # Store requirements
     result['requirements'] = {}
 
+    if (data := _read_pyproject_toml_requirements(root)) is not None:
+        result['requirements']['pyproject.toml'] = data
+
     for filename in [
         'requirements.txt',
         'test-requirements.txt',
@@ -77,7 +115,11 @@ def read(root):
 
     # Store extras
     result['extras'] = {}
+
     if (data := _read_setup_cfg_extras(root)) is not None:
+        result['extras']['setup.cfg'] = data
+
+    if (data := _read_pyproject_toml_extras(root)) is not None:
         result['extras']['setup.cfg'] = data
 
     return result

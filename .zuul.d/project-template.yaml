@@ -42,6 +42,7 @@
       - ^.*requirements-py[2,3].txt$
       - ^doc/requirements.txt$
       - ^lower-constraints.txt$
+      - ^pyproject.toml$
 
 - job:
     name: requirements-check-self

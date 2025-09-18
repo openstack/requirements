@@ -29,26 +29,43 @@ class Project(fixtures.Fixture):
     """A single project we can update."""
 
     def __init__(
-        self, req_path, setup_path, setup_cfg_path, test_req_path=None
+        self,
+        req_path=None,
+        setup_path=None,
+        setup_cfg_path=None,
+        test_req_path=None,
+        pyproject_toml_path=None,
     ):
         super().__init__()
         self._req_path = req_path
         self._setup_path = setup_path
         self._setup_cfg_path = setup_cfg_path
         self._test_req_path = test_req_path
+        self._pyproject_toml_path = pyproject_toml_path
 
     def setUp(self):
         super().setUp()
         self.root = self.useFixture(fixtures.TempDir()).path
+
         self.req_file = os.path.join(self.root, 'requirements.txt')
+        if self._req_path:
+            shutil.copy(self._req_path, self.req_file)
+
         self.setup_file = os.path.join(self.root, 'setup.py')
+        if self._setup_path:
+            shutil.copy(self._setup_path, self.setup_file)
+
         self.setup_cfg_file = os.path.join(self.root, 'setup.cfg')
+        if self._setup_cfg_path:
+            shutil.copy(self._setup_cfg_path, self.setup_cfg_file)
+
         self.test_req_file = os.path.join(self.root, 'test-requirements.txt')
-        shutil.copy(self._req_path, self.req_file)
-        shutil.copy(self._setup_path, self.setup_file)
-        shutil.copy(self._setup_cfg_path, self.setup_cfg_file)
         if self._test_req_path:
             shutil.copy(self._test_req_path, self.test_req_file)
+
+        self.pyproject_toml_file = os.path.join(self.root, 'pyproject.toml')
+        if self._pyproject_toml_path:
+            shutil.copy(self._pyproject_toml_path, self.pyproject_toml_file)
 
 
 project_fixture = Project(
@@ -72,6 +89,9 @@ pbr_fixture = Project(
     "openstack_requirements/tests/files/setup.py",
     "openstack_requirements/tests/files/pbr_setup.cfg",
     "openstack_requirements/tests/files/test-project.txt",
+)
+pep_518_fixture = Project(
+    pyproject_toml_path="openstack_requirements/tests/files/pyproject.toml",
 )
 
 
@@ -105,7 +125,4 @@ upper_constraints = requirement.parse(
 denylist = requirement.parse(
     open("openstack_requirements/tests/files/denylist.txt").read()
 )
-pbr_project = make_project(pbr_fixture)
 project_project = make_project(project_fixture)
-bad_project = make_project(bad_project_fixture)
-oslo_project = make_project(oslo_fixture)
