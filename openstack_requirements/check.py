@@ -16,6 +16,7 @@
 
 import collections
 import re
+import sys
 
 from packaging import markers
 
@@ -56,8 +57,9 @@ class RequirementsList:
                 set(list_reqs_stripped)
             ):
                 print(
-                    "ERROR: Requirements file has duplicate entries "
-                    f"for package {name} : {list_reqs!r}."
+                    f"ERROR: Requirements file has duplicate entries "
+                    f"for package {name} : {list_reqs!r}.",
+                    file=sys.stderr,
                 )
                 self.failed = True
             reqs[name].update(list_reqs)
@@ -72,12 +74,36 @@ class RequirementsList:
           - duplicates are not permitted within that list
         """
         print(f"Checking {self.name}")
-        # First, parse.
         for fname, content in self.project.get('requirements', {}).items():
+            if (
+                fname
+                in {
+                    'tools/pip-requires',
+                    'tools/test-requires',
+                    'requirements-py2.txt',
+                    'requirements-py3.txt',
+                    'test-requirements-py2.txt',
+                    'test-requirements-py3.txt',
+                }
+                and content
+            ):
+                # TODO(stephenfin): Make this an error in the H cycle (mid
+                # 2026). These files are all obsolete and pbr no longer
+                # supported the pyN-suffixed files (since pbr 5.0) and never
+                # supported the *-requires files
+                print(
+                    "WARNING: Requirements file {fname} is non-standard "
+                    "and will cause an error in the future. "
+                    "Use a pyproject.toml or requirements.txt / "
+                    "test-requirements.txt file instead.",
+                    file=sys.stderr,
+                )
+
             print(f"Processing {fname}")
             if strict and not content.endswith('\n'):
                 print(
-                    f"Requirements file {fname} does not end with a newline."
+                    f"Requirements file {fname} does not end with a newline.",
+                    file=sys.stderr,
                 )
             self.reqs_by_file[fname] = self.extract_reqs(content, strict)
 
