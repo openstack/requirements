@@ -1,0 +1,45 @@
+[build-system]
+requires = ["pbr>=6.1.1"]
+build-backend = "pbr.build"
+
+[project]
+name = "openstack_requirements"
+description = "OpenStack python dependency management tools"
+authors = [
+    {name = "OpenStack", email = "openstack-discuss@lists.openstack.org"},
+]
+readme = {file = "README.rst", content-type = "text/x-rst"}
+license = {text = "Apache-2.0"}
+dynamic = ["version", "dependencies"]
+requires-python = ">=3.9"
+classifiers = [
+  "Environment :: OpenStack",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: Apache Software License",
+  "Operating System :: POSIX :: Linux",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+]
+
+[project.urls]
+Homepage = "https://docs.openstack.org/requirements"
+Repository = "https://opendev.org/openstack/requirements"
+
+[project.scripts]
+edit-constraints = "openstack_requirements.cmds.edit_constraint:main"
+generate-constraints = "openstack_requirements.cmds.generate:main"
+check-conflicts = "openstack_requirements.cmds.check_conflicts:main"
+validate-constraints = "openstack_requirements.cmds.validate:main"
+validate-projects = "openstack_requirements.cmds.validate_projects:main"
+normalize-requirements = "openstack_requirements.cmds.normalize_requirements:main"
+check-constraints = "openstack_requirements.cmds.check_exists:main"
+
+[tool.setuptools]
+packages = [
+    "openstack_requirements"
+]
