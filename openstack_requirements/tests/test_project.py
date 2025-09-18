@@ -10,6 +10,7 @@
 #    License for the specific language governing permissions and limitations
 #    under the License.
 
+import os
 import textwrap
 
 import fixtures
@@ -42,29 +43,45 @@ class TestReadProject(testtools.TestCase):
         root = self.useFixture(fixtures.TempDir()).path
         proj = project.read(root)
         self.expectThat(
-            proj, matchers.Equals({'root': root, 'requirements': {}})
+            proj,
+            matchers.Equals(
+                {
+                    'root': root,
+                    'requirements': {},
+                    'extras': {},
+                }
+            ),
         )
 
 
 class TestProjectExtras(testtools.TestCase):
     def test_smoke(self):
-        proj = {
-            'setup.cfg': textwrap.dedent("""
-            [extras]
-            1 =
-              foo
-            2 =
-              foo # fred
-              bar
-            """)
-        }
+        root = self.useFixture(fixtures.TempDir()).path
+        with open(os.path.join(root, 'setup.cfg'), 'w') as fh:
+            fh.write(
+                textwrap.dedent("""
+                [extras]
+                1 =
+                  foo
+                2 =
+                  foo # fred
+                  bar
+                """)
+            )
         expected = {'1': '\nfoo', '2': '\nfoo # fred\nbar'}
-        self.assertEqual(expected, project.extras(proj))
+        self.assertEqual(expected, project._read_setup_cfg_extras(root))
 
     def test_none(self):
-        proj = {'setup.cfg': "[metadata]\n"}
-        self.assertEqual({}, project.extras(proj))
+        root = self.useFixture(fixtures.TempDir()).path
+        with open(os.path.join(root, 'setup.cfg'), 'w') as fh:
+            fh.write(
+                textwrap.dedent("""
+                [metadata]
+                name = foo
+                """)
+            )
+        self.assertIsNone(project._read_setup_cfg_extras(root))
 
     def test_no_setup_cfg(self):
-        proj = {}
-        self.assertEqual({}, project.extras(proj))
+        root = self.useFixture(fixtures.TempDir()).path
+        self.assertIsNone(project._read_setup_cfg_extras(root))
