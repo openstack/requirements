@@ -145,15 +145,6 @@ def main():
             allow_3_only=python_3_branch,
         )
 
-        failed = (
-            check.validate_lower_constraints(
-                head_reqs,
-                head_proj['lower-constraints.txt'],
-                denylist,
-            )
-            or failed
-        )
-
     # report the results
     if failed or head_reqs.failed:
         print("*** Incompatible requirement found!")

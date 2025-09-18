@@ -42,8 +42,8 @@ class TestReadProject(testtools.TestCase):
         root = self.useFixture(fixtures.TempDir()).path
         proj = project.read(root)
         self.expectThat(
-            proj, matchers.Equals({'root': root, 'requirements': {},
-                                   'lower-constraints.txt': None}))
+            proj, matchers.Equals({'root': root, 'requirements': {}})
+        )
 
 
 class TestProjectExtras(testtools.TestCase):
