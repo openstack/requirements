@@ -50,6 +50,31 @@ molecule-plugins
 # Once any stable branch move to 'Extended Maintenance' and we pin the
 # older Tempest to test them then we can move it from here to u-c file.
 tempest
+barbican_tempest_plugin
+blazar_tempest_plugin
+cinder_tempest-plugin
+cloudkitty_tempest_plugin
+cyborg_tempest-plugin
+designate_tempest-plugin
+freezer_tempest_plugin
+glance_tempest-plugin
+heat_tempest-plugin
+ironic_tempest-plugin
+keystone_tempest_plugin
+magnum_tempest_plugin
+manila_tempest-plugin
+mistral_tempest_tests
+monasca_tempest-plugin
+neutron_tempest-plugin
+octavia_tempest-plugin
+telemetry_tempest_plugin
+trove_tempest_plugin
+venus_tempest-plugin
+vitrage_tempest-plugin
+watcher_tempest-plugin
+whitebox_tempest-plugin
+zaqar_tempest_plugin
+zun_tempest-plugin
 
 # annoying from setuptools
 pkg_resources
