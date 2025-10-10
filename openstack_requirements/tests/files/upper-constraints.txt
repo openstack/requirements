@@ -480,7 +480,7 @@ scikit-learn===0.18.1
 wsgiref==0.1.2
 discover==0.4.0
 oslo.sphinx==0.9.27
-python-ldap==2.3.13
+python-ldap==3.4.5
 argparse==1.4.0
 setuptools-git==25.1.4
 feedparser==5.2.1
