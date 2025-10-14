@@ -368,7 +368,6 @@ rich===14.1.0
 os-traits===3.5.0
 typepy===1.3.4
 SecretStorage===3.3.3
-opentracing===2.4.0
 XStatic-Rickshaw===1.5.1.0
 iso8601===2.1.0
 tooz===7.0.0
@@ -510,7 +509,6 @@ pytest-cov===4.1.0
 reactivex===4.0.4
 Paste===3.10.1
 pytest-django===4.11.1
-jaeger-client===4.8.0
 XStatic-Json2yaml===0.1.1.0
 boto===2.49.0
 hyperlink===21.0.0
