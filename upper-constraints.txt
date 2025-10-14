@@ -328,7 +328,6 @@ XStatic-moment===2.8.4.3
 autopage===0.5.2
 gitdb===4.0.12
 python-monascaclient===2.8.0
-ldap3===2.9.1
 opentelemetry-api===1.36.0
 automaton===3.2.0
 types-urllib3===1.26.25.14

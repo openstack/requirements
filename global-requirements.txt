@@ -80,7 +80,6 @@ jsonschema  # MIT
 kazoo  # Apache-2.0
 kombu!=4.0.2  # BSD
 kubernetes  # Apache-2.0
-ldap3  # LGPLv3
 libsass  # MIT
 libvirt-python!=4.1.0,!=4.2.0  # LGPLv2+
 lxml!=3.7.0  # BSD
