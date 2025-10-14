@@ -68,7 +68,7 @@ def main(argv=None, stdout=None):
     content = open(args[0], 'rt').read()
     reqs = requirement.parse(content, permit_urls=True)
     out_reqs = edit(reqs, args[1], args[2])
-    out = requirement.to_content(out_reqs, prefix=False)
+    out = requirement.to_content(out_reqs)
     with open(args[0] + '.tmp', 'wt') as f:
         f.write(out)
     if os.path.exists(args[0]):
