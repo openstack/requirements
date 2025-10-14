@@ -446,6 +446,7 @@ pexpect===4.9.0
 cmd2===2.7.0
 python-json-logger===3.3.0
 redis===6.2.0
+valkey===6.1.1
 jmespath===1.0.1
 click===8.1.8;python_version=='3.9'
 click===8.2.2;python_version>='3.10'
