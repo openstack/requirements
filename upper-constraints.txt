@@ -352,7 +352,7 @@ elasticsearch===2.4.1
 django-nose===1.4.7
 asgiref===3.9.1
 XStatic-JQuery.TableSorter===2.14.5.2
-pifpaf===3.3.0
+pifpaf===3.4.0
 blockdiag===3.0.0
 testtools===2.7.2
 infi.dtypes.iqn===0.4.0
