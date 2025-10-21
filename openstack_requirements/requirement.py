@@ -15,8 +15,8 @@
 # This module has no IO at all, and none should be added.
 
 import collections
-import distutils.version
 import packaging.specifiers
+import packaging.version
 import pkg_resources
 import re
 
@@ -26,7 +26,7 @@ def key_specifier(a):
               '===': 1, '==': 1, '~=': 1, '!=': 1,
               '<': 2, '<=': 2}
     a = a._spec
-    return (weight[a[0]], distutils.version.LooseVersion(a[1]))
+    return (weight[a[0]], packaging.version.parse(a[1]))
 
 
 class Requirement(collections.namedtuple('Requirement',
