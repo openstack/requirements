@@ -71,8 +71,4 @@ def read(root):
         target_files.append('test-requirements-py%s.txt' % py_version)
     for target_file in target_files:
         _safe_read(result, target_file, output=requirements)
-    # Read lower-constraints.txt and ensure the key is always present
-    # in case the file is missing.
-    result['lower-constraints.txt'] = None
-    _safe_read(result, 'lower-constraints.txt')
     return result
