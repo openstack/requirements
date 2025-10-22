@@ -27,13 +27,13 @@ from openstack_requirements import requirement
 
 
 SECURITY_WARNING = [
-    "# WARNING: OpenStack makes no security guarantees about third-party",
-    "# dependencies listed here, and does not keep track of any",
-    "# vulnerabilities they contain. Versions of these dependencies are",
-    "# frozen at each coordinated release in order to stabilize upstream",
-    "# testing, and can contain known vulnerabilities. Consumers are",
-    "# *STRONGLY* encouraged to rely on curated distributions of OpenStack",
-    "# or manage security patching of dependencies themselves.",
+    "# WARNING: OpenStack makes no security guarantees about third-party\n",
+    "# dependencies listed here, and does not keep track of any\n",
+    "# vulnerabilities they contain. Versions of these dependencies are\n",
+    "# frozen at each coordinated release in order to stabilize upstream\n",
+    "# testing, and can contain known vulnerabilities. Consumers are\n",
+    "# *STRONGLY* encouraged to rely on curated distributions of OpenStack\n",
+    "# or manage security patching of dependencies themselves.\n",
     ]
 
 
