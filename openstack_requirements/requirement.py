@@ -179,6 +179,11 @@ def _pass_through(req_line, permit_urls=False):
 def to_reqs(content, permit_urls=False):
     for content_line in content.splitlines(True):
         req_line = content_line.strip()
+
+        # skip comments, blank lines
+        if req_line.startswith('#') or not req_line:
+            continue
+
         if _pass_through(req_line, permit_urls=permit_urls):
             yield None, content_line
         else:
