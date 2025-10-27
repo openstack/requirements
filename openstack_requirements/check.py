@@ -20,7 +20,6 @@ import sys
 
 from packaging import markers
 
-from openstack_requirements import project
 from openstack_requirements import requirement
 
 MIN_PY_VERSION = '3.5'
@@ -74,7 +73,7 @@ class RequirementsList:
           - duplicates are not permitted within that list
         """
         print(f"Checking {self.name}")
-        for fname, content in self.project.get('requirements', {}).items():
+        for fname, content in self.project['requirements'].items():
             if (
                 fname
                 in {
@@ -99,7 +98,7 @@ class RequirementsList:
                     file=sys.stderr,
                 )
 
-            print(f"Processing {fname}")
+            print(f"Processing {fname} (requirements)")
             if strict and not content.endswith('\n'):
                 print(
                     f"Requirements file {fname} does not end with a newline.",
@@ -107,9 +106,11 @@ class RequirementsList:
                 )
             self.reqs_by_file[fname] = self.extract_reqs(content, strict)
 
-        for name, content in project.extras(self.project).items():
-            print(f"Processing .[{name}]")
-            self.reqs_by_file[name] = self.extract_reqs(content, strict)
+        for fname, extras in self.project['extras'].items():
+            print(f"Processing {fname} (extras)")
+            for name, content in extras:
+                print(f"Processing .[{name}]")
+                self.reqs_by_file[name] = self.extract_reqs(content, strict)
 
 
 def _get_exclusions(req):

@@ -21,27 +21,24 @@ import io
 import os
 
 
-def extras(project):
-    """Return a dict of extra-name:content for the extras in setup.cfg."""
-    if 'setup.cfg' not in project:
-        return {}
+def _read_setup_cfg_extras(root):
+    data = _read_raw(root, 'setup.cfg')
+    if data is None:
+        return None
+
     c = configparser.ConfigParser()
-    c.read_file(io.StringIO(project['setup.cfg']))
-    if not c.has_section('extras'):
-        return {}
-    return dict(c.items('extras'))
+    c.read_file(io.StringIO(data))
+    if c.has_section('extras'):
+        return dict(c.items('extras'))
+
+    return None
 
 
-# IO from here to the end of the file.
-
-
-def _safe_read(project, filename, output=None):
-    if output is None:
-        output = project
+def _read_raw(root, filename):
     try:
-        path = os.path.join(project['root'], filename)
+        path = os.path.join(root, filename)
         with open(path, encoding="utf-8") as f:
-            output[filename] = f.read()
+            return f.read()
     except OSError as e:
         if e.errno != errno.ENOENT:
             raise
@@ -55,15 +52,21 @@ def read(root):
         - root: The root dir.
         - setup.py: Contents of setup.py.
         - setup.cfg: Contents of setup.cfg.
-        - requirements: Dict of requirement file name: contents.
+        - requirements: Dict of requirement file name
+        - extras: Dict of extras file name to a dict of extra names and
+          requirements
     """
+    # Store root directory and installer-related files for later processing
     result = {'root': root}
-    _safe_read(result, 'setup.py')
-    _safe_read(result, 'setup.cfg')
+    # TODO(stephenfin): Can we delete this now?
+    for filename in {'setup.cfg', 'setup.py'}:
+        if (data := _read_raw(root, filename)) is not None:
+            result[filename] = data
 
-    requirements = {}
-    result['requirements'] = requirements
-    for target_file in [
+    # Store requirements
+    result['requirements'] = {}
+
+    for filename in [
         'requirements.txt',
         'test-requirements.txt',
         'doc/requirements.txt',
@@ -75,5 +78,12 @@ def read(root):
         'test-requirements-py2.txt',
         'test-requirements-py3.txt',
     ]:
-        _safe_read(result, target_file, output=requirements)
+        if (data := _read_raw(root, filename)) is not None:
+            result['requirements'][filename] = data
+
+    # Store extras
+    result['extras'] = {}
+    if (data := _read_setup_cfg_extras(root)) is not None:
+        result['extras']['setup.cfg'] = data
+
     return result
