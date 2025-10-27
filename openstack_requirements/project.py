@@ -60,18 +60,20 @@ def read(root):
     result = {'root': root}
     _safe_read(result, 'setup.py')
     _safe_read(result, 'setup.cfg')
+
     requirements = {}
     result['requirements'] = requirements
-    target_files = [
+    for target_file in [
         'requirements.txt',
-        'tools/pip-requires',
         'test-requirements.txt',
-        'tools/test-requires',
         'doc/requirements.txt',
-    ]
-    for py_version in (2, 3):
-        target_files.append(f'requirements-py{py_version}.txt')
-        target_files.append(f'test-requirements-py{py_version}.txt')
-    for target_file in target_files:
+        # deprecated aliases (warnings are handled elsewhere)
+        'tools/pip-requires',
+        'tools/test-requires',
+        'requirements-py2.txt',
+        'requirements-py3.txt',
+        'test-requirements-py2.txt',
+        'test-requirements-py3.txt',
+    ]:
         _safe_read(result, target_file, output=requirements)
     return result
