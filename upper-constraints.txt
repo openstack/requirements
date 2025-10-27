@@ -479,7 +479,7 @@ sentinels===1.0.0
 kombu===5.5.4
 distro===1.9.0
 zstd===1.5.7.2
-yaql===3.1.0
+yaql===3.2.0
 durationpy===0.10
 requestsexceptions===1.4.0
 testresources===2.0.2
