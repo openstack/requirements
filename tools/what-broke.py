@@ -38,7 +38,7 @@ import json
 import sys
 import urllib.request as urlreq
 
-import pkg_resources
+import packaging.requirements
 
 
 class Release(object):
@@ -62,7 +62,7 @@ def _parse_pypi_released(datestr):
 
 
 def _package_name(line):
-    return pkg_resources.Requirement.parse(line).project_name
+    return packaging.requirements.Requirement(line).name
 
 
 def get_requirements():

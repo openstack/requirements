@@ -12,6 +12,8 @@
 
 from packaging import specifiers
 
+from openstack_requirements import requirement
+
 
 # FIXME(dhellmann): These items were not in the constraints list but
 # should not be denylisted. We don't know yet what versions they
@@ -102,7 +104,7 @@ def check_compatible(global_reqs, constraints):
     failures = []
     for pkg_constraints in constraints.values():
         for constraint, _ in pkg_constraints:
-            name = constraint.package
+            name = requirement.canonical_name(constraint.package)
             version = constraint.specifiers[3:]
             satisfied(global_reqs, name, version, failures)
     return failures

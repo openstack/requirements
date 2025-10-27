@@ -20,7 +20,7 @@ import traceback
 import urllib.parse as urlparse
 import urllib.request as urlreq
 
-import pkg_resources
+import packaging.requirement
 
 try:
     PYPI_LOCATION = os.environ['PYPI_LOCATION']
@@ -40,11 +40,11 @@ KEEP_KEYS = frozenset([
 
 
 def iter_names(req):
-    for k in (req.key, req.project_name):
-        yield k
-        yield k.title()
-        yield k.replace("-", "_")
-        yield k.replace("-", "_").title()
+    yield req.name
+    yield req.name.lower()
+    yield req.name.title()
+    yield req.name.replace("-", "_")
+    yield req.name.replace("-", "_").title()
 
 
 def release_data(req):
@@ -76,7 +76,7 @@ def main():
                 line = line.strip()
                 if line.startswith("#") or not line:
                     continue
-                req = pkg_resources.Requirement.parse(line)
+                req = packaging.requirement.Requirement(line)
                 print(" - processing: %s" % (req))
                 try:
                     raw_req_data = release_data(req)
