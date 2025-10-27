@@ -28,15 +28,17 @@ except KeyError:
     PYPI_LOCATION = 'http://pypi.org/project'
 
 
-KEEP_KEYS = frozenset([
-    'author',
-    'author_email',
-    'maintainer',
-    'maintainer_email',
-    'license',
-    'summary',
-    'home_page',
-])
+KEEP_KEYS = frozenset(
+    [
+        'author',
+        'author_email',
+        'maintainer',
+        'maintainer_email',
+        'license',
+        'summary',
+        'home_page',
+    ]
+)
 
 
 def iter_names(req):
@@ -51,7 +53,7 @@ def release_data(req):
     # Try to find it with various names...
     attempted = []
     for name in iter_names(req):
-        url = PYPI_LOCATION + "/%s/json" % (urlparse.quote(name))
+        url = PYPI_LOCATION + f"/{urlparse.quote(name)}/json"
         if url in attempted:
             continue
         with contextlib.closing(urlreq.urlopen(url)) as uh:
@@ -59,17 +61,20 @@ def release_data(req):
                 attempted.append(url)
                 continue
             return json.loads(uh.read())
-    attempted = [" * %s" % u for u in attempted]
-    raise IOError("Could not find '%s' on pypi\nAttempted urls:\n%s"
-                  % (req.key, "\n".join(attempted)))
+    attempted = [f" * {u}" for u in attempted]
+    raise OSError(
+        "Could not find '{}' on pypi\nAttempted urls:\n{}".format(
+            req.key, "\n".join(attempted)
+        )
+    )
 
 
 def main():
     if len(sys.argv) == 1:
-        print("%s requirement-file ..." % (sys.argv[0]), file=sys.stderr)
+        print(f"{sys.argv[0]} requirement-file ...", file=sys.stderr)
         sys.exit(1)
     for filename in sys.argv[1:]:
-        print("Analyzing file: %s" % (filename))
+        print(f"Analyzing file: {filename}")
         details = {}
         with open(filename, "rb") as fh:
             for line in fh.read().splitlines():
@@ -77,15 +82,15 @@ def main():
                 if line.startswith("#") or not line:
                     continue
                 req = packaging.requirement.Requirement(line)
-                print(" - processing: %s" % (req))
+                print(f" - processing: {req}")
                 try:
                     raw_req_data = release_data(req)
-                except IOError:
+                except OSError:
                     traceback.print_exc()
                     details[req.key] = None
                 else:
                     req_info = {}
-                    for (k, v) in raw_req_data.get('info', {}).items():
+                    for k, v in raw_req_data.get('info', {}).items():
                         if k not in KEEP_KEYS:
                             continue
                         req_info[k] = v
@@ -94,9 +99,12 @@ def main():
                         'info': req_info,
                     }
         filename, _ext = os.path.splitext(filename)
-        with open("%s.json" % (filename), "wb") as fh:
-            fh.write(json.dumps(details, sort_keys=True, indent=4,
-                                separators=(",", ": ")))
+        with open(f"{filename}.json", "wb") as fh:
+            fh.write(
+                json.dumps(
+                    details, sort_keys=True, indent=4, separators=(",", ": ")
+                )
+            )
 
 
 if __name__ == '__main__':

@@ -21,18 +21,23 @@ from openstack_requirements.cmds import generate
 
 
 class TestFreeze(testtools.TestCase):
-
     def test_freeze_smoke(self):
         # Use an arbitrary python, but make sure it has the venv standard lib.
-        versions = ['/usr/bin/python3.%(v)s' % dict(v=v) for v in range(5, 10)]
+        versions = [
+            '/usr/bin/python3.{v}'.format(**dict(v=v)) for v in range(5, 10)
+        ]
         found = [v for v in versions if os.path.exists(v)]
         found_with_venv = []
         for py in found:
-            output = str(subprocess.check_output(
-                [py,
-                 '-c',
-                 'import pkgutil; [print(x) for x in pkgutil.iter_modules()]']
-            ))
+            output = str(
+                subprocess.check_output(
+                    [
+                        py,
+                        '-c',
+                        'import pkgutil; [print(x) for x in pkgutil.iter_modules()]',
+                    ]
+                )
+            )
             # Needs both venv and ensurepip
             if 'venv' in output and 'ensurepip' in output:
                 found_with_venv.append(py)
@@ -44,7 +49,7 @@ class TestFreeze(testtools.TestCase):
         # break.
         pyversion = found_with_venv[-1]
         req = self.useFixture(fixtures.TempDir()).path + '/r.txt'
-        with open(req, 'wt') as output:
+        with open(req, 'w') as output:
             output.write('fixtures==2.0.0')
         frozen = generate._freeze(req, pyversion)
         expected_version = pyversion[-3:]
@@ -56,12 +61,12 @@ class TestFreeze(testtools.TestCase):
 
 
 class TestParse(testtools.TestCase):
-
     def test_parse(self):
         text = "linecache2==1.0.0\nargparse==1.2\n\n# fred\n"
         parsed = generate._parse_freeze(text)
         self.assertEqual(
-            [('linecache2', '1.0.0'), ('argparse', '1.2')], parsed)
+            [('linecache2', '1.0.0'), ('argparse', '1.2')], parsed
+        )
 
     def test_editable_banned(self):
         text = "-e git:..."
@@ -69,29 +74,33 @@ class TestParse(testtools.TestCase):
 
 
 class TestCombine(testtools.TestCase):
-
     def test_same_items(self):
         fixtures = [('fixtures', '1.2.0')]
         freeze_27 = ('2.7', fixtures)
         freeze_34 = ('3.4', fixtures)
         self.assertEqual(
             ['fixtures===1.2.0\n'],
-            list(generate._combine_freezes([freeze_27, freeze_34])))
+            list(generate._combine_freezes([freeze_27, freeze_34])),
+        )
 
     def test_distinct_items(self):
         freeze_27 = ('2.7', [('fixtures', '1.2.0')])
         freeze_34 = ('3.4', [('fixtures', '1.2.0'), ('enum', '1.5.0')])
         self.assertEqual(
             ["enum===1.5.0;python_version=='3.4'\n", 'fixtures===1.2.0\n'],
-            list(generate._combine_freezes([freeze_27, freeze_34])))
+            list(generate._combine_freezes([freeze_27, freeze_34])),
+        )
 
     def test_different_versions(self):
         freeze_27 = ('2.7', [('fixtures', '1.2.0')])
         freeze_34 = ('3.4', [('fixtures', '1.5.0')])
         self.assertEqual(
-            ["fixtures===1.2.0;python_version<='2.7'\n",
-             "fixtures===1.5.0;python_version>='3.4'\n"],
-            list(generate._combine_freezes([freeze_27, freeze_34])))
+            [
+                "fixtures===1.2.0;python_version<='2.7'\n",
+                "fixtures===1.5.0;python_version>='3.4'\n",
+            ],
+            list(generate._combine_freezes([freeze_27, freeze_34])),
+        )
 
     def test_duplicate_pythons(self):
         with testtools.ExpectedException(Exception):
@@ -103,31 +112,37 @@ class TestCombine(testtools.TestCase):
         freeze_34 = ('3.4', [('fixtures', '1.2.0'), ('enum', '1.5.0')])
         self.assertEqual(
             ["enum===1.5.0;python_version=='3.4'\n"],
-            list(generate._combine_freezes(
-                [freeze_27, freeze_34], denylist=denylist)))
+            list(
+                generate._combine_freezes(
+                    [freeze_27, freeze_34], denylist=denylist
+                )
+            ),
+        )
 
     def test_denylist_with_safe_name(self):
         denylist = ['flake8_docstrings']
-        freeze_27 = ('2.7', [('flake8-docstrings', '0.2.1.post1'),
-                             ('enum', '1.5.0')])
+        freeze_27 = (
+            '2.7',
+            [('flake8-docstrings', '0.2.1.post1'), ('enum', '1.5.0')],
+        )
         self.assertEqual(
             ['enum===1.5.0\n'],
-            list(generate._combine_freezes(
-                [freeze_27], denylist=denylist)))
+            list(generate._combine_freezes([freeze_27], denylist=denylist)),
+        )
 
 
-class Namespace(object):
+class Namespace:
     def __init__(self, **kwargs):
         self.__dict__.update(kwargs)
 
 
 class TestClone(testtools.TestCase):
-
     def test_py34_clone_py35(self):
         # Simulate an environment where we have python 3.4 data and need to
         # clone that to python 3.5
-        options = Namespace(version_map={'3.4': set(['3.5']),
-                                         '3.5': set(['3.4'])})
+        options = Namespace(
+            version_map={'3.4': set(['3.5']), '3.5': set(['3.4'])}
+        )
         freeze_27 = ('2.7', [('dnspython', '1.15.0')])
         freeze_34 = ('3.4', [('dnspython3', '1.12.0')])
         freeze_35 = ('3.5', [('dnspython3', '1.12.0')])
@@ -142,8 +157,9 @@ class TestClone(testtools.TestCase):
     def test_py34_noclone_py35(self):
         # Simulate an environment where we have python 3.4 and python 3.5 data
         # so there is no need to clone.
-        options = Namespace(version_map={'3.4': set(['3.5']),
-                                         '3.5': set(['3.4'])})
+        options = Namespace(
+            version_map={'3.4': set(['3.5']), '3.5': set(['3.4'])}
+        )
         freeze_27 = ('2.7', [('dnspython', '1.15.0')])
         freeze_34 = ('3.4', [('dnspython3', '1.12.0')])
         freeze_35 = ('3.5', [('other-pkg', '1.0.0')])
@@ -158,8 +174,9 @@ class TestClone(testtools.TestCase):
     def test_py35_clone_py34(self):
         # Simulate an environment where we have python 3.5 data and need to
         # clone that to python 3.4
-        options = Namespace(version_map={'3.4': set(['3.5']),
-                                         '3.5': set(['3.4'])})
+        options = Namespace(
+            version_map={'3.4': set(['3.5']), '3.5': set(['3.4'])}
+        )
         freeze_27 = ('2.7', [('dnspython', '1.15.0')])
         freeze_34 = ('3.4', [('dnspython3', '1.12.0')])
         freeze_35 = ('3.5', [('dnspython3', '1.12.0')])

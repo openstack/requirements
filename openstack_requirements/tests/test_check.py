@@ -20,7 +20,6 @@ import testtools
 
 
 class TestIsReqInGlobalReqs(testtools.TestCase):
-
     def setUp(self):
         super().setUp()
 
@@ -29,11 +28,13 @@ class TestIsReqInGlobalReqs(testtools.TestCase):
         self.backports = list()
         self.useFixture(fixtures.MonkeyPatch('sys.stdout', self.stdout))
 
-        self.global_reqs = check.get_global_reqs(textwrap.dedent("""
+        self.global_reqs = check.get_global_reqs(
+            textwrap.dedent("""
         name>=1.2,!=1.4
         withmarker>=1.5;python_version=='3.5'
         withmarker>=1.2,!=1.4;python_version=='2.7'
-        """))
+        """)
+        )
 
     def test_match(self):
         """Test a basic package."""
@@ -48,9 +49,11 @@ class TestIsReqInGlobalReqs(testtools.TestCase):
 
     def test_match_with_markers(self):
         """Test a package specified with python 3 markers."""
-        req = requirement.parse(textwrap.dedent("""
+        req = requirement.parse(
+            textwrap.dedent("""
         withmarker>=1.5;python_version=='3.5'
-        """))['withmarker'][0][0]
+        """)
+        )['withmarker'][0][0]
         self.assertTrue(
             check._is_requirement_in_global_reqs(
                 req,
@@ -61,15 +64,17 @@ class TestIsReqInGlobalReqs(testtools.TestCase):
 
     def test_match_with_local_markers(self):
         """Test a package specified with python 3 markers."""
-        req = requirement.parse(textwrap.dedent("""
+        req = requirement.parse(
+            textwrap.dedent("""
         name;python_version=='3.5'
-        """))['name'][0][0]
+        """)
+        )['name'][0][0]
         self.assertTrue(
             check._is_requirement_in_global_reqs(
                 req,
                 self.global_reqs['name'],
                 self.backports,
-                allow_3_only=True
+                allow_3_only=True,
             )
         )
 
@@ -79,15 +84,17 @@ class TestIsReqInGlobalReqs(testtools.TestCase):
         Python 3 packages are a thing. On those, it's totally unnecessary to
         specify e.g. a "python_version>'3" marker for packages.
         """
-        req = requirement.parse(textwrap.dedent("""
+        req = requirement.parse(
+            textwrap.dedent("""
         withmarker>=1.5
-        """))['withmarker'][0][0]
+        """)
+        )['withmarker'][0][0]
         self.assertTrue(
             check._is_requirement_in_global_reqs(
                 req,
                 self.global_reqs['withmarker'],
                 self.backports,
-                allow_3_only=True
+                allow_3_only=True,
             )
         )
 
@@ -182,7 +189,6 @@ class TestIsReqInGlobalReqs(testtools.TestCase):
 
 
 class TestGetExclusions(testtools.TestCase):
-
     def test_none(self):
         req = list(check.get_global_reqs('name>=1.2')['name'])[0]
         self.assertEqual(
@@ -206,9 +212,8 @@ class TestGetExclusions(testtools.TestCase):
 
 
 class TestValidateOne(testtools.TestCase):
-
     def setUp(self):
-        super(TestValidateOne, self).setUp()
+        super().setUp()
         self._stdout_fixture = fixtures.StringStream('stdout')
         self.stdout = self.useFixture(self._stdout_fixture).stream
         self.useFixture(fixtures.MonkeyPatch('sys.stdout', self.stdout))
@@ -217,10 +222,7 @@ class TestValidateOne(testtools.TestCase):
     def test_unchanged(self):
         # If the line matches the value in the branch list everything
         # is OK.
-        reqs = [
-            r
-            for r, line in requirement.parse('name>=1.2,!=1.4')['name']
-        ]
+        reqs = [r for r, line in requirement.parse('name>=1.2,!=1.4')['name']]
         global_reqs = check.get_global_reqs('name>=1.2,!=1.4')
         self.assertFalse(
             check._validate_one(
@@ -234,10 +236,7 @@ class TestValidateOne(testtools.TestCase):
 
     def test_denylisted(self):
         # If the package is denylisted, everything is OK.
-        reqs = [
-            r
-            for r, line in requirement.parse('name>=1.2,!=1.4')['name']
-        ]
+        reqs = [r for r, line in requirement.parse('name>=1.2,!=1.4')['name']]
         global_reqs = check.get_global_reqs('name>=1.2,!=1.4')
         self.assertFalse(
             check._validate_one(
@@ -252,10 +251,7 @@ class TestValidateOne(testtools.TestCase):
     def test_denylisted_mismatch(self):
         # If the package is denylisted, it doesn't matter if the
         # version matches.
-        reqs = [
-            r
-            for r, line in requirement.parse('name>=1.5')['name']
-        ]
+        reqs = [r for r, line in requirement.parse('name>=1.5')['name']]
         global_reqs = check.get_global_reqs('name>=1.2,!=1.4')
         self.assertFalse(
             check._validate_one(
@@ -269,10 +265,7 @@ class TestValidateOne(testtools.TestCase):
 
     def test_not_in_global_list(self):
         # If the package is not in the global list, that is an error.
-        reqs = [
-            r
-            for r, line in requirement.parse('name>=1.2,!=1.4')['name']
-        ]
+        reqs = [r for r, line in requirement.parse('name>=1.2,!=1.4')['name']]
         global_reqs = check.get_global_reqs('')
         self.assertTrue(
             check._validate_one(
@@ -286,10 +279,7 @@ class TestValidateOne(testtools.TestCase):
 
     def test_new_item_matches_global_list(self):
         # If the new item matches the global list exactly that is OK.
-        reqs = [
-            r
-            for r, line in requirement.parse('name>=1.2,!=1.4')['name']
-        ]
+        reqs = [r for r, line in requirement.parse('name>=1.2,!=1.4')['name']]
         global_reqs = check.get_global_reqs('name>=1.2,!=1.4')
         self.assertFalse(
             check._validate_one(
@@ -304,10 +294,7 @@ class TestValidateOne(testtools.TestCase):
     def test_new_item_lower_min(self):
         # If the new item has a lower minimum value than the global
         # list, that is OK.
-        reqs = [
-            r
-            for r, line in requirement.parse('name>=1.1,!=1.4')['name']
-        ]
+        reqs = [r for r, line in requirement.parse('name>=1.1,!=1.4')['name']]
         global_reqs = check.get_global_reqs('name>=1.2,!=1.4')
         self.assertFalse(
             check._validate_one(
@@ -323,8 +310,7 @@ class TestValidateOne(testtools.TestCase):
         # If the new item includes an exclusion that is not present in
         # the global list that is not OK.
         reqs = [
-            r
-            for r, line in requirement.parse('name>=1.2,!=1.4,!=1.5')['name']
+            r for r, line in requirement.parse('name>=1.2,!=1.4,!=1.5')['name']
         ]
         global_reqs = check.get_global_reqs('name>=1.2,!=1.4')
         self.assertTrue(
@@ -340,10 +326,7 @@ class TestValidateOne(testtools.TestCase):
     def test_new_item_missing_exclusion(self):
         # If the new item does not include an exclusion that is
         # present in the global list that is OK.
-        reqs = [
-            r
-            for r, line in requirement.parse('name>=1.2')['name']
-        ]
+        reqs = [r for r, line in requirement.parse('name>=1.2')['name']]
         global_reqs = check.get_global_reqs('name>=1.2,!=1.4')
         self.assertFalse(
             check._validate_one(
@@ -363,14 +346,13 @@ class TestValidateOne(testtools.TestCase):
         name>=1.5;python_version=='3.5'
         name>=1.2,!=1.4;python_version=='2.6'
         """)
-        reqs = [
-            r
-            for r, line in requirement.parse(r_content)['name']
-        ]
-        global_reqs = check.get_global_reqs(textwrap.dedent("""
+        reqs = [r for r, line in requirement.parse(r_content)['name']]
+        global_reqs = check.get_global_reqs(
+            textwrap.dedent("""
         name>=1.5;python_version=='3.5'
         name>=1.2,!=1.4;python_version=='2.6'
-        """))
+        """)
+        )
         self.assertFalse(
             check._validate_one(
                 'name',
@@ -388,14 +370,13 @@ class TestValidateOne(testtools.TestCase):
         r_content = textwrap.dedent("""
         name>=1.2,!=1.4;python_version=='2.6'
         """)
-        reqs = [
-            r
-            for r, line in requirement.parse(r_content)['name']
-        ]
-        global_reqs = check.get_global_reqs(textwrap.dedent("""
+        reqs = [r for r, line in requirement.parse(r_content)['name']]
+        global_reqs = check.get_global_reqs(
+            textwrap.dedent("""
         name>=1.5;python_version=='3.5'
         name>=1.2,!=1.4;python_version=='2.6'
-        """))
+        """)
+        )
         self.assertTrue(
             check._validate_one(
                 'name',
@@ -414,14 +395,13 @@ class TestValidateOne(testtools.TestCase):
         name>=1.5;python_version=='3.6'
         name>=1.2,!=1.4;python_version=='2.6'
         """)
-        reqs = [
-            r
-            for r, line in requirement.parse(r_content)['name']
-        ]
-        global_reqs = check.get_global_reqs(textwrap.dedent("""
+        reqs = [r for r, line in requirement.parse(r_content)['name']]
+        global_reqs = check.get_global_reqs(
+            textwrap.dedent("""
         name>=1.5;python_version=='3.5'
         name>=1.2,!=1.4;python_version=='2.6'
-        """))
+        """)
+        )
         self.assertTrue(
             check._validate_one(
                 'name',
@@ -440,15 +420,14 @@ class TestValidateOne(testtools.TestCase):
         name>=1.5;python_version=='3.5'
         other-name
         """)
-        reqs = [
-            r
-            for r, line in requirement.parse(r_content)['name']
-        ]
-        global_reqs = check.get_global_reqs(textwrap.dedent("""
+        reqs = [r for r, line in requirement.parse(r_content)['name']]
+        global_reqs = check.get_global_reqs(
+            textwrap.dedent("""
         name>=1.5;python_version=='3.5'
         name>=1.2,!=1.4;python_version=='2.6'
         other-name
-        """))
+        """)
+        )
         self.assertFalse(
             check._validate_one(
                 'name',
@@ -468,15 +447,14 @@ class TestValidateOne(testtools.TestCase):
         name>=1.5
         other-name
         """)
-        reqs = [
-            r
-            for r, line in requirement.parse(r_content)['name']
-        ]
-        global_reqs = check.get_global_reqs(textwrap.dedent("""
+        reqs = [r for r, line in requirement.parse(r_content)['name']]
+        global_reqs = check.get_global_reqs(
+            textwrap.dedent("""
         name>=1.5;python_version>='3.5'
         name>=1.2,!=1.4;python_version=='2.6'
         other-name
-        """))
+        """)
+        )
         self.assertFalse(
             check._validate_one(
                 'name',
@@ -496,14 +474,13 @@ class TestValidateOne(testtools.TestCase):
         name>=1.5;python_version=='3.5'
         name>=1.2,!=1.4;python_version=='2.6'
         """)
-        reqs = [
-            r
-            for r, line in requirement.parse(r_content)['name']
-        ]
-        global_reqs = check.get_global_reqs(textwrap.dedent("""
+        reqs = [r for r, line in requirement.parse(r_content)['name']]
+        global_reqs = check.get_global_reqs(
+            textwrap.dedent("""
         name>=1.5;python_version=='3.5'
         name>=1.2,!=1.4;python_version=='2.6'
-        """))
+        """)
+        )
         self.assertFalse(
             check._validate_one(
                 'name',
@@ -521,14 +498,13 @@ class TestValidateOne(testtools.TestCase):
         r_content = textwrap.dedent("""
         name>=1.5;python_version=='3.5'
         """)
-        reqs = [
-            r
-            for r, line in requirement.parse(r_content)['name']
-        ]
-        global_reqs = check.get_global_reqs(textwrap.dedent("""
+        reqs = [r for r, line in requirement.parse(r_content)['name']]
+        global_reqs = check.get_global_reqs(
+            textwrap.dedent("""
         name>=1.5;python_version=='3.5'
         name>=1.2,!=1.4;python_version=='2.6'
-        """))
+        """)
+        )
         self.assertFalse(
             check._validate_one(
                 'name',
@@ -542,19 +518,22 @@ class TestValidateOne(testtools.TestCase):
 
 
 class TestBackportPythonMarkers(testtools.TestCase):
-
     def setUp(self):
-        super(TestBackportPythonMarkers, self).setUp()
+        super().setUp()
         self._stdout_fixture = fixtures.StringStream('stdout')
         self.stdout = self.useFixture(self._stdout_fixture).stream
         self.useFixture(fixtures.MonkeyPatch('sys.stdout', self.stdout))
 
-        self.req = requirement.parse(textwrap.dedent("""
+        self.req = requirement.parse(
+            textwrap.dedent("""
         name>=1.5;python_version=='3.11'
-        """))['name'][0][0]
-        self.global_reqs = check.get_global_reqs(textwrap.dedent("""
+        """)
+        )['name'][0][0]
+        self.global_reqs = check.get_global_reqs(
+            textwrap.dedent("""
         name>=1.5;python_version=='3.10'
-        """))
+        """)
+        )
 
     def test_notmatching_no_backport(self):
         backports = requirement.parse("")

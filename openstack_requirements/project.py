@@ -34,14 +34,15 @@ def extras(project):
 
 # IO from here to the end of the file.
 
+
 def _safe_read(project, filename, output=None):
     if output is None:
         output = project
     try:
         path = os.path.join(project['root'], filename)
-        with io.open(path, 'rt', encoding="utf-8") as f:
+        with open(path, encoding="utf-8") as f:
             output[filename] = f.read()
-    except IOError as e:
+    except OSError as e:
         if e.errno != errno.ENOENT:
             raise
 
@@ -62,13 +63,15 @@ def read(root):
     requirements = {}
     result['requirements'] = requirements
     target_files = [
-        'requirements.txt', 'tools/pip-requires',
-        'test-requirements.txt', 'tools/test-requires',
+        'requirements.txt',
+        'tools/pip-requires',
+        'test-requirements.txt',
+        'tools/test-requires',
         'doc/requirements.txt',
     ]
     for py_version in (2, 3):
-        target_files.append('requirements-py%s.txt' % py_version)
-        target_files.append('test-requirements-py%s.txt' % py_version)
+        target_files.append(f'requirements-py{py_version}.txt')
+        target_files.append(f'test-requirements-py{py_version}.txt')
     for target_file in target_files:
         _safe_read(result, target_file, output=requirements)
     return result

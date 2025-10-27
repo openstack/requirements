@@ -10,8 +10,7 @@
 #    License for the specific language governing permissions and limitations
 #    under the License.
 
-"""Work with the project-config repository.
-"""
+"""Work with the project-config repository."""
 
 import requests
 import yaml
@@ -32,10 +31,7 @@ def get_zuul_projects_data(url=ZUUL_PROJECTS_URL):
     raw = yaml.safe_load(r.text)
     # Add a mapping from repo name to repo settings, since that is how
     # we access this most often.
-    projects = {
-        p['project']['name']: p['project']
-        for p in raw
-    }
+    projects = {p['project']['name']: p['project'] for p in raw}
     return projects
 
 
@@ -49,8 +45,7 @@ def require_check_requirements_for_repo(zuul_projects, repo):
 
     if repo not in zuul_projects:
         errors.append(
-            ('did not find %s in %s' % (repo, ZUUL_PROJECTS_FILENAME),
-             True)
+            (f'did not find {repo} in {ZUUL_PROJECTS_FILENAME}', True)
         )
     else:
         p = zuul_projects[repo]
@@ -59,7 +54,6 @@ def require_check_requirements_for_repo(zuul_projects, repo):
         # jobs, because we want projects to use the templates.
         if 'check-requirements' not in templates:
             errors.append(
-                '%s no check-requirements job specified for %s'
-                % (ZUUL_PROJECTS_FILENAME, repo)
+                f'{ZUUL_PROJECTS_FILENAME} no check-requirements job specified for {repo}'
             )
     return errors

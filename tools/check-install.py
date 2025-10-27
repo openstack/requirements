@@ -19,7 +19,7 @@ def main():
             try:
                 importlib.import_module(module)
             except ImportError as err:
-                print('Imports for %s failed:\n\t%s' % (script, err))
+                print(f'Imports for {script} failed:\n\t{err}')
                 errors += 1
     return 1 if errors else 0
 

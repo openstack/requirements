@@ -13,7 +13,6 @@
 
 """Test input for Babel"""
 
-
 from oslo.i18n import _
 from oslo.i18n import _LE
 from oslo_log import log as logging

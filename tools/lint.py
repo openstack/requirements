@@ -56,9 +56,7 @@ def sort() -> None:
             deps.append((line, comment or None))
             comment = ''
 
-    section_deps[section] = sorted(
-        deps, key=lambda x: x[0].lower()
-    )
+    section_deps[section] = sorted(deps, key=lambda x: x[0].lower())
 
     with open(GLOBAL_REQS, 'w') as fh:
         for i, section in enumerate(section_deps):

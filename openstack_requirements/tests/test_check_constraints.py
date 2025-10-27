@@ -32,31 +32,35 @@ def mock_read_requirements_file(filename):
     elif os.path.basename(filename) == 'denylist.txt':
         return common.denylist
     else:
-        raise IOError('No such file or directory: %s' % filename)
+        raise OSError(f'No such file or directory: {filename}')
 
 
 class CheckExistsTest(testtools.TestCase):
-
     def setUp(self):
-        super(CheckExistsTest, self).setUp()
+        super().setUp()
 
     @mock.patch(
         'openstack_requirements.cmds.check_exists.read_requirements_file',
-        mock_read_requirements_file)
-    @mock.patch('openstack_requirements.project.read',
-                return_value=common.project_project)
+        mock_read_requirements_file,
+    )
+    @mock.patch(
+        'openstack_requirements.project.read',
+        return_value=common.project_project,
+    )
     def test_good_project(self, mock_project_read):
         ret = check_exists.main([common.project_fixture.root])
         self.assertEqual(ret, 0)
 
     @mock.patch(
         'openstack_requirements.cmds.check_exists.read_requirements_file',
-        mock_read_requirements_file)
+        mock_read_requirements_file,
+    )
     def test_project_missing_from_uc(self):
         self.useFixture(common.project_fixture)
         orig_mocked_read_req = check_exists.read_requirements_file
-        read_req_path = ('openstack_requirements.cmds.check_exists.'
-                         'read_requirements_file')
+        read_req_path = (
+            'openstack_requirements.cmds.check_exists.read_requirements_file'
+        )
 
         def remove_req_read_reqs_file(filename):
             if filename == 'upper-constraints.txt':
@@ -66,51 +70,64 @@ class CheckExistsTest(testtools.TestCase):
 
             return orig_mocked_read_req(filename)
 
-        expected_out = ('six from requirements.txt not found in'
-                        ' upper-constraints')
+        expected_out = (
+            'six from requirements.txt not found in upper-constraints'
+        )
 
         # Start capturing some output
         mock_stdout = io.StringIO()
-        with mock.patch('openstack_requirements.project.read',
-                        return_value=common.project_project), \
-                mock.patch('sys.stdout', mock_stdout), \
-                mock.patch(read_req_path, remove_req_read_reqs_file):
+        with (
+            mock.patch(
+                'openstack_requirements.project.read',
+                return_value=common.project_project,
+            ),
+            mock.patch('sys.stdout', mock_stdout),
+            mock.patch(read_req_path, remove_req_read_reqs_file),
+        ):
             ret = check_exists.main([common.project_fixture.root])
         self.assertEqual(ret, 1)
         self.assertIn(expected_out, mock_stdout.getvalue())
 
     @mock.patch(
         'openstack_requirements.cmds.check_exists.read_requirements_file',
-        mock_read_requirements_file)
+        mock_read_requirements_file,
+    )
     def test_project_missing_from_gr(self):
         self.useFixture(common.project_fixture)
 
         # Add some random package that wont exist in G-R
         with open(common.project_fixture.req_file, 'a') as req_file:
-            req_file.write(u'SomeRandomModule #Some random module\n')
+            req_file.write('SomeRandomModule #Some random module\n')
             req_file.flush()
 
-        expected_out = ('somerandommodule from requirements.txt not found in'
-                        ' global-requirements')
+        expected_out = (
+            'somerandommodule from requirements.txt not found in'
+            ' global-requirements'
+        )
 
         # Start capturing some output
         mock_stdout = io.StringIO()
         proj_read = project.read(common.project_fixture.root)
-        with mock.patch('openstack_requirements.project.read',
-                        return_value=proj_read), \
-                mock.patch('sys.stdout', mock_stdout):
+        with (
+            mock.patch(
+                'openstack_requirements.project.read', return_value=proj_read
+            ),
+            mock.patch('sys.stdout', mock_stdout),
+        ):
             ret = check_exists.main([common.project_fixture.root])
         self.assertEqual(ret, 1)
         self.assertIn(expected_out, mock_stdout.getvalue())
 
     @mock.patch(
         'openstack_requirements.cmds.check_exists.read_requirements_file',
-        mock_read_requirements_file)
+        mock_read_requirements_file,
+    )
     def test_project_multiple_missing_from_uc_and_gr(self):
         self.useFixture(common.project_fixture)
         orig_mocked_read_req = check_exists.read_requirements_file
-        read_req_path = ('openstack_requirements.cmds.check_exists.'
-                         'read_requirements_file')
+        read_req_path = (
+            'openstack_requirements.cmds.check_exists.read_requirements_file'
+        )
 
         def remove_req_read_reqs_file(filename):
             if filename == 'upper-constraints.txt':
@@ -124,11 +141,13 @@ class CheckExistsTest(testtools.TestCase):
 
         # lets change the six requirement not include the u-c version
         proj_read = project.read(common.project_fixture.root)
-        proj_read['requirements']['requirements.txt'] = \
+        proj_read['requirements']['requirements.txt'] = (
             proj_read['requirements']['requirements.txt'][:-1] + new_reqs
-        proj_read['requirements']['test-requirements.txt'] = \
-            proj_read['requirements']['test-requirements.txt'] + \
-            'anotherrandommodule\n'
+        )
+        proj_read['requirements']['test-requirements.txt'] = (
+            proj_read['requirements']['test-requirements.txt']
+            + 'anotherrandommodule\n'
+        )
 
         expected_outs = [
             'lxml from requirements.txt not found in upper-constraints',
@@ -137,14 +156,18 @@ class CheckExistsTest(testtools.TestCase):
             'anotherrandommodule from test-requirements.txt not found in '
             'global-requirements',
             'six must be <= 1.10.0 from upper-constraints and include the '
-            'upper-constraints version']
+            'upper-constraints version',
+        ]
 
         # Start capturing some output
         mock_stdout = io.StringIO()
-        with mock.patch('openstack_requirements.project.read',
-                        return_value=proj_read), \
-                mock.patch('sys.stdout', mock_stdout), \
-                mock.patch(read_req_path, remove_req_read_reqs_file):
+        with (
+            mock.patch(
+                'openstack_requirements.project.read', return_value=proj_read
+            ),
+            mock.patch('sys.stdout', mock_stdout),
+            mock.patch(read_req_path, remove_req_read_reqs_file),
+        ):
             ret = check_exists.main([common.project_fixture.root])
         self.assertEqual(ret, 1)
         for expected in expected_outs:
@@ -152,45 +175,59 @@ class CheckExistsTest(testtools.TestCase):
 
     @mock.patch(
         'openstack_requirements.cmds.check_exists.read_requirements_file',
-        mock_read_requirements_file)
+        mock_read_requirements_file,
+    )
     def test_project_req_bigger_then_uc(self):
         self.useFixture(common.project_fixture)
 
         # lets change the six requirement not include the u-c version
         proj_read = project.read(common.project_fixture.root)
-        proj_read['requirements']['requirements.txt'] = \
+        proj_read['requirements']['requirements.txt'] = (
             proj_read['requirements']['requirements.txt'][:-1] + '>1.10.0\n'
-        expected_out = ('six must be <= 1.10.0 from upper-constraints and '
-                        'include the upper-constraints version')
+        )
+        expected_out = (
+            'six must be <= 1.10.0 from upper-constraints and '
+            'include the upper-constraints version'
+        )
 
         # Start capturing some output
         mock_stdout = io.StringIO()
-        with mock.patch('openstack_requirements.project.read',
-                        return_value=proj_read), \
-                mock.patch('sys.stdout', mock_stdout):
+        with (
+            mock.patch(
+                'openstack_requirements.project.read', return_value=proj_read
+            ),
+            mock.patch('sys.stdout', mock_stdout),
+        ):
             ret = check_exists.main([common.project_fixture.root])
         self.assertEqual(ret, 1)
         self.assertIn(expected_out, mock_stdout.getvalue())
 
     @mock.patch(
         'openstack_requirements.cmds.check_exists.read_requirements_file',
-        mock_read_requirements_file)
+        mock_read_requirements_file,
+    )
     def test_project_req_not_include_uc_version(self):
         self.useFixture(common.project_fixture)
 
         # lets change the six requirement not include the u-c version
         proj_read = project.read(common.project_fixture.root)
-        proj_read['requirements']['requirements.txt'] = \
-            proj_read['requirements']['requirements.txt'][:-1] + \
-            '<1.10.0,>1.10.0\n'
-        expected_out = ('six must be <= 1.10.0 from upper-constraints and '
-                        'include the upper-constraints version')
+        proj_read['requirements']['requirements.txt'] = (
+            proj_read['requirements']['requirements.txt'][:-1]
+            + '<1.10.0,>1.10.0\n'
+        )
+        expected_out = (
+            'six must be <= 1.10.0 from upper-constraints and '
+            'include the upper-constraints version'
+        )
 
         # Start capturing some output
         mock_stdout = io.StringIO()
-        with mock.patch('openstack_requirements.project.read',
-                        return_value=proj_read), \
-                mock.patch('sys.stdout', mock_stdout):
+        with (
+            mock.patch(
+                'openstack_requirements.project.read', return_value=proj_read
+            ),
+            mock.patch('sys.stdout', mock_stdout),
+        ):
             ret = check_exists.main([common.project_fixture.root])
         self.assertEqual(ret, 1)
         self.assertIn(expected_out, mock_stdout.getvalue())
