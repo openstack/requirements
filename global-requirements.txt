@@ -17,6 +17,7 @@ apscheduler  # MIT License
 autobahn  # MIT License
 automaton  # Apache-2.0
 autopage  # Apache-2.0
+awscurl  # MIT
 Babel!=2.4.0  # BSD
 bcrypt  # Apache-2.0
 beautifulsoup4  # MIT
