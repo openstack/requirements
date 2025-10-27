@@ -1,0 +1,28 @@
+[build-system]
+requires = ["pbr>=6.1.1"]
+build-backend = "pbr.build"
+
+[project]
+name = "testproject"
+description = "OpenStack Test Project"
+authors = [
+    {name = "OpenStack", email = "openstack-discuss@lists.openstack.org"},
+]
+readme = {file = "README.rst", content-type = "text/x-rst"}
+license = {text = "Apache-2.0"}
+dynamic = ["version"]
+dependencies = [
+    "requests",
+    "debtcollector>=3.0",  # Apache-2.0
+]
+classifiers = [
+    "Environment :: OpenStack",
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+]
+
+[project.urls]
+Homepage = "https://docs.openstack.org/requirements"

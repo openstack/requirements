@@ -25,7 +25,16 @@ load_tests = testscenarios.load_tests_apply_scenarios
 
 
 class TestReadProject(testtools.TestCase):
-    def test_pbr(self):
+    def test_pyproject_toml(self):
+        root = self.useFixture(common.pep_518_fixture).root
+        proj = project.read(root)
+        self.assertEqual(proj['root'], root)
+        self.assertEqual(
+            list(sorted(proj['requirements'])),
+            ['pyproject.toml'],
+        )
+
+    def test_setup_cfg(self):
         root = self.useFixture(common.pbr_fixture).root
         proj = project.read(root)
         self.assertEqual(proj['root'], root)
@@ -34,7 +43,7 @@ class TestReadProject(testtools.TestCase):
             ['requirements.txt', 'test-requirements.txt'],
         )
 
-    def test_no_setup_py(self):
+    def test_empty(self):
         root = self.useFixture(fixtures.TempDir()).path
         proj = project.read(root)
         self.assertEqual(
@@ -48,7 +57,25 @@ class TestReadProject(testtools.TestCase):
 
 
 class TestProjectExtras(testtools.TestCase):
-    def test_smoke(self):
+    def test_pyproject_toml(self):
+        root = self.useFixture(fixtures.TempDir()).path
+        with open(os.path.join(root, 'pyproject.toml'), 'w') as fh:
+            fh.write(
+                textwrap.dedent("""
+                [project.optional-dependencies]
+                1 = [
+                  "foo",
+                ]
+                2 = [
+                  "foo", # fred
+                  "bar",
+                ]
+                """)
+            )
+        expected = {'1': ['foo'], '2': ['foo', 'bar']}
+        self.assertEqual(expected, project._read_pyproject_toml_extras(root))
+
+    def test_setup_cfg(self):
         root = self.useFixture(fixtures.TempDir()).path
         with open(os.path.join(root, 'setup.cfg'), 'w') as fh:
             fh.write(
