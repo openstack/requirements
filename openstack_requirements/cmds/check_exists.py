@@ -67,7 +67,7 @@ def main(args=None):
         print(
             f'\nComparing {require_file} with global-requirements and upper-constraints'
         )
-        requirements = requirement.parse(data)
+        requirements = requirement.parse_lines(data)
         for name, spec_list in requirements.items():
             if not name or name in denylist:
                 continue
