@@ -19,6 +19,45 @@ import fixtures
 import testtools
 
 
+class TestRequirementsList(testtools.TestCase):
+    def setUp(self):
+        super().setUp()
+        self._stdout_fixture = fixtures.StringStream('stdout')
+        self.stdout = self.useFixture(self._stdout_fixture).stream
+        self.useFixture(fixtures.MonkeyPatch('sys.stdout', self.stdout))
+
+    def test_extras__setup_cfg(self):
+        project_data = {
+            'root': '/fake/root',
+            'requirements': {
+                'requirements.txt': 'requests>=2.0.0\n'
+            },
+            'extras': {
+                'setup.cfg': {
+                    'test': 'pytest>=6.0.0\nflake8>=3.8.0\n',
+                    'dev': 'black>=24.0.0\nmypy>=0.900\n'
+                }
+            }
+        }
+
+        req_list = check.RequirementsList('test-project', project_data)
+        req_list.process(strict=False)
+
+        self.assertIn('test', req_list.reqs_by_file)
+        self.assertIn('dev', req_list.reqs_by_file)
+
+        test_reqs = req_list.reqs_by_file['test']
+        dev_reqs = req_list.reqs_by_file['dev']
+
+        self.assertEqual(len(test_reqs), 2)
+        self.assertIn('pytest', test_reqs)
+        self.assertIn('flake8', test_reqs)
+
+        self.assertEqual(len(dev_reqs), 2)
+        self.assertIn('black', dev_reqs)
+        self.assertIn('mypy', dev_reqs)
+
+
 class TestIsReqInGlobalReqs(testtools.TestCase):
     def setUp(self):
         super().setUp()
