@@ -108,7 +108,7 @@ class RequirementsList:
 
         for fname, extras in self.project['extras'].items():
             print(f"Processing {fname} (extras)")
-            for name, content in extras:
+            for name, content in extras.items():
                 print(f"Processing .[{name}]")
                 self.reqs_by_file[name] = self.extract_reqs(content, strict)
 
