@@ -346,6 +346,7 @@ monasca-common  # Apache-2.0
 monasca-statsd  # Apache-2.0
 networking-bagpipe  # Apache-2.0
 networking-bgpvpn  # Apache-2.0
+networking-generic-switch  # Apache-2.0
 networking-l2gw  # Apache-2.0
 networking-sfc  # Apache-2.0
 neutron  # Apache-2.0

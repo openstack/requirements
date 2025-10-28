@@ -571,3 +571,4 @@ actdiag===3.0.0
 sysv-ipc===1.1.0
 sphinxcontrib-applehelp===2.0.0
 scikit-learn===1.7.2
+networking-generic-switch===8.0.0
