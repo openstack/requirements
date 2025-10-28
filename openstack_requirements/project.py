@@ -120,6 +120,6 @@ def read(root):
         result['extras']['setup.cfg'] = data
 
     if (data := _read_pyproject_toml_extras(root)) is not None:
-        result['extras']['setup.cfg'] = data
+        result['extras']['pyproject.toml'] = data
 
     return result
