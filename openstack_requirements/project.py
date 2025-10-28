@@ -43,7 +43,9 @@ def _read_pyproject_toml_requirements(root):
     if 'project' not in data:
         return None
 
-    return data['project'].get('dependencies')
+    # FIXME(stephenfin): We should not be doing this, but the fix requires a
+    # larger change to do normalization here.
+    return '\n'.join(data['project'].get('dependencies', []))
 
 
 def _read_pyproject_toml_extras(root):
@@ -53,7 +55,11 @@ def _read_pyproject_toml_extras(root):
     if 'project' not in data:
         return None
 
-    return data['project'].get('optional-dependencies')
+    # FIXME(stephenfin): As above, we should not be doing this.
+    return {
+        k: '\n'.join(v) for k, v in
+        data['project'].get('optional-dependencies', {}).items()
+    }
 
 
 def _read_setup_cfg_extras(root):
