@@ -282,7 +282,7 @@ pydantic_core===2.41.4
 uritemplate===4.2.0
 docutils===0.21.2
 threadpoolctl===3.6.0
-os-ken===3.1.1
+os-ken===4.0.0
 ujson===5.11.0
 selenium===3.141.0
 pytest-subtests===0.15.0
