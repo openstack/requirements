@@ -150,7 +150,6 @@ pyzabbix  # LGPL
 qrcode  # BSD
 rbd-iscsi-client  # Apache-2.0
 requests!=2.20.0,!=2.24.0  # Apache-2.0
-requests-aws  # BSD License (3 clause)
 requests-kerberos  # ISC
 requestsexceptions  # Apache-2.0
 rfc3986  # Apache-2.0
