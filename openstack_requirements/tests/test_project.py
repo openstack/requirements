@@ -72,7 +72,7 @@ class TestProjectExtras(testtools.TestCase):
                 ]
                 """)
             )
-        expected = {'1': 'foo', '2': 'foo\nbar'}
+        expected = {'1': ['foo'], '2': ['foo', 'bar']}
         self.assertEqual(expected, project._read_pyproject_toml_extras(root))
 
     def test_setup_cfg(self):
@@ -88,7 +88,7 @@ class TestProjectExtras(testtools.TestCase):
                   bar
                 """)
             )
-        expected = {'1': '\nfoo', '2': '\nfoo # fred\nbar'}
+        expected = {'1': ['foo'], '2': ['foo # fred', 'bar']}
         self.assertEqual(expected, project._read_setup_cfg_extras(root))
 
     def test_none(self):

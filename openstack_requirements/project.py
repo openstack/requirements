@@ -19,6 +19,8 @@ import configparser
 import errno
 import io
 import os
+from typing import Any
+from typing import TypedDict
 
 try:
     # Python 3.11+
@@ -28,7 +30,19 @@ except ImportError:
     import tomli as tomllib  # type: ignore
 
 
-def _read_pyproject_toml(root):
+def _read_raw(root: str, filename: str) -> str | None:
+    try:
+        path = os.path.join(root, filename)
+        with open(path, encoding="utf-8") as f:
+            return f.read()
+    except OSError as e:
+        if e.errno == errno.ENOENT:
+            return None
+
+        raise
+
+
+def _read_pyproject_toml(root: str) -> dict[str, Any] | None:
     data = _read_raw(root, 'pyproject.toml')
     if data is None:
         return None
@@ -36,33 +50,46 @@ def _read_pyproject_toml(root):
     return tomllib.loads(data)
 
 
-def _read_pyproject_toml_requirements(root):
+def _read_requirements_txt(root: str, filename: str) -> list[str] | None:
+    data = _read_raw(root, filename)
+    if data is None:
+        return None
+
+    result = []
+    for line in data.splitlines():
+        # we only ignore comments and empty lines: everything else is
+        # handled later
+        line = line.strip()
+
+        if line.startswith('#') or not line:
+            continue
+
+        result.append(line)
+
+    return result
+
+
+def _read_pyproject_toml_requirements(root: str) -> list[str] | None:
     data = _read_pyproject_toml(root) or {}
 
     # projects may not have PEP-621 project metadata
     if 'project' not in data:
         return None
 
-    # FIXME(stephenfin): We should not be doing this, but the fix requires a
-    # larger change to do normalization here.
-    return '\n'.join(data['project'].get('dependencies', []))
+    return data['project'].get('dependencies', [])
 
 
-def _read_pyproject_toml_extras(root):
+def _read_pyproject_toml_extras(root: str) -> dict[str, list[str]] | None:
     data = _read_pyproject_toml(root) or {}
 
     # projects may not have PEP-621 project metadata
     if 'project' not in data:
         return None
 
-    # FIXME(stephenfin): As above, we should not be doing this.
-    return {
-        k: '\n'.join(v) for k, v in
-        data['project'].get('optional-dependencies', {}).items()
-    }
+    return data['project'].get('optional-dependencies', {})
 
 
-def _read_setup_cfg_extras(root):
+def _read_setup_cfg_extras(root: str) -> dict[str, list[str]] | None:
     data = _read_raw(root, 'setup.cfg')
     if data is None:
         return None
@@ -72,20 +99,32 @@ def _read_setup_cfg_extras(root):
     if not c.has_section('extras'):
         return None
 
-    return dict(c.items('extras'))
+    result: dict[str, list[str]] = {}
+    for extra, deps in c.items('extras'):
+        result[extra] = []
+        for line in deps.splitlines():
+            # we only ignore comments and empty lines: everything else is
+            # handled later
+            line = line.strip()
+
+            if line.startswith('#') or not line:
+                continue
+
+            result[extra].append(line)
+
+    return result
 
 
-def _read_raw(root, filename):
-    try:
-        path = os.path.join(root, filename)
-        with open(path, encoding="utf-8") as f:
-            return f.read()
-    except OSError as e:
-        if e.errno != errno.ENOENT:
-            raise
+class Project(TypedDict):
+    # The root directory path
+    root: str
+    # A mapping of filename to the contents of that file
+    requirements: dict[str, list[str]]
+    # A mapping of filename to extras from that file
+    extras: dict[str, dict[str, list[str]]]
 
 
-def read(root):
+def read(root: str) -> Project:
     """Read into memory the packaging data for the project at root.
 
     :param root: A directory path.
@@ -96,11 +135,13 @@ def read(root):
           requirements
     """
     # Store root directory and installer-related files for later processing
-    result = {'root': root}
+    result: Project = {
+        'root': root,
+        'requirements': {},
+        'extras': {},
+    }
 
     # Store requirements
-    result['requirements'] = {}
-
     if (data := _read_pyproject_toml_requirements(root)) is not None:
         result['requirements']['pyproject.toml'] = data
 
@@ -116,12 +157,10 @@ def read(root):
         'test-requirements-py2.txt',
         'test-requirements-py3.txt',
     ]:
-        if (data := _read_raw(root, filename)) is not None:
+        if (data := _read_requirements_txt(root, filename)) is not None:
             result['requirements'][filename] = data
 
     # Store extras
-    result['extras'] = {}
-
     if (data := _read_setup_cfg_extras(root)) is not None:
         result['extras']['setup.cfg'] = data
 

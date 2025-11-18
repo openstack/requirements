@@ -44,7 +44,7 @@ class RequirementsList:
 
     def extract_reqs(self, content, strict):
         reqs = collections.defaultdict(set)
-        parsed = requirement.parse(content)
+        parsed = requirement.parse_lines(content)
         for name, entries in parsed.items():
             if not name:
                 # Comments and other unprocessed lines

@@ -137,16 +137,14 @@ class CheckExistsTest(testtools.TestCase):
 
             return orig_mocked_read_req(filename)
 
-        new_reqs = '>1.10.0\nsomerandommodule\n'
-
         # lets change the six requirement not include the u-c version
         proj_read = project.read(common.project_fixture.root)
-        proj_read['requirements']['requirements.txt'] = (
-            proj_read['requirements']['requirements.txt'][:-1] + new_reqs
+        proj_read['requirements']['requirements.txt'][-1] = 'six>1.10.0'
+        proj_read['requirements']['requirements.txt'].append(
+            'somerandommodule'
         )
-        proj_read['requirements']['test-requirements.txt'] = (
-            proj_read['requirements']['test-requirements.txt']
-            + 'anotherrandommodule\n'
+        proj_read['requirements']['test-requirements.txt'].append(
+            'anotherrandommodule'
         )
 
         expected_outs = [
@@ -182,9 +180,7 @@ class CheckExistsTest(testtools.TestCase):
 
         # lets change the six requirement not include the u-c version
         proj_read = project.read(common.project_fixture.root)
-        proj_read['requirements']['requirements.txt'] = (
-            proj_read['requirements']['requirements.txt'][:-1] + '>1.10.0\n'
-        )
+        proj_read['requirements']['requirements.txt'][-1] = 'six>1.10.0'
         expected_out = (
             'six must be <= 1.10.0 from upper-constraints and '
             'include the upper-constraints version'
@@ -211,9 +207,8 @@ class CheckExistsTest(testtools.TestCase):
 
         # lets change the six requirement not include the u-c version
         proj_read = project.read(common.project_fixture.root)
-        proj_read['requirements']['requirements.txt'] = (
-            proj_read['requirements']['requirements.txt'][:-1]
-            + '<1.10.0,>1.10.0\n'
+        proj_read['requirements']['requirements.txt'][-1] = (
+            'six<1.10.0,>1.10.0'
         )
         expected_out = (
             'six must be <= 1.10.0 from upper-constraints and '

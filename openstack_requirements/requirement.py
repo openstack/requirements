@@ -99,6 +99,10 @@ def parse(content, permit_urls=False):
     return to_dict(to_reqs(content, permit_urls=permit_urls))
 
 
+def parse_lines(lines, permit_urls=False):
+    return to_dict(to_req(line, permit_urls=permit_urls) for line in lines)
+
+
 def parse_line(req_line, permit_urls=False):
     """Parse a single line of a requirements file.
 
@@ -201,6 +205,13 @@ def _pass_through(req_line, permit_urls=False):
         )
 
 
+def to_req(line, permit_urls=False):
+    if _pass_through(line, permit_urls=permit_urls):
+        return (None, line)
+    else:
+        return (parse_line(line, permit_urls=permit_urls), line)
+
+
 def to_reqs(content, permit_urls=False):
     for content_line in content.splitlines(True):
         req_line = content_line.strip()
@@ -209,10 +220,7 @@ def to_reqs(content, permit_urls=False):
         if req_line.startswith('#') or not req_line:
             continue
 
-        if _pass_through(req_line, permit_urls=permit_urls):
-            yield None, content_line
-        else:
-            yield parse_line(req_line, permit_urls=permit_urls), content_line
+        yield to_req(req_line, permit_urls)
 
 
 def check_reqs_bounds_policy(global_reqs):
