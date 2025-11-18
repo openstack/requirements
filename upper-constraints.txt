@@ -459,7 +459,7 @@ tomlkit===0.13.3
 etcd3gw===2.4.2
 Flask-RESTful===0.3.10
 GitPython===3.1.45
-python-ironicclient===5.13.0
+python-ironicclient===5.14.0
 babel===2.17.0
 XStatic===1.0.3
 XStatic-Angular-FileUpload===12.2.13.0
