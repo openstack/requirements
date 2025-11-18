@@ -56,7 +56,7 @@ jwcrypto===1.5.6
 Pint===0.24.4
 oslo.i18n===6.6.0
 jsonpath-rw-ext===1.2.2
-python-mistralclient===6.0.0
+python-mistralclient===6.1.0
 oslo.context===6.1.0
 rcssmin===1.1.2
 pycadf===4.0.1
