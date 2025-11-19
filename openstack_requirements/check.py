@@ -104,13 +104,17 @@ class RequirementsList:
                 )
 
             print(f"Processing {fname} (requirements)")
-            self.reqs_by_file[fname] = self.extract_reqs(content, strict)
+            self.reqs_by_file[f'{fname} (dependencies)'] = self.extract_reqs(
+                content, strict
+            )
 
         for fname, extras in self.project['extras'].items():
             print(f"Processing {fname} (extras)")
             for name, content in extras.items():
-                print(f"Processing .[{name}]")
-                self.reqs_by_file[name] = self.extract_reqs(content, strict)
+                print(f"  Processing .[{name}]")
+                self.reqs_by_file[f'{fname} (.[{name}] extra)'] = (
+                    self.extract_reqs(content, strict)
+                )
 
 
 def _get_exclusions(req):
@@ -191,20 +195,19 @@ def _is_requirement_in_global_reqs(
             difference = req_exclusions - global_exclusions
             print(
                 f"ERROR: Requirement for package {local_req.package} "
-                "excludes a version not excluded in the "
-                "global list.\n"
-                f"  Local settings : {req_exclusions}\n"
-                f"  Global settings: {global_exclusions}\n"
-                f"  Unexpected     : {difference}"
+                f"excludes a version not excluded in the "
+                f"global list.\n"
+                f"  Local settings : {list(req_exclusions)}\n"
+                f"  Global settings: {list(global_exclusions)}\n"
+                f"  Unexpected     : {list(difference)}"
             )
             return False
 
     print(
-        "ERROR: "
-        f"Could not find a global requirements entry to match package {local_req.package}. "
-        "If the package is already included in the global list, "
-        "the name or platform markers there may not match the local "
-        "settings."
+        f"ERROR: Could not find a global requirements entry to match package "
+        f"{local_req.package}. If the package is already included in the "
+        f"global list, the name or platform markers there may not match the "
+        f"local settings."
     )
     return False
 
