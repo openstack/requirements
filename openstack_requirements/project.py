@@ -19,6 +19,7 @@ import configparser
 import errno
 import io
 import os
+import sys
 from typing import Any
 from typing import TypedDict
 
@@ -34,7 +35,14 @@ def _read_raw(root: str, filename: str) -> str | None:
     try:
         path = os.path.join(root, filename)
         with open(path, encoding="utf-8") as f:
-            return f.read()
+            data = f.read()
+            if not data.endswith('\n'):
+                print(
+                    f"Requirements file {filename} does not end with a "
+                    f"newline.",
+                    file=sys.stderr,
+                )
+            return data
     except OSError as e:
         if e.errno == errno.ENOENT:
             return None
