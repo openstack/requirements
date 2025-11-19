@@ -103,6 +103,8 @@ def main():
             print('selecting default requirements directory for normal mode')
             reqdir = _DEFAULT_REQS_DIR
 
+    reqdir = os.path.abspath(reqdir)
+
     print(f'Branch: {branch}')
     print(f'Source: {args.src_dir}')
     print(f'Requirements: {reqdir}')
@@ -114,14 +116,19 @@ def main():
     # build a list of requirements from the global list in the
     # openstack/requirements project so we can match them to the changes
     with tempdir():
-        with open(reqdir + '/global-requirements.txt') as f:
-            global_reqs = check.get_global_reqs(f.read())
-        denylist = requirement.parse(open(reqdir + '/denylist.txt').read())
-        backports_file = reqdir + '/backports.txt'
+        with open(os.path.join(reqdir, 'global-requirements.txt')) as fh:
+            global_reqs = check.get_global_reqs(fh.read())
+
+        with open(os.path.join(reqdir, 'denylist.txt')) as fh:
+            denylist = requirement.parse(fh.read())
+
+        backports_file = os.path.join(reqdir, 'backports.txt')
         if os.path.exists(backports_file):
-            backports = requirement.parse(open(backports_file).read())
+            with open(backports_file) as fh:
+                backports = requirement.parse(fh.read())
         else:
             backports = {}
+
         cwd = os.getcwd()
         # build a list of requirements in the proposed change,
         # and check them for style violations while doing so
@@ -154,6 +161,7 @@ def main():
         print("*** Incompatible requirement found!")
         print("*** See https://docs.openstack.org/requirements/latest/")
         sys.exit(1)
+
     print("Updated requirements match openstack/requirements.")
 
 
