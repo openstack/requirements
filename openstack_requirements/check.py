@@ -20,6 +20,7 @@ import sys
 
 from packaging import markers
 
+from openstack_requirements.project import Project
 from openstack_requirements import requirement
 
 MIN_PY_VERSION = '3.5'
@@ -32,23 +33,27 @@ PY3_LOCAL_SPECIFIER_RE = re.compile(
 
 
 class RequirementsList:
-    def __init__(self, name, project):
+    def __init__(self, name: str, project: Project) -> None:
         self.name = name
-        self.reqs_by_file = {}
+        self.reqs_by_file: dict[str, dict[str, set[str]]] = {}
         self.project = project
         self.failed = False
 
     @property
-    def reqs(self):
+    def reqs(self) -> dict[str, set[str]]:
+        """Flattens the list of per-file reqs."""
         return {k: v for d in self.reqs_by_file.values() for k, v in d.items()}
 
-    def extract_reqs(self, content, strict):
+    def extract_reqs(
+        self, content: list[str], strict: bool
+    ) -> dict[str, set[str]]:
         reqs = collections.defaultdict(set)
         parsed = requirement.parse_lines(content)
         for name, entries in parsed.items():
             if not name:
                 # Comments and other unprocessed lines
                 continue
+
             list_reqs = [r for (r, line) in entries]
             # Strip the comments out before checking if there are duplicates
             list_reqs_stripped = [r._replace(comment='') for r in list_reqs]
@@ -64,7 +69,7 @@ class RequirementsList:
             reqs[name].update(list_reqs)
         return reqs
 
-    def process(self, strict=True):
+    def process(self, strict: bool = True) -> None:
         """Convert the project into ready to use data.
 
         - an iterable of requirement sets to check
@@ -99,11 +104,6 @@ class RequirementsList:
                 )
 
             print(f"Processing {fname} (requirements)")
-            if strict and not content.endswith('\n'):
-                print(
-                    f"Requirements file {fname} does not end with a newline.",
-                    file=sys.stderr,
-                )
             self.reqs_by_file[fname] = self.extract_reqs(content, strict)
 
         for fname, extras in self.project['extras'].items():
