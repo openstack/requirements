@@ -463,7 +463,7 @@ xattr===1.2.0
 systemd-python===235
 python-memcached===1.62
 openstacksdk===4.5.0;python_version=='3.9'
-openstacksdk===4.7.1;python_version>='3.10'
+openstacksdk===4.7.2;python_version>='3.10'
 infi.dtypes.nqn===0.1.0
 six===1.17.0
 h2===4.2.0
