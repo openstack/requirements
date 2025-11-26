@@ -34,7 +34,6 @@ lxml
 # For paste.util.template used in keystone.common.template
 Paste
 
-passlib
 jsonschema
 python-cinderclient>=1.0.4
 python-keystoneclient>=0.2.0

@@ -110,7 +110,6 @@ ovs  # Apache-2.0
 ovsdbapp  # Apache-2.0
 packaging!=20.5,!=20.6,!=20.7  # Apache-2.0
 paramiko!=2.9.0,!=2.9.1  # LGPLv2.1+
-passlib  # BSD
 Paste  # MIT
 PasteDeploy  # MIT
 pecan!=1.0.2,!=1.0.3,!=1.0.4,!=1.2,!=1.4.0  # BSD

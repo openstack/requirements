@@ -182,7 +182,6 @@ appdirs===1.4.3
 tinyrpc===0.5
 influxdb===4.0.0
 funcparserlib===0.3.6
-passlib===1.7.1
 cliff===2.4.0
 os-brick===1.11.0
 trollius===2.1
