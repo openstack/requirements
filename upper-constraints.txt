@@ -106,7 +106,6 @@ hyperframe===6.1.0
 zeroconf===0.148.0
 scipy===1.15.3
 opentelemetry-exporter-otlp===1.38.0
-python-gnupg===0.5.5
 rsd-lib===1.2.0
 XStatic-Jasmine===2.4.1.2
 googleapis-common-protos===1.71.0
