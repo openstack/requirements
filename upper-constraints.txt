@@ -431,7 +431,6 @@ jmespath===1.0.1
 click===8.3.0
 XStatic-smart-table===1.4.13.2
 kuryr-lib===3.3.1
-scrypt===0.9.4
 jsonpatch===1.33
 libsass===0.23.0
 os-testr===3.0.0

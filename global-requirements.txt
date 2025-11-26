@@ -159,8 +159,6 @@ ruamel.yaml  # MIT
 salt!=2019.2.1,!=2019.2.2  # Apache-2.0
 scikit-learn  # BSD
 scipy  # BSD
-# https://github.com/holgern/py-scrypt/issues/16
-scrypt!=0.8.21  # BSD
 semantic-version  # BSD
 setproctitle  # BSD
 SQLAlchemy  # MIT
