@@ -50,7 +50,7 @@ pbr===7.0.3
 munch===4.0.0
 waiting===1.5.0
 attrs===25.4.0
-microversion-parse===2.0.0
+microversion-parse===2.1.0
 jwcrypto===1.5.6
 Pint===0.24.4
 oslo.i18n===6.7.1
