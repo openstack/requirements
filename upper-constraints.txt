@@ -437,7 +437,7 @@ botocore===1.36.26
 xmltodict===0.14.2
 pyasn1===0.6.0
 oslo.rootwrap===7.5.1
-Django===4.2.19
+Django===4.2.26
 pexpect===4.9.0
 contextvars===2.4
 cmd2===2.5.11
