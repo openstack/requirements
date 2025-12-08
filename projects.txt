@@ -70,13 +70,6 @@ openstack/mistral
 openstack/mistral-dashboard
 openstack/mistral-lib
 openstack/mistral-tempest-plugin
-openstack/monasca-api
-openstack/monasca-common
-openstack/monasca-notification
-openstack/monasca-persister
-openstack/monasca-statsd
-openstack/monasca-tempest-plugin
-openstack/monasca-ui
 openstack/networking-bagpipe
 openstack/networking-baremetal
 openstack/networking-bgpvpn
@@ -188,7 +181,6 @@ openstack/python-magnumclient
 openstack/python-manilaclient
 openstack/python-masakariclient
 openstack/python-mistralclient
-openstack/python-monascaclient
 openstack/python-neutronclient
 openstack/python-novaclient
 openstack/python-octaviaclient
