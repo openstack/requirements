@@ -140,7 +140,6 @@ pystache  # MIT
 # Only required for sasl/binary protocol
 python-binary-memcached  # MIT
 python-dateutil  # BSD
-python-gnupg  # BSD License
 python-ldap  # PSF
 python-memcached  # PSF
 pytz  # MIT
