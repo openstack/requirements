@@ -171,7 +171,7 @@ urllib3===1.26.20
 graphviz===0.21
 PyKMIP===0.10.0
 python-observabilityclient===1.2.0
-whereto===0.4.0
+whereto===0.5.0
 pywbem===1.7.3
 python-subunit===1.4.4
 pycparser===2.23
