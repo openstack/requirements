@@ -161,7 +161,7 @@ reno===4.1.0
 ncclient===0.7.0
 imagesize===1.4.1
 pydot===4.0.1
-urllib3===1.26.20
+urllib3===2.6.3
 graphviz===0.21
 PyKMIP===0.10.0
 python-observabilityclient===1.2.0
@@ -258,7 +258,7 @@ pyperclip===1.11.0
 cassandra-driver===3.29.3
 XStatic-Angular-Schema-Form===0.8.13.1
 opentelemetry-exporter-otlp-proto-http===1.39.1
-gabbi===3.1.0
+gabbi===4.2.0
 nwdiag===3.0.0
 XStatic-bootswatch===3.3.7.1
 annotated-types===0.7.0
@@ -326,7 +326,7 @@ packaging===26.0
 opentelemetry-exporter-otlp-proto-grpc===1.39.1
 psutil===7.2.2
 txaio===25.9.2
-elasticsearch===2.4.1
+elasticsearch===9.3.0
 django-nose===1.4.7
 asgiref===3.11.1
 XStatic-JQuery.TableSorter===2.14.5.3
