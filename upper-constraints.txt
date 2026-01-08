@@ -235,7 +235,7 @@ os-brick===6.13.0
 valkey===6.1.1
 scp===0.15.0
 lark===1.3.0
-python-zaqarclient===4.2.0
+python-zaqarclient===4.3.0
 ldappool===3.0.0
 hpack===4.1.0
 joblib===1.5.2
