@@ -465,7 +465,7 @@ pymemcache===4.0.0
 wrapt===2.0.0
 oslo.privsep===3.9.0
 sphinxcontrib-apidoc===0.6.0
-oslo.policy===4.7.0
+oslo.policy===4.8.0
 hvac===2.3.0
 pyeclib===1.7.0
 repoze.lru===0.7
