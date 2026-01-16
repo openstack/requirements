@@ -16,7 +16,7 @@ PasteDeploy===3.1.0
 typing===3.7.4.3
 Routes===2.5.1
 rtslib-fb===2.2.3
-oslo.limit===2.9.1
+oslo.limit===2.9.2
 tzdata===2025.2
 smmap===5.0.2
 confget===5.1.2
