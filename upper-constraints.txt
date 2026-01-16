@@ -447,7 +447,7 @@ requestsexceptions===1.4.0
 testresources===2.0.2
 falcon===4.1.0
 tomlkit===0.13.3
-etcd3gw===2.4.2
+etcd3gw===2.5.0
 Flask-RESTful===0.3.10
 GitPython===3.1.45
 python-ironicclient===5.14.0
