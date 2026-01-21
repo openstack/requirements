@@ -340,7 +340,7 @@ infi.dtypes.iqn===0.4.0
 XStatic-tv4===1.2.7.0
 XStatic-JSEncrypt===2.3.1.1
 python-cinderclient===9.8.0
-keystonemiddleware===10.12.0
+keystonemiddleware===11.0.0
 django-formtools===2.5.1
 XStatic-Spin===1.2.5.3
 rich===14.2.0
