@@ -60,8 +60,8 @@ dev-libs/liberasurecode [platform:gentoo]
 libsystemd-dev [platform:dpkg !platform:ubuntu-trusty]
 libsystemd-journal-dev [platform:ubuntu-trusty]
 
-libpcre3-dev [platform:dpkg !platform:debian-trixie]
-pcre-devel [platform:rpm]
+libpcre2-dev [platform:dpkg]
+pcre2-devel [platform:rpm]
 
 # NOTE(pabelanger): Needed for build-wheel-mirror jobs
 gawk [test]
