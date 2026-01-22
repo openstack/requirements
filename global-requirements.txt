@@ -455,6 +455,7 @@ openstack-release-test
 
 dfs-sdk  # Apache-2.0
 distro  # Apache-2.0
+hpe-storage-flowkit-py  # Apache-2.0
 krest  # Apache-2.0
 py-pure-client  # BSD
 python-3parclient  # Apache-2.0
