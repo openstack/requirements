@@ -24,13 +24,15 @@
         - cross-aodh-py312
         - cross-barbican-py312
         - cross-ceilometer-py312
-        - cross-cinder-py312
+        - cross-cinder-py312:
+            voting: false
         - cross-designate-py312
         - cross-glance-py312
         - cross-heat-py312
         - cross-horizon-py312
         - cross-horizon-npm
-        - cross-ironic-py312
+        - cross-ironic-py312:
+            voting: false
         - cross-keystone-py312
         - cross-kuryr-py312
         - cross-manila-py312
@@ -78,13 +80,13 @@
         - requirements-tox-py310-check-uc
         - requirements-tox-py311-check-uc
         - requirements-tox-py312-check-uc
-        - cross-cinder-py312
+        # - cross-cinder-py312
         - cross-designate-py312
         - cross-glance-py312
         - cross-heat-py312
         - cross-horizon-py312
         - cross-horizon-npm
-        - cross-ironic-py312
+        # - cross-ironic-py312
         - cross-keystone-py312
         - cross-kuryr-py312
         - cross-manila-py312

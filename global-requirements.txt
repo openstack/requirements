@@ -190,11 +190,8 @@ XStatic-Bootstrap-Datepicker  # Apache 2.0 License
 XStatic-Bootstrap-SCSS  # Apache 2.0 License
 XStatic-bootswatch  # MIT License
 XStatic-D3  # BSD License (3 clause)
-XStatic-Dagre  # MIT License
-XStatic-Dagre-D3  # MIT License
 xstatic-filesaver  # MIT License
 XStatic-Font-Awesome<4.8.0  # SIL OFL 1.1 License, MIT License
-XStatic-Graphlib  # MIT License
 XStatic-Hogan  # Apache 2.0 License
 XStatic-Jasmine  # MIT License
 XStatic-jQuery  # MIT License
@@ -205,10 +202,7 @@ XStatic-JQuery.TableSorter  # MIT License
 xstatic-js-yaml  # MIT License
 XStatic-JSEncrypt  # MIT License
 xstatic-json2yaml  # MIT License
-XStatic-lodash  # MIT License
 XStatic-mdi  # SIL OPEN FONT LICENSE Version 1.1
-XStatic-moment  # MIT License
-XStatic-Moment-Timezone  # MIT License
 XStatic-objectpath  # MIT
 XStatic-Rickshaw  # BSD License (prior)
 XStatic-roboto-fontface  # Apache 2.0 License
