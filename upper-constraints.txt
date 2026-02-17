@@ -269,7 +269,7 @@ gossip===2.5.0
 suds-community===1.2.0
 os_vif===4.3.0
 qrcode===8.2
-oslo.middleware===7.0.0
+oslo.middleware===8.0.0
 XStatic-mdi===1.6.50.3
 pydantic_core===2.41.4
 uritemplate===4.2.0
