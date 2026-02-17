@@ -31,8 +31,7 @@
         - cross-heat-py312
         - cross-horizon-py312
         - cross-horizon-npm
-        - cross-ironic-py312:
-            voting: false
+        - cross-ironic-py312
         - cross-keystone-py312
         - cross-kuryr-py312
         - cross-manila-py312
@@ -86,7 +85,7 @@
         - cross-heat-py312
         - cross-horizon-py312
         - cross-horizon-npm
-        # - cross-ironic-py312
+        - cross-ironic-py312
         - cross-keystone-py312
         - cross-kuryr-py312
         - cross-manila-py312
