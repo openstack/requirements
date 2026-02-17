@@ -56,7 +56,7 @@ Pint===0.24.4
 oslo.i18n===6.7.1
 jsonpath-rw-ext===1.2.2
 python-mistralclient===6.1.0
-oslo.context===6.2.0
+oslo.context===6.3.0
 rcssmin===1.1.2
 pycadf===4.0.1
 grpcio===1.76.0
