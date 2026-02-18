@@ -279,7 +279,7 @@ os-ken===4.1.1
 ujson===5.11.0
 selenium===3.141.0
 pytest-subtests===0.15.0
-mistral-lib===3.5.0
+mistral-lib===3.5.1
 dogtag-pki===11.2.1
 XStatic-Angular-UUID===0.0.4.1
 sphinxcontrib-seqdiag===3.0.0
