@@ -263,7 +263,7 @@ annotated-types===0.7.0
 pytest-xdist===3.8.0
 XStatic-JS-Yaml===3.13.1.2
 XStatic-term.js===0.0.7.1
-oslo.log===8.0.0
+oslo.log===8.1.0
 nodeenv===1.9.1
 gossip===2.5.0
 suds-community===1.2.0
