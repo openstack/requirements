@@ -546,7 +546,7 @@ python-heatclient===5.0.0
 oslo.utils===10.0.0
 requests-kerberos===0.15.0
 itsdangerous===2.2.0
-XStatic-jquery-ui===1.13.0.1
+XStatic-jquery-ui===1.13.0.2
 monasca-statsd===2.7.0
 python-dateutil===2.9.0.post0
 virtualenv===20.38.0
