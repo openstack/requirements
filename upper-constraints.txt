@@ -137,7 +137,7 @@ jsonpath-rw===1.4.0
 prettytable===3.16.0
 vine===5.1.0
 pathspec===0.12.1
-taskflow===6.1.1
+taskflow===6.2.0
 arrow===1.4.0
 semantic-version===2.10.0
 async-timeout===5.0.1
