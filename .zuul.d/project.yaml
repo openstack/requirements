@@ -23,8 +23,7 @@
         - cross-aodh-py312
         - cross-barbican-py312
         - cross-ceilometer-py312
-        - cross-cinder-py312:
-            voting: false
+        - cross-cinder-py312
         - cross-designate-py312
         - cross-glance-py312
         - cross-heat-py312
@@ -79,7 +78,7 @@
         - requirements-tox-py311-check-uc
         - requirements-tox-py312-check-uc
         - requirements-tox-py313-check-uc
-        # - cross-cinder-py312
+        - cross-cinder-py312
         - cross-designate-py312
         - cross-glance-py312
         - cross-heat-py312
