@@ -364,7 +364,7 @@ requests-oauthlib===2.0.0
 oslo.reports===3.7.0
 pysnmp-lextudio===6.1.2
 bitmath===1.3.3.1
-ceilometermiddleware===3.9.0
+ceilometermiddleware===3.10.0
 testrepository===0.0.22
 librt===0.8.1
 sympy===1.14.0
