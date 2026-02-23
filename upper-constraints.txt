@@ -113,7 +113,7 @@ debtcollector===3.0.0
 responses===0.25.8
 croniter===6.0.0
 horizon===25.5.1
-octavia-lib===3.10.0
+octavia-lib===3.11.0
 python-watcherclient===4.9.0
 MarkupSafe===3.0.3
 ruamel.yaml.clib===0.2.14
