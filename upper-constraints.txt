@@ -62,7 +62,7 @@ fixtures===4.3.0
 neutron-lib===3.24.0
 XStatic-FileSaver===1.3.2.1
 jaraco.functools===4.4.0
-oslo.metrics===0.15.0
+oslo.metrics===0.15.1
 storage-interfaces===1.0.5
 pydantic===2.12.5
 persist-queue===1.1.0
