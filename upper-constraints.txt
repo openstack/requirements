@@ -511,7 +511,7 @@ python-cyborgclient===2.6.0
 futurist===3.2.1
 jsonschema===4.26.0
 sphinxcontrib-devhelp===2.0.0
-python-blazarclient===4.4.0
+python-blazarclient===4.5.0
 alembic===1.18.4
 execnet===2.1.2
 sphinxcontrib-programoutput===0.19
