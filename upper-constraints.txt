@@ -240,7 +240,7 @@ ldappool===3.0.0
 hpack===4.1.0
 joblib===1.5.3
 google-api-python-client===2.190.0
-castellan===5.5.0
+castellan===5.6.0
 oslo.versionedobjects===3.9.0
 enmerkar===0.7.1
 webcolors===25.10.0

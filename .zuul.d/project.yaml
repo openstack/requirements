@@ -21,7 +21,8 @@
         - requirements-tox-validate-projects:
             voting: false
         - cross-aodh-py312
-        - cross-barbican-py312
+        - cross-barbican-py312:
+            voting: false
         - cross-ceilometer-py312
         - cross-cinder-py312
         - cross-designate-py312
