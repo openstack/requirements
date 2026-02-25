@@ -140,7 +140,7 @@ arrow===1.4.0
 semantic-version===2.10.0
 ConfigArgParse===1.7.1
 async-timeout===5.0.1
-virtualbmc===3.2.0
+virtualbmc===3.3.0
 SQLAlchemy===2.0.46
 pyroute2===0.8.1
 google-auth===2.48.0
