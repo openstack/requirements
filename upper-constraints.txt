@@ -93,7 +93,7 @@ ply===3.11
 google-api-core===2.30.0
 requests-toolbelt===1.0.0
 simplejson===3.20.2
-python-swiftclient===4.9.0
+python-swiftclient===4.10.0
 pyOpenSSL===24.2.1
 typing-inspection===0.4.2
 monasca-common===3.8.0
