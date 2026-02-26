@@ -542,7 +542,7 @@ microversion_parse===2.1.0
 python-linstor===1.27.1
 filelock===3.24.3
 python-tackerclient===2.4.0
-python-heatclient===5.0.0
+python-heatclient===5.1.0
 oslo.utils===10.0.0
 requests-kerberos===0.15.0
 itsdangerous===2.2.0
