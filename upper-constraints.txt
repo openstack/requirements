@@ -398,7 +398,7 @@ geomet===1.1.0
 opentelemetry-exporter-otlp-proto-common===1.39.1
 distlib===0.4.0
 dogpile.cache===1.5.0
-python-barbicanclient===7.2.0
+python-barbicanclient===7.3.0
 salt===3007.13
 opentelemetry-semantic-conventions===0.60b1
 api-object-schema===2.0.0
