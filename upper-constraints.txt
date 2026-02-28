@@ -491,7 +491,7 @@ sphinxcontrib-qthelp===2.0.0
 keystoneauth1===5.13.1
 statsd===4.0.1
 proto-plus===1.27.1
-python-keystoneclient===5.7.0
+python-keystoneclient===5.8.0
 diskimage-builder===3.40.2
 heat-translator===3.4.0
 python-magnumclient===4.9.0
