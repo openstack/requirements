@@ -477,7 +477,7 @@ XStatic-Json2yaml===0.1.1.1
 boto===2.49.0
 hyperlink===21.0.0
 mitba===1.1.1
-python-masakariclient===8.7.0
+python-masakariclient===8.8.0
 Werkzeug===3.1.6
 APScheduler===3.11.2
 xmlschema===2.5.1
