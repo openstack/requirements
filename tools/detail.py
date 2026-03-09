@@ -12,6 +12,15 @@
 #    License for the specific language governing permissions and limitations
 #    under the License.
 
+# Script to extract detailed package information from PyPi for all entries in
+# a requirements file. JSON formatted details are written to a *.json file
+# corresponding to the input file. As an example, the following command:
+#
+# python3 detail.py global-requirements.txt
+#
+# would result in a 'global-requirements.json' file containing an entry for
+# each requirement.
+
 import contextlib
 import json
 import os
@@ -20,12 +29,12 @@ import traceback
 import urllib.parse as urlparse
 import urllib.request as urlreq
 
-import packaging.requirement
+import packaging.requirements
 
 try:
     PYPI_LOCATION = os.environ['PYPI_LOCATION']
 except KeyError:
-    PYPI_LOCATION = 'http://pypi.org/project'
+    PYPI_LOCATION = 'https://pypi.org/pypi'
 
 
 KEEP_KEYS = frozenset(
@@ -56,7 +65,8 @@ def release_data(req):
         url = PYPI_LOCATION + f"/{urlparse.quote(name)}/json"
         if url in attempted:
             continue
-        with contextlib.closing(urlreq.urlopen(url)) as uh:
+        req_obj = urlreq.Request(url, headers={'User-Agent': 'detail.py/1.0'})
+        with contextlib.closing(urlreq.urlopen(req_obj)) as uh:
             if uh.getcode() != 200:
                 attempted.append(url)
                 continue
@@ -76,12 +86,14 @@ def main():
     for filename in sys.argv[1:]:
         print(f"Analyzing file: {filename}")
         details = {}
-        with open(filename, "rb") as fh:
+        with open(filename) as fh:
             for line in fh.read().splitlines():
                 line = line.strip()
                 if line.startswith("#") or not line:
                     continue
-                req = packaging.requirement.Requirement(line)
+                req = packaging.requirements.Requirement(
+                    line.partition('#')[0].strip()
+                )
                 print(f" - processing: {req}")
                 try:
                     raw_req_data = release_data(req)
@@ -94,12 +106,12 @@ def main():
                         if k not in KEEP_KEYS:
                             continue
                         req_info[k] = v
-                    details[req.key] = {
+                    details[req.name] = {
                         'requirement': str(req),
                         'info': req_info,
                     }
         filename, _ext = os.path.splitext(filename)
-        with open(f"{filename}.json", "wb") as fh:
+        with open(f"{filename}.json", "w") as fh:
             fh.write(
                 json.dumps(
                     details, sort_keys=True, indent=4, separators=(",", ": ")
