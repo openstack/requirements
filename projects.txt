@@ -187,7 +187,6 @@ openstack/python-openstackclient
 openstack/python-swiftclient
 openstack/python-tackerclient
 openstack/python-troveclient
-openstack/python-vitrageclient
 openstack/python-watcherclient
 openstack/python-zaqarclient
 openstack/python-zunclient
@@ -206,8 +205,6 @@ openstack/tosca-parser
 openstack/trove
 openstack/trove-tempest-plugin
 openstack/virtualbmc
-openstack/vitrage
-openstack/vitrage-tempest-plugin
 openstack/watcher
 openstack/watcher-dashboard
 openstack/watcher-tempest-plugin
