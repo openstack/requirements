@@ -221,7 +221,7 @@ mpmath===1.3.0
 python-binary-memcached===0.31.4
 jaraco.context===6.1.0
 django-debreach===2.1.0
-sphinx-feature-classification===2.0.0
+sphinx-feature-classification===2.1.0
 XStatic-JQuery-Migrate===3.3.2.2
 pytest-html===4.2.0
 appdirs===1.4.4
