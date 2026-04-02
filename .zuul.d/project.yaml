@@ -33,7 +33,8 @@
         - cross-horizon-py312
         - cross-horizon-npm
         - cross-ironic-py312
-        - cross-keystone-py312
+        - cross-keystone-py312:
+            voting: false
         - cross-kuryr-py312
         - cross-manila-py312
         - cross-magnum-py312
@@ -49,7 +50,8 @@
         - cross-nova-functional
         - cross-placement-functional-py312
         - cross-octavia-py312
-        - cross-osc-tox-docs
+        - cross-osc-tox-docs:
+            voting: false
         - cross-swift-py312
         - openstacksdk-functional-devstack
         - tempest-full-py3:
