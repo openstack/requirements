@@ -508,7 +508,7 @@ decorator===5.2.1
 DateTimeRange===2.3.2
 cffi===2.0.0
 python-cyborgclient===2.7.0
-futurist===3.2.1
+futurist===3.3.0
 jsonschema===4.26.0
 sphinxcontrib-devhelp===2.0.0
 python-blazarclient===4.5.0
