@@ -244,6 +244,7 @@ os-testr  # Apache-2.0
 oslotest  # Apache-2.0
 ovsdbapp  # Apache-2.0
 pifpaf  # Apache-2.0
+playwright  # Apache-2.0
 psycopg2  # LGPL/ZPL
 psycopg2-binary  # LGPL/ZPL
 pytest  # MIT

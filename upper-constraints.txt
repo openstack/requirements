@@ -572,3 +572,4 @@ XStatic-D3===3.5.17.1
 actdiag===3.0.0
 sphinxcontrib-applehelp===2.0.0
 scikit-learn===1.8.0
+playwright===1.60.0
