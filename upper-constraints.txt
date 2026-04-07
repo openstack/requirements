@@ -336,7 +336,7 @@ asgiref===3.11.1
 XStatic-JQuery.TableSorter===2.14.5.3
 pifpaf===3.4.0
 blockdiag===3.0.0
-testtools===2.8.7
+testtools===2.9.0
 infi.dtypes.iqn===0.4.0
 jsonpath-ng===1.8.0
 XStatic-tv4===1.2.7.1
