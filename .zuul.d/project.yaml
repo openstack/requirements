@@ -3,9 +3,6 @@
       - openstack-python3-jobs
     check:
       jobs:
-        - build-wheel-cache-ubuntu-bionic:
-            files:
-              - bindep.txt
         - build-wheel-cache-ubuntu-focal:
             files:
               - bindep.txt
@@ -69,9 +66,6 @@
               - bindep.txt
     gate:
       jobs:
-        - build-wheel-cache-ubuntu-bionic:
-            files:
-              - bindep.txt
         - build-wheel-cache-ubuntu-focal:
             files:
               - bindep.txt
