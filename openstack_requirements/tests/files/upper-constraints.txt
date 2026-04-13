@@ -22,7 +22,7 @@ tabulate===0.7.7
 python-ironic-inspector-client===1.11.0
 lxml===3.7.3
 python-kingbirdclient===0.1.0
-pytest===3.0.6
+pytest===9.0.3
 python-etcd===0.4.5
 cursive===0.1.1
 oslo.service===1.20.0
