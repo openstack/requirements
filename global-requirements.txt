@@ -289,6 +289,7 @@ pydotplus  # MIT License
 Pygments  # BSD license
 rst2txt  # BSD
 sphinx!=1.6.6,!=1.6.7,!=2.1.0,!=3.0.0,!=3.4.2  # BSD
+sphinx-copybutton  # MIT
 sphinxcontrib-actdiag  # BSD
 sphinxcontrib-apidoc  # BSD
 sphinxcontrib-blockdiag  # BSD
