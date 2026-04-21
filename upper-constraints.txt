@@ -59,7 +59,7 @@ pycadf===4.0.1
 grpcio===1.80.0
 sniffio===1.3.1
 fixtures===4.3.2
-neutron-lib===3.24.0
+neutron-lib===3.25.0
 XStatic-FileSaver===1.3.2.1
 jaraco.functools===4.4.0
 oslo.metrics===0.15.1
