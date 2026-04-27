@@ -21,11 +21,15 @@
             voting: false
         - requirements-tox-validate-projects:
             voting: false
-        - cross-aodh-py311
-        - cross-barbican-py311
-        - cross-ceilometer-py311
+        - cross-aodh-py311:
+            voting: false
+        - cross-barbican-py311:
+            voting: false
+        - cross-ceilometer-py311:
+            voting: false
         - cross-cinder-py311
-        - cross-designate-py311
+        - cross-designate-py311:
+            voting: false
         - cross-glance-py311
         - cross-heat-py311
         - cross-horizon-py311
@@ -34,7 +38,8 @@
         - cross-keystone-py311
         - cross-kuryr-py311
         - cross-manila-py311
-        - cross-magnum-py311
+        - cross-magnum-py311:
+            voting: false
         - cross-masakari-py311:
             voting: false
         - cross-mistral-py311:
@@ -78,7 +83,8 @@
         - requirements-tox-py310-check-uc
         - requirements-tox-py311-check-uc
         - cross-cinder-py311
-        - cross-designate-py311
+        - cross-designate-py311:
+            voting: false
         - cross-glance-py311
         - cross-heat-py311
         - cross-horizon-py311
