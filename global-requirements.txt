@@ -103,6 +103,8 @@ netmiko  # MIT
 networkx!=2.8.4  # BSD
 oauthlib  # BSD
 opentelemetry-exporter-otlp  # Apache-2.0
+opentelemetry-exporter-otlp-proto-grpc  # Apache-2.0
+opentelemetry-exporter-otlp-proto-http  # Apache-2.0
 opentelemetry-sdk  # Apache-2.0
 ovs  # Apache-2.0
 packaging!=20.5,!=20.6,!=20.7  # Apache-2.0
