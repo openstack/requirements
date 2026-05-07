@@ -222,6 +222,7 @@ zVMCloudConnector;sys_platform!='win32'  # Apache 2.0 License
 ## section:testing
 
 bashate  # Apache-2.0
+beartype  # MIT
 coverage!=4.4  # Apache-2.0
 ddt  # MIT
 django-nose  # BSD
