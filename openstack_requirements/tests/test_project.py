@@ -28,31 +28,31 @@ class TestReadProject(testtools.TestCase):
     def test_pyproject_toml(self):
         root = self.useFixture(common.pep_518_fixture).root
         proj = project.read(root)
-        self.assertEqual(proj['root'], root)
+        self.assertEqual(root, proj['root'])
         self.assertEqual(
-            list(sorted(proj['requirements'])),
             ['pyproject.toml'],
+            list(sorted(proj['requirements'])),
         )
 
     def test_setup_cfg(self):
         root = self.useFixture(common.pbr_fixture).root
         proj = project.read(root)
-        self.assertEqual(proj['root'], root)
+        self.assertEqual(root, proj['root'])
         self.assertEqual(
-            list(sorted(proj['requirements'])),
             ['requirements.txt', 'test-requirements.txt'],
+            list(sorted(proj['requirements'])),
         )
 
     def test_empty(self):
         root = self.useFixture(fixtures.TempDir()).path
         proj = project.read(root)
         self.assertEqual(
-            proj,
             {
                 'root': root,
                 'requirements': {},
                 'extras': {},
             },
+            proj,
         )
 
 
