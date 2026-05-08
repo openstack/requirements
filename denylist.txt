@@ -10,6 +10,7 @@ flake8-import-order
 flake8-logging-format
 hacking
 isort
+librt
 mccabe
 mypy
 pep257
