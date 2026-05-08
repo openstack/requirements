@@ -43,11 +43,11 @@ class TestRequirementsList(testtools.TestCase):
         req_list = check.RequirementsList('test-project', project_data)
         req_list.process(strict=False)
 
-        self.assertIn('setup.cfg (.[test] extra)', req_list.reqs_by_file)
-        self.assertIn('setup.cfg (.[dev] extra)', req_list.reqs_by_file)
+        self.assertIn("setup.cfg ('test' extra)", req_list.reqs_by_file)
+        self.assertIn("setup.cfg ('dev' extra)", req_list.reqs_by_file)
 
-        test_reqs = req_list.reqs_by_file['setup.cfg (.[test] extra)']
-        dev_reqs = req_list.reqs_by_file['setup.cfg (.[dev] extra)']
+        test_reqs = req_list.reqs_by_file["setup.cfg ('test' extra)"]
+        dev_reqs = req_list.reqs_by_file["setup.cfg ('dev' extra)"]
 
         self.assertEqual(2, len(test_reqs))
         self.assertIn('pytest', test_reqs)
