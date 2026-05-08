@@ -97,6 +97,39 @@ def _read_pyproject_toml_extras(root: str) -> dict[str, list[str]] | None:
     return data['project'].get('optional-dependencies', {})
 
 
+def _read_pyproject_toml_dependency_groups(
+    root: str,
+) -> dict[str, list[str]] | None:
+    data = _read_pyproject_toml(root) or {}
+
+    if 'dependency-groups' not in data:
+        return None
+
+    raw_groups: dict[str, list[str | dict[str, str]]] = data[
+        'dependency-groups'
+    ]
+
+    def resolve(name: str) -> list[str]:
+        result = []
+        for item in raw_groups[name]:
+            if isinstance(item, dict):
+                assert len(item) == 1
+                assert 'include-group' in item
+                assert item['include-group'] != name
+                result.extend(resolve(item['include-group']))
+            elif isinstance(item, str):
+                result.append(item)
+            else:
+                raise Exception(
+                    f'dependency-groups items must be string requirements '
+                    f'or includes in form {{include-group = "group-a"}}; '
+                    f'got: {item}'
+                )
+        return result
+
+    return {name: resolve(name) for name in raw_groups}
+
+
 def _read_setup_cfg_extras(root: str) -> dict[str, list[str]] | None:
     data = _read_raw(root, 'setup.cfg')
     if data is None:
@@ -130,6 +163,8 @@ class Project(TypedDict):
     requirements: dict[str, list[str]]
     # A mapping of filename to extras from that file
     extras: dict[str, dict[str, list[str]]]
+    # A mapping of filename to dependency groups from that file
+    dependency_groups: dict[str, dict[str, list[str]]]
 
 
 def read(root: str) -> Project:
@@ -138,15 +173,18 @@ def read(root: str) -> Project:
     :param root: A directory path.
     :return: A dict representing the project with the following keys:
         - root: The root dir.
-        - requirements: Dict of requirement file name
-        - extras: Dict of extras file name to a dict of extra names and
-          requirements
+        - requirements: Dict of filenames mapped to requirements
+        - extras: Dict of filenames mapped to a dict of extra names and
+          their requirements
+        - dependency_groups: Dict of filenames mapped to a dict of dependency
+          group names and their requirements
     """
     # Store root directory and installer-related files for later processing
     result: Project = {
         'root': root,
         'requirements': {},
         'extras': {},
+        'dependency_groups': {},
     }
 
     # Store requirements
@@ -174,5 +212,9 @@ def read(root: str) -> Project:
 
     if (data := _read_pyproject_toml_extras(root)) is not None:
         result['extras']['pyproject.toml'] = data
+
+    # Store dependency groups
+    if (data := _read_pyproject_toml_dependency_groups(root)) is not None:
+        result['dependency_groups']['pyproject.toml'] = data
 
     return result

@@ -51,6 +51,7 @@ class TestReadProject(testtools.TestCase):
                 'root': root,
                 'requirements': {},
                 'extras': {},
+                'dependency_groups': {},
             },
             proj,
         )
@@ -118,3 +119,68 @@ class TestProjectExtras(testtools.TestCase):
     def test_no_setup_cfg(self):
         root = self.useFixture(fixtures.TempDir()).path
         self.assertIsNone(project._read_setup_cfg_extras(root))
+
+
+class TestProjectDependencyGroups(testtools.TestCase):
+    def test_pyproject_toml(self):
+        root = self.useFixture(fixtures.TempDir()).path
+        with open(os.path.join(root, 'pyproject.toml'), 'w') as fh:
+            # taken from the spec https://peps.python.org/pep-0735/ but with an
+            # additional group to demonstrate more depth
+            fh.write(
+                textwrap.dedent("""
+                [dependency-groups]
+                test = ["pytest", "coverage"]
+                docs = ["sphinx", "sphinx-rtd-theme"]
+                typing = ["mypy", "types-requests"]
+                typing-test = [
+                    {include-group = "typing"},
+                    {include-group = "test"},
+                    "useful-types"
+                ]
+                dev = [
+                    {include-group = "typing-test"},
+                    {include-group = "docs"},
+                ]
+                """)
+            )
+        expected = {
+            'test': ['pytest', 'coverage'],
+            'docs': ['sphinx', 'sphinx-rtd-theme'],
+            'typing': ['mypy', 'types-requests'],
+            'typing-test': [
+                'mypy',
+                'types-requests',
+                'pytest',
+                'coverage',
+                'useful-types',
+            ],
+            'dev': [
+                'mypy',
+                'types-requests',
+                'pytest',
+                'coverage',
+                'useful-types',
+                'sphinx',
+                'sphinx-rtd-theme',
+            ],
+        }
+        self.assertEqual(
+            expected, project._read_pyproject_toml_dependency_groups(root)
+        )
+
+    def test_pyproject_toml__no_dependency_groups(self):
+        root = self.useFixture(fixtures.TempDir()).path
+        with open(os.path.join(root, 'pyproject.toml'), 'w') as fh:
+            fh.write(
+                textwrap.dedent("""
+                [project]
+                name = "testproject"
+                dynamic = ["version"]
+                """)
+            )
+        self.assertIsNone(project._read_pyproject_toml_dependency_groups(root))
+
+    def test_no_pyproject_toml(self):
+        root = self.useFixture(fixtures.TempDir()).path
+        self.assertIsNone(project._read_pyproject_toml_dependency_groups(root))
