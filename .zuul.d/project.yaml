@@ -14,7 +14,6 @@
         - requirements-tox-babel
         - requirements-tox-bindep:
             voting: false
-        - requirements-tox-py310-check-uc
         - requirements-tox-py311-check-uc
         - requirements-tox-py312-check-uc
         - requirements-tox-py313-check-uc

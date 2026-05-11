@@ -40,7 +40,9 @@
       Run test for requirements project.
 
       Uses tox with the ``py311-check-uc`` environment.
-    files: ^upper-constraints.*txt$
+    files:
+      - ^upper-constraints.*txt$
+      - ^tox.ini
     vars:
       tox_envlist: py311-check-uc
 - job:
@@ -50,7 +52,9 @@
       Run test for requirements project.
 
       Uses tox with the ``py312-check-uc`` environment.
-    files: ^upper-constraints.*txt$
+    files:
+      - ^upper-constraints.*txt$
+      - ^tox.ini
     vars:
       tox_envlist: py312-check-uc
 - job:
@@ -60,7 +64,9 @@
       Run test for requirements project.
 
       Uses tox with the ``py313-check-uc`` environment.
-    files: ^upper-constraints.*txt$
+    files:
+      - ^upper-constraints.*txt$
+      - ^tox.ini
     vars:
       tox_envlist: py313-check-uc
 
