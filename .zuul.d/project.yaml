@@ -73,7 +73,6 @@
         - openstack-tox-validate
         - requirements-check-self
         - requirements-tox-babel
-        - requirements-tox-py310-check-uc
         - requirements-tox-py311-check-uc
         - requirements-tox-py312-check-uc
         - requirements-tox-py313-check-uc
