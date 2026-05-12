@@ -95,7 +95,7 @@ google-api-core===2.30.3
 requests-toolbelt===1.0.0
 simplejson===4.1.1
 python-swiftclient===4.10.0
-pyOpenSSL===24.2.1
+pyOpenSSL===26.0.0
 typing-inspection===0.4.2
 monasca-common===3.8.0
 hyperframe===6.1.0
