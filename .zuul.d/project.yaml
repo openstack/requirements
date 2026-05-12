@@ -17,6 +17,8 @@
         - requirements-tox-py311-check-uc
         - requirements-tox-py312-check-uc
         - requirements-tox-py313-check-uc
+        - requirements-tox-py314-check-uc:
+            voting: false
         - requirements-tox-validate-projects:
             voting: false
         - cross-aodh-py313
@@ -109,7 +111,6 @@
       jobs:
         - nova-ceph-multistore
         - nova-next
-        - requirements-tox-py310-check-uc-no-wheels
         - requirements-tox-py311-check-uc-no-wheels
         - requirements-tox-py312-check-uc-no-wheels
         - tempest-integrated-storage

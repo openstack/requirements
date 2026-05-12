@@ -71,6 +71,19 @@
       tox_envlist: py313-check-uc
 
 - job:
+    name: requirements-tox-py314-check-uc
+    parent: openstack-tox-py314
+    description: |
+      Run test for requirements project.
+
+      Uses tox with the ``py314-check-uc`` environment.
+    files:
+      - ^upper-constraints.*txt$
+      - ^tox.ini
+    vars:
+      tox_envlist: py314-check-uc
+
+- job:
     name: requirements-tox-py39-check-uc-no-wheels
     parent: requirements-tox-py39-check-uc
     description: |
