@@ -345,7 +345,7 @@ jsonpath-ng===1.8.0
 XStatic-tv4===1.2.7.1
 XStatic-JSEncrypt===2.3.1.2
 python-cinderclient===9.9.0
-keystonemiddleware===12.0.0
+keystonemiddleware===13.0.0
 django-formtools===2.5.1
 XStatic-Spin===1.2.5.3
 rich===15.0.0
