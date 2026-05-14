@@ -196,7 +196,7 @@ sphinxcontrib-jsmath===1.0.1
 django_compressor===4.6.0
 awscurl===0.42
 trio===0.33.0
-python-novaclient===18.12.0
+python-novaclient===18.13.0
 pact===1.12.0
 bcrypt===5.0.0
 os-client-config===2.3.0
