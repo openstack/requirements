@@ -92,6 +92,7 @@ jsonschema  # MIT
 kazoo  # Apache-2.0
 kombu!=4.0.2  # BSD
 kubernetes  # Apache-2.0
+ldappool  # MPL
 libsass  # MIT
 libvirt-python!=4.1.0,!=4.2.0  # LGPLv2+
 lxml!=3.7.0  # BSD
@@ -109,6 +110,7 @@ opentelemetry-exporter-otlp-proto-grpc  # Apache-2.0
 opentelemetry-exporter-otlp-proto-http  # Apache-2.0
 opentelemetry-sdk  # Apache-2.0
 ovs  # Apache-2.0
+ovsdbapp  # Apache-2.0
 packaging!=20.5,!=20.6,!=20.7  # Apache-2.0
 paramiko!=2.9.0,!=2.9.1  # LGPLv2.1+
 passlib  # BSD
@@ -123,6 +125,7 @@ PrettyTable!=3.4.0  # BSD
 prometheus-client  # Apache-2.0
 protobuf  # BSD License (3 clause)
 psutil  # BSD
+psycopg2  # LGPL/ZPL
 pyasn1!=0.2.3  # BSD
 pyasn1-modules  # BSD
 pycadf!=2.0.0  # Apache-2.0
@@ -149,10 +152,13 @@ pytz  # MIT
 pyudev  # LGPLv2.1+
 PyYAML  # MIT
 pyzabbix  # LGPL
+pyzmq  # LGPL+BSD
 qrcode  # BSD
 rbd-iscsi-client  # Apache-2.0
+redis!=4.0.0  # MIT
 requests!=2.20.0,!=2.24.0  # Apache-2.0
 requests-kerberos  # ISC
+retrying!=1.3.0  # Apache-2.0
 rfc3986  # Apache-2.0
 Routes  # MIT
 rtslib-fb  # Apache-2.0
@@ -166,17 +172,24 @@ SQLAlchemy  # MIT
 sshtunnel  # MIT
 statsd  # MIT
 suds-community  # LGPLv3+
+sushy!=1.9.0  # Apache-2.0
 sympy  # BSD
 systemd-python  # LGPLv2+
 sysv-ipc  # BSD License
+tabulate  # MIT
+tenacity  # Apache-2.0
 uhashring  # BSD
 urllib3  # MIT
+valkey  # MIT
 voluptuous  # BSD License
 warlock  # Apache-2.0
 WebOb  # MIT
 websocket-client  # LGPLv2+
 websockify  # LGPLv3
+Werkzeug!=2.2.0  # BSD License
+wrapt  # BSD License
 xattr;sys_platform!='win32'  # MIT
+xmltodict  # MIT
 XStatic  # MIT License
 XStatic-Angular  # MIT License
 XStatic-Angular-Bootstrap  # MIT License
@@ -229,7 +242,6 @@ freezegun  # Apache-2.0
 # NOTE(tkajinam): block 2.5.0 because of https://github.com/cdent/gabbi/issues/309
 gabbi!=2.5.0  # Apache-2.0
 keyring  # MIT/PSF
-ldappool  # MPL
 # Do not make mock conditional on Python version: we depend on newer code than
 # in [most] releases of the Python std library.
 # https://github.com/testing-cabal/mock/issues/487  for 4.0.[0-1] denylist
@@ -240,10 +252,8 @@ nodeenv  # BSD
 openstack-doc-tools  # Apache-2.0
 os-testr  # Apache-2.0
 oslotest  # Apache-2.0
-ovsdbapp  # Apache-2.0
 pifpaf  # Apache-2.0
 playwright  # Apache-2.0
-psycopg2  # LGPL/ZPL
 psycopg2-binary  # LGPL/ZPL
 pytest  # MIT
 pytest-cov  # MIT
@@ -252,32 +262,22 @@ pytest-html  #MPL-2.0
 pytest-subtests  # MIT
 pytest-xdist  # MIT
 python-subunit  # Apache-2.0/BSD
-pyzmq  # LGPL+BSD
-redis!=4.0.0  # MIT
 requests-mock  # Apache-2.0
 respx  # BSD-3-Clause
-retrying!=1.3.0  # Apache-2.0
 sadisplay  # BSD
 selenium  # Apache-2.0
 stestr!=2.3.0,!=3.0.0  # Apache-2.0
-sushy!=1.9.0  # Apache-2.0
-tabulate  # MIT
-tenacity  # Apache-2.0
 testrepository  # Apache-2.0/BSD
 testresources  # Apache-2.0/BSD
 testscenarios  # Apache-2.0/BSD
 testtools  # MIT
 typing-extensions  # PSF
 tzdata  # MIT
-valkey  # MIT
 virtualbmc  # Apache-2.0
 virtualenv!=16.3.0  # MIT
 WebTest  # MIT
-Werkzeug!=2.2.0  # BSD License
 whereto  # Apache-2.0
-wrapt  # BSD License
 wsgi-intercept  # MIT License
-xmltodict  # MIT
 xvfbwrapper  #license: MIT
 
 ## section:docs
