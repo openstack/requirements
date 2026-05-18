@@ -245,7 +245,7 @@ hpack===4.1.0
 joblib===1.5.3
 roman-numerals===4.1.0
 google-api-python-client===2.196.0
-castellan===5.6.0
+castellan===5.7.0
 oslo.versionedobjects===3.10.2
 enmerkar===0.7.1
 webcolors===25.10.0
