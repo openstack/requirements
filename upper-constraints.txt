@@ -50,7 +50,7 @@ waiting===1.5.0
 attrs===26.1.0
 jwcrypto===1.5.7
 Pint===0.25.3
-oslo.i18n===6.7.2
+oslo.i18n===6.8.0
 jsonpath-rw-ext===1.2.2
 python-mistralclient===6.2.0
 oslo.context===6.3.0
