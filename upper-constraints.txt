@@ -370,7 +370,7 @@ pysaml2===7.5.4
 requests-oauthlib===2.0.0
 oslo.reports===3.8.0
 bitmath===2.0.1
-ceilometermiddleware===3.10.0
+ceilometermiddleware===3.11.0
 testrepository===0.0.22
 librt===0.11.0
 sympy===1.14.0
