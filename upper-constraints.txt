@@ -136,7 +136,7 @@ jsonpath-rw===1.4.0
 prettytable===3.17.0
 vine===5.1.0
 pathspec===1.1.1
-taskflow===6.2.0
+taskflow===6.3.0
 arrow===1.4.0
 semantic-version===2.10.0
 ConfigArgParse===1.7.5
