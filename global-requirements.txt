@@ -225,7 +225,6 @@ bashate  # Apache-2.0
 beartype  # MIT
 coverage!=4.4  # Apache-2.0
 ddt  # MIT
-django-nose  # BSD
 docker  # Apache-2.0
 fixtures  # Apache-2.0/BSD
 freezegun  # Apache-2.0
@@ -240,7 +239,6 @@ mock!=4.0.0,!=4.0.1  # BSD
 moto  # Apache-2.0
 mypy  # MIT
 nodeenv  # BSD
-nose  # LGPL
 openstack-doc-tools  # Apache-2.0
 os-testr  # Apache-2.0
 oslotest  # Apache-2.0
