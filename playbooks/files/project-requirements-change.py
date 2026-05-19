@@ -18,7 +18,6 @@
 import argparse
 import contextlib
 import os
-import re
 import shlex
 import shutil
 import subprocess
@@ -28,9 +27,6 @@ import tempfile
 from openstack_requirements import check  # noqa
 from openstack_requirements import project  # noqa
 from openstack_requirements import requirement  # noqa
-
-
-PYTHON_3_BRANCH = re.compile(r'^stable\/[u-z].*')
 
 
 def run_command(cmd):
@@ -144,16 +140,12 @@ def main():
         #    either.
         head_strict = not branch.startswith('stable/')
         head_reqs.process(strict=head_strict)
-        # Starting with Ussuri and later, we only need to be strict about
-        # Python 3 requirements.
-        python_3_branch = head_strict or PYTHON_3_BRANCH.match(branch)
 
         failed = check.validate(
             head_reqs,
             denylist,
             global_reqs,
             list(backports.keys()),
-            allow_3_only=python_3_branch,
         )
 
     # report the results
