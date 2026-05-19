@@ -468,7 +468,7 @@ wrapt===2.1.2
 PySocks===1.7.1
 oslo.privsep===3.11.0
 sphinxcontrib-apidoc===0.6.0
-oslo.policy===5.0.0
+oslo.policy===5.1.0
 hvac===2.4.0
 pyeclib===1.8.0
 repoze.lru===0.7
