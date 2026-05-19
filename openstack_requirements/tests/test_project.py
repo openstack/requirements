@@ -10,6 +10,7 @@
 #    License for the specific language governing permissions and limitations
 #    under the License.
 
+from io import StringIO
 import os
 import textwrap
 
@@ -53,6 +54,73 @@ class TestReadProject(testtools.TestCase):
                 'requirements': {},
                 'extras': {},
             },
+        )
+
+
+class TestVerifyPyprojectToml(testtools.TestCase):
+    def setUp(self):
+        super().setUp()
+        self.stderr = StringIO()
+        self.useFixture(fixtures.MonkeyPatch('sys.stderr', self.stderr))
+
+    def test_valid(self):
+        root = self.useFixture(common.pep_518_fixture).root
+        self.assertTrue(project.verify_pyproject_toml(root))
+        self.assertEqual('', self.stderr.getvalue())
+
+    def test_missing_file(self):
+        root = self.useFixture(fixtures.TempDir()).path
+        self.assertFalse(project.verify_pyproject_toml(root))
+        self.assertEqual(
+            'Missing pyproject.toml file\n', self.stderr.getvalue()
+        )
+
+    def test_missing_build_system(self):
+        root = self.useFixture(fixtures.TempDir()).path
+        with open(os.path.join(root, 'pyproject.toml'), 'w') as fh:
+            fh.write(
+                textwrap.dedent("""
+                [project]
+                name = "foo"
+                """)
+            )
+        self.assertFalse(project.verify_pyproject_toml(root))
+        self.assertIn(
+            "pyproject.toml is missing 'build-system' table",
+            self.stderr.getvalue(),
+        )
+
+    def test_invalid_build_backend(self):
+        root = self.useFixture(fixtures.TempDir()).path
+        with open(os.path.join(root, 'pyproject.toml'), 'w') as fh:
+            fh.write(
+                textwrap.dedent("""
+                [build-system]
+                requires = ["setuptools"]
+                build-backend = "setuptools.build_meta"
+                """)
+            )
+        self.assertFalse(project.verify_pyproject_toml(root))
+        self.assertIn(
+            "pyproject.toml has invalid 'build-system.build-backend'. "
+            "Expected 'pbr.build'; got 'setuptools.build_meta'",
+            self.stderr.getvalue(),
+        )
+
+    def test_missing_project_table(self):
+        root = self.useFixture(fixtures.TempDir()).path
+        with open(os.path.join(root, 'pyproject.toml'), 'w') as fh:
+            fh.write(
+                textwrap.dedent("""
+                [build-system]
+                requires = ["pbr>=6.0.0", "setuptools>=64.0.0"]
+                build-backend = "pbr.build"
+                """)
+            )
+        self.assertTrue(project.verify_pyproject_toml(root))
+        self.assertIn(
+            "pyproject.toml is missing 'project' table",
+            self.stderr.getvalue(),
         )
 
 
