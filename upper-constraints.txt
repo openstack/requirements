@@ -402,7 +402,7 @@ opentelemetry-exporter-otlp-proto-common===1.41.1
 distlib===0.4.0
 ast_serialize===0.3.0
 dogpile.cache===1.5.0
-python-barbicanclient===7.3.0
+python-barbicanclient===7.4.0
 salt===3007.14
 opentelemetry-semantic-conventions===0.62b1
 blinker===1.9.0
