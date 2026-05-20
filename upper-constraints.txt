@@ -359,7 +359,7 @@ protobuf===6.33.6
 sushy===5.11.0
 python-neutronclient===12.0.0
 pika===1.4.0
-oslo.cache===4.1.1
+oslo.cache===4.2.0
 WebTest===3.0.7
 os-collect-config===14.0.1
 edgegrid-python===2.0.6
