@@ -46,7 +46,7 @@ defusedxml  # PSF
 django-compressor  # MIT
 django-debreach  # BSD
 django-formtools  # BSD
-Django<4.3  # BSD
+Django<6  # BSD
 # eventlet is not compatibile with 2.0.0: https://github.com/eventlet/eventlet/issues/619
 dnspython!=2.0.0,!=2.2.0  # http://www.dnspython.org/LICENSE
 dogpile.cache!=0.9.1,!=1.1.7  # BSD
