@@ -510,7 +510,7 @@ storops===1.2.12
 anyio===4.13.0
 aiosignal===1.4.0
 XStatic-Angular-lrdragndrop===1.0.2.7
-ovsdbapp===2.17.0
+ovsdbapp===2.18.0
 aniso8601===10.0.1
 rjsmin===1.2.5
 icalendar===7.1.2
