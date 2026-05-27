@@ -23,7 +23,9 @@ yamllint
 
 # type stub packages - these do not affect runtime and are effectively only
 # for linting
+types-decorator
 types-Jinja2
+types-jmespath
 types-jsonschema
 types-paramiko
 types-python-dateutil
