@@ -439,7 +439,7 @@ openstacksdk===4.14.0
 infi.dtypes.nqn===0.1.0
 six===1.17.0
 h2===4.3.0
-dulwich===1.2.4
+dulwich===1.2.5
 sentinels===1.1.1
 kombu===5.6.2
 distro===1.9.0
