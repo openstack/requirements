@@ -121,7 +121,7 @@ MarkupSafe===3.0.3
 doc8===2.0.0
 pymongo===4.17.0
 python-cloudkittyclient===6.1.0
-soupsieve===2.8.3
+soupsieve===2.8.4
 sqlparse===0.5.5
 oslotest===6.1.1
 jsonpointer===3.1.1
@@ -144,7 +144,7 @@ semantic-version===2.10.0
 ConfigArgParse===1.7.5
 async-timeout===5.0.1
 virtualbmc===3.3.0
-SQLAlchemy===2.0.49
+SQLAlchemy===2.0.50
 pyroute2===0.8.1
 google-auth===2.53.0
 kazoo===2.11.0
@@ -212,7 +212,7 @@ XStatic-objectpath===1.2.1.1
 python-manilaclient===6.1.0
 sphinxcontrib-serializinghtml===2.0.0
 requests===2.34.2
-snowballstemmer===3.0.1
+snowballstemmer===3.1.0
 Jinja2===3.1.6
 XStatic-Bootstrap-SCSS===3.4.1.1
 pyzabbix===1.3.1
@@ -246,7 +246,7 @@ ldappool===3.0.0
 hpack===4.1.0
 joblib===1.5.3
 roman-numerals===4.1.0
-google-api-python-client===2.196.0
+google-api-python-client===2.197.0
 castellan===5.7.0
 oslo.versionedobjects===3.10.2
 enmerkar===0.7.1
@@ -256,7 +256,7 @@ autobahn===25.12.2
 SQLAlchemy-Utils===0.42.1
 retryz===0.1.9
 pluggy===1.6.0
-coverage===7.14.0
+coverage===7.14.1
 freezegun===1.5.5
 mdurl===0.1.2
 toml===0.10.2
@@ -297,8 +297,8 @@ os-win===5.9.0
 capacity===1.3.14
 markdown-it-py===4.2.0
 retrying===1.4.2
-python-discovery===1.3.1
-platformdirs===4.9.6
+python-discovery===1.4.0
+platformdirs===4.10.0
 pydotplus===2.0.2
 boto3===1.35.99
 jeepney===0.9.0
@@ -336,7 +336,7 @@ packaging===26.2
 opentelemetry-exporter-otlp-proto-grpc===1.42.1
 psutil===7.2.2
 txaio===25.12.2
-elasticsearch===9.4.0
+elasticsearch===9.4.1
 asgiref===3.11.1
 XStatic-JQuery.TableSorter===2.14.5.3
 pifpaf===3.4.0
@@ -357,7 +357,7 @@ SecretStorage===3.5.0
 XStatic-Rickshaw===1.5.1.3
 iso8601===2.1.0
 tooz===8.1.0
-idna===3.16
+idna===3.17
 yamlloader===1.6.0
 protobuf===6.33.6
 sushy===5.11.0
@@ -371,7 +371,7 @@ python-octaviaclient===3.14.0
 pysaml2===7.5.4
 requests-oauthlib===2.0.0
 oslo.reports===3.8.0
-bitmath===2.0.1
+bitmath===2.1.1
 ceilometermiddleware===3.11.0
 testrepository===0.0.22
 sympy===1.14.0
@@ -387,14 +387,14 @@ Sphinx===9.0.4
 oslo.config===10.4.0
 openstackdocstheme===3.6.0
 osc-placement===4.8.0
-rpds-py===0.30.0
+rpds-py===2026.5.1
 zake===0.2.2
 flux===1.4.0
 flexparser===0.4
 krb5===0.9.0
 PyMySQL===1.2.0
 uhashring===2.4
-kubernetes===36.0.0
+kubernetes===36.0.1
 httplib2===0.31.2
 betamax===0.9.0
 construct===2.10.70
@@ -406,7 +406,7 @@ distlib===0.4.0
 ast_serialize===0.5.0
 dogpile.cache===1.5.0
 python-barbicanclient===7.4.0
-salt===3007.14
+salt===3008.0
 opentelemetry-semantic-conventions===0.63b1
 blinker===1.9.0
 WSME===0.12.1
@@ -419,10 +419,10 @@ pyasn1===0.6.3
 oslo.rootwrap===7.9.0
 Django===5.2.14
 pexpect===4.9.0
-elastic-transport===9.4.0
+elastic-transport===9.4.1
 cmd2===3.5.1
 python-json-logger===4.1.0
-redis===7.4.0
+redis===8.0.0
 jmespath===1.1.0
 cbor2===6.1.1
 click===8.4.1
@@ -439,7 +439,7 @@ openstacksdk===4.14.0
 infi.dtypes.nqn===0.1.0
 six===1.17.0
 h2===4.3.0
-dulwich===1.2.4
+dulwich===1.2.5
 sentinels===1.1.1
 kombu===5.6.2
 distro===1.9.0
@@ -561,7 +561,7 @@ itsdangerous===2.2.0
 XStatic-jquery-ui===1.13.0.2
 monasca-statsd===2.7.0
 python-dateutil===2.9.0.post0
-virtualenv===21.3.3
+virtualenv===21.4.1
 colorama===0.4.6
 confetti===2.5.3
 ironic-lib===7.0.0
