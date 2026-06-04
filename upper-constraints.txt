@@ -69,7 +69,7 @@ storage-interfaces===1.0.5
 pydantic===2.13.4
 pystache===0.6.8
 XStatic-Font-Awesome===6.2.1.2
-aiohttp===3.13.5
+aiohttp===3.14.0
 waitress===3.0.2
 os-refresh-config===14.0.1
 pysnmp===7.1.27
