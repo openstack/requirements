@@ -9,7 +9,7 @@ anyjson>=0.3.3
 eventlet>=0.9.12
 PasteDeploy
 routes
-WebOb>=1.2
+WebOb>=1.8.10
 wsgiref
 argparse
 boto
