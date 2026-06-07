@@ -49,7 +49,7 @@ class CheckExistsTest(testtools.TestCase):
     )
     def test_good_project(self, mock_project_read):
         ret = check_exists.main([common.project_fixture.root])
-        self.assertEqual(ret, 0)
+        self.assertEqual(0, ret)
 
     @mock.patch(
         'openstack_requirements.cmds.check_exists.read_requirements_file',
@@ -85,7 +85,7 @@ class CheckExistsTest(testtools.TestCase):
             mock.patch(read_req_path, remove_req_read_reqs_file),
         ):
             ret = check_exists.main([common.project_fixture.root])
-        self.assertEqual(ret, 1)
+        self.assertEqual(1, ret)
         self.assertIn(expected_out, mock_stdout.getvalue())
 
     @mock.patch(
@@ -115,7 +115,7 @@ class CheckExistsTest(testtools.TestCase):
             mock.patch('sys.stdout', mock_stdout),
         ):
             ret = check_exists.main([common.project_fixture.root])
-        self.assertEqual(ret, 1)
+        self.assertEqual(1, ret)
         self.assertIn(expected_out, mock_stdout.getvalue())
 
     @mock.patch(
@@ -167,7 +167,7 @@ class CheckExistsTest(testtools.TestCase):
             mock.patch(read_req_path, remove_req_read_reqs_file),
         ):
             ret = check_exists.main([common.project_fixture.root])
-        self.assertEqual(ret, 1)
+        self.assertEqual(1, ret)
         for expected in expected_outs:
             self.assertIn(expected, mock_stdout.getvalue())
 
@@ -195,7 +195,7 @@ class CheckExistsTest(testtools.TestCase):
             mock.patch('sys.stdout', mock_stdout),
         ):
             ret = check_exists.main([common.project_fixture.root])
-        self.assertEqual(ret, 1)
+        self.assertEqual(1, ret)
         self.assertIn(expected_out, mock_stdout.getvalue())
 
     @mock.patch(
@@ -224,5 +224,5 @@ class CheckExistsTest(testtools.TestCase):
             mock.patch('sys.stdout', mock_stdout),
         ):
             ret = check_exists.main([common.project_fixture.root])
-        self.assertEqual(ret, 1)
+        self.assertEqual(1, ret)
         self.assertIn(expected_out, mock_stdout.getvalue())

@@ -49,11 +49,11 @@ class TestRequirementsList(testtools.TestCase):
         test_reqs = req_list.reqs_by_file['setup.cfg (.[test] extra)']
         dev_reqs = req_list.reqs_by_file['setup.cfg (.[dev] extra)']
 
-        self.assertEqual(len(test_reqs), 2)
+        self.assertEqual(2, len(test_reqs))
         self.assertIn('pytest', test_reqs)
         self.assertIn('flake8', test_reqs)
 
-        self.assertEqual(len(dev_reqs), 2)
+        self.assertEqual(2, len(dev_reqs))
         self.assertIn('black', dev_reqs)
         self.assertIn('mypy', dev_reqs)
 
