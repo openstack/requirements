@@ -129,7 +129,6 @@ def _is_requirement_in_global_reqs(
     local_req,
     global_reqs,
     backports,
-    allow_3_only=False,
 ):
     req_exclusions = _get_exclusions(local_req)
     for global_req in global_reqs:
@@ -138,10 +137,10 @@ def _is_requirement_in_global_reqs(
             local_req_val = getattr(local_req, aname)
             global_req_val = getattr(global_req, aname)
             if local_req_val != global_req_val:
-                # if a python 3 version is not spefied in only one of
+                # if a python 3 version is not specified in only one of
                 # global requirements or local requirements, allow it since
                 # python 3-only is okay
-                if allow_3_only and matching and aname == 'markers':
+                if matching and aname == 'markers':
                     if not local_req_val and PY3_GLOBAL_SPECIFIER_RE.match(
                         global_req_val
                     ):
@@ -250,7 +249,6 @@ def _validate_one(
     denylist,
     global_reqs,
     backports,
-    allow_3_only=False,
 ):
     """Returns True if there is a failure."""
 
@@ -276,7 +274,6 @@ def _validate_one(
             req,
             global_reqs[name],
             backports,
-            allow_3_only,
         ):
             return True
 
@@ -289,22 +286,8 @@ def _validate_one(
             return True
 
     for extra, count in counts.items():
-        # Make sure the number of entries matches. If allow_3_only, then we
-        # just need to make sure we have at least the number of entries for
-        # supported Python 3 versions.
+        # Make sure the number of entries matches.
         if count != len(global_reqs[name]):
-            if allow_3_only and count >= len(
-                _get_python3_reqs(global_reqs[name])
-            ):
-                print(
-                    "WARNING (probably OK for Ussuri and later): "
-                    "Package '{}{}' is only tracking python 3 "
-                    "requirements".format(
-                        name, (f'[{extra}]') if extra else ''
-                    )
-                )
-                continue
-
             print(
                 "ERROR: Package '{}{}' requirement does not match "
                 "number of lines ({}) in "
@@ -324,7 +307,6 @@ def validate(
     denylist,
     global_reqs,
     backports,
-    allow_3_only=False,
 ):
     failed = False
     # iterate through the changing entries and see if they match the global
@@ -339,7 +321,6 @@ def validate(
                     denylist,
                     global_reqs,
                     backports,
-                    allow_3_only,
                 )
                 or failed
             )
