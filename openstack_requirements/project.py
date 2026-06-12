@@ -123,6 +123,35 @@ def _read_setup_cfg_extras(root: str) -> dict[str, list[str]] | None:
     return result
 
 
+def verify_pyproject_toml(root: str) -> bool:
+    data = _read_pyproject_toml(root)
+
+    if data is None:
+        print('Missing pyproject.toml file', file=sys.stderr)
+        return False
+
+    if 'build-system' not in data:
+        print("pyproject.toml is missing 'build-system' table", file=sys.stderr)
+        return False
+
+    if (build_backend := data['build-system'].get('build-backend')) != 'pbr.build':
+        print(
+            f"pyproject.toml has invalid 'build-system.build-backend'. "
+            f"Expected 'pbr.build'; got {build_backend!r}",
+            file=sys.stderr,
+        )
+        return False
+
+    if 'project' not in data:
+        print(
+            "pyproject.toml is missing 'project' table. This is not currently "
+            "an error but may be in the future",
+            file=sys.stderr,
+        )
+
+    return True
+
+
 class Project(TypedDict):
     # The root directory path
     root: str
