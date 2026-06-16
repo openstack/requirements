@@ -72,6 +72,7 @@ grpcio  # Apache-2.0
 gunicorn  # MIT
 httplib2  # MIT
 httpx  # BSD
+Hypercorn  # MIT
 hvac  # Apache-2.0
 icalendar  # BSD
 # Do not make importlib-metadata conditional on Python version: we depend on
