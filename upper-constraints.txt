@@ -385,7 +385,7 @@ python-consul===1.1.0
 more-itertools===11.1.0
 seqdiag===3.0.0
 numpy===2.4.6
-msgpack===1.2.0
+msgpack===1.2.1
 Sphinx===9.0.4
 oslo.config===10.5.0
 openstackdocstheme===3.6.0
