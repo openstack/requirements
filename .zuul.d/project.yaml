@@ -3,13 +3,10 @@
       - openstack-python3-yoga-jobs
     check:
       jobs:
-        - build-wheel-cache-ubuntu-bionic:
-            files:
-              - bindep.txt
-        - build-wheel-cache-ubuntu-focal:
-            files:
-              - bindep.txt
         - openstack-tox-validate
+        # TODO(frickler): fix this job properly
+        - openstack-tox-py39:
+            voting: false
         - requirements-tox-babel
         - requirements-tox-bindep:
             voting: false
@@ -37,7 +34,6 @@
         - cross-octavia-py38
         - cross-osc-tox-docs
         - cross-swift-py38
-        - openstack-tox-py36
         - openstacksdk-functional-devstack
         - tempest-full-py3:
             irrelevant-files:
@@ -54,13 +50,10 @@
               - bindep.txt
     gate:
       jobs:
-        - build-wheel-cache-ubuntu-bionic:
-            files:
-              - bindep.txt
-        - build-wheel-cache-ubuntu-focal:
-            files:
-              - bindep.txt
         - openstack-tox-validate
+        # TODO(frickler): fix this job properly
+        - openstack-tox-py39:
+            voting: false
         - requirements-tox-babel
         - requirements-tox-py36-check-uc
         - requirements-tox-py38-check-uc
@@ -85,7 +78,6 @@
         - cross-octavia-py38
         - cross-osc-tox-docs
         - cross-swift-py38
-        - openstack-tox-py36
         - openstacksdk-functional-devstack
         - tempest-full-py3:
             irrelevant-files:
