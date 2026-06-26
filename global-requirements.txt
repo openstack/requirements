@@ -8,6 +8,7 @@
 
 ## section:general
 
+a2wsgi  # Apache-2.0
 aiomysql  # MIT License
 aiosqlite  # MIT License
 alembic!=1.2.0,!=1.6.3  # MIT
