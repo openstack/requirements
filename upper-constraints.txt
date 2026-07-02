@@ -390,7 +390,7 @@ msgpack===1.2.1
 Sphinx===9.0.4
 oslo.config===10.5.0
 openstackdocstheme===3.6.0
-osc-placement===4.8.0
+osc-placement===4.9.0
 rpds-py===2026.5.1
 zake===0.2.2
 flux===1.4.0
