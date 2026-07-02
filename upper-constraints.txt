@@ -364,7 +364,7 @@ tooz===8.1.0
 idna===3.18
 yamlloader===1.6.0
 protobuf===6.33.6
-sushy===5.11.0
+sushy===5.11.1
 python-neutronclient===12.0.0
 pika===1.4.1
 oslo.cache===4.2.0
