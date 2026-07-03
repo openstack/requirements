@@ -508,7 +508,7 @@ proto-plus===1.28.0
 python-keystoneclient===5.8.0
 diskimage-builder===3.42.0
 heat-translator===3.5.0
-python-magnumclient===4.10.0
+python-magnumclient===4.11.0
 docker===7.1.0
 repoze-lru===0.8
 storops===1.2.12
