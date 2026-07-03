@@ -115,7 +115,7 @@ debtcollector===3.1.0
 responses===0.26.1
 prompt_toolkit===3.0.52
 croniter===6.2.2
-horizon===25.7.3
+horizon===26.0.0
 octavia-lib===3.11.0
 python-watcherclient===4.10.0
 MarkupSafe===3.0.3
