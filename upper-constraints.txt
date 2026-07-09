@@ -366,7 +366,7 @@ Hypercorn===0.18.0
 yamlloader===1.6.0
 protobuf===7.35.1
 sushy===5.11.1
-python-neutronclient===12.0.0
+python-neutronclient===13.0.0
 pika===1.4.1
 oslo.cache===4.2.0
 WebTest===3.0.7
