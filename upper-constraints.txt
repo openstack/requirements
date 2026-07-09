@@ -250,7 +250,7 @@ joblib===1.5.3
 roman-numerals===4.1.0
 google-api-python-client===2.198.0
 castellan===5.7.0
-oslo.versionedobjects===3.10.2
+oslo.versionedobjects===3.11.0
 enmerkar===0.7.1
 webcolors===25.10.0
 aodhclient===3.11.0
