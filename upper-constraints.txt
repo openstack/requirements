@@ -375,7 +375,7 @@ edgegrid-python===2.0.7
 python-octaviaclient===3.14.0
 pysaml2===7.5.4
 requests-oauthlib===2.0.0
-oslo.reports===3.8.0
+oslo.reports===3.9.0
 bitmath===2.1.1
 ceilometermiddleware===3.12.0
 testrepository===0.0.22
