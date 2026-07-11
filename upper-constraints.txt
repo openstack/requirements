@@ -309,7 +309,7 @@ jeepney===0.9.0
 stestr===4.2.1
 pillow===12.2.0
 infoblox-client===0.6.2
-oslo.serialization===5.10.0
+oslo.serialization===5.11.0
 warlock===2.1.0
 exabgp===5.0.9
 aiomysql===0.3.2
