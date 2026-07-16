@@ -389,7 +389,7 @@ seqdiag===3.0.0
 numpy===2.4.6
 msgpack===1.2.1
 Sphinx===9.0.4
-oslo.config===10.5.0
+oslo.config===10.6.0
 openstackdocstheme===3.6.0
 osc-placement===4.9.0
 rpds-py===2026.5.1
