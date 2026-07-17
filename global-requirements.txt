@@ -424,7 +424,6 @@ python-openstackclient!=7.3.0,!=7.3.1  # Apache-2.0
 python-swiftclient  # Apache-2.0
 python-tackerclient  # Apache-2.0
 python-troveclient  # Apache-2.0
-python-vitrageclient  # Apache-2.0
 python-watcherclient  # Apache-2.0
 python-zaqarclient  # Apache-2.0
 python-zunclient  # Apache-2.0
