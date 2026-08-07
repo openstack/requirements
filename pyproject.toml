@@ -49,8 +49,14 @@ quote-style = "preserve"
 docstring-code-format = true
 
 [tool.ruff.lint]
-select = ["E", "F", "UP"]
+select = ["B", "E", "F", "RUF", "UP"]
+ignore = [
+    # next(iter(x)) is harder to read than list(x)[0]
+    "RUF015",
+]
 
-# [tool.ruff.lint.per-file-ignores]
-# "openstack/tests/*" = ["S"]
-# "examples/*" = ["S"]
+[tool.ruff.lint.per-file-ignores]
+"openstack_requirements/tests/*" = [
+    # don't want to annotate testscenarios scenarios
+    "RUF012"
+]

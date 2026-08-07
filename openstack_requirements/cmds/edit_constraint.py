@@ -66,7 +66,7 @@ def main(argv=None, stdout=None):
     if stdout is None:
         stdout = sys.stdout
     _validate_options(options, args)
-    args = args + [""]
+    args = [*args, ""]
     content = open(args[0]).read()
     reqs = requirement.parse(content, permit_urls=True)
     out_reqs = edit(reqs, args[1], args[2])

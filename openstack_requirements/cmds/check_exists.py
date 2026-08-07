@@ -10,9 +10,9 @@
 # License for the specific language governing permissions and limitations
 # under the License.
 
-"""Check to see if a package from a project's requrements file exist in g-r or
-u-c.
+"""Check for a package dependency.
 
+Check to see if a package from a project's dependencies exists in g-r or u-c.
 """
 
 import argparse
@@ -28,7 +28,9 @@ from openstack_requirements.utils import read_requirements_file
 def main(args=None):
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        'project', default='', help='path to the project source root folder.'
+        'project',
+        default='',
+        help='path to the project source root folder.',
     )
     parser.add_argument(
         '-u',
@@ -115,7 +117,7 @@ def main(args=None):
                                 print(
                                     f'Specifier {spec.version} from {name} is '
                                     f'failing check from global-requirements '
-                                    f'specifiers {str(spec_gr)}'
+                                    f'specifiers {spec_gr!s}'
                                 )
                                 error_count += 1
                                 continue
