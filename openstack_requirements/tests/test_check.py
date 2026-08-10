@@ -38,6 +38,7 @@ class TestRequirementsList(testtools.TestCase):
                     'dev': ['black>=24.0.0', 'mypy>=0.900'],
                 }
             },
+            'dependency_groups': {},
         }
 
         req_list = check.RequirementsList('test-project', project_data)
@@ -56,6 +57,84 @@ class TestRequirementsList(testtools.TestCase):
         self.assertEqual(2, len(dev_reqs))
         self.assertIn('black', dev_reqs)
         self.assertIn('mypy', dev_reqs)
+
+    def test_extras__pyproject_toml(self):
+        project_data = {
+            'root': '/fake/root',
+            'requirements': {
+                'pyproject.toml': ['requests>=2.0.0', 'six>=1.0.0'],
+            },
+            'extras': {
+                'pyproject.toml': {
+                    'security': ['cryptography>=3.0.0'],
+                },
+            },
+            'dependency_groups': {
+                'pyproject.toml': {
+                    'test': ['pytest>=6.0.0', 'coverage>=7.0.0'],
+                    'typing': ['mypy>=0.900', 'types-requests'],
+                    'typing-test': [
+                        'mypy>=0.900',
+                        'types-requests',
+                        'pytest>=6.0.0',
+                        'coverage>=7.0.0',
+                    ],
+                },
+            },
+        }
+
+        req_list = check.RequirementsList('test-project', project_data)
+        req_list.process(strict=False)
+
+        self.assertIn('pyproject.toml (dependencies)', req_list.reqs_by_file)
+        self.assertIn(
+            "pyproject.toml ('security' extra)", req_list.reqs_by_file
+        )
+        self.assertIn(
+            "pyproject.toml ('test' dependency group)", req_list.reqs_by_file
+        )
+        self.assertIn(
+            "pyproject.toml ('typing' dependency group)", req_list.reqs_by_file
+        )
+        self.assertIn(
+            "pyproject.toml ('typing-test' dependency group)",
+            req_list.reqs_by_file,
+        )
+
+        main_reqs = req_list.reqs_by_file['pyproject.toml (dependencies)']
+        security_reqs = req_list.reqs_by_file[
+            "pyproject.toml ('security' extra)"
+        ]
+        test_reqs = req_list.reqs_by_file[
+            "pyproject.toml ('test' dependency group)"
+        ]
+        typing_reqs = req_list.reqs_by_file[
+            "pyproject.toml ('typing' dependency group)"
+        ]
+        typing_test_reqs = req_list.reqs_by_file[
+            "pyproject.toml ('typing-test' dependency group)"
+        ]
+
+        self.assertEqual(len(main_reqs), 2)
+        self.assertIn('requests', main_reqs)
+        self.assertIn('six', main_reqs)
+
+        self.assertEqual(len(security_reqs), 1)
+        self.assertIn('cryptography', security_reqs)
+
+        self.assertEqual(len(test_reqs), 2)
+        self.assertIn('pytest', test_reqs)
+        self.assertIn('coverage', test_reqs)
+
+        self.assertEqual(len(typing_reqs), 2)
+        self.assertIn('mypy', typing_reqs)
+        self.assertIn('types-requests', typing_reqs)
+
+        self.assertEqual(len(typing_test_reqs), 4)
+        self.assertIn('mypy', typing_test_reqs)
+        self.assertIn('types-requests', typing_test_reqs)
+        self.assertIn('pytest', typing_test_reqs)
+        self.assertIn('coverage', typing_test_reqs)
 
 
 class TestIsReqInGlobalReqs(testtools.TestCase):

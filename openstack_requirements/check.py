@@ -116,6 +116,14 @@ class RequirementsList:
                     self.extract_reqs(content, strict)
                 )
 
+        for fname, groups in self.project['dependency_groups'].items():
+            print(f"Processing {fname} (dependency-groups)")
+            for name, content in groups.items():
+                print(f"  Processing {name!r} dependency group")
+                self.reqs_by_file[f'{fname} ({name!r} dependency group)'] = (
+                    self.extract_reqs(content, strict)
+                )
+
 
 def _get_exclusions(req):
     return set(
