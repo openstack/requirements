@@ -182,7 +182,7 @@ glance_store===5.4.0
 openstack-release-test===8.3.0
 requests-mock===1.12.1
 os-apply-config===14.0.1
-gunicorn===25.1.0
+gunicorn===25.2.0
 storpool===7.3.0
 textfsm===2.1.0
 python-3parclient===4.2.14
