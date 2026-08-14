@@ -384,7 +384,6 @@ Logbook===1.9.2
 PyNaCl===1.6.2
 osc-lib===4.7.0
 py-consul===1.7.1
-python-consul===1.1.0
 more-itertools===11.1.0
 seqdiag===3.0.0
 numpy===2.4.6

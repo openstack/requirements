@@ -489,7 +489,6 @@ wheel  # MIT
 jsonpath-rw  # Apache-2.0
 jsonpath-rw-ext  # Apache-2.0
 py-consul  # MIT License
-python-consul  # MIT License
 python-consul2  # MIT License
 simplejson  # MIT
 six  # MIT
