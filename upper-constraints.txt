@@ -311,7 +311,7 @@ pillow===12.2.0
 infoblox-client===0.6.2
 oslo.serialization===5.11.0
 warlock===2.1.0
-exabgp===5.0.9
+exabgp===5.0.10
 aiomysql===0.3.2
 sphinxcontrib-httpdomain===2.0.0
 metalsmith===2.5.0
