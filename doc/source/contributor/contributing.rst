@@ -15,16 +15,12 @@ Communication
 =============
 We are on the #openstack-requirements channel on the OFTC IRC network.
 
-Our meetings are currently Wednesdays at 2030 UTC.  See the
-`official meeting <https://wiki.openstack.org/wiki/Meetings/Requirements>`_ for
-up to date info.
-
 Contacting the Core Team
 ++++++++++++++++++++++++
 On IRC the nicks of our core team are as follows.
 
-* dirk
-* smcginnis
+* frickler
+* mnasiadka
 * prometheanfire
 
 New Feature Planning
