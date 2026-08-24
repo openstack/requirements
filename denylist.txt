@@ -28,6 +28,7 @@ types-Jinja2
 types-jmespath
 types-jsonschema
 types-paramiko
+types-psutil
 types-python-dateutil
 types-PyYAML
 types-requests
