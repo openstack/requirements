@@ -6,6 +6,8 @@
 # *STRONGLY* encouraged to rely on curated distributions of OpenStack
 # or manage security patching of dependencies themselves.
 voluptuous===0.16.0
+anycrc===2.0.0
+bitarray===3.8.0
 chardet===6.0.0.post1
 enum-compat===0.0.3
 netmiko===4.7.0

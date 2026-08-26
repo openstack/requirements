@@ -13,6 +13,7 @@ aiomysql  # MIT License
 aiosqlite  # MIT License
 alembic!=1.2.0,!=1.6.3  # MIT
 amqp!=2.1.4,!=5.0.4  # BSD
+anycrc  # Zlib
 appdirs  # MIT License
 apscheduler  # MIT License
 autobahn  # MIT License
