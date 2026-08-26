@@ -432,7 +432,7 @@ jmespath===1.1.0
 cbor2===6.1.4
 click===8.4.2
 XStatic-smart-table===1.4.13.3
-kuryr-lib===3.4.1
+kuryr-lib===3.5.0
 jsonpatch===1.33
 respx===0.23.1
 libsass===0.23.0
