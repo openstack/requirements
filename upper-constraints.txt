@@ -122,7 +122,7 @@ python-watcherclient===4.10.0
 MarkupSafe===3.0.3
 doc8===2.0.0
 pymongo===4.17.0
-python-cloudkittyclient===6.1.0
+python-cloudkittyclient===6.2.0
 soupsieve===2.9.2
 sqlparse===0.6.0
 oslotest===6.1.1
