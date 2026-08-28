@@ -511,7 +511,7 @@ python-keystoneclient===5.8.0
 diskimage-builder===3.42.0
 py-consul===1.7.1
 heat-translator===3.5.0
-python-magnumclient===4.11.0
+python-magnumclient===5.0.0
 docker===7.2.0
 repoze-lru===0.8
 storops===1.2.12
