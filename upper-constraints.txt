@@ -118,7 +118,7 @@ prompt_toolkit===3.0.53
 croniter===6.2.4
 horizon===26.0.0
 octavia-lib===3.12.0
-python-watcherclient===4.10.0
+python-watcherclient===4.11.0
 MarkupSafe===3.0.3
 doc8===2.0.0
 pymongo===4.17.0
