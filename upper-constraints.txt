@@ -495,7 +495,7 @@ Werkzeug===3.1.8
 outcome===1.3.0.post0
 APScheduler===3.11.3
 xmlschema===2.5.1
-python-troveclient===8.10.0
+python-troveclient===8.11.0
 hpe-storage-flowkit-py===0.9.5
 cachez===0.1.2
 XStatic-Bootstrap-Datepicker===1.4.0.1
