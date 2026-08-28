@@ -194,7 +194,7 @@ storpool===7.3.0
 textfsm===2.1.0
 python-3parclient===4.4
 libvirt-python===12.6.0
-python-zunclient===5.4.0
+python-zunclient===5.5.0
 tzlocal===5.4.4
 sysv_ipc===1.2.0
 sphinxcontrib-jsmath===1.0.1
