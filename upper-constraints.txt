@@ -561,7 +561,7 @@ sortedcontainers===2.4.0
 microversion_parse===2.1.0
 python-linstor===1.29.0
 filelock===3.32.3
-python-tackerclient===2.5.0
+python-tackerclient===2.6.0
 python-heatclient===5.3.0
 oslo.utils===10.2.0
 requests-kerberos===0.15.0
