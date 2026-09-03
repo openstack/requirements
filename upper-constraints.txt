@@ -280,7 +280,7 @@ oslo.log===8.3.1
 nodeenv===1.10.0
 gossip===2.5.0
 suds-community===1.2.0
-os_vif===5.2.0
+os_vif===5.2.1
 qrcode===8.2
 oslo.middleware===8.2.0
 XStatic-mdi===1.6.50.3
