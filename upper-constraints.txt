@@ -547,7 +547,7 @@ backports.tarfile===1.2.0
 narwhals===2.24.0
 xvfbwrapper===0.2.29
 influxdb-client===1.50.0
-tosca-parser===2.14.0
+tosca-parser===2.15.0
 python-consul2===0.1.5
 charset-normalizer===3.5.0
 Flask===3.1.3
