@@ -353,7 +353,7 @@ sadisplay===0.4.9
 enum34===1.1.10
 infinisdk===289.1.4
 rich-argparse===1.8.0
-packaging===24.0
+packaging===26.3
 opentelemetry-exporter-otlp-proto-grpc===1.45.0
 psutil===7.2.2
 txaio===26.6.1
@@ -429,7 +429,7 @@ distlib===0.4.3
 ast_serialize===0.11.2
 dogpile.cache===1.5.0
 python-barbicanclient===7.6.0
-salt===3008.2
+salt===3008.0
 opentelemetry-semantic-conventions===0.66b0
 blinker===1.9.0
 WSME===0.13.0
