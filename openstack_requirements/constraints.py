@@ -67,7 +67,8 @@ def check_format(parsed_constraints):
         for req, original_line in spec_list:
             if not req.specifiers.startswith('==='):
                 yield (
-                    f'Invalid constraint for {name} does not have 3 "=": {original_line}'
+                    f'Invalid constraint for {name} does not have 3 "=": '
+                    f'{original_line}'
                 )
 
 
@@ -106,7 +107,8 @@ def check_compatible(global_reqs, constraints):
                 return True
             tested.append(constraint.specifiers)
         failures.append(
-            f'Constraint {version} for {name} does not match requirement {tested}'
+            f'Constraint {version} for {name} does not match requirement '
+            f'{tested}'
         )
         return False
 

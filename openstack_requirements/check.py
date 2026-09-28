@@ -165,14 +165,13 @@ def _is_requirement_in_global_reqs(
                         continue
 
                 print(
-                    f'WARNING: possible mismatch found for package "{local_req.package}"'
-                )  # noqa: E501
-                print(f'   Attribute "{aname}" does not match')
-                print(
-                    f'   "{local_req_val}" does not match "{global_req_val}"'
-                )  # noqa: E501
-                print(f'   {local_req}')
-                print(f'   {global_req}')
+                    f'WARNING: possible mismatch found for package '
+                    f'{local_req.package!r}\n'
+                    f'   Attribute "{aname}" does not match\n'
+                    f'   "{local_req_val}" does not match "{global_req_val}"\n'
+                    f'   {local_req}\n'
+                    f'   {global_req}'
+                )
                 matching = False
         if not matching:
             continue
@@ -187,8 +186,7 @@ def _is_requirement_in_global_reqs(
             difference = req_exclusions - global_exclusions
             print(
                 f"ERROR: Requirement for package {local_req.package} "
-                f"excludes a version not excluded in the "
-                f"global list.\n"
+                f"excludes a version not excluded in the global list.\n"
                 f"  Local settings : {list(req_exclusions)}\n"
                 f"  Global settings: {list(global_exclusions)}\n"
                 f"  Unexpected     : {list(difference)}"
