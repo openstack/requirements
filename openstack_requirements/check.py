@@ -142,9 +142,8 @@ def _is_requirement_in_global_reqs(
                     # if a Python version marker is specified globally but not
                     # locally, allow it since this is unnecessary boilerplate
                     # for projects to carry
-                    if (
-                        not local_req_val
-                        and PY3_GLOBAL_SPECIFIER_RE.match(global_req_val)
+                    if not local_req_val and PY3_GLOBAL_SPECIFIER_RE.match(
+                        global_req_val
                     ):
                         continue
 
@@ -160,9 +159,8 @@ def _is_requirement_in_global_reqs(
 
                     # OpenStack no longer supports Windows. If a package wants
                     # to drop their sys_platform marker, let them.
-                    if (
-                        not local_req_val
-                        and WINDOWS_SPECIFIER_RE.match(global_req_val)
+                    if not local_req_val and WINDOWS_SPECIFIER_RE.match(
+                        global_req_val
                     ):
                         continue
 

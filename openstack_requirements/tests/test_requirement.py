@@ -34,9 +34,7 @@ class TestParseRequirement(testtools.TestCase):
         (
             'specifiers',
             'alembic>=0.4.1,!=1.1.8',
-            requirement.Requirement(
-                'alembic', '', '!=1.1.8,>=0.4.1', '', ''
-            ),
+            requirement.Requirement('alembic', '', '!=1.1.8,>=0.4.1', '', ''),
             False,
         ),
         (
