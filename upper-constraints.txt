@@ -198,7 +198,7 @@ glance_store===5.7.0
 openstack-release-test===8.5.0
 pycryptodomex===3.23.0
 requests-mock===1.12.1
-os-apply-config===14.0.1
+os-apply-config===14.1.0
 xxhash===4.0.1
 gunicorn===26.2.0
 storpool===7.3.0
