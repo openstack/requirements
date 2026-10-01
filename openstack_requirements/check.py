@@ -36,11 +36,6 @@ class RequirementsList:
         self.project = project
         self.failed = False
 
-    @property
-    def reqs(self) -> dict[str, set[str]]:
-        """Flattens the list of per-file reqs."""
-        return {k: v for d in self.reqs_by_file.values() for k, v in d.items()}
-
     def extract_reqs(
         self, content: list[str], strict: bool
     ) -> dict[str, set[str]]:
