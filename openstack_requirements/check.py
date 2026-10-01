@@ -18,12 +18,9 @@ import collections
 import re
 import sys
 
-from packaging import markers
-
 from openstack_requirements.project import Project
 from openstack_requirements import requirement
 
-MIN_PY_VERSION = '3.5'
 PY3_GLOBAL_SPECIFIER_RE = re.compile(
     r'python_version(==|>=|>)[\'"]3\.\d+[\'"]'
 )
@@ -232,23 +229,6 @@ def get_global_reqs(content):
         # Discard the lines: we don't need them.
         global_reqs[k] = set(r for (r, line) in entries)
     return global_reqs
-
-
-def _get_python3_reqs(reqs):
-    """Filters out the reqs that are less than our minimum version."""
-    results = []
-    for req in reqs:
-        if not req.markers:
-            results.append(req)
-        else:
-            req_markers = markers.Marker(req.markers)
-            if req_markers.evaluate(
-                {
-                    'python_version': MIN_PY_VERSION,
-                }
-            ):
-                results.append(req)
-    return results
 
 
 def _validate_one(
