@@ -14,14 +14,11 @@ import io
 import os
 from unittest import mock
 
-import testscenarios
 import testtools
 
 from openstack_requirements.cmds import check_exists
 from openstack_requirements import project
 from openstack_requirements.tests import common
-
-load_tests = testscenarios.load_tests_apply_scenarios
 
 
 def mock_read_requirements_file(filename):

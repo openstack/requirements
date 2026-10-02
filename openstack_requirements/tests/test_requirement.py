@@ -12,187 +12,160 @@
 
 import textwrap
 
-import testscenarios
 import testtools
 
 from openstack_requirements import requirement
-
-
-load_tests = testscenarios.load_tests_apply_scenarios
 
 
 class TestParseRequirement(testtools.TestCase):
     dist_scenarios = [
         (
             'package',
-            dict(
-                line='swift',
-                req=requirement.Requirement('swift', '', '', '', ''),
-            ),
+            'swift',
+            requirement.Requirement('swift', '', '', '', ''),
+            False,
         ),
         (
             'specifier',
-            dict(
-                line='alembic>=0.4.1',
-                req=requirement.Requirement('alembic', '', '>=0.4.1', '', ''),
-            ),
+            'alembic>=0.4.1',
+            requirement.Requirement('alembic', '', '>=0.4.1', '', ''),
+            False,
         ),
         (
             'specifiers',
-            dict(
-                line='alembic>=0.4.1,!=1.1.8',
-                req=requirement.Requirement(
-                    'alembic', '', '!=1.1.8,>=0.4.1', '', ''
-                ),
+            'alembic>=0.4.1,!=1.1.8',
+            requirement.Requirement(
+                'alembic', '', '!=1.1.8,>=0.4.1', '', ''
             ),
+            False,
         ),
         (
             'comment-only',
-            dict(
-                line='# foo',
-                req=requirement.Requirement('', '', '', '', '# foo'),
-            ),
+            '# foo',
+            requirement.Requirement('', '', '', '', '# foo'),
+            False,
         ),
         (
             'comment',
-            dict(
-                line='Pint>=0.5  # BSD',
-                req=requirement.Requirement('Pint', '', '>=0.5', '', '# BSD'),
-            ),
+            'Pint>=0.5  # BSD',
+            requirement.Requirement('Pint', '', '>=0.5', '', '# BSD'),
+            False,
         ),
         (
             'comment-with-semicolon',
-            dict(
-                line='Pint>=0.5  # BSD;fred',
-                req=requirement.Requirement(
-                    'Pint', '', '>=0.5', '', '# BSD;fred'
-                ),
-            ),
+            'Pint>=0.5  # BSD;fred',
+            requirement.Requirement('Pint', '', '>=0.5', '', '# BSD;fred'),
+            False,
         ),
         (
             'case',
-            dict(
-                line='Babel>=1.3',
-                req=requirement.Requirement('Babel', '', '>=1.3', '', ''),
-            ),
+            'Babel>=1.3',
+            requirement.Requirement('Babel', '', '>=1.3', '', ''),
+            False,
         ),
         (
             'markers',
-            dict(
-                line="pywin32;sys_platform=='win32'",
-                req=requirement.Requirement(
-                    'pywin32', '', '', "sys_platform=='win32'", ''
-                ),
+            "pywin32;sys_platform=='win32'",
+            requirement.Requirement(
+                'pywin32', '', '', "sys_platform=='win32'", ''
             ),
+            False,
         ),
         (
             'markers-with-comment',
-            dict(
-                line="Sphinx<=1.2; python_version=='2.7'# Sadface",
-                req=requirement.Requirement(
-                    'Sphinx', '', '<=1.2', "python_version=='2.7'", '# Sadface'
-                ),
+            "Sphinx<=1.2; python_version=='2.7'# Sadface",
+            requirement.Requirement(
+                'Sphinx', '', '<=1.2', "python_version=='2.7'", '# Sadface'
             ),
+            False,
         ),
     ]
     url_scenarios = [
         (
             'url',
-            dict(
-                line='file:///path/to/thing#egg=thing',
-                req=requirement.Requirement(
-                    'thing', 'file:///path/to/thing', '', '', ''
-                ),
-                permit_urls=True,
+            'file:///path/to/thing#egg=thing',
+            requirement.Requirement(
+                'thing', 'file:///path/to/thing', '', '', ''
             ),
+            True,
         ),
         (
             'oslo-url',
-            dict(
-                line='file:///path/to/oslo.thing#egg=oslo.thing',
-                req=requirement.Requirement(
-                    'oslo.thing', 'file:///path/to/oslo.thing', '', '', ''
-                ),
-                permit_urls=True,
+            'file:///path/to/oslo.thing#egg=oslo.thing',
+            requirement.Requirement(
+                'oslo.thing', 'file:///path/to/oslo.thing', '', '', ''
             ),
+            True,
         ),
         (
             'url-comment',
-            dict(
-                line='file:///path/to/thing#egg=thing # http://altpath#egg=boo',
-                req=requirement.Requirement(
-                    'thing',
-                    'file:///path/to/thing',
-                    '',
-                    '',
-                    '# http://altpath#egg=boo',
-                ),
-                permit_urls=True,
+            'file:///path/to/thing#egg=thing # http://altpath#egg=boo',
+            requirement.Requirement(
+                'thing',
+                'file:///path/to/thing',
+                '',
+                '',
+                '# http://altpath#egg=boo',
             ),
+            True,
         ),
         (
             'editable',
-            dict(
-                line='-e file:///path/to/bar#egg=bar',
-                req=requirement.Requirement(
-                    'bar', '-e file:///path/to/bar', '', '', ''
-                ),
-                permit_urls=True,
+            '-e file:///path/to/bar#egg=bar',
+            requirement.Requirement(
+                'bar', '-e file:///path/to/bar', '', '', ''
             ),
+            True,
         ),
         (
             'editable_vcs_git',
-            dict(
-                line='-e git+http://github.com/path/to/oslo.bar#egg=oslo.bar',
-                req=requirement.Requirement(
-                    'oslo.bar',
-                    '-e git+http://github.com/path/to/oslo.bar',
-                    '',
-                    '',
-                    '',
-                ),
-                permit_urls=True,
+            '-e git+http://github.com/path/to/oslo.bar#egg=oslo.bar',
+            requirement.Requirement(
+                'oslo.bar',
+                '-e git+http://github.com/path/to/oslo.bar',
+                '',
+                '',
+                '',
             ),
+            True,
         ),
         (
             'editable_vcs_git_ssh',
-            dict(
-                line='-e git+ssh://github.com/path/to/oslo.bar#egg=oslo.bar',
-                req=requirement.Requirement(
-                    'oslo.bar',
-                    '-e git+ssh://github.com/path/to/oslo.bar',
-                    '',
-                    '',
-                    '',
-                ),
-                permit_urls=True,
+            '-e git+ssh://github.com/path/to/oslo.bar#egg=oslo.bar',
+            requirement.Requirement(
+                'oslo.bar',
+                '-e git+ssh://github.com/path/to/oslo.bar',
+                '',
+                '',
+                '',
             ),
+            True,
         ),
     ]
     scenarios = dist_scenarios + url_scenarios
 
     def test_parse(self):
-        parsed = requirement.parse_line(
-            self.line, permit_urls=getattr(self, 'permit_urls', False)
-        )
-        self.assertEqual(self.req, parsed)
+        for name, line, req, permit_urls in self.scenarios:
+            with self.subTest(name):
+                parsed = requirement.parse_line(line, permit_urls=permit_urls)
+                self.assertEqual(req, parsed)
 
 
 class TestParseRequirementFailures(testtools.TestCase):
     scenarios = [
         (
             'url',
-            dict(
-                line='http://tarballs.openstack.org/oslo.config/'
-                'oslo.config-1.2.0a3.tar.gz#egg=oslo.config'
-            ),
+            'http://tarballs.openstack.org/oslo.config/oslo.config-1.2.0a3.tar.gz#egg=oslo.config',
         ),
-        ('-e', dict(line='-e git+https://foo.com#egg=foo')),
-        ('-f', dict(line='-f http://tarballs.openstack.org/')),
+        ('-e', '-e git+https://foo.com#egg=foo'),
+        ('-f', '-f http://tarballs.openstack.org/'),
     ]
 
     def test_does_not_parse(self):
-        self.assertRaises(ValueError, requirement.parse_line, self.line)
+        for name, line in self.scenarios:
+            with self.subTest(name):
+                with self.assertRaises(ValueError):
+                    requirement.parse_line(line)
 
 
 class TestToContent(testtools.TestCase):

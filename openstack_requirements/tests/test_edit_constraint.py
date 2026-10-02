@@ -15,14 +15,10 @@ import os
 import textwrap
 
 import fixtures
-import testscenarios
 import testtools
 
 from openstack_requirements.cmds import edit_constraint as edit
 from openstack_requirements import requirement
-
-
-load_tests = testscenarios.load_tests_apply_scenarios
 
 
 class SmokeTest(testtools.TestCase):

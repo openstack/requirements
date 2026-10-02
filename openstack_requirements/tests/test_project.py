@@ -15,14 +15,10 @@ import os
 import textwrap
 
 import fixtures
-import testscenarios
 import testtools
 
 from openstack_requirements import project
 from openstack_requirements.tests import common
-
-
-load_tests = testscenarios.load_tests_apply_scenarios
 
 
 class TestReadProject(testtools.TestCase):
