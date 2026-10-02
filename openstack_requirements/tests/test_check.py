@@ -157,6 +157,7 @@ class TestIsReqInGlobalReqs(testtools.TestCase):
         name>=1.2,!=1.4
         withmarker>=1.5;python_version=='3.5'
         withmarker>=1.2,!=1.4;python_version=='2.7'
+        withwinmarker>=1.0;sys_platform!='win32'
         """)
         )
 
@@ -213,6 +214,49 @@ class TestIsReqInGlobalReqs(testtools.TestCase):
             check._is_requirement_in_global_reqs(
                 req,
                 self.global_reqs['withmarker'],
+            )
+        )
+
+    def test_match_with_windows_markers(self):
+        """Test a package specified with Windows markers."""
+        req = requirement.parse(
+            textwrap.dedent("""
+        withwinmarker>=1.0;sys_platform!='win32'
+        """)
+        )['withwinmarker'][0][0]
+        self.assertTrue(
+            check._is_requirement_in_global_reqs(
+                req,
+                self.global_reqs['withwinmarker'],
+            )
+        )
+
+    def test_match_without_windows_markers(self):
+        """Test a package specified without Windows markers.
+
+        OpenStack no longer supports Windows, so packages can drop Windows
+        markers even if they are present in global requirements.
+        """
+        req = requirement.parse(
+            textwrap.dedent("""
+        withwinmarker>=1.0
+        """)
+        )['withwinmarker'][0][0]
+        self.assertTrue(
+            check._is_requirement_in_global_reqs(
+                req,
+                self.global_reqs['withwinmarker'],
+            )
+        )
+
+        # Also test with double quotes
+        global_reqs = check.get_global_reqs(
+            'withwinmarker>=1.0;sys_platform!="win32"'
+        )
+        self.assertTrue(
+            check._is_requirement_in_global_reqs(
+                req,
+                global_reqs['withwinmarker'],
             )
         )
 
@@ -378,6 +422,23 @@ class TestValidateOne(testtools.TestCase):
         # If the new item matches the global list exactly that is OK.
         reqs = [r for r, line in requirement.parse('name>=1.2,!=1.4')['name']]
         global_reqs = check.get_global_reqs('name>=1.2,!=1.4')
+        self.assertFalse(
+            check._validate_one(
+                'name',
+                reqs=reqs,
+                denylist=requirement.parse(''),
+                global_reqs=global_reqs,
+                is_optional=False,
+            )
+        )
+
+    def test_new_item_matches_global_list_without_windows_marker(self):
+        # A project can omit the Windows marker even if it's present in the
+        # global list.
+        reqs = [r for r, line in requirement.parse('name>=1.2,!=1.4')['name']]
+        global_reqs = check.get_global_reqs(
+            "name>=1.2,!=1.4;sys_platform!='win32'"
+        )
         self.assertFalse(
             check._validate_one(
                 'name',

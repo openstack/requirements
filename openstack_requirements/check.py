@@ -27,6 +27,7 @@ PY3_GLOBAL_SPECIFIER_RE = re.compile(
 PY3_LOCAL_SPECIFIER_RE = re.compile(
     r'python_version(==|>=|>|<=|<)[\'"]3\.\d+[\'"]'
 )
+WINDOWS_SPECIFIER_RE = re.compile(r'sys_platform!=[\'"]win32[\'"]')
 
 
 class RequirementsList:
@@ -154,6 +155,14 @@ def _is_requirement_in_global_reqs(
                         not global_req_val
                         and local_req_val
                         and PY3_LOCAL_SPECIFIER_RE.match(local_req_val)
+                    ):
+                        continue
+
+                    # OpenStack no longer supports Windows. If a package wants
+                    # to drop their sys_platform marker, let them.
+                    if (
+                        not local_req_val
+                        and WINDOWS_SPECIFIER_RE.match(global_req_val)
                     ):
                         continue
 
