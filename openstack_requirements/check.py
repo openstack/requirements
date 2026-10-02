@@ -129,7 +129,6 @@ def _get_exclusions(req):
 def _is_requirement_in_global_reqs(
     local_req,
     global_reqs,
-    backports,
 ):
     req_exclusions = _get_exclusions(local_req)
     for global_req in global_reqs:
@@ -138,38 +137,24 @@ def _is_requirement_in_global_reqs(
             local_req_val = getattr(local_req, aname)
             global_req_val = getattr(global_req, aname)
             if local_req_val != global_req_val:
-                # if a python 3 version is not specified in only one of
-                # global requirements or local requirements, allow it since
-                # python 3-only is okay
                 if matching and aname == 'markers':
-                    if not local_req_val and PY3_GLOBAL_SPECIFIER_RE.match(
-                        global_req_val
+                    # if a Python version marker is specified globally but not
+                    # locally, allow it since this is unnecessary boilerplate
+                    # for projects to carry
+                    if (
+                        not local_req_val
+                        and PY3_GLOBAL_SPECIFIER_RE.match(global_req_val)
                     ):
                         continue
+
+                    # if a Python version marker is specified locally but not
+                    # globally, allow it since projects might only need the
+                    # package on specific Python versions
                     if (
                         not global_req_val
                         and local_req_val
                         and PY3_LOCAL_SPECIFIER_RE.match(local_req_val)
                     ):
-                        continue
-
-                # likewise, if a package is one of the backport packages then
-                # we're okay with a potential marker (e.g. if a package
-                # requires a feature that is only available in a newer Python
-                # library, while other packages are happy without this feature
-                if (
-                    matching
-                    and aname == 'markers'
-                    and local_req.package in backports
-                ):
-                    if re.match(
-                        r'python_version(==|<=|<)[\'"]3\.\d+[\'"]',
-                        local_req_val,
-                    ):
-                        print(
-                            'Ignoring backport package with python_version '
-                            'marker'
-                        )
                         continue
 
                 print(
@@ -232,7 +217,6 @@ def _validate_one(
     reqs,
     denylist,
     global_reqs,
-    backports,
     *,
     is_optional,
 ):
@@ -259,11 +243,7 @@ def _validate_one(
         else:
             counts[''] = counts.get('', 0) + 1
 
-        if not _is_requirement_in_global_reqs(
-            req,
-            global_reqs[name],
-            backports,
-        ):
+        if not _is_requirement_in_global_reqs(req, global_reqs[name]):
             return True
 
         # check for minimum being defined
@@ -295,7 +275,6 @@ def validate(
     head_reqs,
     denylist,
     global_reqs,
-    backports,
 ):
     failed = False
     # iterate through the changing entries and see if they match the global
@@ -316,7 +295,6 @@ def validate(
                         reqs,
                         denylist,
                         global_reqs,
-                        backports,
                         is_optional=is_optional,
                     )
                     or failed

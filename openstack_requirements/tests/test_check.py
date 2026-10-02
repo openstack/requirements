@@ -150,7 +150,6 @@ class TestIsReqInGlobalReqs(testtools.TestCase):
 
         self._stdout_fixture = fixtures.StringStream('stdout')
         self.stdout = self.useFixture(self._stdout_fixture).stream
-        self.backports = list()
         self.useFixture(fixtures.MonkeyPatch('sys.stdout', self.stdout))
 
         self.global_reqs = check.get_global_reqs(
@@ -168,7 +167,6 @@ class TestIsReqInGlobalReqs(testtools.TestCase):
             check._is_requirement_in_global_reqs(
                 req,
                 self.global_reqs['name'],
-                self.backports,
             )
         )
 
@@ -183,7 +181,6 @@ class TestIsReqInGlobalReqs(testtools.TestCase):
             check._is_requirement_in_global_reqs(
                 req,
                 self.global_reqs['withmarker'],
-                self.backports,
             )
         )
 
@@ -198,7 +195,6 @@ class TestIsReqInGlobalReqs(testtools.TestCase):
             check._is_requirement_in_global_reqs(
                 req,
                 self.global_reqs['name'],
-                self.backports,
             )
         )
 
@@ -217,22 +213,6 @@ class TestIsReqInGlobalReqs(testtools.TestCase):
             check._is_requirement_in_global_reqs(
                 req,
                 self.global_reqs['withmarker'],
-                self.backports,
-            )
-        )
-
-    def test_backport(self):
-        """Test a stdlib backport pacakge.
-
-        The python_version marker should be ignored for stdlib backport-type
-        packages.
-        """
-        req = requirement.parse("name;python_version<'3.9'")['name'][0][0]
-        self.assertTrue(
-            check._is_requirement_in_global_reqs(
-                req,
-                self.global_reqs['name'],
-                ['name'],
             )
         )
 
@@ -246,7 +226,6 @@ class TestIsReqInGlobalReqs(testtools.TestCase):
             check._is_requirement_in_global_reqs(
                 req,
                 self.global_reqs['name'],
-                self.backports,
             )
         )
 
@@ -261,7 +240,6 @@ class TestIsReqInGlobalReqs(testtools.TestCase):
             check._is_requirement_in_global_reqs(
                 req,
                 self.global_reqs['name'],
-                self.backports,
             )
         )
 
@@ -277,7 +255,6 @@ class TestIsReqInGlobalReqs(testtools.TestCase):
             check._is_requirement_in_global_reqs(
                 req,
                 self.global_reqs['name'],
-                self.backports,
             )
         )
 
@@ -292,7 +269,6 @@ class TestIsReqInGlobalReqs(testtools.TestCase):
             check._is_requirement_in_global_reqs(
                 req,
                 self.global_reqs['name'],
-                self.backports,
             )
         )
 
@@ -306,7 +282,6 @@ class TestIsReqInGlobalReqs(testtools.TestCase):
             check._is_requirement_in_global_reqs(
                 req,
                 self.global_reqs['name'],
-                self.backports,
             )
         )
 
@@ -340,7 +315,6 @@ class TestValidateOne(testtools.TestCase):
         self._stdout_fixture = fixtures.StringStream('stdout')
         self.stdout = self.useFixture(self._stdout_fixture).stream
         self.useFixture(fixtures.MonkeyPatch('sys.stdout', self.stdout))
-        self.backports = dict()
 
     def test_unchanged(self):
         # If the line matches the value in the branch list everything
@@ -352,7 +326,6 @@ class TestValidateOne(testtools.TestCase):
                 'name',
                 reqs=reqs,
                 denylist=requirement.parse(''),
-                backports=self.backports,
                 global_reqs=global_reqs,
                 is_optional=False,
             )
@@ -367,7 +340,6 @@ class TestValidateOne(testtools.TestCase):
                 'name',
                 reqs=reqs,
                 denylist=requirement.parse('name'),
-                backports=self.backports,
                 global_reqs=global_reqs,
                 is_optional=False,
             )
@@ -383,7 +355,6 @@ class TestValidateOne(testtools.TestCase):
                 'name',
                 reqs=reqs,
                 denylist=requirement.parse('name'),
-                backports=self.backports,
                 global_reqs=global_reqs,
                 is_optional=False,
             )
@@ -398,7 +369,6 @@ class TestValidateOne(testtools.TestCase):
                 'name',
                 reqs=reqs,
                 denylist=requirement.parse(''),
-                backports=self.backports,
                 global_reqs=global_reqs,
                 is_optional=False,
             )
@@ -413,7 +383,6 @@ class TestValidateOne(testtools.TestCase):
                 'name',
                 reqs=reqs,
                 denylist=requirement.parse(''),
-                backports=self.backports,
                 global_reqs=global_reqs,
                 is_optional=False,
             )
@@ -429,7 +398,6 @@ class TestValidateOne(testtools.TestCase):
                 'name',
                 reqs=reqs,
                 denylist=requirement.parse(''),
-                backports=self.backports,
                 global_reqs=global_reqs,
                 is_optional=False,
             )
@@ -447,7 +415,6 @@ class TestValidateOne(testtools.TestCase):
                 'name',
                 reqs=reqs,
                 denylist=requirement.parse(''),
-                backports=self.backports,
                 global_reqs=global_reqs,
                 is_optional=False,
             )
@@ -463,7 +430,6 @@ class TestValidateOne(testtools.TestCase):
                 'name',
                 reqs=reqs,
                 denylist=requirement.parse(''),
-                backports=self.backports,
                 global_reqs=global_reqs,
                 is_optional=False,
             )
@@ -489,7 +455,6 @@ class TestValidateOne(testtools.TestCase):
                 'name',
                 reqs=reqs,
                 denylist=requirement.parse(''),
-                backports=self.backports,
                 global_reqs=global_reqs,
                 is_optional=False,
             )
@@ -514,7 +479,6 @@ class TestValidateOne(testtools.TestCase):
                 'name',
                 reqs=reqs,
                 denylist=requirement.parse(''),
-                backports=self.backports,
                 global_reqs=global_reqs,
                 is_optional=False,
             )
@@ -540,7 +504,6 @@ class TestValidateOne(testtools.TestCase):
                 'name',
                 reqs=reqs,
                 denylist=requirement.parse(''),
-                backports=self.backports,
                 global_reqs=global_reqs,
                 is_optional=False,
             )
@@ -556,7 +519,6 @@ class TestValidateOne(testtools.TestCase):
                 'name',
                 reqs=reqs,
                 denylist=requirement.parse(''),
-                backports=self.backports,
                 global_reqs=global_reqs,
                 is_optional=True,
             )
@@ -572,7 +534,6 @@ class TestValidateOne(testtools.TestCase):
                 'name',
                 reqs=reqs,
                 denylist=requirement.parse(''),
-                backports=self.backports,
                 global_reqs=global_reqs,
                 is_optional=True,
             )
@@ -590,7 +551,6 @@ class TestValidateOne(testtools.TestCase):
                 'name',
                 reqs=reqs,
                 denylist=requirement.parse(''),
-                backports=self.backports,
                 global_reqs=global_reqs,
                 is_optional=True,
             )
@@ -606,50 +566,7 @@ class TestValidateOne(testtools.TestCase):
                 'name',
                 reqs=reqs,
                 denylist=requirement.parse('name'),
-                backports=self.backports,
                 global_reqs=global_reqs,
                 is_optional=True,
-            )
-        )
-
-
-class TestBackportPythonMarkers(testtools.TestCase):
-    def setUp(self):
-        super().setUp()
-        self._stdout_fixture = fixtures.StringStream('stdout')
-        self.stdout = self.useFixture(self._stdout_fixture).stream
-        self.useFixture(fixtures.MonkeyPatch('sys.stdout', self.stdout))
-
-        self.req = requirement.parse(
-            textwrap.dedent("""
-        name>=1.5;python_version=='3.11'
-        """)
-        )['name'][0][0]
-        self.global_reqs = check.get_global_reqs(
-            textwrap.dedent("""
-        name>=1.5;python_version=='3.10'
-        """)
-        )
-
-    def test_notmatching_no_backport(self):
-        backports = requirement.parse("")
-        self.assertFalse(
-            check._is_requirement_in_global_reqs(
-                self.req,
-                self.global_reqs["name"],
-                list(backports.keys()),
-            )
-        )
-
-    def test_notmatching_with_backport(self):
-        b_content = textwrap.dedent("""
-        name
-        """)
-        backports = requirement.parse(b_content)
-        self.assertTrue(
-            check._is_requirement_in_global_reqs(
-                self.req,
-                self.global_reqs["name"],
-                list(backports.keys()),
             )
         )

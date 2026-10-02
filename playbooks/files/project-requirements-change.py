@@ -118,13 +118,6 @@ def main():
         with open(os.path.join(reqdir, 'denylist.txt')) as fh:
             denylist = requirement.parse(fh.read())
 
-        backports_file = os.path.join(reqdir, 'backports.txt')
-        if os.path.exists(backports_file):
-            with open(backports_file) as fh:
-                backports = requirement.parse(fh.read())
-        else:
-            backports = {}
-
         cwd = os.getcwd()
 
         # Verify that pyproject.toml is present and contains the required
@@ -153,7 +146,6 @@ def main():
             head_reqs,
             denylist,
             global_reqs,
-            list(backports.keys()),
         )
 
     # report the results
