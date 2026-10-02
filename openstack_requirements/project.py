@@ -20,15 +20,9 @@ import errno
 import io
 import os
 import sys
+import tomllib
 from typing import Any
 from typing import TypedDict
-
-try:
-    # Python 3.11+
-    import tomllib
-except ImportError:
-    # Python 3.10 and lower
-    import tomli as tomllib  # type: ignore
 
 
 def _read_raw(root: str, filename: str) -> str | None:
