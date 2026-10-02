@@ -164,10 +164,14 @@ def verify_pyproject_toml(root: str) -> bool:
         return False
 
     if 'build-system' not in data:
-        print("pyproject.toml is missing 'build-system' table", file=sys.stderr)
+        print(
+            "pyproject.toml is missing 'build-system' table", file=sys.stderr
+        )
         return False
 
-    if (build_backend := data['build-system'].get('build-backend')) != 'pbr.build':
+    if (
+        build_backend := data['build-system'].get('build-backend')
+    ) != 'pbr.build':
         print(
             f"pyproject.toml has invalid 'build-system.build-backend'. "
             f"Expected 'pbr.build'; got {build_backend!r}",

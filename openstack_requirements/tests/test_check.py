@@ -44,11 +44,15 @@ class TestRequirementsList(testtools.TestCase):
         req_list = check.RequirementsList('test-project', project_data)
         req_list.process(strict=False)
 
-        self.assertIn("setup.cfg ('test' extra)", req_list.reqs_by_file)
-        self.assertIn("setup.cfg ('dev' extra)", req_list.reqs_by_file)
+        self.assertIn(
+            "setup.cfg ('test' extra)", req_list.optional_reqs_by_file
+        )
+        self.assertIn(
+            "setup.cfg ('dev' extra)", req_list.optional_reqs_by_file
+        )
 
-        test_reqs = req_list.reqs_by_file["setup.cfg ('test' extra)"]
-        dev_reqs = req_list.reqs_by_file["setup.cfg ('dev' extra)"]
+        test_reqs = req_list.optional_reqs_by_file["setup.cfg ('test' extra)"]
+        dev_reqs = req_list.optional_reqs_by_file["setup.cfg ('dev' extra)"]
 
         self.assertEqual(2, len(test_reqs))
         self.assertIn('pytest', test_reqs)
@@ -88,30 +92,33 @@ class TestRequirementsList(testtools.TestCase):
 
         self.assertIn('pyproject.toml (dependencies)', req_list.reqs_by_file)
         self.assertIn(
-            "pyproject.toml ('security' extra)", req_list.reqs_by_file
+            "pyproject.toml ('security' extra)",
+            req_list.optional_reqs_by_file,
         )
         self.assertIn(
-            "pyproject.toml ('test' dependency group)", req_list.reqs_by_file
+            "pyproject.toml ('test' dependency group)",
+            req_list.optional_reqs_by_file,
         )
         self.assertIn(
-            "pyproject.toml ('typing' dependency group)", req_list.reqs_by_file
+            "pyproject.toml ('typing' dependency group)",
+            req_list.optional_reqs_by_file,
         )
         self.assertIn(
             "pyproject.toml ('typing-test' dependency group)",
-            req_list.reqs_by_file,
+            req_list.optional_reqs_by_file,
         )
 
         main_reqs = req_list.reqs_by_file['pyproject.toml (dependencies)']
-        security_reqs = req_list.reqs_by_file[
+        security_reqs = req_list.optional_reqs_by_file[
             "pyproject.toml ('security' extra)"
         ]
-        test_reqs = req_list.reqs_by_file[
+        test_reqs = req_list.optional_reqs_by_file[
             "pyproject.toml ('test' dependency group)"
         ]
-        typing_reqs = req_list.reqs_by_file[
+        typing_reqs = req_list.optional_reqs_by_file[
             "pyproject.toml ('typing' dependency group)"
         ]
-        typing_test_reqs = req_list.reqs_by_file[
+        typing_test_reqs = req_list.optional_reqs_by_file[
             "pyproject.toml ('typing-test' dependency group)"
         ]
 
@@ -347,6 +354,7 @@ class TestValidateOne(testtools.TestCase):
                 denylist=requirement.parse(''),
                 backports=self.backports,
                 global_reqs=global_reqs,
+                is_optional=False,
             )
         )
 
@@ -361,6 +369,7 @@ class TestValidateOne(testtools.TestCase):
                 denylist=requirement.parse('name'),
                 backports=self.backports,
                 global_reqs=global_reqs,
+                is_optional=False,
             )
         )
 
@@ -376,6 +385,7 @@ class TestValidateOne(testtools.TestCase):
                 denylist=requirement.parse('name'),
                 backports=self.backports,
                 global_reqs=global_reqs,
+                is_optional=False,
             )
         )
 
@@ -390,6 +400,7 @@ class TestValidateOne(testtools.TestCase):
                 denylist=requirement.parse(''),
                 backports=self.backports,
                 global_reqs=global_reqs,
+                is_optional=False,
             )
         )
 
@@ -404,6 +415,7 @@ class TestValidateOne(testtools.TestCase):
                 denylist=requirement.parse(''),
                 backports=self.backports,
                 global_reqs=global_reqs,
+                is_optional=False,
             )
         )
 
@@ -419,6 +431,7 @@ class TestValidateOne(testtools.TestCase):
                 denylist=requirement.parse(''),
                 backports=self.backports,
                 global_reqs=global_reqs,
+                is_optional=False,
             )
         )
 
@@ -436,6 +449,7 @@ class TestValidateOne(testtools.TestCase):
                 denylist=requirement.parse(''),
                 backports=self.backports,
                 global_reqs=global_reqs,
+                is_optional=False,
             )
         )
 
@@ -451,6 +465,7 @@ class TestValidateOne(testtools.TestCase):
                 denylist=requirement.parse(''),
                 backports=self.backports,
                 global_reqs=global_reqs,
+                is_optional=False,
             )
         )
 
@@ -476,6 +491,7 @@ class TestValidateOne(testtools.TestCase):
                 denylist=requirement.parse(''),
                 backports=self.backports,
                 global_reqs=global_reqs,
+                is_optional=False,
             )
         )
 
@@ -500,6 +516,7 @@ class TestValidateOne(testtools.TestCase):
                 denylist=requirement.parse(''),
                 backports=self.backports,
                 global_reqs=global_reqs,
+                is_optional=False,
             )
         )
 
@@ -525,6 +542,73 @@ class TestValidateOne(testtools.TestCase):
                 denylist=requirement.parse(''),
                 backports=self.backports,
                 global_reqs=global_reqs,
+                is_optional=False,
+            )
+        )
+
+    def test_optional_not_in_global_list(self):
+        # If an optional package is not in the global list, that is not an
+        # error.
+        reqs = [r for r, line in requirement.parse('name>=1.2,!=1.4')['name']]
+        global_reqs = check.get_global_reqs('')
+        self.assertFalse(
+            check._validate_one(
+                'name',
+                reqs=reqs,
+                denylist=requirement.parse(''),
+                backports=self.backports,
+                global_reqs=global_reqs,
+                is_optional=True,
+            )
+        )
+
+    def test_optional_matches_global_list(self):
+        # If an optional package is in the global list and matches,
+        # everything is OK.
+        reqs = [r for r, line in requirement.parse('name>=1.2,!=1.4')['name']]
+        global_reqs = check.get_global_reqs('name>=1.2,!=1.4')
+        self.assertFalse(
+            check._validate_one(
+                'name',
+                reqs=reqs,
+                denylist=requirement.parse(''),
+                backports=self.backports,
+                global_reqs=global_reqs,
+                is_optional=True,
+            )
+        )
+
+    def test_optional_mismatches_global_list(self):
+        # If an optional package is in the global list and does not match,
+        # that is an error.
+        reqs = [
+            r for r, line in requirement.parse('name>=1.2,!=1.4,!=1.5')['name']
+        ]
+        global_reqs = check.get_global_reqs('name>=1.2,!=1.4')
+        self.assertTrue(
+            check._validate_one(
+                'name',
+                reqs=reqs,
+                denylist=requirement.parse(''),
+                backports=self.backports,
+                global_reqs=global_reqs,
+                is_optional=True,
+            )
+        )
+
+    def test_optional_denylisted(self):
+        # If the optional package is denylisted, everything is OK even if absent
+        # from global-requirements.
+        reqs = [r for r, line in requirement.parse('name>=1.2,!=1.4')['name']]
+        global_reqs = check.get_global_reqs('')
+        self.assertFalse(
+            check._validate_one(
+                'name',
+                reqs=reqs,
+                denylist=requirement.parse('name'),
+                backports=self.backports,
+                global_reqs=global_reqs,
+                is_optional=True,
             )
         )
 
