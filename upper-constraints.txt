@@ -387,7 +387,7 @@ python-neutronclient===14.0.0
 pika===1.4.4
 oslo.cache===4.3.0
 WebTest===3.0.7
-os-collect-config===14.0.1
+os-collect-config===14.1.0
 edgegrid-python===2.0.8
 python-octaviaclient===3.15.0
 pysaml2===7.5.5
