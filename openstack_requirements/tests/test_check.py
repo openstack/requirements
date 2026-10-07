@@ -618,8 +618,8 @@ class TestValidateOne(testtools.TestCase):
         )
 
     def test_optional_denylisted(self):
-        # If the optional package is denylisted, everything is OK even if absent
-        # from global-requirements.
+        # If the optional package is denylisted, everything is OK even if
+        # absent from global-requirements.
         reqs = [r for r, line in requirement.parse('name>=1.2,!=1.4')['name']]
         global_reqs = check.get_global_reqs('')
         self.assertFalse(

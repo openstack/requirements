@@ -34,7 +34,7 @@ class TestFreeze(testtools.TestCase):
                     [
                         py,
                         '-c',
-                        'import pkgutil; [print(x) for x in pkgutil.iter_modules()]',
+                        'import pkgutil; [print(x) for x in pkgutil.iter_modules()]',  # noqa: E501
                     ]
                 )
             )

@@ -65,7 +65,8 @@ def main(args=None):
 
     for require_file, data in project_data.get('requirements', {}).items():
         print(
-            f'\nComparing {require_file} with global-requirements and upper-constraints'
+            f'\nComparing {require_file} with global-requirements and '
+            f'upper-constraints'
         )
         requirements = requirement.parse_lines(data)
         for name, spec_list in requirements.items():
@@ -73,13 +74,15 @@ def main(args=None):
                 continue
             if name not in global_requirements:
                 print(
-                    f'{name} from {require_file} not found in global-requirements'
+                    f'{name} from {require_file} not found in '
+                    f'global-requirements'
                 )
                 error_count += 1
                 continue
             if name not in upper_constraints:
                 print(
-                    f'{name} from {require_file} not found in upper-constraints'
+                    f'{name} from {require_file} not found in '
+                    f'upper-constraints'
                 )
                 error_count += 1
                 continue
@@ -95,8 +98,9 @@ def main(args=None):
                         # then something is wrong.
                         if Version(uc_spec.version) not in specs:
                             print(
-                                f'{name} must be <= {uc_spec.version} from upper-constraints and '
-                                'include the upper-constraints version'
+                                f'{name} must be <= {uc_spec.version} from '
+                                f'upper-constraints and include the '
+                                f'upper-constraints version'
                             )
                             error_count += 1
                             continue
@@ -109,8 +113,9 @@ def main(args=None):
                                 continue
                             if spec.version not in spec_gr:
                                 print(
-                                    f'Specifier {spec.version} from {name} is failing check '
-                                    f'from global-requirements specifiers {str(spec_gr)}'
+                                    f'Specifier {spec.version} from {name} is '
+                                    f'failing check from global-requirements '
+                                    f'specifiers {str(spec_gr)}'
                                 )
                                 error_count += 1
                                 continue

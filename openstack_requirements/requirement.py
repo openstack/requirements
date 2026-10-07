@@ -242,5 +242,6 @@ def check_reqs_bounds_policy(global_reqs):
                     lower_bound.add(spec)
             if len(lower_bound):
                 yield (
-                    f'Requirement {req.package} should not include a >= specifier'
+                    f'Requirement {req.package} should not include a >= '
+                    f'specifier'
                 )

@@ -54,6 +54,7 @@ def require_check_requirements_for_repo(zuul_projects, repo):
         # jobs, because we want projects to use the templates.
         if 'check-requirements' not in templates:
             errors.append(
-                f'{ZUUL_PROJECTS_FILENAME} no check-requirements job specified for {repo}'
+                f'{ZUUL_PROJECTS_FILENAME} no check-requirements job '
+                f'specified for {repo}'
             )
     return errors
