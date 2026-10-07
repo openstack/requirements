@@ -382,7 +382,7 @@ idna===3.20
 Hypercorn===0.18.0
 yamlloader===1.6.0
 protobuf===7.36.2
-sushy===5.13.0
+sushy===5.14.0
 python-neutronclient===14.0.0
 pika===1.4.4
 oslo.cache===4.3.0
