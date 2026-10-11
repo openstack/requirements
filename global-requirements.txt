@@ -14,7 +14,6 @@ aiosqlite  # MIT License
 alembic!=1.2.0,!=1.6.3  # MIT
 amqp!=2.1.4,!=5.0.4  # BSD
 anycrc  # Zlib
-appdirs  # MIT License
 apscheduler  # MIT License
 autobahn  # MIT License
 automaton  # Apache-2.0
@@ -117,7 +116,6 @@ Paste  # MIT
 PasteDeploy  # MIT
 pecan!=1.0.2,!=1.0.3,!=1.0.4,!=1.2,!=1.4.0  # BSD
 pexpect!=3.3  # ISC License
-pika  # BSD
 Pillow  # PIL License
 Pint  # BSD
 platformdirs  # MIT License
@@ -155,7 +153,6 @@ qrcode  # BSD
 rbd-iscsi-client  # Apache-2.0
 requests!=2.20.0,!=2.24.0  # Apache-2.0
 requests-kerberos  # ISC
-requestsexceptions  # Apache-2.0
 rfc3986  # Apache-2.0
 Routes  # MIT
 rtslib-fb  # Apache-2.0
@@ -352,7 +349,6 @@ os-resource-classes  # Apache-2.0
 os-service-types  # Apache-2.0
 os-traits  # Apache-2.0
 os-vif!=1.8.0,!=1.12.0,!=3.0.0  # Apache-2.0
-os-win  # Apache-2.0
 osc-lib  # Apache-2.0
 osc-placement  # Apache-2.0
 oslo.cache!=1.31.1,!=2.1.0  # Apache-2.0
