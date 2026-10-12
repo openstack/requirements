@@ -271,7 +271,6 @@ webcolors===25.10.0
 aodhclient===3.12.0
 autobahn===26.7.1
 truststore===0.10.4
-SQLAlchemy-Utils===0.42.1
 retryz===0.1.9
 pluggy===1.6.0
 coverage===7.16.2

@@ -165,7 +165,6 @@ scipy  # BSD
 semantic-version  # BSD
 setproctitle  # BSD
 SQLAlchemy  # MIT
-SQLAlchemy-Utils  # BSD License
 sshtunnel  # MIT
 statsd  # MIT
 suds-community  # LGPLv3+
