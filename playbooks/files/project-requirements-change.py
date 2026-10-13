@@ -24,9 +24,9 @@ import subprocess
 import sys
 import tempfile
 
-from openstack_requirements import check  # noqa
-from openstack_requirements import project  # noqa
-from openstack_requirements import requirement  # noqa
+from openstack_requirements import check
+from openstack_requirements import project
+from openstack_requirements import requirement
 
 
 def run_command(cmd):

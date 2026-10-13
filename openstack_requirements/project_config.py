@@ -15,8 +15,7 @@
 import requests
 import yaml
 
-
-ZUUL_PROJECTS_URL = 'https://git.openstack.org/cgit/openstack-infra/project-config/plain/zuul.d/projects.yaml'  # noqa
+ZUUL_PROJECTS_URL = 'https://git.openstack.org/cgit/openstack-infra/project-config/plain/zuul.d/projects.yaml'
 ZUUL_PROJECTS_FILENAME = 'openstack-infra/project-config/zuul.d/projects.yaml'
 
 

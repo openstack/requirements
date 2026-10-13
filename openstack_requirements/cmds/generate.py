@@ -113,7 +113,7 @@ def _freeze(requirements, python):
                 b'\n'.join(output).decode('utf-8'),
                 exc,
             )
-        )
+        ) from exc
     finally:
         # log job results
         with tempfile.NamedTemporaryFile(
@@ -162,7 +162,7 @@ def _combine_freezes(freezes, denylist=None):
             # version ranges for these
             for idx, (version, py_versions) in enumerate(
                 sorted(versions.items())
-            ):  # noqa: E501
+            ):
                 if idx == 0:  # lower-bound
                     marker = f"python_version<='{py_versions[-1]}'"
                 elif idx + 1 != len(versions):  # intermediate version(s)
@@ -174,9 +174,7 @@ def _combine_freezes(freezes, denylist=None):
         elif list(versions.values())[0] != reference_versions:
             # markers for packages with a single version - these are usually
             # version specific so we use strict python versions for these
-            for idx, (version, py_versions) in enumerate(
-                sorted(versions.items())
-            ):  # noqa: E501
+            for version, py_versions in sorted(versions.items()):
                 for py_version in sorted(py_versions):
                     marker = f"python_version=='{py_version}'"
                     yield f'{package}==={version};{marker}\n'
@@ -294,7 +292,7 @@ def main(argv=None, stdout=None):
             'installed'
         ),
     )
-    options, args = parser.parse_args(argv)
+    options, _ = parser.parse_args(argv)
     if stdout is None:
         stdout = sys.stdout
     _validate_options(options)
