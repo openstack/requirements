@@ -264,7 +264,6 @@ pytest-xdist  # MIT
 python-subunit  # Apache-2.0/BSD
 requests-mock  # Apache-2.0
 respx  # BSD-3-Clause
-sadisplay  # BSD
 selenium  # Apache-2.0
 stestr!=2.3.0,!=3.0.0  # Apache-2.0
 testrepository  # Apache-2.0/BSD

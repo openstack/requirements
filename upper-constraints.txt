@@ -348,7 +348,6 @@ wsgi_intercept===1.13.1
 jsonschema-specifications===2025.9.1
 testscenarios===0.7.0
 sphinxcontrib-pecanwsme===0.11.0
-sadisplay===0.4.9
 enum34===1.1.10
 infinisdk===289.1.4
 rich-argparse===1.8.0
