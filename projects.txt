@@ -38,7 +38,6 @@ openstack/heat-translator
 openstack/horizon
 openstack/i18n
 openstack/ironic
-openstack/ironic-inspector
 openstack/ironic-python-agent
 openstack/ironic-tempest-plugin
 openstack/ironic-ui
@@ -172,7 +171,6 @@ openstack/python-designateclient
 openstack/python-freezerclient
 openstack/python-glanceclient
 openstack/python-heatclient
-openstack/python-ironic-inspector-client
 openstack/python-ironicclient
 openstack/python-keystoneclient
 openstack/python-magnumclient
