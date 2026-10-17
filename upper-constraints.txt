@@ -407,7 +407,6 @@ oslo.config===10.7.0
 openstackdocstheme===3.6.0
 osc-placement===4.9.1
 rpds-py===2026.9.1
-zake===0.2.2
 flux===1.4.0
 flexparser===0.4
 krb5===0.10.0
