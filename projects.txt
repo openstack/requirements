@@ -16,6 +16,7 @@ openstack/castellan
 openstack/cinder
 openstack/cinder-tempest-plugin
 openstack/cliff
+openstack/cursive
 openstack/debtcollector
 openstack/designate
 openstack/designate-dashboard
