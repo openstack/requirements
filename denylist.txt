@@ -80,7 +80,6 @@ keystone_tempest_plugin
 magnum_tempest_plugin
 manila_tempest-plugin
 mistral_tempest_tests
-monasca_tempest-plugin
 neutron_tempest-plugin
 octavia_tempest-plugin
 telemetry_tempest_plugin
