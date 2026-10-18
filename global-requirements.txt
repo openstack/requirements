@@ -37,7 +37,6 @@ construct  # MIT
 cotyledon  # Apache-2.0
 croniter  # MIT License
 cryptography!=2.0  # BSD/Apache-2.0
-cursive  # Apache-2.0
 datetimerange  # MIT
 decorator  # BSD
 defusedxml  # PSF
@@ -309,6 +308,7 @@ castellan  # Apache-2.0
 # requirements files, but some projects use it via being installed by devstack
 ceilometermiddleware  # Apache-2.0
 cliff!=2.9.0,!=2.17.0  # Apache-2.0
+cursive  # Apache-2.0
 debtcollector  # Apache-2.0
 diskimage-builder!=1.6.0,!=1.7.0,!=1.7.1  # Apache-2.0
 etcd3gw!=0.2.2,!=0.2.3,!=0.2.6  # Apache-2.0
