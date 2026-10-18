@@ -481,4 +481,3 @@ jsonpath-rw  # Apache-2.0
 jsonpath-rw-ext  # Apache-2.0
 python-consul2  # MIT License
 simplejson  # MIT
-six  # MIT
