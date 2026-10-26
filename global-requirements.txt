@@ -324,8 +324,6 @@ lark  # MIT
 metalsmith  # Apache-2.0
 microversion-parse  # Apache-2.0
 mistral-lib  # Apache-2.0
-monasca-common  # Apache-2.0
-monasca-statsd  # Apache-2.0
 networking-bagpipe  # Apache-2.0
 networking-bgpvpn  # Apache-2.0
 networking-generic-switch  # Apache-2.0
@@ -407,7 +405,6 @@ python-magnumclient  # Apache-2.0
 python-manilaclient  # Apache-2.0
 python-masakariclient  # Apache-2.0
 python-mistralclient!=3.2.0  # Apache-2.0
-python-monascaclient  # Apache-2.0
 python-neutronclient  # Apache-2.0
 python-novaclient  # Apache-2.0
 python-observabilityclient  # Apache-2.0
