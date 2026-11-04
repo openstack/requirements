@@ -69,7 +69,8 @@ class RequirementsList:
         - an iterable of requirement sets to check
         - each set has the following rules:
           - each has a list of Requirements objects
-          - duplicates are not permitted within that list
+          - duplicates are not permitted within that list, except for
+            dependency groups (PEP 735)
         """
         print(f"Checking {self.name}")
         for fname, content in self.project['requirements'].items():
@@ -114,9 +115,11 @@ class RequirementsList:
             print(f"Processing {fname} (dependency-groups)")
             for name, content in groups.items():
                 print(f"  Processing {name!r} dependency group")
+                # PEP 735 permits duplicates in dependency groups, including
+                # those introduced by overlapping include-group references.
                 self.optional_reqs_by_file[
                     f'{fname} ({name!r} dependency group)'
-                ] = self.extract_reqs(content, strict)
+                ] = self.extract_reqs(content, strict=False)
 
 
 def _get_exclusions(req):
