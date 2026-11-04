@@ -17,8 +17,7 @@
         - requirements-tox-py311-check-uc
         - requirements-tox-py312-check-uc
         - requirements-tox-py313-check-uc
-        - requirements-tox-py314-check-uc:
-            voting: false
+        - requirements-tox-py314-check-uc
         - requirements-tox-validate-projects:
             voting: false
         - cross-aodh-py313
@@ -78,6 +77,7 @@
         - requirements-tox-py311-check-uc
         - requirements-tox-py312-check-uc
         - requirements-tox-py313-check-uc
+        - requirements-tox-py314-check-uc
         - cross-cinder-py313
         - cross-designate-py313
         - cross-glance-py313
