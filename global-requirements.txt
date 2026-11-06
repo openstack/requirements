@@ -88,6 +88,7 @@ jsonschema  # MIT
 kazoo  # Apache-2.0
 kombu!=4.0.2  # BSD
 kubernetes  # Apache-2.0
+lark  # MIT
 ldappool  # MPL
 libsass  # MIT
 libvirt-python!=4.1.0,!=4.2.0  # LGPLv2+
@@ -319,7 +320,6 @@ ironic-lib!=4.6.0  # Apache-2.0
 keystoneauth1  # Apache-2.0
 keystonemiddleware  # Apache-2.0
 kuryr-lib  # Apache-2.0
-lark  # MIT
 metalsmith  # Apache-2.0
 microversion-parse  # Apache-2.0
 mistral-lib  # Apache-2.0
