@@ -147,7 +147,6 @@ python-memcached  # PSF
 pytz  # MIT
 pyudev  # LGPLv2.1+
 PyYAML  # MIT
-pyzabbix  # LGPL
 pyzmq  # LGPL+BSD
 qrcode  # BSD
 rbd-iscsi-client  # Apache-2.0
