@@ -86,17 +86,14 @@ class RequirementsList:
                 }
                 and content
             ):
-                # TODO(stephenfin): Make this an error in the H cycle (mid
-                # 2026). These files are all obsolete and pbr no longer
-                # supported the pyN-suffixed files (since pbr 5.0) and never
-                # supported the *-requires files
                 print(
-                    "WARNING: Requirements file {fname} is non-standard "
-                    "and will cause an error in the future. "
+                    "ERROR: Requirements file {fname} is non-standard and is "
+                    "no longer support by OpenStack's requirement tooling. "
                     "Use a pyproject.toml or requirements.txt / "
                     "test-requirements.txt file instead.",
                     file=sys.stderr,
                 )
+                self.failed = True
 
             print(f"Processing {fname} (requirements)")
             self.reqs_by_file[f'{fname} (dependencies)'] = self.extract_reqs(
