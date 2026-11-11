@@ -1,6 +1,5 @@
 openstack/hacking
 openstack/pbr
-openstack/shade
 openstack/ansible-config_template
 openstack/ansible-hardening
 openstack/ansible-role-python_venv_build
