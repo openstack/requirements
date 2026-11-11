@@ -398,7 +398,7 @@ zc.lockfile===4.1
 numpy===2.4.6
 msgpack===1.2.4
 Sphinx===9.0.4
-oslo.config===10.8.0
+oslo.config===10.8.1
 openstackdocstheme===3.6.0
 osc-placement===4.9.1
 rpds-py===2026.9.1
