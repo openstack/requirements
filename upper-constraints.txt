@@ -575,7 +575,7 @@ python-linstor===1.29.1
 filelock===4.2.9
 python-tackerclient===2.6.0
 python-heatclient===5.3.0
-oslo.utils===10.2.0
+oslo.utils===10.3.0
 requests-kerberos===0.15.0
 itsdangerous===2.2.0
 XStatic-jquery-ui===1.13.0.2
