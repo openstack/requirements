@@ -426,7 +426,7 @@ WSME===0.13.0
 oslo.upgradecheck===2.8.0
 sherlock===0.4.1
 tempora===5.13.0
-stevedore===5.9.1
+stevedore===5.10.0
 botocore===1.43.126
 xmltodict===1.0.4
 pyasn1===0.6.5
