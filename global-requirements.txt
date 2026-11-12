@@ -159,8 +159,6 @@ Routes  # MIT
 rtslib-fb  # Apache-2.0
 ruamel.yaml  # MIT
 salt!=2019.2.1,!=2019.2.2  # Apache-2.0
-scikit-learn  # BSD
-scipy  # BSD
 semantic-version  # BSD
 setproctitle  # BSD
 SQLAlchemy  # MIT

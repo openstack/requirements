@@ -106,7 +106,6 @@ pyOpenSSL===26.4.0
 typing-inspection===0.4.5
 hyperframe===6.1.0
 zeroconf===0.154.0
-scipy===1.17.1
 opentelemetry-exporter-otlp===1.45.2
 python-gnupg===0.5.7
 rsd-lib===1.2.0
@@ -590,4 +589,3 @@ opentelemetry-proto===1.45.2
 XStatic-D3===3.5.17.1
 actdiag===3.0.0
 sphinxcontrib-applehelp===2.0.0
-scikit-learn===1.9.1

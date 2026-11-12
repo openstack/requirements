@@ -70,7 +70,7 @@ unzip [test]
 # centos-7.
 parallel [test]
 
-# NOTE(hrw): Needed for numpy/scipy
+# NOTE(hrw): Needed for numpy
 gfortran [platform:dpkg]
 liblapack-dev [platform:dpkg]
 libopenblas-dev [platform:dpkg]
