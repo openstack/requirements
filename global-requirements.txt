@@ -173,7 +173,6 @@ systemd-python  # LGPLv2+
 sysv-ipc  # BSD License
 tabulate  # MIT
 tenacity  # Apache-2.0
-uhashring  # BSD
 urllib3  # MIT
 valkey  # MIT
 voluptuous  # BSD License
