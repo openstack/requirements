@@ -84,6 +84,7 @@ Jinja2  # BSD License (3 clause)
 jira  # BSD License (2 clause)
 jmespath  # MIT
 jsonpatch!=1.20  # BSD
+jsonpath-ng  # Apache-2.0
 jsonschema  # MIT
 kazoo  # Apache-2.0
 kombu!=4.0.2  # BSD
