@@ -16,7 +16,6 @@ amqp!=2.1.4,!=5.0.4  # BSD
 anycrc  # Zlib
 apscheduler  # MIT License
 autobahn  # MIT License
-automaton  # Apache-2.0
 autopage  # Apache-2.0
 awscurl  # MIT
 Babel!=2.4.0  # BSD
@@ -125,7 +124,6 @@ psutil  # BSD
 psycopg2  # LGPL/ZPL
 pyasn1!=0.2.3  # BSD
 pyasn1-modules  # BSD
-pycadf!=2.0.0  # Apache-2.0
 pycdlib  # LGPLv2+
 PyECLib!=1.6.2,!=1.6.3  # BSD
 pyghmi!=1.4.0,!=1.5.11  # Apache-2.0
@@ -166,7 +164,6 @@ SQLAlchemy  # MIT
 sshtunnel  # MIT
 statsd  # MIT
 suds-community  # LGPLv3+
-sushy!=1.9.0  # Apache-2.0
 sympy  # BSD
 systemd-python  # LGPLv2+
 sysv-ipc  # BSD License
@@ -300,6 +297,7 @@ sphinxcontrib.datatemplates  # BSD License
 ## Projects under openstack governance (excluding clients and docs, which
 ## have their own section)
 
+automaton  # Apache-2.0
 castellan  # Apache-2.0
 # ceilometermiddleware might not show up with a search of setup.cfg and
 # requirements files, but some projects use it via being installed by devstack
@@ -366,8 +364,10 @@ oslo.versionedobjects  # Apache-2.0
 oslo.vmware  # Apache-2.0
 osprofiler  # Apache-2.0
 pbr!=2.1.0  # Apache-2.0
+pycadf!=2.0.0  # Apache-2.0
 sherlock  # MIT
 stevedore!=3.0.0  # Apache-2.0
+sushy!=1.9.0  # Apache-2.0
 tap-as-a-service  # Apache-2.0
 taskflow!=6.0.0  # Apache-2.0
 tempest  # Apache-2.0
