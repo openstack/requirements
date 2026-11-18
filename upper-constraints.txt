@@ -423,7 +423,7 @@ salt===3008.5
 opentelemetry-semantic-conventions===0.66b2
 blinker===1.9.0
 WSME===0.13.0
-oslo.upgradecheck===2.8.0
+oslo.upgradecheck===2.9.0
 sherlock===0.4.1
 tempora===5.13.0
 stevedore===5.10.0
