@@ -492,7 +492,7 @@ pyeclib===1.8.0
 rfc3986===2.0.0
 tenacity===9.2.1
 invoke===3.0.3
-python-designateclient===7.0.0
+python-designateclient===7.1.0
 pytest-cov===7.1.0
 reactivex===6.1.0
 Paste===3.11.0
