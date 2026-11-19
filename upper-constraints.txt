@@ -257,7 +257,7 @@ hpack===4.2.0
 joblib===1.6.0
 roman-numerals===4.1.0
 google-api-python-client===2.201.0
-castellan===5.8.0
+castellan===5.9.0
 oslo.versionedobjects===3.12.0
 ssh-python===1.2.0.post1
 enmerkar===0.7.1
