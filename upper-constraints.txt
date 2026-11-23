@@ -466,7 +466,7 @@ testresources===2.1.2
 falcon===4.4.0
 tomlkit===0.15.2
 opentelemetry-exporter-http-transport===0.66b2
-etcd3gw===2.7.0
+etcd3gw===2.8.0
 timelib===0.3.0
 Flask-RESTful===0.3.10
 GitPython===3.2.1
