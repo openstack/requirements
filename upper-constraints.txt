@@ -114,7 +114,7 @@ python-glanceclient===4.13.0
 prometheus_client===0.26.0
 jaraco.classes===3.4.0
 typer-slim===0.24.0
-debtcollector===3.1.0
+debtcollector===3.2.0
 responses===0.26.3
 prompt_toolkit===3.0.53
 croniter===6.2.4
