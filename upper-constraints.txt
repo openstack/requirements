@@ -176,7 +176,7 @@ graphviz===0.21
 portend===3.2.1
 PyKMIP===0.11.0
 python-observabilityclient===1.4.0
-whereto===0.6.0
+whereto===0.7.0
 networking-generic-switch===10.2.0
 pywbem===1.9.1
 python-subunit===1.4.6
