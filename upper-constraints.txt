@@ -27,7 +27,7 @@ os-api-ref===3.3.0
 python-ldap===3.4.8
 oslo.concurrency===7.7.0
 websocket-client===1.9.2
-osprofiler===4.4.0
+osprofiler===4.5.0
 os-resource-classes===1.1.0
 mypy_extensions===1.2.0
 tabulate===0.10.0
