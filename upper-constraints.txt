@@ -564,7 +564,7 @@ confspirator===0.3.0
 fasteners===0.20
 importlib_metadata===10.2.0
 sortedcontainers===2.4.0
-microversion_parse===2.2.0
+microversion_parse===2.3.0
 python-linstor===1.29.1
 filelock===4.2.12
 python-tackerclient===2.6.0
